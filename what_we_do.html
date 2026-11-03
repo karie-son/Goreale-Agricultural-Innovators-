@@ -1,0 +1,2395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="What Goreale Agricultural Innovators does in climate-smart agriculture, water-efficient irrigation, crop protection, environmental conservation, community research and youth innovation."
+    >
+
+    <title>What We Do | Goreale Agricultural Innovators</title>
+
+
+    <style>
+
+/* ==================================================
+   GLOBAL
+================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --primary:#2E7D32;
+    --primary-dark:#1B5E20;
+
+    --black:#222222;
+    --white:#FFFFFF;
+
+    --light:#F7F9F7;
+    --border:#E1E5E1;
+
+    --text:#444444;
+    --muted:#707070;
+
+    --shadow:
+        0 0.4rem 1.4rem rgba(0,0,0,0.05);
+
+    --shadow-hover:
+        0 0.7rem 1.8rem rgba(0,0,0,0.09);
+
+    --radius:0.5rem;
+}
+
+
+/* ==================================================
+   HTML / BODY
+================================================== */
+
+html{
+
+    font-size:62.5%;
+
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    background:var(--white);
+
+    color:var(--black);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size:0.78rem;
+
+    line-height:1.6;
+
+    -webkit-font-smoothing:antialiased;
+}
+
+
+img{
+
+    max-width:100%;
+
+    display:block;
+}
+
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.site-header{
+
+    width:100%;
+
+    background:var(--white);
+
+    position:relative;
+
+    z-index:100;
+}
+
+
+.header-container{
+
+    width:100%;
+
+    max-width:120rem;
+
+    min-height:6.5rem;
+
+    margin:0 auto;
+
+    padding:0 2rem;
+
+    display:flex;
+
+    align-items:center;
+}
+
+
+.site-logo{
+
+    display:inline-flex;
+
+    align-items:center;
+}
+
+
+.site-logo img{
+
+    width:6.8rem;
+
+    height:auto;
+}
+
+
+/* ==================================================
+   PAGE HEADER
+================================================== */
+
+.page-header{
+
+    width:100%;
+
+    max-width:120rem;
+
+    margin:0 auto;
+
+    padding:3rem 2rem 2rem;
+}
+
+
+.page-title-wrapper{
+
+    position:relative;
+
+    max-width:90rem;
+
+    padding-left:1.4rem;
+}
+
+
+/* GREEN LEFT BAR */
+
+.page-title-wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:0.3rem;
+
+    height:100%;
+
+    background:var(--primary);
+
+    border-radius:0.3rem;
+}
+
+
+.page-title-wrapper h1{
+
+    color:var(--black);
+
+    font-size:1.35rem;
+
+    line-height:1.3;
+
+    font-weight:700;
+
+    margin-bottom:0.5rem;
+}
+
+
+.page-title-wrapper p{
+
+    color:var(--muted);
+
+    font-size:0.72rem;
+
+    line-height:1.65;
+
+    max-width:78rem;
+}
+
+
+/* ==================================================
+   MAIN CONTENT
+================================================== */
+
+.main-content{
+
+    width:100%;
+
+    max-width:120rem;
+
+    margin:0 auto;
+
+    padding:0 2rem 5rem;
+}
+
+
+.content-container{
+
+    max-width:105rem;
+
+    margin:0 auto;
+}
+
+
+/* ==================================================
+   GENERAL SECTION
+================================================== */
+
+.content-section{
+
+    margin-bottom:3.5rem;
+}
+
+
+.content-section h2{
+
+    color:var(--black);
+
+    font-size:1rem;
+
+    line-height:1.35;
+
+    font-weight:700;
+
+    margin-bottom:0.8rem;
+}
+
+
+.content-section p{
+
+    color:var(--text);
+
+    font-size:0.72rem;
+
+    line-height:1.7;
+
+    margin-bottom:0.9rem;
+}
+
+
+/* ==================================================
+   FOCUS AREA CARDS
+================================================== */
+
+.focus-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:1.2rem;
+
+    margin-top:1.5rem;
+}
+
+
+.focus-card{
+
+    position:relative;
+
+    background:var(--white);
+
+    border:0.1rem solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:1.5rem 1.4rem 1.4rem 1.8rem;
+
+    min-height:11rem;
+
+    box-shadow:var(--shadow);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+}
+
+
+.focus-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:0.3rem;
+
+    height:100%;
+
+    background:var(--primary);
+
+    border-radius:
+        0.5rem 0 0 0.5rem;
+}
+
+
+.focus-card:hover{
+
+    transform:translateY(-0.2rem);
+
+    box-shadow:var(--shadow-hover);
+
+    border-color:#CDD8CD;
+}
+
+
+.focus-card h3{
+
+    margin:0 0 0.5rem;
+
+    color:var(--black);
+
+    font-size:0.82rem;
+
+    line-height:1.4;
+
+    font-weight:700;
+}
+
+
+.focus-card p{
+
+    margin:0;
+
+    color:var(--text);
+
+    font-size:0.68rem;
+
+    line-height:1.6;
+}
+
+
+/* ==================================================
+   CHALLENGES
+================================================== */
+
+.challenge-list{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:1.2rem;
+
+    margin-top:1.4rem;
+}
+
+
+.challenge-item{
+
+    position:relative;
+
+    background:var(--white);
+
+    border:0.1rem solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:1.4rem 1.4rem 1.4rem 1.8rem;
+
+    box-shadow:var(--shadow);
+}
+
+
+.challenge-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:0.3rem;
+
+    height:100%;
+
+    background:var(--black);
+
+    border-radius:
+        0.5rem 0 0 0.5rem;
+}
+
+
+.challenge-number{
+
+    display:block;
+
+    color:var(--primary);
+
+    font-size:0.62rem;
+
+    font-weight:700;
+
+    margin-bottom:0.3rem;
+}
+
+
+.challenge-item h3{
+
+    margin:0 0 0.5rem;
+
+    color:var(--black);
+
+    font-size:0.78rem;
+
+    line-height:1.4;
+}
+
+
+.challenge-item p{
+
+    margin:0;
+
+    font-size:0.68rem;
+
+    line-height:1.6;
+}
+
+
+/* ==================================================
+   HIGHLIGHT / INFORMATION CARD
+================================================== */
+
+.highlight-box{
+
+    position:relative;
+
+    background:var(--white);
+
+    border:0.1rem solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:1.6rem 1.5rem 1.5rem 1.9rem;
+
+    margin-top:1.2rem;
+
+    box-shadow:var(--shadow);
+}
+
+
+.highlight-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:0.3rem;
+
+    height:100%;
+
+    background:var(--primary);
+
+    border-radius:
+        0.5rem 0 0 0.5rem;
+}
+
+
+.highlight-box p{
+
+    margin-bottom:0.8rem;
+
+    font-size:0.7rem;
+}
+
+
+.highlight-box p:last-child{
+
+    margin-bottom:0;
+}
+
+
+/* ==================================================
+   RESPONSE FLOW
+================================================== */
+
+.response-flow{
+
+    margin-top:1.5rem;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+
+.response-step{
+
+    width:100%;
+
+    max-width:60rem;
+
+    background:var(--white);
+
+    border:0.1rem solid var(--border);
+
+    border-left:
+        0.3rem solid var(--primary);
+
+    border-radius:0.4rem;
+
+    padding:0.8rem 1.2rem;
+
+    text-align:center;
+
+    color:var(--black);
+
+    font-size:0.68rem;
+
+    font-weight:600;
+
+    box-shadow:var(--shadow);
+}
+
+
+.response-arrow{
+
+    color:var(--primary);
+
+    font-size:0.75rem;
+
+    line-height:1.2;
+
+    padding:0.15rem 0;
+}
+
+
+/* ==================================================
+   INNOVATION INTRO
+================================================== */
+
+.innovation-intro{
+
+    position:relative;
+
+    background:var(--white);
+
+    border:0.1rem solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:1.6rem 1.5rem 1.5rem 1.9rem;
+
+    margin-top:1.2rem;
+
+    box-shadow:var(--shadow);
+}
+
+
+.innovation-intro::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:0.3rem;
+
+    height:100%;
+
+    background:var(--black);
+
+    border-radius:
+        0.5rem 0 0 0.5rem;
+}
+
+
+.innovation-quote{
+
+    color:var(--black)!important;
+
+    font-size:0.78rem!important;
+
+    font-weight:600;
+
+    line-height:1.6;
+
+    border-left:
+        0.2rem solid var(--primary);
+
+    padding-left:1rem;
+
+    margin-top:1rem;
+}
+
+
+/* ==================================================
+   INNOVATION CARDS
+================================================== */
+
+.innovation-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:1.2rem;
+
+    margin-top:1.5rem;
+}
+
+
+.innovation-card{
+
+    position:relative;
+
+    background:var(--white);
+
+    border:0.1rem solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:1.5rem 1.4rem 1.4rem 1.8rem;
+
+    box-shadow:var(--shadow);
+}
+
+
+.innovation-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:0.3rem;
+
+    height:100%;
+
+    background:var(--primary);
+
+    border-radius:
+        0.5rem 0 0 0.5rem;
+}
+
+
+.innovation-card h3{
+
+    font-size:0.8rem;
+
+    margin:0 0 0.5rem;
+
+    color:var(--black);
+}
+
+
+.innovation-card p{
+
+    font-size:0.68rem;
+
+    margin-bottom:0.7rem;
+}
+
+
+.innovation-card ul{
+
+    padding-left:1.4rem;
+}
+
+
+.innovation-card li{
+
+    color:var(--text);
+
+    font-size:0.66rem;
+
+    margin-bottom:0.3rem;
+}
+
+
+/* ==================================================
+   MODEL FLOW
+================================================== */
+
+.model-flow{
+
+    margin-top:1.5rem;
+
+    background:var(--white);
+
+    border:0.1rem solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:1.7rem;
+
+    box-shadow:var(--shadow);
+}
+
+
+.model-step{
+
+    text-align:center;
+
+    color:var(--black);
+
+    font-size:0.68rem;
+
+    font-weight:600;
+
+    padding:0.5rem;
+}
+
+
+.model-arrow{
+
+    text-align:center;
+
+    color:var(--primary);
+
+    font-size:0.75rem;
+}
+
+
+/* ==================================================
+   EVIDENCE
+================================================== */
+
+.evidence-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:0.8rem 1.2rem;
+
+    margin-top:1.4rem;
+}
+
+
+.evidence-item{
+
+    background:var(--white);
+
+    border:0.1rem solid var(--border);
+
+    border-left:
+        0.3rem solid var(--primary);
+
+    border-radius:0.4rem;
+
+    padding:0.8rem 1rem;
+
+    color:var(--text);
+
+    font-size:0.67rem;
+
+    box-shadow:var(--shadow);
+}
+
+
+/* ==================================================
+   PROGRAM SECTIONS
+================================================== */
+
+.program-section{
+
+    position:relative;
+
+    background:var(--white);
+
+    border:0.1rem solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:1.5rem 1.4rem 1.4rem 1.9rem;
+
+    margin-bottom:1.2rem;
+
+    box-shadow:var(--shadow);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+
+.program-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:0.3rem;
+
+    height:100%;
+
+    background:var(--black);
+
+    border-radius:
+        0.5rem 0 0 0.5rem;
+}
+
+
+.program-section:hover{
+
+    transform:translateY(-0.15rem);
+
+    box-shadow:var(--shadow-hover);
+}
+
+
+.program-section h3{
+
+    font-size:0.82rem;
+
+    color:var(--black);
+
+    margin:0 0 0.6rem;
+}
+
+
+.program-section p{
+
+    font-size:0.69rem;
+
+    line-height:1.65;
+
+    margin:0;
+}
+
+
+/* ==================================================
+   FUTURE — BLACK CARD
+================================================== */
+
+.future-box{
+
+    position:relative;
+
+    background:var(--black);
+
+    color:var(--white);
+
+    border-radius:var(--radius);
+
+    padding:1.8rem 1.6rem 1.6rem 2rem;
+
+    margin-top:1.2rem;
+
+    box-shadow:var(--shadow);
+}
+
+
+.future-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:0.3rem;
+
+    height:100%;
+
+    background:var(--primary);
+
+    border-radius:
+        0.5rem 0 0 0.5rem;
+}
+
+
+.future-box h3{
+
+    color:var(--white);
+
+    font-size:0.82rem;
+
+    margin-bottom:0.6rem;
+}
+
+
+.future-box p{
+
+    color:#DDDDDD;
+
+    font-size:0.69rem;
+
+    line-height:1.65;
+
+    margin-bottom:0.7rem;
+}
+
+
+.future-box p:last-child{
+
+    margin-bottom:0;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.site-footer{
+
+    width:100%;
+
+    background:#000000;
+
+    color:var(--white);
+
+    padding:2.5rem 2rem 1.5rem;
+}
+
+
+.footer-container{
+
+    max-width:120rem;
+
+    margin:auto;
+
+    text-align:center;
+}
+
+
+.footer-container h3{
+
+    color:var(--white);
+
+    font-size:0.8rem;
+
+    margin-bottom:0.5rem;
+}
+
+
+.footer-tagline{
+
+    color:#DDDDDD;
+
+    font-size:0.67rem;
+
+    margin-bottom:0.7rem;
+}
+
+
+.footer-services{
+
+    color:#FFFFFF;
+
+    font-size:0.61rem;
+
+    margin-bottom:0.7rem;
+}
+
+
+.footer-founder{
+
+    color:#BBBBBB;
+
+    font-size:0.61rem;
+
+    margin-bottom:1.5rem;
+}
+
+
+.footer-bottom{
+
+    border-top:0.1rem solid #333333;
+
+    padding-top:1rem;
+
+    color:#888888;
+
+    font-size:0.58rem;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media(max-width:850px){
+
+    .focus-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+    }
+
+    .challenge-list{
+
+        grid-template-columns:1fr;
+    }
+
+    .innovation-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .evidence-grid{
+
+        grid-template-columns:1fr;
+    }
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px){
+
+    body{
+
+        font-size:0.72rem;
+    }
+
+
+    .header-container{
+
+        min-height:5.8rem;
+
+        padding:0 1.4rem;
+    }
+
+
+    .site-logo img{
+
+        width:6rem;
+    }
+
+
+    .page-header{
+
+        padding:2.5rem 1.4rem 1.8rem;
+    }
+
+
+    .page-title-wrapper{
+
+        padding-left:1.2rem;
+    }
+
+
+    .page-title-wrapper h1{
+
+        font-size:1.15rem;
+    }
+
+
+    .page-title-wrapper p{
+
+        font-size:0.68rem;
+    }
+
+
+    .main-content{
+
+        padding:
+            0 1.4rem 4rem;
+    }
+
+
+    .content-section{
+
+        margin-bottom:3rem;
+    }
+
+
+    .content-section h2{
+
+        font-size:0.92rem;
+    }
+
+
+    .content-section p{
+
+        font-size:0.68rem;
+
+        line-height:1.65;
+    }
+
+
+    .focus-grid{
+
+        grid-template-columns:1fr;
+
+        gap:1rem;
+    }
+
+
+    .focus-card{
+
+        min-height:auto;
+
+        padding:
+            1.3rem 1.2rem 1.3rem 1.6rem;
+    }
+
+
+    .focus-card h3{
+
+        font-size:0.76rem;
+    }
+
+
+    .focus-card p{
+
+        font-size:0.65rem;
+    }
+
+
+    .challenge-list{
+
+        grid-template-columns:1fr;
+
+        gap:1rem;
+    }
+
+
+    .challenge-item{
+
+        padding:
+            1.3rem 1.2rem 1.3rem 1.6rem;
+    }
+
+
+    .challenge-item h3{
+
+        font-size:0.75rem;
+    }
+
+
+    .challenge-item p{
+
+        font-size:0.65rem;
+    }
+
+
+    .innovation-grid{
+
+        grid-template-columns:1fr;
+    }
+
+
+    .innovation-card{
+
+        padding:
+            1.3rem 1.2rem 1.3rem 1.6rem;
+    }
+
+
+    .innovation-card h3{
+
+        font-size:0.76rem;
+    }
+
+
+    .innovation-card p{
+
+        font-size:0.65rem;
+    }
+
+
+    .innovation-card li{
+
+        font-size:0.63rem;
+    }
+
+
+    .program-section{
+
+        padding:
+            1.3rem 1.2rem 1.3rem 1.6rem;
+    }
+
+
+    .program-section h3{
+
+        font-size:0.76rem;
+    }
+
+
+    .program-section p{
+
+        font-size:0.66rem;
+    }
+
+
+    .highlight-box{
+
+        padding:
+            1.4rem 1.2rem 1.4rem 1.6rem;
+    }
+
+
+    .highlight-box p{
+
+        font-size:0.66rem;
+    }
+
+
+    .model-flow{
+
+        padding:1.3rem;
+    }
+
+
+    .model-step{
+
+        font-size:0.64rem;
+
+        padding:0.45rem;
+    }
+
+
+    .evidence-grid{
+
+        grid-template-columns:1fr;
+    }
+
+
+    .evidence-item{
+
+        font-size:0.64rem;
+    }
+
+
+    .future-box{
+
+        padding:
+            1.6rem 1.3rem 1.5rem 1.7rem;
+    }
+
+
+    .future-box h3{
+
+        font-size:0.77rem;
+    }
+
+
+    .future-box p{
+
+        font-size:0.65rem;
+    }
+
+
+    .site-footer{
+
+        padding:
+            2.2rem 1.4rem 1.3rem;
+    }
+
+
+    .footer-container h3{
+
+        font-size:0.75rem;
+    }
+
+
+    .footer-tagline{
+
+        font-size:0.63rem;
+    }
+
+
+    .footer-services{
+
+        font-size:0.57rem;
+
+        line-height:1.7;
+    }
+
+
+    .footer-founder{
+
+        font-size:0.57rem;
+    }
+
+
+    .footer-bottom{
+
+        font-size:0.54rem;
+    }
+
+}
+
+
+/* ==================================================
+   VERY SMALL PHONES
+================================================== */
+
+@media(max-width:380px){
+
+    .site-logo img{
+
+        width:5.5rem;
+    }
+
+
+    .page-title-wrapper h1{
+
+        font-size:1.08rem;
+    }
+
+
+    .page-title-wrapper p{
+
+        font-size:0.64rem;
+    }
+
+
+    .content-section h2{
+
+        font-size:0.88rem;
+    }
+
+
+    .focus-card p,
+    .innovation-card p,
+    .program-section p{
+
+        font-size:0.63rem;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a
+            href="index.html"
+            class="site-logo"
+            aria-label="Goreale Agricultural Innovators Home"
+        >
+
+            <img
+                src="goreale_logo.png"
+                alt="Goreale Agricultural Innovators"
+            >
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     PAGE HEADER
+===================================================== -->
+
+<section class="page-header">
+
+    <div class="page-title-wrapper">
+
+        <h1>What We Do</h1>
+
+        <p>
+            Goreale Agricultural Innovators focuses on practical,
+            community-based solutions that connect agriculture,
+            water efficiency, environmental conservation,
+            technology and youth participation.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main class="main-content">
+
+<div class="content-container">
+
+
+<!-- =====================================================
+     OUR FOCUS AREAS
+===================================================== -->
+
+<section class="content-section">
+
+    <h2>Our Focus Areas</h2>
+
+    <p>
+        Our activities are designed around practical agricultural
+        and environmental challenges affecting farming communities.
+        We focus on solutions that farmers and communities can
+        understand, test, adapt and use.
+    </p>
+
+
+    <div class="focus-grid">
+
+
+        <article class="focus-card">
+
+            <h3>Water-Efficient Irrigation</h3>
+
+            <p>
+                Promoting affordable drip irrigation and improved
+                water-management practices that help farmers use
+                available water more efficiently.
+            </p>
+
+        </article>
+
+
+        <article class="focus-card">
+
+            <h3>Climate-Smart Agriculture</h3>
+
+            <p>
+                Supporting farming practices that improve resilience
+                to climate variability, water scarcity and changing
+                agricultural conditions.
+            </p>
+
+        </article>
+
+
+        <article class="focus-card">
+
+            <h3>Crop-Pest Management</h3>
+
+            <p>
+                Helping farmers identify, prevent, monitor and
+                responsibly manage crop pests and diseases while
+                reducing avoidable agricultural losses.
+            </p>
+
+        </article>
+
+
+        <article class="focus-card">
+
+            <h3>Tree Planting &amp; Restoration</h3>
+
+            <p>
+                Promoting tree planting, protection of existing trees,
+                restoration of degraded areas and responsible
+                environmental stewardship.
+            </p>
+
+        </article>
+
+
+        <article class="focus-card">
+
+            <h3>Farmer Training</h3>
+
+            <p>
+                Providing practical agricultural knowledge through
+                demonstrations, farmer engagement and hands-on
+                learning activities.
+            </p>
+
+        </article>
+
+
+        <article class="focus-card">
+
+            <h3>Digital Agricultural Advisory</h3>
+
+            <p>
+                Using accessible digital communication channels to
+                share useful farming, climate, irrigation and
+                environmental information.
+            </p>
+
+        </article>
+
+
+        <article class="focus-card">
+
+            <h3>Youth Innovation</h3>
+
+            <p>
+                Creating opportunities for young people to participate
+                in agriculture, technology, data collection,
+                environmental activities and community innovation.
+            </p>
+
+        </article>
+
+
+        <article class="focus-card">
+
+            <h3>Community Research</h3>
+
+            <p>
+                Conducting community-based research to understand
+                agricultural challenges and develop locally relevant,
+                evidence-based solutions.
+            </p>
+
+        </article>
+
+
+        <article class="focus-card">
+
+            <h3>Pilot &amp; Demonstration</h3>
+
+            <p>
+                Testing practical agricultural and environmental
+                solutions through demonstration farms, pilot plots
+                and community activities.
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     THE CHALLENGE
+===================================================== -->
+
+<section class="content-section">
+
+    <h2>The Challenge</h2>
+
+    <p>
+        Agricultural communities have significant potential, but
+        this potential can remain underutilized when farmers face
+        interconnected challenges involving water, irrigation,
+        crop pests, climate variability, agricultural information
+        and environmental degradation.
+    </p>
+
+
+    <div class="challenge-list">
+
+
+        <article class="challenge-item">
+
+            <span class="challenge-number">01</span>
+
+            <h3>Limited and Unreliable Water</h3>
+
+            <p>
+                Water scarcity can prevent farmers from consistently
+                cultivating available agricultural land and can
+                limit production during dry periods.
+            </p>
+
+        </article>
+
+
+        <article class="challenge-item">
+
+            <span class="challenge-number">02</span>
+
+            <h3>Limited Adoption of Efficient Irrigation</h3>
+
+            <p>
+                Farmers may have limited access to affordable
+                irrigation technologies, practical knowledge and
+                demonstrations of efficient water-management systems.
+            </p>
+
+        </article>
+
+
+        <article class="challenge-item">
+
+            <span class="challenge-number">03</span>
+
+            <h3>Crop Pests and Agricultural Losses</h3>
+
+            <p>
+                Late identification and management of pests and
+                diseases can contribute to crop damage, reduced
+                yields and loss of income.
+            </p>
+
+        </article>
+
+
+        <article class="challenge-item">
+
+            <span class="challenge-number">04</span>
+
+            <h3>Climate Variability</h3>
+
+            <p>
+                Unpredictable rainfall, prolonged dry periods and
+                other climate pressures can increase agricultural
+                risks and reduce farm resilience.
+            </p>
+
+        </article>
+
+
+        <article class="challenge-item">
+
+            <span class="challenge-number">05</span>
+
+            <h3>Environmental Degradation</h3>
+
+            <p>
+                Loss of vegetation and trees can contribute to land
+                degradation, soil erosion and increased vulnerability
+                to environmental pressures.
+            </p>
+
+        </article>
+
+
+        <article class="challenge-item">
+
+            <span class="challenge-number">06</span>
+
+            <h3>Limited Agricultural Information</h3>
+
+            <p>
+                Farmers need timely, simple and locally relevant
+                information about irrigation, pests, climate-smart
+                farming and environmental conservation.
+            </p>
+
+        </article>
+
+
+        <article class="challenge-item">
+
+            <span class="challenge-number">07</span>
+
+            <h3>Untapped Youth Potential</h3>
+
+            <p>
+                Young people can contribute through technology,
+                innovation, communication, data collection and
+                entrepreneurship, but meaningful opportunities
+                can remain limited.
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     WHY THIS MATTERS
+===================================================== -->
+
+<section class="content-section">
+
+    <h2>Why This Matters</h2>
+
+    <div class="highlight-box">
+
+        <p>
+            These challenges are interconnected. Water scarcity
+            affects farming, inefficient irrigation wastes available
+            water, crop pests reduce production, and climate
+            variability increases agricultural risks.
+        </p>
+
+        <p>
+            Environmental degradation and deforestation can further
+            weaken community resilience, while limited access to
+            practical information can make these challenges harder
+            to manage.
+        </p>
+
+        <p>
+            The result can be underutilized agricultural land,
+            lower productivity, avoidable crop losses, reduced
+            household income and increased vulnerability to
+            climate and environmental pressures.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     OUR RESPONSE
+===================================================== -->
+
+<section class="content-section">
+
+    <h2>Our Response</h2>
+
+    <p>
+        Goreale Agricultural Innovators uses an integrated approach
+        rather than treating agricultural and environmental
+        challenges separately.
+    </p>
+
+
+    <div class="response-flow">
+
+        <div class="response-step">
+            Water-Efficient Irrigation
+        </div>
+
+        <div class="response-arrow">↓</div>
+
+        <div class="response-step">
+            Climate-Smart Farming
+        </div>
+
+        <div class="response-arrow">↓</div>
+
+        <div class="response-step">
+            Crop-Pest Management
+        </div>
+
+        <div class="response-arrow">↓</div>
+
+        <div class="response-step">
+            Farmer Training &amp; Digital Advisory
+        </div>
+
+        <div class="response-arrow">↓</div>
+
+        <div class="response-step">
+            Tree Planting &amp; Anti-Deforestation
+        </div>
+
+        <div class="response-arrow">↓</div>
+
+        <div class="response-step">
+            Youth Participation
+        </div>
+
+        <div class="response-arrow">↓</div>
+
+        <div class="response-step">
+            Pilot Testing &amp; Evidence
+        </div>
+
+        <div class="response-arrow">↓</div>
+
+        <div class="response-step">
+            Scaling What Works
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     OUR INNOVATION
+===================================================== -->
+
+<section class="content-section">
+
+    <h2>Our Innovation</h2>
+
+    <div class="innovation-intro">
+
+        <p>
+            We are developing a community-based innovation model
+            that brings together water-efficient irrigation,
+            climate-smart agriculture, crop-pest management,
+            digital agricultural information, youth participation,
+            tree planting and environmental conservation.
+        </p>
+
+        <p class="innovation-quote">
+            “Farmers should be able to produce more sustainably
+            using the water, land, knowledge and natural resources
+            available to them.”
+        </p>
+
+    </div>
+
+
+    <div class="innovation-grid">
+
+
+        <article class="innovation-card">
+
+            <h3>Water-Efficient Drip Irrigation</h3>
+
+            <p>
+                We promote practical and affordable drip-irrigation
+                solutions that deliver water directly to the root
+                zone of crops.
+            </p>
+
+            <ul>
+                <li>Improve water-use efficiency.</li>
+                <li>Reduce unnecessary water wastage.</li>
+                <li>Improve irrigation practices.</li>
+                <li>Increase productive land use.</li>
+            </ul>
+
+        </article>
+
+
+        <article class="innovation-card">
+
+            <h3>Climate-Smart Farming</h3>
+
+            <p>
+                We demonstrate practices designed to help farmers
+                adapt to climate variability and water scarcity.
+            </p>
+
+            <ul>
+                <li>Efficient water management.</li>
+                <li>Soil-moisture conservation.</li>
+                <li>Appropriate crop management.</li>
+                <li>Sustainable farm-resource use.</li>
+            </ul>
+
+        </article>
+
+
+        <article class="innovation-card">
+
+            <h3>Smart Crop-Pest Management</h3>
+
+            <p>
+                Farmers receive practical information on early
+                identification, monitoring and responsible
+                management of crop pests and diseases.
+            </p>
+
+            <ul>
+                <li>Crop monitoring.</li>
+                <li>Early pest identification.</li>
+                <li>Prevention.</li>
+                <li>Integrated pest-management approaches.</li>
+            </ul>
+
+        </article>
+
+
+        <article class="innovation-card">
+
+            <h3>Tree Planting &amp; Anti-Deforestation</h3>
+
+            <p>
+                Environmental conservation is integrated into
+                agricultural development through tree planting,
+                restoration and community awareness.
+            </p>
+
+            <ul>
+                <li>Plant suitable trees.</li>
+                <li>Protect existing trees.</li>
+                <li>Promote appropriate agroforestry.</li>
+                <li>Protect soil and water resources.</li>
+            </ul>
+
+        </article>
+
+
+        <article class="innovation-card">
+
+            <h3>Digital Agricultural Advisory</h3>
+
+            <p>
+                Accessible digital communication can help farmers
+                receive useful information when they need it.
+            </p>
+
+            <ul>
+                <li>Farming tips.</li>
+                <li>Irrigation guidance.</li>
+                <li>Pest information.</li>
+                <li>Climate and environmental messages.</li>
+            </ul>
+
+        </article>
+
+
+        <article class="innovation-card">
+
+            <h3>Demonstration-Based Learning</h3>
+
+            <p>
+                Farmers can learn by seeing, participating and
+                testing improved practices under local conditions.
+            </p>
+
+            <ul>
+                <li>Learn.</li>
+                <li>Demonstrate.</li>
+                <li>Test.</li>
+                <li>Measure and improve.</li>
+            </ul>
+
+        </article>
+
+
+        <article class="innovation-card">
+
+            <h3>Youth-Led Innovation</h3>
+
+            <p>
+                Young people can contribute to agricultural
+                innovation, digital services, environmental
+                activities and community awareness.
+            </p>
+
+            <ul>
+                <li>Agricultural innovation.</li>
+                <li>Farmer engagement.</li>
+                <li>Data collection.</li>
+                <li>Environmental campaigns.</li>
+            </ul>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     INNOVATION MODEL
+===================================================== -->
+
+<section class="content-section">
+
+    <h2>Our Innovation Model</h2>
+
+    <p>
+        Our model connects community needs with practical
+        experimentation, evidence and continuous improvement.
+    </p>
+
+
+    <div class="model-flow">
+
+        <div class="model-step">
+            COMMUNITY NEEDS
+        </div>
+
+        <div class="model-arrow">↓</div>
+
+        <div class="model-step">
+            FARMER VALIDATION
+        </div>
+
+        <div class="model-arrow">↓</div>
+
+        <div class="model-step">
+            WATER-EFFICIENT IRRIGATION
+        </div>
+
+        <div class="model-arrow">↓</div>
+
+        <div class="model-step">
+            CLIMATE-SMART AGRICULTURE
+        </div>
+
+        <div class="model-arrow">↓</div>
+
+        <div class="model-step">
+            CROP-PEST MANAGEMENT
+        </div>
+
+        <div class="model-arrow">↓</div>
+
+        <div class="model-step">
+            TREE PLANTING &amp; ENVIRONMENTAL CONSERVATION
+        </div>
+
+        <div class="model-arrow">↓</div>
+
+        <div class="model-step">
+            DIGITAL AGRICULTURAL ADVISORY
+        </div>
+
+        <div class="model-arrow">↓</div>
+
+        <div class="model-step">
+            PILOT &amp; DEMONSTRATION
+        </div>
+
+        <div class="model-arrow">↓</div>
+
+        <div class="model-step">
+            MEASURE RESULTS
+        </div>
+
+        <div class="model-arrow">↓</div>
+
+        <div class="model-step">
+            IMPROVE &amp; SCALE
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROGRAM AREAS
+===================================================== -->
+
+<section class="content-section">
+
+    <h2>Our Program Areas</h2>
+
+
+    <article class="program-section">
+
+        <h3>Climate-Smart Agriculture</h3>
+
+        <p>
+            We promote farming methods that help communities
+            improve productivity while adapting to climate
+            variability and reducing pressure on natural resources.
+            Activities may include efficient water management,
+            soil conservation, mulching, composting, appropriate
+            crop management, agroforestry and other locally
+            suitable practices.
+        </p>
+
+    </article>
+
+
+    <article class="program-section">
+
+        <h3>Water &amp; Drip Irrigation</h3>
+
+        <p>
+            We promote efficient water management and drip
+            irrigation as practical responses to water scarcity
+            and unreliable rainfall. Demonstrations focus on
+            installation, maintenance, irrigation scheduling and
+            responsible use of available water.
+        </p>
+
+    </article>
+
+
+    <article class="program-section">
+
+        <h3>Crop-Pest Management</h3>
+
+        <p>
+            We promote responsible crop-pest management through
+            monitoring, early identification, crop sanitation,
+            appropriate crop practices, biological approaches
+            where suitable and responsible use of approved
+            control measures when necessary.
+        </p>
+
+    </article>
+
+
+    <article class="program-section">
+
+        <h3>Tree Planting &amp; Restoration</h3>
+
+        <p>
+            We support tree planting and restoration activities
+            involving farmers, youth, schools and community
+            members. The focus includes suitable tree selection,
+            tree protection, survival, watering, mulching and
+            community monitoring.
+        </p>
+
+    </article>
+
+
+    <article class="program-section">
+
+        <h3>Anti-Deforestation Campaign</h3>
+
+        <p>
+            We promote community awareness about the effects of
+            uncontrolled tree cutting and environmental
+            degradation. Activities can include awareness meetings,
+            school activities, tree planting, public education and
+            community conservation campaigns.
+        </p>
+
+    </article>
+
+
+    <article class="program-section">
+
+        <h3>Community Research</h3>
+
+        <p>
+            Community research helps us understand agricultural
+            challenges, opportunities and priorities. Surveys,
+            consultations, field observations, interviews and
+            feedback activities can inform the design and
+            improvement of project interventions.
+        </p>
+
+    </article>
+
+
+    <article class="program-section">
+
+        <h3>Pilot &amp; Innovation Development</h3>
+
+        <p>
+            Pilot activities provide an opportunity to test
+            practical agricultural and environmental solutions
+            before wider adoption. Demonstration farms and pilot
+            plots can be used to evaluate cost, effectiveness,
+            water efficiency, environmental benefits and
+            practicality for farmers.
+        </p>
+
+    </article>
+
+
+</section>
+
+
+<!-- =====================================================
+     FROM IDEA TO EVIDENCE
+===================================================== -->
+
+<section class="content-section">
+
+    <h2>From Idea to Evidence</h2>
+
+    <p>
+        We use a problem → test → learn → improve → scale
+        approach. Community engagement and initial research help
+        identify local needs before practical solutions are tested.
+    </p>
+
+    <p>
+        Demonstrations and pilot activities allow farmers and
+        young innovators to participate in testing solutions under
+        local conditions.
+    </p>
+
+
+    <div class="evidence-grid">
+
+        <div class="evidence-item">
+            Water-use practices
+        </div>
+
+        <div class="evidence-item">
+            Farmer knowledge
+        </div>
+
+        <div class="evidence-item">
+            Adoption of improved practices
+        </div>
+
+        <div class="evidence-item">
+            Crop performance
+        </div>
+
+        <div class="evidence-item">
+            Pest-management outcomes
+        </div>
+
+        <div class="evidence-item">
+            Tree planting and survival
+        </div>
+
+        <div class="evidence-item">
+            Farmer satisfaction
+        </div>
+
+        <div class="evidence-item">
+            Implementation lessons
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ENVIRONMENTAL & COMMUNITY IMPACT
+===================================================== -->
+
+<section class="content-section">
+
+    <h2>Environmental &amp; Community Impact</h2>
+
+    <p>
+        Our activities are intended to create environmental,
+        social and economic benefits by connecting sustainable
+        agriculture with natural-resource conservation and
+        community participation.
+    </p>
+
+    <div class="highlight-box">
+
+        <p>
+            <strong>Environmental impact:</strong>
+            improved water efficiency, healthier soils, tree
+            restoration, biodiversity conservation, reduced
+            land degradation and greater awareness of
+            environmental protection.
+        </p>
+
+        <p>
+            <strong>Community impact:</strong>
+            stronger agricultural knowledge, youth participation,
+            practical skills, food-security opportunities and
+            improved capacity to make informed farming decisions.
+        </p>
+
+        <p>
+            <strong>Long-term impact:</strong>
+            development of practical agricultural and environmental
+            models that can be adapted and replicated in other
+            communities facing similar challenges.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     OUR FUTURE
+===================================================== -->
+
+<section class="content-section">
+
+    <h2>Our Future</h2>
+
+    <div class="future-box">
+
+        <h3>
+            Building a Replicable Model
+        </h3>
+
+        <p>
+            We aim to begin with community needs and practical
+            pilot activities, document the results and develop
+            tested approaches that can be improved and expanded.
+        </p>
+
+        <p>
+            Our long-term ambition is to contribute to productive,
+            climate-resilient and environmentally responsible
+            farming communities across northern Kenya and beyond.
+        </p>
+
+        <p>
+            We believe that agricultural productivity, water
+            efficiency, technology, youth innovation and
+            environmental conservation can work together to
+            strengthen community resilience and sustainable
+            livelihoods.
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <h3>
+            Goreale Agricultural Innovators
+        </h3>
+
+        <p class="footer-tagline">
+            Innovating Agriculture. Conserving Nature.
+            Empowering Communities.
+        </p>
+
+        <p class="footer-services">
+            Climate-Smart Agriculture |
+            Water Efficiency |
+            Crop Protection |
+            Tree Planting |
+            Environmental Conservation
+        </p>
+
+        <p class="footer-founder">
+            Founded and led by Samira Abdirahman Maalim 
+        </p>
+
+        <div class="footer-bottom">
+
+            © 2026 Goreale Agricultural Innovators.
+            All rights reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

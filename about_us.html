@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Goreale Agricultural Innovators</title>
+
+    <style>
+
+/* =========================================================
+   GOREALE AGRICULTURAL INNOVATORS
+   ABOUT US — REFINED GREEN CORPORATE STYLE
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#ffffff;
+    color:#222222;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size:0.78rem;
+    line-height:1.6;
+
+    -webkit-font-smoothing:antialiased;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+button,
+input,
+textarea,
+select{
+    font:inherit;
+}
+
+
+/* =========================================================
+   CORPORATE VARIABLES
+========================================================= */
+
+:root{
+
+    --primary:#16803c;
+
+    --primary-dark:#0d5f2c;
+
+    --primary-light:#eaf6ee;
+
+    --corporate-black:#000000;
+
+    --black:#111111;
+
+    --text:#444444;
+
+    --muted:#666666;
+
+    --white:#ffffff;
+
+    --light:#f7f9f7;
+
+    --lighter:#fafcfb;
+
+    --border:#e1e7e3;
+
+    --green-border:#cfe4d5;
+
+    --shadow:
+        0 0.25rem 1.1rem rgba(0,0,0,0.045);
+
+    --shadow-hover:
+        0 0.65rem 1.7rem rgba(0,0,0,0.085);
+
+    --radius:0.45rem;
+
+    --transition:
+        all 0.25s ease;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header{
+
+    width:100%;
+
+    background:#ffffff;
+
+    border-bottom:
+        0.1rem solid var(--border);
+}
+
+.header-container{
+
+    width:100%;
+
+    max-width:75rem;
+
+    min-height:4.5rem;
+
+    margin:0 auto;
+
+    padding:
+        0 1.55rem;
+
+    display:flex;
+
+    align-items:center;
+}
+
+.site-logo{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    transition:
+        opacity 0.25s ease;
+}
+
+.site-logo:hover{
+    opacity:0.82;
+}
+
+.site-logo img{
+
+    width:9.7rem;
+
+    height:auto;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.page-header{
+
+    width:100%;
+
+    max-width:75rem;
+
+    margin:0 auto;
+
+    padding:
+        3.3rem 1.55rem 2.2rem;
+}
+
+.page-title-wrapper{
+
+    position:relative;
+
+    max-width:58rem;
+
+    padding-left:1.2rem;
+}
+
+
+/* GREEN CORPORATE BAR */
+
+.page-title-wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:0.22rem;
+    height:100%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            var(--primary),
+            var(--primary-dark)
+        );
+
+    border-radius:0.2rem;
+
+    box-shadow:
+        0 0 0.5rem rgba(22,128,60,0.18);
+}
+
+.page-title-wrapper h1{
+
+    color:var(--black);
+
+    font-size:1.35rem;
+
+    font-weight:700;
+
+    line-height:1.3;
+
+    margin-bottom:0.4rem;
+}
+
+.page-title-wrapper p{
+
+    max-width:48rem;
+
+    color:var(--muted);
+
+    font-size:0.73rem;
+
+    line-height:1.6;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.about-content{
+
+    width:100%;
+
+    max-width:75rem;
+
+    margin:0 auto;
+
+    padding:
+        0 1.55rem 4.2rem;
+}
+
+.content-container{
+
+    width:100%;
+
+    max-width:62.5rem;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+.about-section{
+
+    margin-bottom:2.7rem;
+}
+
+.about-section:last-child{
+    margin-bottom:0;
+}
+
+.about-section h2{
+
+    color:var(--black);
+
+    font-size:0.98rem;
+
+    font-weight:700;
+
+    line-height:1.35;
+
+    margin-bottom:0.7rem;
+
+    position:relative;
+
+    padding-left:0.8rem;
+}
+
+
+/* SMALL GREEN SECTION INDICATOR */
+
+.about-section h2::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0.15rem;
+
+    width:0.18rem;
+    height:1rem;
+
+    background:var(--primary);
+
+    border-radius:0.15rem;
+}
+
+.about-section h3{
+
+    color:var(--black);
+
+    font-size:0.82rem;
+
+    font-weight:700;
+
+    line-height:1.4;
+
+    margin:
+        1.2rem 0 0.4rem;
+}
+
+.about-section p{
+
+    max-width:59rem;
+
+    color:var(--text);
+
+    font-size:0.74rem;
+
+    line-height:1.7;
+
+    margin-bottom:0.65rem;
+}
+
+.about-section p:last-child{
+    margin-bottom:0;
+}
+
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.about-list{
+
+    margin:
+        0.8rem 0 0;
+
+    padding-left:1.2rem;
+}
+
+.about-list li{
+
+    color:var(--text);
+
+    font-size:0.73rem;
+
+    line-height:1.65;
+
+    margin-bottom:0.4rem;
+
+    padding-left:0.15rem;
+}
+
+.about-list li::marker{
+    color:var(--primary);
+}
+
+
+/* =========================================================
+   FOCUS CARDS
+========================================================= */
+
+.about-cards{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:1rem;
+
+    margin:
+        1.25rem 0 2.6rem;
+}
+
+.about-card{
+
+    position:relative;
+
+    min-height:9rem;
+
+    background:
+        #ffffff;
+
+    border:
+        0.1rem solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+    padding:
+        1.15rem 1rem 1.05rem 1.4rem;
+
+    box-shadow:
+        var(--shadow);
+
+    overflow:hidden;
+
+    transition:
+        var(--transition);
+}
+
+
+/* GREEN LEFT ACCENT */
+
+.about-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:0.22rem;
+    height:100%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            var(--primary),
+            var(--primary-dark)
+        );
+
+    border-radius:
+        0.45rem 0 0 0.45rem;
+}
+
+.about-card:hover{
+
+    transform:
+        translateY(-0.2rem);
+
+    border-color:
+        var(--green-border);
+
+    box-shadow:
+        var(--shadow-hover);
+}
+
+.about-card h3{
+
+    color:var(--black);
+
+    font-size:0.80rem;
+
+    font-weight:700;
+
+    line-height:1.4;
+
+    margin:
+        0 0 0.4rem;
+}
+
+.about-card p{
+
+    color:var(--text);
+
+    font-size:0.70rem;
+
+    line-height:1.65;
+
+    margin:0;
+}
+
+
+/* =========================================================
+   MISSION & VISION
+========================================================= */
+
+.mission-vision{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:1rem;
+
+    margin-top:1rem;
+}
+
+.mission-box,
+.vision-box{
+
+    position:relative;
+
+    background:
+        var(--primary-light);
+
+    border:
+        0.1rem solid var(--green-border);
+
+    border-radius:
+        var(--radius);
+
+    padding:1.2rem 1.2rem 1.15rem;
+
+    overflow:hidden;
+}
+
+.mission-box::before,
+.vision-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:0.22rem;
+    height:100%;
+
+    background:var(--primary);
+
+    border-radius:
+        0.45rem 0 0 0.45rem;
+}
+
+.mission-box h3,
+.vision-box h3{
+
+    color:var(--primary-dark);
+
+    font-size:0.81rem;
+
+    font-weight:700;
+
+    line-height:1.4;
+
+    margin:
+        0 0 0.4rem;
+}
+
+.mission-box p,
+.vision-box p{
+
+    color:var(--text);
+
+    font-size:0.71rem;
+
+    line-height:1.65;
+
+    margin:0;
+}
+
+
+/* =========================================================
+   VALUES
+========================================================= */
+
+.values-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:
+        0.75rem 1rem;
+
+    margin-top:1rem;
+}
+
+.value-item{
+
+    background:
+        #ffffff;
+
+    border:
+        0.1rem solid var(--border);
+
+    border-left:
+        0.22rem solid var(--primary);
+
+    border-radius:
+        0 var(--radius) var(--radius) 0;
+
+    padding:
+        0.75rem 0.9rem;
+
+    transition:
+        var(--transition);
+}
+
+.value-item:hover{
+
+    background:
+        var(--primary-light);
+
+    border-color:
+        var(--green-border);
+}
+
+.value-item strong{
+
+    display:block;
+
+    color:var(--black);
+
+    font-size:0.74rem;
+
+    font-weight:700;
+
+    line-height:1.4;
+
+    margin-bottom:0.2rem;
+}
+
+.value-item span{
+
+    display:block;
+
+    color:var(--text);
+
+    font-size:0.68rem;
+
+    line-height:1.55;
+}
+
+
+/* =========================================================
+   FOUNDER SECTION
+========================================================= */
+
+.founder-section{
+
+    width:100%;
+
+    background:
+        var(--light);
+
+    border-top:
+        0.1rem solid var(--border);
+
+    border-bottom:
+        0.1rem solid var(--border);
+
+    padding:
+        2.4rem 1.55rem;
+}
+
+.founder-container{
+
+    width:100%;
+
+    max-width:75rem;
+
+    margin:0 auto;
+}
+
+.founder-content{
+
+    max-width:62.5rem;
+
+    position:relative;
+
+    padding-left:1.15rem;
+}
+
+
+/* GREEN FOUNDER BAR */
+
+.founder-content::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:0.22rem;
+    height:100%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            var(--primary),
+            var(--primary-dark)
+        );
+
+    border-radius:0.2rem;
+}
+
+.founder-content h2{
+
+    color:var(--black);
+
+    font-size:0.98rem;
+
+    font-weight:700;
+
+    line-height:1.35;
+
+    margin-bottom:0.65rem;
+}
+
+.founder-content p{
+
+    max-width:59rem;
+
+    color:var(--text);
+
+    font-size:0.72rem;
+
+    line-height:1.65;
+
+    margin-bottom:0.55rem;
+}
+
+.founder-content p:last-child{
+    margin-bottom:0;
+}
+
+.founder-name{
+
+    color:var(--primary-dark);
+
+    font-weight:700;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer{
+
+    width:100%;
+
+    background:
+        #000000;
+
+    color:#ffffff;
+
+    padding:
+        2.5rem 1.55rem 1.25rem;
+}
+
+.footer-container{
+
+    width:100%;
+
+    max-width:75rem;
+
+    margin:0 auto;
+
+    text-align:center;
+}
+
+.footer-container h3{
+
+    color:#ffffff;
+
+    font-size:0.84rem;
+
+    font-weight:700;
+
+    line-height:1.35;
+
+    margin-bottom:0.4rem;
+}
+
+.footer-tagline{
+
+    color:#dddddd;
+
+    font-size:0.70rem;
+
+    line-height:1.5;
+
+    margin-bottom:0.65rem;
+}
+
+.footer-services{
+
+    color:#ffffff;
+
+    font-size:0.62rem;
+
+    line-height:1.6;
+
+    margin-bottom:0.6rem;
+}
+
+.footer-founder{
+
+    color:#cccccc;
+
+    font-size:0.64rem;
+
+    line-height:1.5;
+
+    margin-bottom:1.3rem;
+}
+
+.footer-bottom{
+
+    border-top:
+        0.1rem solid #2d2d2d;
+
+    padding-top:0.8rem;
+
+    color:#999999;
+   font-weight: bold;
+    font-size:0.59rem;
+
+    line-height:1.5;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width:900px){
+
+    .about-cards{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+    }
+
+    .content-container,
+    .founder-content{
+
+        max-width:100%;
+    }
+}
+.footer-privacy {
+    margin: 0 0 8px;
+    padding: 0;
+}
+
+.footer-privacy a {
+    color: #ffffff;
+    font-size: 0.65rem;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.footer-privacy a:hover {
+    opacity: 0.7;
+}
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width:600px){
+
+    body{
+
+        font-size:0.75rem;
+
+        line-height:1.55;
+    }
+
+
+    /* HEADER */
+
+    .header-container{
+
+        min-height:4.05rem;
+
+        padding:
+            0 1.1rem;
+    }
+
+    .site-logo img{
+
+        width:8.75rem;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header{
+
+        padding:
+            2.65rem 1.1rem 1.9rem;
+    }
+
+    .page-title-wrapper{
+
+        padding-left:1rem;
+    }
+
+    .page-title-wrapper::before{
+
+        width:0.18rem;
+    }
+
+    .page-title-wrapper h1{
+
+        font-size:1.16rem;
+
+        margin-bottom:0.35rem;
+    }
+
+    .page-title-wrapper p{
+
+        font-size:0.68rem;
+
+        line-height:1.55;
+    }
+
+
+    /* CONTENT */
+
+    .about-content{
+
+        padding:
+            0 1.1rem 3.2rem;
+    }
+
+    .about-section{
+
+        margin-bottom:2.15rem;
+    }
+
+    .about-section h2{
+
+        font-size:0.91rem;
+
+        padding-left:0.65rem;
+
+        margin-bottom:0.6rem;
+    }
+
+    .about-section h2::before{
+
+        width:0.16rem;
+
+        height:0.9rem;
+    }
+
+    .about-section h3{
+
+        font-size:0.78rem;
+    }
+
+    .about-section p{
+
+        font-size:0.70rem;
+
+        line-height:1.65;
+
+        margin-bottom:0.55rem;
+    }
+
+
+    /* LIST */
+
+    .about-list{
+
+        padding-left:1rem;
+    }
+
+    .about-list li{
+
+        font-size:0.69rem;
+
+        margin-bottom:0.35rem;
+    }
+
+
+    /* CARDS */
+
+    .about-cards{
+
+        grid-template-columns:1fr;
+
+        gap:0.75rem;
+
+        margin:
+            1rem 0 2.1rem;
+    }
+
+    .about-card{
+
+        min-height:auto;
+
+        padding:
+            1rem 0.9rem 0.95rem 1.2rem;
+    }
+
+    .about-card h3{
+
+        font-size:0.77rem;
+    }
+
+    .about-card p{
+
+        font-size:0.68rem;
+
+        line-height:1.6;
+    }
+
+
+    /* MISSION / VISION */
+
+    .mission-vision{
+
+        grid-template-columns:1fr;
+
+        gap:0.75rem;
+
+        margin-top:0.8rem;
+    }
+
+    .mission-box,
+    .vision-box{
+
+        padding:
+            1rem;
+    }
+
+    .mission-box h3,
+    .vision-box h3{
+
+        font-size:0.77rem;
+    }
+
+    .mission-box p,
+    .vision-box p{
+
+        font-size:0.69rem;
+    }
+
+
+    /* VALUES */
+
+    .values-grid{
+
+        grid-template-columns:1fr;
+
+        gap:0.6rem;
+
+        margin-top:0.8rem;
+    }
+
+    .value-item{
+
+        padding:
+            0.65rem 0.75rem;
+    }
+
+    .value-item strong{
+
+        font-size:0.71rem;
+    }
+
+    .value-item span{
+
+        font-size:0.66rem;
+    }
+
+
+    /* FOUNDER */
+
+    .founder-section{
+
+        padding:
+            2rem 1.1rem;
+    }
+
+    .founder-content{
+
+        padding-left:1rem;
+    }
+
+    .founder-content::before{
+
+        width:0.18rem;
+    }
+
+    .founder-content h2{
+
+        font-size:0.91rem;
+    }
+
+    .founder-content p{
+
+        font-size:0.69rem;
+
+        line-height:1.6;
+    }
+
+
+    /* FOOTER */
+
+    .site-footer{
+
+        padding:
+            2.1rem 1.1rem 1.1rem;
+    }
+
+    .footer-container h3{
+
+        font-size:0.78rem;
+    }
+
+    .footer-tagline{
+
+        font-size:0.66rem;
+    }
+
+    .footer-services{
+
+        font-size:0.58rem;
+    }
+
+    .footer-founder{
+
+        font-size:0.60rem;
+
+        margin-bottom:1.1rem;
+    }
+
+    .footer-bottom{
+
+        font-size:0.56rem;
+
+        padding-top:0.7rem;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width:380px){
+
+    .site-logo img{
+        width:8.1rem;
+    }
+
+    .page-header{
+        padding-top:2.2rem;
+    }
+
+    .page-title-wrapper h1{
+        font-size:1.08rem;
+    }
+
+    .about-section h2{
+        font-size:0.87rem;
+    }
+
+    .about-section p{
+        font-size:0.68rem;
+    }
+
+    .about-card p{
+        font-size:0.66rem;
+    }
+
+    .footer-services{
+        font-size:0.55rem;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+
+    *{
+        transition:none !important;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =================================================
+     HEADER
+================================================= -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a
+            href="index.html"
+            class="site-logo"
+            aria-label="Goreale Agricultural Innovators Home"
+        >
+
+            <img
+                src="goreale_logo.png"
+                alt="Goreale Agricultural Innovators"
+            >
+
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =================================================
+     PAGE TITLE
+================================================= -->
+
+<section class="page-header">
+
+    <div class="page-title-wrapper">
+
+        <h1>
+            About Us
+        </h1>
+
+        <p>
+            Discover who we are, what drives us and our commitment
+            to sustainable agriculture and environmental conservation.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     ABOUT CONTENT
+================================================= -->
+
+<main class="about-content">
+
+    <div class="content-container">
+
+
+        <!-- WHO WE ARE -->
+
+        <section class="about-section">
+
+            <h2>
+                Who We Are
+            </h2>
+
+            <p>
+                Goreale Agricultural Innovators is a youth-led agricultural
+                and environmental initiative founded by
+                <strong>Samira Abdirahman Maalim</strong> to promote climate-smart
+                agriculture, efficient water use, sustainable farming and
+                environmental conservation in Goreale and surrounding
+                communities in Kenya.
+            </p>
+
+            <p>
+                We believe that communities with agricultural land can create
+                stronger and more sustainable livelihoods when farmers have
+                access to practical knowledge, appropriate technology and
+                opportunities to test innovative farming solutions.
+            </p>
+
+            <p>
+                Our work focuses on connecting agriculture, technology,
+                water efficiency, environmental conservation and youth
+                participation to address challenges affecting farming
+                communities.
+            </p>
+
+            <p>
+                Goreale Agricultural Innovators seeks to create a practical
+                platform where farmers, young people, students, agricultural
+                professionals, community organizations, researchers,
+                development partners and other stakeholders can exchange
+                knowledge, develop ideas and work together on solutions
+                that respond to local agricultural and environmental needs.
+            </p>
+
+        </section>
+
+
+
+        <!-- OUR PURPOSE -->
+
+        <section class="about-section">
+
+            <h2>
+                Our Purpose
+            </h2>
+
+            <p>
+                Agriculture remains an important source of food, employment
+                and livelihood for many communities. However, farmers
+                increasingly face challenges associated with unpredictable
+                rainfall, water scarcity, land degradation, changing weather
+                patterns, crop losses, limited access to appropriate
+                technologies and inadequate access to agricultural knowledge.
+            </p>
+
+            <p>
+                Goreale Agricultural Innovators was established to contribute
+                practical ideas and community-based approaches to these
+                challenges.
+            </p>
+
+            <p>
+                We aim to encourage farmers and young people to view
+                agricultural challenges not only as problems, but also as
+                opportunities for innovation, experimentation, learning and
+                sustainable development.
+            </p>
+
+        </section>
+
+
+
+        <!-- WHAT WE BELIEVE -->
+
+        <section class="about-section">
+
+            <h2>
+                What We Believe
+            </h2>
+
+            <p>
+                We believe sustainable agricultural development begins with
+                communities. Solutions are more effective when farmers,
+                young people, local leaders, technical experts, schools,
+                organizations and other stakeholders participate in identifying
+                challenges and developing practical responses.
+            </p>
+
+            <p>
+                We also believe that innovation does not always require
+                expensive technology. Simple, affordable and locally appropriate
+                solutions can make a significant difference when they are
+                properly understood, tested, adapted and adopted by communities.
+            </p>
+
+            <p>
+                Our approach therefore combines local knowledge with modern
+                agricultural practices, technology, research, experimentation
+                and community participation.
+            </p>
+
+        </section>
+
+
+
+        <!-- FOCUS AREAS -->
+
+        <section class="about-section">
+
+            <h2>
+                Our Focus Areas
+            </h2>
+
+            <div class="about-cards">
+
+                <div class="about-card">
+
+                    <h3>
+                        Climate-Smart Agriculture
+                    </h3>
+
+                    <p>
+                        Promoting agricultural practices that help farmers
+                        improve productivity while strengthening resilience
+                        to climate variability and environmental challenges.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <h3>
+                        Water Efficiency
+                    </h3>
+
+                    <p>
+                        Encouraging responsible and efficient use of water
+                        through practical irrigation approaches, water
+                        conservation and improved agricultural practices.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <h3>
+                        Sustainable Farming
+                    </h3>
+
+                    <p>
+                        Supporting farming methods that protect soil,
+                        improve crop management, maintain productivity and
+                        contribute to long-term food security.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <h3>
+                        Environmental Conservation
+                    </h3>
+
+                    <p>
+                        Supporting tree planting, environmental restoration,
+                        natural resource protection and community awareness
+                        against environmental degradation.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <h3>
+                        Youth Participation
+                    </h3>
+
+                    <p>
+                        Creating opportunities for young people to participate
+                        in agriculture, environmental action, innovation,
+                        research, volunteering and community development.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <h3>
+                        Agricultural Innovation
+                    </h3>
+
+                    <p>
+                        Encouraging practical ideas, pilot projects and
+                        technologies that can help farmers address production,
+                        water, environmental and market-related challenges.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- OUR APPROACH -->
+
+        <section class="about-section">
+
+            <h2>
+                Our Approach
+            </h2>
+
+            <p>
+                Our approach is practical, participatory and community-focused.
+                We seek to move beyond discussions by encouraging field
+                activities, demonstrations, learning sessions, pilot projects,
+                research and collaboration.
+            </p>
+
+            <p>
+                We work toward creating opportunities where farmers can see,
+                test and learn about practical agricultural technologies and
+                management practices before making decisions about adoption.
+            </p>
+
+            <p>
+                We also recognize the importance of knowledge sharing. Farmers
+                possess valuable local experience, while agricultural experts,
+                researchers and young innovators can contribute new ideas and
+                technical perspectives. Bringing these forms of knowledge
+                together can strengthen community solutions.
+            </p>
+
+        </section>
+
+
+
+        <!-- COMMUNITY PARTICIPATION -->
+
+        <section class="about-section">
+
+            <h2>
+                Community Participation
+            </h2>
+
+            <p>
+                Goreale Agricultural Innovators encourages active participation
+                from farmers, youth, students, schools, community organizations,
+                local leaders, agricultural professionals, environmental
+                practitioners, researchers, development partners and supporters.
+            </p>
+
+            <p>
+                Community members can participate through agricultural
+                demonstrations, climate-smart farming activities, tree planting,
+                environmental restoration, research, training, volunteering,
+                pilot projects and sharing innovative ideas.
+            </p>
+
+            <p>
+                Through collective action, we aim to strengthen local capacity
+                and encourage communities to develop solutions that are
+                appropriate to their environmental, agricultural and economic
+                circumstances.
+            </p>
+
+        </section>
+
+
+
+        <!-- MISSION & VISION -->
+
+        <section class="about-section">
+
+            <h2>
+                Our Mission and Vision
+            </h2>
+
+            <div class="mission-vision">
+
+                <div class="mission-box">
+
+                    <h3>
+                        Our Mission
+                    </h3>
+
+                    <p>
+                        To promote practical agricultural innovation,
+                        climate-smart farming, efficient water use,
+                        environmental conservation and youth participation
+                        to strengthen resilient and sustainable farming
+                        communities.
+                    </p>
+
+                </div>
+
+
+                <div class="vision-box">
+
+                    <h3>
+                        Our Vision
+                    </h3>
+
+                    <p>
+                        A productive, climate-resilient and environmentally
+                        responsible agricultural community where farmers,
+                        young people and partners work together to create
+                        sustainable livelihoods and protect natural resources.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- OUR OBJECTIVES -->
+
+        <section class="about-section">
+
+            <h2>
+                Our Objectives
+            </h2>
+
+            <ul class="about-list">
+
+                <li>
+                    Promote climate-smart and sustainable agricultural practices.
+                </li>
+
+                <li>
+                    Encourage efficient and responsible use of agricultural water.
+                </li>
+
+                <li>
+                    Support farmers in accessing practical agricultural
+                    knowledge and appropriate technologies.
+                </li>
+
+                <li>
+                    Encourage youth participation in agriculture and
+                    environmental innovation.
+                </li>
+
+                <li>
+                    Promote tree planting, restoration and protection of
+                    natural resources.
+                </li>
+
+                <li>
+                    Encourage community action against deforestation and
+                    environmental degradation.
+                </li>
+
+                <li>
+                    Support agricultural research, experimentation and
+                    demonstration activities.
+                </li>
+
+                <li>
+                    Create opportunities for partnerships and collaboration
+                    between communities, experts, organizations and institutions.
+                </li>
+
+                <li>
+                    Promote knowledge sharing and practical agricultural
+                    education.
+                </li>
+
+                <li>
+                    Contribute to improved food security, resilience and
+                    sustainable livelihoods.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+
+        <!-- OUR VALUES -->
+
+        <section class="about-section">
+
+            <h2>
+                Our Values
+            </h2>
+
+            <div class="values-grid">
+
+                <div class="value-item">
+
+                    <strong>
+                        Innovation
+                    </strong>
+
+                    <span>
+                        We encourage practical ideas and creative approaches
+                        to agricultural and environmental challenges.
+                    </span>
+
+                </div>
+
+
+                <div class="value-item">
+
+                    <strong>
+                        Sustainability
+                    </strong>
+
+                    <span>
+                        We promote solutions that protect resources and
+                        support long-term community wellbeing.
+                    </span>
+
+                </div>
+
+
+                <div class="value-item">
+
+                    <strong>
+                        Community
+                    </strong>
+
+                    <span>
+                        We believe communities should participate actively
+                        in identifying and solving local challenges.
+                    </span>
+
+                </div>
+
+
+                <div class="value-item">
+
+                    <strong>
+                        Knowledge Sharing
+                    </strong>
+
+                    <span>
+                        We value learning, experience exchange, research and
+                        practical agricultural education.
+                    </span>
+
+                </div>
+
+
+                <div class="value-item">
+
+                    <strong>
+                        Environmental Responsibility
+                    </strong>
+
+                    <span>
+                        We promote responsible use and protection of land,
+                        water, forests and other natural resources.
+                    </span>
+
+                </div>
+
+
+                <div class="value-item">
+
+                    <strong>
+                        Youth Leadership
+                    </strong>
+
+                    <span>
+                        We believe young people can contribute meaningfully
+                        to agricultural innovation and environmental action.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FUTURE DIRECTION -->
+
+        <section class="about-section">
+
+            <h2>
+                Looking Ahead
+            </h2>
+
+            <p>
+                Goreale Agricultural Innovators seeks to grow as a practical
+                platform for agricultural and environmental innovation.
+                As the initiative develops, we aim to establish stronger
+                community partnerships, support more demonstration activities,
+                expand research and learning opportunities, and connect local
+                innovators with organizations and institutions that can help
+                turn ideas into practical solutions.
+            </p>
+
+            <p>
+                We see significant opportunities in areas such as efficient
+                irrigation, climate-resilient crops, sustainable soil
+                management, environmental restoration, tree planting,
+                agricultural technology, youth entrepreneurship and community
+                research.
+            </p>
+
+            <p>
+                Our long-term goal is to contribute to communities where
+                agriculture remains productive while natural resources are
+                protected for future generations.
+            </p>
+
+        </section>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- =================================================
+     FOUNDER
+================================================= -->
+
+<section class="founder-section">
+
+    <div class="founder-container">
+
+        <div class="founder-content">
+
+            <h2>
+                Founder and Leadership
+            </h2>
+
+            <p>
+                Goreale Agricultural Innovators was founded and is led by
+                <span class="founder-name">
+                    Samira Abdirahman Maalim 
+                </span>.
+            </p>
+
+            <p>
+                The initiative is built around a vision of empowering young
+                people and farming communities to participate in agricultural
+                innovation, environmental conservation and sustainable
+                development.
+            </p>
+
+            <p>
+                Through collaboration, practical learning and community action,
+                the initiative seeks to create opportunities for people to
+                contribute their knowledge, skills, ideas and resources toward
+                a more resilient agricultural future.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     FOOTER
+================================================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <h3>
+            Goreale Agricultural Innovators
+        </h3>
+
+        <p class="footer-tagline">
+            Innovating Agriculture. Conserving Water. Restoring Nature.
+        </p>
+
+        <p class="footer-services">
+            Climate-Smart Agriculture |
+            Water Efficiency |
+            Crop Protection |
+            Tree Planting |
+            Environmental Conservation
+        </p>
+
+        <p class="footer-founder">
+            Founded and led by Samira Abdirahman Maalim 
+        </p>
+        
+
+        <div class="footer-bottom">
+            © 2026 Goreale Agricultural Innovators.
+            All rights reserved.
+        </div>
+        <p class="footer-privacy">
+    <a href="privacy_policy.html">
+        Privacy Policy
+    </a>
+</p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

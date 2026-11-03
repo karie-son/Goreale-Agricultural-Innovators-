@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact Goreale Agricultural Innovators for partnerships, agricultural innovation, environmental conservation, youth participation and community development.">
+
+    <title>Contact Us | Goreale Agricultural Innovators</title>
+
+
+    <style>
+
+        /* =========================================
+           RESET
+        ========================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 100%;
+        }
+
+        body {
+            background: #ffffff;
+            color: #222222;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            font-size: 0.84rem;
+            line-height: 1.65;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =========================================
+           CORPORATE VARIABLES
+        ========================================= */
+
+        :root {
+
+            --corporate-black: #000000;
+
+            --black-text: #222222;
+
+            --soft-black: #444444;
+
+            --muted: #666666;
+
+            --white: #ffffff;
+
+            --light-grey: #f7f7f7;
+
+            --border: #e5e5e5;
+
+        }
+
+
+        /* =========================================
+           HEADER
+        ========================================= */
+
+        .site-header {
+
+            width: 100%;
+
+            background: var(--white);
+
+            border-bottom:
+                1px solid var(--border);
+
+        }
+
+        .header-container {
+
+            width: 100%;
+
+            max-width: 1200px;
+
+            min-height: 4.5rem;
+
+            margin: auto;
+
+            padding:
+                0 1.5rem;
+
+            display: flex;
+
+            align-items: center;
+
+        }
+
+
+        /* =========================================
+           LOGO
+        ========================================= */
+
+        .site-logo {
+
+            display: flex;
+
+            align-items: center;
+
+        }
+
+        .site-logo img {
+
+            width: 9.5rem;
+
+            height: auto;
+
+        }
+
+
+        /* =========================================
+           PAGE HEADER
+        ========================================= */
+
+        .page-header {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            padding:
+                3.5rem 1.5rem 2.2rem;
+
+        }
+
+        .page-title-wrapper {
+
+            position: relative;
+
+            padding-left: 1.15rem;
+
+        }
+
+
+        /* BLACK VERTICAL BAR */
+
+        .page-title-wrapper::before {
+
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+
+            top: 0;
+
+            width: 0.25rem;
+
+            height: 100%;
+
+            background:
+                var(--corporate-black);
+
+            border-radius:
+                0.2rem;
+
+        }
+
+        .page-title-wrapper h1 {
+
+            color: #111111;
+
+            font-size: 1.45rem;
+
+            line-height: 1.25;
+
+            margin-bottom:
+                0.4rem;
+
+            font-weight: 700;
+
+        }
+
+        .page-title-wrapper p {
+
+            color: var(--muted);
+
+            font-size: 0.78rem;
+
+            max-width: 52rem;
+
+        }
+
+
+        /* =========================================
+           MAIN CONTENT
+        ========================================= */
+
+        .contact-content {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            padding:
+                0 1.5rem 4rem;
+
+        }
+
+        .content-container {
+
+            max-width: 62rem;
+
+        }
+
+
+        /* =========================================
+           INTRODUCTION
+        ========================================= */
+
+        .contact-introduction {
+
+            margin-bottom:
+                2.5rem;
+
+        }
+
+        .contact-introduction h2 {
+
+            color: #111111;
+
+            font-size: 1.05rem;
+
+            margin-bottom:
+                0.65rem;
+
+        }
+
+        .contact-introduction p {
+
+            color: var(--soft-black);
+
+            font-size: 0.8rem;
+
+            margin-bottom:
+                0.7rem;
+
+        }
+
+
+        /* =========================================
+           CONTACT CARDS
+        ========================================= */
+
+        .contact-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 1.1rem;
+
+            margin-bottom:
+                2.8rem;
+
+        }
+
+        .contact-card {
+
+            position: relative;
+
+            background:
+                var(--white);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                0.35rem;
+
+            padding:
+                1.35rem 1.3rem 1.35rem 1.6rem;
+
+            box-shadow:
+                0 0.25rem 1rem
+                rgba(0, 0, 0, 0.035);
+
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+
+        }
+
+        .contact-card::before {
+
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+
+            top: 0;
+
+            width: 0.25rem;
+
+            height: 100%;
+
+            background:
+                var(--corporate-black);
+
+            border-radius:
+                0.35rem 0 0 0.35rem;
+
+        }
+
+        .contact-card:hover {
+
+            transform:
+                translateY(-0.15rem);
+
+            box-shadow:
+                0 0.6rem 1.4rem
+                rgba(0, 0, 0, 0.06);
+
+        }
+
+        .contact-card h3 {
+
+            color: #111111;
+
+            font-size: 0.92rem;
+
+            margin-bottom:
+                0.55rem;
+
+        }
+
+        .contact-card p {
+
+            color: var(--soft-black);
+
+            font-size: 0.78rem;
+
+            margin-bottom:
+                0.4rem;
+
+        }
+
+        .contact-card strong {
+
+            color: #111111;
+
+            font-size: 0.78rem;
+
+        }
+
+
+        /* =========================================
+           CONTACT DETAILS
+        ========================================= */
+
+        .contact-details {
+
+            margin-bottom:
+                2.8rem;
+
+        }
+
+        .contact-details h2 {
+
+            color: #111111;
+
+            font-size: 1.05rem;
+
+            margin-bottom:
+                1rem;
+
+        }
+
+        .details-list {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 0.85rem 1.1rem;
+
+        }
+
+        .detail-item {
+
+            position: relative;
+
+            background:
+                var(--light-grey);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                0.3rem;
+
+            padding:
+                0.9rem 1rem 0.9rem 1.3rem;
+
+        }
+
+        .detail-item::before {
+
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+
+            top: 0;
+
+            width: 0.22rem;
+
+            height: 100%;
+
+            background:
+                var(--corporate-black);
+
+            border-radius:
+                0.3rem 0 0 0.3rem;
+
+        }
+
+        .detail-item strong {
+
+            display: block;
+
+            color: #111111;
+
+            font-size: 0.76rem;
+
+            margin-bottom:
+                0.25rem;
+
+        }
+
+        .detail-item span {
+
+            color: var(--soft-black);
+
+            font-size: 0.76rem;
+
+        }
+
+
+        /* =========================================
+           CLICKABLE CONTACT LINK
+        ========================================= */
+
+        .contact-link {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 0.35rem;
+
+            color: #000000;
+
+            font-size: 0.76rem;
+
+            font-weight: 600;
+
+            margin-bottom:
+                0.2rem;
+
+            transition:
+                opacity 0.2s ease,
+                transform 0.2s ease;
+
+        }
+
+        .contact-link:hover {
+
+            opacity: 0.6;
+
+            transform:
+                translateX(0.1rem);
+
+        }
+
+        .contact-icon {
+
+            font-size: 0.82rem;
+
+            line-height: 1;
+
+        }
+
+
+        /* =========================================
+           CONNECT SECTION
+        ========================================= */
+
+        .connect-section {
+
+            margin-bottom:
+                2.8rem;
+
+        }
+
+        .connect-section h2 {
+
+            color: #111111;
+
+            font-size: 1.05rem;
+
+            margin-bottom:
+                0.55rem;
+
+        }
+
+        .connect-section > p {
+
+            color: var(--soft-black);
+
+            font-size: 0.8rem;
+
+            margin-bottom:
+                1.2rem;
+
+        }
+
+        .social-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 1.1rem;
+
+        }
+
+        .social-card {
+
+            position: relative;
+
+            background:
+                var(--white);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                0.35rem;
+
+            padding:
+                1.2rem 1.3rem 1.2rem 1.55rem;
+
+            box-shadow:
+                0 0.25rem 1rem
+                rgba(0, 0, 0, 0.035);
+
+        }
+
+        .social-card::before {
+
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+
+            top: 0;
+
+            width: 0.25rem;
+
+            height: 100%;
+
+            background:
+                var(--corporate-black);
+
+            border-radius:
+                0.35rem 0 0 0.35rem;
+
+        }
+
+        .social-card h3 {
+
+            color: #111111;
+
+            font-size: 0.88rem;
+
+            margin-bottom:
+                0.4rem;
+
+        }
+
+        .social-card p {
+
+            color: var(--soft-black);
+
+            font-size: 0.76rem;
+
+            margin-bottom:
+                0.7rem;
+
+        }
+
+        .social-card a {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 0.35rem;
+
+            color: #000000;
+
+            font-size: 0.75rem;
+
+            font-weight: 600;
+
+            border-bottom:
+                1px solid #000000;
+
+            padding-bottom:
+                0.12rem;
+
+        }
+
+
+        /* =========================================
+           PARTNERSHIP
+        ========================================= */
+
+        .partnership-section {
+
+            position: relative;
+
+            background:
+                var(--light-grey);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                0.35rem;
+
+            padding:
+                1.45rem 1.5rem 1.45rem 1.7rem;
+
+            margin-bottom:
+                1.2rem;
+
+        }
+
+        .partnership-section::before {
+
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+
+            top: 0;
+
+            width: 0.25rem;
+
+            height: 100%;
+
+            background:
+                var(--corporate-black);
+
+            border-radius:
+                0.35rem 0 0 0.35rem;
+
+        }
+
+        .partnership-section h2 {
+
+            color: #111111;
+
+            font-size: 1rem;
+
+            margin-bottom:
+                0.55rem;
+
+        }
+
+        .partnership-section p {
+
+            color: var(--soft-black);
+
+            font-size: 0.78rem;
+
+            margin-bottom:
+                0.8rem;
+
+        }
+
+        .partnership-list {
+
+            padding-left:
+                1.15rem;
+
+        }
+
+        .partnership-list li {
+
+            color: var(--soft-black);
+
+            font-size: 0.75rem;
+
+            margin-bottom:
+                0.3rem;
+
+        }
+
+
+        /* =========================================
+           CLOSING MESSAGE
+        ========================================= */
+
+        .closing-message {
+
+            text-align: center;
+
+            padding:
+                2rem 1rem 0.5rem;
+
+        }
+
+        .closing-message h2 {
+
+            color: #111111;
+
+            font-size: 0.95rem;
+
+            margin-bottom:
+                0.45rem;
+
+        }
+
+        .closing-message p {
+
+            color: var(--soft-black);
+
+            font-size: 0.76rem;
+
+        }
+
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        .site-footer {
+
+            background:
+                #000000;
+
+            color:
+                #ffffff;
+
+            padding:
+                2.5rem 1.5rem 1.2rem;
+
+        }
+
+        .footer-container {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            text-align: center;
+
+        }
+
+        .footer-container h3 {
+
+            color: #ffffff;
+
+            font-size: 0.9rem;
+
+            margin-bottom:
+                0.4rem;
+
+        }
+
+        .footer-tagline {
+
+            color: #dddddd;
+
+            font-size: 0.76rem;
+
+            margin-bottom:
+                0.7rem;
+
+        }
+
+        .footer-services {
+
+            color: #ffffff;
+
+            font-size: 0.68rem;
+
+            margin-bottom:
+                0.65rem;
+
+        }
+
+        .footer-founder {
+
+            color: #dddddd;
+
+            font-size: 0.7rem;
+
+            margin-bottom:
+                1.3rem;
+
+        }
+
+        .footer-bottom {
+
+            border-top:
+                1px solid #333333;
+
+            padding-top:
+                0.9rem;
+
+            color: #aaaaaa;
+
+            font-size: 0.66rem;
+
+        }
+
+
+        /* =========================================
+           TABLET
+        ========================================= */
+
+        @media (max-width: 800px) {
+
+            .contact-grid,
+            .details-list,
+            .social-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+
+        /* =========================================
+           MOBILE
+        ========================================= */
+
+        @media (max-width: 600px) {
+
+            body {
+
+                font-size:
+                    0.8rem;
+
+            }
+
+            .header-container {
+
+                min-height:
+                    4rem;
+
+                padding:
+                    0 1.1rem;
+
+            }
+
+            .site-logo img {
+
+                width:
+                    8.5rem;
+
+            }
+
+            .page-header {
+
+                padding:
+                    2.8rem 1.1rem 1.8rem;
+
+            }
+
+            .page-title-wrapper {
+
+                padding-left:
+                    1rem;
+
+            }
+
+            .page-title-wrapper h1 {
+
+                font-size:
+                    1.25rem;
+
+            }
+
+            .page-title-wrapper p {
+
+                font-size:
+                    0.72rem;
+
+            }
+
+            .contact-content {
+
+                padding:
+                    0 1.1rem 3rem;
+
+            }
+
+            .contact-introduction h2,
+            .contact-details h2,
+            .connect-section h2 {
+
+                font-size:
+                    0.95rem;
+
+            }
+
+            .contact-introduction p {
+
+                font-size:
+                    0.76rem;
+
+            }
+
+            .contact-card {
+
+                padding:
+                    1.1rem 1rem 1.1rem 1.3rem;
+
+            }
+
+            .contact-card h3 {
+
+                font-size:
+                    0.84rem;
+
+            }
+
+            .contact-card p,
+            .contact-card strong {
+
+                font-size:
+                    0.74rem;
+
+            }
+
+            .detail-item {
+
+                padding:
+                    0.8rem 0.85rem 0.8rem 1.1rem;
+
+            }
+
+            .detail-item strong,
+            .detail-item span,
+            .contact-link {
+
+                font-size:
+                    0.72rem;
+
+            }
+
+            .partnership-section {
+
+                padding:
+                    1.2rem 1rem 1.2rem 1.35rem;
+
+            }
+
+            .partnership-section h2 {
+
+                font-size:
+                    0.9rem;
+
+            }
+
+            .partnership-list li {
+
+                font-size:
+                    0.7rem;
+
+            }
+
+            .site-footer {
+
+                padding:
+                    2.2rem 1.1rem 1rem;
+
+            }
+
+        }
+
+
+        /* =========================================
+           VERY SMALL DEVICES
+        ========================================= */
+
+        @media (max-width: 380px) {
+
+            .site-logo img {
+
+                width:
+                    8rem;
+
+            }
+
+            .page-title-wrapper h1 {
+
+                font-size:
+                    1.18rem;
+
+            }
+
+            .contact-card {
+
+                padding:
+                    1rem 0.85rem 1rem 1.2rem;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="index.html"
+               class="site-logo"
+               aria-label="Goreale Agricultural Innovators Home">
+
+                <img src="goreale_logo.png"
+                     alt="Goreale Agricultural Innovators Logo">
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+         PAGE HEADER
+    ========================================== -->
+
+    <section class="page-header">
+
+        <div class="page-title-wrapper">
+
+            <h1>Contact Us</h1>
+
+            <p>
+                Connect with Goreale Agricultural Innovators
+                for participation, partnership and collaboration.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
+
+    <main class="contact-content">
+
+        <div class="content-container">
+
+
+            <!-- INTRODUCTION -->
+
+            <section class="contact-introduction">
+
+                <h2>Let’s Work Together</h2>
+
+                <p>
+                    Interested in supporting, partnering with, or
+                    participating in Goreale Agricultural Innovators?
+                    We would be happy to hear from you.
+                </p>
+
+                <p>
+                    Whether you are a farmer, young innovator,
+                    community member, organization, development
+                    partner, agricultural expert, school, or
+                    potential supporter, you can reach out to learn
+                    more about our activities and opportunities
+                    for collaboration.
+                </p>
+
+            </section>
+
+
+
+            <!-- =====================================
+                 CONTACT INFORMATION
+            ====================================== -->
+
+            <section class="contact-grid">
+
+
+                <div class="contact-card">
+
+                    <h3>
+                        Goreale Agricultural Innovators
+                    </h3>
+
+                    <p>
+
+                        <strong>
+                            📍 Location
+                        </strong>
+
+                        <br>
+
+                        <a
+                            class="contact-link"
+                            href="https://www.google.com/maps/search/?api=1&query=Goreale%20Ward%2C%20Lagdera%20Constituency%2C%20Kenya"
+                            target="_blank"
+                            rel="noopener">
+
+                            <span class="contact-icon">📍</span>
+
+                            Goreale Ward, Lagdera Constituency,
+                            Kenya
+
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <strong>
+                            👤 Project Lead
+                        </strong>
+
+                        <br>
+
+                        Samira Abdirahman Maalim 
+
+                    </p>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <h3>
+                        Our Focus
+                    </h3>
+
+                    <p>
+                        🌱 Climate-Smart Agriculture
+                    </p>
+
+                    <p>
+                        💧 Water Efficiency
+                    </p>
+
+                    <p>
+                        🌾 Sustainable Crop Production
+                    </p>
+
+                    <p>
+                        🌳 Environmental Conservation
+                    </p>
+
+                </div>
+
+
+            </section>
+
+
+
+   <!-- CONTACT DETAILS -->
+
+<div class="detail-item">
+
+    <strong>
+        <span class="contact-title-icon">☎</span>
+        Telephone
+    </strong>
+
+    <span>
+
+        <!-- PHONE 1 -->
+        <a class="contact-link"
+           href="tel:+254728227063">
+
+            <span class="contact-icon">☎</span>
+            +254 728 227063
+
+        </a>
+
+        <br>
+
+        <!-- PHONE 2 -->
+        <a class="contact-link"
+           href="tel:+254705299600">
+
+            <span class="contact-icon">☎</span>
+            +254 705 299 600
+
+        </a>
+
+    </span>
+
+</div>
+
+
+<!-- WHATSAPP -->
+
+<div class="detail-item">
+
+    <strong>
+        <span class="contact-title-icon">◉</span>
+        WhatsApp
+    </strong>
+
+    <span>
+
+        <!-- WHATSAPP 1 -->
+        <a class="contact-link"
+           href="https://wa.me/254722746165"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <span class="contact-icon">◉</span>
+            +254 728227063
+
+        </a>
+
+        <br>
+
+        <!-- WHATSAPP 2 -->
+        <a class="contact-link"
+           href="https://wa.me/254705299600"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <span class="contact-icon">◉</span>
+            +254 705 299 600
+
+        </a>
+
+    </span>
+
+</div>
+
+
+<!-- EMAIL -->
+
+<div class="detail-item">
+
+    <strong>
+        <span class="contact-title-icon">✉</span>
+        Email
+    </strong>
+
+    <span>
+
+        <!-- EMAIL 1 -->
+        <a class="contact-link"
+           href="mailto:saamabirahman2000@gmail.com">
+
+            <span class="contact-icon">✉</span>
+            saamabdirahman2000@gmail.com
+
+        </a>
+
+        <br>
+
+        <!-- EMAIL 2 -->
+        <a class="contact-link"
+           href="mailto:sonfkarie@gmail.com">
+
+            <span class="contact-icon">✉</span>
+            mrshabon22@gmail.com
+
+        </a>
+
+    </span>
+
+</div>
+
+
+<!-- LOCATION -->
+
+<div class="detail-item">
+
+    <strong>
+        <span class="contact-title-icon">📍</span>
+        Location
+    </strong>
+
+    <span>
+
+        <a class="contact-link"
+           href="https://www.google.com/maps/search/?api=1&query=Goreale%20Ward%2C%20Lagdera%20Constituency%2C%20Kenya"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <span class="contact-icon">📍</span>
+            Open Location in Google Maps
+
+        </a>
+
+    </span>
+
+</div>
+
+
+                    <!-- PROJECT LEAD -->
+
+                    <div class="detail-item">
+
+                        <strong>
+                            👤 Project Lead
+                        </strong>
+
+                        <span>
+                            Samira Abdirahman Maalim 
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================
+                 CONNECT
+            ====================================== -->
+
+            <section class="connect-section">
+
+                <h2>
+                    Connect With Us
+                </h2>
+
+                <p>
+                    Follow and connect with us to learn more
+                    about agricultural innovation, environmental
+                    conservation, youth participation and
+                    community activities.
+                </p>
+
+
+                <div class="social-grid">
+
+
+                    <!-- LINKEDIN -->
+
+                    <div class="social-card">
+
+                        <h3>
+                            LinkedIn
+                        </h3>
+
+                        <p>
+                            Connect with Abdullahi Aden (Karieson)
+                            and follow agricultural innovation,
+                            environmental conservation and
+                            community development activities.
+                        </p>
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener">
+
+                            🔗
+                            Abdullahi Aden (Karieson)
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- FACEBOOK -->
+
+                    <div class="social-card">
+
+                        <h3>
+                            Facebook
+                        </h3>
+
+                        <p>
+                            Follow Abdullahi Aden (Karieson)
+                            for agricultural information,
+                            environmental campaigns, community
+                            activities and project updates.
+                        </p>
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener">
+
+                            🔗
+                            Abdullahi Aden (Karieson)
+
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================
+                 PARTNERSHIP
+            ====================================== -->
+
+            <section class="partnership-section">
+
+                <h2>
+                    Partnership &amp; Collaboration
+                </h2>
+
+                <p>
+                    We welcome engagement from individuals and
+                    organizations interested in contributing to
+                    sustainable agriculture and environmental
+                    conservation.
+                </p>
+
+
+                <ul class="partnership-list">
+
+                    <li>
+                        Agricultural research and community studies
+                    </li>
+
+                    <li>
+                        Climate-smart agriculture
+                    </li>
+
+                    <li>
+                        Water-efficient irrigation
+                    </li>
+
+                    <li>
+                        Farmer training and demonstrations
+                    </li>
+
+                    <li>
+                        Youth agricultural innovation
+                    </li>
+
+                    <li>
+                        Tree planting and restoration
+                    </li>
+
+                    <li>
+                        Anti-deforestation campaigns
+                    </li>
+
+                    <li>
+                        Digital agricultural advisory
+                    </li>
+
+                    <li>
+                        Pilot projects and innovation development
+                    </li>
+
+                    <li>
+                        Technical expertise and mentorship
+                    </li>
+
+                    <li>
+                        Agricultural technology and equipment
+                    </li>
+
+                    <li>
+                        Funding and project support
+                    </li>
+
+                    <li>
+                        Community development partnerships
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+
+            <!-- =====================================
+                 CLOSING
+            ====================================== -->
+
+            <section class="closing-message">
+
+                <h2>
+                    Join Goreale Agricultural Innovators
+                </h2>
+
+                <p>
+                    Together, we can turn local agricultural
+                    challenges into opportunities for innovation,
+                    environmental restoration, food security,
+                    and sustainable livelihoods.
+                </p>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <h3>
+                Goreale Agricultural Innovators
+            </h3>
+
+            <p class="footer-tagline">
+                Innovating Agriculture.
+                Conserving Nature.
+                Empowering Communities.
+            </p>
+
+            <p class="footer-services">
+                Climate-Smart Agriculture |
+                Water Efficiency |
+                Crop Protection |
+                Tree Planting |
+                Environmental Conservation
+            </p>
+
+            <p class="footer-founder">
+                Founded and led by Samira Abdirahman Maalim 
+            </p>
+
+            <div class="footer-bottom">
+
+                © 2026 Goreale Agricultural Innovators.
+                All rights reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

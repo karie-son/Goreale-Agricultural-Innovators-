@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Meet Abdullahi Sheikh Aden, Founder of Goreale Agricultural Innovators, and learn about the vision behind climate-smart agriculture, water efficiency, environmental conservation and community development.">
+
+    <title>Founder | Goreale Agricultural Innovators</title>
+
+    <style>
+
+        /* ==================================================
+           GOREALE AGRICULTURAL INNOVATORS
+           FOUNDER PAGE
+           CLEAN CORPORATE STYLE
+        ================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --green: #2e7d32;
+            --green-dark: #1b5e20;
+            --black: #222222;
+            --white: #ffffff;
+            --border: #dddddd;
+            --light-border: #eeeeee;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #222222;
+            font-size: 0.72rem;
+            line-height: 1.55;
+        }
+
+        /* ==================================================
+           HEADER
+        ================================================== */
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border);
+            padding: 0.65rem 5%;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 1rem;
+        }
+
+        .logo {
+            width: 155px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--black);
+            margin-left: 1.15rem;
+            font-size: 0.68rem;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: var(--green);
+        }
+
+        /* ==================================================
+           HERO
+        ================================================== */
+
+        .hero {
+            background: #ffffff;
+            padding: 3rem 1.2rem 2.4rem;
+            text-align: center;
+            border-bottom: 1px solid var(--light-border);
+        }
+
+        .hero h1 {
+            font-size: 1.55rem;
+            color: var(--black);
+            font-weight: 700;
+            margin-bottom: 0.45rem;
+        }
+
+        .green-line {
+            width: 3.5rem;
+            height: 0.16rem;
+            background: var(--green);
+            margin: 0.7rem auto;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #222222;
+            font-size: 0.72rem;
+        }
+
+        /* ==================================================
+           FOUNDER SECTION
+        ================================================== */
+
+        .founder-section {
+            max-width: 1050px;
+            margin: 2.8rem auto;
+            padding: 0 1.2rem;
+        }
+
+        .founder-grid {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        /* ==================================================
+           FOUNDER IMAGE
+        ================================================== */
+
+        .founder-image-container {
+            text-align: center;
+            position: relative;
+        }
+
+        .founder-image-container::before {
+            content: "";
+            position: absolute;
+
+            width: 210px;
+            height: 210px;
+
+            border: 3px solid var(--green);
+
+            border-radius: 50%;
+
+            top: -0.7rem;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            z-index: 0;
+        }
+
+        .founder-photo {
+            position: relative;
+            z-index: 1;
+
+            width: 210px;
+            height: 210px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            display: block;
+
+            margin: auto;
+
+            border: 6px solid #ffffff;
+
+            box-shadow:
+                0 0 0 1px var(--border);
+
+            background: #ffffff;
+        }
+
+        .founder-caption {
+            margin-top: 1.1rem;
+            text-align: center;
+        }
+
+        .founder-caption strong {
+            display: block;
+            color: var(--black);
+            font-size: 0.8rem;
+        }
+
+        .founder-caption span {
+            display: block;
+            color: var(--green);
+            font-size: 0.65rem;
+            margin-top: 0.2rem;
+        }
+
+        /* ==================================================
+           FOUNDER CONTENT
+        ================================================== */
+
+        .founder-content {
+            border-left: 4px solid var(--green);
+            padding-left: 1.2rem;
+        }
+
+        .founder-content h2 {
+            font-size: 1.15rem;
+            color: var(--black);
+            margin-bottom: 0.25rem;
+        }
+
+        .founder-title {
+            color: var(--green);
+            font-size: 0.72rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .founder-content p {
+            color: var(--black);
+            font-size: 0.72rem;
+            margin-bottom: 0.75rem;
+        }
+
+        /* ==================================================
+           VISION
+        ================================================== */
+
+        .vision-section {
+            background: #ffffff;
+            border-top: 1px solid var(--light-border);
+            border-bottom: 1px solid var(--light-border);
+            padding: 2.7rem 1.2rem;
+        }
+
+        .vision-container {
+            max-width: 850px;
+            margin: auto;
+
+            text-align: center;
+
+            border-left: 4px solid var(--black);
+            border-right: 4px solid var(--green);
+
+            padding: 1.4rem 2rem;
+        }
+
+        .vision-container h2 {
+            color: var(--black);
+            font-size: 1.05rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .vision-container .green-line {
+            margin: 0.6rem auto 0.9rem;
+        }
+
+        .vision-container p {
+            color: var(--black);
+            font-size: 0.72rem;
+        }
+
+        /* ==================================================
+           VALUES
+        ================================================== */
+
+        .values-section {
+            max-width: 1050px;
+            margin: 2.8rem auto;
+            padding: 0 1.2rem;
+        }
+
+        .values-heading {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .values-heading h2 {
+            font-size: 1.05rem;
+            color: var(--black);
+        }
+
+        .values-heading .green-line {
+            margin: 0.55rem auto;
+        }
+
+        .values-heading p {
+            font-size: 0.68rem;
+            color: var(--black);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.9rem;
+        }
+
+        /* ==================================================
+           WHITE CARDS
+        ================================================== */
+
+        .value-card {
+            background: #ffffff;
+
+            border: 1px solid var(--border);
+
+            border-left: 4px solid var(--green);
+
+            padding: 1rem;
+
+            min-height: 145px;
+
+            transition:
+                border-color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .value-card:nth-child(even) {
+            border-left-color: var(--black);
+        }
+
+        .value-card:hover {
+            border-color: var(--green);
+            transform: translateY(-2px);
+        }
+
+        .value-card h3 {
+            color: var(--black);
+            font-size: 0.78rem;
+            margin-bottom: 0.45rem;
+        }
+
+        .value-card p {
+            color: var(--black);
+            font-size: 0.68rem;
+        }
+
+        /* ==================================================
+           FOUNDER'S APPROACH
+        ================================================== */
+
+        .approach-section {
+            max-width: 1050px;
+            margin: 2.8rem auto;
+            padding: 0 1.2rem;
+        }
+
+        .approach-box {
+            background: #ffffff;
+
+            border: 1px solid var(--border);
+
+            border-left: 4px solid var(--black);
+
+            padding: 1.2rem;
+        }
+
+        .approach-box h2 {
+            font-size: 1rem;
+            color: var(--black);
+            margin-bottom: 0.6rem;
+        }
+
+        .approach-box p {
+            color: var(--black);
+            font-size: 0.72rem;
+            margin-bottom: 0.65rem;
+        }
+
+        .approach-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.4rem 1.5rem;
+            margin-top: 0.7rem;
+        }
+
+        .approach-list div {
+            border-left: 2px solid var(--green);
+            padding-left: 0.55rem;
+            color: var(--black);
+            font-size: 0.68rem;
+        }
+
+        /* ==================================================
+           CTA
+        ================================================== */
+
+        .cta {
+            background: #ffffff;
+
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+
+            text-align: center;
+
+            padding: 2.6rem 1.2rem;
+        }
+
+        .cta h2 {
+            color: var(--black);
+            font-size: 1.05rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .cta p {
+            max-width: 650px;
+            margin: auto auto 1rem;
+
+            color: var(--black);
+            font-size: 0.7rem;
+        }
+
+        .cta a {
+            display: inline-block;
+
+            padding: 0.55rem 1.2rem;
+
+            background: var(--green);
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-size: 0.68rem;
+            font-weight: 700;
+
+            border-left: 4px solid var(--black);
+        }
+
+        .cta a:hover {
+            background: var(--green-dark);
+        }
+
+        /* ==================================================
+           FOOTER
+        ================================================== */
+
+        footer {
+            background: #000000;
+            color: #ffffff;
+
+            text-align: center;
+
+            padding: 1.7rem 1rem;
+        }
+
+        footer h3 {
+            color: #ffffff;
+            font-size: 0.82rem;
+            margin-bottom: 0.45rem;
+        }
+
+        footer p {
+            color: #ffffff;
+            font-size: 0.63rem;
+            margin: 0.25rem 0;
+        }
+
+        .footer-divider {
+            width: 3rem;
+            height: 0.12rem;
+
+            background: var(--green);
+
+            margin: 0.7rem auto;
+        }
+
+        /* ==================================================
+           MOBILE
+        ================================================== */
+
+        @media (max-width: 768px) {
+
+            body {
+                font-size: 0.7rem;
+            }
+
+            header {
+                padding: 0.6rem 1rem;
+            }
+
+            .header-container {
+                flex-direction: column;
+                gap: 0.65rem;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 0 0.45rem;
+                font-size: 0.63rem;
+            }
+
+            .hero {
+                padding: 2.2rem 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.3rem;
+            }
+
+            .hero p {
+                font-size: 0.68rem;
+            }
+
+            .founder-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .founder-image-container {
+                order: 1;
+            }
+
+            .founder-content {
+                order: 2;
+                text-align: left;
+            }
+
+            .founder-photo {
+                width: 185px;
+                height: 185px;
+            }
+
+            .founder-image-container::before {
+                width: 185px;
+                height: 185px;
+            }
+
+            .founder-content {
+                border-left-width: 3px;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .approach-list {
+                grid-template-columns: 1fr;
+            }
+
+            .vision-container {
+                padding: 1.1rem;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+    <div class="header-container">
+
+        <img
+            src="goreale_logo.png"
+            alt="Goreale Agricultural Innovators Logo"
+            class="logo"
+        >
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about_us.html">
+                About
+            </a>
+
+            <a href="founder.html">
+                Founder
+            </a>
+
+            <a href="contacts.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="hero">
+
+    <h1>
+        Our Founder
+    </h1>
+
+    <div class="green-line"></div>
+
+    <p>
+        The person behind Goreale Agricultural Innovators
+        and the vision for sustainable agriculture,
+        responsible water use and environmental conservation.
+    </p>
+
+</section>
+
+
+<!-- ==================================================
+     FOUNDER PROFILE
+================================================== -->
+
+<section class="founder-section">
+
+    <div class="founder-grid">
+
+
+        <!-- FOUNDER IMAGE -->
+
+        <div class="founder-image-container">
+
+            <img
+                src="images/founder.jpg"
+                alt="Samira Abdirahman Maalim- Founder of Goreale Agricultural Innovators"
+                class="founder-photo"
+            >
+
+            <div class="founder-caption">
+
+                <strong>
+                    Samira Abdirahman Maalim 
+                </strong>
+
+                <span>
+                    Founder &amp; Visionary Leader
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOUNDER CONTENT -->
+
+        <div class="founder-content">
+
+            <h2>
+                Samira Abdirahman Maalim 
+            </h2>
+
+            <p class="founder-title">
+                Founder &amp; Visionary Leader
+            </p>
+
+            <p>
+                Goreale Agricultural Innovators was founded
+                by Samira Abdirahman Maalim with a vision of
+                developing practical solutions that connect
+                agriculture, water management, environmental
+                conservation and community development.
+            </p>
+
+            <p>
+                The Founder believes that sustainable
+                agricultural development should go beyond
+                increasing food production. It should also
+                promote responsible use of water and land,
+                protect natural resources, restore vegetation
+                and create meaningful opportunities for young
+                people and farming communities.
+            </p>
+
+            <p>
+                Through Goreale Agricultural Innovators,
+                the vision is to encourage farmers and
+                communities to adopt climate-smart farming
+                practices, improve water-use efficiency,
+                strengthen crop management, plant trees and
+                participate actively in environmental
+                conservation.
+            </p>
+
+            <p>
+                The initiative is built around practical
+                community action, innovation, knowledge
+                sharing, evidence-based learning and
+                partnerships that can contribute to resilient
+                and sustainable agricultural communities.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     VISION
+================================================== -->
+
+<section class="vision-section">
+
+    <div class="vision-container">
+
+        <h2>
+            The Founder’s Vision
+        </h2>
+
+        <div class="green-line"></div>
+
+        <p>
+            To contribute to a future where farmers and
+            communities can produce food sustainably,
+            use water responsibly, restore nature and
+            build resilient livelihoods while responding
+            to environmental and climate challenges.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     APPROACH
+================================================== -->
+
+<section class="approach-section">
+
+    <div class="approach-box">
+
+        <h2>
+            The Founder’s Approach
+        </h2>
+
+        <p>
+            Goreale Agricultural Innovators is guided by
+            a practical approach that places community
+            participation, innovation and sustainability
+            at the centre of agricultural development.
+        </p>
+
+        <div class="approach-list">
+
+            <div>
+                Climate-smart agricultural practices
+            </div>
+
+            <div>
+                Water-efficient irrigation
+            </div>
+
+            <div>
+                Sustainable crop management
+            </div>
+
+            <div>
+                Practical farmer training
+            </div>
+
+            <div>
+                Youth participation and innovation
+            </div>
+
+            <div>
+                Tree planting and environmental restoration
+            </div>
+
+            <div>
+                Community environmental awareness
+            </div>
+
+            <div>
+                Evidence-based pilot testing
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     VALUES
+================================================== -->
+
+<section class="values-section">
+
+    <div class="values-heading">
+
+        <h2>
+            Principles That Guide Our Work
+        </h2>
+
+        <div class="green-line"></div>
+
+        <p>
+            Core principles supporting the Founder’s vision
+            for Goreale Agricultural Innovators.
+        </p>
+
+    </div>
+
+
+    <div class="values-grid">
+
+
+        <div class="value-card">
+
+            <h3>
+                Innovation
+            </h3>
+
+            <p>
+                Promoting practical agricultural and
+                environmental solutions that respond
+                to changing community needs.
+            </p>
+
+        </div>
+
+
+        <div class="value-card">
+
+            <h3>
+                Sustainability
+            </h3>
+
+            <p>
+                Encouraging responsible use of land,
+                water and natural resources for present
+                and future generations.
+            </p>
+
+        </div>
+
+
+        <div class="value-card">
+
+            <h3>
+                Community
+            </h3>
+
+            <p>
+                Working with farmers, youth and local
+                communities to create meaningful and
+                lasting impact.
+            </p>
+
+        </div>
+
+
+        <div class="value-card">
+
+            <h3>
+                Conservation
+            </h3>
+
+            <p>
+                Supporting tree planting, environmental
+                restoration and responsible management
+                of natural resources.
+            </p>
+
+        </div>
+
+
+        <div class="value-card">
+
+            <h3>
+                Climate Resilience
+            </h3>
+
+            <p>
+                Supporting farming approaches that help
+                communities adapt to climate and
+                environmental challenges.
+            </p>
+
+        </div>
+
+
+        <div class="value-card">
+
+            <h3>
+                Partnership
+            </h3>
+
+            <p>
+                Building collaboration with farmers,
+                organizations, institutions and other
+                stakeholders to expand positive impact.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     CTA
+================================================== -->
+
+<section class="cta">
+
+    <h2>
+        Join the Vision
+    </h2>
+
+    <p>
+        We welcome farmers, young people, organizations,
+        institutions and partners who share our commitment
+        to sustainable agriculture, responsible water use
+        and environmental conservation.
+    </p>
+
+    <a href="contacts.html">
+        Contact Us
+    </a>
+
+</section>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+    <h3>
+        Goreale Agricultural Innovators
+    </h3>
+
+    <div class="footer-divider"></div>
+
+    <p>
+        Innovating Agriculture. Conserving Water.
+        Restoring Nature.
+    </p>
+
+    <p>
+        Climate-Smart Agriculture |
+        Water Efficiency |
+        Crop Protection |
+        Tree Planting |
+        Environmental Conservation
+    </p>
+
+    <p>
+        &copy; 2026 Goreale Agricultural Innovators.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

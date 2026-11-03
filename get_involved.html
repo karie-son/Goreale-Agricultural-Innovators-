@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Get involved with Goreale Agricultural Innovators through volunteering, community action, environmental conservation, agricultural innovation and youth participation.">
+
+    <title>Get Involved | Goreale Agricultural Innovators</title>
+
+
+    <!-- =========================================
+         GOOGLE FONT
+    ========================================= -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =========================================
+         FONT AWESOME
+    ========================================= -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <style>
+
+        /* ==================================================
+           GLOBAL
+        ================================================== */
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        :root{
+
+            --primary:#2E7D32;
+            --primary-dark:#1B5E20;
+            --green-light:#66BB6A;
+
+            --black:#222222;
+            --black-deep:#111111;
+
+            --white:#FFFFFF;
+
+            --grey:#F5F7F5;
+            --light:#FAFAFA;
+
+            --border:#DDDDDD;
+
+            --danger:#C62828;
+
+            --shadow:
+                0 0.4rem 1.2rem rgba(0,0,0,.06);
+
+            --glow:
+                0 0 0.8rem rgba(46,125,50,.28);
+        }
+
+
+        html{
+
+            font-size:62.5%;
+
+            scroll-behavior:smooth;
+        }
+
+
+        body{
+
+            font-family:'Poppins',sans-serif;
+
+            background:var(--grey);
+
+            color:var(--black);
+
+            font-size:1.15rem;
+
+            line-height:1.5;
+        }
+
+
+        /* ==================================================
+           HEADER
+        ================================================== */
+
+        header{
+
+            width:100%;
+
+            background:var(--white);
+
+            position:sticky;
+
+            top:0;
+
+            z-index:1000;
+        }
+
+
+        .header-container{
+
+            width:100%;
+
+            max-width:120rem;
+
+            margin:auto;
+
+            padding:.8rem 2rem;
+
+            display:flex;
+
+            align-items:center;
+
+            justify-content:flex-start;
+        }
+
+
+        .brand{
+
+            display:inline-flex;
+
+            align-items:center;
+
+            text-decoration:none;
+        }
+
+
+        .brand-logo{
+
+            display:flex;
+
+            flex-direction:column;
+
+            align-items:flex-start;
+
+            justify-content:center;
+        }
+
+
+        .brand-logo img{
+
+            width:6rem;
+
+            height:auto;
+
+            max-height:6rem;
+
+            display:block;
+
+            object-fit:contain;
+        }
+
+
+        .logo-tagline{
+
+            display:block;
+
+            margin-top:.2rem;
+
+            color:var(--primary);
+
+            font-size:.62rem;
+
+            font-weight:600;
+
+            line-height:1.2;
+
+            white-space:nowrap;
+        }
+
+
+        /* ==================================================
+           DONATE BAR
+        ================================================== */
+
+        .donate-bar{
+
+            width:100%;
+
+            max-width:120rem;
+
+            margin:auto;
+
+            padding:.55rem 2rem;
+
+            display:flex;
+
+            justify-content:flex-end;
+
+            align-items:center;
+
+            background:var(--white);
+        }
+
+
+        .donate-top{
+
+            display:inline-flex;
+
+            align-items:center;
+
+            justify-content:center;
+
+            gap:.5rem;
+
+            padding:.65rem 1.15rem;
+
+            border-radius:.45rem;
+
+            background:var(--primary);
+
+            color:var(--white);
+
+            text-decoration:none;
+
+            font-size:.95rem;
+
+            font-weight:600;
+
+            line-height:1;
+
+            transition:.25s;
+        }
+
+
+        .donate-top:hover{
+
+            background:var(--primary-dark);
+
+            transform:translateY(-.1rem);
+
+            box-shadow:var(--glow);
+        }
+
+
+        /* ==================================================
+           HERO
+        ================================================== */
+
+        .hero{
+
+            width:100%;
+
+            background:var(--white);
+
+            color:var(--black);
+
+            text-align:center;
+
+            padding:2.8rem 1.5rem;
+        }
+
+
+        .hero-content{
+
+            width:100%;
+
+            max-width:75rem;
+
+            margin:auto;
+        }
+
+
+        .hero-icon{
+
+            color:var(--primary);
+
+            font-size:2.6rem;
+
+            margin-bottom:.7rem;
+        }
+
+
+        .hero h2{
+
+            color:var(--primary);
+
+            font-size:2.2rem;
+
+            font-weight:700;
+
+            line-height:1.3;
+
+            margin-bottom:.6rem;
+        }
+
+
+        .hero p{
+
+            max-width:65rem;
+
+            margin:auto;
+
+            color:#555;
+
+            font-size:1.1rem;
+
+            line-height:1.65;
+        }
+
+
+        /* ==================================================
+           MAIN
+        ================================================== */
+
+        main{
+
+            width:100%;
+
+            max-width:108rem;
+
+            margin:2.5rem auto;
+
+            padding:0 1.5rem;
+        }
+
+
+        /* ==================================================
+           INTRO
+        ================================================== */
+
+        .intro{
+
+            max-width:72rem;
+
+            margin:0 auto 2rem;
+
+            text-align:center;
+        }
+
+
+        .intro h3{
+
+            color:var(--black);
+
+            font-size:1.65rem;
+
+            font-weight:700;
+
+            margin-bottom:.4rem;
+        }
+
+
+        .intro p{
+
+            color:#666;
+
+            font-size:1rem;
+
+            line-height:1.6;
+        }
+
+
+        /* ==================================================
+           INVOLVEMENT CARDS
+        ================================================== */
+
+        .involvement-grid{
+
+            display:grid;
+
+            grid-template-columns:
+                repeat(2,minmax(0,1fr));
+
+            gap:1.3rem;
+
+            margin-bottom:2.5rem;
+        }
+
+
+        .involvement-card{
+
+            position:relative;
+
+            background:var(--white);
+
+            border:1px solid var(--border);
+
+            border-radius:.7rem;
+
+            padding:1.7rem 1.7rem 1.7rem 2rem;
+
+            box-shadow:var(--shadow);
+
+            overflow:hidden;
+
+            transition:
+                transform .25s ease,
+                box-shadow .25s ease;
+        }
+
+
+        /* LEFT GREEN BAR */
+
+        .involvement-card::before{
+
+            content:"";
+
+            position:absolute;
+
+            left:0;
+
+            top:0;
+
+            width:.3rem;
+
+            height:100%;
+
+            background:var(--primary);
+        }
+
+
+        .involvement-card:hover{
+
+            transform:translateY(-.15rem);
+
+            box-shadow:
+                0 .6rem 1.5rem rgba(0,0,0,.09);
+        }
+
+
+        .involvement-icon{
+
+            color:var(--primary);
+
+            font-size:1.8rem;
+
+            margin-bottom:.7rem;
+        }
+
+
+        .involvement-card h4{
+
+            color:var(--black);
+
+            font-size:1.35rem;
+
+            font-weight:700;
+
+            margin-bottom:.5rem;
+        }
+
+
+        .involvement-card p{
+
+            color:#666;
+
+            font-size:.95rem;
+
+            line-height:1.6;
+        }
+
+
+        /* ==================================================
+           FORM CARD
+        ================================================== */
+
+        .form-card{
+
+            background:var(--white);
+
+            border:1px solid var(--border);
+
+            border-radius:.8rem;
+
+            box-shadow:var(--shadow);
+
+            padding:2.2rem;
+        }
+
+
+        .section-title{
+
+            display:flex;
+
+            align-items:center;
+
+            gap:.7rem;
+
+            color:var(--black);
+
+            font-size:1.35rem;
+
+            font-weight:700;
+
+            line-height:1.3;
+
+            margin-bottom:1.5rem;
+
+            padding-bottom:.7rem;
+
+            border-bottom:.15rem solid var(--primary);
+        }
+
+
+        .section-title i{
+
+            color:var(--primary);
+
+            font-size:1.25rem;
+        }
+
+
+        .form-section{
+
+            margin-bottom:2.8rem;
+        }
+
+
+        /* ==================================================
+           FORM GRID
+        ================================================== */
+
+        .form-grid{
+
+            display:grid;
+
+            grid-template-columns:
+                repeat(2,minmax(0,1fr));
+
+            gap:1.3rem;
+        }
+
+
+        .form-group{
+
+            display:flex;
+
+            flex-direction:column;
+
+            gap:.4rem;
+        }
+
+
+        .full{
+
+            grid-column:1 / -1;
+        }
+
+
+        label{
+
+            color:var(--black);
+
+            font-size:1rem;
+
+            font-weight:600;
+        }
+
+
+        label .required{
+
+            color:var(--danger);
+        }
+
+
+        input,
+        select,
+        textarea{
+
+            width:100%;
+
+            min-height:3.5rem;
+
+            border:.1rem solid var(--border);
+
+            border-radius:.45rem;
+
+            padding:.75rem .9rem;
+
+            background:var(--white);
+
+            color:var(--black);
+
+            font-family:inherit;
+
+            font-size:1rem;
+
+            outline:none;
+
+            transition:.2s;
+        }
+
+
+        input:focus,
+        select:focus,
+        textarea:focus{
+
+            border-color:var(--primary);
+
+            box-shadow:
+                0 0 0 .2rem rgba(46,125,50,.08),
+                var(--glow);
+        }
+
+
+        textarea{
+
+            min-height:9rem;
+
+            resize:vertical;
+        }
+
+
+        .help-text{
+
+            color:#777;
+
+            font-size:.85rem;
+
+            line-height:1.45;
+        }
+
+
+        /* ==================================================
+           INTEREST CHECKBOXES
+        ================================================== */
+
+        .checkbox-grid{
+
+            display:grid;
+
+            grid-template-columns:
+                repeat(2,minmax(0,1fr));
+
+            gap:.8rem;
+        }
+
+
+        .check-option{
+
+            min-height:3.4rem;
+
+            border:.1rem solid var(--border);
+
+            border-radius:.45rem;
+
+            padding:.75rem;
+
+            display:flex;
+
+            align-items:center;
+
+            gap:.7rem;
+
+            cursor:pointer;
+
+            transition:.2s;
+        }
+
+
+        .check-option:hover{
+
+            border-color:var(--primary);
+
+            background:#FAFFFA;
+
+            box-shadow:
+                0 0 .5rem rgba(46,125,50,.12);
+        }
+
+
+        .check-option input{
+
+            width:1.4rem;
+
+            height:1.4rem;
+
+            min-height:auto;
+
+            padding:0;
+
+            accent-color:var(--primary);
+        }
+
+
+        .check-option span{
+
+            color:var(--black);
+
+            font-size:.95rem;
+        }
+
+
+        /* ==================================================
+           CONSENT
+        ================================================== */
+
+        .consent-box{
+
+            background:var(--light);
+
+            border:.1rem solid var(--border);
+
+            border-left:.3rem solid var(--primary);
+
+            border-radius:.5rem;
+
+            padding:1.2rem;
+        }
+
+
+        .consent-label{
+
+            display:flex;
+
+            align-items:flex-start;
+
+            gap:.8rem;
+
+            cursor:pointer;
+        }
+
+
+        .consent-label input{
+
+            width:1.6rem;
+
+            height:1.6rem;
+
+            min-height:auto;
+
+            padding:0;
+
+            margin-top:.15rem;
+
+            accent-color:var(--primary);
+
+            flex-shrink:0;
+        }
+
+
+        .consent-label span{
+
+            color:#444;
+
+            font-size:.95rem;
+
+            line-height:1.6;
+        }
+
+
+        /* ==================================================
+           FORM ACTION
+        ================================================== */
+
+        .form-actions{
+
+            display:flex;
+
+            justify-content:center;
+
+            align-items:center;
+
+            margin-top:2rem;
+
+            padding-top:1.5rem;
+
+            border-top:.1rem solid var(--border);
+        }
+
+
+        .btn-primary{
+
+            display:inline-flex;
+
+            align-items:center;
+
+            justify-content:center;
+
+            gap:.5rem;
+
+            min-width:17rem;
+
+            padding:.75rem 1.5rem;
+
+            border:0;
+
+            border-radius:.5rem;
+
+            background:var(--primary);
+
+            color:var(--white);
+
+            font-family:inherit;
+
+            font-size:1rem;
+
+            font-weight:600;
+
+            cursor:pointer;
+
+            box-shadow:
+                0 0 .6rem rgba(46,125,50,.25);
+
+            transition:.25s;
+        }
+
+
+        .btn-primary:hover{
+
+            background:var(--primary-dark);
+
+            transform:translateY(-.1rem);
+
+            box-shadow:
+                0 0 .8rem rgba(46,125,50,.45),
+                0 0 1.5rem rgba(46,125,50,.18);
+        }
+
+
+        .btn-primary:active{
+
+            transform:scale(.97);
+        }
+
+
+        /* ==================================================
+           BOTTOM BLACK & WHITE CARD
+        ================================================== */
+
+        .support-card{
+
+            position:relative;
+
+            margin-top:2rem;
+
+            background:var(--white);
+
+            color:var(--black);
+
+            border:1px solid var(--border);
+
+            border-radius:.7rem;
+
+            padding:1.8rem 2rem 1.8rem 2.3rem;
+
+            box-shadow:var(--shadow);
+
+            overflow:hidden;
+        }
+
+
+        .support-card::before{
+
+            content:"";
+
+            position:absolute;
+
+            left:0;
+
+            top:0;
+
+            width:.35rem;
+
+            height:100%;
+
+            background:var(--black);
+        }
+
+
+        .support-card i{
+
+            color:var(--black);
+
+            font-size:1.8rem;
+
+            margin-bottom:.6rem;
+        }
+
+
+        .support-card h3{
+
+            color:var(--black);
+
+            font-size:1.5rem;
+
+            font-weight:700;
+
+            margin-bottom:.5rem;
+        }
+
+
+        .support-card p{
+
+            color:#666;
+
+            font-size:1rem;
+
+            line-height:1.6;
+
+            margin-bottom:1rem;
+        }
+
+
+        .support-button{
+
+            display:inline-flex;
+
+            align-items:center;
+
+            justify-content:center;
+
+            gap:.5rem;
+
+            padding:.7rem 1.3rem;
+
+            border-radius:.45rem;
+
+            background:var(--black);
+
+            color:var(--white);
+
+            text-decoration:none;
+
+            font-size:.95rem;
+
+            font-weight:600;
+
+            transition:.25s;
+        }
+
+
+        .support-button:hover{
+
+            background:#000;
+
+            transform:translateY(-.1rem);
+
+            box-shadow:
+                0 0 .8rem rgba(0,0,0,.25);
+        }
+
+
+        /* ==================================================
+           FOOTER
+        ================================================== */
+
+        footer{
+
+            margin-top:3rem;
+
+            background:var(--black-deep);
+
+            color:var(--white);
+
+            text-align:center;
+
+            padding:1.5rem 1rem;
+        }
+
+
+        footer p{
+
+            color:#CCC;
+
+            font-size:.85rem;
+        }
+
+
+        /* ==================================================
+           MOBILE
+        ================================================== */
+
+        @media(max-width:700px){
+
+            .header-container{
+
+                padding:.7rem 1.2rem;
+            }
+
+
+            .brand-logo img{
+
+                width:5rem;
+
+                max-height:5rem;
+            }
+
+
+            .logo-tagline{
+
+                font-size:.55rem;
+            }
+
+
+            .donate-bar{
+
+                padding:.5rem 1.2rem;
+            }
+
+
+            .donate-top{
+
+                padding:.6rem 1rem;
+
+                font-size:.85rem;
+            }
+
+
+            .hero{
+
+                padding:2rem 1rem;
+            }
+
+
+            .hero-icon{
+
+                font-size:2.2rem;
+            }
+
+
+            .hero h2{
+
+                font-size:1.8rem;
+            }
+
+
+            .hero p{
+
+                font-size:.9rem;
+            }
+
+
+            main{
+
+                margin:2rem auto;
+
+                padding:0 1rem;
+            }
+
+
+            .involvement-grid{
+
+                grid-template-columns:1fr;
+
+                gap:1rem;
+            }
+
+
+            .form-card{
+
+                padding:1.5rem 1.2rem;
+            }
+
+
+            .form-grid,
+            .checkbox-grid{
+
+                grid-template-columns:1fr;
+
+                gap:1rem;
+            }
+
+
+            .full{
+
+                grid-column:auto;
+            }
+
+
+            .section-title{
+
+                font-size:1.2rem;
+            }
+
+
+            input,
+            select,
+            textarea{
+
+                font-size:.9rem;
+
+                min-height:3.3rem;
+            }
+
+
+            .consent-label span{
+
+                font-size:.88rem;
+            }
+
+
+            .btn-primary{
+
+                width:auto;
+
+                min-width:16rem;
+
+                font-size:.9rem;
+            }
+
+
+            .support-card{
+
+                padding:1.5rem 1.5rem 1.5rem 1.8rem;
+            }
+
+        }
+
+
+        /* ==================================================
+           VERY SMALL PHONES
+        ================================================== */
+
+        @media(max-width:420px){
+
+            .brand-logo img{
+
+                width:4.5rem;
+            }
+
+
+            .logo-tagline{
+
+                font-size:.5rem;
+            }
+
+
+            .hero h2{
+
+                font-size:1.6rem;
+            }
+
+
+            .hero p{
+
+                font-size:.85rem;
+            }
+
+
+            .form-card{
+
+                padding:1.2rem 1rem;
+            }
+
+
+            .section-title{
+
+                font-size:1.1rem;
+            }
+
+
+            label{
+
+                font-size:.9rem;
+            }
+
+
+            .check-option span{
+
+                font-size:.88rem;
+            }
+
+
+            .btn-primary{
+
+                min-width:15rem;
+
+                padding:.7rem 1.2rem;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header>
+
+    <div class="header-container">
+
+        <a
+            href="index.html"
+            class="brand">
+
+            <div class="brand-logo">
+
+                <img
+                    src="goreale_logo.png"
+                    alt="Goreale Agricultural Innovators Logo">
+
+                <span class="logo-tagline">
+                    Innovating Agriculture • Restoring Nature
+                </span>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================
+     DONATE
+========================================= -->
+
+<div class="donate-bar">
+
+    <a
+        href="YOUR_PAYHIP_LINK_HERE"
+        class="donate-top"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        <i class="fa-solid fa-heart"></i>
+
+        Donate
+
+    </a>
+
+</div>
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-icon">
+
+            <i class="fa-solid fa-hands-helping"></i>
+
+        </div>
+
+        <h2>
+            Get Involved
+        </h2>
+
+        <p>
+
+            Become part of Goreale Agricultural Innovators
+            and contribute your time, skills, ideas and resources
+            toward sustainable agriculture, environmental
+            conservation and resilient communities.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     MAIN
+========================================= -->
+
+<main>
+
+
+    <!-- =====================================
+         INTRO
+    ====================================== -->
+
+    <section class="intro">
+
+        <h3>
+            Make a Difference
+        </h3>
+
+        <p>
+
+            There are many ways to participate.
+            Tell us how you would like to contribute
+            and our team will get in touch with you.
+
+        </p>
+
+    </section>
+
+
+    <!-- =====================================
+         WAYS TO GET INVOLVED
+    ====================================== -->
+
+    <section class="involvement-grid">
+
+
+        <div class="involvement-card">
+
+            <div class="involvement-icon">
+
+                <i class="fa-solid fa-seedling"></i>
+
+            </div>
+
+            <h4>
+                Agriculture
+            </h4>
+
+            <p>
+
+                Support climate-smart farming,
+                sustainable crop production,
+                food security and agricultural innovation.
+
+            </p>
+
+        </div>
+
+
+        <div class="involvement-card">
+
+            <div class="involvement-icon">
+
+                <i class="fa-solid fa-tree"></i>
+
+            </div>
+
+            <h4>
+                Environmental Conservation
+            </h4>
+
+            <p>
+
+                Participate in tree planting,
+                ecosystem restoration and
+                environmental awareness activities.
+
+            </p>
+
+        </div>
+
+
+        <div class="involvement-card">
+
+            <div class="involvement-icon">
+
+                <i class="fa-solid fa-droplet"></i>
+
+            </div>
+
+            <h4>
+                Water Conservation
+            </h4>
+
+            <p>
+
+                Contribute to water-efficient
+                agriculture, conservation initiatives
+                and community water solutions.
+
+            </p>
+
+        </div>
+
+
+        <div class="involvement-card">
+
+            <div class="involvement-icon">
+
+                <i class="fa-solid fa-people-group"></i>
+
+            </div>
+
+            <h4>
+                Community & Youth
+            </h4>
+
+            <p>
+
+                Join community activities, youth
+                participation programs, training and
+                local development initiatives.
+
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- =====================================
+         GET INVOLVED FORM
+    ====================================== -->
+
+    <form
+        class="form-card"
+        action="/submit-get-involved"
+        method="POST">
+
+
+        <!-- PERSONAL INFORMATION -->
+
+        <section class="form-section">
+
+            <h3 class="section-title">
+
+                <i class="fa-solid fa-user"></i>
+
+                Personal Information
+
+            </h3>
+
+
+            <div class="form-grid">
+
+
+                <div class="form-group">
+
+                    <label for="full_name">
+
+                        Full Name
+                        <span class="required">*</span>
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="full_name"
+                        name="full_name"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+
+                        Email Address
+                        <span class="required">*</span>
+
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="your@email.com"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="phone">
+
+                        Phone Number
+                        <span class="required">*</span>
+
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="+254 7XX XXX XXX"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="county">
+
+                        County
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="county"
+                        name="county"
+                        placeholder="Enter your county">
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label for="organization">
+
+                        Organization / Institution
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="organization"
+                        name="organization"
+                        placeholder="Organization, company, school or institution">
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- INVOLVEMENT -->
+
+        <section class="form-section">
+
+            <h3 class="section-title">
+
+                <i class="fa-solid fa-handshake"></i>
+
+                How Would You Like to Get Involved?
+
+            </h3>
+
+
+            <div class="checkbox-grid">
+
+
+                <label class="check-option">
+
+                    <input
+                        type="checkbox"
+                        name="involvement[]"
+                        value="Volunteer">
+
+                    <span>
+                        Volunteer
+                    </span>
+
+                </label>
+
+
+                <label class="check-option">
+
+                    <input
+                        type="checkbox"
+                        name="involvement[]"
+                        value="Agriculture">
+
+                    <span>
+                        Agriculture
+                    </span>
+
+                </label>
+
+
+                <label class="check-option">
+
+                    <input
+                        type="checkbox"
+                        name="involvement[]"
+                        value="Environment">
+
+                    <span>
+                        Environmental Conservation
+                    </span>
+
+                </label>
+
+
+                <label class="check-option">
+
+                    <input
+                        type="checkbox"
+                        name="involvement[]"
+                        value="Water Conservation">
+
+                    <span>
+                        Water Conservation
+                    </span>
+
+                </label>
+
+
+                <label class="check-option">
+
+                    <input
+                        type="checkbox"
+                        name="involvement[]"
+                        value="Youth">
+
+                    <span>
+                        Youth Participation
+                    </span>
+
+                </label>
+
+
+                <label class="check-option">
+
+                    <input
+                        type="checkbox"
+                        name="involvement[]"
+                        value="Community Development">
+
+                    <span>
+                        Community Development
+                    </span>
+
+                </label>
+
+
+                <label class="check-option">
+
+                    <input
+                        type="checkbox"
+                        name="involvement[]"
+                        value="Skills">
+
+                    <span>
+                        Skills / Professional Support
+                    </span>
+
+                </label>
+
+
+                <label class="check-option">
+
+                    <input
+                        type="checkbox"
+                        name="involvement[]"
+                        value="Ideas">
+
+                    <span>
+                        Ideas & Innovation
+                    </span>
+
+                </label>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPERIENCE -->
+
+        <section class="form-section">
+
+            <h3 class="section-title">
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                Skills & Contribution
+
+            </h3>
+
+
+            <div class="form-grid">
+
+
+                <div class="form-group full">
+
+                    <label for="skills">
+
+                        Skills / Area of Expertise
+
+                    </label>
+
+                    <textarea
+                        id="skills"
+                        name="skills"
+                        placeholder="Tell us about your skills, experience or professional background"></textarea>
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label for="motivation">
+
+                        Why Would You Like to Get Involved?
+                        <span class="required">*</span>
+
+                    </label>
+
+                    <textarea
+                        id="motivation"
+                        name="motivation"
+                        placeholder="Tell us how you would like to contribute"
+                        required></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="availability">
+
+                        Availability
+
+                    </label>
+
+                    <select
+                        id="availability"
+                        name="availability">
+
+                        <option value="">
+                            Select availability
+                        </option>
+
+                        <option value="Weekdays">
+                            Weekdays
+                        </option>
+
+                        <option value="Weekends">
+                            Weekends
+                        </option>
+
+                        <option value="Flexible">
+                            Flexible
+                        </option>
+
+                        <option value="Occasional">
+                            Occasional
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="participation">
+
+                        Participation Type
+
+                    </label>
+
+                    <select
+                        id="participation"
+                        name="participation">
+
+                        <option value="">
+                            Select option
+                        </option>
+
+                        <option value="Local">
+                            Local / Community
+                        </option>
+
+                        <option value="Online">
+                            Online
+                        </option>
+
+                        <option value="Both">
+                            Both
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- CONSENT -->
+
+        <section class="form-section">
+
+            <h3 class="section-title">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                Consent & Privacy
+
+            </h3>
+
+
+            <div class="consent-box">
+
+                <label class="consent-label">
+
+                    <input
+                        type="checkbox"
+                        name="privacy_consent"
+                        value="1"
+                        required>
+
+                    <span>
+
+                        I confirm that the information provided
+                        is accurate and I consent to Goreale
+                        Agricultural Innovators using my information
+                        to contact me regarding volunteering,
+                        community activities, partnerships and
+                        other relevant opportunities.
+
+                        <strong>
+                            I understand that I may withdraw my
+                            consent at any time.
+                        </strong>
+
+                    </span>
+
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <!-- SUBMIT -->
+
+        <div class="form-actions">
+
+            <button
+                type="submit"
+                class="btn-primary">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+                Submit Get Involved Application
+
+            </button>
+
+        </div>
+
+
+    </form>
+
+
+    <!-- =====================================
+         SUPPORT CARD
+    ====================================== -->
+
+    <section class="support-card">
+
+        <i class="fa-solid fa-heart"></i>
+
+        <h3>
+            Support Our Work
+        </h3>
+
+        <p>
+
+            You can also support Goreale Agricultural Innovators
+            through donations that help us expand sustainable
+            agriculture, environmental conservation and
+            community initiatives.
+
+        </p>
+
+
+        <a
+            href="YOUR_PAYHIP_LINK_HERE"
+            class="support-button"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <i class="fa-solid fa-heart"></i>
+
+            Support Goreale
+
+        </a>
+
+    </section>
+
+
+</main>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <p>
+        &copy; 2026 Goreale Agricultural Innovators.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

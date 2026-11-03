@@ -1,0 +1,2743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Goreale Agricultural Innovators - Farmer Survey and Community Agricultural Needs Assessment">
+
+    <meta name="author"
+          content="Goreale Agricultural Innovators">
+
+    <title>
+        Farmer Survey Form | Goreale Agricultural Innovators
+    </title>
+
+
+<style>
+
+/* ==================================================
+   GOREALE AGRICULTURAL INNOVATORS
+   FARMER SURVEY FORM
+   CLEAN CORPORATE DOCUMENT STYLE
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --primary: #2e7d32;
+    --primary-dark: #1b5e20;
+
+    --black: #222222;
+    --white: #ffffff;
+
+    --grey: #f5f5f5;
+    --light-grey: #f8f8f8;
+
+    --border: #dddddd;
+
+    --text: #333333;
+    --muted: #666666;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        var(--white);
+
+    color:
+        var(--text);
+
+    font-size:
+        0.72rem;
+
+    line-height:
+        1.5;
+
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.site-header {
+
+    background:
+        var(--white);
+
+    border-bottom:
+        1px solid var(--border);
+
+    padding:
+        0.55rem 5%;
+
+}
+
+
+.header-container {
+
+    max-width:
+        1200px;
+
+    margin:
+        auto;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+}
+
+
+.logo {
+
+    max-width:
+        150px;
+
+    height:
+        auto;
+
+    display:
+        block;
+
+}
+
+
+/* ==================================================
+   DOCUMENT
+================================================== */
+
+.document {
+
+    max-width:
+        1050px;
+
+    margin:
+        1.2rem auto;
+
+    padding:
+        0 1rem;
+
+}
+
+
+/* ==================================================
+   DOCUMENT HEADER
+================================================== */
+
+.document-header {
+
+    text-align:
+        center;
+
+    border-bottom:
+        2px solid var(--primary);
+
+    padding-bottom:
+        0.9rem;
+
+    margin-bottom:
+        1.15rem;
+
+}
+
+
+.document-header h1 {
+
+    font-size:
+        1.15rem;
+
+    line-height:
+        1.3;
+
+    color:
+        var(--black);
+
+    margin-bottom:
+        0.3rem;
+
+}
+
+
+.document-header h2 {
+
+    font-size:
+        0.78rem;
+
+    color:
+        var(--primary);
+
+    margin-bottom:
+        0.45rem;
+
+}
+
+
+.document-header p {
+
+    font-size:
+        0.62rem;
+
+    color:
+        var(--muted);
+
+}
+
+
+/* ==================================================
+   INTRODUCTION
+================================================== */
+
+.introduction {
+
+    border:
+        1px solid var(--border);
+
+    border-left:
+        3px solid var(--primary);
+
+    padding:
+        0.75rem;
+
+    margin-bottom:
+        1.2rem;
+
+    background:
+        var(--white);
+
+}
+
+
+.introduction p {
+
+    margin-bottom:
+        0.35rem;
+
+}
+
+
+.introduction p:last-child {
+
+    margin-bottom:
+        0;
+
+}
+
+
+/* ==================================================
+   SURVEY IDENTIFICATION
+================================================== */
+
+.survey-info {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:
+        0.65rem;
+
+    margin-bottom:
+        1.2rem;
+
+}
+
+
+.info-field {
+
+    border:
+        1px solid var(--border);
+
+    padding:
+        0.55rem;
+
+}
+
+
+.info-field strong {
+
+    display:
+        block;
+
+    color:
+        var(--black);
+
+    margin-bottom:
+        0.2rem;
+
+}
+
+
+/* ==================================================
+   SECTIONS
+================================================== */
+
+.section {
+
+    margin-bottom:
+        1.2rem;
+
+    page-break-inside:
+        avoid;
+
+}
+
+
+.section-title {
+
+    font-size:
+        0.78rem;
+
+    color:
+        var(--black);
+
+    background:
+        var(--white);
+
+    padding:
+        0.3rem 0.55rem;
+
+    margin-bottom:
+        0.65rem;
+
+    border-left:
+        3px solid var(--primary);
+
+    font-weight:
+        700;
+
+    line-height:
+        1.3;
+
+}
+
+
+.section-description {
+
+    color:
+        var(--muted);
+
+    font-size:
+        0.63rem;
+
+    margin-bottom:
+        0.55rem;
+
+}
+
+
+/* ==================================================
+   QUESTIONS
+================================================== */
+
+.question {
+
+    margin-bottom:
+        0.75rem;
+
+    page-break-inside:
+        avoid;
+
+}
+
+
+.question-label {
+
+    display:
+        block;
+
+    font-weight:
+        700;
+
+    color:
+        var(--black);
+
+    margin-bottom:
+        0.3rem;
+
+}
+
+
+.question-number {
+
+    color:
+        var(--primary);
+
+    margin-right:
+        0.2rem;
+
+}
+
+
+/* ==================================================
+   TEXT INPUTS
+================================================== */
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+
+    width:
+        100%;
+
+    border:
+        1px solid var(--border);
+
+    padding:
+        0.42rem;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size:
+        0.68rem;
+
+    color:
+        var(--text);
+
+    background:
+        var(--white);
+
+}
+
+
+textarea {
+
+    min-height:
+        65px;
+
+    resize:
+        vertical;
+
+}
+
+
+/* ==================================================
+   INLINE FIELDS
+================================================== */
+
+.inline-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:
+        0.65rem;
+
+}
+
+
+.three-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        0.65rem;
+
+}
+
+
+/* ==================================================
+   OPTIONS
+================================================== */
+
+.options {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        0.35rem 0.8rem;
+
+}
+
+
+.option {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        0.25rem;
+
+    font-size:
+        0.65rem;
+
+}
+
+
+.option input {
+
+    accent-color:
+        var(--primary);
+
+}
+
+
+/* ==================================================
+   TABLE
+================================================== */
+
+.table-wrapper {
+
+    overflow-x:
+        auto;
+
+}
+
+
+table {
+
+    width:
+        100%;
+
+    border-collapse:
+        collapse;
+
+    margin-top:
+        0.45rem;
+
+    font-size:
+        0.63rem;
+
+}
+
+
+th {
+
+    background:
+        var(--white);
+
+    color:
+        var(--black);
+
+    font-weight:
+        700;
+
+    text-align:
+        left;
+
+    padding:
+        0.4rem;
+
+    border:
+        1px solid var(--border);
+
+    border-bottom:
+        2px solid var(--primary);
+
+}
+
+
+td {
+
+    padding:
+        0.35rem;
+
+    border:
+        1px solid var(--border);
+
+    vertical-align:
+        middle;
+
+}
+
+
+tbody tr:nth-child(even) {
+
+    background:
+        var(--light-grey);
+
+}
+
+
+td input[type="text"] {
+
+    border:
+        none;
+
+    border-bottom:
+        1px solid #999;
+
+    padding:
+        0.15rem;
+
+    background:
+        transparent;
+
+}
+
+
+/* ==================================================
+   SCALE
+================================================== */
+
+.scale {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap:
+        0.3rem;
+
+}
+
+
+.scale-item {
+
+    border:
+        1px solid var(--border);
+
+    padding:
+        0.4rem;
+
+    text-align:
+        center;
+
+    font-size:
+        0.6rem;
+
+}
+
+
+.scale-item input {
+
+    display:
+        block;
+
+    margin:
+        0 auto 0.15rem;
+
+    accent-color:
+        var(--primary);
+
+}
+
+
+/* ==================================================
+   HIGHLIGHT
+================================================== */
+
+.highlight {
+
+    border-left:
+        3px solid var(--primary);
+
+    background:
+        var(--white);
+
+    border-top:
+        1px solid var(--border);
+
+    border-right:
+        1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+
+    padding:
+        0.65rem;
+
+    margin:
+        0.65rem 0;
+
+}
+
+
+.highlight strong {
+
+    color:
+        var(--primary-dark);
+
+}
+
+
+/* ==================================================
+   DECLARATION
+================================================== */
+
+.declaration {
+
+    border:
+        1px solid var(--border);
+
+    border-left:
+        3px solid var(--primary);
+
+    padding:
+        0.7rem;
+
+}
+
+
+.declaration p {
+
+    margin-bottom:
+        0.45rem;
+
+}
+
+
+/* ==================================================
+   SIGNATURE
+================================================== */
+
+.signature-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:
+        1.3rem;
+
+    margin-top:
+        0.8rem;
+
+}
+
+
+.signature-line {
+
+    border-bottom:
+        1px solid #777;
+
+    height:
+        1.5rem;
+
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.site-footer {
+
+    background:
+        #000000;
+
+    color:
+        var(--white);
+
+    padding:
+        1.2rem 1rem;
+
+    text-align:
+        center;
+
+    margin-top:
+        1.7rem;
+
+}
+
+
+.site-footer h3 {
+
+    font-size:
+        0.72rem;
+
+    margin-bottom:
+        0.3rem;
+
+}
+
+
+.footer-tagline {
+
+    font-size:
+        0.6rem;
+
+    color:
+        #dddddd;
+
+}
+
+
+.footer-divider {
+
+    width:
+        45px;
+
+    height:
+        2px;
+
+    background:
+        var(--primary);
+
+    margin:
+        0.55rem auto;
+
+}
+
+
+.copyright {
+
+    font-size:
+        0.52rem;
+
+    color:
+        #aaaaaa;
+
+    margin-top:
+        0.45rem;
+
+}
+
+
+/* ==================================================
+   PRINT
+================================================== */
+
+@media print {
+
+    @page {
+
+        size:
+            A4;
+
+        margin:
+            11mm;
+
+    }
+
+
+    html,
+    body {
+
+        background:
+            #ffffff;
+
+        color:
+            #222222;
+
+        font-size:
+            0.66rem;
+
+    }
+
+
+    .site-header {
+
+        padding:
+            0.2rem 0;
+
+        border-bottom:
+            1px solid #999;
+
+    }
+
+
+    .document {
+
+        max-width:
+            none;
+
+        margin:
+            0;
+
+        padding:
+            0;
+
+    }
+
+
+    input,
+    textarea,
+    select {
+
+        border:
+            1px solid #aaa;
+
+    }
+
+
+    .section {
+
+        page-break-inside:
+            avoid;
+
+    }
+
+
+    .section-title {
+
+        color:
+            #222222 !important;
+
+        background:
+            #ffffff !important;
+
+        border-left:
+            3px solid #2e7d32 !important;
+
+        -webkit-print-color-adjust:
+            exact;
+
+        print-color-adjust:
+            exact;
+
+    }
+
+
+    .site-footer {
+
+        background:
+            #000000 !important;
+
+        color:
+            #ffffff !important;
+
+        -webkit-print-color-adjust:
+            exact;
+
+        print-color-adjust:
+            exact;
+
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 700px) {
+
+    .survey-info,
+    .inline-grid,
+    .three-grid,
+    .signature-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .document-header h1 {
+
+        font-size:
+            0.95rem;
+
+    }
+
+
+    .document-header h2 {
+
+        font-size:
+            0.7rem;
+
+    }
+
+
+    .scale {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <img
+            src="goreale_logo.png"
+            alt="Goreale Agricultural Innovators"
+            class="logo"
+        >
+
+    </div>
+
+</header>
+
+
+<!-- ==================================================
+     DOCUMENT
+================================================== -->
+
+<main class="document">
+
+
+    <!-- ==================================================
+         TITLE
+    ================================================== -->
+
+    <section class="document-header">
+
+        <h1>
+            FARMERS SURVEY FORM
+        </h1>
+
+        <h2>
+            Agricultural, Water and Environmental Needs Assessment
+        </h2>
+
+        <p>
+            Goreale Agricultural Innovators • Young Innovators 2026
+        </p>
+
+    </section>
+
+
+    <!-- ==================================================
+         INTRODUCTION
+    ================================================== -->
+
+    <section class="introduction">
+
+        <p>
+            <strong>Dear Farmer,</strong>
+        </p>
+
+        <p>
+            Goreale Agricultural Innovators is conducting this
+            survey to understand the challenges faced by farmers
+            in relation to agricultural production, water access,
+            irrigation, crop pests, climate change and environmental
+            conservation.
+        </p>
+
+        <p>
+            Your responses will help us understand local needs and
+            improve the design of practical agricultural and
+            environmental solutions.
+        </p>
+
+        <p>
+            <strong>
+                Participation is voluntary. Please provide accurate
+                information based on your experience. Your personal
+                information will be treated responsibly and will
+                not be used for purposes unrelated to the project
+                without appropriate consent.
+            </strong>
+        </p>
+
+    </section>
+
+
+    <!-- ==================================================
+         SURVEY INFORMATION
+    ================================================== -->
+
+    <section class="survey-info">
+
+        <div class="info-field">
+
+            <strong>
+                Survey Number
+            </strong>
+
+            ______________________________
+
+        </div>
+
+
+        <div class="info-field">
+
+            <strong>
+                Date of Survey
+            </strong>
+
+            ______________________________
+
+        </div>
+
+
+        <div class="info-field">
+
+            <strong>
+                Enumerator Name
+            </strong>
+
+            ______________________________
+
+        </div>
+
+
+        <div class="info-field">
+
+            <strong>
+                Location / Village
+            </strong>
+
+            ______________________________
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         SECTION 1
+    ================================================== -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            1. Farmer Information
+        </h2>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                1.1 Name of Farmer
+            </label>
+
+            <input
+                type="text"
+                placeholder="Optional"
+            >
+
+        </div>
+
+
+        <div class="inline-grid">
+
+            <div class="question">
+
+                <label class="question-label">
+                    1.2 Age
+                </label>
+
+                <input
+                    type="number"
+                    min="15"
+                    max="100"
+                >
+
+            </div>
+
+
+            <div class="question">
+
+                <label class="question-label">
+                    1.3 Gender
+                </label>
+
+                <div class="options">
+
+                    <label class="option">
+                        <input type="radio" name="gender">
+                        Male
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="gender">
+                        Female
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="gender">
+                        Prefer not to say
+                    </label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                1.4 What is your main occupation?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="radio" name="occupation">
+                    Farming
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="occupation">
+                    Livestock
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="occupation">
+                    Farming & Livestock
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="occupation">
+                    Other
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                1.5 How many years have you been farming?
+            </label>
+
+            <input
+                type="number"
+                min="0"
+            >
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                1.6 Approximately how much agricultural land do you farm?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="radio" name="land">
+                    Less than 1 acre
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="land">
+                    1–2 acres
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="land">
+                    3–5 acres
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="land">
+                    More than 5 acres
+                </label>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         SECTION 2
+    ================================================== -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            2. Agricultural Production
+        </h2>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                2.1 What crops do you currently grow?
+            </label>
+
+            <textarea
+                placeholder="List the main crops you grow">
+            </textarea>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                2.2 What are the main challenges affecting your crop production?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="checkbox">
+                    Water shortage
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Pests
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Diseases
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Poor soil
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    High input costs
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Climate variability
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Lack of knowledge
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Markets
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Other
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                2.3 What is the biggest agricultural challenge you face?
+            </label>
+
+            <textarea></textarea>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         SECTION 3
+    ================================================== -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            3. Water Access and Irrigation
+        </h2>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                3.1 Do you have reliable access to water for farming?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="radio" name="water">
+                    Yes
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="water">
+                    No
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="water">
+                    Sometimes
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                3.2 What is your main source of agricultural water?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="checkbox">
+                    Borehole
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Well
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    River
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Rainwater
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Water storage
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Other
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                3.3 What irrigation method do you currently use?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="radio" name="irrigation">
+                    No irrigation
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="irrigation">
+                    Manual watering
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="irrigation">
+                    Flood irrigation
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="irrigation">
+                    Drip irrigation
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="irrigation">
+                    Other
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                3.4 Have you ever used drip irrigation?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="radio" name="drip">
+                    Yes
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="drip">
+                    No
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                3.5 If you have not used drip irrigation, what is the main reason?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="checkbox">
+                    High cost
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Lack of information
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Lack of equipment
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Lack of technical support
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Lack of water
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Other
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                3.6 Would you be interested in learning how to use water-efficient irrigation?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="radio" name="learn-irrigation">
+                    Yes
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="learn-irrigation">
+                    No
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="learn-irrigation">
+                    Not sure
+                </label>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         SECTION 4
+    ================================================== -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            4. Crop Pests and Diseases
+        </h2>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                4.1 Do pests or diseases affect your crops?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="radio" name="pests">
+                    Frequently
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="pests">
+                    Sometimes
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="pests">
+                    Rarely
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="pests">
+                    Never
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                4.2 What are the main pests or diseases you encounter?
+            </label>
+
+            <textarea></textarea>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                4.3 How do you normally manage crop pests?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="checkbox">
+                    Pesticides
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Traditional methods
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Biological methods
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Crop rotation
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Seek agricultural advice
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Do nothing
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Other
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                4.4 Would you benefit from practical training on pest identification and management?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="radio" name="pest-training">
+                    Yes
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="pest-training">
+                    No
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="pest-training">
+                    Not sure
+                </label>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         SECTION 5
+    ================================================== -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            5. Climate-Smart Agriculture
+        </h2>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                5.1 Have you noticed changes in weather or climate affecting your farming?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="radio" name="climate">
+                    Yes
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="climate">
+                    No
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="climate">
+                    Not sure
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                5.2 What climate-related challenges have you experienced?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="checkbox">
+                    Drought
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Unpredictable rainfall
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Extreme heat
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Flooding
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Crop failure
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Pest increase
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Other
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                5.3 Which climate-smart farming practices are you currently using?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="checkbox">
+                    Water conservation
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Mulching
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Crop rotation
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Agroforestry
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Soil conservation
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Improved crop varieties
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    None
+                </label>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         SECTION 6
+    ================================================== -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            6. Farmer Training and Agricultural Information
+        </h2>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                6.1 Do you currently receive agricultural information or advisory services?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="radio" name="advisory">
+                    Regularly
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="advisory">
+                    Sometimes
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="advisory">
+                    Rarely
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="advisory">
+                    Never
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                6.2 Where do you normally obtain agricultural information?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="checkbox">
+                    Agricultural officers
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Other farmers
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Radio
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Television
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Internet
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Social media
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Agricultural organizations
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Other
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                6.3 What type of training would be most useful to you?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="checkbox">
+                    Irrigation
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Water management
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Crop production
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Pest management
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Climate-smart farming
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Farm business
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Environmental conservation
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Tree planting
+                </label>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         SECTION 7
+    ================================================== -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            7. Tree Planting and Environmental Conservation
+        </h2>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                7.1 Do you currently have trees on or around your farm?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="radio" name="trees">
+                    Yes
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="trees">
+                    No
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                7.2 Have you planted trees during the past two years?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="radio" name="tree-planting">
+                    Yes
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="tree-planting">
+                    No
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                7.3 What are the main reasons for planting trees?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="checkbox">
+                    Shade
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Firewood
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Fruit
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Soil protection
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Environmental conservation
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Income
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Other
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                7.4 What are the main challenges preventing tree planting?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="checkbox">
+                    Lack of seedlings
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Lack of water
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Lack of land
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Lack of knowledge
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Livestock damage
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Other
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                7.5 Would you participate in a community tree-planting initiative?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="radio" name="tree-program">
+                    Yes
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="tree-program">
+                    No
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="tree-program">
+                    Maybe
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                7.6 What environmental problems affect your community?
+            </label>
+
+            <textarea></textarea>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         SECTION 8
+    ================================================== -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            8. Interest in the Proposed Innovation
+        </h2>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                8.1 How interested would you be in learning about water-efficient farming?
+            </label>
+
+            <div class="scale">
+
+                <label class="scale-item">
+                    <input type="radio" name="interest-water">
+                    1<br>
+                    Not Interested
+                </label>
+
+                <label class="scale-item">
+                    <input type="radio" name="interest-water">
+                    2
+                </label>
+
+                <label class="scale-item">
+                    <input type="radio" name="interest-water">
+                    3<br>
+                    Neutral
+                </label>
+
+                <label class="scale-item">
+                    <input type="radio" name="interest-water">
+                    4
+                </label>
+
+                <label class="scale-item">
+                    <input type="radio" name="interest-water">
+                    5<br>
+                    Very Interested
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                8.2 Would you be willing to participate in a demonstration farm?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="radio" name="demo">
+                    Yes
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="demo">
+                    No
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="demo">
+                    Maybe
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                8.3 Would you be willing to test improved irrigation or farming practices on your farm?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="radio" name="testing">
+                    Yes
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="testing">
+                    No
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="testing">
+                    Maybe
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                8.4 What would make you more likely to adopt improved farming technology?
+            </label>
+
+            <div class="options">
+
+                <label class="option">
+                    <input type="checkbox">
+                    Affordable equipment
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Training
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Demonstration
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Technical support
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Access to finance
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Reliable water
+                </label>
+
+                <label class="option">
+                    <input type="checkbox">
+                    Other
+                </label>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         SECTION 9
+    ================================================== -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            9. Farmer Priorities
+        </h2>
+
+        <p class="section-description">
+            Please identify the three areas you consider most important
+            for improving agricultural production in your community.
+        </p>
+
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Priority
+                        </th>
+
+                        <th>
+                            Select
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Reliable agricultural water</td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Drip irrigation</td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Crop-pest management</td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Farmer training</td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Climate-smart agriculture</td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Tree planting</td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Environmental conservation</td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Access to agricultural information</td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Access to agricultural markets</td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Access to agricultural finance</td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         SECTION 10
+    ================================================== -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            10. Farmer Recommendations
+        </h2>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                10.1 What support would help you improve your farming?
+            </label>
+
+            <textarea></textarea>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                10.2 What agricultural problem should be addressed first in your community?
+            </label>
+
+            <textarea></textarea>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                10.3 Do you have any recommendations for Goreale Agricultural Innovators?
+            </label>
+
+            <textarea></textarea>
+
+        </div>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                10.4 Additional comments
+            </label>
+
+            <textarea></textarea>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         SECTION 11
+    ================================================== -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            11. Participation and Consent
+        </h2>
+
+
+        <div class="declaration">
+
+            <p>
+                I understand that this survey is being conducted
+                to understand agricultural, water and environmental
+                challenges within the community.
+            </p>
+
+            <p>
+                I understand that participation is voluntary and
+                that I may choose not to answer questions that I
+                do not wish to answer.
+            </p>
+
+            <p>
+                I understand that the information provided may be
+                used in aggregated or anonymized form to help
+                design, validate, monitor and improve the Goreale
+                Agricultural Innovators project.
+            </p>
+
+
+            <div class="options">
+
+                <label class="option">
+
+                    <input
+                        type="checkbox"
+                        required
+                    >
+
+                    I agree to participate in this survey.
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="signature-grid">
+
+            <div>
+
+                <strong>
+                    Farmer / Respondent
+                </strong>
+
+                <div class="signature-line"></div>
+
+                <small>
+                    Signature / Mark
+                </small>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    Date
+                </strong>
+
+                <div class="signature-line"></div>
+
+                <small>
+                    Date
+                </small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         ENUMERATOR SECTION
+    ================================================== -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Enumerator's Section
+        </h2>
+
+
+        <div class="question">
+
+            <label class="question-label">
+                General observation / field notes
+            </label>
+
+            <textarea></textarea>
+
+        </div>
+
+
+        <div class="inline-grid">
+
+            <div>
+
+                <strong>
+                    Enumerator Name
+                </strong>
+
+                <div class="signature-line"></div>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    Enumerator Signature
+                </strong>
+
+                <div class="signature-line"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         FINAL NOTE
+    ================================================== -->
+
+    <section class="highlight">
+
+        <strong>
+            Survey Purpose:
+        </strong>
+
+        This survey forms part of the initial community validation
+        and needs assessment for Goreale Agricultural Innovators.
+        Survey findings will help inform the development and testing
+        of practical solutions related to water-efficient irrigation,
+        climate-smart agriculture, crop-pest management, farmer
+        training, tree planting and environmental conservation.
+
+    </section>
+
+
+</main>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer class="site-footer">
+
+    <h3>
+        Goreale Agricultural Innovators
+    </h3>
+
+    <p class="footer-tagline">
+        Innovating Agriculture. Conserving Water. Restoring Nature.
+    </p>
+
+    <div class="footer-divider"></div>
+
+    <p>
+        Climate-Smart Agriculture |
+        Water Efficiency |
+        Crop Protection |
+        Tree Planting |
+        Environmental Conservation
+    </p>
+
+    <p class="copyright">
+        © 2026 Goreale Agricultural Innovators.
+        Farmer Survey and Community Needs Assessment.
+    </p>
+
+</footer>
+<script>
+window.addEventListener("load", function () {
+    window.print();
+});
+</script>
+
+</body>
+
+</html>

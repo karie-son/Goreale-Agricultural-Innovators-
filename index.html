@@ -1,0 +1,2028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Goreale Agricultural Innovators</title>
+<style>
+ /* =========================================================
+   GOREALE AGRICULTURAL INNOVATORS
+   HOME / INDEX PAGE
+   REFINED CORPORATE STYLE
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    color: #222222;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 0.80rem;
+    line-height: 1.6;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* =========================================================
+   CORPORATE VARIABLES
+========================================================= */
+
+:root {
+
+    /* PRIMARY BRAND */
+    --corporate-black: #000000;
+
+    /* TEXT */
+    --black: #111111;
+    --text: #333333;
+    --soft-text: #444444;
+    --muted: #666666;
+
+    /* BACKGROUNDS */
+    --white: #ffffff;
+    --light: #f7f7f7;
+    --lighter: #fafafa;
+
+    /* BORDERS */
+    --border: #e3e3e3;
+    --card-border: #dddddd;
+
+    /* SHADOWS */
+    --shadow:
+        0 3px 15px rgba(0, 0, 0, 0.035);
+
+    --shadow-hover:
+        0 8px 24px rgba(0, 0, 0, 0.075);
+
+    /* SHAPE */
+    --radius: 5px;
+
+    /* TRANSITION */
+    --transition:
+        all 0.25s ease;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    position: sticky;
+
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    background:
+        var(--white);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1200px;
+
+    min-height: 72px;
+
+    margin: 0 auto;
+
+    padding:
+        0 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.site-logo {
+    display: inline-flex;
+
+    align-items: center;
+
+    flex-shrink: 0;
+
+    transition:
+        opacity 0.25s ease;
+}
+
+.site-logo:hover {
+    opacity: 0.78;
+}
+
+.site-logo img {
+    width: 155px;
+    height: auto;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.main-navigation ul {
+    list-style: none;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 26px;
+}
+
+.main-navigation a {
+    position: relative;
+
+    display: inline-block;
+
+    color:
+        var(--text);
+
+    font-size:
+        0.75rem;
+
+    font-weight:
+        500;
+
+    line-height:
+        1.4;
+
+    padding:
+        8px 0;
+
+    transition:
+        color 0.25s ease;
+}
+
+
+/* NAVIGATION UNDERLINE */
+
+.main-navigation a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 3px;
+
+    width: 0;
+    height: 1px;
+
+    background:
+        var(--corporate-black);
+
+    transition:
+        width 0.25s ease;
+}
+
+.main-navigation a:hover {
+    color:
+        var(--corporate-black);
+}
+
+.main-navigation a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.menu-button {
+    display: none;
+
+    width: 36px;
+    height: 36px;
+
+    padding: 0;
+
+    border: 1px solid var(--border);
+
+    border-radius: 4px;
+
+    background:
+        var(--white);
+
+    color:
+        var(--corporate-black);
+
+    font-size:
+        1.15rem;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        var(--transition);
+}
+
+.menu-button:hover {
+    background:
+        var(--light);
+
+    border-color:
+        #cccccc;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.intro-section {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding:
+        58px 25px 38px;
+}
+
+.intro-section h1 {
+    color:
+        var(--black);
+
+    font-size:
+        1.48rem;
+
+    font-weight:
+        700;
+
+    line-height:
+        1.25;
+
+    letter-spacing:
+        -0.01em;
+
+    margin-bottom:
+        8px;
+}
+
+
+/* =========================================================
+   INTRODUCTION TAGLINE
+========================================================= */
+
+.intro-tagline {
+    color:
+        var(--black);
+
+    font-size:
+        0.86rem;
+
+    font-weight:
+        600;
+
+    line-height:
+        1.5;
+
+    margin-bottom:
+        18px;
+}
+
+.intro-section p {
+    max-width:
+        900px;
+
+    color:
+        var(--soft-text);
+
+    font-size:
+        0.76rem;
+
+    line-height:
+        1.68;
+
+    margin:
+        0 0 11px;
+}
+
+.intro-section p:last-child {
+    margin-bottom:
+        0;
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero-section {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding:
+        8px 25px 45px;
+}
+
+
+/* =========================================================
+   HERO SLIDER
+========================================================= */
+
+.hero-slider {
+    width: 100%;
+
+    overflow: hidden;
+
+    background:
+        var(--light);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+    box-shadow:
+        var(--shadow);
+}
+
+
+/* =========================================================
+   HERO TRACK
+========================================================= */
+
+.hero-track {
+    width: 400%;
+
+    display: flex;
+
+    animation:
+        heroSlide 18s infinite;
+
+    will-change:
+        transform;
+}
+
+
+/* =========================================================
+   HERO SLIDES
+========================================================= */
+
+.hero-slide {
+    width: 25%;
+
+    flex-shrink: 0;
+
+    aspect-ratio:
+        16 / 7;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO IMAGES
+========================================================= */
+
+.hero-slide img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+}
+
+
+/* =========================================================
+   HERO ANIMATION
+========================================================= */
+
+@keyframes heroSlide {
+
+    0%,
+    20% {
+        transform:
+            translateX(0);
+    }
+
+    25%,
+    45% {
+        transform:
+            translateX(-25%);
+    }
+
+    50%,
+    70% {
+        transform:
+            translateX(-50%);
+    }
+
+    75%,
+    95% {
+        transform:
+            translateX(-75%);
+    }
+
+    100% {
+        transform:
+            translateX(0);
+    }
+}
+
+
+/* =========================================================
+   GET INVOLVED
+========================================================= */
+
+.get-involved-section {
+    width: 100%;
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    padding:
+        40px 25px 58px;
+
+    text-align:
+        center;
+}
+
+.get-involved-section h2 {
+    color:
+        var(--black);
+
+    font-size:
+        1.04rem;
+
+    font-weight:
+        700;
+
+    line-height:
+        1.35;
+
+    margin-bottom:
+        9px;
+}
+
+.get-involved-section p {
+    max-width:
+        850px;
+
+    margin:
+        0 auto 10px;
+
+    color:
+        var(--soft-text);
+
+    font-size:
+        0.76rem;
+
+    line-height:
+        1.68;
+}
+
+
+/* =========================================================
+   CTA WRAPPER
+========================================================= */
+
+.cta-wrapper {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    margin-top:
+        21px;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.cta-button {
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-width:
+        116px;
+
+    padding:
+        9px 22px;
+
+    background:
+        var(--corporate-black);
+
+    color:
+        var(--white);
+
+    border:
+        1px solid var(--corporate-black);
+
+    border-radius:
+        5px;
+
+    font-size:
+        0.73rem;
+
+    font-weight:
+        600;
+
+    line-height:
+        1.3;
+
+    cursor:
+        pointer;
+
+    box-shadow:
+        0 0 0 rgba(0, 0, 0, 0);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.cta-button:hover {
+    background:
+        #222222;
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button:active {
+    transform:
+        translateY(0);
+
+    box-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   FEATURE SECTION
+========================================================= */
+
+.feature-section {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding:
+        5px 25px 68px;
+}
+
+.feature-grid {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap:
+        18px;
+}
+
+
+/* =========================================================
+   FEATURE CARD
+========================================================= */
+
+.feature-card {
+    position: relative;
+
+    min-height:
+        150px;
+
+    background:
+        var(--white);
+
+    border:
+        1px solid var(--card-border);
+
+    border-radius:
+        var(--radius);
+
+    padding:
+        23px 20px 21px 28px;
+
+    box-shadow:
+        var(--shadow);
+
+    overflow:
+        hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+/* =========================================================
+   CORPORATE LEFT ACCENT
+========================================================= */
+
+.feature-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width:
+        4px;
+
+    height:
+        100%;
+
+    background:
+        var(--corporate-black);
+
+    border-radius:
+        var(--radius) 0 0 var(--radius);
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.feature-card:hover {
+    transform:
+        translateY(-3px);
+
+    border-color:
+        #d5d5d5;
+
+    box-shadow:
+        var(--shadow-hover);
+}
+
+
+/* =========================================================
+   FEATURE CARD TITLE
+========================================================= */
+
+.feature-card h3 {
+    color:
+        var(--black);
+
+    font-size:
+        0.84rem;
+
+    font-weight:
+        700;
+
+    line-height:
+        1.35;
+
+    margin-bottom:
+        8px;
+}
+
+
+/* =========================================================
+   FEATURE CARD TEXT
+========================================================= */
+
+.feature-card p {
+    color:
+        var(--soft-text);
+
+    font-size:
+        0.74rem;
+
+    line-height:
+        1.62;
+
+    margin-bottom:
+        13px;
+}
+
+
+/* =========================================================
+   FEATURE LINKS
+========================================================= */
+
+.feature-link {
+    display:
+        inline-block;
+
+    color:
+        var(--corporate-black);
+
+    font-size:
+        0.69rem;
+
+    font-weight:
+        600;
+
+    line-height:
+        1.4;
+
+    border-bottom:
+        1px solid var(--corporate-black);
+
+    padding-bottom:
+        2px;
+
+    transition:
+        opacity 0.25s ease;
+}
+
+.feature-link:hover {
+    opacity:
+        0.55;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+    width: 100%;
+
+    background: #000000;
+
+    color: #ffffff;
+
+    padding: 28px 18px 12px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   FOOTER CONTAINER
+========================================================= */
+
+.footer-container {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   FOOTER TITLE
+========================================================= */
+
+.footer-container h3 {
+    margin: 0 0 3px;
+
+    padding: 0;
+
+    color: #ffffff;
+
+    font-size: 0.88rem;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   FOOTER TAGLINE
+========================================================= */
+
+.footer-tagline {
+    margin: 0 0 4px;
+
+    padding: 0;
+
+    color: #ffffff;
+
+    font-size: 0.72rem;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   FOOTER SERVICES
+========================================================= */
+
+.footer-services {
+    margin: 0 0 4px;
+
+    padding: 0;
+
+    color: #ffffff;
+
+    font-size: 0.66rem;
+
+    font-weight: 700;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   FOOTER FOUNDER
+========================================================= */
+
+.footer-founder {
+    margin: 0 0 5px;
+
+    padding: 0;
+
+    color: #ffffff;
+
+    font-size: 0.67rem;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   PRIVACY / FOOTER LINKS
+========================================================= */
+
+.footer-links {
+    margin: 0 0 9px;
+
+    padding: 0;
+
+    line-height: 1.4;
+}
+
+.footer-links a {
+    color: #ffffff;
+
+    font-size: 0.67rem;
+
+    font-weight: 700;
+
+    text-decoration: underline;
+
+    text-decoration-thickness: 1px;
+
+    text-underline-offset: 3px;
+
+    transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+    opacity: 0.65;
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
+
+.footer-bottom {
+    margin: 0;
+
+    padding: 9px 0 0;
+
+    border-top: 1px solid #333333;
+
+    color: #ffffff;
+
+    font-size: 0.61rem;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   MOBILE FOOTER
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .site-footer {
+        padding: 24px 15px 10px;
+    }
+
+    .footer-container h3 {
+        font-size: 0.80rem;
+
+        margin-bottom: 3px;
+    }
+
+    .footer-tagline {
+        font-size: 0.65rem;
+
+        margin-bottom: 3px;
+    }
+
+    .footer-services {
+        font-size: 0.58rem;
+
+        line-height: 1.45;
+
+        margin-bottom: 3px;
+    }
+
+    .footer-founder {
+        font-size: 0.60rem;
+
+        margin-bottom: 4px;
+    }
+
+    .footer-links {
+        margin-bottom: 7px;
+    }
+
+    .footer-links a {
+        font-size: 0.61rem;
+    }
+
+    .footer-bottom {
+        padding-top: 8px;
+
+        font-size: 0.55rem;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .site-footer {
+        padding: 21px 12px 9px;
+    }
+
+    .footer-container h3 {
+        font-size: 0.76rem;
+    }
+
+    .footer-tagline {
+        font-size: 0.61rem;
+    }
+
+    .footer-services {
+        font-size: 0.54rem;
+    }
+
+    .footer-founder {
+        font-size: 0.56rem;
+    }
+
+    .footer-links a {
+        font-size: 0.57rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.51rem;
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .header-container {
+        padding:
+            0 22px;
+    }
+
+    .main-navigation ul {
+        gap:
+            19px;
+    }
+
+    .main-navigation a {
+        font-size:
+            0.72rem;
+    }
+
+    .intro-section {
+        max-width:
+            900px;
+    }
+
+    .intro-section h1 {
+        font-size:
+            1.38rem;
+    }
+
+    .hero-slide {
+        aspect-ratio:
+            16 / 8;
+    }
+
+    .feature-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    body {
+        font-size:
+            0.76rem;
+
+        line-height:
+            1.55;
+    }
+
+
+    /* -----------------------------------------------
+       HEADER
+    ----------------------------------------------- */
+
+    .header-container {
+        min-height:
+            65px;
+
+        padding:
+            0 18px;
+    }
+
+    .site-logo img {
+        width:
+            140px;
+    }
+
+
+    /* -----------------------------------------------
+       MOBILE MENU BUTTON
+    ----------------------------------------------- */
+
+    .menu-button {
+        display:
+            flex;
+
+        align-items:
+            center;
+
+        justify-content:
+            center;
+    }
+
+
+    /* -----------------------------------------------
+       MOBILE NAVIGATION
+    ----------------------------------------------- */
+
+    .main-navigation {
+        display:
+            none;
+
+        position:
+            absolute;
+
+        top:
+            65px;
+
+        left:
+            0;
+
+        width:
+            100%;
+
+        background:
+            var(--white);
+
+        border-top:
+            1px solid var(--border);
+
+        border-bottom:
+            1px solid var(--border);
+
+        box-shadow:
+            0 6px 18px rgba(0, 0, 0, 0.05);
+    }
+
+    .main-navigation.active {
+        display:
+            block;
+    }
+
+    .main-navigation ul {
+        width:
+            100%;
+
+        display:
+            flex;
+
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
+
+        gap:
+            0;
+
+        padding:
+            5px 18px;
+    }
+
+    .main-navigation li {
+        width:
+            100%;
+    }
+
+    .main-navigation a {
+        display:
+            block;
+
+        width:
+            100%;
+
+        padding:
+            11px 0;
+
+        color:
+            var(--text);
+
+        font-size:
+            0.73rem;
+
+        border-bottom:
+            1px solid #eeeeee;
+    }
+
+    .main-navigation li:last-child a {
+        border-bottom:
+            none;
+    }
+
+    .main-navigation a::after {
+        display:
+            none;
+    }
+
+
+    /* -----------------------------------------------
+       INTRODUCTION
+    ----------------------------------------------- */
+
+    .intro-section {
+        padding:
+            43px 18px 30px;
+    }
+
+    .intro-section h1 {
+        font-size:
+            1.22rem;
+
+        line-height:
+            1.3;
+
+        margin-bottom:
+            7px;
+    }
+
+    .intro-tagline {
+        font-size:
+            0.78rem;
+
+        line-height:
+            1.5;
+
+        margin-bottom:
+            14px;
+    }
+
+    .intro-section p {
+        font-size:
+            0.72rem;
+
+        line-height:
+            1.62;
+
+        margin-bottom:
+            9px;
+    }
+
+
+    /* -----------------------------------------------
+       HERO
+    ----------------------------------------------- */
+
+    .hero-section {
+        padding:
+            7px 18px 32px;
+    }
+
+    .hero-slider {
+        border-radius:
+            5px;
+    }
+
+    .hero-slide {
+        aspect-ratio:
+            4 / 3;
+    }
+
+
+    /* -----------------------------------------------
+       GET INVOLVED
+    ----------------------------------------------- */
+
+    .get-involved-section {
+        padding:
+            31px 18px 46px;
+    }
+
+    .get-involved-section h2 {
+        font-size:
+            0.95rem;
+
+        margin-bottom:
+            8px;
+    }
+
+    .get-involved-section p {
+        font-size:
+            0.72rem;
+
+        line-height:
+            1.62;
+
+        margin-bottom:
+            9px;
+    }
+
+    .cta-wrapper {
+        margin-top:
+            18px;
+    }
+
+    .cta-button {
+        min-width:
+            108px;
+
+        padding:
+            8px 19px;
+
+        font-size:
+            0.70rem;
+
+        border-radius:
+            5px;
+    }
+
+
+    /* -----------------------------------------------
+       FEATURES
+    ----------------------------------------------- */
+
+    .feature-section {
+        padding:
+            3px 18px 52px;
+    }
+
+    .feature-grid {
+        grid-template-columns:
+            1fr;
+
+        gap:
+            13px;
+    }
+
+    .feature-card {
+        min-height:
+            auto;
+
+        padding:
+            20px 18px 19px 25px;
+    }
+
+    .feature-card h3 {
+        font-size:
+            0.80rem;
+
+        margin-bottom:
+            7px;
+    }
+
+    .feature-card p {
+        font-size:
+            0.70rem;
+
+        line-height:
+            1.58;
+
+        margin-bottom:
+            11px;
+    }
+
+    .feature-link {
+        font-size:
+            0.67rem;
+    }
+
+
+    /* -----------------------------------------------
+       FOOTER
+    ----------------------------------------------- */
+
+    .site-footer {
+        padding:
+            34px 18px 18px;
+    }
+
+    .footer-container h3 {
+        font-size:
+            0.81rem;
+    }
+
+    .footer-tagline {
+        font-size:
+            0.68rem;
+
+        margin-bottom:
+            10px;
+    }
+
+    .footer-services {
+        font-size:
+            0.59rem;
+
+        line-height:
+            1.6;
+    }
+
+    .footer-founder {
+        font-size:
+            0.61rem;
+
+        margin-bottom:
+            18px;
+    }
+
+    .footer-bottom {
+        font-size:
+            0.57rem;
+
+        padding-top:
+            12px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .header-container {
+        min-height:
+            62px;
+
+        padding:
+            0 15px;
+    }
+
+    .site-logo img {
+        width:
+            130px;
+    }
+
+    .menu-button {
+        width:
+            33px;
+
+        height:
+            33px;
+
+        font-size:
+            1.05rem;
+    }
+
+    .main-navigation {
+        top:
+            62px;
+    }
+
+    .intro-section {
+        padding:
+            36px 15px 26px;
+    }
+
+    .intro-section h1 {
+        font-size:
+            1.14rem;
+    }
+
+    .intro-tagline {
+        font-size:
+            0.74rem;
+    }
+
+    .intro-section p {
+        font-size:
+            0.69rem;
+
+        line-height:
+            1.58;
+    }
+
+    .hero-section {
+        padding:
+            6px 15px 28px;
+    }
+
+    .get-involved-section {
+        padding:
+            28px 15px 40px;
+    }
+
+    .get-involved-section h2 {
+        font-size:
+            0.91rem;
+    }
+
+    .get-involved-section p {
+        font-size:
+            0.69rem;
+    }
+
+    .feature-section {
+        padding:
+            2px 15px 45px;
+    }
+
+    .feature-card {
+        padding:
+            18px 16px 17px 23px;
+    }
+
+    .feature-card h3 {
+        font-size:
+            0.77rem;
+    }
+
+    .feature-card p {
+        font-size:
+            0.68rem;
+    }
+
+    .feature-link {
+        font-size:
+            0.65rem;
+    }
+
+    .site-footer {
+        padding:
+            31px 15px 16px;
+    }
+
+    .footer-container h3 {
+        font-size:
+            0.78rem;
+    }
+
+    .footer-tagline {
+        font-size:
+            0.65rem;
+    }
+
+    .footer-services {
+        font-size:
+            0.55rem;
+    }
+
+    .footer-founder {
+        font-size:
+            0.59rem;
+    }
+
+    .footer-bottom {
+        font-size:
+            0.55rem;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY / FOCUS
+========================================================= */
+
+a:focus-visible,
+button:focus-visible {
+    outline:
+        2px solid var(--corporate-black);
+
+    outline-offset:
+        3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior:
+            auto;
+    }
+
+    .hero-track {
+        animation:
+            none;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition:
+            none !important;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =================================================
+     HEADER
+================================================= -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <!-- LOGO -->
+
+        <a href="index.html" class="site-logo">
+
+            <img
+                src="goreale_logo.png"
+                alt="Goreale Agricultural Innovators Logo"
+            >
+
+        </a>
+
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <button
+            class="menu-button"
+            onclick="toggleMenu()"
+            aria-label="Open navigation"
+        >
+            ☰
+        </button>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="main-navigation" id="mainNavigation">
+
+            <ul>
+
+                <li>
+                    <a href="about_us.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="what_we_do.html">
+                        What We Do
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacts.html">
+                        Contact
+                    </a>
+                </li>
+
+                <li>
+                    <a href="partnership.html">
+                        Partnership
+                    </a>
+                </li>
+
+                <li>
+                    <a href="founder.html">
+                        Founder
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =================================================
+     INNOVATORS INTRODUCTION
+================================================= -->
+
+<section class="intro-section">
+
+    <h1>
+        Goreale Agricultural Innovators
+    </h1>
+
+    <div class="intro-tagline">
+        Innovating Agriculture. Conserving Water. Restoring Nature.
+    </div>
+
+    <p>
+        Goreale Agricultural Innovators is a youth-led environmental
+        and agricultural innovation initiative dedicated to creating
+        sustainable solutions for resilient farming communities and
+        a healthier environment.
+    </p>
+
+    <p>
+        We promote climate-smart agriculture, water-efficient irrigation,
+        sustainable crop management, tree planting, environmental
+        restoration, and community action against deforestation.
+    </p>
+
+    <p>
+        Our work is driven by the belief that young people can play
+        a leading role in transforming agriculture, protecting natural
+        resources, and creating sustainable opportunities for communities.
+    </p>
+
+    <p>
+        Through innovation, knowledge sharing, collaboration, and practical
+        community action, Goreale Agricultural Innovators seeks to contribute
+        to a future where agriculture is productive, environmentally
+        responsible, and resilient to climate challenges.
+    </p>
+
+</section>
+
+
+
+<!-- =================================================
+     HERO IMAGE SECTION
+================================================= -->
+
+<section class="hero-section">
+
+    <div class="hero-slider">
+
+        <div class="hero-track">
+
+            <div class="hero-slide">
+
+                <img
+                    src="images/goreale_hero1.jpg"
+                    alt="Climate-smart agriculture"
+                >
+
+            </div>
+
+
+            <div class="hero-slide">
+
+                <img
+                    src="images/goreale_hero2.jpg"
+                    alt="Water efficient agriculture"
+                >
+
+            </div>
+
+
+            <div class="hero-slide">
+
+                <img
+                    src="images/goreale_hero3.jpg"
+                    alt="Environmental restoration"
+                >
+
+            </div>
+
+
+            <div class="hero-slide">
+
+                <img
+                    src="images/goreale_hero4.jpg"
+                    alt="Tree planting and conservation"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     GET INVOLVED
+================================================= -->
+
+<section class="get-involved-section">
+
+    <h2>
+        Get Involved
+    </h2>
+
+    <p>
+        Goreale Agricultural Innovators believes that sustainable agriculture
+        and environmental conservation require the active participation of
+        the entire community.
+    </p>
+
+    <p>
+        Farmers, young people, students, schools, community organizations,
+        local leaders, agricultural professionals, partners, and supporters
+        are all invited to contribute to the initiative.
+    </p>
+
+    <p>
+        Together, we can transform local agricultural challenges into
+        opportunities for innovation, environmental restoration, food
+        security, and sustainable livelihoods.
+    </p>
+
+
+    <!-- CTA -->
+
+    <div class="cta-wrapper">
+
+        <a
+            href="get_involved.html"
+            class="cta-button"
+        >
+            Get Involved
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     FEATURE SECTIONS
+================================================= -->
+
+<section class="feature-section">
+
+    <div class="feature-grid">
+
+
+        <!-- GALLERY -->
+
+        <article class="feature-card">
+
+            <h3>
+                Gallery
+            </h3>
+
+            <p>
+                Explore our agricultural activities, community initiatives,
+                environmental restoration work, field activities and
+                innovation projects.
+            </p>
+
+            <a
+                href="gallery.html"
+                class="feature-link"
+            >
+                View Gallery →
+            </a>
+
+        </article>
+
+
+
+        <!-- GOREALE PROFILE -->
+
+        <article class="feature-card">
+
+            <h3>
+                Goreale Profile
+            </h3>
+
+            <p>
+                Learn more about Goreale Agricultural Innovators, our vision,
+                mission, objectives, approach and commitment to sustainable
+                agriculture and environmental conservation.
+            </p>
+
+            <a
+                href="about_us.html"
+                class="feature-link"
+            >
+                View Profile →
+            </a>
+
+        </article>
+
+
+
+        <!-- RESEARCH & PROPOSAL -->
+
+        <article class="feature-card">
+
+            <h3>
+                Research & Survey 
+            </h3>
+
+            <p>
+                Explore our research and Survey areas, agricultural innovation ideas,
+                environmental proposals, projects and opportunities for
+                collaboration.
+            </p>
+
+            <div>
+
+                <a
+                    href="farmers_survey.html"
+                    class="feature-link"
+                >
+                    Research & Survey→
+                
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     FOOTER
+================================================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <h3>
+            Goreale Agricultural Innovators
+        </h3>
+
+        <p class="footer-tagline">
+            Innovating Agriculture. Conserving Water. Restoring Nature.
+        </p>
+
+        <p class="footer-services">
+            Climate-Smart Agriculture |
+            Water Efficiency |
+            Crop Protection |
+            Tree Planting |
+            Environmental Conservation
+        </p>
+
+        <p class="footer-founder">
+            Founded and led by Samira Abdirahman Maalim
+        </p>
+
+        <p class="footer-links">
+            <a href="privacy_policy.html">
+                Privacy Policy
+            </a>
+        </p>
+
+        <div class="footer-bottom">
+            © 2026 Goreale Agricultural Innovators.
+            All rights reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =================================================
+     MOBILE NAVIGATION SCRIPT
+================================================= -->
+
+<script>
+
+    function toggleMenu() {
+
+        const navigation =
+            document.getElementById("mainNavigation");
+
+        navigation.classList.toggle("active");
+
+    }
+
+
+    /* Close mobile menu after clicking a link */
+
+    document
+        .querySelectorAll(".main-navigation a")
+        .forEach(function(link) {
+
+            link.addEventListener("click", function() {
+
+                document
+                    .getElementById("mainNavigation")
+                    .classList.remove("active");
+
+            });
+
+        });
+
+</script>
+
+
+</body>
+</html>
