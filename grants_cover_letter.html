@@ -1,0 +1,706 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Official Letter | Goreale Agricultural Innovators</title>
+
+<meta name="author" content="Goreale Agricultural Innovators">
+<meta name="description" content="Official Mekatilili Micro-Grant application letter from Goreale Agricultural Innovators.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #246b38;
+    --dark-green: #174c2a;
+    --black: #222b25;
+    --text: #414943;
+    --muted: #727b74;
+    --border: #dce4dd;
+    --light: #f5f8f5;
+}
+
+body {
+    background: #eef1ee;
+    color: var(--text);
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.85;
+    padding: 25px 12px;
+}
+
+.letter {
+    max-width: 850px;
+    min-height: 1100px;
+    margin: auto;
+    background: #fff;
+    padding: 48px 58px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.07);
+}
+
+/* LETTERHEAD */
+
+.letterhead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 22px;
+    border-bottom: 3px solid var(--green);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo {
+    width: 105px;
+    height: auto;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 22px;
+    line-height: 1.25;
+    color: var(--dark-green);
+    font-weight: 700;
+}
+
+.brand-tagline {
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.header-location {
+    text-align: right;
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.header-location strong {
+    color: var(--dark-green);
+    display: block;
+    font-size: 12px;
+}
+
+/* ACCENT */
+
+.header-accent {
+    height: 4px;
+    width: 75px;
+    background: var(--green);
+    margin-top: 9px;
+}
+
+/* REFERENCE DETAILS */
+
+.reference {
+    display: flex;
+    justify-content: space-between;
+    margin: 28px 0 25px;
+    font-size: 12px;
+}
+
+.reference strong {
+    color: var(--black);
+}
+
+/* ADDRESS */
+
+.recipient {
+    margin-bottom: 23px;
+}
+
+.recipient strong {
+    color: var(--black);
+}
+
+.subject {
+    padding: 12px 15px;
+    background: var(--light);
+    border-left: 4px solid var(--green);
+    margin: 20px 0;
+    color: var(--dark-green);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.salutation {
+    margin-bottom: 12px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+/* BODY */
+
+.content p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.content strong {
+    color: var(--black);
+}
+
+.content ul {
+    margin: 0 0 16px 23px;
+}
+
+.content li {
+    padding-left: 4px;
+    margin-bottom: 5px;
+}
+
+.highlight {
+    background: var(--light);
+    border: 1px solid var(--border);
+    padding: 15px 18px;
+    margin: 18px 0;
+}
+
+.highlight strong {
+    color: var(--dark-green);
+}
+
+/* SIGNATURE */
+
+.closing {
+    margin-top: 25px;
+}
+
+.signature-area {
+    margin-top: 28px;
+}
+
+.signature-image {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 8px 0;
+}
+
+.signature-line {
+    width: 230px;
+    border-bottom: 1px solid #777;
+    margin: 25px 0 7px;
+}
+
+.applicant-name {
+    font-weight: 700;
+    color: var(--dark-green);
+    font-size: 14px;
+}
+
+.applicant-role {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+/* FOOTER */
+
+.footer {
+    border-top: 1px solid var(--border);
+    margin-top: 45px;
+    padding-top: 13px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+.footer strong {
+    color: var(--dark-green);
+    letter-spacing: .5px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 600px) {
+
+    .letter {
+        padding: 27px 20px;
+        min-height: auto;
+    }
+
+    .letterhead {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-location {
+        text-align: left;
+    }
+
+    .brand-name {
+        font-size: 19px;
+    }
+
+    .logo {
+        width: 85px;
+    }
+
+    .reference {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .content p {
+        text-align: left;
+    }
+}
+
+/* PRINT */
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 14mm;
+    }
+
+    body {
+        background: white;
+        padding: 0;
+        font-size: 12px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .letter {
+        max-width: none;
+        min-height: auto;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .letterhead,
+    .subject,
+    .highlight,
+    .footer {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .content p {
+        orphans: 3;
+        widows: 3;
+    }
+}
+.digital-stamp {
+    display: inline-block;
+    width: 300px;
+    padding: 13px 15px;
+    border: 3px solid #174b9b;
+    color: #174b9b;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 800;
+    line-height: 1.5;
+    transform: rotate(-2deg);
+    opacity: 0.9;
+    box-sizing: border-box;
+}
+
+.digital-stamp .name {
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.digital-stamp .official {
+    border-top: 2px solid #174b9b;
+    border-bottom: 2px solid #174b9b;
+    margin: 7px 0;
+    padding: 4px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.digital-stamp .location {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.digital-stamp {
+    position: relative;
+    display: inline-block;
+    width: 310px;
+    min-height: 155px;
+    padding: 15px;
+    border: 3px solid #174b9b;
+    color: #174b9b;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 800;
+    line-height: 1.5;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: rotate(-2deg);
+    isolation: isolate;
+}
+
+/* Logo watermark */
+.digital-stamp::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("goreale_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 115px;
+    opacity: 0.12;
+    z-index: -1;
+}
+
+.digital-stamp .name {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.digital-stamp .official {
+    border-top: 2px solid #174b9b;
+    border-bottom: 2px solid #174b9b;
+    margin: 7px 0;
+    padding: 4px;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.digital-stamp .location {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+</style>
+</head>
+
+<body>
+
+<main class="letter">
+
+<!-- OFFICIAL LETTERHEAD -->
+
+<header class="letterhead">
+
+    <div class="brand">
+
+        <img
+            src="goreale_logo.png"
+            alt="Goreale Agricultural Innovators Logo"
+            class="logo"
+        >
+
+        <div>
+
+            <div class="brand-name">
+                GOREALE<br>
+                AGRICULTURAL INNOVATORS
+            </div>
+
+            <div class="brand-tagline">
+                Youth-Led Agricultural Innovation
+            </div>
+
+            <div class="header-accent"></div>
+
+        </div>
+
+    </div>
+
+    <div class="header-location">
+
+        <strong>PROJECT LOCATION</strong>
+
+        Goreale and Surrounding Communities<br>
+        Kenya
+
+        <br>
+
+        <strong style="margin-top:7px;">
+            OFFICIAL CORRESPONDENCE
+        </strong>
+
+        Individual Innovation Initiative
+
+    </div>
+
+</header>
+
+
+<!-- REFERENCE -->
+
+<div class="reference">
+
+    <div>
+        <strong>Our Reference:</strong>
+        GAI/MKG/2026/001
+    </div>
+
+    <div>
+        <strong>Date:</strong>
+        3 November 2026
+    </div>
+
+</div>
+
+
+<!-- RECIPIENT -->
+
+<div class="recipient">
+
+    The Selection Committee<br>
+
+    <strong>Mekatilili Micro-Grant Programme</strong><br>
+
+    Kenya
+
+</div>
+
+
+<!-- SUBJECT -->
+
+<div class="subject">
+
+    RE: APPLICATION FOR THE MEKATILILI MICRO-GRANT –
+    GOREALE AGRICULTURAL INNOVATORS
+
+</div>
+
+
+<div class="content">
+
+<p class="salutation">
+Dear Mekatilili Micro-Grant Selection Committee,
+</p>
+
+
+<p>
+On behalf of Goreale Agricultural Innovators, I am pleased
+to formally submit our application for consideration
+under the Mekatilili Micro-Grant Programme. We are seeking
+support to advance an existing youth-led agricultural
+innovation initiative that combines digital technology,
+community engagement and practical agricultural information
+to address challenges affecting farming communities.
+</p>
+
+
+<p>
+Goreale Agricultural Innovators is a youth-led initiative
+focused on making agricultural information more accessible,
+strengthening communication with farming communities and
+promoting innovative approaches to sustainable agriculture.
+The initiative is being represented in this application
+by <strong>Samira Abdirahman Maalim</strong>, applying in
+her individual capacity as the lead innovator.
+</p>
+
+
+<p>
+An important achievement of the initiative is that
+<strong>its online platform has already been developed
+and implemented.</strong> This provides an existing
+digital foundation upon which the next stage of the
+innovation can be built. The platform is intended to
+serve as a formal digital communication and information-sharing
+channel connecting the initiative with farmers and other
+relevant community stakeholders.
+</p>
+
+
+<p>
+However, the existence of a digital platform is only
+the beginning. We recognize that meaningful innovation
+must be tested in real community settings, informed by
+user experiences and improved according to actual needs.
+Our immediate priority is therefore to move from platform
+development to practical implementation, community
+onboarding, testing and evaluation.
+</p>
+
+
+<p>
+Through this application, we are requesting
+<strong>KES 100,000</strong> to support a focused
+<strong>three-month implementation pilot</strong>.
+The proposed activities will include:
+</p>
+
+
+<ul>
+
+    <li>Technical review, activation and improvement of
+    the existing online platform.</li>
+
+    <li>Introducing the platform to an initial group
+    of farmers and community users.</li>
+
+    <li>Establishing a structured digital communication
+    channel for agricultural information and updates.</li>
+
+    <li>Sharing relevant information on irrigation,
+    crop-pest management and climate-smart agriculture.</li>
+
+    <li>Collecting user feedback and assessing the
+    usefulness of the platform.</li>
+
+    <li>Documenting implementation results and developing
+    a practical plan for future expansion.</li>
+
+</ul>
+
+
+<p>
+We believe the strength of this proposal lies in its
+readiness to move beyond the conceptual stage. Rather
+than beginning with an untested idea, we are building
+on an existing digital platform and seeking resources
+to demonstrate its practical value through direct
+community participation.
+</p>
+
+
+<p>
+We also recognize that the long-term development of
+Goreale Agricultural Innovators will require considerably
+more investment than the requested microgrant. Future
+development will involve strengthening technical
+infrastructure, expanding field operations and
+establishing a dedicated physical office to support
+coordination, stakeholder engagement and the continued
+growth of the initiative.
+</p>
+
+
+<p>
+Nevertheless, our immediate request is deliberately
+focused. We intend to use the Mekatilili Micro-Grant
+to achieve a realistic and measurable implementation
+milestone within three months. The evidence and lessons
+generated during this period will guide further development
+and strengthen our ability to pursue additional partnerships
+and investment.
+</p>
+
+
+<div class="highlight">
+
+<strong>Our commitment</strong>
+
+<p style="margin:7px 0 0;">
+We are committed to responsible use of the grant,
+transparent implementation, community participation,
+measurable progress and proper documentation of the
+results achieved during the pilot period.
+</p>
+
+</div>
+
+
+<p>
+We would be grateful for the opportunity to have our
+application considered. Your support would provide
+an important opportunity to demonstrate how an existing
+youth-led digital innovation can be translated into
+practical community value and a foundation for wider
+agricultural development.
+</p>
+
+
+<p>
+Thank you for your time and consideration. We look
+forward to the possibility of contributing to the
+objectives of the Mekatilili Micro-Grant Programme.
+</p>
+
+
+<div class="closing">
+
+<p>
+Yours faithfully,
+</p>
+
+</div>
+
+</div>
+
+
+<!-- SIGNATURE -->
+
+<div class="signature-area">
+
+    <div class="signature-line"></div>
+
+    <div class="applicant-name">
+        Samira Abdirahman Maalim
+    </div>
+<div class="digital-stamp">
+
+    <div class="name">
+        GOREALE AGRICULTURAL<br>
+        INNOVATORS
+    </div>
+
+    <div class="official">
+        OFFICIAL STAMP
+    </div>
+
+    <div class="location">
+        SHANTABAQ SUB-COUNTY<br>
+        LAGDERA CONSTITUENCY<br>
+        KENYA
+    </div>
+
+</div>
+
+
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <strong>GOREALE AGRICULTURAL INNOVATORS</strong>
+
+    <br>
+
+    Goreale and Surrounding Communities, Kenya
+
+    <br>
+
+    <em>
+        Connecting Agricultural Innovation, Technology
+        and Community Development
+    </em>
+
+</footer>
+
+</main>
+<script>
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        window.print();
+    }, 1000);
+});
+</script>
+</body>
+</html>

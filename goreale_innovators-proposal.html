@@ -1,0 +1,1363 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Mekatilili Micro-Grant Application - Goreale Agricultural Innovators, led by Samira Abdirahman Maalim.">
+
+<meta name="author" content="Samira Abdirahman Maalim">
+
+<title>Mekatilili Micro-Grant | Goreale Agricultural Innovators</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #28763b;
+    --dark-green: #18572b;
+    --black: #222;
+    --text: #363636;
+    --muted: #666;
+    --border: #dedede;
+    --light: #f7f9f7;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: white;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+.site-header {
+    padding: 12px 5%;
+    border-bottom: 1px solid var(--border);
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.logo {
+    width: 145px;
+    height: auto;
+}
+
+.document {
+    max-width: 950px;
+    margin: 25px auto;
+    padding: 0 22px;
+}
+
+.document-header {
+    text-align: center;
+    border-bottom: 2px solid var(--green);
+    padding-bottom: 18px;
+    margin-bottom: 22px;
+}
+
+.document-header h1 {
+    font-size: 23px;
+    line-height: 1.35;
+    color: var(--black);
+}
+
+.document-header h2 {
+    font-size: 16px;
+    color: var(--green);
+    margin: 6px 0;
+}
+
+.document-header p {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.applicant-box {
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--green);
+    padding: 15px;
+    margin-bottom: 22px;
+}
+
+.applicant-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9px 22px;
+}
+
+.applicant-item strong {
+    display: block;
+    color: var(--black);
+}
+
+.section {
+    margin-bottom: 22px;
+}
+
+.section-title {
+    font-size: 15px;
+    color: var(--black);
+    border-left: 4px solid var(--green);
+    padding: 5px 10px;
+    margin-bottom: 12px;
+    background: var(--light);
+}
+
+.section-subtitle {
+    font-size: 13px;
+    color: var(--dark-green);
+    margin: 14px 0 6px;
+}
+
+p {
+    margin-bottom: 9px;
+}
+
+ul, ol {
+    margin: 7px 0 12px 22px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+.highlight {
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--green);
+    padding: 13px;
+    margin: 12px 0;
+    background: var(--light);
+}
+
+.highlight strong {
+    color: var(--dark-green);
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.info-card {
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--green);
+    padding: 12px;
+}
+
+.info-card h3 {
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 12px;
+}
+
+th, td {
+    border: 1px solid var(--border);
+    padding: 9px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    border-bottom: 2px solid var(--green);
+    background: var(--light);
+    color: var(--black);
+}
+
+.amount {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.total-row {
+    font-weight: bold;
+    background: var(--light);
+}
+
+.timeline {
+    border-left: 3px solid var(--green);
+    padding-left: 15px;
+    margin: 12px 0;
+}
+
+.timeline-item {
+    margin-bottom: 14px;
+}
+
+.conclusion {
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--green);
+    padding: 15px;
+}
+
+.signature {
+    margin-top: 35px;
+    border-top: 1px solid var(--border);
+    padding-top: 18px;
+}
+
+.signature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.signature-line {
+    border-bottom: 1px solid #777;
+    height: 35px;
+    margin: 8px 0;
+}
+
+.site-footer {
+    background: #202020;
+    color: white;
+    padding: 22px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.site-footer p {
+    color: #ddd;
+    font-size: 11px;
+}
+
+@media(max-width:650px) {
+    .applicant-grid,
+    .two-column,
+    .signature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .document {
+        padding: 0 14px;
+    }
+
+    .document-header h1 {
+        font-size: 19px;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 12mm;
+    }
+
+    body {
+        font-size: 11px;
+    }
+
+    .document {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .section, .info-card, tr {
+        page-break-inside: avoid;
+    }
+
+    .site-footer {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="header-container">
+        <img src="goreale_logo.png"
+             alt="Goreale Agricultural Innovators"
+             class="logo">
+    </div>
+</header>
+
+<main class="document">
+
+<section class="document-header">
+    <h1>MEKATILILI MICRO-GRANT APPLICATION</h1>
+    <h2>Goreale Agricultural Innovators</h2>
+    <p>
+        Digital Agricultural Innovation • Community Technology •
+        Climate-Smart Agriculture • Youth Innovation
+    </p>
+</section>
+
+<section class="applicant-box">
+    <div class="applicant-grid">
+
+        <div class="applicant-item">
+            <strong>Individual Applicant</strong>
+            Samira Abdirahman Maalim
+        </div>
+
+        <div class="applicant-item">
+            <strong>Initiative</strong>
+            Goreale Agricultural Innovators
+        </div>
+
+        <div class="applicant-item">
+            <strong>Application Category</strong>
+            Individual Innovator
+        </div>
+
+        <div class="applicant-item">
+            <strong>Initiative Structure</strong>
+            Youth-led initiative
+        </div>
+
+        <div class="applicant-item">
+            <strong>Project Location</strong>
+            Goreale and surrounding communities, Kenya
+        </div>
+
+        <div class="applicant-item">
+            <strong>Implementation Period</strong>
+            3 months
+        </div>
+
+        <div class="applicant-item">
+            <strong>Grant Requested</strong>
+            KES 100,000
+        </div>
+
+        <div class="applicant-item">
+            <strong>Project Stage</strong>
+            Online platform already developed and implemented
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECT TITLE -->
+
+<section class="section">
+<h2 class="section-title">1. Project Title</h2>
+
+<p>
+<strong>
+Goreale Agricultural Innovators: Activating an Existing
+Digital Agricultural Platform for Community Engagement,
+Farmer Information and Climate-Smart Innovation.
+</strong>
+</p>
+</section>
+
+<!-- EXECUTIVE SUMMARY -->
+
+<section class="section">
+<h2 class="section-title">2. Executive Summary</h2>
+
+<p>
+Goreale Agricultural Innovators is a youth-led agricultural
+innovation initiative established to address practical
+challenges affecting farmers and agricultural communities
+in Goreale and surrounding areas of Kenya.
+</p>
+
+<p>
+The initiative is led by Samira Abdirahman Maalim,
+who is applying as an individual innovator while coordinating
+a broader youth-led initiative. The project seeks to use
+technology and community participation to improve access
+to agricultural information, communication, knowledge
+sharing and sustainable farming practices.
+</p>
+
+<p>
+An important milestone has already been achieved:
+the initiative's online platform has been developed and
+implemented. This means the proposal is not simply requesting
+funding to develop an idea or create a website. A digital
+foundation already exists.
+</p>
+
+<p>
+The existing platform is intended to serve as a formal
+digital communication and information-sharing channel
+between the initiative and participating farmers and
+community stakeholders. It provides a foundation for
+organizing agricultural information, communicating updates
+and supporting engagement with the target community.
+</p>
+
+<p>
+However, having an online platform alone does not guarantee
+meaningful community impact. The next challenge is to activate
+it, introduce it to intended users, test its usefulness,
+improve its practical application and establish reliable
+connections between digital communication and real
+agricultural activities.
+</p>
+
+<p>
+Through the Mekatilili Micro-Grant, I am requesting
+KES 100,000 to undertake a focused three-month pilot.
+The project will concentrate on platform activation,
+community onboarding, farmer engagement, agricultural
+information testing, feedback collection and evaluation.
+</p>
+
+<p>
+The microgrant will support a defined implementation
+milestone. It will not be presented as sufficient capital
+for the entire long-term development of the initiative.
+Additional investment will eventually be required to
+establish a physical operational office, strengthen
+technical infrastructure, expand field activities and
+support wider implementation.
+</p>
+
+</section>
+
+<!-- BACKGROUND -->
+
+<section class="section">
+<h2 class="section-title">3. Background and Existing Progress</h2>
+
+<p>
+Agricultural communities face interconnected challenges
+in accessing timely information, communicating agricultural
+needs, adopting efficient farming methods and responding
+to changing environmental conditions.
+</p>
+
+<p>
+Digital technology can help bridge the information gap,
+but many proposed digital solutions remain at the idea
+stage without a functioning platform or a practical
+community-testing process.
+</p>
+
+<p>
+Goreale Agricultural Innovators has already taken an
+important step by developing and implementing an online
+platform. This represents the initiative's initial
+technological foundation and demonstrates progress
+beyond the conceptual stage.
+</p>
+
+<h3 class="section-subtitle">Progress already achieved</h3>
+
+<ul>
+<li>An online platform has been developed and implemented.</li>
+<li>A digital foundation for agricultural communication exists.</li>
+<li>The initiative has established its direction around
+    agricultural innovation and community needs.</li>
+<li>A youth-led implementation approach has been established.</li>
+<li>The next development stage has been identified as
+    community activation, testing and improvement.</li>
+</ul>
+
+<div class="highlight">
+<strong>Current innovation stage:</strong>
+The platform already exists. The proposed grant will help
+move it from an implemented digital foundation towards
+demonstrated community use and practical validation.
+</div>
+
+</section>
+
+<!-- PROBLEM -->
+
+<section class="section">
+<h2 class="section-title">4. Problem Statement</h2>
+
+<p>
+Farmers and agricultural communities require accessible,
+reliable and practical information to make informed
+agricultural decisions.
+</p>
+
+<p>
+However, information gaps and limited coordination can
+make it difficult for farmers to access useful guidance,
+share challenges and engage with agricultural innovation.
+</p>
+
+<p>
+The initiative has identified the following challenges
+as priorities for community assessment and pilot testing:
+</p>
+
+<ul>
+<li>Limited access to timely agricultural information.</li>
+<li>Communication gaps between farmers and available
+    agricultural information providers.</li>
+<li>Limited access to practical information on water
+    management and irrigation.</li>
+<li>Crop-pest identification and management challenges.</li>
+<li>Limited exposure to climate-smart agricultural practices.</li>
+<li>Difficulty coordinating community agricultural activities.</li>
+<li>Limited opportunities for youth to apply digital
+    skills to local agricultural challenges.</li>
+</ul>
+
+<p>
+Although an online platform has already been implemented,
+its practical value must be demonstrated through real
+community engagement, user feedback and measurable
+implementation results.
+</p>
+
+</section>
+
+<!-- INNOVATION -->
+
+<section class="section">
+<h2 class="section-title">5. The Innovation Approach</h2>
+
+<p>
+The innovation is based on connecting an existing digital
+platform with practical community engagement rather than
+treating technology as an isolated solution.
+</p>
+
+<p>
+The project will use a digital-to-community innovation
+model in which the online platform supports communication,
+while direct engagement with farmers ensures that the
+information and services remain relevant to local needs.
+</p>
+
+<h3 class="section-subtitle">5.1 Existing Digital Platform</h3>
+
+<p>
+The existing online platform will serve as the central
+digital communication and information-sharing point
+for the initiative. During the pilot, the platform will
+be tested and improved according to user experience
+and identified community needs.
+</p>
+
+<h3 class="section-subtitle">5.2 Formal Communication Channel</h3>
+
+<p>
+The platform will function as the initiative's formal
+digital communication channel. It will provide an organized
+way to share project updates, agricultural information,
+community notices and relevant engagement opportunities.
+</p>
+
+<h3 class="section-subtitle">5.3 Human-Centred Community Testing</h3>
+
+<p>
+Farmers will be engaged directly to understand whether
+the platform is accessible, understandable and useful.
+Their feedback will guide improvements rather than
+assuming that technology automatically solves
+agricultural challenges.
+</p>
+
+<h3 class="section-subtitle">5.4 Digital and Physical Integration</h3>
+
+<p>
+The project will connect online communication with
+real-world agricultural engagement. Digital information
+will be complemented by farmer discussions, practical
+demonstrations where feasible, community feedback
+and field observations.
+</p>
+
+<h3 class="section-subtitle">5.5 Evidence-Driven Improvement</h3>
+
+<p>
+User engagement, platform activity, farmer feedback
+and pilot observations will be documented. The findings
+will guide the next stage of development and help identify
+which services should be prioritized for expansion.
+</p>
+
+<div class="highlight">
+<strong>Core innovation:</strong>
+An already implemented digital agricultural platform
+combined with human-centred testing, local communication
+and practical community participation to develop a
+replicable agricultural information model.
+</div>
+
+</section>
+
+<!-- GOAL -->
+
+<section class="section">
+<h2 class="section-title">6. Project Goal</h2>
+
+<p>
+To activate, test and strengthen an existing digital
+agricultural platform through a three-month community
+pilot that improves agricultural communication,
+access to useful information and youth-led innovation
+in Goreale and surrounding communities.
+</p>
+</section>
+
+<!-- OBJECTIVES -->
+
+<section class="section">
+<h2 class="section-title">7. Specific Objectives</h2>
+
+<ol>
+<li>Activate the existing online platform for structured
+    agricultural communication and community engagement.</li>
+
+<li>Introduce the platform to an initial group of farmers
+    and intended community users.</li>
+
+<li>Test the accessibility, relevance and usefulness
+    of digital agricultural information.</li>
+
+<li>Identify farmer information needs relating to irrigation,
+    crop-pest management and climate-smart agriculture.</li>
+
+<li>Establish a practical feedback mechanism through which
+    users can communicate challenges and suggestions.</li>
+
+<li>Improve the platform based on actual user experience.</li>
+
+<li>Document pilot findings and develop a clear pathway
+    for further investment and expansion.</li>
+</ol>
+</section>
+
+<!-- ACTIVITIES -->
+
+<section class="section">
+<h2 class="section-title">8. Proposed Implementation Activities</h2>
+
+<h3 class="section-subtitle">Activity 1: Platform Readiness and Activation</h3>
+<ul>
+<li>Review the existing platform.</li>
+<li>Test its functionality and accessibility.</li>
+<li>Identify and correct priority operational issues.</li>
+<li>Prepare relevant agricultural information.</li>
+<li>Establish a structured communication process.</li>
+</ul>
+
+<h3 class="section-subtitle">Activity 2: Community Onboarding</h3>
+<ul>
+<li>Identify an initial group of interested farmers.</li>
+<li>Introduce the platform and its purpose.</li>
+<li>Explain how users can access and engage with it.</li>
+<li>Collect initial user needs and expectations.</li>
+<li>Document onboarding and participation.</li>
+</ul>
+
+<h3 class="section-subtitle">Activity 3: Agricultural Information Testing</h3>
+<ul>
+<li>Share locally relevant agricultural information.</li>
+<li>Test the usefulness of irrigation guidance.</li>
+<li>Share practical crop-pest information.</li>
+<li>Promote climate-smart farming knowledge.</li>
+<li>Test how effectively users receive and understand
+    the information.</li>
+</ul>
+
+<h3 class="section-subtitle">Activity 4: Communication and Feedback</h3>
+<ul>
+<li>Establish a regular digital communication schedule.</li>
+<li>Collect farmer questions and feedback.</li>
+<li>Identify barriers to platform use.</li>
+<li>Record recurring agricultural information needs.</li>
+<li>Use findings to improve the platform.</li>
+</ul>
+
+<h3 class="section-subtitle">Activity 5: Pilot Evaluation</h3>
+<ul>
+<li>Review platform activity.</li>
+<li>Assess user engagement.</li>
+<li>Conduct user feedback assessments.</li>
+<li>Document lessons and operational challenges.</li>
+<li>Prepare a final pilot report and expansion plan.</li>
+</ul>
+
+</section>
+
+<!-- TIMELINE -->
+
+<section class="section">
+<h2 class="section-title">9. Three-Month Implementation Timeline</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<strong>Month 1: Activation and Preparation</strong>
+<ul>
+<li>Review and test the existing platform.</li>
+<li>Prepare agricultural information.</li>
+<li>Organize the communication process.</li>
+<li>Identify and onboard initial users.</li>
+<li>Establish baseline user feedback.</li>
+</ul>
+</div>
+
+<div class="timeline-item">
+<strong>Month 2: Community Pilot and Testing</strong>
+<ul>
+<li>Conduct farmer engagement.</li>
+<li>Share agricultural information through the platform.</li>
+<li>Test communication and feedback processes.</li>
+<li>Identify platform usability challenges.</li>
+<li>Implement priority improvements.</li>
+</ul>
+</div>
+
+<div class="timeline-item">
+<strong>Month 3: Evaluation and Improvement</strong>
+<ul>
+<li>Assess user participation and engagement.</li>
+<li>Collect final feedback.</li>
+<li>Document pilot findings.</li>
+<li>Identify technical and operational requirements.</li>
+<li>Prepare the next-stage implementation plan.</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<!-- BENEFICIARIES -->
+
+<section class="section">
+<h2 class="section-title">10. Target Beneficiaries</h2>
+
+<ul>
+<li>Smallholder farmers in Goreale and surrounding areas.</li>
+<li>Young people interested in agricultural technology.</li>
+<li>Women participating in agricultural activities.</li>
+<li>Community members seeking agricultural information.</li>
+<li>Farmers interested in improved irrigation and crop management.</li>
+<li>Local stakeholders interested in sustainable agriculture.</li>
+</ul>
+
+</section>
+
+<!-- TARGETS -->
+
+<section class="section">
+<h2 class="section-title">11. Expected Outputs and Pilot Indicators</h2>
+
+<p>
+The following are proposed three-month pilot targets.
+They will be confirmed against the actual platform
+capacity and community baseline during the first month.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Proposed Target</th>
+<th>Verification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Platform operational review</td>
+<td>1 completed</td>
+<td>Technical assessment</td>
+</tr>
+<tr>
+<td>Initial platform users</td>
+<td>At least 30</td>
+<td>User records</td>
+</tr>
+<tr>
+<td>Community engagement sessions</td>
+<td>At least 2</td>
+<td>Attendance records</td>
+</tr>
+<tr>
+<td>Agricultural information updates</td>
+<td>At least 12</td>
+<td>Published records</td>
+</tr>
+<tr>
+<td>User feedback assessments</td>
+<td>At least 20</td>
+<td>Feedback records</td>
+</tr>
+<tr>
+<td>Platform improvement review</td>
+<td>1 completed</td>
+<td>Improvement report</td>
+</tr>
+<tr>
+<td>Final pilot report</td>
+<td>1 completed</td>
+<td>Documented report</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<!-- IMPACT -->
+
+<section class="section">
+<h2 class="section-title">12. Expected Impact</h2>
+
+<h3 class="section-subtitle">Agricultural Impact</h3>
+<ul>
+<li>Improved access to practical agricultural information.</li>
+<li>Better communication of farmer information needs.</li>
+<li>Greater awareness of efficient irrigation practices.</li>
+<li>Improved access to crop-pest management information.</li>
+<li>Increased exposure to climate-smart farming practices.</li>
+</ul>
+
+<h3 class="section-subtitle">Technology Impact</h3>
+<ul>
+<li>Practical testing of an existing digital platform.</li>
+<li>Improved understanding of user needs.</li>
+<li>A more organized agricultural communication channel.</li>
+<li>Evidence for future platform improvements.</li>
+</ul>
+
+<h3 class="section-subtitle">Youth and Community Impact</h3>
+<ul>
+<li>Increased youth participation in practical innovation.</li>
+<li>Development of local digital and agricultural skills.</li>
+<li>Stronger community participation.</li>
+<li>Opportunities for future youth-led agricultural services.</li>
+</ul>
+
+</section>
+
+<!-- ORGANIZATION -->
+
+<section class="section">
+<h2 class="section-title">13. Individual Leadership and Youth-Led Structure</h2>
+
+<p>
+This application is submitted by Samira Abdirahman
+Maalim in the individual innovator category.
+She will serve as the lead applicant and take direct
+responsibility for coordinating the proposed pilot.
+</p>
+
+<p>
+Goreale Agricultural Innovators is a youth-led initiative.
+Its approach recognizes that young people can contribute
+to solving agricultural challenges through technology,
+community engagement, communication and practical
+problem-solving.
+</p>
+
+<p>
+The initiative is not applying as a registered organization
+through this application. It is applying through an
+individual lead innovator, with youth participation
+forming part of the implementation approach.
+</p>
+
+<p>
+The applicant will remain directly involved in the
+project's planning, platform coordination, community
+engagement, monitoring and reporting.
+</p>
+
+</section>
+
+<!-- EXISTING PLATFORM AND CAPITAL -->
+
+<section class="section">
+<h2 class="section-title">14. Existing Infrastructure and Long-Term Capital Needs</h2>
+
+<h3 class="section-subtitle">Existing Online Infrastructure</h3>
+
+<p>
+The initiative has already developed and implemented
+its online platform. This existing infrastructure
+reduces the need to spend the microgrant on creating
+a digital product from the beginning.
+</p>
+
+<p>
+The proposed investment will instead focus on activating
+the existing platform, testing it with intended users,
+improving its functionality and establishing effective
+community communication.
+</p>
+
+<h3 class="section-subtitle">The Need for a Physical Office</h3>
+
+<p>
+As the initiative grows, a dedicated physical office
+will become important for coordinating operations,
+organizing farmer engagement, maintaining project
+records, supporting technical activities and providing
+a reliable point of contact for community stakeholders.
+</p>
+
+<p>
+A physical office is therefore part of the initiative's
+long-term institutional development needs. It is not
+being presented as an expense to be financed through
+this KES 100,000 microgrant.
+</p>
+
+<h3 class="section-subtitle">Need for Additional Implementation Capital</h3>
+
+<p>
+The microgrant will finance a limited but important
+implementation milestone. Full deployment of the
+initiative will require considerably more capital
+than the microgrant provides.
+</p>
+
+<p>
+Future investment priorities include:
+</p>
+
+<ul>
+<li>Establishing and equipping a dedicated physical office.</li>
+<li>Strengthening technical infrastructure and platform capacity.</li>
+<li>Expanding community access and farmer onboarding.</li>
+<li>Supporting wider agricultural field demonstrations.</li>
+<li>Developing additional agricultural information services.</li>
+<li>Establishing stronger operational and partnership capacity.</li>
+<li>Expanding the model to additional farming communities.</li>
+</ul>
+
+<div class="highlight">
+<strong>Funding strategy:</strong>
+The Mekatilili Micro-Grant will support a focused,
+measurable pilot. The results will provide evidence
+for attracting additional investment and building
+the infrastructure required for full implementation.
+</div>
+
+</section>
+
+<!-- INNOVATION AND SCALABILITY -->
+
+<section class="section">
+<h2 class="section-title">15. Innovation, Learning and Scalability</h2>
+
+<p>
+The project is innovative in its implementation approach:
+rather than investing first in a completely new technology,
+it begins with an existing platform and tests how that
+platform can create practical value for agricultural
+communities.
+</p>
+
+<p>
+The three-month pilot will test important assumptions:
+</p>
+
+<ol>
+<li>Whether farmers find the platform useful.</li>
+<li>Whether digital communication improves access
+    to relevant agricultural information.</li>
+<li>Which agricultural topics users need most.</li>
+<li>Which communication methods encourage participation.</li>
+<li>What technical improvements are necessary.</li>
+<li>What resources are required for expansion.</li>
+</ol>
+
+<p>
+The findings will determine the next development priorities.
+The platform can subsequently be improved and extended
+to additional communities using lessons from actual
+user experience rather than assumptions.
+</p>
+
+</section>
+
+<!-- SUSTAINABILITY -->
+
+<section class="section">
+<h2 class="section-title">16. Sustainability</h2>
+
+<p>
+The initiative's sustainability approach is based on
+building on existing digital infrastructure, strengthening
+community relationships and gradually expanding its
+capacity.
+</p>
+
+<ul>
+<li>Maintaining the existing online platform.</li>
+<li>Developing useful and locally relevant information.</li>
+<li>Building relationships with farmers and community stakeholders.</li>
+<li>Encouraging youth participation and technical learning.</li>
+<li>Using pilot evidence to guide future investment.</li>
+<li>Exploring partnerships for technical and agricultural support.</li>
+<li>Developing a long-term operational and physical office plan.</li>
+</ul>
+
+</section>
+
+<!-- MONITORING -->
+
+<section class="section">
+<h2 class="section-title">17. Monitoring and Evaluation</h2>
+
+<p>
+Monitoring will focus on whether the platform is functioning,
+whether users are engaging with it and whether the project
+is learning from the community.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Monitoring Area</th>
+<th>Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Platform functionality</td>
+<td>Technical testing and issue records</td>
+</tr>
+<tr>
+<td>User participation</td>
+<td>Platform and onboarding records</td>
+</tr>
+<tr>
+<td>Communication effectiveness</td>
+<td>User feedback and engagement review</td>
+</tr>
+<tr>
+<td>Information relevance</td>
+<td>Farmer feedback and topic assessment</td>
+</tr>
+<tr>
+<td>Community involvement</td>
+<td>Session and participation records</td>
+</tr>
+<tr>
+<td>Project performance</td>
+<td>Monthly progress reviews</td>
+</tr>
+<tr>
+<td>Learning and improvement</td>
+<td>Final evaluation report</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<!-- RISK -->
+
+<section class="section">
+<h2 class="section-title">18. Risk Management</h2>
+
+<table>
+<thead>
+<tr>
+<th>Potential Risk</th>
+<th>Mitigation Approach</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Low platform adoption</td>
+<td>Direct user introduction and simple onboarding.</td>
+</tr>
+<tr>
+<td>Limited internet access</td>
+<td>Complement digital communication with direct community engagement.</td>
+</tr>
+<tr>
+<td>Technical challenges</td>
+<td>Conduct platform testing and prioritize essential improvements.</td>
+</tr>
+<tr>
+<td>Limited farmer participation</td>
+<td>Engage farmers around their actual information needs.</td>
+</tr>
+<tr>
+<td>Limited funding</td>
+<td>Prioritize the most important activities within the approved budget.</td>
+</tr>
+<tr>
+<td>Information inaccuracies</td>
+<td>Use credible agricultural information and appropriate technical review.</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<!-- BUDGET -->
+
+<section class="section">
+<h2 class="section-title">19. Proposed Three-Month Budget</h2>
+
+<p>
+<strong>Total Grant Requested: KES 100,000</strong>
+</p>
+
+<p>
+The proposed budget prioritizes direct implementation
+of the existing platform and practical community testing.
+It does not include salaries, personal expenses or
+permanent office establishment.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Budget Item</th>
+<th>Purpose</th>
+<th class="amount">KES</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Platform technical improvement and testing</td>
+<td>Technical review, priority corrections and usability improvements.</td>
+<td class="amount">18,000</td>
+</tr>
+
+<tr>
+<td>Platform hosting and digital services</td>
+<td>Hosting, domain-related services and essential operational digital tools.</td>
+<td class="amount">10,000</td>
+</tr>
+
+<tr>
+<td>Community onboarding and engagement</td>
+<td>Introduction sessions, user orientation and engagement materials.</td>
+<td class="amount">18,000</td>
+</tr>
+
+<tr>
+<td>Agricultural information development</td>
+<td>Preparation and review of relevant digital agricultural information.</td>
+<td class="amount">10,000</td>
+</tr>
+
+<tr>
+<td>Farmer feedback and field data collection</td>
+<td>Survey materials, feedback collection and pilot assessment.</td>
+<td class="amount">12,000</td>
+</tr>
+
+<tr>
+<td>Communication and awareness materials</td>
+<td>Printed and digital information materials for community users.</td>
+<td class="amount">8,000</td>
+</tr>
+
+<tr>
+<td>Local field transport</td>
+<td>Essential local travel for pilot activities and farmer engagement.</td>
+<td class="amount">12,000</td>
+</tr>
+
+<tr>
+<td>Monitoring and final documentation</td>
+<td>Performance assessment, evidence organization and pilot report.</td>
+<td class="amount">7,000</td>
+</tr>
+
+<tr>
+<td>Implementation materials and contingency</td>
+<td>Essential unforeseen direct pilot implementation costs, subject to approval.</td>
+<td class="amount">5,000</td>
+</tr>
+
+<tr class="total-row">
+<td colspan="2">TOTAL REQUESTED</td>
+<td class="amount">100,000</td>
+</tr>
+
+</tbody>
+</table>
+
+<div class="highlight">
+<strong>Budget justification:</strong>
+The requested funding will help convert existing digital
+infrastructure into a tested community-facing innovation.
+Every proposed expenditure is connected to a defined
+three-month implementation activity. Final expenditure
+will follow the grant's approved budget and requirements.
+</div>
+
+</section>
+
+<!-- SUPPORTING EVIDENCE -->
+
+<section class="section">
+<h2 class="section-title">20. Supporting Evidence and Readiness</h2>
+
+<p>
+The application can be supported by evidence demonstrating
+the initiative's existing progress and readiness.
+</p>
+
+<ol>
+<li>Screenshot of the existing online platform.</li>
+<li>Working platform link or demonstration.</li>
+<li>Evidence of platform implementation.</li>
+<li>Photographs of community engagement, where available.</li>
+<li>Farmer feedback or initial survey findings, where available.</li>
+<li>Sample agricultural information prepared for users.</li>
+<li>Proposed implementation schedule.</li>
+</ol>
+
+<p>
+The supporting evidence will distinguish completed work
+from activities that will only be undertaken after funding.
+</p>
+
+</section>
+
+<!-- CONCLUSION -->
+
+<section class="section">
+<h2 class="section-title">21. Conclusion and Funding Request</h2>
+
+<div class="conclusion">
+
+<p>
+Goreale Agricultural Innovators represents an opportunity
+to apply youth-led digital innovation to practical
+agricultural communication and community information needs.
+</p>
+
+<p>
+Unlike an idea that still requires complete digital
+development, this initiative has already implemented
+an online platform. The next important step is to
+demonstrate that the existing technology can be useful
+to the people it is intended to serve.
+</p>
+
+<p>
+Through the proposed three-month pilot, I intend to
+activate the platform, engage initial users, test its
+communication and information-sharing capabilities,
+collect feedback and document improvements.
+</p>
+
+<p>
+I am therefore requesting KES 100,000 through the
+Mekatilili Micro-Grant to support this defined
+implementation milestone.
+</p>
+
+<p>
+I recognize that this amount will not finance the
+initiative's entire long-term development. Establishing
+a dedicated physical office, strengthening operational
+capacity and expanding services will require additional
+capital and partnerships in the future.
+</p>
+
+<p>
+However, the proposed microgrant will provide an
+important opportunity to demonstrate practical results,
+generate evidence, learn from real users and establish
+a stronger foundation for future investment.
+</p>
+
+<p>
+My commitment as the individual applicant is to lead
+the pilot directly, use the funding responsibly,
+document the results and ensure that the lessons
+contribute to the continued development of
+Goreale Agricultural Innovators.
+</p>
+
+</div>
+</section>
+
+<!-- DECLARATION -->
+
+<section class="signature">
+
+<h2 class="section-title">Applicant Declaration</h2>
+
+<p>
+I, Samira Abdirahman Maalim, declare that the information
+provided in this application is accurate to the best
+of my knowledge. I commit to directly participating
+in the implementation, responsible use of grant funding,
+monitoring and reporting of the proposed project.
+</p>
+
+<div class="signature-grid">
+
+<div>
+<strong>Individual Applicant</strong>
+<p>Samira Abdirahman Maalim</p>
+
+<strong>Signature</strong>
+<div class="signature-line"></div>
+</div>
+
+<div>
+<strong>Date</strong>
+<div class="signature-line"></div>
+
+<strong>Project</strong>
+<p>Goreale Agricultural Innovators</p>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+<h3>GOREALE AGRICULTURAL INNOVATORS</h3>
+<p>
+Youth-led innovation • Digital agriculture •
+Community development
+</p>
+<p>
+Mekatilili Micro-Grant Application
+</p>
+</footer>
+
+<script>
+window.addEventListener("load", function() {
+    setTimeout(function() {
+        window.print();
+    }, 900);
+});
+</script>
+<script>
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        window.print();
+    }, 1000);
+});
+</script>
+</body>
+</html>
