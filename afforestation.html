@@ -1,0 +1,1192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Afforestation & Agroforestry | Goreale Agricultural Innovators</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --ivory: #F5F5DC;
+    --forest-green: #355E3B;
+    --earth-brown: #8B5A2B;
+    --charcoal-grey: #454545;
+    --olive-green: #6B8E23;
+    --lavender: #E6DDF2;
+    --beet: #e8dce0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--ivory);
+    color: var(--charcoal-grey);
+    font-family: Arial, sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.8;
+}
+
+header {
+    min-height: 5rem;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--ivory);
+}
+
+.logo {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--forest-green);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--earth-brown);
+}
+
+.hero {
+    min-height: 23rem;
+    padding: 4rem 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+        linear-gradient(rgba(15,40,20,.65), rgba(15,40,20,.65)),
+        url("images/afforestation.png") center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 48rem;
+    color: white;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.7rem, 4vw, 2.8rem);
+    font-weight: 900;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--earth-brown);
+    color: white;
+    padding: 0.65rem 1.4rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.btn:hover {
+    background: var(--forest-green);
+}
+
+section {
+    padding: 3rem 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.45rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+.intro,
+.content-section {
+    max-width: 65rem;
+    margin: auto;
+}
+
+.intro p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    display: block;
+    padding: 1.3rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    color: var(--charcoal-grey);
+}
+
+.card:nth-child(odd) {
+    background: var(--beet);
+}
+
+.card:nth-child(even) {
+    background: var(--lavender);
+}
+
+.card h3 {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.82rem;
+    line-height: 1.7;
+}
+
+.content-section p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.content-section ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.content-section li {
+    margin-bottom: 0.5rem;
+}
+
+.highlight {
+    background: var(--beet);
+    padding: 1.5rem;
+    border-left: 0.3rem solid var(--forest-green);
+    margin-top: 1.5rem;
+}
+
+.highlight h3 {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.6rem;
+}
+
+.subheading {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.7rem;
+}
+
+.steps {
+    counter-reset: step;
+}
+
+.step {
+    background: var(--lavender);
+    padding: 1rem 1.3rem;
+    margin-bottom: 0.8rem;
+    border-radius: 0.3rem;
+}
+
+.step h3 {
+    color: var(--forest-green);
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.resources {
+    background: var(--beet);
+    padding: 1.5rem;
+    border-radius: 0.3rem;
+}
+
+.resources a {
+    color: var(--forest-green);
+    font-weight: bold;
+}
+
+footer {
+    background: var(--forest-green);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.78rem;
+}
+
+footer h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+@media(max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .hero {
+        min-height: 19rem;
+        padding: 3rem 6%;
+    }
+
+    section {
+        padding: 2rem 6%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">GOREALE AGRICULTURAL INNOVATORS</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#services">Our Areas</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Afforestation & Agroforestry</h1>
+
+        <p>
+            Growing trees, restoring degraded landscapes,
+            conserving natural resources and building
+            sustainable agricultural communities.
+        </p>
+
+        <a href="#about" class="btn">Explore More</a>
+    </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section id="about">
+    <div class="intro">
+
+        <h2 class="section-title">Growing a Greener Future</h2>
+
+        <p>
+            Afforestation is the establishment of forest cover
+            on land that has not been recently forested. It involves
+            planting suitable trees or supporting natural tree
+            regeneration to increase vegetation cover, restore
+            degraded land and improve environmental conditions.
+        </p>
+
+        <p>
+            Reforestation, on the other hand, involves restoring
+            tree cover in areas where forests have previously
+            existed but have been removed or severely degraded.
+            Both approaches contribute to landscape restoration,
+            biodiversity conservation and sustainable natural
+            resource management.
+        </p>
+
+        <p>
+            Agroforestry is an agricultural land-use system that
+            deliberately integrates trees and shrubs with crops
+            and livestock. It allows farmers to combine agricultural
+            production with tree-based products and environmental
+            services on the same farm or landscape.
+        </p>
+
+        <p>
+            Trees can provide fruits, fodder, fuelwood, timber,
+            shade, shelter, medicines and other valuable resources.
+            They can also improve soil protection, support
+            biodiversity and help farming communities adapt
+            to changing climatic conditions.
+        </p>
+
+        <p>
+            Goreale Agricultural Innovators promotes responsible
+            tree growing, community participation, environmental
+            education, research and sustainable agroforestry
+            practices.
+        </p>
+    </div>
+</section>
+
+<!-- KEY AREAS -->
+<section>
+    <h2 class="section-title">Our Key Areas of Focus</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Tree Planting</h3>
+            <p>
+                Promoting appropriate tree planting initiatives
+                to increase vegetation cover, improve landscapes
+                and support environmental conservation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Agroforestry Systems</h3>
+            <p>
+                Integrating trees and shrubs with agricultural
+                crops and livestock to diversify production,
+                improve farm resilience and support livelihoods.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Forest Restoration</h3>
+            <p>
+                Supporting the recovery of degraded forests
+                through natural regeneration, assisted
+                regeneration and appropriate tree planting.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Fruit Tree Production</h3>
+            <p>
+                Encouraging suitable fruit tree production
+                to improve household nutrition, diversify
+                farm income and strengthen food systems.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Soil Conservation</h3>
+            <p>
+                Using trees, shrubs and vegetation barriers
+                to reduce soil erosion, protect farmland
+                and improve soil conditions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Community Tree Growing</h3>
+            <p>
+                Encouraging schools, farmers, youth groups
+                and local communities to participate in
+                tree planting and landscape restoration.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Tree Nurseries</h3>
+            <p>
+                Promoting the production of healthy seedlings,
+                quality seeds and locally appropriate planting
+                materials for restoration initiatives.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Rangeland Management</h3>
+            <p>
+                Supporting the integration of suitable trees,
+                shrubs and pasture vegetation in grazing
+                landscapes and livestock production systems.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Environmental Education</h3>
+            <p>
+                Sharing knowledge about tree conservation,
+                sustainable land management, biodiversity
+                and responsible natural resource use.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- TYPES OF AGROFORESTRY -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Types of Agroforestry Systems</h2>
+
+        <p>
+            Agroforestry can be practised in different ways
+            depending on the farm environment, farmer objectives,
+            available resources and local agricultural activities.
+        </p>
+
+        <h3 class="subheading">1. Agrisilvicultural Systems</h3>
+        <p>
+            These systems combine trees and agricultural crops
+            on the same land. Trees may be planted along farm
+            boundaries, in rows, around crop fields or within
+            selected crop production areas.
+        </p>
+
+        <p>
+            Examples include growing suitable fruit trees with
+            vegetables, planting trees along crop field boundaries
+            and integrating nitrogen-fixing trees into farming
+            systems where appropriate.
+        </p>
+
+        <h3 class="subheading">2. Silvopastoral Systems</h3>
+        <p>
+            Silvopastoral systems combine trees, shrubs, pasture
+            and livestock. Trees can provide shade, shelter,
+            supplementary fodder and environmental protection
+            in grazing areas.
+        </p>
+
+        <p>
+            These systems are particularly relevant to livestock
+            production in arid and semi-arid regions when tree
+            species and grazing pressure are properly managed.
+        </p>
+
+        <h3 class="subheading">3. Agrosilvopastoral Systems</h3>
+        <p>
+            These systems combine trees, crops and livestock
+            within an integrated land-use system. Farmers may
+            grow crops, maintain suitable fodder trees and
+            keep livestock while managing the available
+            land and water resources.
+        </p>
+
+        <h3 class="subheading">4. Farm Woodlots and Boundary Planting</h3>
+        <p>
+            Farmers establish selected trees in designated
+            areas or along farm boundaries. These trees may
+            provide poles, fuelwood, shade, fruits and other
+            useful products while helping define farm boundaries.
+        </p>
+
+    </div>
+</section>
+
+<!-- TREE SPECIES -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Suitable Tree Species for Drylands</h2>
+
+        <p>
+            Selecting the right tree species is one of the most
+            important decisions in afforestation and agroforestry.
+            A species that grows well in one location may perform
+            poorly in another because of differences in rainfall,
+            soil type, temperature, water availability and pests.
+        </p>
+
+        <p>
+            In northern Kenya and other dryland areas, priority
+            should be given to locally adapted and appropriate
+            indigenous species, based on advice from forestry
+            and agricultural specialists.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Melia volkensii</h3>
+                <p>
+                    Commonly known as Mukau. A valuable dryland
+                    tree associated with timber production and
+                    farm-based tree growing. It requires suitable
+                    site conditions and proper establishment.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Balanites aegyptiaca</h3>
+                <p>
+                    A hardy dryland tree with several traditional
+                    uses. It can provide fruits, browse and other
+                    useful products in suitable environments.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Acacia senegal</h3>
+                <p>
+                    A dryland species known for gum arabic
+                    production. It can support livelihood
+                    diversification and suitable restoration
+                    initiatives.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Ziziphus mauritiana</h3>
+                <p>
+                    A fruit-producing tree that can contribute
+                    to household nutrition and income where
+                    soil and climate conditions are suitable.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Salvadora persica</h3>
+                <p>
+                    A useful dryland shrub or small tree
+                    traditionally valued for several purposes,
+                    including local uses and environmental
+                    protection.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Cordia sinensis</h3>
+                <p>
+                    A dryland tree with potential uses including
+                    fodder, fuelwood and other local products,
+                    depending on site suitability and management.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="highlight">
+            <h3>Important Tree Selection Advice</h3>
+            <p>
+                These are examples, not a universal planting list.
+                Before planting, confirm species suitability with
+                KEFRI, local forestry officers or qualified
+                agricultural extension personnel. Avoid introducing
+                invasive species, and protect existing native
+                vegetation and sensitive ecosystems.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- NURSERY MANAGEMENT -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Tree Nursery Establishment and Management</h2>
+
+        <p>
+            A tree nursery is a place where seeds, cuttings
+            and other planting materials are propagated and
+            raised into healthy seedlings before they are
+            transferred to their permanent growing locations.
+        </p>
+
+        <p>
+            Proper nursery management is essential because
+            healthy, well-developed seedlings have a better
+            opportunity to establish successfully after planting.
+        </p>
+
+        <h3 class="subheading">Important Nursery Activities</h3>
+
+        <ul>
+            <li>Select a suitable nursery location with accessible water.</li>
+            <li>Identify reliable sources of quality seeds and planting materials.</li>
+            <li>Use suitable soil and growing media for each species.</li>
+            <li>Prepare clean containers, seedbeds or propagation materials.</li>
+            <li>Provide appropriate watering without waterlogging seedlings.</li>
+            <li>Control weeds, pests and diseases using suitable methods.</li>
+            <li>Provide shade where necessary during early seedling development.</li>
+            <li>Remove weak or diseased seedlings from the nursery.</li>
+            <li>Gradually harden seedlings before field planting.</li>
+            <li>Maintain records of seed sources, germination and seedling production.</li>
+        </ul>
+
+        <div class="highlight">
+            <h3>Quality Seedlings Matter</h3>
+            <p>
+                Seedlings should be healthy, properly rooted,
+                free from serious pests and diseases, and suitable
+                for the intended planting environment. Poor-quality
+                planting material can reduce survival and waste
+                time, labour and resources.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- TREE PLANTING -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Proper Tree Planting Techniques</h2>
+
+        <p>
+            Tree planting involves more than placing a seedling
+            in the ground. Good site preparation, correct planting
+            procedures, suitable timing and regular maintenance
+            all influence tree establishment and survival.
+        </p>
+
+        <div class="steps">
+
+            <div class="step">
+                <h3>1. Select the Planting Site</h3>
+                <p>
+                    Assess the soil, drainage, sunlight, rainfall,
+                    land use and available water. Avoid planting
+                    trees where they may damage infrastructure
+                    or compete excessively with important crops.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>2. Select Suitable Seedlings</h3>
+                <p>
+                    Choose healthy seedlings of species adapted
+                    to the local environment and the purpose
+                    of the planting project.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>3. Prepare the Planting Hole</h3>
+                <p>
+                    Prepare an appropriately sized hole according
+                    to the seedling and soil conditions. Loosen
+                    compacted soil where necessary and preserve
+                    suitable topsoil.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>4. Plant at the Right Time</h3>
+                <p>
+                    In rain-fed dryland areas, plant when reliable
+                    rainfall has sufficiently wetted the soil.
+                    Avoid planting immediately before an expected
+                    long dry spell.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>5. Position the Seedling Correctly</h3>
+                <p>
+                    Remove the container carefully without
+                    damaging the roots. Position the seedling
+                    upright and keep the root collar at the
+                    appropriate soil level.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>6. Firm the Soil</h3>
+                <p>
+                    Refill the hole and gently firm the soil
+                    around the root system to remove large
+                    air pockets without excessively compacting it.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>7. Conserve Soil Moisture</h3>
+                <p>
+                    Use suitable organic mulch around the
+                    seedling, leaving a small gap around the stem.
+                    Consider water-harvesting structures where
+                    appropriate.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>8. Protect and Monitor the Tree</h3>
+                <p>
+                    Protect young trees from livestock, wildlife,
+                    termites and other threats. Check survival
+                    regularly and replace dead seedlings when
+                    conditions are suitable.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- DRYLAND AGRICULTURE -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Afforestation in Arid and Semi-Arid Areas</h2>
+
+        <p>
+            Dryland environments experience low or unreliable
+            rainfall, high temperatures, water shortages and
+            periods of drought. These conditions make tree
+            establishment challenging and require careful
+            planning.
+        </p>
+
+        <p>
+            In Garissa and other parts of northern Kenya,
+            afforestation programmes should consider local
+            ecological conditions, livestock production,
+            community needs and competition for limited water.
+        </p>
+
+        <h3 class="subheading">Dryland Tree-Growing Strategies</h3>
+
+        <ul>
+            <li>Prioritize drought-tolerant and locally adapted tree species.</li>
+            <li>Plant when soil moisture is adequate.</li>
+            <li>Use planting basins and micro-catchments to collect runoff where suitable.</li>
+            <li>Apply organic mulch to reduce moisture loss.</li>
+            <li>Protect young trees from livestock browsing.</li>
+            <li>Use appropriate spacing based on species and water availability.</li>
+            <li>Encourage natural regeneration where suitable mature trees remain.</li>
+            <li>Use community participation to protect restored areas.</li>
+            <li>Monitor seedling survival during dry seasons.</li>
+        </ul>
+
+        <div class="highlight">
+            <h3>Water Conservation Is Essential</h3>
+            <p>
+                Water is one of the most important factors
+                affecting tree survival in drylands. Rainwater
+                harvesting, soil moisture conservation, suitable
+                planting basins and careful seedling management
+                can improve establishment. Any supplementary
+                watering plan should consider the availability
+                and sustainable use of local water resources.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ENVIRONMENTAL BENEFITS -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Environmental Benefits</h2>
+
+        <p>
+            Well-planned afforestation, forest restoration and
+            agroforestry initiatives can improve environmental
+            conditions and contribute to healthier landscapes.
+        </p>
+
+        <ul>
+            <li><strong>Soil protection:</strong> Tree roots help hold soil together and reduce erosion.</li>
+            <li><strong>Water conservation:</strong> Vegetation can slow surface runoff and support water infiltration.</li>
+            <li><strong>Climate regulation:</strong> Trees store carbon as they grow and can provide shade.</li>
+            <li><strong>Biodiversity:</strong> Trees provide habitats and resources for birds, insects and other wildlife.</li>
+            <li><strong>Wind protection:</strong> Suitable shelterbelts can reduce wind speed and protect crops.</li>
+            <li><strong>Soil improvement:</strong> Leaf litter and organic matter can contribute to soil health.</li>
+            <li><strong>Land restoration:</strong> Appropriate vegetation can help restore degraded landscapes.</li>
+            <li><strong>Desertification control:</strong> Integrated land management can help reduce land degradation.</li>
+        </ul>
+
+        <p>
+            Tree planting must nevertheless be planned carefully.
+            Poorly selected species, excessive planting density
+            and inappropriate land conversion can place additional
+            pressure on water resources and natural ecosystems.
+        </p>
+
+    </div>
+</section>
+
+<!-- ECONOMIC BENEFITS -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Economic and Social Opportunities</h2>
+
+        <p>
+            Afforestation and agroforestry can create opportunities
+            for farmers, entrepreneurs, community organizations
+            and young people through the production and sale
+            of tree-based products and services.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Fruit Production</h3>
+                <p>
+                    Growing suitable fruit trees can provide
+                    food for households and products for local
+                    and commercial markets.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Seedling Businesses</h3>
+                <p>
+                    Community and private nurseries can produce
+                    and supply quality seedlings to farmers,
+                    institutions and restoration projects.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Fodder Production</h3>
+                <p>
+                    Appropriate fodder trees and shrubs can
+                    supplement livestock feed when properly
+                    managed and safely used.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Gum and Resin Products</h3>
+                <p>
+                    Selected dryland tree species can provide
+                    gums and resins that may support local
+                    value chains and household income.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Timber and Poles</h3>
+                <p>
+                    Suitably managed tree production can
+                    provide timber, poles and other wood
+                    products for different markets.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Employment Opportunities</h3>
+                <p>
+                    Nursery operations, planting activities,
+                    tree maintenance and forest-based
+                    enterprises can create local work.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- TREE MAINTENANCE -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Tree Maintenance and Protection</h2>
+
+        <p>
+            Successful afforestation depends on what happens
+            after planting. Newly established trees need
+            protection and appropriate care until they become
+            sufficiently established.
+        </p>
+
+        <h3 class="subheading">Essential Maintenance Practices</h3>
+
+        <ul>
+            <li>Inspect young trees regularly for signs of stress.</li>
+            <li>Provide supplementary water when necessary and sustainable.</li>
+            <li>Remove competing weeds around young seedlings.</li>
+            <li>Maintain suitable mulch without covering the tree stem.</li>
+            <li>Repair protective fences and tree guards.</li>
+            <li>Monitor termites, pests and diseases.</li>
+            <li>Replace dead seedlings when suitable planting conditions return.</li>
+            <li>Prune only when necessary and according to species requirements.</li>
+            <li>Prevent uncontrolled grazing in restoration areas.</li>
+            <li>Record tree growth and survival rates.</li>
+        </ul>
+
+        <div class="highlight">
+            <h3>Long-Term Tree Management</h3>
+            <p>
+                Tree-growing projects should have a maintenance
+                plan and clear responsibility for protecting
+                planted trees. Monitoring should continue beyond
+                the planting day to assess survival, growth,
+                environmental outcomes and community benefits.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- COMMUNITY PARTICIPATION -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Community Participation and Education</h2>
+
+        <p>
+            Sustainable tree-growing programmes require the
+            involvement of the people who use and depend on
+            local land and natural resources. Farmers, pastoralists,
+            women, youth, schools and community groups can
+            all contribute to successful landscape restoration.
+        </p>
+
+        <h3 class="subheading">Community Activities</h3>
+
+        <ul>
+            <li>Organize community tree-planting programmes.</li>
+            <li>Establish school environmental clubs and tree nurseries.</li>
+            <li>Train farmers in agroforestry and seedling management.</li>
+            <li>Promote farmer-to-farmer knowledge sharing.</li>
+            <li>Encourage community protection of restored areas.</li>
+            <li>Support women's and youth groups in tree-based enterprises.</li>
+            <li>Promote awareness of sustainable land and water management.</li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- RESEARCH AND INNOVATION -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Research, Technology and Innovation</h2>
+
+        <p>
+            Research and innovation can improve the planning,
+            implementation and monitoring of afforestation
+            and agroforestry programmes. Evidence-based decisions
+            help identify appropriate species, suitable planting
+            methods and effective land management practices.
+        </p>
+
+        <h3 class="subheading">Areas for Research and Innovation</h3>
+
+        <ul>
+            <li>Testing the performance of locally adapted tree species.</li>
+            <li>Researching seed germination and nursery production methods.</li>
+            <li>Evaluating water-harvesting techniques for tree establishment.</li>
+            <li>Studying interactions between trees, crops and livestock.</li>
+            <li>Using digital mapping to monitor tree cover and restoration areas.</li>
+            <li>Measuring seedling survival and long-term tree growth.</li>
+            <li>Exploring markets for sustainable tree-based products.</li>
+        </ul>
+
+        <p>
+            Technology such as GPS mapping, satellite imagery,
+            mobile data collection and digital monitoring tools
+            can support project planning and evaluation.
+        </p>
+
+    </div>
+</section>
+
+<!-- IMPLEMENTATION -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Our Implementation Approach</h2>
+
+        <p>
+            Goreale Agricultural Innovators promotes a practical,
+            community-focused approach to afforestation and
+            agroforestry development.
+        </p>
+
+        <div class="steps">
+
+            <div class="step">
+                <h3>1. Assessment and Planning</h3>
+                <p>
+                    Assess land conditions, water availability,
+                    community needs and project objectives.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>2. Species Selection</h3>
+                <p>
+                    Identify suitable tree species according
+                    to local environmental conditions and
+                    intended uses.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>3. Seedling Production</h3>
+                <p>
+                    Support quality seed collection, nursery
+                    management and seedling preparation.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>4. Planting and Establishment</h3>
+                <p>
+                    Promote appropriate planting methods,
+                    timing, spacing and soil moisture
+                    conservation.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>5. Protection and Maintenance</h3>
+                <p>
+                    Encourage responsible maintenance,
+                    grazing management and protection
+                    of planted trees.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>6. Monitoring and Evaluation</h3>
+                <p>
+                    Measure seedling survival, tree growth,
+                    environmental improvements and
+                    community participation.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- COMMITMENT -->
+<section>
+    <div class="intro">
+
+        <h2 class="section-title">Our Commitment</h2>
+
+        <p>
+            Goreale Agricultural Innovators is committed to
+            promoting afforestation, agroforestry, sustainable
+            land management and environmental conservation.
+            We believe that responsible tree growing can
+            contribute to productive farms, resilient communities
+            and healthier ecosystems.
+        </p>
+
+        <p>
+            Through research, innovation, education and
+            collaboration, we aim to encourage farmers and
+            communities to adopt suitable tree-growing practices
+            that respond to local environmental and economic needs.
+        </p>
+
+        <p>
+            Our long-term vision is to support greener landscapes,
+            improved agricultural livelihoods, responsible
+            natural resource management and a sustainable
+            future for generations to come.
+        </p>
+
+    </div>
+</section>
+
+<!-- LEARNING RESOURCES -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Learning and Technical Resources</h2>
+
+        <div class="resources">
+
+            <p>
+                Continue learning about afforestation,
+                agroforestry and dryland restoration through
+                these technical resources:
+            </p>
+
+            <ul>
+                <li>
+                    <a href="https://www.fao.org/sustainable-forest-management-toolbox/modules/agroforestry/en"
+                       target="_blank" rel="noopener">
+                       FAO: Agroforestry Systems and Management
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.fao.org/sustainable-forest-management-toolbox/modules/drylands-forests-and-agrosilvopastoral-systems/2/en"
+                       target="_blank" rel="noopener">
+                       FAO: Dryland Forests and Agrosilvopastoral Systems
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.viagroforestry.org/app/uploads/2025/03/vi-agroforestry-drylands-salm-manual-2025.pdf"
+                       target="_blank" rel="noopener">
+                       Sustainable Land Management for Drylands Manual
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://forestry.go.ke/"
+                       target="_blank" rel="noopener">
+                       Kenya Ministry of Forestry
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3>Goreale Agricultural Innovators</h3>
+
+    <p>
+        Advancing agriculture through knowledge,
+        research, technology and innovation.
+    </p>
+
+    <p>
+        &copy; 2026 Goreale Agricultural Innovators.
+        All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>

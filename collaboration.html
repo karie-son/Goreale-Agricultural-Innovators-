@@ -1,0 +1,1711 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#174D2A">
+    <meta name="description" content="Apply to collaborate with GOREALE Agricultural Innovators through agricultural partnerships, technical expertise, research, training and community development.">
+
+    <title>GOREALE | Collaborate With Us</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+
+/* ==========================================
+   ROOT VARIABLES
+========================================== */
+
+:root {
+    --ivory: #F5F0E6;
+    --forest-green: #174D2A;
+    --deep-green: #10391F;
+    --earth-brown: #8B572A;
+    --charcoal-grey: #303632;
+    --muted: #68736A;
+    --border: #E6DDCC;
+    --white: #FFFFFF;
+    --soft-green: #EDF3EC;
+}
+
+/* ==========================================
+   GLOBAL STYLES
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    background: var(--ivory);
+    color: var(--charcoal-grey);
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+a {
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.header {
+    width: 100%;
+    min-height: 85px;
+
+    padding: 0.8rem 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+
+    background: var(--forest-green);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.brand img {
+    display: block;
+    width: clamp(105px, 12vw, 145px);
+    height: auto;
+    object-fit: contain;
+}
+
+.header-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.55rem 1rem;
+
+    color: var(--white);
+    text-decoration: none;
+
+    border: 1px solid rgba(255,255,255,0.55);
+    border-radius: 4px;
+
+    font-size: 0.72rem;
+    font-weight: 600;
+
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.header-link:hover {
+    background: var(--white);
+    color: var(--forest-green);
+}
+
+/* ==========================================
+   PAGE INTRODUCTION
+========================================== */
+
+.page-intro {
+    width: 100%;
+    padding: 4rem 7% 2.5rem;
+
+    text-align: center;
+}
+
+.intro-label {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+
+    color: var(--earth-brown);
+
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.page-intro h1 {
+    margin-bottom: 1rem;
+
+    color: var(--forest-green);
+
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+    font-weight: 800;
+    line-height: 1.35;
+}
+
+.page-intro p {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+
+    color: var(--charcoal-grey);
+
+    font-size: 0.82rem;
+    line-height: 1.95;
+}
+
+/* ==========================================
+   INTRODUCTION NOTE
+========================================== */
+
+.intro-note {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto 2.5rem;
+    padding: 1rem 1.3rem;
+
+    background: var(--soft-green);
+
+    border-left: 3px solid var(--forest-green);
+    border-radius: 3px;
+}
+
+.intro-note p {
+    color: var(--charcoal-grey);
+    font-size: 0.75rem;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   FORM WRAPPER
+========================================== */
+
+.form-wrapper {
+    width: 100%;
+    max-width: 950px;
+
+    margin: 0 auto;
+    padding: 0 1.5rem 5rem;
+}
+
+.application-form {
+    width: 100%;
+    padding: clamp(1.3rem, 4vw, 3rem);
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 9px;
+
+    box-shadow: 0 8px 30px rgba(48,54,50,0.055);
+}
+
+/* ==========================================
+   FORM SECTION
+========================================== */
+
+.form-section {
+    margin-bottom: 2.7rem;
+}
+
+.section-heading {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.9rem;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.section-number {
+    display: block;
+    margin-bottom: 0.3rem;
+
+    color: var(--earth-brown);
+
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+    color: var(--forest-green);
+
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.section-heading p {
+    margin-top: 0.35rem;
+
+    color: var(--muted);
+    font-size: 0.73rem;
+    line-height: 1.7;
+}
+
+/* ==========================================
+   FORM GRID
+========================================== */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.3rem 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+/* ==========================================
+   LABELS
+========================================== */
+
+.form-group label,
+.field-label {
+    display: block;
+    margin-bottom: 0.45rem;
+
+    color: var(--charcoal-grey);
+
+    font-size: 0.74rem;
+    font-weight: 600;
+}
+
+.required {
+    color: var(--earth-brown);
+}
+
+.optional {
+    color: var(--muted);
+    font-size: 0.66rem;
+    font-weight: 400;
+}
+
+/* ==========================================
+   FORM INPUTS
+========================================== */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+
+    padding: 0.8rem 0.9rem;
+
+    background: var(--ivory);
+    color: var(--charcoal-grey);
+
+    border: 1px solid var(--border);
+    border-radius: 4px;
+
+    outline: none;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.73rem;
+
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-group input,
+.form-group select {
+    min-height: 47px;
+}
+
+.form-group textarea {
+    min-height: 125px;
+    resize: vertical;
+    line-height: 1.8;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--forest-green);
+    box-shadow: 0 0 0 3px rgba(23,77,42,0.08);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #929991;
+    opacity: 1;
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+/* ==========================================
+   CHECKBOX GROUPS
+========================================== */
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+
+    min-width: 0;
+    padding: 0.8rem;
+
+    background: var(--ivory);
+
+    border: 1px solid var(--border);
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.checkbox-item:hover {
+    background: var(--soft-green);
+    border-color: var(--forest-green);
+}
+
+.checkbox-item input {
+    width: 15px;
+    height: 15px;
+
+    margin-top: 0.25rem;
+
+    flex-shrink: 0;
+    accent-color: var(--forest-green);
+
+    cursor: pointer;
+}
+
+.checkbox-item span {
+    color: var(--charcoal-grey);
+
+    font-size: 0.7rem;
+    line-height: 1.65;
+}
+
+/* ==========================================
+   HELPER TEXT
+========================================== */
+
+.helper-text {
+    display: block;
+    margin-top: 0.4rem;
+
+    color: var(--muted);
+    font-size: 0.66rem;
+    line-height: 1.7;
+}
+
+/* ==========================================
+   DECLARATION
+========================================== */
+
+.declaration-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+
+    padding: 1rem;
+
+    background: var(--ivory);
+
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+.declaration-box input {
+    width: 16px;
+    height: 16px;
+
+    margin-top: 0.35rem;
+
+    flex-shrink: 0;
+    accent-color: var(--forest-green);
+
+    cursor: pointer;
+}
+
+.declaration-box label {
+    color: var(--charcoal-grey);
+
+    font-size: 0.7rem;
+    line-height: 1.8;
+
+    cursor: pointer;
+}
+
+/* ==========================================
+   SUBMISSION
+========================================== */
+
+.form-submit {
+    padding-top: 1.7rem;
+    border-top: 1px solid var(--border);
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+
+    padding: 1rem;
+
+    background: var(--forest-green);
+    color: var(--white);
+
+    border: 1px solid var(--forest-green);
+    border-radius: 4px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: var(--deep-green);
+    border-color: var(--deep-green);
+}
+
+.submit-btn:focus-visible,
+.header-link:focus-visible {
+    outline: 3px solid var(--earth-brown);
+    outline-offset: 3px;
+}
+
+.form-notice {
+    margin-top: 1rem;
+
+    color: var(--muted);
+
+    font-size: 0.68rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer {
+    width: 100%;
+    padding: 2rem 7%;
+
+    background: var(--forest-green);
+    color: var(--white);
+
+    text-align: center;
+}
+
+.footer h3 {
+    margin-bottom: 0.3rem;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.footer .tagline {
+    margin-bottom: 0.7rem;
+
+    color: rgba(255,255,255,0.85);
+    font-size: 0.7rem;
+}
+
+.footer .copyright {
+    color: rgba(255,255,255,0.75);
+    font-size: 0.65rem;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 0.8rem 5%;
+    }
+
+    .page-intro {
+        padding: 3rem 5% 2rem;
+    }
+
+    .intro-note {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .form-wrapper {
+        padding: 0 1rem 3rem;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 1.1rem;
+    }
+
+    .form-group.full-width {
+        grid-column: auto;
+    }
+
+    .application-form {
+        padding: 1.4rem 1.1rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .checkbox-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-intro h1 {
+        font-size: 1.65rem;
+    }
+
+    .page-intro p {
+        font-size: 0.76rem;
+    }
+
+    .section-heading h2 {
+        font-size: 0.92rem;
+    }
+
+    .header-link {
+        padding: 0.45rem 0.7rem;
+        font-size: 0.66rem;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .form-wrapper {
+        padding-right: 0.7rem;
+        padding-left: 0.7rem;
+    }
+
+    .application-form {
+        padding: 1.1rem 0.8rem;
+    }
+
+    .page-intro {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+
+}
+
+    </style>
+</head>
+
+<body>
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header class="header">
+
+    <a href="index.html" class="brand" aria-label="GOREALE home">
+
+        <img
+            src="goreale-logo.png"
+            alt="GOREALE Agricultural Innovators"
+        >
+
+    </a>
+
+    <a href="index.html" class="header-link">
+        Back to Home
+    </a>
+
+</header>
+
+
+<!-- ==========================================
+     PAGE INTRODUCTION
+========================================== -->
+
+<section class="page-intro">
+
+    <span class="intro-label">
+        Partnerships • Technical Support • Collaboration
+    </span>
+
+    <h1>
+        Collaborate With Us
+    </h1>
+
+    <p>
+        GOREALE Agricultural Innovators welcomes meaningful partnerships
+        with organisations, institutions, professionals, agricultural
+        experts, businesses and individuals committed to sustainable
+        agriculture, environmental conservation and community development.
+
+        We believe that collaboration, knowledge exchange and shared
+        expertise can strengthen agricultural innovation and create
+        lasting opportunities for our communities.
+    </p>
+
+</section>
+
+
+<!-- ==========================================
+     INTRODUCTION NOTE
+========================================== -->
+
+<div class="intro-note">
+
+    <p>
+        <strong>Application guidance:</strong>
+        Please provide accurate information about yourself or your
+        organisation and describe the nature of the collaboration you
+        wish to establish with GOREALE. This application is intended
+        exclusively for partnership and collaboration proposals.
+    </p>
+
+</div>
+
+
+<!-- ==========================================
+     APPLICATION FORM
+========================================== -->
+
+<main class="form-wrapper">
+
+    <form
+        class="application-form"
+        id="collaborationForm"
+        action="#"
+        method="POST"
+    >
+
+        <!-- ==================================
+             SECTION 01
+             APPLICANT INFORMATION
+        =================================== -->
+
+        <section class="form-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    SECTION 01
+                </span>
+
+                <h2>Applicant Information</h2>
+
+                <p>
+                    Tell us who is submitting this collaboration application.
+                </p>
+
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label for="applicantType">
+                        Applicant Category <span class="required">*</span>
+                    </label>
+
+                    <select
+                        id="applicantType"
+                        name="applicantType"
+                        required
+                    >
+
+                        <option value="">Select category</option>
+                        <option value="individual">Individual</option>
+                        <option value="community-group">Community Group</option>
+                        <option value="organisation">Organisation</option>
+                        <option value="institution">Institution</option>
+                        <option value="business">Business / Company</option>
+                        <option value="development-partner">Development Partner</option>
+                        <option value="professional">Agricultural Professional</option>
+                        <option value="other">Other</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="fullName">
+                        Full Name <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="organisation">
+                        Organisation / Institution Name
+                        <span class="optional">(If applicable)</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="organisation"
+                        name="organisation"
+                        placeholder="Enter organisation name"
+                        autocomplete="organization"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="position">
+                        Position / Designation
+                        <span class="optional">(If applicable)</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="position"
+                        name="position"
+                        placeholder="e.g. Director, Coordinator, Researcher"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        autocomplete="tel"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="country">
+                        Country <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="country"
+                        name="country"
+                        placeholder="Enter country"
+                        autocomplete="country-name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="location">
+                        County / Town / Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        name="location"
+                        placeholder="Enter your location"
+                    >
+
+                </div>
+
+
+                <div class="form-group full-width">
+
+                    <label for="website">
+                        Website / Organisation Profile
+                        <span class="optional">(If applicable)</span>
+                    </label>
+
+                    <input
+                        type="url"
+                        id="website"
+                        name="website"
+                        placeholder="https://www.example.com"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================
+             SECTION 02
+             COLLABORATION AREAS
+        =================================== -->
+
+        <section class="form-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    SECTION 02
+                </span>
+
+                <h2>Areas of Collaboration</h2>
+
+                <p>
+                    Select the agricultural, environmental or community
+                    development areas in which you wish to collaborate.
+                </p>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <span class="field-label">
+                    Preferred Collaboration Areas
+                    <span class="required">*</span>
+                </span>
+
+                <div class="checkbox-grid">
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="interests[]"
+                            value="climate-smart-agriculture"
+                        >
+                        <span>Climate-Smart Agriculture</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="interests[]"
+                            value="sustainable-farming"
+                        >
+                        <span>Sustainable Farming Practices</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="interests[]"
+                            value="afforestation"
+                        >
+                        <span>Afforestation and Agroforestry</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="interests[]"
+                            value="crop-production"
+                        >
+                        <span>Crop Production and Management</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="interests[]"
+                            value="livestock"
+                        >
+                        <span>Livestock Development and Animal Nutrition</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="interests[]"
+                            value="soil-water"
+                        >
+                        <span>Soil and Water Conservation</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="interests[]"
+                            value="agricultural-technology"
+                        >
+                        <span>Agricultural Technology and Innovation</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="interests[]"
+                            value="research"
+                        >
+                        <span>Agricultural Research and Knowledge Exchange</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="interests[]"
+                            value="training"
+                        >
+                        <span>Training and Capacity Building</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="interests[]"
+                            value="food-security"
+                        >
+                        <span>Food Security and Community Development</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="interests[]"
+                            value="environment"
+                        >
+                        <span>Environmental Conservation</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="interests[]"
+                            value="agribusiness"
+                        >
+                        <span>Agribusiness and Agricultural Enterprise</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="interests[]"
+                            value="community-development"
+                        >
+                        <span>Community Development and Participation</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="interests[]"
+                            value="other"
+                        >
+                        <span>Other Areas of Collaboration</span>
+                    </label>
+
+                </div>
+
+                <span class="helper-text">
+                    Select at least one area that best describes your interests.
+                </span>
+
+            </div>
+
+
+            <div class="form-group" style="margin-top:1.5rem;">
+
+                <label for="otherInterest">
+                    Other Collaboration Area
+                    <span class="optional">(If applicable)</span>
+                </label>
+
+                <input
+                    type="text"
+                    id="otherInterest"
+                    name="otherInterest"
+                    placeholder="Specify any other area of interest"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================
+             SECTION 03
+             COLLABORATION APPROACH
+        =================================== -->
+
+        <section class="form-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    SECTION 03
+                </span>
+
+                <h2>Proposed Collaboration Approach</h2>
+
+                <p>
+                    Indicate how you would like to work with GOREALE.
+                </p>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <span class="field-label">
+                    Nature of Proposed Collaboration
+                    <span class="required">*</span>
+                </span>
+
+                <div class="checkbox-grid">
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="collaborationType[]"
+                            value="strategic-partnership"
+                        >
+                        <span>Strategic and Institutional Partnership</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="collaborationType[]"
+                            value="technical-expertise"
+                        >
+                        <span>Technical Expertise and Professional Advice</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="collaborationType[]"
+                            value="training"
+                        >
+                        <span>Training, Mentorship and Capacity Building</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="collaborationType[]"
+                            value="research"
+                        >
+                        <span>Joint Research and Knowledge Exchange</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="collaborationType[]"
+                            value="project-implementation"
+                        >
+                        <span>Joint Project Planning and Implementation</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="collaborationType[]"
+                            value="volunteer"
+                        >
+                        <span>Volunteer and Professional Engagement</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="collaborationType[]"
+                            value="knowledge-sharing"
+                        >
+                        <span>Knowledge Sharing and Information Exchange</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="collaborationType[]"
+                            value="market-linkages"
+                        >
+                        <span>Market Linkages and Agricultural Networking</span>
+                    </label>
+
+
+                    <label class="checkbox-item">
+                        <input
+                            type="checkbox"
+                            name="collaborationType[]"
+                            value="other"
+                        >
+                        <span>Other Collaborative Arrangements</span>
+                    </label>
+
+                </div>
+
+                <span class="helper-text">
+                    Select at least one preferred collaboration approach.
+                </span>
+
+            </div>
+
+
+            <div class="form-group" style="margin-top:1.5rem;">
+
+                <label for="otherApproach">
+                    Other Proposed Approach
+                    <span class="optional">(If applicable)</span>
+                </label>
+
+                <input
+                    type="text"
+                    id="otherApproach"
+                    name="otherApproach"
+                    placeholder="Describe another proposed approach"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================
+             SECTION 04
+             PROPOSAL DETAILS
+        =================================== -->
+
+        <section class="form-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    SECTION 04
+                </span>
+
+                <h2>Collaboration Proposal</h2>
+
+                <p>
+                    Provide details about your proposed activities and
+                    the value of working together.
+                </p>
+
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="form-group full-width">
+
+                    <label for="proposalTitle">
+                        Proposed Project / Collaboration Title
+                        <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="proposalTitle"
+                        name="proposalTitle"
+                        placeholder="Enter a title for your proposal"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group full-width">
+
+                    <label for="proposalDescription">
+                        Description of Proposed Collaboration
+                        <span class="required">*</span>
+                    </label>
+
+                    <textarea
+                        id="proposalDescription"
+                        name="proposalDescription"
+                        placeholder="Describe the proposed partnership, activities, objectives and how you would like to collaborate with GOREALE..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group full-width">
+
+                    <label for="role">
+                        Your Proposed Role and Responsibilities
+                        <span class="required">*</span>
+                    </label>
+
+                    <textarea
+                        id="role"
+                        name="role"
+                        placeholder="Explain the role you or your organisation would undertake in the proposed collaboration..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group full-width">
+
+                    <label for="resources">
+                        Technical Expertise, Services or Shared Resources
+                        <span class="optional">(If applicable)</span>
+                    </label>
+
+                    <textarea
+                        id="resources"
+                        name="resources"
+                        placeholder="Describe any professional expertise, training services, technical knowledge, equipment access or other non-financial resources you could contribute..."
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group full-width">
+
+                    <label for="outcomes">
+                        Expected Outcomes and Benefits
+                        <span class="required">*</span>
+                    </label>
+
+                    <textarea
+                        id="outcomes"
+                        name="outcomes"
+                        placeholder="What outcomes do you hope to achieve through this collaboration, and how could it benefit farmers, communities or the environment?"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="duration">
+                        Proposed Duration
+                    </label>
+
+                    <select
+                        id="duration"
+                        name="duration"
+                    >
+
+                        <option value="">Select duration</option>
+                        <option value="short-term">Short-term</option>
+                        <option value="up-to-six-months">Up to 6 months</option>
+                        <option value="six-to-twelve-months">6–12 months</option>
+                        <option value="one-to-two-years">1–2 years</option>
+                        <option value="long-term">Long-term</option>
+                        <option value="ongoing">Ongoing</option>
+                        <option value="undetermined">Not yet determined</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="startDate">
+                        Proposed Start Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="startDate"
+                        name="startDate"
+                    >
+
+                </div>
+
+
+                <div class="form-group full-width">
+
+                    <label for="additional">
+                        Additional Information
+                        <span class="optional">(Optional)</span>
+                    </label>
+
+                    <textarea
+                        id="additional"
+                        name="additional"
+                        placeholder="Share any additional information that may help GOREALE understand your proposal..."
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================
+             SECTION 05
+             DOCUMENTS AND REFERENCES
+        =================================== -->
+
+        <section class="form-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    SECTION 05
+                </span>
+
+                <h2>Supporting Information</h2>
+
+                <p>
+                    Provide relevant references or links to help us
+                    understand your organisation or proposal.
+                </p>
+
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="form-group full-width">
+
+                    <label for="profileLink">
+                        Organisation Profile / Portfolio Link
+                        <span class="optional">(Optional)</span>
+                    </label>
+
+                    <input
+                        type="url"
+                        id="profileLink"
+                        name="profileLink"
+                        placeholder="https://www.example.com/profile"
+                    >
+
+                </div>
+
+
+                <div class="form-group full-width">
+
+                    <label for="documentLink">
+                        Proposal / Supporting Document Link
+                        <span class="optional">(Optional)</span>
+                    </label>
+
+                    <input
+                        type="url"
+                        id="documentLink"
+                        name="documentLink"
+                        placeholder="Provide a shareable document link, if available"
+                    >
+
+                    <span class="helper-text">
+                        Ensure that any shared document is accessible to
+                        the intended reviewers.
+                    </span>
+
+                </div>
+
+
+                <div class="form-group full-width">
+
+                    <label for="referral">
+                        How Did You Learn About GOREALE?
+                        <span class="optional">(Optional)</span>
+                    </label>
+
+                    <select
+                        id="referral"
+                        name="referral"
+                    >
+
+                        <option value="">Select an option</option>
+                        <option value="website">GOREALE Website</option>
+                        <option value="social-media">Social Media</option>
+                        <option value="referral">Personal Referral</option>
+                        <option value="organisation">Another Organisation</option>
+                        <option value="event">Meeting / Event</option>
+                        <option value="other">Other</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================
+             SECTION 06
+             DECLARATION AND SUBMISSION
+        =================================== -->
+
+        <section class="form-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    SECTION 06
+                </span>
+
+                <h2>Declaration and Confirmation</h2>
+
+                <p>
+                    Review and confirm the information before submitting.
+                </p>
+
+            </div>
+
+
+            <div class="declaration-box">
+
+                <input
+                    type="checkbox"
+                    id="declaration"
+                    name="declaration"
+                    value="accepted"
+                    required
+                >
+
+                <label for="declaration">
+
+                    I confirm that the information provided in this
+                    application is accurate to the best of my knowledge
+                    and that I am authorised to submit the information
+                    where applicable.
+
+                    I understand that submitting this application does
+                    not automatically establish a partnership or create
+                    a binding agreement with GOREALE Agricultural Innovators.
+                    Any collaboration will be subject to further
+                    communication, consideration and mutual agreement.
+
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================
+             SUBMIT APPLICATION
+        =================================== -->
+
+        <div class="form-submit">
+
+            <button
+                type="submit"
+                class="submit-btn"
+            >
+                Submit Collaboration Application
+            </button>
+
+            <p class="form-notice">
+                Thank you for your interest in collaborating with
+                GOREALE Agricultural Innovators. We value partnerships
+                that advance sustainable agriculture, agricultural
+                innovation and community development.
+            </p>
+
+        </div>
+
+    </form>
+
+</main>
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer class="footer">
+
+    <h3>Goreale Agricultural Innovators</h3>
+
+    <p class="tagline">
+        Cultivating Innovation. Growing Sustainable Futures.
+    </p>
+
+    <p class="copyright">
+        &copy; 2026 Goreale Agricultural Innovators.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- ==========================================
+     FORM VALIDATION
+========================================== -->
+
+<script>
+
+const collaborationForm = document.getElementById("collaborationForm");
+
+function validateCheckboxGroup(name, message) {
+
+    const checkboxes = collaborationForm.querySelectorAll(
+        `input[name="${name}"]`
+    );
+
+    const selected = Array.from(checkboxes).some(
+        checkbox => checkbox.checked
+    );
+
+    if (!selected) {
+
+        checkboxes[0].setCustomValidity(message);
+
+        return false;
+
+    }
+
+    checkboxes.forEach(checkbox => {
+        checkbox.setCustomValidity("");
+    });
+
+    return true;
+
+}
+
+
+collaborationForm.addEventListener("submit", function(event) {
+
+    const interestsValid = validateCheckboxGroup(
+        "interests[]",
+        "Please select at least one collaboration area."
+    );
+
+    const approachValid = validateCheckboxGroup(
+        "collaborationType[]",
+        "Please select at least one collaboration approach."
+    );
+
+    if (!interestsValid || !approachValid) {
+
+        event.preventDefault();
+
+        collaborationForm.reportValidity();
+
+        return;
+
+    }
+
+    /*
+       Backend submission will be connected here.
+       The form currently uses action="#".
+    */
+
+    event.preventDefault();
+
+    alert(
+        "The collaboration form is ready for backend integration. " +
+        "Please connect the submission endpoint before accepting applications."
+    );
+
+});
+
+</script>
+
+</body>
+</html>

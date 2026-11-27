@@ -1,0 +1,1464 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#174D2A">
+
+<meta name="description" content="Privacy Policy and Terms and Conditions of GOREALE Agricultural Innovators.">
+
+<title>Legal Information | GOREALE Agricultural Innovators</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --ivory: #F5F5DC;
+    --forest: #174D2A;
+    --earth: #8B5A2B;
+    --charcoal: #454545;
+    --gold: #D9A441;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--ivory);
+    color: var(--charcoal);
+    font-size: 0.76rem;
+    line-height: 1.85;
+}
+
+/* HEADER */
+
+.site-header {
+    background: var(--forest);
+    padding: 0.8rem 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.16);
+}
+
+.brand img {
+    width: 155px;
+    max-height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+}
+
+.menu-toggle span {
+    width: 27px;
+    height: 3px;
+    background: var(--gold);
+    border-radius: 3px;
+}
+
+.site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: var(--forest);
+    padding: 1rem 6% 1.5rem;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.site-nav.active {
+    display: flex;
+}
+
+.site-nav a {
+    color: var(--ivory);
+    text-decoration: none;
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+
+.site-nav a:hover {
+    color: var(--gold);
+}
+
+/* HERO */
+
+.legal-hero {
+    background: var(--forest);
+    color: var(--ivory);
+    padding: 3.5rem 7%;
+    text-align: center;
+    border-bottom: 5px solid var(--gold);
+}
+
+.legal-label {
+    color: var(--gold);
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.legal-hero h1 {
+    font-size: clamp(1.6rem, 5vw, 2.5rem);
+    margin: 0.7rem 0;
+}
+
+.legal-hero p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 0.76rem;
+}
+
+/* SWITCH */
+
+.legal-container {
+    width: 90%;
+    max-width: 1050px;
+    margin: 2.5rem auto;
+}
+
+.legal-switch-wrapper {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.switch-heading {
+    color: var(--forest);
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.legal-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 5px;
+    background: rgba(23,77,42,0.10);
+    border: 1px solid rgba(23,77,42,0.25);
+    border-radius: 50px;
+}
+
+.legal-switch button {
+    border: none;
+    background: transparent;
+    color: var(--forest);
+    padding: 0.8rem 1.3rem;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.68rem;
+    font-weight: 700;
+    transition: 0.25s;
+}
+
+.legal-switch button.active {
+    background: var(--forest);
+    color: var(--gold);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.legal-switch button:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 3px;
+}
+
+/* DOCUMENT */
+
+.document-meta {
+    background: rgba(217,164,65,0.13);
+    border-left: 4px solid var(--gold);
+    padding: 1rem 1.2rem;
+    margin-bottom: 2rem;
+    font-size: 0.7rem;
+}
+
+.legal-document {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.legal-document.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.document-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.document-heading span {
+    color: var(--earth);
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.document-heading h2 {
+    color: var(--forest);
+    font-size: 1.35rem;
+    margin-top: 0.5rem;
+}
+
+.document-heading p {
+    font-size: 0.7rem;
+}
+
+.legal-section {
+    margin-bottom: 1.5rem;
+    padding: 1.4rem;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(139,90,43,0.22);
+    border-radius: 7px;
+}
+
+.legal-section h3 {
+    color: var(--forest);
+    font-size: 0.88rem;
+    margin-bottom: 0.7rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--gold);
+}
+
+.legal-section p {
+    margin-bottom: 0.7rem;
+}
+
+.legal-section ul {
+    padding-left: 1.3rem;
+    margin: 0.5rem 0;
+}
+
+.legal-section li {
+    margin-bottom: 0.4rem;
+}
+
+.legal-section a {
+    color: var(--earth);
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.important-note {
+    border-left: 4px solid var(--earth);
+    padding: 1rem;
+    background: rgba(139,90,43,0.08);
+    margin: 1rem 0;
+}
+
+/* DOCUMENT ACTIONS */
+
+.document-actions {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.print-button {
+    background: var(--gold);
+    color: var(--forest);
+    border: 2px solid var(--forest);
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 0.7rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.print-button:hover {
+    background: var(--forest);
+    color: var(--gold);
+}
+
+/* FOOTER */
+
+.about-footer {
+    background: var(--forest);
+    color: var(--ivory);
+    text-align: center;
+    padding: 2rem 6%;
+    font-size: 0.7rem;
+    line-height: 2;
+}
+
+.about-footer strong {
+    display: block;
+    color: var(--gold);
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+.footer-tagline {
+    color: var(--gold);
+    margin-top: 0.5rem;
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: var(--ivory);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 850px) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .site-header {
+        padding: 0.8rem 7%;
+    }
+
+    .site-nav {
+        display: flex;
+        position: static;
+        width: auto;
+        padding: 0;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .legal-container {
+        width: 82%;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .legal-switch {
+        width: 100%;
+    }
+
+    .legal-switch button {
+        flex: 1;
+        padding: 0.75rem 0.55rem;
+        font-size: 0.61rem;
+    }
+
+    .legal-section {
+        padding: 1rem;
+    }
+}
+
+@media print {
+
+    .site-header,
+    .legal-switch-wrapper,
+    .document-actions,
+    .footer-links {
+        display: none !important;
+    }
+
+    .legal-document {
+        display: none !important;
+    }
+
+    .legal-document.active {
+        display: block !important;
+    }
+
+    .legal-section {
+        break-inside: avoid;
+    }
+
+    body {
+        background: var(--ivory);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="site-header">
+
+    <a href="index.html" class="brand">
+        <img src="goreale-logo.png"
+             alt="GOREALE Agricultural Innovators Logo">
+    </a>
+
+    <button class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+    <nav class="site-nav" id="siteNav">
+
+        <a href="index.html">Home</a>
+            <a href="about-us.html#about">About Us</a>
+            <a href="about-us.html#services">Our Services</a>
+            <a href="about-us.html#objectives">Our Objectives</a>
+            <a href="about-us.html#mission">Our Mission</a>
+            <a href="our-team.html">Our Team</a>
+            <a href="innovation.html">Innovation</a>
+            <a href="community.html">Our Community</a>
+            <a href="weather-climate.html">Weather & Climate</a>
+            <a href="research.html">Research & Education</a>
+            <a href="video-lessons.html">Resources</a>
+            <a href="collaboration.html">Collaborate</a>
+            <a href="legal.html">Legal</a>
+
+    </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="legal-hero">
+
+    <span class="legal-label">GOREALE AGRICULTURAL INNOVATORS</span>
+
+    <h1>Legal Information</h1>
+
+    <p>
+        Transparency, responsibility and trust guide
+        our relationship with every visitor, member,
+        partner and supporter.
+    </p>
+
+</section>
+
+<main class="legal-container">
+
+    <!-- SWITCH -->
+
+    <div class="legal-switch-wrapper">
+
+        <div class="switch-heading">
+            Select a Legal Document
+        </div>
+
+        <div class="legal-switch" role="group"
+             aria-label="Select legal document">
+
+            <button type="button"
+                    id="privacyButton"
+                    class="active"
+                    aria-pressed="true"
+                    onclick="showDocument('privacy')">
+
+                Privacy Policy
+
+            </button>
+
+            <button type="button"
+                    id="termsButton"
+                    aria-pressed="false"
+                    onclick="showDocument('terms')">
+
+                Terms & Conditions
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="document-meta">
+
+        <strong>Organization:</strong>
+        GOREALE Agricultural Innovators<br>
+
+        <strong>Location:</strong>
+        Goreale Ward · Lagdera Constituency ·
+        Garissa County · Kenya<br>
+
+        <strong>Effective date:</strong> 21 November 2026<br>
+
+        <strong>Last reviewed:</strong> 21 November 2026
+
+    </div>
+
+
+    <!-- ==========================================
+         PRIVACY POLICY
+    =========================================== -->
+
+    <article class="legal-document active" id="privacy">
+
+        <div class="document-heading">
+
+            <span>LEGAL DOCUMENT 01</span>
+
+            <h2>Privacy Policy</h2>
+
+            <p>
+                How we collect, use, protect and manage
+                personal information.
+            </p>
+
+        </div>
+
+        <section class="legal-section">
+
+            <h3>1. Introduction</h3>
+
+            <p>
+                GOREALE Agricultural Innovators ("GOREALE",
+                "we", "our" or "us") respects the privacy
+                and personal information of individuals
+                who interact with our organization and website.
+            </p>
+
+            <p>
+                This Privacy Policy explains how we may
+                collect, use, store, protect and share
+                personal information.
+            </p>
+
+            <p>
+                We aim to handle personal information in
+                accordance with the Kenya Data Protection
+                Act, 2019, applicable regulations and
+                other relevant laws.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>2. Information We May Collect</h3>
+
+            <p>
+                Depending on your interaction with us,
+                we may collect:
+            </p>
+
+            <ul>
+                <li>Names and other identification details voluntarily provided.</li>
+                <li>Email addresses and telephone numbers.</li>
+                <li>Organization names and professional positions.</li>
+                <li>Enquiries, feedback and contact form submissions.</li>
+                <li>Collaboration and partnership proposals.</li>
+                <li>Information voluntarily provided in connection with donations or support.</li>
+                <li>Technical information such as browser type, device information and server logs, where generated.</li>
+            </ul>
+
+            <p>
+                We aim to collect only information that
+                is relevant and reasonably necessary for
+                the stated purpose.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>3. How We Collect Information</h3>
+
+            <p>Information may be collected when you:</p>
+
+            <ul>
+                <li>Complete a form on our website.</li>
+                <li>Send us an enquiry or message.</li>
+                <li>Submit a collaboration proposal.</li>
+                <li>Participate in our programmes or activities.</li>
+                <li>Communicate with us through official channels.</li>
+                <li>Visit our website and generate technical server information.</li>
+            </ul>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>4. How We Use Your Information</h3>
+
+            <p>We may use personal information to:</p>
+
+            <ul>
+                <li>Respond to enquiries and requests.</li>
+                <li>Review collaboration and partnership proposals.</li>
+                <li>Coordinate agricultural and community programmes.</li>
+                <li>Communicate organizational activities and updates.</li>
+                <li>Maintain appropriate organizational records.</li>
+                <li>Improve website functionality and services.</li>
+                <li>Prevent misuse, fraud and unauthorized access.</li>
+                <li>Meet legal and regulatory obligations.</li>
+            </ul>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>5. Lawful Basis for Processing</h3>
+
+            <p>
+                Where applicable, personal information
+                may be processed on the basis of:
+            </p>
+
+            <ul>
+                <li>Your consent.</li>
+                <li>Taking steps at your request before entering an arrangement.</li>
+                <li>Compliance with a legal obligation.</li>
+                <li>Protection of vital interests where applicable.</li>
+                <li>Performance of a task in the public interest where legally applicable.</li>
+                <li>Other lawful grounds permitted under applicable legislation.</li>
+            </ul>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>6. Sharing of Personal Information</h3>
+
+            <p>
+                We do not intend to sell personal information.
+                Information may be shared where reasonably
+                necessary and legally permitted.
+            </p>
+
+            <ul>
+                <li>Authorized organizational personnel.</li>
+                <li>Website hosting and technical service providers.</li>
+                <li>Project partners where sharing is necessary and lawful.</li>
+                <li>Relevant public authorities where required by law.</li>
+            </ul>
+
+            <p>
+                We seek appropriate safeguards when
+                service providers handle personal information
+                on our behalf.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>7. Data Security</h3>
+
+            <p>
+                We take reasonable organizational and
+                technical measures to protect personal
+                information against unauthorized access,
+                loss, misuse, alteration or disclosure.
+            </p>
+
+            <p>
+                No electronic transmission or storage
+                system can be guaranteed to be completely
+                secure. Users should avoid submitting
+                unnecessary sensitive information through
+                public forms.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>8. Data Retention</h3>
+
+            <p>
+                Personal information will be retained
+                only for as long as reasonably necessary
+                for the purpose for which it was collected,
+                subject to legal and accountability
+                requirements.
+            </p>
+
+            <p>
+                When information is no longer required,
+                we will take reasonable steps to delete,
+                anonymize or otherwise dispose of it
+                where appropriate and lawful.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>9. Cookies and Website Technologies</h3>
+
+            <p>
+                Our website may use essential technical
+                features necessary for its operation.
+                Hosting services may also generate
+                technical logs.
+            </p>
+
+            <p>
+                If analytics, advertising or other
+                non-essential tracking technologies
+                are introduced, appropriate information
+                and consent will be provided where
+                required by law.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>10. External Websites</h3>
+
+            <p>
+                Our website may contain links to external
+                websites and third-party services.
+            </p>
+
+            <p>
+                We do not control the privacy practices
+                of independent external websites.
+                Users should review their privacy policies
+                before providing personal information.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>11. Your Data Protection Rights</h3>
+
+            <p>
+                Subject to applicable law, you may have
+                the right to:
+            </p>
+
+            <ul>
+                <li>Be informed about the use of your personal information.</li>
+                <li>Access personal information held about you.</li>
+                <li>Object to the processing of your personal information.</li>
+                <li>Request correction of inaccurate or misleading information.</li>
+                <li>Request deletion of false or misleading information as provided by law.</li>
+                <li>Exercise other rights available under applicable data protection legislation.</li>
+            </ul>
+
+            <p>
+                You may also raise a complaint with
+                the Office of the Data Protection
+                Commissioner in Kenya.
+            </p>
+
+            <p>
+                Official information:
+                <a href="https://odpc.go.ke/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Office of the Data Protection Commissioner
+                </a>
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>12. Children's Information</h3>
+
+            <p>
+                We do not knowingly request children's
+                personal information without appropriate
+                parental or guardian involvement and
+                any consent required by law.
+            </p>
+
+            <p>
+                Activities involving children or young
+                persons shall be handled with appropriate
+                child protection and data protection
+                safeguards.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>13. International Data Transfers</h3>
+
+            <p>
+                Some hosting or technical service providers
+                may process information outside Kenya.
+                Where personal information is transferred
+                outside Kenya, applicable legal requirements
+                and appropriate safeguards must be observed.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>14. Changes to This Policy</h3>
+
+            <p>
+                We may update this Privacy Policy to
+                reflect changes in our operations,
+                website features, data practices or
+                applicable laws.
+            </p>
+
+            <p>
+                Updated versions will be published
+                on this page.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>15. Privacy Enquiries</h3>
+
+            <p>
+                For privacy questions, access requests
+                or correction requests, please contact
+                GOREALE Agricultural Innovators through
+                our official communication channels.
+            </p>
+
+            <p>
+                Visit our
+                <a href="contact.html">Contact Us page</a>
+                to submit a request.
+            </p>
+
+            <div class="important-note">
+                Please do not submit passwords, financial
+                account credentials or unnecessary sensitive
+                personal information through general enquiries.
+            </div>
+
+        </section>
+
+    </article>
+
+
+    <!-- ==========================================
+         TERMS AND CONDITIONS
+    =========================================== -->
+
+    <article class="legal-document" id="terms">
+
+        <div class="document-heading">
+
+            <span>LEGAL DOCUMENT 02</span>
+
+            <h2>Terms and Conditions</h2>
+
+            <p>
+                Rules governing access to and use of
+                our website and organizational information.
+            </p>
+
+        </div>
+
+        <section class="legal-section">
+
+            <h3>1. Introduction</h3>
+
+            <p>
+                These Terms and Conditions ("Terms")
+                govern access to and use of the website
+                operated by GOREALE Agricultural Innovators.
+            </p>
+
+            <p>
+                By accessing or using this website,
+                you agree to comply with these Terms.
+                If you do not agree, you should
+                discontinue use of the website.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>2. About GOREALE Agricultural Innovators</h3>
+
+            <p>
+                GOREALE Agricultural Innovators is a
+                youth-led, community-based agricultural
+                initiative based in Goreale Ward,
+                Lagdera Constituency, Garissa County, Kenya.
+            </p>
+
+            <p>
+                Our activities promote sustainable
+                agriculture, climate-smart solutions,
+                agricultural innovation, environmental
+                conservation, knowledge sharing and
+                community development.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>3. Acceptable Use</h3>
+
+            <p>
+                You agree to use this website responsibly
+                and lawfully.
+            </p>
+
+            <p>You must not:</p>
+
+            <ul>
+                <li>Use the website for unlawful, fraudulent or misleading purposes.</li>
+                <li>Submit false or deliberately deceptive information.</li>
+                <li>Attempt unauthorized access to website systems.</li>
+                <li>Interfere with website security or operation.</li>
+                <li>Upload malicious software or harmful material.</li>
+                <li>Harass, threaten or impersonate another person or organization.</li>
+                <li>Infringe intellectual property rights.</li>
+            </ul>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>4. Website Information</h3>
+
+            <p>
+                Website information may include agricultural
+                knowledge, educational materials, project
+                updates, announcements, weather information
+                and community activities.
+            </p>
+
+            <p>
+                We aim to provide useful and accurate
+                information. However, information may
+                change, become outdated or contain errors.
+            </p>
+
+            <p>
+                Website content is provided for general
+                informational and educational purposes.
+                It is not a substitute for professional
+                agricultural, legal, financial or
+                technical advice.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>5. Agricultural and Weather Information</h3>
+
+            <p>
+                Agricultural recommendations and weather
+                information are intended to support
+                awareness, learning and planning.
+            </p>
+
+            <p>
+                Weather forecasts are estimates and
+                actual conditions may differ.
+            </p>
+
+            <p>
+                Users should consider local conditions
+                and seek appropriate technical advice
+                before making important agricultural
+                decisions.
+            </p>
+
+            <p>
+                GOREALE does not guarantee particular
+                crop yields, livestock outcomes, rainfall
+                levels or financial returns from using
+                information on this website.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>6. Forms and Submissions</h3>
+
+            <p>
+                The website may provide forms for
+                enquiries, feedback, collaboration
+                requests, partnership proposals and
+                other communications.
+            </p>
+
+            <p>When submitting information, you agree that:</p>
+
+            <ul>
+                <li>The information you provide is accurate to the best of your knowledge.</li>
+                <li>You are authorized to submit the information and documents.</li>
+                <li>Your submission does not unlawfully disclose another person's private information.</li>
+                <li>You will not submit harmful, fraudulent or unlawful material.</li>
+            </ul>
+
+            <p>
+                Submitting a form does not automatically
+                create membership, employment, partnership,
+                funding approval or any other binding
+                agreement.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>7. Partnerships and Collaboration</h3>
+
+            <p>
+                GOREALE welcomes appropriate collaboration
+                with community organizations, government
+                institutions, NGOs, development partners,
+                private institutions and agricultural
+                stakeholders.
+            </p>
+
+            <p>
+                Submitting a collaboration request
+                expresses interest only. It does not
+                guarantee acceptance or create a
+                legally binding partnership.
+            </p>
+
+            <p>
+                Specific partnership obligations,
+                responsibilities, funding and deliverables
+                may be governed by a separate written
+                agreement.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>8. Donations and Financial Support</h3>
+
+            <p>
+                GOREALE may invite individuals and
+                institutions to support its initiatives
+                through donations, grants, material
+                contributions or other lawful assistance.
+            </p>
+
+            <ul>
+                <li>Verify official payment details before making contributions.</li>
+                <li>Retain relevant payment confirmations.</li>
+                <li>Do not send money to unauthorized individuals claiming to represent GOREALE.</li>
+                <li>Contributions are intended to support the Organization's objectives and approved activities.</li>
+            </ul>
+
+            <p>
+                Unless otherwise agreed in writing or
+                required by law, a donation does not
+                create ownership, membership, governance
+                rights or an entitlement to repayment.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>9. Intellectual Property</h3>
+
+            <p>
+                Unless otherwise indicated, website
+                content including logos, text, photographs,
+                graphics, designs and publications belongs
+                to GOREALE or is used with appropriate
+                permission.
+            </p>
+
+            <p>
+                You may access and use website content
+                for personal, educational and
+                non-commercial purposes, provided that
+                relevant acknowledgements and notices
+                are retained.
+            </p>
+
+            <p>
+                Commercial reproduction, modification
+                or distribution of protected organizational
+                materials requires appropriate permission.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>10. User-Submitted Materials</h3>
+
+            <p>
+                You retain any rights you hold in
+                materials you submit to us.
+            </p>
+
+            <p>
+                You authorize GOREALE to review and
+                use submitted materials for the purpose
+                for which they were provided, including
+                responding to enquiries or considering
+                proposals.
+            </p>
+
+            <p>
+                Any broader publication or promotional
+                use of identifiable personal material
+                requires an appropriate lawful basis
+                and permission where required.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>11. Privacy</h3>
+
+            <p>
+                Your use of this website is also
+                subject to our Privacy Policy.
+            </p>
+
+            <p>
+                Please read our
+                <a href="#"
+                   onclick="showDocument('privacy'); return false;">
+                    Privacy Policy
+                </a>
+                to understand how personal information
+                may be collected, used, stored and protected.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>12. External Links</h3>
+
+            <p>
+                Our website may contain links to
+                external websites and third-party services.
+            </p>
+
+            <p>
+                We do not control or guarantee the
+                accuracy, availability, security or
+                privacy practices of independent
+                external websites.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>13. Website Availability</h3>
+
+            <p>
+                We aim to keep the website available
+                and functional. However, uninterrupted
+                access cannot be guaranteed.
+            </p>
+
+            <p>
+                The website may occasionally be
+                unavailable due to maintenance,
+                technical problems, hosting interruptions
+                or circumstances beyond our control.
+            </p>
+
+            <p>
+                We may modify, suspend or discontinue
+                website features where reasonably necessary.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>14. Limitation of Liability</h3>
+
+            <p>
+                To the extent permitted by applicable
+                law, GOREALE shall not be responsible
+                for losses arising from reliance on
+                general website information, temporary
+                website unavailability or independent
+                third-party services.
+            </p>
+
+            <p>
+                Nothing in these Terms excludes or
+                limits liability where such exclusion
+                or limitation is prohibited by law.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>15. Changes to These Terms</h3>
+
+            <p>
+                We may update these Terms to reflect
+                changes in our operations, website
+                features or applicable legal requirements.
+            </p>
+
+            <p>
+                Updated Terms will be published on
+                this page with a revised review date.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>16. Governing Law and Disputes</h3>
+
+            <p>
+                These Terms shall be interpreted
+                in accordance with the applicable
+                laws of Kenya.
+            </p>
+
+            <p>
+                Any dispute relating to website use
+                should first be addressed through
+                good-faith communication where
+                reasonably possible.
+            </p>
+
+            <p>
+                Where a dispute cannot be resolved
+                amicably, the parties may pursue
+                appropriate remedies through
+                competent Kenyan authorities or courts.
+            </p>
+
+        </section>
+
+        <section class="legal-section">
+
+            <h3>17. Contact Information</h3>
+
+            <p>
+                For questions regarding these Terms,
+                please contact GOREALE Agricultural
+                Innovators through our official
+                communication channels.
+            </p>
+
+            <p>
+                Visit our
+                <a href="contact.html">Contact Us page</a>.
+            </p>
+
+            <p>
+                Organization: GOREALE Agricultural Innovators<br>
+                Location: Goreale Ward · Lagdera Constituency ·
+                Garissa County · Kenya.
+            </p>
+
+        </section>
+
+    </article>
+
+
+    <!-- PRINT BUTTON -->
+
+    <div class="document-actions">
+
+        <button class="print-button"
+                onclick="window.print()">
+
+            Print Current Document
+
+        </button>
+
+    </div>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="about-footer">
+
+    <strong>GOREALE Agricultural Innovators</strong>
+
+    Goreale Ward · Lagdera Constituency ·
+    Garissa County · Kenya
+
+    <div class="footer-tagline">
+        Cultivating Innovation. Growing Sustainable Futures.
+    </div>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+        <a href="about-us.html"#about>About Us</a>
+        <a href="contact.html">Contact</a>
+
+        <a href="legal.html#privacy"
+           onclick="showDocument('privacy')">
+            Privacy Policy
+        </a>
+
+        <a href="legal.html#terms"
+           onclick="showDocument('terms')">
+            Terms & Conditions
+        </a>
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+const privacyButton =
+    document.getElementById("privacyButton");
+
+const termsButton =
+    document.getElementById("termsButton");
+
+const privacyDocument =
+    document.getElementById("privacy");
+
+const termsDocument =
+    document.getElementById("terms");
+
+function showDocument(documentName) {
+
+    const showPrivacy = documentName === "privacy";
+
+    privacyDocument.classList.toggle(
+        "active",
+        showPrivacy
+    );
+
+    termsDocument.classList.toggle(
+        "active",
+        !showPrivacy
+    );
+
+    privacyButton.classList.toggle(
+        "active",
+        showPrivacy
+    );
+
+    termsButton.classList.toggle(
+        "active",
+        !showPrivacy
+    );
+
+    privacyButton.setAttribute(
+        "aria-pressed",
+        String(showPrivacy)
+    );
+
+    termsButton.setAttribute(
+        "aria-pressed",
+        String(!showPrivacy)
+    );
+
+    document.title = showPrivacy
+        ? "Privacy Policy | GOREALE Agricultural Innovators"
+        : "Terms and Conditions | GOREALE Agricultural Innovators";
+
+    window.scrollTo({
+        top: document.querySelector(".legal-switch-wrapper").offsetTop - 100,
+        behavior: "smooth"
+    });
+}
+
+
+/* HAMBURGER MENU */
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const siteNav =
+    document.getElementById("siteNav");
+
+menuToggle.addEventListener("click", function () {
+
+    const isOpen =
+        siteNav.classList.toggle("active");
+
+    menuToggle.setAttribute(
+        "aria-expanded",
+        String(isOpen)
+    );
+
+});
+
+document.querySelectorAll(".site-nav a").forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        siteNav.classList.remove("active");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

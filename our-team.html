@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#174D2A">
+<meta name="description" content="Meet the governing body, leadership, members and programme teams of GOREALE Agricultural Innovators.">
+
+<title>Our Team | GOREALE Agricultural Innovators</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+    --ivory: #F5F5DC;
+    --forest-green: #174D2A;
+    --earth-brown: #8B5A2B;
+    --charcoal-grey: #454545;
+    --harvest-gold: #D9A441;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--ivory);
+    color: var(--charcoal-grey);
+    font-size: 0.76rem;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--forest-green);
+    padding: 0.65rem 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+.brand img {
+    display: block;
+    width: 155px;
+    max-height: auto;
+    object-fit: contain;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.nav-menu a {
+    color: var(--ivory);
+    font-size: 0.68rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: var(--harvest-gold);
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--ivory);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.team-hero {
+    min-height: 340px;
+    padding: 5rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--ivory);
+
+    background: linear-gradient(
+        rgba(23,77,42,0.92),
+        rgba(23,77,42,0.96)
+    );
+}
+
+.hero-content {
+    max-width: 780px;
+}
+
+.section-label {
+    display: inline-block;
+    color: var(--harvest-gold);
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.team-hero h1 {
+    font-size: clamp(2rem, 5vw, 3.3rem);
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+}
+
+.team-hero p {
+    max-width: 680px;
+    margin: auto;
+    font-size: 0.78rem;
+}
+
+/* ==========================================
+   GENERAL SECTIONS
+========================================== */
+
+.section {
+    padding: 4rem 7%;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 2.5rem;
+}
+
+.section-heading h2 {
+    color: var(--forest-green);
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    line-height: 1.35;
+    margin-bottom: 0.8rem;
+}
+
+.section-heading p {
+    font-size: 0.74rem;
+}
+
+/* ==========================================
+   INTRODUCTION
+========================================== */
+
+.team-intro {
+    background: var(--ivory);
+}
+
+.intro-content {
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
+}
+
+.intro-content h2 {
+    color: var(--forest-green);
+    font-size: 1.65rem;
+    margin-bottom: 1rem;
+}
+
+.intro-content p {
+    margin-bottom: 1rem;
+}
+
+/* ==========================================
+   GOVERNING STRUCTURE
+========================================== */
+
+.governance-section {
+    background: rgba(139,90,43,0.07);
+}
+
+.governance-note {
+    max-width: 850px;
+    margin: 0 auto 2rem;
+    padding: 1rem 1.3rem;
+    border-left: 4px solid var(--harvest-gold);
+    background: var(--ivory);
+    border-radius: 5px;
+    font-size: 0.7rem;
+}
+
+.structure-chart {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.structure-level {
+    width: 100%;
+    max-width: 720px;
+    padding: 1.2rem;
+    text-align: center;
+    border-radius: 8px;
+    background: var(--forest-green);
+    color: var(--ivory);
+    border-bottom: 4px solid var(--harvest-gold);
+}
+
+.structure-level h3 {
+    color: var(--harvest-gold);
+    font-size: 0.88rem;
+    margin-bottom: 0.3rem;
+}
+
+.structure-level p {
+    font-size: 0.68rem;
+}
+
+.structure-arrow {
+    color: var(--earth-brown);
+    font-size: 1.4rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.executive-level {
+    background: var(--earth-brown);
+}
+
+.executive-level h3 {
+    color: var(--ivory);
+}
+
+.office-grid {
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.office-card {
+    padding: 1.2rem 0.8rem;
+    text-align: center;
+    background: var(--ivory);
+    border: 1px solid rgba(23,77,42,0.18);
+    border-top: 4px solid var(--harvest-gold);
+    border-radius: 8px;
+}
+
+.office-card h4 {
+    color: var(--forest-green);
+    font-size: 0.75rem;
+    margin-bottom: 0.35rem;
+}
+
+.office-card p {
+    font-size: 0.64rem;
+}
+
+/* ==========================================
+   GOVERNING BODY PROFILES
+========================================== */
+
+.leadership-section {
+    background: var(--ivory);
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.leader-card {
+    overflow: hidden;
+    border-radius: 10px;
+    background: rgba(139,90,43,0.07);
+    border: 1px solid rgba(23,77,42,0.13);
+    transition: 0.3s;
+}
+
+.leader-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.leader-photo {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #F5F5DC;
+}
+
+.leader-photo img {
+    display: block;
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: #F5F5DC;
+}
+
+
+
+.leader-card {
+    background: #F5F5DC;
+    border: 1px solid rgba(23,77,42,0.13);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.leader-info {
+    background: #F5F5DC;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.leader-info h3 {
+    color: var(--forest-green);
+    font-size: 0.86rem;
+    margin-bottom: 0.3rem;
+}
+
+.leader-position {
+    display: block;
+    color: var(--earth-brown);
+    font-weight: 800;
+    font-size: 0.65rem;
+    margin-bottom: 0.6rem;
+}
+
+.leader-info p {
+    font-size: 0.68rem;
+}
+
+/* ==========================================
+   TEAM VALUES
+========================================== */
+
+.values-section {
+    background: rgba(139,90,43,0.07);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.value-card {
+    background: var(--ivory);
+    padding: 1.7rem;
+    border-radius: 10px;
+    border-top: 4px solid var(--harvest-gold);
+    box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+}
+
+.value-card h3 {
+    color: var(--forest-green);
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+}
+
+.value-card p {
+    font-size: 0.7rem;
+}
+
+/* ==========================================
+   PROGRAMME AND TECHNICAL TEAMS
+========================================== */
+
+.programme-section {
+    background: var(--ivory);
+}
+
+.programme-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.programme-card {
+    background: rgba(139,90,43,0.07);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(23,77,42,0.12);
+    transition: 0.3s;
+}
+
+.programme-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.programme-top {
+    min-height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--forest-green);
+    color: var(--harvest-gold);
+    font-size: 2.2rem;
+}
+
+.programme-content {
+    padding: 1.3rem;
+}
+
+.programme-content h3 {
+    color: var(--forest-green);
+    font-size: 0.88rem;
+    margin-bottom: 0.6rem;
+}
+
+.programme-content p {
+    font-size: 0.7rem;
+}
+
+/* ==========================================
+   MEMBERSHIP AND COMMUNITY
+========================================== */
+
+.community-section {
+    background: var(--forest-green);
+    color: var(--ivory);
+    text-align: center;
+}
+
+.community-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.community-content h2 {
+    color: var(--harvest-gold);
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.community-content p {
+    margin-bottom: 1rem;
+    font-size: 0.74rem;
+}
+
+/* ==========================================
+   JOIN OUR INITIATIVE
+========================================== */
+
+.join-section {
+    padding: 4rem 7%;
+    text-align: center;
+    background: rgba(217,164,65,0.13);
+}
+
+.join-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.join-content h2 {
+    color: var(--forest-green);
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.join-content p {
+    margin-bottom: 1.5rem;
+}
+
+.join-button {
+    display: inline-block;
+    padding: 0.85rem 1.6rem;
+    background: var(--forest-green);
+    color: var(--ivory);
+    border-radius: 5px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.join-button:hover {
+    background: var(--earth-brown);
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.about-footer {
+    background: var(--forest-green);
+    color: var(--ivory);
+    text-align: center;
+    padding: 2rem 7%;
+    font-size: 0.68rem;
+}
+
+.about-footer strong {
+    display: block;
+    color: var(--ivory);
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+}
+
+.footer-tagline {
+    color: var(--harvest-gold);
+    margin-top: 0.6rem;
+    font-weight: 700;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 850px) {
+
+    .nav-menu {
+        gap: 0.8rem;
+    }
+
+    .nav-menu a {
+        font-size: 0.62rem;
+    }
+
+    .leadership-grid,
+    .programme-grid,
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .site-header {
+        padding: 0.65rem 5%;
+    }
+
+    .brand img {
+        width: 155px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--forest-green);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 0.5rem 6% 1rem;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu a {
+        width: 100%;
+        padding: 0.7rem 0;
+        border-bottom: 1px solid rgba(245,245,220,0.15);
+        font-size: 0.72rem;
+    }
+
+    .team-hero {
+        min-height: 300px;
+        padding: 4rem 6%;
+    }
+
+    .section {
+        padding: 3rem 6%;
+    }
+
+    .office-grid,
+    .leadership-grid,
+    .programme-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .join-section {
+        padding: 3rem 6%;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header class="site-header">
+
+    <a href="index.html" class="brand">
+        <img src="goreale-logo.png"
+             alt="GOREALE Agricultural Innovators Logo">
+    </a>
+
+    <button class="menu-toggle"
+            id="menuToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false">
+        ☰
+    </button>
+
+    <nav class="nav-menu" id="navMenu">
+
+        <a href="index.html">Home</a>
+            <a href="about-us.html#about">About Us</a>
+            <a href="about-us.html#services">Our Services</a>
+            <a href="about-us.html#objectives">Our Objectives</a>
+            <a href="about-us.html#mission">Our Mission</a>
+            <a href="our-team.html">Our Team</a>
+            <a href="innovation.html">Innovation</a>
+            <a href="community.html">Our Community</a>
+            <a href="weather-climate.html">Weather & Climate</a>
+            <a href="research.html">Research & Education</a>
+            <a href="collaboration.html">Collaborate</a>
+            <a href="legal.html">Legal</a>
+            <a href="constitution.html">Constitution</a>
+
+    </nav>
+
+</header>
+
+
+<!-- ==========================================
+     HERO
+========================================== -->
+
+<section class="team-hero">
+
+    <div class="hero-content">
+
+        <span class="section-label">
+            PEOPLE • LEADERSHIP • COMMUNITY
+        </span>
+
+        <h1>Our Team</h1>
+
+        <p>
+            Meet the governing body, leadership, members and
+            programme teams contributing to sustainable agriculture,
+            innovation and community development at GOREALE
+            Agricultural Innovators.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     INTRODUCTION
+========================================== -->
+
+<section class="section team-intro">
+
+    <div class="intro-content">
+
+        <span class="section-label">
+            UNITED BY A COMMON PURPOSE
+        </span>
+
+        <h2>
+            United by a Shared Vision for Sustainable Agriculture
+        </h2>
+
+        <p>
+            GOREALE Agricultural Innovators recognises that
+            meaningful agricultural transformation begins with
+            people. Our initiative brings together members,
+            community representatives, agricultural practitioners
+            and development-minded individuals who share an interest
+            in building sustainable agricultural systems.
+        </p>
+
+        <p>
+            Through accountable leadership, active membership,
+            local participation, knowledge exchange and partnerships,
+            we seek to strengthen agricultural innovation and create
+            opportunities for communities in Goreale Ward and beyond.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     GOVERNING STRUCTURE
+========================================== -->
+
+<section class="section governance-section" id="governance">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            ORGANISATIONAL GOVERNANCE
+        </span>
+
+        <h2>Our Governing Structure</h2>
+
+        <p>
+            Our organisational structure provides a framework
+            for member participation, leadership, accountability
+            and effective coordination of the initiative.
+        </p>
+
+    </div>
+
+    <div class="governance-note">
+
+        <strong>Governance and accountability:</strong>
+        The structure below is a proposed website presentation.
+        The official governing positions, election procedures,
+        terms of office and responsibilities shall follow the
+        approved GOREALE Agricultural Innovators CBO Constitution.
+
+    </div>
+
+    <div class="structure-chart">
+
+        <div class="structure-level">
+
+            <h3>GENERAL ASSEMBLY</h3>
+
+            <p>
+                Registered members exercising the decision-making
+                powers provided for in the CBO Constitution.
+            </p>
+
+        </div>
+
+        <div class="structure-arrow">↓</div>
+
+        <div class="structure-level executive-level">
+
+            <h3>GOVERNING / EXECUTIVE COMMITTEE</h3>
+
+            <p>
+                Elected office bearers responsible for organisational
+                governance, oversight and accountability.
+            </p>
+
+        </div>
+
+        <div class="structure-arrow">↓</div>
+
+        <div class="office-grid">
+
+            <div class="office-card">
+                <h4>Chairperson</h4>
+                <p>Leadership and oversight</p>
+            </div>
+
+            <div class="office-card">
+                <h4>Vice Chairperson</h4>
+                <p>Leadership support and delegated duties</p>
+            </div>
+
+            <div class="office-card">
+                <h4>Secretary</h4>
+                <p>Records and official communication</p>
+            </div>
+
+            <div class="office-card">
+                <h4>Assistant Secretary</h4>
+                <p>Secretarial support</p>
+            </div>
+
+            <div class="office-card">
+                <h4>Treasurer</h4>
+                <p>Financial records and accountability</p>
+            </div>
+
+        </div>
+
+        <div class="structure-arrow">↓</div>
+
+        <div class="structure-level">
+
+            <h3>PROGRAMME AND IMPLEMENTATION TEAMS</h3>
+
+            <p>
+                Coordinate and support approved agricultural,
+                environmental, innovation and community activities.
+            </p>
+
+        </div>
+
+        <div class="structure-arrow">↓</div>
+
+        <div class="structure-level">
+
+            <h3>MEMBERS, VOLUNTEERS AND COMMUNITY PARTICIPANTS</h3>
+
+            <p>
+                Contribute knowledge, skills, ideas and participation
+                towards the initiative's objectives.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     LEADERSHIP PROFILES
+========================================== -->
+
+<section class="section leadership-section" id="leadership">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            OUR LEADERSHIP
+        </span>
+
+        <h2>Meet Our Governing Body</h2>
+
+        <p>
+            The individuals entrusted with leadership and governance
+            responsibilities help guide the organisation in
+            accordance with its constitution and member decisions.
+        </p>
+
+    </div>
+
+    <div class="leadership-grid">
+
+        <!-- CHAIRPERSON -->
+
+        <article class="leader-card">
+
+            <div class="leader-photo">
+                <img src="founder.png" alt="Founder One">
+            </div>
+
+            <div class="leader-info">
+
+                <h3>Samira Abdirahman Maalim</h3>
+
+                <span class="leader-position">
+                    Chairperson
+                </span>
+
+                <p>
+                    Provides leadership, chairs meetings and
+                    supports the strategic direction and
+                    accountability of the organisation.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- VICE CHAIRPERSON -->
+
+        <article class="leader-card">
+
+            <div class="leader-photo">
+            <img src="founder-one.png" alt="Founder One">
+                
+            </div>
+
+            <div class="leader-info">
+
+                <h3>Abdullahi Sheikh Aden</h3>
+
+                <span class="leader-position">
+                    Vice Chairperson
+                </span>
+
+                <p>
+                    Supports the Chairperson and performs
+                    delegated leadership responsibilities
+                    in accordance with the constitution.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- SECRETARY -->
+
+        <article class="leader-card">
+
+            <div class="leader-photo">
+                <img src="founder-3.png" alt="Founder One">
+            </div>
+
+            <div class="leader-info">
+
+                <h3>Fartuun Omar Hassan</h3>
+
+                <span class="leader-position">
+                    Secretary
+                </span>
+
+                <p>
+                    Coordinates official records, meeting
+                    documentation, correspondence and
+                    organisational communication.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- ASSISTANT SECRETARY -->
+
+        <article class="leader-card">
+
+            <div class="leader-photo">
+                <img src="founder-4.png" alt="Founder One">
+            </div>
+
+            <div class="leader-info">
+
+                <h3>Ismahaan Osman Abdullahi</h3>
+
+                <span class="leader-position">
+                    Assistant Secretary
+                </span>
+
+                <p>
+                    Supports secretarial duties and assists
+                    with records, communication and
+                    organisational documentation.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- TREASURER -->
+
+        <article class="leader-card">
+
+            <div class="leader-photo">
+                <img src="founder-6.png" alt="Founder One">
+            </div>
+
+            <div class="leader-info">
+
+                <h3>Yasmin Hassan  Hillow </h3>
+
+                <span class="leader-position">
+                    Treasurer
+                </span>
+
+                <p>
+                    Supports financial record keeping,
+                    financial reporting and responsible
+                    management of organisational funds.
+                </p>
+
+            </div>
+
+        </article>
+<div class="leadership-grid">
+
+        <!-- Member -->
+
+        <article class="leader-card">
+
+            <div class="leader-photo">
+                <img src="founder-5.png" alt="Founder One">
+            </div>
+
+            <div class="leader-info">
+
+                <h3>Abdifatah Aden Ibrahim</h3>
+
+                <span class="leader-position">
+                    Member
+                </span>
+
+                <p>
+                    Provides leadership, chairs meetings and
+                    supports the strategic direction and
+                    accountability of the organisation.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     TEAM VALUES
+========================================== -->
+
+<section class="section values-section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            WHAT GUIDES OUR TEAM
+        </span>
+
+        <h2>The Values That Bring Us Together</h2>
+
+        <p>
+            Our work is guided by shared principles that support
+            responsible leadership, community participation
+            and sustainable development.
+        </p>
+
+    </div>
+
+    <div class="values-grid">
+
+        <article class="value-card">
+            <h3>Collaboration</h3>
+            <p>
+                We value teamwork, partnerships and knowledge
+                sharing to develop practical agricultural solutions.
+            </p>
+        </article>
+
+        <article class="value-card">
+            <h3>Community Participation</h3>
+            <p>
+                We encourage local involvement and recognise
+                the importance of community knowledge and experience.
+            </p>
+        </article>
+
+        <article class="value-card">
+            <h3>Innovation</h3>
+            <p>
+                We welcome creative ideas and appropriate
+                technologies that respond to agricultural challenges.
+            </p>
+        </article>
+
+        <article class="value-card">
+            <h3>Integrity</h3>
+            <p>
+                We value honesty, accountability, transparency
+                and responsible use of resources.
+            </p>
+        </article>
+
+        <article class="value-card">
+            <h3>Inclusivity</h3>
+            <p>
+                We support meaningful participation by youth,
+                women and different community groups.
+            </p>
+        </article>
+
+        <article class="value-card">
+            <h3>Sustainability</h3>
+            <p>
+                We promote approaches that protect natural
+                resources and strengthen long-term resilience.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     PROGRAMME AND TECHNICAL TEAMS
+========================================== -->
+
+<section class="section programme-section" id="programmes">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            IMPLEMENTATION AND PROGRAMMES
+        </span>
+
+        <h2>Our Programme and Technical Teams</h2>
+
+        <p>
+            Our programme teams support the implementation
+            of approved activities and translate organisational
+            objectives into practical community initiatives.
+        </p>
+
+    </div>
+
+    <div class="programme-grid">
+
+        <article class="programme-card">
+
+            <div class="programme-top">🌱</div>
+
+            <div class="programme-content">
+
+                <h3>Agricultural Development</h3>
+
+                <p>
+                    Supports sustainable crop production,
+                    livestock development, climate-smart
+                    agriculture and agricultural knowledge sharing.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="programme-card">
+
+            <div class="programme-top">💡</div>
+
+            <div class="programme-content">
+
+                <h3>Innovation and Research</h3>
+
+                <p>
+                    Encourages practical solutions, agricultural
+                    research, learning and appropriate technologies
+                    for local farming systems.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="programme-card">
+
+            <div class="programme-top">🌳</div>
+
+            <div class="programme-content">
+
+                <h3>Environmental Conservation</h3>
+
+                <p>
+                    Promotes afforestation, agroforestry,
+                    biodiversity protection, soil conservation
+                    and responsible water management.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="programme-card">
+
+            <div class="programme-top">🤝</div>
+
+            <div class="programme-content">
+
+                <h3>Community Engagement</h3>
+
+                <p>
+                    Supports community participation, outreach,
+                    youth and women's involvement, and local
+                    knowledge exchange.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="programme-card">
+
+            <div class="programme-top">📊</div>
+
+            <div class="programme-content">
+
+                <h3>Administration and Partnerships</h3>
+
+                <p>
+                    Supports programme coordination,
+                    communication, administration and
+                    partnership development.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="programme-card">
+
+            <div class="programme-top">🌍</div>
+
+            <div class="programme-content">
+
+                <h3>Community Development</h3>
+
+                <p>
+                    Encourages local initiatives, skills development,
+                    inclusive participation and community resilience.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     MEMBERSHIP AND COMMUNITY PARTICIPATION
+========================================== -->
+
+<section class="section community-section">
+
+    <div class="community-content">
+
+        <span class="section-label">
+            OUR STRENGTH IS OUR COMMUNITY
+        </span>
+
+        <h2>Members Are the Foundation of Our Initiative</h2>
+
+        <p>
+            GOREALE Agricultural Innovators is built on the
+            participation and commitment of its members.
+            Members contribute to the organisation's direction
+            through the decision-making processes established
+            in its constitution.
+        </p>
+
+        <p>
+            Farmers, young people, women, agricultural practitioners,
+            researchers, institutions and community groups also
+            have important roles in advancing sustainable agriculture
+            and community development.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     JOIN OUR INITIATIVE
+========================================== -->
+
+<section class="join-section">
+
+    <div class="join-content">
+
+        <span class="section-label">
+            BE PART OF THE JOURNEY
+        </span>
+
+        <h2>Grow With Us</h2>
+
+        <p>
+            Are you passionate about sustainable agriculture,
+            community development, environmental conservation
+            or agricultural innovation? We welcome individuals
+            and organisations interested in contributing
+            to our mission.
+        </p>
+
+        <a href="collaboration.html" class="join-button">
+            Collaborate With Us →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     WEBSITE FOOTER
+========================================== -->
+
+<footer class="about-footer">
+
+    <strong>
+        GOREALE Agricultural Innovators
+    </strong>
+
+    Goreale Ward · Lagdera Constituency ·
+    Garissa County · Kenya
+
+    <div class="footer-tagline">
+        Cultivating Innovation. Growing Sustainable Futures.
+    </div>
+
+</footer>
+
+
+<!-- ==========================================
+     JAVASCRIPT
+========================================== -->
+
+<script>
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const navMenu =
+    document.getElementById("navMenu");
+
+menuToggle.addEventListener("click", function() {
+
+    navMenu.classList.toggle("show");
+
+    const isOpen =
+        navMenu.classList.contains("show");
+
+    menuToggle.setAttribute(
+        "aria-expanded",
+        isOpen
+    );
+
+    menuToggle.innerHTML =
+        isOpen ? "&times;" : "☰";
+
+});
+
+document.querySelectorAll(".nav-menu a")
+.forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        navMenu.classList.remove("show");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+        menuToggle.innerHTML = "☰";
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

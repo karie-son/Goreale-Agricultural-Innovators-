@@ -1,0 +1,1160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agricultural Research & Education | Goreale Agricultural Innovators</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --ivory: #F5F5DC;
+    --forest-green: #355E3B;
+    --earth-brown: #8B5A2B;
+    --charcoal-grey: #454545;
+    --olive-green: #6B8E23;
+    --lavender: #E6DDF2;
+    --beet: #e8dce0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    background: var(--ivory);
+    color: var(--charcoal-grey);
+    font-family: Arial, sans-serif;
+    font-size: .88rem;
+    line-height: 1.8;
+}
+
+header {
+    background: var(--ivory);
+    padding: 1rem 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(53,94,59,.15);
+}
+
+.logo {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 900;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--forest-green);
+    font-size: .78rem;
+    font-weight: bold;
+}
+
+nav a:hover { color: var(--earth-brown); }
+
+.hero {
+    min-height: 24rem;
+    background:
+        linear-gradient(rgba(15,40,20,.74), rgba(15,40,20,.74)),
+        url("images/research.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 4rem 8%;
+    color: white;
+}
+
+.hero-content { max-width: 700px; }
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    line-height: 1.25;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: .95rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--earth-brown);
+    color: white;
+    text-decoration: none;
+    padding: .7rem 1.3rem;
+    border-radius: 4px;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.btn:hover { background: var(--olive-green); }
+
+section { padding: 3rem 8%; }
+
+.section-title {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.45rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.section-intro {
+    max-width: 850px;
+    margin-bottom: 1.8rem;
+}
+
+.content-section { background: rgba(255,255,255,.35); }
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.card {
+    padding: 1.3rem;
+    border-radius: 7px;
+    border: 1px solid rgba(53,94,59,.12);
+}
+
+.card:nth-child(odd) { background: var(--beet); }
+.card:nth-child(even) { background: var(--lavender); }
+
+.card h3 {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: .95rem;
+    font-weight: 800;
+    margin-bottom: .6rem;
+}
+
+.card p, .card li { font-size: .82rem; }
+
+.content-section h3,
+section > h3 {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 1.3rem 0 .5rem;
+}
+
+section p { margin-bottom: .8rem; }
+
+section ul, section ol {
+    padding-left: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    background: var(--beet);
+    border-left: 4px solid var(--earth-brown);
+    padding: 1.2rem;
+    margin: 1.3rem 0;
+    border-radius: 4px;
+}
+
+.highlight h3 { margin-top: 0; }
+
+.resource-links a {
+    color: var(--forest-green);
+    font-weight: bold;
+}
+
+footer {
+    background: var(--forest-green);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: .78rem;
+}
+
+footer h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+@media(max-width: 900px) {
+    .content-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media(max-width: 600px) {
+    header { padding: 1rem 5%; }
+    nav { gap: .8rem; }
+    .hero { min-height: 21rem; padding: 3rem 6%; }
+    section { padding: 2.3rem 6%; }
+    .content-grid { grid-template-columns: 1fr; }
+    .section-title { font-size: 1.25rem; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Goreale Agricultural Innovators</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#areas">Our Areas</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Agricultural Research, Education & Innovation</h1>
+        <p>
+            Advancing agriculture through scientific research, practical
+            experimentation, knowledge sharing, farmer education and
+            innovative solutions to agricultural challenges.
+        </p>
+        <a href="#knowledge" class="btn">Explore Research</a>
+    </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section id="knowledge">
+    <h2 class="section-title">Knowledge for Agricultural Transformation</h2>
+
+    <div class="section-intro">
+        <p>
+            Agricultural research is the systematic process of investigating
+            farming challenges, developing knowledge, testing ideas and
+            identifying improved ways of producing crops, managing livestock
+            and protecting natural resources.
+        </p>
+
+        <p>
+            Agricultural education helps farmers, students, researchers,
+            entrepreneurs and communities understand and apply useful
+            agricultural knowledge. It connects research findings with
+            practical farming activities.
+        </p>
+
+        <p>
+            Innovation involves developing or adapting new ideas, technologies,
+            products and methods that address real agricultural problems.
+            It may involve modern technology, improved farming practices
+            or the effective use of existing local knowledge.
+        </p>
+
+        <p>
+            Goreale Agricultural Innovators promotes research, learning
+            and practical innovation to support productive, resilient
+            and environmentally responsible agriculture.
+        </p>
+    </div>
+</section>
+
+<!-- RESEARCH AREAS -->
+<section class="content-section">
+    <h2 class="section-title">Our Main Research Areas</h2>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>1. Crop Research</h3>
+            <p>
+                Investigating crop varieties, planting methods, soil
+                fertility, crop protection, productivity and adaptation
+                to different environmental conditions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>2. Livestock Research</h3>
+            <p>
+                Exploring animal nutrition, breeding, disease prevention,
+                animal welfare, productivity and sustainable livestock systems.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>3. Soil Research</h3>
+            <p>
+                Studying soil properties, fertility, organic matter,
+                erosion, soil organisms and sustainable land management.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>4. Water Research</h3>
+            <p>
+                Investigating water harvesting, irrigation efficiency,
+                water quality, soil moisture and conservation techniques.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>5. Climate Research</h3>
+            <p>
+                Studying climate risks, rainfall patterns, drought
+                preparedness and agricultural adaptation strategies.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>6. Agricultural Technology</h3>
+            <p>
+                Exploring farm machinery, digital agriculture, sensors,
+                drones, artificial intelligence and smart farming systems.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>7. Agribusiness Research</h3>
+            <p>
+                Studying agricultural markets, value chains, production
+                costs, profitability and business opportunities.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>8. Food and Nutrition Research</h3>
+            <p>
+                Exploring food production, food quality, nutrition,
+                post-harvest management and food security.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>9. Environmental Research</h3>
+            <p>
+                Investigating biodiversity, agroforestry, land restoration,
+                conservation and sustainable resource management.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- RESEARCH METHODS -->
+<section>
+    <h2 class="section-title">Agricultural Research Methods</h2>
+
+    <p>
+        Different research methods are used depending on the research
+        question, available resources, study location and type of information
+        required. Combining methods can provide a better understanding
+        of agricultural challenges.
+    </p>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>Field Experiments</h3>
+            <p>
+                Testing different farming practices under planned conditions
+                to compare their effects on crop or livestock performance.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Farm Surveys</h3>
+            <p>
+                Collecting information from farmers about production,
+                challenges, farming practices and agricultural needs.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Soil and Water Testing</h3>
+            <p>
+                Analysing soil and water samples to understand selected
+                physical, chemical and biological properties.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Case Studies</h3>
+            <p>
+                Examining a particular farm, community, enterprise
+                or agricultural project in detail.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Interviews and Focus Groups</h3>
+            <p>
+                Gathering experiences, opinions and local knowledge
+                through structured discussions and interviews.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Observation</h3>
+            <p>
+                Systematically observing crops, livestock, farm activities
+                and environmental conditions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Laboratory Analysis</h3>
+            <p>
+                Using suitable laboratory procedures to analyse samples
+                and investigate specific research questions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Remote Sensing</h3>
+            <p>
+                Using satellite images, aerial photographs and other
+                spatial information to study land and vegetation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Participatory Research</h3>
+            <p>
+                Involving farmers and communities in identifying problems,
+                testing solutions and evaluating results.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- RESEARCH PROCESS -->
+<section class="content-section">
+    <h2 class="section-title">The Agricultural Research Process</h2>
+
+    <p>
+        Good research follows a logical process. The steps may vary
+        depending on the study, but a clear plan helps improve the
+        quality and usefulness of research findings.
+    </p>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>1. Identify a Problem</h3>
+            <p>
+                Define an agricultural challenge that requires
+                investigation or a better solution.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>2. Review Existing Knowledge</h3>
+            <p>
+                Examine available research, publications, reports
+                and relevant agricultural information.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>3. Develop Research Questions</h3>
+            <p>
+                Establish clear questions that the research
+                intends to answer.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>4. Design the Study</h3>
+            <p>
+                Select appropriate methods, study locations,
+                participants, materials and procedures.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>5. Collect Information</h3>
+            <p>
+                Gather relevant data through experiments,
+                observations, surveys or other suitable methods.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>6. Analyse Results</h3>
+            <p>
+                Organise and examine collected information
+                to identify patterns and findings.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>7. Draw Conclusions</h3>
+            <p>
+                Explain what the findings mean and whether
+                the research questions have been answered.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>8. Share Findings</h3>
+            <p>
+                Communicate research results through reports,
+                presentations, training and publications.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>9. Apply and Evaluate</h3>
+            <p>
+                Where appropriate, test recommendations in practice
+                and monitor their performance over time.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- FIELD TRIALS -->
+<section>
+    <h2 class="section-title">On-Farm Research and Field Trials</h2>
+
+    <p>
+        On-farm research allows agricultural practices and technologies
+        to be evaluated under real farming conditions. It helps determine
+        whether a method is suitable for farmers facing particular
+        environmental and economic circumstances.
+    </p>
+
+    <h3>Examples of Agricultural Field Trials</h3>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>Crop Variety Trials</h3>
+            <p>
+                Comparing suitable crop varieties to examine growth,
+                maturity, yield and performance under local conditions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Fertiliser Trials</h3>
+            <p>
+                Evaluating approved nutrient management options
+                using appropriate controls and measurements.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Irrigation Trials</h3>
+            <p>
+                Comparing irrigation methods or schedules to understand
+                water use and crop response.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Mulching Trials</h3>
+            <p>
+                Examining how different suitable soil covers affect
+                soil moisture, weeds and crop development.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Livestock Feeding Trials</h3>
+            <p>
+                Investigating suitable feed options and their effects
+                on animal condition and production.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Agroforestry Trials</h3>
+            <p>
+                Studying the performance of suitable trees and crops
+                grown together in different farm arrangements.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="highlight">
+        <h3>Important Research Principle</h3>
+        <p>
+            Field trials should be planned carefully. Researchers should
+            define what is being tested, use appropriate comparisons,
+            record observations consistently and avoid drawing conclusions
+            from limited or unreliable data.
+        </p>
+    </div>
+</section>
+
+<!-- DATA COLLECTION -->
+<section class="content-section">
+    <h2 class="section-title">Agricultural Data Collection and Analysis</h2>
+
+    <p>
+        Data is information collected during research. Good data helps
+        researchers understand agricultural conditions, evaluate
+        interventions and make evidence-based recommendations.
+    </p>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>Crop Data</h3>
+            <p>
+                Plant height, germination, flowering time, crop health,
+                harvest quantity and yield.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Livestock Data</h3>
+            <p>
+                Animal numbers, weight, milk production, breeding,
+                feeding and health records.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Soil Data</h3>
+            <p>
+                Soil pH, organic matter, nutrient levels, moisture
+                and other selected soil properties.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Weather Data</h3>
+            <p>
+                Rainfall, temperature, humidity, wind and other
+                relevant environmental observations.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Economic Data</h3>
+            <p>
+                Production costs, labour, input expenses, sales,
+                revenue and farm profitability.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Community Data</h3>
+            <p>
+                Farmer experiences, household needs, local practices,
+                market challenges and adoption of technologies.
+            </p>
+        </div>
+
+    </div>
+
+    <h3>Tools for Research and Data Management</h3>
+    <ul>
+        <li>Field notebooks and standard observation forms.</li>
+        <li>Spreadsheets for organising and analysing information.</li>
+        <li>Mobile data collection applications.</li>
+        <li>GPS devices and digital mapping tools.</li>
+        <li>Statistical software for suitable quantitative analysis.</li>
+        <li>Photographs and records for documenting field activities.</li>
+        <li>Laboratory equipment for approved sample analysis.</li>
+    </ul>
+</section>
+
+<!-- FARMER EDUCATION -->
+<section>
+    <h2 class="section-title">Farmer Education and Agricultural Training</h2>
+
+    <p>
+        Agricultural education equips farmers with the knowledge and
+        practical skills required to improve production, manage risks
+        and operate successful agricultural enterprises.
+    </p>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>Farmer Field Schools</h3>
+            <p>
+                Group-based learning where farmers observe, experiment,
+                discuss and learn through practical field activities.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Demonstration Farms</h3>
+            <p>
+                Practical locations where agricultural techniques
+                and technologies can be demonstrated and evaluated.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Workshops and Seminars</h3>
+            <p>
+                Learning events that bring farmers, researchers,
+                students and agricultural professionals together.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Field Days</h3>
+            <p>
+                Events where participants visit farms to observe
+                agricultural practices and discuss results.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Online Learning</h3>
+            <p>
+                Digital lessons, videos, publications and learning
+                materials that support agricultural education.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Youth Agricultural Clubs</h3>
+            <p>
+                Encouraging young people to learn about farming,
+                entrepreneurship, research and environmental protection.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- INNOVATION -->
+<section class="content-section">
+    <h2 class="section-title">Agricultural Innovation and Development</h2>
+
+    <p>
+        Agricultural innovation is the process of creating, adapting
+        or improving ideas, practices and technologies to solve
+        agricultural problems. Innovation can be simple or advanced.
+        It should respond to real needs and be practical in its
+        intended environment.
+    </p>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>Product Innovation</h3>
+            <p>
+                Developing or improving agricultural products,
+                equipment, seeds, feeds and processed foods.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Process Innovation</h3>
+            <p>
+                Improving how agricultural activities are carried
+                out, including planting, harvesting and processing.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Technology Innovation</h3>
+            <p>
+                Adapting digital tools, machinery and equipment
+                to improve farming operations.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Business Model Innovation</h3>
+            <p>
+                Developing new ways to organise agricultural
+                services, markets and business relationships.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Community Innovation</h3>
+            <p>
+                Encouraging communities to develop collective
+                solutions to local farming and resource challenges.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Environmental Innovation</h3>
+            <p>
+                Developing methods that reduce resource waste,
+                protect ecosystems and improve sustainability.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CLIMATE AND DRYLAND -->
+<section>
+    <h2 class="section-title">Research for Climate Resilience and Dryland Agriculture</h2>
+
+    <p>
+        Agricultural research is important in areas affected by unreliable
+        rainfall, drought, high temperatures and limited water resources.
+        Research should identify farming methods that are appropriate
+        to local conditions and farmers' needs.
+    </p>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>Drought-Tolerant Crops</h3>
+            <p>
+                Evaluating suitable varieties and crop management
+                practices for areas with limited rainfall.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Water Conservation</h3>
+            <p>
+                Testing rainwater harvesting, water storage and
+                efficient irrigation approaches.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Pasture Research</h3>
+            <p>
+                Investigating suitable fodder species, pasture
+                management and livestock feeding systems.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Indigenous Knowledge</h3>
+            <p>
+                Documenting useful local farming knowledge and
+                examining how it can complement scientific research.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Climate Information</h3>
+            <p>
+                Studying rainfall patterns, weather information
+                and agricultural risk management.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Land Restoration</h3>
+            <p>
+                Evaluating vegetation restoration, soil conservation,
+                agroforestry and sustainable grazing practices.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="highlight">
+        <h3>Focus on Garissa and Northern Kenya</h3>
+        <p>
+            Research opportunities in dryland areas include:
+        </p>
+        <ul>
+            <li>Evaluating drought-adapted crop varieties.</li>
+            <li>Studying fodder production and conservation methods.</li>
+            <li>Improving livestock feeding and water management.</li>
+            <li>Testing suitable rainwater harvesting techniques.</li>
+            <li>Studying rangeland condition and planned grazing.</li>
+            <li>Investigating climate information and drought preparedness.</li>
+            <li>Exploring agricultural businesses suited to local conditions.</li>
+            <li>Documenting community knowledge and farming innovations.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- ETHICS -->
+<section class="content-section">
+    <h2 class="section-title">Research Ethics and Quality Standards</h2>
+
+    <p>
+        Responsible research protects participants, animals, the environment
+        and the integrity of scientific information. Research should be
+        conducted honestly and in accordance with applicable institutional
+        and legal requirements.
+    </p>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>Informed Consent</h3>
+            <p>
+                Explain the purpose of research and obtain appropriate
+                consent before involving participants.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Data Protection</h3>
+            <p>
+                Collect and store information responsibly and protect
+                private or confidential participant data.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Scientific Honesty</h3>
+            <p>
+                Report findings accurately and do not invent, alter
+                or misrepresent research results.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Animal Welfare</h3>
+            <p>
+                Follow appropriate animal welfare requirements and
+                obtain necessary approvals for animal research.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Environmental Responsibility</h3>
+            <p>
+                Avoid unnecessary environmental damage and follow
+                applicable environmental requirements.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Proper Referencing</h3>
+            <p>
+                Acknowledge sources, research contributions and
+                publications used in research work.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- RESEARCH IMPACT -->
+<section>
+    <h2 class="section-title">Measuring Research Impact</h2>
+
+    <p>
+        Research should produce useful knowledge and contribute to
+        better agricultural decisions. Monitoring and evaluation
+        help determine whether research activities are achieving
+        their intended objectives.
+    </p>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>Productivity Improvement</h3>
+            <p>
+                Assess changes in crop yields, livestock production
+                and farm performance.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Knowledge Improvement</h3>
+            <p>
+                Measure changes in farmers' understanding and
+                practical agricultural skills.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Technology Adoption</h3>
+            <p>
+                Examine whether farmers are using tested and
+                appropriate agricultural innovations.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Income and Business Growth</h3>
+            <p>
+                Evaluate changes in production costs, revenue,
+                profitability and market opportunities.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Environmental Benefits</h3>
+            <p>
+                Monitor soil condition, water use, vegetation
+                and natural resource management.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Community Benefits</h3>
+            <p>
+                Assess improvements in livelihoods, collaboration,
+                food security and agricultural resilience.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- APPROACH -->
+<section class="content-section">
+    <h2 class="section-title">Our Research and Learning Approach</h2>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>Identify Local Needs</h3>
+            <p>
+                Understand agricultural challenges through engagement
+                with farmers and communities.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Study Existing Knowledge</h3>
+            <p>
+                Review research evidence, technical information
+                and local experience.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Develop Practical Ideas</h3>
+            <p>
+                Identify possible solutions that are relevant
+                to the local agricultural environment.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Test and Learn</h3>
+            <p>
+                Encourage appropriate trials, demonstrations
+                and practical evaluation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Share Knowledge</h3>
+            <p>
+                Communicate useful findings through training,
+                reports and educational resources.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Improve Continuously</h3>
+            <p>
+                Use feedback and new evidence to improve
+                agricultural practices and solutions.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- COMMITMENT -->
+<section>
+    <h2 class="section-title">Our Commitment to Research and Innovation</h2>
+
+    <p>
+        Goreale Agricultural Innovators believes that knowledge,
+        research and education are essential to agricultural development.
+        We aim to promote a culture of learning, investigation,
+        collaboration and responsible innovation.
+    </p>
+
+    <p>
+        We encourage farmers, students, young innovators and agricultural
+        professionals to identify challenges, explore ideas, share
+        knowledge and contribute to practical agricultural solutions.
+    </p>
+
+    <p>
+        Through research awareness, farmer education, partnerships
+        and knowledge sharing, we seek to contribute to a more
+        productive, resilient and sustainable agricultural sector.
+    </p>
+</section>
+
+<!-- RESOURCES -->
+<section class="content-section resource-links">
+    <h2 class="section-title">Agricultural Research and Education Resources</h2>
+
+    <p>
+        Explore these organisations and learning platforms for
+        agricultural research, publications and educational materials:
+    </p>
+
+    <ul>
+        <li>
+            <a href="https://www.kalro.org/" target="_blank" rel="noopener">
+                Kenya Agricultural and Livestock Research Organization (KALRO)
+            </a>
+            – Agricultural research, technologies and publications.
+        </li>
+
+        <li>
+            <a href="https://www.fao.org/" target="_blank" rel="noopener">
+                Food and Agriculture Organization (FAO)
+            </a>
+            – Agricultural research, knowledge and technical resources.
+        </li>
+
+        <li>
+            <a href="https://www.fao.org/farmer-field-schools/" target="_blank" rel="noopener">
+                FAO Farmer Field Schools
+            </a>
+            – Practical farmer learning and participatory research.
+        </li>
+
+        <li>
+            <a href="https://www.cgiar.org/" target="_blank" rel="noopener">
+                CGIAR
+            </a>
+            – International agricultural research and innovation.
+        </li>
+
+        <li>
+            <a href="https://www.kilimo.go.ke/" target="_blank" rel="noopener">
+                Kenya Ministry of Agriculture
+            </a>
+            – Agricultural policies, extension and development resources.
+        </li>
+
+        <li>
+            <a href="https://www.worldbank.org/en/topic/agriculture" target="_blank" rel="noopener">
+                World Bank Agriculture
+            </a>
+            – Agricultural development, research and innovation.
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <h3>Goreale Agricultural Innovators</h3>
+    <p>
+        Advancing agriculture through knowledge, research and innovation.
+    </p>
+    <p>
+        &copy; 2026 Goreale Agricultural Innovators. All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>

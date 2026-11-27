@@ -1,0 +1,911 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Climate-Smart Agriculture | Goreale Agricultural Innovators</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --ivory: #F5F5DC;
+            --forest-green: #355E3B;
+            --earth-brown: #8B5A2B;
+            --charcoal-grey: #454545;
+            --olive-green: #6B8E23;
+            --lavender: #E6DDF2;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--ivory);
+            color: var(--charcoal-grey);
+            font-family: Arial, sans-serif;
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+
+        /* HEADER */
+        header {
+            background: var(--ivory);
+            padding: 1rem 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 0.05rem solid rgba(53, 94, 59, 0.2);
+        }
+
+        .logo {
+            font-family: Montserrat, sans-serif;
+            color: var(--forest-green);
+            font-size: 1rem;
+            font-weight: 900;
+        }
+
+        nav {
+            display: flex;
+            gap: 1.3rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--forest-green);
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--earth-brown);
+        }
+
+        /* HERO */
+        .hero {
+            padding: 5rem 8%;
+            text-align: center;
+            background: var(--ivory);
+        }
+
+        .hero h1 {
+            font-family: Montserrat, sans-serif;
+            color: var(--forest-green);
+            font-size: clamp(1.7rem, 4vw, 2.7rem);
+            font-weight: 900;
+            line-height: 1.4;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            max-width: 48rem;
+            margin: auto;
+            font-size: 0.88rem;
+            color: var(--charcoal-grey);
+        }
+
+        .hero-button {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.7rem 1.5rem;
+            background: var(--earth-brown);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .hero-button:hover {
+            background: var(--forest-green);
+        }
+
+        /* GENERAL SECTIONS */
+        section {
+            padding: 3rem 8%;
+        }
+
+        .section-title {
+            font-family: Montserrat, sans-serif;
+            color: var(--forest-green);
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-bottom: 1.2rem;
+            text-align: center;
+        }
+
+        .section-intro {
+            max-width: 55rem;
+            margin: 0 auto 2rem;
+            text-align: center;
+            font-size: 0.82rem;
+        }
+
+        h2, h3, h4 {
+            color: var(--forest-green);
+            font-family: Montserrat, sans-serif;
+        }
+
+        /* INTRODUCTION */
+        .about-content {
+            max-width: 65rem;
+            margin: auto;
+        }
+
+        .about-content p {
+            margin-bottom: 1rem;
+            font-size: 0.84rem;
+            text-align: justify;
+        }
+
+        /* THREE PILLARS */
+        .pillars {
+            background: rgba(107, 142, 35, 0.07);
+        }
+
+        .pillar-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1.2rem;
+        }
+
+        .pillar-card {
+            background: var(--ivory);
+            padding: 1.5rem;
+            border-radius: 0.35rem;
+            border-bottom: 0.2rem solid var(--forest-green);
+        }
+
+        .pillar-card h3 {
+            font-size: 0.95rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .pillar-card p {
+            font-size: 0.78rem;
+        }
+
+        .number {
+            color: var(--earth-brown);
+            font-family: Montserrat, sans-serif;
+            font-weight: 900;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* PRACTICES */
+        .practice-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+        }
+
+        .practice-card {
+            background: var(--lavender);
+            padding: 1.3rem;
+            border-radius: 0.3rem;
+        }
+
+        .practice-card:nth-child(even) {
+            background: rgba(107, 142, 35, 0.12);
+        }
+
+        .practice-card h3 {
+            font-size: 0.88rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .practice-card p {
+            font-size: 0.77rem;
+        }
+
+        /* BENEFITS */
+        .benefits {
+            background: rgba(107, 142, 35, 0.07);
+        }
+
+        .benefit-list {
+            max-width: 55rem;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem 2rem;
+        }
+
+        .benefit {
+            padding: 0.8rem;
+            border-left: 0.18rem solid var(--olive-green);
+        }
+
+        .benefit h3 {
+            font-size: 0.85rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .benefit p {
+            font-size: 0.78rem;
+        }
+
+        /* IMPLEMENTATION */
+        .steps {
+            max-width: 60rem;
+            margin: auto;
+        }
+
+        .step {
+            padding: 1rem 1.2rem;
+            margin-bottom: 1rem;
+            background: rgba(230, 221, 242, 0.65);
+            border-radius: 0.3rem;
+        }
+
+        .step h3 {
+            font-size: 0.88rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .step p {
+            font-size: 0.78rem;
+        }
+
+        /* KENYA CONTEXT */
+        .kenya-content {
+            background: rgba(107, 142, 35, 0.08);
+            padding: 2rem;
+            border-radius: 0.35rem;
+            max-width: 65rem;
+            margin: auto;
+        }
+
+        .kenya-content h3 {
+            font-size: 0.95rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .kenya-content p {
+            font-size: 0.82rem;
+            margin-bottom: 0.8rem;
+        }
+
+        /* KEY MESSAGE */
+        .message {
+            text-align: center;
+            padding: 3rem 8%;
+        }
+
+        .message h2 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .message p {
+            max-width: 45rem;
+            margin: auto;
+            font-size: 0.82rem;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--forest-green);
+            color: white;
+            padding: 1.5rem 8%;
+            text-align: center;
+        }
+
+        footer h3 {
+            color: white;
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+
+        footer p {
+            color: white;
+            font-size: 0.68rem;
+        }
+
+        .back-top {
+            display: inline-block;
+            margin-top: 0.8rem;
+            color: white;
+            font-size: 0.72rem;
+            text-decoration: none;
+        }
+
+        /* TABLETS */
+        @media (max-width: 1024px) {
+            header, section {
+                padding-left: 6%;
+                padding-right: 6%;
+            }
+
+            .pillar-grid,
+            .practice-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        /* MOBILE PHONES */
+        @media (max-width: 600px) {
+            header {
+                padding: 1rem 5%;
+                flex-direction: column;
+                gap: 0.7rem;
+            }
+
+            .logo {
+                font-size: 0.9rem;
+                text-align: center;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.7rem;
+            }
+
+            nav a {
+                font-size: 0.68rem;
+            }
+
+            .hero {
+                padding: 3rem 6%;
+            }
+
+            .hero h1 {
+                font-size: 1.65rem;
+            }
+
+            .hero p {
+                font-size: 0.8rem;
+            }
+
+            section {
+                padding: 2.3rem 6%;
+            }
+
+            .section-title {
+                font-size: 1.2rem;
+            }
+
+            .about-content p {
+                font-size: 0.78rem;
+                text-align: left;
+            }
+
+            .pillar-grid,
+            .practice-grid,
+            .benefit-list {
+                grid-template-columns: 1fr;
+                gap: 0.9rem;
+            }
+
+            .pillar-card,
+            .practice-card {
+                padding: 1.1rem;
+            }
+
+            .kenya-content {
+                padding: 1.2rem;
+            }
+
+            .message {
+                padding: 2rem 6%;
+            }
+
+            footer {
+                padding: 1.3rem 5%;
+            }
+        }
+
+        /* VERY SMALL PHONES */
+        @media (max-width: 360px) {
+            .hero h1 {
+                font-size: 1.45rem;
+            }
+
+            .section-title {
+                font-size: 1.1rem;
+            }
+
+            nav a {
+                font-size: 0.63rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">GOREALE AGRICULTURAL INNOVATORS</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#pillars">Principles</a>
+        <a href="#practices">Practices</a>
+        <a href="#benefits">Benefits</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Climate-Smart Agriculture</h1>
+
+    <p>
+        Building resilient agricultural systems through sustainable
+        farming practices, efficient resource management, innovation
+        and adaptation to climate change.
+    </p>
+
+    <a href="#about" class="hero-button">Explore Climate-Smart Agriculture</a>
+</div>
+
+<!-- INTRODUCTION -->
+<section id="about">
+    <h2 class="section-title">Understanding Climate-Smart Agriculture</h2>
+
+    <div class="about-content">
+
+        <p>
+            Climate-smart agriculture (CSA) is an integrated approach
+            to agricultural development that helps farmers produce
+            food sustainably while responding to the challenges of
+            climate change. It promotes farming systems that improve
+            productivity, strengthen resilience and contribute to
+            environmental protection.
+        </p>
+
+        <p>
+            Agriculture depends heavily on natural resources such as
+            land, water, soil and favourable weather conditions.
+            However, changing rainfall patterns, prolonged droughts,
+            rising temperatures, floods, soil degradation and emerging
+            pests and diseases increasingly threaten agricultural
+            production and rural livelihoods.
+        </p>
+
+        <p>
+            Climate-smart agriculture encourages farmers to adopt
+            practical technologies and farming methods that respond
+            to these challenges. It combines scientific knowledge,
+            local experience, research, innovation and responsible
+            management of natural resources.
+        </p>
+
+        <p>
+            The approach is relevant to crop production, livestock
+            management, forestry, fisheries and wider agricultural
+            value chains. Its practices should be selected according
+            to local climate conditions, available resources, farming
+            systems and community needs.
+        </p>
+
+        <p>
+            For smallholder farmers, climate-smart agriculture can
+            provide opportunities to improve food production,
+            protect agricultural investments, reduce avoidable losses
+            and strengthen household food security.
+        </p>
+
+    </div>
+</section>
+
+<!-- THREE PILLARS -->
+<section class="pillars" id="pillars">
+
+    <h2 class="section-title">The Three Pillars of Climate-Smart Agriculture</h2>
+
+    <p class="section-intro">
+        Climate-smart agriculture is guided by three connected
+        objectives that support sustainable agricultural development.
+    </p>
+
+    <div class="pillar-grid">
+
+        <div class="pillar-card">
+            <div class="number">01</div>
+            <h3>Sustainable Productivity</h3>
+
+            <p>
+                Increasing agricultural production and farmers'
+                incomes while maintaining soil fertility, protecting
+                natural resources and improving the efficiency of
+                agricultural inputs.
+            </p>
+        </div>
+
+        <div class="pillar-card">
+            <div class="number">02</div>
+            <h3>Climate Adaptation and Resilience</h3>
+
+            <p>
+                Strengthening the ability of farmers, crops, livestock
+                and agricultural communities to prepare for, withstand
+                and recover from climate-related challenges such as
+                droughts, floods and extreme temperatures.
+            </p>
+        </div>
+
+        <div class="pillar-card">
+            <div class="number">03</div>
+            <h3>Climate Change Mitigation</h3>
+
+            <p>
+                Supporting practices that reduce agricultural
+                greenhouse-gas emissions or increase carbon storage
+                in soils and vegetation, where practical and
+                appropriate.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PRACTICES -->
+<section id="practices">
+
+    <h2 class="section-title">Climate-Smart Farming Practices</h2>
+
+    <p class="section-intro">
+        Farmers can use different methods and technologies to
+        improve production, conserve resources and manage climate risks.
+    </p>
+
+    <div class="practice-grid">
+
+        <div class="practice-card">
+            <h3>1. Conservation Agriculture</h3>
+            <p>
+                Reducing unnecessary soil disturbance, maintaining
+                soil cover and practising crop rotation to protect
+                soil structure, moisture and fertility.
+            </p>
+        </div>
+
+        <div class="practice-card">
+            <h3>2. Water Harvesting</h3>
+            <p>
+                Collecting and storing rainwater for agricultural
+                use through water pans, storage tanks, farm ponds
+                and other suitable harvesting systems.
+            </p>
+        </div>
+
+        <div class="practice-card">
+            <h3>3. Efficient Irrigation</h3>
+            <p>
+                Using drip irrigation and other efficient irrigation
+                methods to deliver water where crops need it and
+                minimise unnecessary water losses.
+            </p>
+        </div>
+
+        <div class="practice-card">
+            <h3>4. Drought-Tolerant Crops</h3>
+            <p>
+                Selecting suitable crop varieties that can perform
+                better under limited water conditions and changing
+                weather patterns.
+            </p>
+        </div>
+
+        <div class="practice-card">
+            <h3>5. Agroforestry</h3>
+            <p>
+                Integrating suitable trees and shrubs into farming
+                systems to provide shade, improve soil protection,
+                support biodiversity and diversify farm products.
+            </p>
+        </div>
+
+        <div class="practice-card">
+            <h3>6. Crop Diversification</h3>
+            <p>
+                Growing different crops to spread production risks,
+                improve household nutrition and reduce dependence
+                on a single crop.
+            </p>
+        </div>
+
+        <div class="practice-card">
+            <h3>7. Soil Conservation</h3>
+            <p>
+                Applying mulching, contour farming, cover crops
+                and erosion-control measures to protect agricultural
+                land and maintain soil productivity.
+            </p>
+        </div>
+
+        <div class="practice-card">
+            <h3>8. Climate-Smart Livestock</h3>
+            <p>
+                Improving animal feeding, water supply, housing,
+                animal health and pasture management to strengthen
+                livestock productivity and resilience.
+            </p>
+        </div>
+
+        <div class="practice-card">
+            <h3>9. Integrated Pest Management</h3>
+            <p>
+                Combining monitoring, biological control, cultural
+                methods and responsible pesticide use to manage
+                pests and diseases effectively.
+            </p>
+        </div>
+
+        <div class="practice-card">
+            <h3>10. Weather Information</h3>
+            <p>
+                Using weather forecasts and seasonal climate
+                information to guide planting dates, irrigation,
+                harvesting and other farm decisions.
+            </p>
+        </div>
+
+        <div class="practice-card">
+            <h3>11. Organic Soil Improvement</h3>
+            <p>
+                Using compost, animal manure and suitable organic
+                materials to improve soil structure, nutrient
+                availability and water retention.
+            </p>
+        </div>
+
+        <div class="practice-card">
+            <h3>12. Renewable Energy</h3>
+            <p>
+                Exploring suitable solar-powered irrigation,
+                solar drying and other renewable-energy technologies
+                to improve farm operations.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits" id="benefits">
+
+    <h2 class="section-title">Benefits of Climate-Smart Agriculture</h2>
+
+    <p class="section-intro">
+        Adopting appropriate climate-smart practices can create
+        economic, environmental and social benefits for farmers
+        and agricultural communities.
+    </p>
+
+    <div class="benefit-list">
+
+        <div class="benefit">
+            <h3>Improved Food Security</h3>
+            <p>
+                More reliable agricultural production can improve
+                household access to food and support community nutrition.
+            </p>
+        </div>
+
+        <div class="benefit">
+            <h3>Better Farm Productivity</h3>
+            <p>
+                Efficient use of land, water, seeds and other inputs
+                can improve farm performance and productivity.
+            </p>
+        </div>
+
+        <div class="benefit">
+            <h3>Climate Resilience</h3>
+            <p>
+                Diversified farming systems and better resource
+                management can help farmers manage climate risks.
+            </p>
+        </div>
+
+        <div class="benefit">
+            <h3>Soil Protection</h3>
+            <p>
+                Conservation practices help reduce erosion,
+                maintain soil cover and protect long-term fertility.
+            </p>
+        </div>
+
+        <div class="benefit">
+            <h3>Water Conservation</h3>
+            <p>
+                Rainwater harvesting and efficient irrigation
+                support more responsible water use.
+            </p>
+        </div>
+
+        <div class="benefit">
+            <h3>Improved Farm Income</h3>
+            <p>
+                Better production planning, reduced losses and
+                diversified products can create income opportunities.
+            </p>
+        </div>
+
+        <div class="benefit">
+            <h3>Environmental Protection</h3>
+            <p>
+                Tree planting, soil conservation and responsible
+                resource management support healthier ecosystems.
+            </p>
+        </div>
+
+        <div class="benefit">
+            <h3>Knowledge and Innovation</h3>
+            <p>
+                Training, research and technology help farmers
+                make informed agricultural decisions.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- KENYA AND DRYLAND AGRICULTURE -->
+<section>
+
+    <h2 class="section-title">
+        Climate-Smart Agriculture in Kenya
+    </h2>
+
+    <div class="kenya-content">
+
+        <h3>Supporting Farmers in Dryland and Arid Areas</h3>
+
+        <p>
+            Climate variability presents important challenges
+            to agricultural communities across Kenya, particularly
+            in arid and semi-arid areas where rainfall can be low,
+            irregular and difficult to predict.
+        </p>
+
+        <p>
+            In areas such as Garissa and other dryland regions,
+            climate-smart agriculture can support farmers and
+            livestock keepers through improved water management,
+            drought-tolerant crops, pasture conservation,
+            agroforestry and sustainable livestock production.
+        </p>
+
+        <p>
+            Practical interventions may include rainwater harvesting,
+            water-efficient irrigation, appropriate fodder production,
+            soil-moisture conservation, rangeland management and
+            access to reliable weather information.
+        </p>
+
+        <p>
+            Local communities should participate in identifying
+            solutions that match their environmental conditions,
+            available resources, traditional knowledge and
+            agricultural priorities.
+        </p>
+
+        <p>
+            Climate-smart agriculture is not a single farming
+            technique. It is a flexible approach that encourages
+            farmers, researchers, agricultural institutions and
+            communities to work together towards more productive
+            and resilient agricultural systems.
+        </p>
+
+    </div>
+</section>
+
+<!-- IMPLEMENTATION -->
+<section>
+
+    <h2 class="section-title">
+        How Farmers Can Adopt Climate-Smart Agriculture
+    </h2>
+
+    <p class="section-intro">
+        Successful adoption starts with understanding local
+        challenges and selecting practices that are practical
+        and suitable for each farm.
+    </p>
+
+    <div class="steps">
+
+        <div class="step">
+            <h3>Step 1: Assess Farm Conditions</h3>
+            <p>
+                Examine soil quality, water availability, rainfall,
+                crops, livestock and existing agricultural challenges.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Step 2: Identify Climate Risks</h3>
+            <p>
+                Understand possible risks such as drought, flooding,
+                high temperatures, pests, diseases and soil erosion.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Step 3: Select Suitable Practices</h3>
+            <p>
+                Choose appropriate methods based on local conditions,
+                farmer resources, production goals and environmental needs.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Step 4: Build Agricultural Knowledge</h3>
+            <p>
+                Participate in farmer training, demonstrations,
+                agricultural research and extension programmes.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Step 5: Implement and Monitor</h3>
+            <p>
+                Apply selected practices, observe their performance
+                and make improvements based on results and experience.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Step 6: Share Knowledge and Innovations</h3>
+            <p>
+                Exchange experiences with other farmers and
+                agricultural stakeholders to encourage continuous
+                learning and improvement.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- GOREALE CONTRIBUTION -->
+<section class="message">
+
+    <h2>Our Commitment to Climate-Smart Agriculture</h2>
+
+    <p>
+        Goreale Agricultural Innovators is committed to promoting
+        agricultural knowledge, research, innovation and sustainable
+        farming practices. We encourage farmers, researchers,
+        agricultural professionals and communities to explore
+        practical solutions that strengthen agricultural productivity,
+        protect natural resources and build resilience to climate change.
+    </p>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3>Goreale Agricultural Innovators</h3>
+
+    <p>
+        &copy; 2026 Goreale Agricultural Innovators.
+        All Rights Reserved.
+    </p>
+
+    <a href="#" class="back-top">Back to Top ↑</a>
+</footer>
+
+</body>
+</html>

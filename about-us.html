@@ -1,0 +1,1403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#174D2A">
+
+    <meta name="description" content="GOREALE Agricultural Innovators is a youth-led agricultural initiative in Goreale Ward, Lagdera Constituency, Garissa County, Kenya, promoting agricultural innovation, climate-smart farming, agroforestry, livestock management and sustainable development.">
+
+    <title>About Us | GOREALE Agricultural Innovators</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* ==========================================
+   GOREALE AGRICULTURAL INNOVATORS
+   PROFESSIONAL ABOUT US PAGE
+========================================== */
+
+:root {
+    --forest-green: #174D2A;
+    --deep-green: #10391F;
+    --warm-ivory: #F5F0E6;
+    --charcoal: #303632;
+    --muted: #68736A;
+    --earth-brown: #8B572A;
+    --harvest-gold: #FFD166;
+    --border: #E6DDCC;
+    --white: #FFFFFF;
+
+    --page-width: 1100px;
+}
+
+
+/* ==========================================
+   1. GLOBAL RESET
+========================================== */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: clip;
+}
+
+body {
+    width: 100%;
+    min-width: 320px;
+    min-height: 100vh;
+
+    font-family: 'Montserrat', sans-serif;
+
+    background: var(--warm-ivory);
+    color: var(--charcoal);
+
+    font-size: 0.76rem;
+    line-height: 1.85;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+
+/* ==========================================
+   2. HEADER
+========================================== */
+
+.about-header {
+    width: 100%;
+
+    padding: 0.9rem 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    background: var(--forest-green);
+    color: var(--white);
+}
+
+.about-brand img {
+    width: clamp(100px, 13vw, 145px);
+    height: auto;
+    object-fit: contain;
+}
+
+.header-label {
+    color: var(--white);
+
+    font-size: 0.65rem;
+    font-weight: 800;
+
+    letter-spacing: 0.1rem;
+    text-align: right;
+}
+
+
+/* ==========================================
+   3. PAGE CONTAINER
+========================================== */
+
+.about-container {
+    width: min(var(--page-width), 90%);
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ==========================================
+   4. PAGE INTRODUCTION
+========================================== */
+
+.about-hero {
+    padding: 3rem 0 2rem;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.eyebrow {
+    color: var(--earth-brown);
+
+    font-size: 0.62rem;
+    font-weight: 800;
+
+    letter-spacing: 0.14rem;
+    text-transform: uppercase;
+
+    margin-bottom: 0.65rem;
+}
+
+.about-hero h1 {
+    color: var(--forest-green);
+
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+    font-weight: 800;
+
+    line-height: 1.35;
+
+    margin-bottom: 0.8rem;
+}
+
+.about-hero p {
+    max-width: 850px;
+
+    color: var(--charcoal);
+
+    font-size: 0.76rem;
+    line-height: 1.95;
+}
+
+
+/* ==========================================
+   5. PROFESSIONAL INTRODUCTION
+========================================== */
+
+.intro {
+    padding: 2.3rem 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.section-title {
+    color: var(--forest-green);
+
+    font-size: 1.08rem;
+    font-weight: 800;
+
+    line-height: 1.5;
+
+    margin-bottom: 1rem;
+}
+
+.intro-content {
+    width: 100%;
+}
+
+.intro-content p {
+    color: var(--charcoal);
+
+    font-size: 0.76rem;
+    line-height: 1.95;
+
+    margin-bottom: 1rem;
+}
+
+.intro-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==========================================
+   6. AGRICULTURAL KNOWLEDGE INTRODUCTION
+========================================== */
+
+.focus-section {
+    padding: 2.3rem 0 1rem;
+}
+
+.focus-description {
+    max-width: 850px;
+
+    color: var(--charcoal);
+
+    font-size: 0.76rem;
+    line-height: 1.95;
+
+    margin-bottom: 1.5rem;
+}
+
+
+/* ==========================================
+   7. AGRICULTURAL KNOWLEDGE CARDS
+========================================== */
+
+.cards {
+    width: 100%;
+    padding: 0 0 2.5rem;
+}
+
+.card-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+    min-height: 155px;
+
+    padding: 1.3rem;
+
+    background: #F5F0E6;
+
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--forest-green);
+
+    border-radius: 8px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+
+    border-left-color: var(--earth-brown);
+
+    box-shadow:
+        0 9px 22px rgba(23,77,42,0.09);
+}
+
+.card h3 {
+    color: var(--forest-green);
+
+    font-size: 0.79rem;
+    font-weight: 800;
+
+    line-height: 1.6;
+
+    margin-bottom: 0.6rem;
+}
+
+.card p {
+    color: var(--charcoal);
+
+    font-size: 0.69rem;
+    font-weight: 500;
+
+    line-height: 1.85;
+}
+
+
+/* ==========================================
+   8. OBJECTIVES
+========================================== */
+
+.about-section {
+    padding: 2.2rem 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.about-section p {
+    color: var(--charcoal);
+
+    font-size: 0.76rem;
+    line-height: 1.95;
+}
+
+.objectives-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.objectives-list li {
+    position: relative;
+
+    padding-left: 1.25rem;
+    margin-bottom: 0.75rem;
+
+    color: var(--charcoal);
+
+    font-size: 0.74rem;
+    line-height: 1.9;
+}
+
+.objectives-list li::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0.7rem;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: var(--earth-brown);
+}
+
+
+/* ==========================================
+   9. VISION AND MISSION
+========================================== */
+
+.mission-section {
+    padding: 2.2rem 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.mission-block {
+    margin-bottom: 1.5rem;
+}
+
+.mission-block:last-child {
+    margin-bottom: 0;
+}
+
+.mission-block h3 {
+    color: var(--forest-green);
+
+    font-size: 0.88rem;
+    font-weight: 800;
+
+    margin-bottom: 0.55rem;
+}
+
+.mission-block p {
+    color: var(--charcoal);
+
+    font-size: 0.76rem;
+    line-height: 1.95;
+}
+
+
+/* ==========================================
+   10. COMMUNITY COMMITMENT
+========================================== */
+
+.commitment {
+    padding: 2.2rem 0 2.8rem;
+}
+
+.commitment h2 {
+    color: var(--forest-green);
+
+    font-size: 1.05rem;
+    font-weight: 800;
+
+    margin-bottom: 0.8rem;
+}
+
+.commitment p {
+    color: var(--charcoal);
+
+    font-size: 0.76rem;
+    line-height: 1.95;
+
+    margin-bottom: 0.9rem;
+}
+
+.commitment p:last-child {
+    margin-bottom: 0;
+}
+
+/* ==========================================
+   FOOTER BACKGROUND SLIDESHOW
+========================================== */
+
+.footer {
+    position: relative;
+    isolation: isolate;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 32rem;
+
+    margin: 0;
+    padding: 4rem 8% 2rem;
+
+    overflow: hidden;
+
+    background: transparent;
+    color: var(--white);
+    text-align: center;
+}
+
+/* SLIDESHOW CONTAINER */
+
+.footer-slides {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    z-index: -2;
+}
+
+/* COMMON SLIDE STYLE */
+
+.footer-slide {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+
+    animation: footerMotion 18s infinite ease-in-out;
+}
+
+/* INDIVIDUAL BACKGROUND IMAGES */
+
+.footer-slide1 {
+    background-image: url("footer-1.png");
+    animation-delay: 0s;
+}
+
+.footer-slide2 {
+    background-image: url("footer-2.png");
+    animation-delay: 6s;
+}
+
+.footer-slide3 {
+    background-image: url("footer-3.png");
+    animation-delay: 12s;
+}
+
+/* DARK OVERLAY */
+
+.footer-overlay {
+    position: absolute;
+    inset: 0;
+
+    z-index: -1;
+
+    background: rgba(15, 40, 20, 0.65);
+}
+
+/* SLIDESHOW ANIMATION */
+
+@keyframes footerMotion {
+
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+        transform: scale(1.12);
+    }
+
+    30% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    38%, 100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+/* FOOTER CONTENT */
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 65rem;
+
+    margin: auto;
+}
+
+.collaboration-content {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.collaboration-label {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--ivory);
+    font-family: Montserrat, sans-serif;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .12rem;
+}
+
+.collaboration-content h2 {
+    max-width: 55rem;
+    margin: 0 auto 1.5rem;
+    color: var(--white);
+    font-family: Montserrat, sans-serif;
+    font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.collaboration-content p {
+    margin: 0 auto 1rem;
+    color: rgba(255, 255, 255, .92);
+    font-family: Arial, sans-serif;
+    font-size: .88rem;
+    line-height: 1.9;
+}
+
+.collaboration-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.collaboration-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .85rem 1.8rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    font-family: Montserrat, sans-serif;
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .04rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background .25s ease, color .25s ease;
+}
+
+.collaboration-btn.primary {
+    border-color: var(--ivory);
+    background: var(--ivory);
+    color: var(--forest-green);
+}
+
+.collaboration-btn.primary:hover {
+    border-color: var(--earth-brown);
+    background: var(--earth-brown);
+    color: var(--white);
+}
+
+.collaboration-btn.secondary {
+    border-color: rgba(255, 255, 255, .8);
+    background: transparent;
+    color: var(--white);
+}
+
+.collaboration-btn.secondary:hover {
+    background: var(--white);
+    color: var(--forest-green);
+}
+
+.footer-bottom {
+    width: 100%;
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, .35);
+    text-align: center;
+}
+
+.footer-bottom h3 {
+    margin: 0 0 .5rem;
+    color: var(--white);
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: rgba(255, 255, 255, .9);
+    font-family: Arial, sans-serif;
+    font-size: .75rem;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   12. TABLET RESPONSIVENESS
+========================================== */
+
+@media (max-width: 900px) {
+
+    .card-container {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* ==========================================
+   13. MOBILE RESPONSIVENESS
+========================================== */
+
+@media (max-width: 600px) {
+
+    .about-container {
+        width: 92%;
+    }
+
+    .about-header {
+        padding: 0.8rem 4%;
+    }
+
+    .about-brand img {
+        width: 105px;
+    }
+
+    .header-label {
+        font-size: 0.55rem;
+        letter-spacing: 0.05rem;
+    }
+
+    .about-hero {
+        padding: 2.2rem 0 1.6rem;
+    }
+
+    .about-hero h1 {
+        font-size: 1.65rem;
+    }
+
+    .about-hero p,
+    .intro-content p,
+    .about-section p,
+    .mission-block p,
+    .commitment p {
+        font-size: 0.72rem;
+    }
+
+    .intro,
+    .about-section,
+    .mission-section {
+        padding: 1.7rem 0;
+    }
+
+    .section-title,
+    .commitment h2 {
+        font-size: 0.98rem;
+    }
+
+    .focus-section {
+        padding-top: 1.8rem;
+    }
+
+    .focus-description {
+        font-size: 0.72rem;
+    }
+
+    .card-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.75rem;
+    }
+
+    .card {
+        min-height: auto;
+        padding: 1.1rem;
+    }
+
+    .card h3 {
+        font-size: 0.77rem;
+    }
+
+    .card p {
+        font-size: 0.68rem;
+    }
+
+    .objectives-list li {
+        font-size: 0.71rem;
+    }
+
+    .about-footer {
+        padding: 1.5rem 4%;
+    }
+
+}
+
+
+/* ==========================================
+   14. SMALL MOBILE PHONES
+========================================== */
+
+@media (max-width: 380px) {
+
+    .about-container {
+        width: 94%;
+    }
+
+    .about-brand img {
+        width: 90px;
+    }
+
+    .header-label {
+        font-size: 0.5rem;
+    }
+
+    .about-hero h1 {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+/* ==========================================
+   15. ACCESSIBILITY
+========================================== */
+
+a:focus-visible {
+    outline: 3px solid var(--harvest-gold);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .card {
+        transition: none;
+    }
+
+}
+.collaboration-btn.primary {
+    background: #FFFFFF;
+    color: var(--forest-green);
+    border: 1px solid #FFFFFF;
+}
+
+.collaboration-btn.primary:hover {
+    background: #FFFFFF;
+    color: var(--forest-green);
+    border-color: #FFFFFF;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     1. WEBSITE HEADER
+========================================== -->
+
+<header class="about-header">
+
+    <div class="about-brand">
+
+        <img
+            src="goreale-logo.png"
+            alt="GOREALE Agricultural Innovators"
+        >
+
+    </div>
+
+    <div class="header-label">
+        ABOUT GOREALE
+    </div>
+
+</header>
+
+
+<main class="about-container">
+
+
+<!-- ==========================================
+     2. ABOUT US INTRODUCTION
+========================================== -->
+
+<section class="about-hero">
+
+    <div class="eyebrow">
+        GOREALE AGRICULTURAL INNOVATORS
+    </div>
+
+    <h1>
+        Cultivating Innovation.
+        Growing Sustainable Futures.
+    </h1>
+
+    <p>
+        A youth-led agricultural initiative promoting
+        knowledge, innovation, sustainable farming
+        and environmental responsibility in Goreale
+        Ward, Lagdera Constituency, Garissa County, Kenya.
+    </p>
+
+</section>
+
+
+<!-- ==========================================
+     3. PROFESSIONAL INTRODUCTION
+========================================== -->
+
+<section class="intro" id="about">
+
+    <h2 class="section-title">
+        Who We Are
+    </h2>
+
+    <div class="intro-content">
+
+        <p>
+            GOREALE Agricultural Innovators is a community-based
+            initiative comprising young men and women operating
+            in Goreale Ward, Lagdera Constituency, Garissa County,
+            Kenya. We bring together young people with a shared
+            interest in transforming agriculture through
+            knowledge, research, technology, innovation and
+            sustainable farming practices.
+        </p>
+
+        <p>
+            We are committed to promoting a productive, resilient
+            and environmentally responsible agricultural sector
+            by encouraging innovative ideas and practical
+            solutions that respond to the evolving needs of
+            farmers, livestock keepers and agricultural communities.
+        </p>
+
+        <p>
+            Our focus encompasses climate-smart agriculture,
+            afforestation, agroforestry, sustainable crop production,
+            livestock management, soil and water conservation,
+            agricultural technology and agribusiness development.
+            Through these areas, we seek to promote responsible
+            resource management, improve agricultural productivity
+            and strengthen the relationship between agriculture
+            and environmental conservation.
+        </p>
+
+        <p>
+            We recognise that agriculture is more than food
+            production. It is a foundation for livelihoods,
+            economic development, employment creation,
+            food security and community resilience. For this
+            reason, we value agricultural education, research,
+            innovation and the sharing of practical knowledge
+            as essential drivers of long-term agricultural
+            development.
+        </p>
+
+        <p>
+            GOREALE Agricultural Innovators seeks to encourage
+            the adoption of modern farming techniques while
+            recognising the importance of indigenous knowledge
+            and locally appropriate agricultural solutions.
+            We believe that combining traditional experience
+            with scientific knowledge and emerging technologies
+            can create more effective and sustainable farming systems.
+        </p>
+
+        <p>
+            Our commitment extends to promoting afforestation,
+            protecting natural ecosystems, conserving biodiversity,
+            improving soil health and encouraging responsible
+            water use. We recognise the importance of addressing
+            climate change and building agricultural systems
+            capable of adapting to environmental challenges.
+        </p>
+
+        <p>
+            Through knowledge sharing, awareness, innovation
+            and collaboration, GOREALE Agricultural Innovators
+            aspires to contribute to a future where farmers,
+            communities and the environment benefit from
+            sustainable agricultural development.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     4. AGRICULTURAL KNOWLEDGE AND INNOVATION
+========================================== -->
+
+<section class="focus-section" id="services">
+
+    <h2 class="section-title">
+        Our Areas of Focus
+    </h2>
+
+    <p class="focus-description">
+
+        We promote agricultural knowledge, practical skills,
+        innovation and sustainable development through
+        interconnected areas of agricultural and environmental
+        activity. Explore our main areas of focus below.
+
+    </p>
+
+</section>
+
+
+<!-- ==========================================
+     5. AGRICULTURAL KNOWLEDGE CARDS
+========================================== -->
+
+<section class="cards">
+
+    <div class="card-container">
+
+
+        <a href="climate-smart.html" class="card">
+
+            <h3>Climate-Smart Agriculture</h3>
+
+            <p>
+                Explore climate-resilient farming practices,
+                water conservation, soil management and
+                innovative solutions for adapting to climate change.
+            </p>
+
+        </a>
+
+
+        <a href="afforestation.html" class="card">
+
+            <h3>Afforestation & Agroforestry</h3>
+
+            <p>
+                Discover tree planting, forest restoration,
+                agroforestry systems and the importance of
+                protecting biodiversity and natural resources.
+            </p>
+
+        </a>
+
+
+        <a href="sustainable-farming.html" class="card">
+
+            <h3>Sustainable Agriculture</h3>
+
+            <p>
+                Learn about organic farming, crop rotation,
+                conservation agriculture and environmentally
+                responsible farming practices.
+            </p>
+
+        </a>
+
+
+        <a href="crop-production.html" class="card">
+
+            <h3>Crop Production</h3>
+
+            <p>
+                Gain knowledge about land preparation,
+                seed selection, planting techniques,
+                irrigation, crop nutrition and harvesting.
+            </p>
+
+        </a>
+
+
+        <a href="livestock.html" class="card">
+
+            <h3>Livestock Management</h3>
+
+            <p>
+                Explore animal nutrition, breeding,
+                disease prevention, animal welfare
+                and modern livestock production.
+            </p>
+
+        </a>
+
+
+        <a href="soil-water.html" class="card">
+
+            <h3>Soil & Water Conservation</h3>
+
+            <p>
+                Understand soil fertility, erosion control,
+                rainwater harvesting, irrigation systems
+                and sustainable water management.
+            </p>
+
+        </a>
+
+
+        <a href="agricultural-technology.html" class="card">
+
+            <h3>Agricultural Technology</h3>
+
+            <p>
+                Discover smart farming, agricultural machinery,
+                precision agriculture, digital tools and
+                emerging farming technologies.
+            </p>
+
+        </a>
+
+
+        <a href="research.html" class="card">
+
+            <h3>Agricultural Research & Education</h3>
+
+            <p>
+                Access agricultural research, practical
+                farming knowledge, innovation, training
+                and educational resources.
+            </p>
+
+        </a>
+
+
+        <a href="food-security.html" class="card">
+
+            <h3>Food Security & Agribusiness</h3>
+
+            <p>
+                Learn about food production, post-harvest
+                management, agricultural value chains,
+                marketing and agribusiness development.
+            </p>
+
+        </a>
+<a href="environmental-conservation.html" class="card">
+
+    <h3>Environmental Conservation</h3>
+
+    <p>
+        Explore ecosystem restoration, tree planting,
+        biodiversity protection, soil and water conservation,
+        sustainable waste management and community-led
+        environmental initiatives.
+    </p>
+
+</a>
+
+        <a href="weather.html" class="card">
+
+            <h3>Weather & Climate Centre</h3>
+
+            <p>
+                Access current weather conditions, temperature,
+                rainfall updates, wind information and seven-day
+                forecasts to support informed agricultural
+                planning and climate-smart farming.
+            </p>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     6. ORGANISATIONAL OBJECTIVES
+========================================== -->
+
+<section class="about-section" id="objectives">
+
+    <h2 class="section-title">
+        Our Objectives
+    </h2>
+
+    <p>
+        GOREALE Agricultural Innovators seeks to promote
+        agricultural development, community participation,
+        environmental protection and sustainable livelihoods
+        through the following objectives:
+    </p>
+
+
+    <ul class="objectives-list">
+
+        <li>
+            To encourage community members, particularly
+            young men and women, to participate actively
+            in agriculture and related livelihood activities.
+        </li>
+
+        <li>
+            To ensure that farmers and livestock keepers
+            are encouraged to adopt sustainable and
+            environmentally responsible practices.
+        </li>
+
+        <li>
+            To campaign for greater awareness, recognition
+            and support for agriculture, food security
+            and environmental conservation.
+        </li>
+
+        <li>
+            To promote access to agricultural knowledge,
+            information, practical training and relevant
+            technical skills among community members.
+        </li>
+
+        <li>
+            To develop the capacity of young people and
+            households to identify and pursue suitable
+            agricultural and agribusiness opportunities.
+        </li>
+
+        <li>
+            To encourage participation in climate-smart
+            farming, agroforestry, water conservation
+            and sustainable land management.
+        </li>
+
+        <li>
+            To promote improved animal feeding, fodder
+            production, feed conservation and sustainable
+            livestock management.
+        </li>
+
+        <li>
+            To protect and conserve the environment,
+            natural resources, vegetation and agricultural
+            ecosystems for present and future generations.
+        </li>
+
+        <li>
+            To strengthen cooperation, knowledge sharing
+            and collective action among community members,
+            agricultural stakeholders and development partners.
+        </li>
+
+        <li>
+            To contribute to improved food security,
+            resilient livelihoods and sustainable
+            development within Goreale Ward and beyond.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- ==========================================
+     7. VISION AND MISSION
+========================================== -->
+
+<section class="mission-section" id="mission">
+
+    <div class="mission-block">
+
+        <h3>Our Vision</h3>
+
+        <p>
+            A knowledgeable, productive and environmentally
+            responsible community where sustainable agriculture,
+            innovation and resilient livelihoods contribute
+            to a better future for present and future generations.
+        </p>
+
+    </div>
+
+
+    <div class="mission-block">
+
+        <h3>Our Mission</h3>
+
+        <p>
+            To mobilise and empower young people and community
+            members through agricultural awareness, knowledge
+            sharing, practical skills development, climate-smart
+            practices, innovation and environmental conservation
+            initiatives.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     8. COMMUNITY COMMITMENT
+========================================== -->
+
+<section class="commitment" id="community">
+
+    <h2>
+        Our Commitment to the Community
+    </h2>
+
+    <p>
+        We are committed to working with our community
+        to promote a culture of learning, innovation,
+        participation and responsibility in agriculture
+        and environmental management. We recognise that
+        sustainable development requires collective
+        effort, local knowledge and practical solutions.
+    </p>
+
+    <p>
+        As a group of young men and women from Goreale Ward,
+        we aspire to contribute positively to our community
+        by encouraging agricultural participation, supporting
+        sustainable farming practices, promoting environmental
+        protection and creating opportunities for knowledge
+        exchange and skills development.
+    </p>
+
+    <p>
+        We believe that empowering communities with knowledge
+        and practical skills can strengthen local capacity,
+        improve livelihoods and create a more sustainable
+        agricultural future for Garissa County and beyond.
+    </p>
+
+</section>
+
+
+</main>
+
+
+<!-- ==========================================
+     WEBSITE FOOTER & COLLABORATION SECTION
+========================================== -->
+
+<footer class="footer" id="collaboration">
+
+    <!-- FOOTER BACKGROUND SLIDESHOW -->
+    <div class="footer-slides">
+
+        <div class="footer-slide footer-slide1"></div>
+        <div class="footer-slide footer-slide2"></div>
+        <div class="footer-slide footer-slide3"></div>
+
+    </div>
+
+    <div class="footer-overlay"></div>
+
+    <!-- FOOTER CONTENT -->
+    <div class="footer-content">
+
+        <div class="collaboration-content">
+
+            <span class="collaboration-label">
+                PARTNERSHIPS • SUPPORT • COLLABORATION
+            </span>
+
+            <h2>
+                Together, We Can Grow a More Sustainable Future
+            </h2>
+
+            <p>
+                GOREALE Agricultural Innovators welcomes partnerships,
+                institutional support and collaboration with individuals,
+                organisations and stakeholders committed to sustainable
+                agriculture, environmental conservation and community
+                development.
+            </p>
+
+            <p>
+                We believe that meaningful partnerships, shared knowledge
+                and collective action can strengthen agricultural innovation,
+                improve livelihoods and create lasting opportunities for
+                communities.
+            </p>
+
+            <p>
+                Whether you are an organisation, development partner,
+                agricultural expert, researcher, institution or individual,
+                we welcome opportunities to work together towards a more
+                sustainable future.
+            </p>
+
+            <!-- COLLABORATION ACTIONS -->
+            <div class="collaboration-actions">
+
+                <a href="collaboration.html"
+                   class="collaboration-btn primary">
+                    Partner With Us
+                </a>
+
+                <a href="donation.html"
+                   class="collaboration-btn secondary">
+                    Support Our Initiatives
+                </a>
+
+            </div>
+            </div>
+        
+
+
+        <!-- FOOTER COPYRIGHT INFORMATION -->
+        <div class="footer-bottom">
+
+            <h3>
+                Goreale Agricultural Innovators
+            </h3>
+
+            <p>
+                &copy; 2026 Goreale Agricultural Innovators.
+                All Rights Reserved.
+            </p>
+      <a href="legal.html#privacy"
+           onclick="showDocument('privacy')">
+            Privacy Policy
+        </a>
+<span>|</span>
+        <a href="legal.html#terms"
+           onclick="showDocument('terms')">
+            Terms & Conditions
+        </a>
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

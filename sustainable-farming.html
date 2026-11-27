@@ -1,0 +1,1331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sustainable Farming | Goreale Agricultural Innovators</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --ivory: #F5F5DC;
+    --forest-green: #355E3B;
+    --earth-brown: #8B5A2B;
+    --charcoal-grey: #454545;
+    --olive-green: #6B8E23;
+    --lavender: #E6DDF2;
+    --beet: #e8dce0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--ivory);
+    color: var(--charcoal-grey);
+    font-family: Arial, sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.8;
+}
+
+header {
+    min-height: 5rem;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--ivory);
+}
+
+.logo {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--forest-green);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--earth-brown);
+}
+
+.hero {
+    min-height: 23rem;
+    padding: 4rem 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+        linear-gradient(rgba(15,40,20,.68), rgba(15,40,20,.68)),
+        url("images/sustainable-farming.png") center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 48rem;
+    color: white;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.7rem, 4vw, 2.8rem);
+    font-weight: 900;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--earth-brown);
+    color: white;
+    padding: 0.65rem 1.4rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.btn:hover {
+    background: var(--forest-green);
+}
+
+section {
+    padding: 3rem 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.45rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+.intro,
+.content-section {
+    max-width: 65rem;
+    margin: auto;
+}
+
+.intro p,
+.content-section p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    padding: 1.3rem;
+    border-radius: 0.4rem;
+    color: var(--charcoal-grey);
+}
+
+.card:nth-child(odd) {
+    background: var(--beet);
+}
+
+.card:nth-child(even) {
+    background: var(--lavender);
+}
+
+.card h3 {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.82rem;
+    line-height: 1.7;
+}
+
+.subheading {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.7rem;
+}
+
+.content-section ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.content-section li {
+    margin-bottom: 0.5rem;
+}
+
+.highlight {
+    background: var(--beet);
+    padding: 1.5rem;
+    border-left: 0.3rem solid var(--forest-green);
+    margin-top: 1.5rem;
+}
+
+.highlight h3 {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.6rem;
+}
+
+.step {
+    background: var(--lavender);
+    padding: 1rem 1.3rem;
+    margin-bottom: 0.8rem;
+    border-radius: 0.3rem;
+}
+
+.step h3 {
+    color: var(--forest-green);
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.resources {
+    background: var(--beet);
+    padding: 1.5rem;
+    border-radius: 0.3rem;
+}
+
+.resources a {
+    color: var(--forest-green);
+    font-weight: bold;
+}
+
+footer {
+    background: var(--forest-green);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.78rem;
+}
+
+footer h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+@media(max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .hero {
+        min-height: 19rem;
+        padding: 3rem 6%;
+    }
+
+    section {
+        padding: 2rem 6%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">GOREALE AGRICULTURAL INNOVATORS</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#services">Our Areas</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+
+        <h1>Sustainable Farming</h1>
+
+        <p>
+            Promoting productive agriculture, protecting
+            natural resources and building resilient farming
+            systems for present and future generations.
+        </p>
+
+        <a href="#about" class="btn">Explore More</a>
+
+    </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section id="about">
+    <div class="intro">
+
+        <h2 class="section-title">Understanding Sustainable Farming</h2>
+
+        <p>
+            Sustainable farming is an approach to agricultural
+            production that meets current food and livelihood
+            needs while protecting the natural resources required
+            for future generations. It combines productive farming
+            methods with responsible management of soil, water,
+            crops, livestock and biodiversity.
+        </p>
+
+        <p>
+            Modern agriculture faces several challenges, including
+            climate change, declining soil fertility, water scarcity,
+            pests, diseases, rising production costs and changing
+            market demands. Sustainable farming provides practical
+            approaches for addressing these challenges while
+            improving agricultural productivity and farm resilience.
+        </p>
+
+        <p>
+            It encourages farmers to use available resources
+            efficiently, reduce unnecessary waste, protect the
+            environment and adopt appropriate agricultural
+            technologies.
+        </p>
+
+        <p>
+            Sustainable farming is not limited to organic
+            agriculture. It includes different production systems
+            and technologies that improve environmental,
+            economic and social outcomes.
+        </p>
+
+        <p>
+            Goreale Agricultural Innovators promotes sustainable
+            agricultural practices through knowledge sharing,
+            research, innovation, farmer education and
+            environmentally responsible production.
+        </p>
+
+    </div>
+</section>
+
+<!-- PRINCIPLES -->
+<section>
+    <h2 class="section-title">Core Principles of Sustainable Farming</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Environmental Protection</h3>
+            <p>
+                Protecting soil, water, vegetation, wildlife
+                and other natural resources through responsible
+                agricultural practices.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Economic Viability</h3>
+            <p>
+                Improving farm profitability, reducing avoidable
+                costs and creating reliable income opportunities
+                for agricultural producers.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Social Responsibility</h3>
+            <p>
+                Supporting farmers, workers and communities
+                through fair opportunities, knowledge,
+                participation and improved livelihoods.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Resource Efficiency</h3>
+            <p>
+                Using land, water, energy, seeds, fertilizers
+                and other farm inputs efficiently to reduce
+                waste and unnecessary expenses.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Climate Resilience</h3>
+            <p>
+                Building farming systems that can better
+                withstand drought, floods, changing rainfall
+                patterns and other climate-related risks.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Long-Term Productivity</h3>
+            <p>
+                Maintaining productive farmland and healthy
+                ecosystems so that agriculture remains
+                viable over the long term.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- KEY AREAS -->
+<section>
+    <h2 class="section-title">Our Key Areas of Focus</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Soil Health Management</h3>
+            <p>
+                Improving soil fertility, structure and
+                biological activity through compost,
+                manure, crop rotation and soil conservation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Water Conservation</h3>
+            <p>
+                Promoting water harvesting, efficient irrigation,
+                moisture conservation and responsible
+                agricultural water use.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Crop Diversification</h3>
+            <p>
+                Encouraging the cultivation of different
+                crops to improve food security, manage
+                production risks and diversify income.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Organic Soil Inputs</h3>
+            <p>
+                Promoting compost, farmyard manure,
+                crop residues and other appropriate
+                organic materials for soil improvement.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Integrated Pest Management</h3>
+            <p>
+                Combining monitoring, cultural, biological
+                and other appropriate control methods
+                to manage crop pests and diseases.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Agroforestry</h3>
+            <p>
+                Integrating suitable trees with crops
+                and livestock to improve farm productivity
+                and environmental sustainability.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Livestock Integration</h3>
+            <p>
+                Connecting crop and livestock production
+                through responsible manure management,
+                fodder production and resource recycling.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Conservation Agriculture</h3>
+            <p>
+                Promoting minimum soil disturbance,
+                permanent soil cover and diversified
+                crop rotations where suitable.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Farm Technology</h3>
+            <p>
+                Applying suitable machinery, irrigation
+                equipment, digital tools and improved
+                agricultural technologies.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SOIL MANAGEMENT -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Sustainable Soil Management</h2>
+
+        <p>
+            Soil is one of the most important resources
+            in agricultural production. Healthy soil provides
+            nutrients, supports plant roots, stores water
+            and creates an environment for beneficial
+            organisms.
+        </p>
+
+        <p>
+            Continuous cultivation, erosion, nutrient depletion,
+            compaction and poor land management can reduce
+            soil productivity. Sustainable soil management
+            aims to maintain and improve soil health.
+        </p>
+
+        <h3 class="subheading">Important Soil Management Practices</h3>
+
+        <ul>
+            <li><strong>Composting:</strong> Decomposing suitable organic materials to produce compost for soil improvement.</li>
+            <li><strong>Farmyard manure:</strong> Using properly managed animal manure to return nutrients to agricultural land.</li>
+            <li><strong>Mulching:</strong> Covering soil with suitable organic materials to conserve moisture and reduce erosion.</li>
+            <li><strong>Crop rotation:</strong> Growing different crop families in sequence to improve soil management and break pest cycles.</li>
+            <li><strong>Cover cropping:</strong> Growing plants to protect soil and support soil organic matter.</li>
+            <li><strong>Minimum tillage:</strong> Reducing unnecessary soil disturbance where suitable.</li>
+            <li><strong>Terracing:</strong> Managing slopes to slow runoff and reduce soil erosion.</li>
+            <li><strong>Soil testing:</strong> Assessing soil properties to guide fertilizer and soil amendment decisions.</li>
+        </ul>
+
+        <div class="highlight">
+            <h3>Why Soil Health Matters</h3>
+            <p>
+                Healthy soil supports strong crop growth,
+                nutrient availability, water infiltration
+                and long-term agricultural productivity.
+                Farmers should combine organic inputs,
+                suitable soil conservation and balanced
+                nutrient management according to soil needs.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- WATER MANAGEMENT -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Sustainable Water Management</h2>
+
+        <p>
+            Water is essential for crop production, livestock
+            and household livelihoods. In areas experiencing
+            unreliable rainfall and water shortages, efficient
+            water management is especially important.
+        </p>
+
+        <p>
+            Sustainable water management involves collecting,
+            storing, distributing and using water responsibly
+            while protecting its quality and availability.
+        </p>
+
+        <h3 class="subheading">Water Conservation Techniques</h3>
+
+        <ul>
+            <li>Harvesting rainwater from suitable roofs and surfaces.</li>
+            <li>Constructing appropriate water storage facilities.</li>
+            <li>Using drip irrigation where affordable and suitable.</li>
+            <li>Applying mulch to reduce evaporation from soil.</li>
+            <li>Using planting basins and water-harvesting structures.</li>
+            <li>Scheduling irrigation according to crop requirements.</li>
+            <li>Maintaining irrigation pipes and equipment to reduce leakage.</li>
+            <li>Using suitable drought-tolerant crop varieties.</li>
+            <li>Protecting water sources from contamination.</li>
+        </ul>
+
+        <h3 class="subheading">Efficient Irrigation Methods</h3>
+
+        <p>
+            Drip irrigation delivers water close to plant roots
+            through emitters. It can reduce water losses
+            when correctly designed and maintained.
+        </p>
+
+        <p>
+            Sprinkler irrigation distributes water through
+            controlled spraying. Its suitability depends on
+            crop type, wind conditions, water quality and
+            operating costs.
+        </p>
+
+        <p>
+            Surface irrigation can be appropriate in some
+            farming systems, but poor land levelling and
+            water management may result in significant losses.
+        </p>
+
+        <div class="highlight">
+            <h3>Water Management in Dryland Areas</h3>
+            <p>
+                In arid and semi-arid areas such as Garissa,
+                farmers should prioritize water harvesting,
+                appropriate crop selection, soil moisture
+                conservation and efficient irrigation.
+                Irrigation plans should be based on reliable
+                water availability and sustainable water use.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CROP PRODUCTION -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Sustainable Crop Production</h2>
+
+        <p>
+            Sustainable crop production focuses on growing
+            healthy crops while maintaining soil fertility,
+            protecting water resources and reducing
+            unnecessary production costs.
+        </p>
+
+        <h3 class="subheading">Crop Production Practices</h3>
+
+        <ul>
+            <li>Select crop varieties suitable for local soil and climate conditions.</li>
+            <li>Use quality seeds from reliable suppliers.</li>
+            <li>Prepare land appropriately before planting.</li>
+            <li>Plant at suitable times according to seasonal conditions.</li>
+            <li>Apply recommended spacing and planting depth.</li>
+            <li>Use soil tests and crop requirements to guide nutrient application.</li>
+            <li>Monitor crops regularly for pests, diseases and nutrient deficiencies.</li>
+            <li>Harvest at the appropriate stage of maturity.</li>
+            <li>Store produce properly to reduce post-harvest losses.</li>
+        </ul>
+
+        <h3 class="subheading">Crop Diversification</h3>
+
+        <p>
+            Crop diversification involves growing different
+            crops rather than relying on a single crop.
+            It can improve household food availability,
+            spread production risks and provide different
+            sources of farm income.
+        </p>
+
+        <p>
+            Examples include integrating cereals, legumes,
+            vegetables, root crops and suitable fruit crops
+            according to the local production environment.
+        </p>
+
+        <h3 class="subheading">Intercropping</h3>
+
+        <p>
+            Intercropping involves growing two or more crops
+            together in the same field during part or all
+            of their growing periods. Suitable combinations
+            can improve land use, diversify harvests and
+            support more efficient resource use.
+        </p>
+
+        <h3 class="subheading">Crop Rotation</h3>
+
+        <p>
+            Crop rotation involves changing the crop grown
+            on a particular field across successive seasons.
+            Including suitable legumes in rotations can
+            contribute to soil fertility and help interrupt
+            certain pest and disease cycles.
+        </p>
+
+    </div>
+</section>
+
+<!-- LIVESTOCK -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Sustainable Livestock Farming</h2>
+
+        <p>
+            Livestock production is an important part of
+            agricultural livelihoods in Kenya. Sustainable
+            livestock farming seeks to improve animal health,
+            feeding, productivity and welfare while managing
+            grazing land and natural resources responsibly.
+        </p>
+
+        <h3 class="subheading">Key Livestock Management Practices</h3>
+
+        <ul>
+            <li>Provide clean and sufficient drinking water.</li>
+            <li>Maintain appropriate housing and shelter.</li>
+            <li>Provide balanced feed based on animal needs.</li>
+            <li>Grow and conserve suitable fodder crops.</li>
+            <li>Use rotational or controlled grazing where practical.</li>
+            <li>Seek veterinary advice for disease prevention and treatment.</li>
+            <li>Maintain proper vaccination and animal health records.</li>
+            <li>Manage manure and animal waste safely.</li>
+            <li>Protect grazing land from overgrazing and degradation.</li>
+        </ul>
+
+        <h3 class="subheading">Integrated Crop-Livestock Farming</h3>
+
+        <p>
+            Crop-livestock integration connects crop production
+            and animal production in a way that allows resources
+            to be used more efficiently.
+        </p>
+
+        <p>
+            Crop residues can provide suitable livestock feed,
+            while properly managed manure can be used as an
+            organic soil amendment. Fodder production can
+            also reduce pressure on natural grazing areas.
+        </p>
+
+        <div class="highlight">
+            <h3>Livestock and Dryland Resilience</h3>
+            <p>
+                In pastoral and agro-pastoral communities,
+                sustainable livestock management includes
+                protecting grazing resources, managing herd
+                movements, conserving fodder and maintaining
+                reliable access to water.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PEST MANAGEMENT -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Integrated Pest and Disease Management</h2>
+
+        <p>
+            Crop pests, diseases and weeds can reduce agricultural
+            productivity and affect the quality of harvested
+            produce. Integrated Pest Management (IPM) combines
+            different control methods to manage these problems
+            effectively while reducing unnecessary pesticide use.
+        </p>
+
+        <h3 class="subheading">Main IPM Practices</h3>
+
+        <ul>
+            <li><strong>Field monitoring:</strong> Inspect crops regularly to identify pests and diseases early.</li>
+            <li><strong>Crop rotation:</strong> Break pest and disease cycles by changing crop families.</li>
+            <li><strong>Resistant varieties:</strong> Select varieties with appropriate resistance or tolerance.</li>
+            <li><strong>Biological control:</strong> Encourage or use natural enemies of harmful pests.</li>
+            <li><strong>Field sanitation:</strong> Remove and safely manage infected plant materials where appropriate.</li>
+            <li><strong>Intercropping:</strong> Use suitable crop combinations to support pest management.</li>
+            <li><strong>Physical control:</strong> Use appropriate traps, barriers and mechanical removal.</li>
+            <li><strong>Responsible pesticide use:</strong> Use approved products only when justified and follow label directions.</li>
+        </ul>
+
+        <p>
+            Chemical pesticides should not be the automatic
+            first response to every pest problem. Farmers
+            should identify the problem correctly, assess
+            its severity and seek appropriate agricultural
+            extension advice.
+        </p>
+
+        <div class="highlight">
+            <h3>Safe Pesticide Management</h3>
+            <p>
+                Always follow product labels, recommended
+                protective equipment, application instructions,
+                pre-harvest intervals and safe storage and
+                disposal procedures. Never mix products
+                without professional guidance.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONSERVATION AGRICULTURE -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Conservation Agriculture</h2>
+
+        <p>
+            Conservation agriculture is a farming approach
+            designed to conserve soil, improve water management
+            and support sustainable crop production.
+        </p>
+
+        <h3 class="subheading">Three Main Principles</h3>
+
+        <ul>
+            <li><strong>Minimum soil disturbance:</strong> Reduce unnecessary ploughing and soil disturbance.</li>
+            <li><strong>Permanent soil cover:</strong> Maintain suitable crop residues or cover crops on the soil surface.</li>
+            <li><strong>Crop diversification:</strong> Use crop rotations or associations involving different crop species.</li>
+        </ul>
+
+        <p>
+            These principles can help reduce erosion,
+            improve soil structure and conserve moisture.
+            Their application should be adapted to local
+            soil conditions, weeds, equipment and farming systems.
+        </p>
+
+    </div>
+</section>
+
+<!-- ORGANIC FARMING -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Organic and Ecological Farming</h2>
+
+        <p>
+            Organic farming is a production system that
+            follows specific standards for soil fertility,
+            pest management, biodiversity and permitted
+            agricultural inputs.
+        </p>
+
+        <p>
+            Ecological farming applies ecological principles
+            to agricultural production, emphasizing
+            biodiversity, resource recycling, healthy soils
+            and the interaction between farming systems
+            and natural ecosystems.
+        </p>
+
+        <h3 class="subheading">Examples of Organic and Ecological Practices</h3>
+
+        <ul>
+            <li>Preparing compost from suitable farm materials.</li>
+            <li>Using properly treated farmyard manure.</li>
+            <li>Growing suitable cover crops.</li>
+            <li>Promoting beneficial insects and soil organisms.</li>
+            <li>Practising crop rotation and intercropping.</li>
+            <li>Reducing unnecessary synthetic chemical inputs.</li>
+            <li>Protecting biodiversity around agricultural land.</li>
+        </ul>
+
+        <p>
+            Organic certification requires compliance with
+            applicable standards. A farm should not claim
+            certified organic status simply because it
+            uses manure or avoids certain chemicals.
+        </p>
+
+    </div>
+</section>
+
+<!-- CLIMATE CHANGE -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Climate-Smart and Resilient Farming</h2>
+
+        <p>
+            Climate change affects agricultural production
+            through changing rainfall patterns, high temperatures,
+            droughts, floods, new pest pressures and other
+            environmental challenges.
+        </p>
+
+        <p>
+            Climate-smart agriculture promotes approaches
+            that improve agricultural productivity, strengthen
+            resilience to climate change and reduce or remove
+            greenhouse gas emissions where possible.
+        </p>
+
+        <h3 class="subheading">Climate Adaptation Practices</h3>
+
+        <ul>
+            <li>Use drought-tolerant and locally adapted crop varieties.</li>
+            <li>Harvest and store rainwater where appropriate.</li>
+            <li>Conserve soil moisture through mulch and soil cover.</li>
+            <li>Diversify crops and livestock enterprises.</li>
+            <li>Use seasonal weather forecasts for farm planning.</li>
+            <li>Promote agroforestry and suitable farm trees.</li>
+            <li>Improve fodder conservation and livestock management.</li>
+            <li>Develop plans for drought and flood risks.</li>
+        </ul>
+
+        <h3 class="subheading">Climate Mitigation Practices</h3>
+
+        <ul>
+            <li>Maintain healthy soils and appropriate vegetation cover.</li>
+            <li>Use energy and farm machinery efficiently.</li>
+            <li>Manage manure and agricultural waste responsibly.</li>
+            <li>Protect trees and restore degraded landscapes.</li>
+            <li>Reduce unnecessary burning of crop residues.</li>
+            <li>Improve nutrient management to avoid excessive fertilizer use.</li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- FARM ECONOMICS -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Farm Business and Economic Sustainability</h2>
+
+        <p>
+            Sustainable farming must also be economically
+            viable. Farmers need to manage production costs,
+            understand markets, reduce losses and make
+            informed investment decisions.
+        </p>
+
+        <h3 class="subheading">Farm Business Management</h3>
+
+        <ul>
+            <li>Prepare a seasonal farm production plan.</li>
+            <li>Estimate production costs before planting.</li>
+            <li>Keep records of farm income and expenditure.</li>
+            <li>Compare input prices and product quality.</li>
+            <li>Calculate production costs and expected returns.</li>
+            <li>Identify reliable buyers and market opportunities.</li>
+            <li>Improve storage, packaging and transportation.</li>
+            <li>Explore farmer groups and cooperative marketing.</li>
+            <li>Diversify farm enterprises to manage business risks.</li>
+        </ul>
+
+        <h3 class="subheading">Agricultural Value Addition</h3>
+
+        <p>
+            Value addition involves improving agricultural
+            products through processing, grading, packaging
+            and other activities that increase their usefulness
+            or market value.
+        </p>
+
+        <p>
+            Examples include drying fruits, processing milk,
+            milling grains, packaging vegetables, producing
+            animal feed and processing selected agricultural
+            products.
+        </p>
+
+        <div class="highlight">
+            <h3>Profitability Through Better Management</h3>
+            <p>
+                A productive farm is not necessarily a
+                profitable farm. Farmers should consider
+                input expenses, labour, irrigation costs,
+                transport, storage, market prices and
+                post-harvest losses when evaluating
+                agricultural enterprises.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- POST HARVEST -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Post-Harvest Management and Food Security</h2>
+
+        <p>
+            Post-harvest management includes all activities
+            performed after harvesting to maintain the quality,
+            safety and market value of agricultural products.
+        </p>
+
+        <h3 class="subheading">Important Post-Harvest Practices</h3>
+
+        <ul>
+            <li>Harvest crops at the appropriate maturity stage.</li>
+            <li>Handle produce carefully to avoid physical damage.</li>
+            <li>Sort and grade products according to quality.</li>
+            <li>Dry grains to safe storage moisture levels.</li>
+            <li>Use clean and suitable storage facilities.</li>
+            <li>Protect produce from insects, rodents and moisture.</li>
+            <li>Maintain hygiene during handling and packaging.</li>
+            <li>Transport products using appropriate containers.</li>
+        </ul>
+
+        <p>
+            Reducing post-harvest losses improves food
+            availability, protects farmer income and
+            makes better use of resources already invested
+            in agricultural production.
+        </p>
+
+    </div>
+</section>
+
+<!-- TECHNOLOGY -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Agricultural Technology and Innovation</h2>
+
+        <p>
+            Agricultural technology can improve production,
+            efficiency, decision-making and access to
+            agricultural information. The most useful
+            technology depends on farm size, available
+            resources, local conditions and farmer needs.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Drip Irrigation</h3>
+                <p>
+                    Delivers controlled water quantities
+                    close to crop roots to support efficient
+                    irrigation.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Weather Information</h3>
+                <p>
+                    Seasonal forecasts and weather updates
+                    help farmers plan planting, irrigation
+                    and harvesting activities.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Soil Testing</h3>
+                <p>
+                    Helps identify soil conditions and
+                    nutrient requirements for informed
+                    fertilizer management.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Farm Mechanization</h3>
+                <p>
+                    Appropriate machinery can improve
+                    efficiency in land preparation,
+                    planting and harvesting.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Digital Agriculture</h3>
+                <p>
+                    Mobile applications and digital
+                    platforms can support farm records,
+                    market information and extension services.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Precision Agriculture</h3>
+                <p>
+                    Uses data and technology to improve
+                    the management of farm inputs and
+                    production conditions.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- DRYLAND FARMING -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Sustainable Farming in Dryland Kenya</h2>
+
+        <p>
+            Arid and semi-arid areas of Kenya face challenges
+            such as low and irregular rainfall, high evaporation,
+            water scarcity, land degradation and livestock
+            feed shortages.
+        </p>
+
+        <p>
+            Sustainable farming in these environments
+            requires production systems that respond
+            to local ecological conditions and available
+            natural resources.
+        </p>
+
+        <h3 class="subheading">Recommended Areas of Focus</h3>
+
+        <ul>
+            <li>Choose crops adapted to local rainfall and soil conditions.</li>
+            <li>Prioritize water harvesting and efficient water use.</li>
+            <li>Promote drought-tolerant crop varieties.</li>
+            <li>Use suitable soil moisture conservation methods.</li>
+            <li>Establish appropriate fodder production and storage systems.</li>
+            <li>Manage livestock grazing and rangeland resources.</li>
+            <li>Integrate suitable trees and shrubs into farming systems.</li>
+            <li>Promote small-scale irrigation where sustainable water sources exist.</li>
+            <li>Use local climate information to guide farm decisions.</li>
+            <li>Encourage farmer training and community cooperation.</li>
+        </ul>
+
+        <div class="highlight">
+            <h3>Opportunities for Garissa and Northern Kenya</h3>
+            <p>
+                Sustainable agricultural opportunities can
+                include drought-adapted crop production,
+                vegetable farming with efficient irrigation,
+                fodder production, livestock management,
+                agroforestry, water harvesting and agricultural
+                value addition. Each enterprise should be
+                assessed against available water, soil,
+                market access and production costs.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- IMPLEMENTATION -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Our Sustainable Farming Approach</h2>
+
+        <p>
+            Goreale Agricultural Innovators promotes a
+            practical approach that combines agricultural
+            knowledge, farmer participation, research
+            and appropriate technology.
+        </p>
+
+        <div class="step">
+            <h3>1. Agricultural Assessment</h3>
+            <p>
+                Understand the farm environment, soil,
+                water availability, climate, production
+                challenges and farmer objectives.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>2. Planning and Resource Management</h3>
+            <p>
+                Develop realistic farm plans that consider
+                available resources, production costs,
+                environmental conditions and market demand.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>3. Sustainable Production</h3>
+            <p>
+                Apply appropriate crop, livestock, soil
+                and water management practices.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>4. Farmer Training</h3>
+            <p>
+                Promote agricultural education, practical
+                demonstrations and knowledge sharing
+                among farming communities.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>5. Research and Innovation</h3>
+            <p>
+                Test suitable technologies and farming
+                methods under local conditions and
+                improve practices using evidence.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>6. Monitoring and Evaluation</h3>
+            <p>
+                Monitor farm productivity, soil and water
+                management, costs, income and environmental
+                performance.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- COMMITMENT -->
+<section>
+    <div class="intro">
+
+        <h2 class="section-title">Our Commitment to Sustainable Agriculture</h2>
+
+        <p>
+            Goreale Agricultural Innovators is committed
+            to promoting an agricultural sector that is
+            productive, innovative, environmentally
+            responsible and economically sustainable.
+        </p>
+
+        <p>
+            We believe that sustainable farming is essential
+            for improving food security, strengthening
+            farmer livelihoods, conserving natural resources
+            and building resilient agricultural communities.
+        </p>
+
+        <p>
+            Through research, education, technology,
+            partnerships and practical agricultural solutions,
+            we aim to support farmers in adopting improved
+            production methods and responsible resource
+            management.
+        </p>
+
+        <p>
+            Our vision is to contribute to a future where
+            agricultural development and environmental
+            conservation work together for the benefit
+            of present and future generations.
+        </p>
+
+    </div>
+</section>
+
+<!-- LEARNING RESOURCES -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Agricultural Learning Resources</h2>
+
+        <div class="resources">
+
+            <p>
+                Explore these technical resources for
+                additional knowledge and practical
+                agricultural guidance.
+            </p>
+
+            <ul>
+
+                <li>
+                    <a href="https://www.fao.org/"
+                       target="_blank" rel="noopener">
+                       Food and Agriculture Organization (FAO)
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.kilimo.go.ke/"
+                       target="_blank" rel="noopener">
+                       Kenya Ministry of Agriculture
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.kalro.org/"
+                       target="_blank" rel="noopener">
+                       Kenya Agricultural and Livestock Research Organization (KALRO)
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.kcsap.go.ke/"
+                       target="_blank" rel="noopener">
+                       Kenya Climate Smart Agriculture Project
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.fao.org/agriculture/crops/thematic-sitemap/theme/compendium/tools-guidelines/how-to-ipm/en/"
+                       target="_blank" rel="noopener">
+                       FAO Integrated Pest Management
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.cgiar.org/"
+                       target="_blank" rel="noopener">
+                       CGIAR Agricultural Research
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <h3>Goreale Agricultural Innovators</h3>
+
+    <p>
+        Advancing agriculture through knowledge,
+        research, technology and innovation.
+    </p>
+
+    <p>
+        &copy; 2026 Goreale Agricultural Innovators.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>

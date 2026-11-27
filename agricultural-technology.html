@@ -1,0 +1,1099 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agricultural Technology | Goreale Agricultural Innovators</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --ivory: #F5F5DC;
+    --forest-green: #355E3B;
+    --earth-brown: #8B5A2B;
+    --charcoal-grey: #454545;
+    --olive-green: #6B8E23;
+    --lavender: #E6DDF2;
+    --beet: #e8dce0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    background: var(--ivory);
+    color: var(--charcoal-grey);
+    font-family: Arial, sans-serif;
+    font-size: .88rem;
+    line-height: 1.8;
+}
+
+header {
+    background: var(--ivory);
+    padding: 1rem 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(53,94,59,.15);
+}
+
+.logo {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 900;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--forest-green);
+    font-size: .78rem;
+    font-weight: bold;
+}
+
+nav a:hover { color: var(--earth-brown); }
+
+.hero {
+    min-height: 24rem;
+    background:
+        linear-gradient(rgba(15,40,20,.72), rgba(15,40,20,.72)),
+        url("images/agricultural-technology.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 4rem 8%;
+    color: white;
+}
+
+.hero-content { max-width: 680px; }
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    line-height: 1.25;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: .95rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--earth-brown);
+    color: white;
+    text-decoration: none;
+    padding: .7rem 1.3rem;
+    border-radius: 4px;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.btn:hover { background: var(--olive-green); }
+
+section { padding: 3rem 8%; }
+
+.section-title {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.45rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.section-intro {
+    max-width: 850px;
+    margin-bottom: 1.8rem;
+}
+
+.content-section { background: rgba(255,255,255,.35); }
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.card {
+    padding: 1.3rem;
+    border-radius: 7px;
+    border: 1px solid rgba(53,94,59,.12);
+}
+
+.card:nth-child(odd) { background: var(--beet); }
+.card:nth-child(even) { background: var(--lavender); }
+
+.card h3 {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: .95rem;
+    font-weight: 800;
+    margin-bottom: .6rem;
+}
+
+.card p, .card li { font-size: .82rem; }
+
+.card ul {
+    padding-left: 1.1rem;
+}
+
+.content-section h3,
+section > h3 {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 1.3rem 0 .5rem;
+}
+
+section p { margin-bottom: .8rem; }
+
+section ul, section ol {
+    padding-left: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    background: var(--beet);
+    border-left: 4px solid var(--earth-brown);
+    padding: 1.2rem;
+    margin: 1.3rem 0;
+    border-radius: 4px;
+}
+
+.highlight h3 { margin-top: 0; }
+
+.resource-links a {
+    color: var(--forest-green);
+    font-weight: bold;
+}
+
+footer {
+    background: var(--forest-green);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: .78rem;
+}
+
+footer h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+@media(max-width: 900px) {
+    .content-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media(max-width: 600px) {
+    header { padding: 1rem 5%; }
+    nav { gap: .8rem; }
+    .hero { min-height: 21rem; padding: 3rem 6%; }
+    section { padding: 2.3rem 6%; }
+    .content-grid { grid-template-columns: 1fr; }
+    .section-title { font-size: 1.25rem; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Goreale Agricultural Innovators</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#areas">Our Areas</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Agricultural Technology & Innovation</h1>
+        <p>
+            Transforming agriculture through modern machinery, digital
+            solutions, smart farming systems and innovative technologies
+            that improve productivity and sustainability.
+        </p>
+        <a href="#knowledge" class="btn">Explore Technology</a>
+    </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section id="knowledge">
+    <h2 class="section-title">Technology Transforming Agriculture</h2>
+
+    <div class="section-intro">
+        <p>
+            Agricultural technology refers to the tools, machinery, equipment,
+            digital systems and scientific innovations used to improve farming
+            activities. It supports farmers in preparing land, planting crops,
+            managing livestock, monitoring farms, harvesting and marketing
+            agricultural products.
+        </p>
+
+        <p>
+            Modern agriculture increasingly combines traditional farming
+            knowledge with digital technology. Mobile phones, GPS systems,
+            weather information, drones, irrigation equipment and data
+            analysis can help farmers make better decisions.
+        </p>
+
+        <p>
+            Goreale Agricultural Innovators promotes the responsible adoption
+            of affordable and practical technologies that can improve
+            agricultural productivity, reduce unnecessary costs and support
+            sustainable food production.
+        </p>
+    </div>
+</section>
+
+<!-- TECHNOLOGY AREAS -->
+<section class="content-section">
+    <h2 class="section-title">Our Main Technology Areas</h2>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>1. Farm Mechanisation</h3>
+            <p>
+                Using tractors, planters, harvesters, threshers and other
+                machinery to reduce manual labour and improve farm operations.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>2. Digital Agriculture</h3>
+            <p>
+                Using mobile applications, online platforms and digital
+                information services to support agricultural decisions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>3. Precision Agriculture</h3>
+            <p>
+                Using farm data, GPS, sensors and mapping to apply water,
+                fertiliser and other inputs more accurately.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>4. Agricultural Drones</h3>
+            <p>
+                Using unmanned aerial systems for suitable crop monitoring,
+                field mapping and approved agricultural applications.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>5. Smart Irrigation</h3>
+            <p>
+                Applying automated systems, sensors and efficient pumps
+                to improve water management and irrigation scheduling.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>6. Artificial Intelligence</h3>
+            <p>
+                Applying computer-based analysis to support crop monitoring,
+                disease identification, forecasting and farm planning.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>7. Agricultural Biotechnology</h3>
+            <p>
+                Using scientific methods to improve crops, seeds, animal
+                health and agricultural production, subject to appropriate
+                safety and regulatory requirements.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>8. Post-Harvest Technology</h3>
+            <p>
+                Using drying, cooling, storage, processing and packaging
+                equipment to protect agricultural products after harvesting.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>9. Renewable Energy</h3>
+            <p>
+                Using solar energy and other renewable sources to power
+                irrigation, refrigeration, processing and farm equipment.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- FARM MACHINERY -->
+<section>
+    <h2 class="section-title">Modern Agricultural Machinery</h2>
+
+    <p>
+        Farm machinery improves the speed and efficiency of agricultural
+        activities. The right equipment depends on farm size, crop type,
+        soil conditions, labour availability and investment capacity.
+    </p>
+
+    <div class="content-grid">
+        <div class="card">
+            <h3>Tractors</h3>
+            <p>
+                Used for land preparation, ploughing, transportation and
+                operating different agricultural implements.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Planters and Seeders</h3>
+            <p>
+                Help place seeds at suitable depths and spacing, supporting
+                more organised crop establishment.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Harvesters</h3>
+            <p>
+                Assist with harvesting crops and can reduce labour
+                requirements when properly selected and operated.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Threshers</h3>
+            <p>
+                Separate grain from harvested plant material and support
+                more efficient post-harvest operations.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Sprayers</h3>
+            <p>
+                Apply approved crop protection products accurately when
+                used according to safety instructions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Soil Preparation Equipment</h3>
+            <p>
+                Includes ploughs, harrows, cultivators and other implements
+                used for different land preparation activities.
+            </p>
+        </div>
+    </div>
+
+    <div class="highlight">
+        <h3>Choosing the Right Machinery</h3>
+        <p>
+            Farmers should consider purchase price, fuel consumption,
+            maintenance, spare parts, operator training and expected
+            productivity before investing in machinery. Small farms
+            may benefit from shared equipment or machinery-hire services.
+        </p>
+    </div>
+</section>
+
+<!-- DIGITAL AGRICULTURE -->
+<section class="content-section">
+    <h2 class="section-title">Digital Agriculture and Mobile Technology</h2>
+
+    <p>
+        Digital agriculture uses mobile phones, internet services, digital
+        records and information platforms to connect farmers with useful
+        agricultural knowledge and services.
+    </p>
+
+    <div class="content-grid">
+        <div class="card">
+            <h3>Mobile Farming Applications</h3>
+            <p>
+                Provide access to crop information, livestock advice,
+                farm management tools and agricultural learning materials.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Weather Information</h3>
+            <p>
+                Helps farmers understand rainfall forecasts and weather
+                conditions when planning planting, irrigation and harvesting.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Digital Farm Records</h3>
+            <p>
+                Help farmers record production, expenses, sales, inputs,
+                labour and farm performance.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Online Marketplaces</h3>
+            <p>
+                Connect farmers with buyers, suppliers, processors and
+                other agricultural service providers.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Digital Payments</h3>
+            <p>
+                Support convenient transactions between farmers,
+                customers and agricultural businesses.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Online Agricultural Training</h3>
+            <p>
+                Gives farmers access to educational videos, demonstrations,
+                research findings and expert advice.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- PRECISION AGRICULTURE -->
+<section>
+    <h2 class="section-title">Precision Agriculture</h2>
+
+    <p>
+        Precision agriculture uses information and technology to understand
+        differences across farm fields and make more accurate management
+        decisions. It aims to improve the use of resources such as water,
+        fertilisers, seeds and crop protection products.
+    </p>
+
+    <div class="content-grid">
+        <div class="card">
+            <h3>GPS Technology</h3>
+            <p>
+                Helps farmers map fields, identify farm boundaries and
+                support accurate field operations.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Soil Sensors</h3>
+            <p>
+                Measure selected soil conditions, including moisture and
+                temperature, to support farm management decisions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Satellite Monitoring</h3>
+            <p>
+                Provides images and information that can help monitor
+                vegetation, crop development and land conditions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Smart Fertiliser Application</h3>
+            <p>
+                Supports more targeted nutrient application based on
+                soil tests, crop needs and field information.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Crop Monitoring</h3>
+            <p>
+                Helps identify areas that may require attention because
+                of moisture stress, pests or poor crop growth.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Farm Mapping</h3>
+            <p>
+                Helps farmers and agricultural professionals understand
+                field size, land use and farm resource distribution.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- DRONES -->
+<section class="content-section">
+    <h2 class="section-title">Drones in Agriculture</h2>
+
+    <p>
+        Agricultural drones are unmanned aircraft equipped with cameras,
+        sensors or other approved equipment. They can collect aerial
+        information and support certain farm operations.
+    </p>
+
+    <h3>Common Agricultural Applications</h3>
+    <ul>
+        <li>Taking aerial photographs of agricultural fields.</li>
+        <li>Mapping farm boundaries and crop areas.</li>
+        <li>Monitoring crop growth and identifying unusual field patterns.</li>
+        <li>Supporting the assessment of drought and water stress.</li>
+        <li>Monitoring large farms and selected livestock grazing areas.</li>
+        <li>Supporting approved precision application activities.</li>
+    </ul>
+
+    <div class="highlight">
+        <h3>Responsible Drone Use</h3>
+        <p>
+            Drone operations should comply with Kenya's aviation regulations,
+            privacy requirements and applicable agricultural chemical
+            regulations. Operators should obtain the required approvals
+            and receive appropriate training.
+        </p>
+    </div>
+</section>
+
+<!-- SMART IRRIGATION -->
+<section>
+    <h2 class="section-title">Smart Irrigation and Water Technology</h2>
+
+    <p>
+        Smart irrigation combines water-saving equipment and information
+        systems to deliver water according to crop requirements. It can
+        help farmers manage limited water resources more efficiently.
+    </p>
+
+    <div class="content-grid">
+        <div class="card">
+            <h3>Drip Irrigation</h3>
+            <p>
+                Delivers water near plant roots through pipes and emitters,
+                reducing unnecessary wetting of the surrounding soil.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Solar Water Pumps</h3>
+            <p>
+                Use solar energy to pump water for irrigation and other
+                farm activities where the system is properly designed.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Moisture Sensors</h3>
+            <p>
+                Help measure soil moisture and guide decisions about
+                when crops need irrigation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Automated Irrigation</h3>
+            <p>
+                Uses controllers, valves and sensors to manage irrigation
+                schedules and water delivery.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Water Storage Systems</h3>
+            <p>
+                Tanks, reservoirs and water pans help store harvested
+                water for later agricultural use.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Water Management Apps</h3>
+            <p>
+                Digital tools can help record water use, monitor
+                irrigation schedules and organise farm activities.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- AI -->
+<section class="content-section">
+    <h2 class="section-title">Artificial Intelligence in Agriculture</h2>
+
+    <p>
+        Artificial intelligence (AI) allows computer systems to analyse
+        information and assist with certain agricultural decisions.
+        AI tools can support farmers, researchers and agricultural
+        professionals when reliable data is available.
+    </p>
+
+    <div class="content-grid">
+        <div class="card">
+            <h3>Crop Disease Identification</h3>
+            <p>
+                Image-based systems can help identify possible crop
+                diseases and suggest areas for further investigation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Pest Monitoring</h3>
+            <p>
+                AI systems can analyse images and field information
+                to support pest monitoring and early detection.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Yield Prediction</h3>
+            <p>
+                Data analysis can help estimate potential crop production
+                using suitable historical and field information.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Livestock Monitoring</h3>
+            <p>
+                Digital systems can help monitor animal activity,
+                production records and selected health indicators.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Weather and Risk Analysis</h3>
+            <p>
+                Data models can support forecasting and help identify
+                potential agricultural risks.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>AI Agricultural Assistants</h3>
+            <p>
+                Digital assistants can help farmers find information,
+                understand farming practices and organise farm records.
+            </p>
+        </div>
+    </div>
+
+    <p>
+        AI-generated recommendations should be checked against local
+        agricultural conditions and professional advice. They should
+        support, not replace, qualified agricultural expertise.
+    </p>
+</section>
+
+<!-- LIVESTOCK TECHNOLOGY -->
+<section>
+    <h2 class="section-title">Technology in Livestock Production</h2>
+
+    <p>
+        Technology also supports animal production by improving livestock
+        monitoring, feeding, breeding, health management and farm records.
+    </p>
+
+    <div class="content-grid">
+        <div class="card">
+            <h3>Animal Identification</h3>
+            <p>
+                Tags and digital identification systems help farmers
+                maintain accurate animal records.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Automated Feeding</h3>
+            <p>
+                Feeding equipment helps manage feed distribution and
+                reduce repetitive manual work.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Milk Collection Equipment</h3>
+            <p>
+                Milking machines and cooling systems support milk
+                production, hygiene and quality management.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Animal Health Monitoring</h3>
+            <p>
+                Digital records and monitoring devices can help track
+                animal health indicators and treatment history.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Incubation Technology</h3>
+            <p>
+                Egg incubators provide controlled conditions for
+                hatching poultry eggs.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Livestock Farm Software</h3>
+            <p>
+                Helps record breeding, feeding, vaccination, production
+                and livestock sales.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- POST HARVEST -->
+<section class="content-section">
+    <h2 class="section-title">Post-Harvest and Food Processing Technology</h2>
+
+    <p>
+        Agricultural technology does not end at harvesting. Storage,
+        processing and transportation technologies help maintain product
+        quality, reduce losses and create opportunities for value addition.
+    </p>
+
+    <div class="content-grid">
+        <div class="card">
+            <h3>Grain Dryers</h3>
+            <p>
+                Reduce moisture in harvested grain to help prevent
+                spoilage when operated correctly.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Cold Storage</h3>
+            <p>
+                Refrigeration systems help preserve suitable fruits,
+                vegetables, dairy products and other perishables.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Food Processing Machines</h3>
+            <p>
+                Equipment such as mills, crushers and packaging machines
+                supports agricultural value addition.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Packaging Technology</h3>
+            <p>
+                Appropriate packaging protects products and supports
+                handling, transportation and marketing.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Storage Monitoring</h3>
+            <p>
+                Temperature and humidity monitoring can help maintain
+                suitable storage conditions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Transport Technology</h3>
+            <p>
+                Suitable transport and cold-chain systems help move
+                agricultural products to markets while protecting quality.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- KENYA -->
+<section>
+    <h2 class="section-title">Agricultural Technology in Kenya</h2>
+
+    <p>
+        Kenya has opportunities to expand agricultural innovation through
+        mobile services, digital advisory platforms, mechanisation,
+        irrigation technology, weather information and data-driven
+        agricultural services.
+    </p>
+
+    <p>
+        Agricultural institutions, research organisations, technology
+        companies and county governments play important roles in
+        developing and delivering these solutions to farmers.
+    </p>
+
+    <h3>Opportunities for Kenyan Farmers</h3>
+    <ul>
+        <li>Accessing agricultural information through mobile phones.</li>
+        <li>Using digital platforms to obtain weather and farming advice.</li>
+        <li>Hiring machinery instead of purchasing expensive equipment.</li>
+        <li>Adopting affordable drip irrigation and solar pumping systems.</li>
+        <li>Using digital records to improve farm business management.</li>
+        <li>Connecting agricultural producers with markets and buyers.</li>
+        <li>Using suitable sensors and mapping tools to improve farm decisions.</li>
+    </ul>
+
+    <div class="highlight">
+        <h3>Technology for Garissa and Dryland Agriculture</h3>
+        <p>
+            In dryland counties such as Garissa, agricultural technology
+            can help address water shortages, high temperatures and
+            unreliable rainfall.
+        </p>
+        <ul>
+            <li>Solar-powered water pumping systems.</li>
+            <li>Drip irrigation for suitable crops and horticultural farms.</li>
+            <li>Rainfall monitoring and weather information services.</li>
+            <li>Water storage and monitoring equipment.</li>
+            <li>Mobile livestock health and market information services.</li>
+            <li>Digital livestock identification and recordkeeping.</li>
+            <li>Appropriate equipment for fodder production and storage.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CHALLENGES -->
+<section class="content-section">
+    <h2 class="section-title">Challenges in Agricultural Technology Adoption</h2>
+
+    <div class="content-grid">
+        <div class="card">
+            <h3>High Initial Costs</h3>
+            <p>
+                Some machinery, sensors and digital systems require
+                significant investment.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Limited Technical Skills</h3>
+            <p>
+                Farmers may need training to operate and maintain
+                modern agricultural equipment.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Electricity and Connectivity</h3>
+            <p>
+                Unreliable power and internet access can limit the
+                usefulness of certain digital technologies.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Maintenance and Spare Parts</h3>
+            <p>
+                Equipment can become difficult to operate when
+                repairs and replacement parts are unavailable.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Limited Access to Finance</h3>
+            <p>
+                Farmers and small agricultural businesses may struggle
+                to finance technology investments.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Data and Privacy</h3>
+            <p>
+                Digital systems require responsible handling of
+                farmers' personal and farm information.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ADOPTION -->
+<section>
+    <h2 class="section-title">How Farmers Can Adopt Agricultural Technology</h2>
+
+    <ol>
+        <li>
+            <strong>Identify a farming challenge:</strong>
+            Determine what needs improvement, such as irrigation,
+            harvesting, pest monitoring or recordkeeping.
+        </li>
+        <li>
+            <strong>Research available solutions:</strong>
+            Compare technologies that address the identified challenge.
+        </li>
+        <li>
+            <strong>Evaluate affordability:</strong>
+            Consider purchase costs, operating expenses and expected benefits.
+        </li>
+        <li>
+            <strong>Seek expert advice:</strong>
+            Consult agricultural extension officers and relevant specialists.
+        </li>
+        <li>
+            <strong>Start with a suitable pilot:</strong>
+            Test the technology on a manageable scale before expanding.
+        </li>
+        <li>
+            <strong>Learn and maintain:</strong>
+            Train users, follow safety instructions and maintain equipment.
+        </li>
+        <li>
+            <strong>Measure performance:</strong>
+            Compare productivity, costs, water use and other results.
+        </li>
+    </ol>
+</section>
+
+<!-- OUR APPROACH -->
+<section class="content-section">
+    <h2 class="section-title">Our Approach to Agricultural Innovation</h2>
+
+    <div class="content-grid">
+        <div class="card">
+            <h3>Research and Development</h3>
+            <p>
+                Promoting research and practical investigation into
+                agricultural technologies and emerging innovations.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Farmer Training</h3>
+            <p>
+                Supporting agricultural education and technology
+                demonstrations to build practical skills.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Technology Awareness</h3>
+            <p>
+                Sharing knowledge about useful, affordable and
+                appropriate agricultural technologies.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Innovation Partnerships</h3>
+            <p>
+                Encouraging collaboration between farmers, researchers,
+                institutions and agricultural technology providers.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Practical Demonstrations</h3>
+            <p>
+                Promoting demonstrations that allow farmers to understand
+                how technology works in real farming environments.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Sustainable Solutions</h3>
+            <p>
+                Encouraging technologies that support efficient resource
+                use, environmental protection and long-term productivity.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- COMMITMENT -->
+<section>
+    <h2 class="section-title">Our Commitment to Innovation</h2>
+
+    <p>
+        Goreale Agricultural Innovators believes that technology is an
+        important driver of agricultural transformation. We aim to
+        encourage farmers, young innovators and agricultural businesses
+        to explore practical solutions that address real farming challenges.
+    </p>
+
+    <p>
+        Through research, education, collaboration and responsible
+        technology adoption, we seek to contribute to a more productive,
+        competitive and sustainable agricultural sector.
+    </p>
+
+    <p>
+        Our vision is an agricultural future where knowledge, innovation
+        and appropriate technology create better opportunities for
+        farmers and communities.
+    </p>
+</section>
+
+<!-- RESOURCES -->
+<section class="content-section resource-links">
+    <h2 class="section-title">Agricultural Technology Resources</h2>
+
+    <p>Explore these organisations for further information and learning:</p>
+
+    <ul>
+        <li>
+            <a href="https://www.kalro.org/" target="_blank" rel="noopener">
+                Kenya Agricultural and Livestock Research Organization (KALRO)
+            </a>
+            – Agricultural research and technology.
+        </li>
+
+        <li>
+            <a href="https://kilimo.go.ke/" target="_blank" rel="noopener">
+                Kenya Ministry of Agriculture
+            </a>
+            – Agricultural policies, programmes and information.
+        </li>
+
+        <li>
+            <a href="https://www.fao.org/" target="_blank" rel="noopener">
+                Food and Agriculture Organization (FAO)
+            </a>
+            – Agricultural innovation and digital agriculture.
+        </li>
+
+        <li>
+            <a href="https://www.worldbank.org/en/topic/agriculture" target="_blank" rel="noopener">
+                World Bank Agriculture
+            </a>
+            – Agricultural development and technology initiatives.
+        </li>
+
+        <li>
+            <a href="https://www.cgiar.org/" target="_blank" rel="noopener">
+                CGIAR
+            </a>
+            – Agricultural research and innovation.
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <h3>Goreale Agricultural Innovators</h3>
+    <p>
+        Advancing agriculture through knowledge, research and innovation.
+    </p>
+    <p>
+        &copy; 2026 Goreale Agricultural Innovators. All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>

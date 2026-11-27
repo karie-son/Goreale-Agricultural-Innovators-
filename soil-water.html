@@ -1,0 +1,850 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soil & Water Conservation | Goreale Agricultural Innovators</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --ivory: #F5F5DC;
+    --forest-green: #355E3B;
+    --earth-brown: #8B5A2B;
+    --charcoal-grey: #454545;
+    --olive-green: #6B8E23;
+    --lavender: #E6DDF2;
+    --beet: #e8dce0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--ivory);
+    color: var(--charcoal-grey);
+    font-family: Arial, sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.8;
+}
+
+header {
+    background: var(--ivory);
+    padding: 1rem 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(53,94,59,.15);
+}
+
+.logo {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 900;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+nav a {
+    color: var(--forest-green);
+    text-decoration: none;
+    font-size: .78rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--earth-brown);
+}
+
+.hero {
+    min-height: 24rem;
+    background:
+        linear-gradient(rgba(15,40,20,.72), rgba(15,40,20,.72)),
+        url("images/soil-water.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 4rem 8%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 680px;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    line-height: 1.25;
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+
+.hero p {
+    font-size: .95rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--earth-brown);
+    color: white;
+    padding: .7rem 1.3rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: var(--olive-green);
+}
+
+section {
+    padding: 3rem 8%;
+}
+
+.section-title {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.45rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.section-intro {
+    max-width: 850px;
+    margin-bottom: 1.8rem;
+}
+
+.intro {
+    background: var(--ivory);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.card {
+    padding: 1.3rem;
+    border-radius: 7px;
+    background: white;
+    border: 1px solid rgba(53,94,59,.12);
+}
+
+.card:nth-child(even) {
+    background: var(--lavender);
+}
+
+.card:nth-child(odd) {
+    background: var(--beet);
+}
+
+.card h3 {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: .95rem;
+    font-weight: 800;
+    margin-bottom: .6rem;
+}
+
+.card p, .card li {
+    font-size: .82rem;
+}
+
+.card ul {
+    padding-left: 1.1rem;
+}
+
+.content-section {
+    background: rgba(255,255,255,.35);
+}
+
+.content-section h3 {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 1.3rem 0 .5rem;
+}
+
+.content-section p {
+    margin-bottom: .8rem;
+}
+
+.content-section ul,
+.content-section ol {
+    padding-left: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    background: #e8dce0;
+    border-left: 4px solid var(--earth-brown);
+    padding: 1.2rem;
+    margin: 1.3rem 0;
+    border-radius: 4px;
+}
+
+.highlight h3 {
+    margin-top: 0;
+}
+
+.resource-links a {
+    color: var(--forest-green);
+    font-weight: bold;
+}
+
+footer {
+    background: var(--forest-green);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: .78rem;
+}
+
+footer h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+@media(max-width: 900px) {
+    .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    header {
+        padding: 1rem 5%;
+    }
+
+    nav {
+        gap: .8rem;
+    }
+
+    .hero {
+        min-height: 21rem;
+        padding: 3rem 6%;
+    }
+
+    section {
+        padding: 2.3rem 6%;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 1.25rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Goreale Agricultural Innovators</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#areas">Our Areas</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Soil & Water Conservation</h1>
+        <p>
+            Protecting the foundation of agriculture through healthy soils,
+            responsible water management and sustainable farming practices.
+        </p>
+        <a href="#knowledge" class="btn">Explore Knowledge</a>
+    </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section class="intro" id="knowledge">
+    <h2 class="section-title">Protecting Our Most Valuable Resources</h2>
+
+    <div class="section-intro">
+        <p>
+            Soil and water are essential resources for agricultural production,
+            food security and environmental sustainability. Healthy soil supports
+            plant growth, stores nutrients and holds moisture, while water supports
+            crops, livestock and farming communities.
+        </p>
+
+        <p>
+            Soil and water conservation involves protecting land against erosion,
+            improving soil fertility, collecting rainwater and using available
+            water efficiently. These practices help farmers maintain productive
+            land and become more resilient to droughts and changing rainfall
+            patterns.
+        </p>
+
+        <p>
+            Goreale Agricultural Innovators promotes practical conservation
+            methods that can be adapted to different farming systems, including
+            smallholder farms and dryland areas.
+        </p>
+    </div>
+</section>
+
+<!-- KEY AREAS -->
+<section class="content-section">
+    <h2 class="section-title">Our Key Areas of Focus</h2>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>1. Soil Conservation</h3>
+            <p>
+                Protecting topsoil from erosion, degradation and nutrient loss
+                through good land management and protective ground cover.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>2. Water Harvesting</h3>
+            <p>
+                Collecting and storing rainwater for crop irrigation, livestock
+                watering and other productive agricultural uses.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>3. Soil Fertility Management</h3>
+            <p>
+                Improving soil nutrients and organic matter through compost,
+                manure, crop rotation and appropriate fertiliser use.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>4. Erosion Control</h3>
+            <p>
+                Reducing the movement of soil by water and wind using terraces,
+                grass strips, contour farming and vegetation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>5. Efficient Irrigation</h3>
+            <p>
+                Promoting water-saving irrigation systems and careful scheduling
+                to reduce water losses and improve crop production.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>6. Watershed Protection</h3>
+            <p>
+                Protecting catchments, riverbanks, wetlands and other natural
+                water sources through responsible land management.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SOIL HEALTH -->
+<section>
+    <h2 class="section-title">Understanding Soil Health</h2>
+
+    <p>
+        Soil health refers to the ability of soil to function as a living
+        ecosystem that supports plants, animals and agricultural production.
+        Good soil contains organic matter, nutrients, air, water and beneficial
+        organisms.
+    </p>
+
+    <div class="content-grid">
+        <div class="card">
+            <h3>Soil Organic Matter</h3>
+            <p>
+                Compost, farmyard manure and decomposed crop residues improve
+                soil structure, nutrient availability and water retention.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Soil Testing</h3>
+            <p>
+                Soil testing helps farmers understand nutrient levels and soil
+                conditions before choosing fertilisers or soil amendments.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Crop Rotation</h3>
+            <p>
+                Rotating crops, including suitable legumes, can improve soil
+                fertility, diversify production and help manage certain pests
+                and diseases.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Mulching</h3>
+            <p>
+                Covering soil with crop residues, dry grass or suitable organic
+                materials reduces evaporation and protects the soil surface.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Cover Crops</h3>
+            <p>
+                Growing suitable plants between main cropping seasons protects
+                bare soil, improves ground cover and can contribute organic
+                matter.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Minimum Soil Disturbance</h3>
+            <p>
+                Reducing unnecessary tillage can help maintain soil structure
+                and reduce exposure to erosion when combined with appropriate
+                cover and crop rotation.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- EROSION -->
+<section class="content-section">
+    <h2 class="section-title">Soil Erosion and Its Control</h2>
+
+    <p>
+        Soil erosion occurs when topsoil is removed by water, wind or human
+        activities. It reduces land productivity, damages farm structures
+        and can contribute to sedimentation in rivers and water reservoirs.
+    </p>
+
+    <h3>Common Types of Soil Erosion</h3>
+    <div class="content-grid">
+        <div class="card">
+            <h3>Sheet Erosion</h3>
+            <p>
+                The gradual removal of a thin layer of soil across a wide
+                area by surface runoff.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Rill Erosion</h3>
+            <p>
+                Small channels formed when flowing rainwater concentrates
+                and carries soil downhill.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Gully Erosion</h3>
+            <p>
+                Large channels develop when runoff repeatedly flows through
+                the same area, removing significant amounts of soil.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Wind Erosion</h3>
+            <p>
+                Strong winds carry away loose, dry soil, especially where
+                land is bare and vegetation is limited.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Riverbank Erosion</h3>
+            <p>
+                Flowing water gradually removes soil from riverbanks,
+                especially where natural vegetation has been cleared.
+            </p>
+        </div>
+    </div>
+
+    <h3>Practical Soil Erosion Control Methods</h3>
+    <ul>
+        <li>Plant crops along contour lines rather than directly downhill.</li>
+        <li>Establish terraces on suitable sloping land.</li>
+        <li>Maintain grass strips and vegetation barriers.</li>
+        <li>Use mulch and crop residues to protect bare soil.</li>
+        <li>Plant trees and suitable cover crops.</li>
+        <li>Protect riverbanks and avoid cultivation too close to waterways.</li>
+        <li>Control livestock grazing on vulnerable land.</li>
+        <li>Maintain drainage channels and erosion-control structures.</li>
+    </ul>
+
+    <div class="highlight">
+        <h3>Important Practice</h3>
+        <p>
+            Conservation structures must be designed according to the slope,
+            soil type and expected water flow. Poorly designed drains or
+            terraces can redirect runoff and cause erosion elsewhere.
+            Seek advice from an agricultural or soil conservation officer
+            before constructing major structures.
+        </p>
+    </div>
+</section>
+
+<!-- WATER HARVESTING -->
+<section>
+    <h2 class="section-title">Rainwater Harvesting and Storage</h2>
+
+    <p>
+        Rainwater harvesting involves collecting and storing rainfall or
+        surface runoff for future use. It is particularly valuable in areas
+        where rainfall is seasonal or unreliable.
+    </p>
+
+    <div class="content-grid">
+        <div class="card">
+            <h3>Roof Catchment</h3>
+            <p>
+                Collecting rainwater from roofs through gutters and directing
+                it into properly covered storage tanks.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Water Pans and Farm Ponds</h3>
+            <p>
+                Constructing suitable storage structures to collect runoff
+                for livestock, irrigation and other farm activities.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Earth Dams</h3>
+            <p>
+                Storing surface runoff in appropriately designed earth
+                reservoirs for use during dry periods.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Contour Bunds</h3>
+            <p>
+                Building barriers across slopes to slow runoff and encourage
+                more water to enter the soil.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Zai Pits and Planting Pits</h3>
+            <p>
+                Small planting basins that collect runoff around crops and
+                can be improved with suitable organic matter.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Rock Catchment</h3>
+            <p>
+                Collecting runoff from suitable rock surfaces and directing
+                it into storage facilities.
+            </p>
+        </div>
+    </div>
+
+    <h3>Safe Water Storage</h3>
+    <ul>
+        <li>Use suitable, clean and covered storage tanks.</li>
+        <li>Install screens to reduce entry of leaves and debris.</li>
+        <li>Provide safe overflow channels.</li>
+        <li>Inspect storage structures for leaks and damage.</li>
+        <li>Prevent livestock and other contamination around water sources.</li>
+        <li>Treat harvested water appropriately if it will be used for drinking.</li>
+    </ul>
+</section>
+
+<!-- IRRIGATION -->
+<section class="content-section">
+    <h2 class="section-title">Efficient Irrigation Management</h2>
+
+    <p>
+        Irrigation supports crop production when rainfall is insufficient.
+        However, water must be applied carefully to avoid unnecessary losses,
+        waterlogging, nutrient leaching and soil salinity.
+    </p>
+
+    <div class="content-grid">
+        <div class="card">
+            <h3>Drip Irrigation</h3>
+            <p>
+                Delivers water slowly near plant roots through pipes and
+                emitters. It is useful for vegetables, fruit trees and
+                other crops when properly maintained.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Sprinkler Irrigation</h3>
+            <p>
+                Distributes water through sprinklers. Proper design and
+                scheduling help reduce losses from wind and evaporation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Surface Irrigation</h3>
+            <p>
+                Uses channels or furrows to move water across agricultural
+                land. Good land levelling and flow management are important.
+            </p>
+        </div>
+    </div>
+
+    <h3>Good Irrigation Practices</h3>
+    <ul>
+        <li>Choose an irrigation method suitable for the crop and soil.</li>
+        <li>Water according to crop needs and soil moisture conditions.</li>
+        <li>Prefer cooler parts of the day where practical.</li>
+        <li>Repair leaking pipes, valves and irrigation equipment.</li>
+        <li>Use mulch to reduce evaporation around crops.</li>
+        <li>Monitor soil salinity where irrigation water quality is a concern.</li>
+        <li>Avoid over-irrigation and unnecessary waterlogging.</li>
+    </ul>
+</section>
+
+<!-- DRYLAND AGRICULTURE -->
+<section>
+    <h2 class="section-title">Soil and Water Conservation in Dryland Areas</h2>
+
+    <p>
+        Dryland agriculture faces challenges such as irregular rainfall,
+        high evaporation, water shortages, land degradation and drought.
+        Farmers in northern Kenya, including Garissa County, can benefit
+        from conservation methods that capture rainfall and protect soil
+        moisture.
+    </p>
+
+    <div class="highlight">
+        <h3>Practical Options for Garissa and Northern Kenya</h3>
+        <ul>
+            <li>Harvest rainwater from roofs and suitable catchment surfaces.</li>
+            <li>Use water pans and storage tanks where technically suitable.</li>
+            <li>Apply mulch to reduce evaporation from cultivated soil.</li>
+            <li>Establish planting basins and suitable micro-catchments.</li>
+            <li>Grow drought-tolerant crops suited to local conditions.</li>
+            <li>Plant suitable indigenous trees and drought-adapted vegetation.</li>
+            <li>Protect grazing land through planned grazing and resting periods.</li>
+            <li>Maintain water points and manage livestock access carefully.</li>
+        </ul>
+    </div>
+
+    <p>
+        Conservation methods should be selected according to local soil,
+        rainfall, terrain, water availability and community needs. A method
+        suitable for one farm may not be suitable for another.
+    </p>
+</section>
+
+<!-- BENEFITS -->
+<section class="content-section">
+    <h2 class="section-title">Benefits of Soil and Water Conservation</h2>
+
+    <div class="content-grid">
+        <div class="card">
+            <h3>Improved Soil Fertility</h3>
+            <p>
+                Protects valuable topsoil and supports better nutrient
+                management and long-term land productivity.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Better Water Availability</h3>
+            <p>
+                Increases the amount of water retained in soil and makes
+                harvested water available during dry periods.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Higher Farm Resilience</h3>
+            <p>
+                Helps farming systems cope with drought, heavy rainfall
+                and changing weather conditions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Reduced Land Degradation</h3>
+            <p>
+                Limits soil erosion, protects vegetation and reduces
+                damage to agricultural land.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Improved Food Security</h3>
+            <p>
+                Supports more reliable crop and livestock production
+                through responsible resource management.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Environmental Protection</h3>
+            <p>
+                Helps protect rivers, wetlands, catchments and other
+                natural resources from degradation.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- IMPLEMENTATION -->
+<section>
+    <h2 class="section-title">Our Approach to Conservation</h2>
+
+    <p>
+        Goreale Agricultural Innovators encourages practical, affordable
+        and community-supported solutions. Successful conservation requires
+        planning, local knowledge, technical guidance and regular maintenance.
+    </p>
+
+    <div class="content-grid">
+        <div class="card">
+            <h3>1. Assess the Land</h3>
+            <p>
+                Understand soil type, slope, erosion risks, vegetation
+                cover and available water sources.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>2. Identify Priorities</h3>
+            <p>
+                Identify the main challenges affecting the farm or
+                community and select suitable conservation measures.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>3. Plan and Implement</h3>
+            <p>
+                Work with farmers and technical officers to introduce
+                appropriate soil and water conservation practices.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>4. Train Farmers</h3>
+            <p>
+                Share knowledge through demonstrations, field activities
+                and practical agricultural education.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>5. Monitor Progress</h3>
+            <p>
+                Check soil condition, water availability, erosion control
+                and the performance of conservation structures.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>6. Improve Continuously</h3>
+            <p>
+                Maintain structures, learn from results and adjust
+                conservation methods as conditions change.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- COMMITMENT -->
+<section class="content-section">
+    <h2 class="section-title">Our Commitment</h2>
+
+    <p>
+        Goreale Agricultural Innovators is committed to promoting responsible
+        soil management, efficient water use, sustainable land practices and
+        agricultural innovation.
+    </p>
+
+    <p>
+        We believe that protecting soil and water today creates better
+        opportunities for farmers, communities and future generations.
+        Through research, education, practical demonstrations and collaboration,
+        we aim to contribute to productive and environmentally responsible
+        agriculture.
+    </p>
+</section>
+
+<!-- RESOURCES -->
+<section class="resource-links">
+    <h2 class="section-title">Further Learning and Agricultural Resources</h2>
+
+    <p>Explore these resources for additional technical information:</p>
+
+    <ul>
+        <li>
+            <a href="https://kilimo.go.ke/" target="_blank" rel="noopener">
+                Kenya Ministry of Agriculture
+            </a>
+            – Agricultural guidance and extension resources.
+        </li>
+
+        <li>
+            <a href="https://www.kalro.org/" target="_blank" rel="noopener">
+                Kenya Agricultural and Livestock Research Organization (KALRO)
+            </a>
+            – Agricultural research and practical farming information.
+        </li>
+
+        <li>
+            <a href="https://www.fao.org/" target="_blank" rel="noopener">
+                Food and Agriculture Organization (FAO)
+            </a>
+            – Sustainable agriculture, land and water management.
+        </li>
+
+        <li>
+            <a href="https://keep.kalro.org/" target="_blank" rel="noopener">
+                KALRO Digital Agriculture Platform
+            </a>
+            – Agricultural advisory and good agricultural practices.
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <h3>Goreale Agricultural Innovators</h3>
+    <p>
+        Advancing agriculture through knowledge, research and innovation.
+    </p>
+    <p>
+        &copy; 2026 Goreale Agricultural Innovators. All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,1122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Security & Agribusiness | Goreale Agricultural Innovators</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --ivory: #F5F5DC;
+    --forest-green: #355E3B;
+    --earth-brown: #8B5A2B;
+    --charcoal-grey: #454545;
+    --olive-green: #6B8E23;
+    --lavender: #E6DDF2;
+    --beet: #e8dce0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    background: var(--ivory);
+    color: var(--charcoal-grey);
+    font-family: Arial, sans-serif;
+    font-size: .88rem;
+    line-height: 1.8;
+}
+
+header {
+    background: var(--ivory);
+    padding: 1rem 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(53,94,59,.15);
+}
+
+.logo {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 900;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--forest-green);
+    font-size: .78rem;
+    font-weight: bold;
+}
+
+nav a:hover { color: var(--earth-brown); }
+
+.hero {
+    min-height: 24rem;
+    background:
+        linear-gradient(rgba(15,40,20,.72), rgba(15,40,20,.72)),
+        url("images/food-security.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 4rem 8%;
+    color: white;
+}
+
+.hero-content { max-width: 700px; }
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    line-height: 1.25;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: .95rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--earth-brown);
+    color: white;
+    text-decoration: none;
+    padding: .7rem 1.3rem;
+    border-radius: 4px;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.btn:hover { background: var(--olive-green); }
+
+section { padding: 3rem 8%; }
+
+.section-title {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.45rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.section-intro {
+    max-width: 850px;
+    margin-bottom: 1.8rem;
+}
+
+.content-section { background: rgba(255,255,255,.35); }
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.card {
+    padding: 1.3rem;
+    border-radius: 7px;
+    border: 1px solid rgba(53,94,59,.12);
+}
+
+.card:nth-child(odd) { background: var(--beet); }
+.card:nth-child(even) { background: var(--lavender); }
+
+.card h3 {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: .95rem;
+    font-weight: 800;
+    margin-bottom: .6rem;
+}
+
+.card p, .card li { font-size: .82rem; }
+
+.content-section h3,
+section > h3 {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 1.3rem 0 .5rem;
+}
+
+section p { margin-bottom: .8rem; }
+
+section ul, section ol {
+    padding-left: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    background: var(--beet);
+    border-left: 4px solid var(--earth-brown);
+    padding: 1.2rem;
+    margin: 1.3rem 0;
+    border-radius: 4px;
+}
+
+.highlight h3 { margin-top: 0; }
+
+.resource-links a {
+    color: var(--forest-green);
+    font-weight: bold;
+}
+
+footer {
+    background: var(--forest-green);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: .78rem;
+}
+
+footer h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+@media(max-width: 900px) {
+    .content-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media(max-width: 600px) {
+    header { padding: 1rem 5%; }
+    nav { gap: .8rem; }
+    .hero { min-height: 21rem; padding: 3rem 6%; }
+    section { padding: 2.3rem 6%; }
+    .content-grid { grid-template-columns: 1fr; }
+    .section-title { font-size: 1.25rem; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Goreale Agricultural Innovators</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#areas">Our Areas</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Food Security & Agribusiness</h1>
+        <p>
+            Building stronger food systems through sustainable production,
+            nutrition, agricultural enterprise, market development and
+            responsible management of food resources.
+        </p>
+        <a href="#knowledge" class="btn">Explore Knowledge</a>
+    </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section id="knowledge">
+    <h2 class="section-title">Creating a Food-Secure Future</h2>
+
+    <div class="section-intro">
+        <p>
+            Food security exists when all people, at all times, have physical
+            and economic access to sufficient, safe and nutritious food that
+            meets their dietary needs and food preferences for an active
+            and healthy life.
+        </p>
+
+        <p>
+            Achieving food security requires more than increasing agricultural
+            production. It also involves improving food distribution, household
+            incomes, nutrition, storage, food safety, market access and the
+            ability of communities to withstand droughts and other disruptions.
+        </p>
+
+        <p>
+            Agribusiness connects agricultural production with processing,
+            transportation, marketing, distribution and consumption. It creates
+            opportunities for farmers, entrepreneurs, traders, processors and
+            other participants in the agricultural value chain.
+        </p>
+
+        <p>
+            Goreale Agricultural Innovators promotes sustainable food systems
+            that support farmers, strengthen local enterprises and improve
+            access to nutritious food.
+        </p>
+    </div>
+</section>
+
+<!-- FOUR PILLARS -->
+<section class="content-section">
+    <h2 class="section-title">The Four Pillars of Food Security</h2>
+
+    <p>
+        Food security is commonly understood through four connected pillars.
+        All four are important for individuals, households and communities.
+    </p>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>1. Food Availability</h3>
+            <p>
+                Food must be physically available through local production,
+                livestock, fisheries, storage, trade and distribution.
+            </p>
+            <ul>
+                <li>Increasing crop production.</li>
+                <li>Supporting livestock farming.</li>
+                <li>Improving food storage.</li>
+                <li>Reducing post-harvest losses.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>2. Food Access</h3>
+            <p>
+                People must be able to obtain food physically and economically.
+                Income, employment, transport, markets and food prices all
+                influence access.
+            </p>
+            <ul>
+                <li>Creating agricultural employment.</li>
+                <li>Improving household incomes.</li>
+                <li>Supporting affordable food markets.</li>
+                <li>Strengthening market connections.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>3. Food Utilization</h3>
+            <p>
+                Food should be safe, nutritious and properly prepared.
+                Good nutrition, clean water, sanitation and health practices
+                support effective use of food by the body.
+            </p>
+            <ul>
+                <li>Promoting dietary diversity.</li>
+                <li>Improving food hygiene.</li>
+                <li>Encouraging safe food preparation.</li>
+                <li>Supporting nutrition education.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>4. Food Stability</h3>
+            <p>
+                People should have reliable access to food throughout the year,
+                including during droughts, economic difficulties and other
+                disruptions.
+            </p>
+            <ul>
+                <li>Strengthening food reserves.</li>
+                <li>Promoting climate-resilient farming.</li>
+                <li>Diversifying household income.</li>
+                <li>Improving early-warning systems.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOD PRODUCTION -->
+<section>
+    <h2 class="section-title">Sustainable Food Production</h2>
+
+    <p>
+        Sustainable food production increases the supply of food while
+        protecting natural resources and maintaining the ability of future
+        generations to produce food.
+    </p>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>Crop Production</h3>
+            <p>
+                Growing cereals, legumes, vegetables, fruits and other
+                suitable crops to provide food and income.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Livestock Production</h3>
+            <p>
+                Producing milk, meat, eggs and other livestock products
+                through responsible animal management.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Fish Farming</h3>
+            <p>
+                Developing suitable aquaculture systems to provide fish
+                as a source of food, nutrition and income.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Horticulture</h3>
+            <p>
+                Producing vegetables, fruits and other high-value crops
+                for household consumption and commercial markets.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Agroforestry</h3>
+            <p>
+                Integrating suitable trees with crops and livestock to
+                support food production, soil protection and livelihoods.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Integrated Farming</h3>
+            <p>
+                Combining crops, livestock and other farm enterprises
+                to make better use of available resources.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- NUTRITION -->
+<section class="content-section">
+    <h2 class="section-title">Food Diversity and Nutrition</h2>
+
+    <p>
+        Food security is not only about having enough food. It also involves
+        having access to a variety of safe and nutritious foods that support
+        healthy growth, development and wellbeing.
+    </p>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>Cereals and Staples</h3>
+            <p>
+                Foods such as maize, millet, sorghum, rice and other grains
+                provide energy and form part of many diets.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Legumes and Pulses</h3>
+            <p>
+                Beans, cowpeas, green grams, lentils and peas provide
+                plant protein, fibre and important nutrients.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Vegetables</h3>
+            <p>
+                Leafy vegetables and other vegetables provide vitamins,
+                minerals and dietary fibre.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Fruits</h3>
+            <p>
+                Fruits contribute vitamins, minerals, fibre and variety
+                to household diets.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Animal-Sourced Foods</h3>
+            <p>
+                Milk, eggs, meat and fish can provide protein and
+                important micronutrients.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Healthy Oils and Fats</h3>
+            <p>
+                Appropriate amounts of healthy oils and fats contribute
+                energy and support the absorption of certain vitamins.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="highlight">
+        <h3>Promoting Household Nutrition</h3>
+        <p>
+            Encourage diverse meals using locally available foods.
+            Safe preparation, clean drinking water, proper food storage
+            and good hygiene are important parts of healthy nutrition.
+        </p>
+    </div>
+</section>
+
+<!-- FOOD STORAGE -->
+<section>
+    <h2 class="section-title">Food Storage and Post-Harvest Management</h2>
+
+    <p>
+        Post-harvest management includes all activities carried out after
+        harvesting to protect food quality, reduce losses and prepare
+        agricultural products for consumption or sale.
+    </p>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>Proper Grain Drying</h3>
+            <p>
+                Drying grains to appropriate moisture levels helps reduce
+                spoilage and the risk of mould during storage.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Safe Grain Storage</h3>
+            <p>
+                Clean, dry and suitable storage facilities help protect
+                grains from moisture, pests and contamination.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Cold Storage</h3>
+            <p>
+                Refrigeration helps preserve perishable products such as
+                milk, meat, fruits and vegetables.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Food Processing</h3>
+            <p>
+                Processing methods such as milling, drying, pasteurization
+                and packaging can improve product usability and value.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Packaging</h3>
+            <p>
+                Appropriate packaging protects food during handling,
+                transportation and marketing.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Transport and Distribution</h3>
+            <p>
+                Efficient transportation helps move food from farms
+                and processing facilities to consumers and markets.
+            </p>
+        </div>
+
+    </div>
+
+    <h3>Reducing Food Losses</h3>
+    <ul>
+        <li>Harvest crops at the appropriate maturity stage.</li>
+        <li>Handle agricultural products carefully.</li>
+        <li>Dry grains properly before storage.</li>
+        <li>Use suitable storage containers and facilities.</li>
+        <li>Inspect stored products regularly for pests and damage.</li>
+        <li>Maintain the cold chain for perishable foods.</li>
+        <li>Improve transport, packaging and market coordination.</li>
+    </ul>
+</section>
+
+<!-- FOOD SAFETY -->
+<section class="content-section">
+    <h2 class="section-title">Food Safety and Quality Management</h2>
+
+    <p>
+        Food safety protects consumers from contamination and foodborne
+        illness. Every stage of the food chain, from production to
+        consumption, requires proper hygiene and responsible handling.
+    </p>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>Farm Hygiene</h3>
+            <p>
+                Maintain clean production areas, use safe water and
+                follow appropriate hygiene practices.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Safe Chemical Use</h3>
+            <p>
+                Follow approved product labels, application instructions,
+                protective measures and required waiting periods.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Clean Processing</h3>
+            <p>
+                Clean and maintain equipment, utensils and processing
+                areas to reduce contamination.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Safe Water</h3>
+            <p>
+                Use water that is suitable for food production,
+                processing, cleaning and drinking.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Proper Food Handling</h3>
+            <p>
+                Separate raw and ready-to-eat foods and maintain
+                appropriate storage temperatures.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Quality Standards</h3>
+            <p>
+                Follow relevant food safety requirements and quality
+                standards when producing and selling food.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- AGRIBUSINESS -->
+<section>
+    <h2 class="section-title">Agribusiness and Agricultural Enterprise</h2>
+
+    <p>
+        Agribusiness involves commercial activities connected to agriculture.
+        It includes supplying farm inputs, producing crops and livestock,
+        processing food, transporting products and selling agricultural goods.
+    </p>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>Crop Farming Business</h3>
+            <p>
+                Growing and selling cereals, vegetables, fruits and
+                other agricultural products.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Livestock Business</h3>
+            <p>
+                Producing and marketing milk, meat, eggs, breeding
+                animals and other livestock products.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Agro-Processing</h3>
+            <p>
+                Transforming agricultural raw materials into products
+                with improved quality, shelf life or market value.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Farm Input Supply</h3>
+            <p>
+                Selling seeds, fertilisers, animal feeds, tools,
+                equipment and other agricultural inputs.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Agricultural Transport</h3>
+            <p>
+                Providing services for moving agricultural inputs
+                and products between farms, markets and processors.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Agri-Technology Services</h3>
+            <p>
+                Offering digital farming services, irrigation solutions,
+                equipment hire and agricultural information.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- VALUE CHAIN -->
+<section class="content-section">
+    <h2 class="section-title">Agricultural Value Chains</h2>
+
+    <p>
+        An agricultural value chain describes the activities and people
+        involved in moving a product from production to the final consumer.
+        Improving coordination between participants can increase efficiency
+        and create more value.
+    </p>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>1. Input Supply</h3>
+            <p>
+                Seeds, fertilisers, animal feeds, equipment and other
+                materials needed for agricultural production.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>2. Production</h3>
+            <p>
+                Farmers grow crops, raise livestock and produce
+                agricultural raw materials.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>3. Aggregation</h3>
+            <p>
+                Agricultural products are collected from different
+                producers for bulk handling and distribution.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>4. Processing</h3>
+            <p>
+                Products are cleaned, graded, processed or transformed
+                into other marketable goods.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>5. Distribution</h3>
+            <p>
+                Products are transported and supplied to wholesalers,
+                retailers and other buyers.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>6. Consumption</h3>
+            <p>
+                Consumers purchase, prepare and use agricultural
+                products as food or other goods.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- MARKETING -->
+<section>
+    <h2 class="section-title">Agricultural Marketing and Market Access</h2>
+
+    <p>
+        Agricultural marketing connects producers with customers and helps
+        farmers receive value for their products. Understanding markets
+        allows farmers to make informed production and business decisions.
+    </p>
+
+    <h3>Important Marketing Practices</h3>
+    <ul>
+        <li>Identify potential buyers before production where possible.</li>
+        <li>Understand customer preferences and product requirements.</li>
+        <li>Monitor market prices and seasonal demand.</li>
+        <li>Grade and package products appropriately.</li>
+        <li>Maintain reliable product quality and supply.</li>
+        <li>Use cooperatives and producer groups where beneficial.</li>
+        <li>Explore digital platforms and direct marketing opportunities.</li>
+        <li>Keep accurate sales and business records.</li>
+    </ul>
+
+    <div class="highlight">
+        <h3>Adding Value to Agricultural Products</h3>
+        <p>
+            Value addition can include cleaning, sorting, grading,
+            drying, milling, packaging, processing and branding.
+            These activities may create additional business opportunities
+            when there is sufficient demand and the costs are manageable.
+        </p>
+    </div>
+</section>
+
+<!-- FOOD SECURITY DRYLAND -->
+<section class="content-section">
+    <h2 class="section-title">Food Security in Dryland Areas</h2>
+
+    <p>
+        Dryland communities often depend on rainfall-sensitive crop production
+        and livestock systems. Irregular rainfall, drought, high temperatures
+        and water shortages can affect agricultural production and household
+        food supplies.
+    </p>
+
+    <p>
+        Sustainable approaches should combine crop production, livestock
+        management, water conservation, food storage, income diversification
+        and reliable market access.
+    </p>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>Drought-Adapted Crops</h3>
+            <p>
+                Promote suitable crops such as sorghum, millet and
+                drought-tolerant varieties of other locally appropriate crops.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Livestock Resilience</h3>
+            <p>
+                Improve livestock feeding, animal health, water access
+                and grazing management.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Water Harvesting</h3>
+            <p>
+                Collect and store rainwater to support farming,
+                livestock and household needs.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Food Storage</h3>
+            <p>
+                Improve grain storage and food preservation to support
+                household supplies beyond the harvest season.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Income Diversification</h3>
+            <p>
+                Support additional income opportunities through
+                agribusiness, livestock products and agricultural services.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Market Connections</h3>
+            <p>
+                Strengthen links between farmers, livestock producers,
+                traders, processors and consumers.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="highlight">
+        <h3>Focus on Garissa and Northern Kenya</h3>
+        <p>
+            Practical food security activities in Garissa and other
+            dryland areas can include:
+        </p>
+        <ul>
+            <li>Promoting suitable drought-adapted crops.</li>
+            <li>Supporting pastoral and agro-pastoral livelihoods.</li>
+            <li>Improving livestock health and fodder availability.</li>
+            <li>Developing rainwater harvesting and storage systems.</li>
+            <li>Encouraging household food gardens where water permits.</li>
+            <li>Improving milk handling, storage and marketing.</li>
+            <li>Supporting small agricultural businesses and cooperatives.</li>
+            <li>Promoting early warning and drought preparedness.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- FOOD SYSTEM CHALLENGES -->
+<section>
+    <h2 class="section-title">Challenges Affecting Food Security</h2>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>Climate Change</h3>
+            <p>
+                Droughts, floods and changing rainfall patterns can
+                disrupt crop and livestock production.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>High Production Costs</h3>
+            <p>
+                Expensive inputs, labour, energy and transportation
+                can affect farmers' profitability.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Post-Harvest Losses</h3>
+            <p>
+                Poor storage, handling and transport can reduce the
+                quantity and quality of available food.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Limited Market Access</h3>
+            <p>
+                Poor infrastructure and weak market connections
+                can prevent farmers from selling products efficiently.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Water Shortages</h3>
+            <p>
+                Insufficient water can limit crop production,
+                livestock survival and household food gardens.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Limited Finance</h3>
+            <p>
+                Lack of affordable financing can restrict investment
+                in farming, storage and processing.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Pests and Diseases</h3>
+            <p>
+                Crop pests, livestock diseases and food contamination
+                can threaten production and food quality.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Food Price Changes</h3>
+            <p>
+                Rising or unstable food prices can reduce household
+                purchasing power and access to nutritious food.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Limited Agricultural Information</h3>
+            <p>
+                Inadequate access to training and reliable information
+                can affect farm productivity and business decisions.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SOLUTIONS -->
+<section class="content-section">
+    <h2 class="section-title">Strategies for Improving Food Security</h2>
+
+    <ol>
+        <li>
+            <strong>Increase sustainable production:</strong>
+            Improve crop and livestock productivity using appropriate
+            agricultural practices.
+        </li>
+        <li>
+            <strong>Protect natural resources:</strong>
+            Improve soil health, water management and environmental conservation.
+        </li>
+        <li>
+            <strong>Strengthen food storage:</strong>
+            Reduce post-harvest losses through better handling and storage.
+        </li>
+        <li>
+            <strong>Improve household incomes:</strong>
+            Support agricultural businesses, employment and market opportunities.
+        </li>
+        <li>
+            <strong>Promote nutrition education:</strong>
+            Encourage diverse diets and safe food preparation.
+        </li>
+        <li>
+            <strong>Develop market infrastructure:</strong>
+            Improve transport, storage, processing and distribution systems.
+        </li>
+        <li>
+            <strong>Prepare for emergencies:</strong>
+            Strengthen early warning, risk management and community preparedness.
+        </li>
+        <li>
+            <strong>Encourage partnerships:</strong>
+            Connect farmers with researchers, government institutions,
+            businesses and development organisations.
+        </li>
+    </ol>
+</section>
+
+<!-- OUR APPROACH -->
+<section>
+    <h2 class="section-title">Our Approach to Food Security and Agribusiness</h2>
+
+    <div class="content-grid">
+
+        <div class="card">
+            <h3>Farmer Education</h3>
+            <p>
+                Sharing knowledge on sustainable production, food
+                handling, nutrition and agricultural business management.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Research and Innovation</h3>
+            <p>
+                Encouraging practical research into improved food
+                production and agricultural value chains.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Business Development</h3>
+            <p>
+                Supporting agricultural entrepreneurship, business
+                planning and value addition.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Market Development</h3>
+            <p>
+                Encouraging stronger connections between farmers,
+                traders, processors and consumers.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Community Participation</h3>
+            <p>
+                Working with communities to identify local food
+                production and livelihood priorities.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Partnerships</h3>
+            <p>
+                Promoting collaboration with agricultural institutions,
+                businesses, research organisations and development partners.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- OUR COMMITMENT -->
+<section class="content-section">
+    <h2 class="section-title">Our Commitment</h2>
+
+    <p>
+        Goreale Agricultural Innovators is committed to supporting stronger
+        agricultural systems that improve food availability, household
+        livelihoods, nutrition and economic opportunities.
+    </p>
+
+    <p>
+        We believe that sustainable agriculture and successful agribusiness
+        are important contributors to food security. Through knowledge,
+        innovation, research, farmer education and partnerships, we aim
+        to encourage practical solutions that benefit farming communities.
+    </p>
+
+    <p>
+        Our goal is to contribute to a future where farmers are productive,
+        agricultural enterprises are competitive and communities have
+        reliable access to safe and nutritious food.
+    </p>
+</section>
+
+<!-- RESOURCES -->
+<section class="resource-links">
+    <h2 class="section-title">Food Security and Agribusiness Resources</h2>
+
+    <p>Explore these organisations for further agricultural information:</p>
+
+    <ul>
+        <li>
+            <a href="https://www.fao.org/" target="_blank" rel="noopener">
+                Food and Agriculture Organization (FAO)
+            </a>
+            – Food security, nutrition and sustainable agriculture.
+        </li>
+
+        <li>
+            <a href="https://kilimo.go.ke/" target="_blank" rel="noopener">
+                Kenya Ministry of Agriculture
+            </a>
+            – Agricultural policies, programmes and information.
+        </li>
+
+        <li>
+            <a href="https://www.kalro.org/" target="_blank" rel="noopener">
+                Kenya Agricultural and Livestock Research Organization (KALRO)
+            </a>
+            – Crop, livestock and agricultural research.
+        </li>
+
+        <li>
+            <a href="https://www.knbs.or.ke/" target="_blank" rel="noopener">
+                Kenya National Bureau of Statistics (KNBS)
+            </a>
+            – National statistics and food-related information.
+        </li>
+
+        <li>
+            <a href="https://www.worldbank.org/en/topic/agriculture" target="_blank" rel="noopener">
+                World Bank Agriculture
+            </a>
+            – Agricultural development and food systems.
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <h3>Goreale Agricultural Innovators</h3>
+    <p>
+        Advancing agriculture through knowledge, research and innovation.
+    </p>
+    <p>
+        &copy; 2026 Goreale Agricultural Innovators. All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>

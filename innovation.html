@@ -1,0 +1,2088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#174D2A">
+
+<meta name="description" content="Discover agricultural innovation at GOREALE Agricultural Innovators. Promoting climate-smart agriculture, agricultural technology, research, sustainable farming and community-led solutions in northeastern Kenya.">
+
+<title>Innovation | GOREALE Agricultural Innovators</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<style>
+
+/* ==========================================
+   1. CORPORATE COLOUR PALETTE
+========================================== */
+
+:root {
+
+    --ivory: #F5F5DC;
+    --forest: #174D2A;
+    --earth: #8B5A2B;
+    --charcoal: #454545;
+    --gold: #D9A441;
+
+    --body-size: 0.76rem;
+
+}
+
+
+/* ==========================================
+   2. GLOBAL STYLES
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-size);
+    line-height: 1.8;
+    background: var(--ivory);
+    color: var(--charcoal);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* ==========================================
+   3. WEBSITE HEADER
+========================================== */
+
+.site-header {
+
+    width: 100%;
+
+    background: var(--forest);
+
+    padding: 0.7rem 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    border-bottom: 3px solid var(--gold);
+
+}
+
+
+/* LOGO */
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+
+    width: 155px;
+    max-height: auto;
+
+    object-fit: contain;
+    display: block;
+
+}
+
+
+/* HAMBURGER */
+
+.menu-toggle {
+
+    width: 42px;
+    height: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+
+    background: transparent;
+
+    cursor: pointer;
+
+}
+
+.menu-toggle span {
+
+    display: block;
+
+    width: 21px;
+    height: 2px;
+
+    background: var(--gold);
+
+    transition: 0.3s;
+
+}
+
+
+/* NAVIGATION */
+
+.main-nav {
+
+    display: none;
+
+    position: absolute;
+
+    top: 100%;
+    right: 0;
+
+    width: 100%;
+
+    background: var(--forest);
+
+    padding: 1.2rem 6% 1.5rem;
+
+    flex-direction: column;
+
+    gap: 0.9rem;
+
+    border-bottom: 2px solid var(--gold);
+
+}
+
+.main-nav.active {
+    display: flex;
+}
+
+.main-nav a {
+
+    color: var(--ivory);
+
+    font-size: 0.72rem;
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--gold);
+}
+
+
+/* ==========================================
+   4. INNOVATION HERO
+========================================== */
+
+.innovation-hero {
+
+    min-height: 520px;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(15, 53, 29, 0.96),
+            rgba(23, 77, 42, 0.84),
+            rgba(69, 69, 69, 0.78)
+        );
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 5rem 7%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-bottom: 5px solid var(--gold);
+
+}
+
+
+/* DECORATIVE CIRCLES */
+
+.innovation-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border: 1px solid rgba(217,164,65,0.25);
+
+    border-radius: 50%;
+
+    top: -160px;
+    left: -100px;
+
+}
+
+.innovation-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    border: 1px solid rgba(217,164,65,0.18);
+
+    border-radius: 50%;
+
+    bottom: -250px;
+    right: -120px;
+
+}
+
+
+.hero-content {
+
+    position: relative;
+    z-index: 2;
+
+    max-width: 850px;
+
+}
+
+.hero-label {
+
+    color: var(--gold);
+
+    font-size: 0.68rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.18rem;
+
+    text-transform: uppercase;
+
+}
+
+.hero-content h1 {
+
+    color: var(--ivory);
+
+    font-size: clamp(2rem, 5vw, 3.4rem);
+
+    line-height: 1.3;
+
+    margin: 1rem 0;
+
+    font-weight: 800;
+
+}
+
+.hero-content h1 span {
+    color: var(--gold);
+}
+
+.hero-content p {
+
+    max-width: 720px;
+
+    margin: auto;
+
+    color: var(--ivory);
+
+    font-size: 0.83rem;
+
+    line-height: 2;
+
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 1rem;
+
+    margin-top: 2rem;
+
+}
+
+.hero-button {
+
+    display: inline-block;
+
+    padding: 0.85rem 1.5rem;
+
+    border-radius: 4px;
+
+    font-size: 0.7rem;
+
+    font-weight: 800;
+
+    transition: 0.3s;
+
+}
+
+.hero-button.primary {
+
+    background: var(--gold);
+
+    color: var(--forest);
+
+    border: 2px solid var(--gold);
+
+}
+
+.hero-button.secondary {
+
+    background: transparent;
+
+    color: var(--ivory);
+
+    border: 2px solid var(--gold);
+
+}
+
+.hero-button:hover {
+
+    background: var(--earth);
+
+    color: var(--ivory);
+
+    border-color: var(--earth);
+
+    transform: translateY(-3px);
+
+}
+
+
+/* ==========================================
+   5. GENERAL SECTION STYLES
+========================================== */
+
+.section {
+
+    padding: 4.5rem 7%;
+
+}
+
+.section-heading {
+
+    max-width: 750px;
+
+    margin: 0 auto 2.5rem;
+
+    text-align: center;
+
+}
+
+.section-label {
+
+    display: inline-block;
+
+    color: var(--earth);
+
+    font-size: 0.65rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.14rem;
+
+    text-transform: uppercase;
+
+    margin-bottom: 0.7rem;
+
+}
+
+.section-heading h2 {
+
+    color: var(--forest);
+
+    font-size: clamp(1.35rem, 3vw, 2rem);
+
+    line-height: 1.4;
+
+    margin-bottom: 0.9rem;
+
+}
+
+.section-heading p {
+
+    font-size: 0.76rem;
+
+}
+
+
+/* ==========================================
+   6. INTRODUCTION
+========================================== */
+
+.innovation-intro {
+
+    background: var(--ivory);
+
+}
+
+.intro-content {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+.intro-content h2 {
+
+    color: var(--forest);
+
+    font-size: 1.55rem;
+
+    margin-bottom: 1rem;
+
+}
+
+.intro-content p {
+
+    margin-bottom: 1rem;
+
+    line-height: 2;
+
+}
+
+.intro-highlight {
+
+    margin-top: 1.8rem;
+
+    padding: 1.3rem 1.5rem;
+
+    background: rgba(217,164,65,0.15);
+
+    border-left: 5px solid var(--gold);
+
+    text-align: left;
+
+    font-weight: 600;
+
+}
+
+
+/* ==========================================
+   7. INNOVATION PILLARS
+========================================== */
+
+.innovation-pillars {
+
+    background: #EDEBD2;
+
+}
+
+.pillar-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.3rem;
+
+    max-width: 1150px;
+
+    margin: auto;
+
+}
+
+.pillar-card {
+
+    background: var(--ivory);
+
+    padding: 1.7rem;
+
+    border: 1px solid rgba(23,77,42,0.2);
+
+    border-top: 4px solid var(--gold);
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+
+}
+
+.pillar-card:hover {
+
+    transform: translateY(-5px);
+
+    border-top-color: var(--earth);
+
+    box-shadow: 0 8px 20px rgba(23,77,42,0.10);
+
+}
+
+.pillar-number {
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: var(--forest);
+
+    color: var(--gold);
+
+    border-radius: 50%;
+
+    font-weight: 800;
+
+    margin-bottom: 1rem;
+
+    font-size: 0.75rem;
+
+}
+
+.pillar-card h3 {
+
+    color: var(--forest);
+
+    font-size: 0.86rem;
+
+    margin-bottom: 0.7rem;
+
+}
+
+.pillar-card p {
+
+    font-size: 0.7rem;
+
+}
+
+
+/* ==========================================
+   8. INNOVATION FOCUS AREAS
+========================================== */
+
+.focus-section {
+
+    background: var(--ivory);
+
+}
+
+.focus-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.3rem;
+
+    max-width: 1150px;
+
+    margin: auto;
+
+}
+
+.focus-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 230px;
+
+    padding: 1.5rem;
+
+    background: #EDEBD2;
+
+    border-radius: 6px;
+
+    border-bottom: 4px solid var(--forest);
+
+    transition: 0.3s;
+
+}
+
+.focus-card:hover {
+
+    transform: translateY(-5px);
+
+    border-bottom-color: var(--gold);
+
+}
+
+.focus-card .focus-label {
+
+    color: var(--earth);
+
+    font-size: 0.62rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.08rem;
+
+    margin-bottom: 0.6rem;
+
+}
+
+.focus-card h3 {
+
+    color: var(--forest);
+
+    font-size: 0.85rem;
+
+    margin-bottom: 0.6rem;
+
+}
+
+.focus-card p {
+
+    font-size: 0.7rem;
+
+    flex-grow: 1;
+
+}
+
+.focus-card a {
+
+    display: inline-block;
+
+    color: var(--forest);
+
+    font-size: 0.68rem;
+
+    font-weight: 800;
+
+    margin-top: 1rem;
+
+}
+
+.focus-card a:hover {
+    color: var(--earth);
+}
+
+
+/* ==========================================
+   9. CLIMATE-SMART INNOVATION FEATURE
+========================================== */
+
+.climate-feature {
+
+    background: var(--forest);
+
+    color: var(--ivory);
+
+}
+
+.climate-layout {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 3rem;
+
+}
+
+.climate-text .section-label {
+    color: var(--gold);
+}
+
+.climate-text h2 {
+
+    color: var(--ivory);
+
+    font-size: 1.7rem;
+
+    line-height: 1.4;
+
+    margin-bottom: 1rem;
+
+}
+
+.climate-text p {
+
+    margin-bottom: 1rem;
+
+    font-size: 0.75rem;
+
+}
+
+.climate-list {
+
+    list-style: none;
+
+    margin: 1.2rem 0;
+
+}
+
+.climate-list li {
+
+    padding: 0.45rem 0;
+
+    border-bottom: 1px solid rgba(217,164,65,0.25);
+
+    font-size: 0.72rem;
+
+}
+
+.climate-list li::before {
+
+    content: "◆";
+
+    color: var(--gold);
+
+    margin-right: 0.7rem;
+
+}
+
+.climate-visual {
+
+    min-height: 330px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(217,164,65,0.2),
+            rgba(139,90,43,0.35)
+        );
+
+    border: 2px solid var(--gold);
+
+    border-radius: 8px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 2rem;
+
+}
+
+.climate-visual-content {
+
+    max-width: 350px;
+
+}
+
+.climate-visual-content span {
+
+    display: block;
+
+    color: var(--gold);
+
+    font-size: 0.68rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.13rem;
+
+    margin-bottom: 1rem;
+
+}
+
+.climate-visual-content h3 {
+
+    color: var(--ivory);
+
+    font-size: 1.5rem;
+
+    line-height: 1.5;
+
+}
+
+
+/* ==========================================
+   10. INNOVATION APPROACH
+========================================== */
+
+.approach-section {
+
+    background: #EDEBD2;
+
+}
+
+.approach-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1rem;
+
+}
+
+.approach-step {
+
+    text-align: center;
+
+    padding: 1.5rem 1rem;
+
+    border-bottom: 3px solid var(--gold);
+
+    background: var(--ivory);
+
+}
+
+.approach-step span {
+
+    display: block;
+
+    color: var(--earth);
+
+    font-size: 1.3rem;
+
+    font-weight: 800;
+
+    margin-bottom: 0.6rem;
+
+}
+
+.approach-step h3 {
+
+    color: var(--forest);
+
+    font-size: 0.8rem;
+
+    margin-bottom: 0.5rem;
+
+}
+
+.approach-step p {
+
+    font-size: 0.68rem;
+
+}
+
+
+/* ==========================================
+   11. COMMUNITY INNOVATION
+========================================== */
+
+.community-section {
+
+    background: var(--ivory);
+
+}
+
+.community-content {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+.community-content h2 {
+
+    color: var(--forest);
+
+    font-size: 1.6rem;
+
+    margin-bottom: 1rem;
+
+}
+
+.community-content p {
+
+    margin-bottom: 1rem;
+
+}
+
+.community-points {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1rem;
+
+    text-align: left;
+
+    margin-top: 1.8rem;
+
+}
+
+.community-point {
+
+    padding: 1rem;
+
+    background: #EDEBD2;
+
+    border-left: 4px solid var(--gold);
+
+}
+
+.community-point strong {
+
+    display: block;
+
+    color: var(--forest);
+
+    margin-bottom: 0.3rem;
+
+    font-size: 0.75rem;
+
+}
+
+
+/* ==========================================
+   12. INNOVATION PARTNERSHIP CTA
+========================================== */
+
+.innovation-cta {
+
+    background: var(--earth);
+
+    padding: 4rem 7%;
+
+    text-align: center;
+
+    border-top: 5px solid var(--gold);
+
+}
+
+.innovation-cta-content {
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+.innovation-cta h2 {
+
+    color: var(--ivory);
+
+    font-size: clamp(1.4rem, 3vw, 2rem);
+
+    line-height: 1.5;
+
+    margin-bottom: 1rem;
+
+}
+
+.innovation-cta p {
+
+    color: var(--ivory);
+
+    font-size: 0.76rem;
+
+    margin-bottom: 1.5rem;
+
+}
+
+.cta-button {
+
+    display: inline-block;
+
+    background: var(--gold);
+
+    color: var(--forest);
+
+    padding: 0.9rem 1.7rem;
+
+    border: 2px solid var(--gold);
+
+    border-radius: 4px;
+
+    font-size: 0.7rem;
+
+    font-weight: 800;
+
+    transition: 0.3s;
+
+}
+
+.cta-button:hover {
+
+    background: var(--forest);
+
+    color: var(--gold);
+
+    border-color: var(--gold);
+
+    transform: translateY(-3px);
+
+}
+
+
+/* ==========================================
+   13. FOOTER
+========================================== */
+
+.about-footer {
+
+    background: var(--forest);
+
+    color: var(--ivory);
+
+    text-align: center;
+
+    padding: 2rem 6%;
+
+    border-top: 4px solid var(--gold);
+
+    font-size: 0.68rem;
+
+    line-height: 2;
+
+}
+
+.about-footer strong {
+
+    display: block;
+
+    color: var(--ivory);
+
+    font-size: 0.85rem;
+
+    margin-bottom: 0.4rem;
+
+}
+
+.footer-tagline {
+
+    color: var(--gold);
+
+    margin-top: 0.6rem;
+
+    font-weight: 700;
+
+}
+
+
+/* ==========================================
+   14. RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 900px) {
+
+    .pillar-grid,
+    .focus-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .site-header {
+        padding: 0.7rem 4%;
+    }
+
+    .brand img {
+        width: 150px;
+    }
+
+    .innovation-hero {
+        min-height: 460px;
+        padding: 4rem 6%;
+    }
+
+    .section {
+        padding: 3.5rem 6%;
+    }
+
+    .pillar-grid,
+    .focus-grid,
+    .climate-layout,
+    .approach-grid,
+    .community-points {
+        grid-template-columns: 1fr;
+    }
+
+    .climate-visual {
+        min-height: 240px;
+    }
+
+    .hero-content p {
+        font-size: 0.74rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+}
+
+
+/* ==========================================
+   15. LARGE SCREEN NAVIGATION
+========================================== */
+
+@media (min-width: 950px) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .site-header {
+        padding: 0.7rem 7%;
+    }
+
+    .main-nav {
+
+        display: flex;
+
+        position: static;
+
+        width: auto;
+
+        padding: 0;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        gap: 1.4rem;
+
+        border: none;
+
+    }
+
+}
+
+
+/* ==========================================
+   END OF STYLES
+========================================== */
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     1. WEBSITE HEADER
+========================================== -->
+
+<header class="site-header">
+
+    <a href="index.html" class="brand">
+
+        <img src="goreale-logo.png"
+             alt="GOREALE Agricultural Innovators Logo">
+
+    </a>
+
+
+    <button class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+
+    <nav class="main-nav" id="mainNav">
+
+        <a href="index.html">Home</a>
+
+        <a href="about-us.html">About Us</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="innovation.html" class="active">Innovation</a>
+
+        <a href="weather.html">Weather Centre</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ==========================================
+     2. INNOVATION HERO
+========================================== -->
+
+<section class="innovation-hero">
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            AGRICULTURAL INNOVATION & DEVELOPMENT
+        </span>
+
+        <h1>
+            Innovation for a
+            <span>Sustainable Agricultural Future</span>
+        </h1>
+
+        <p>
+            Advancing practical agricultural solutions through
+            climate-smart practices, appropriate technologies,
+            research, indigenous knowledge and community
+            participation to strengthen food security,
+            livelihoods and environmental resilience.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#innovation-focus"
+               class="hero-button primary">
+
+                Explore Our Innovations
+
+            </a>
+
+            <a href="collaboration.html"
+               class="hero-button secondary">
+
+                Collaborate With Us
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     3. INTRODUCTION
+========================================== -->
+
+<section class="section innovation-intro">
+
+    <div class="intro-content">
+
+        <span class="section-label">
+            OUR APPROACH TO INNOVATION
+        </span>
+
+        <h2>
+            Transforming Agricultural Ideas into Practical Solutions
+        </h2>
+
+        <p>
+            At GOREALE Agricultural Innovators, we believe
+            innovation is essential to building productive,
+            sustainable and climate-resilient agricultural
+            communities.
+        </p>
+
+        <p>
+            We promote the application of practical knowledge,
+            appropriate technologies, scientific research
+            and locally developed solutions to address
+            agricultural challenges and opportunities.
+        </p>
+
+        <p>
+            Our innovation approach connects crop production,
+            livestock management, natural resource conservation,
+            agricultural entrepreneurship and community
+            participation.
+        </p>
+
+        <div class="intro-highlight">
+
+            We seek to make agricultural innovation accessible,
+            relevant and beneficial to farming communities,
+            particularly young people and women in northeastern Kenya.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     4. INNOVATION PILLARS
+========================================== -->
+
+<section class="section innovation-pillars">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            OUR INNOVATION FRAMEWORK
+        </span>
+
+        <h2>
+            The Pillars Driving Our Innovation
+        </h2>
+
+        <p>
+            We connect knowledge, technology, environmental
+            responsibility and community participation to
+            promote sustainable agricultural development.
+        </p>
+
+    </div>
+
+
+    <div class="pillar-grid">
+
+
+        <article class="pillar-card">
+
+            <div class="pillar-number">01</div>
+
+            <h3>Climate-Smart Agriculture</h3>
+
+            <p>
+                Promoting agricultural practices that
+                strengthen productivity, adaptation to
+                climate change and responsible use of
+                natural resources.
+            </p>
+
+        </article>
+
+
+        <article class="pillar-card">
+
+            <div class="pillar-number">02</div>
+
+            <h3>Agricultural Technology</h3>
+
+            <p>
+                Encouraging the adoption of appropriate
+                technologies, digital tools and practical
+                innovations that improve agricultural
+                efficiency and decision-making.
+            </p>
+
+        </article>
+
+
+        <article class="pillar-card">
+
+            <div class="pillar-number">03</div>
+
+            <h3>Research and Knowledge</h3>
+
+            <p>
+                Connecting scientific knowledge,
+                indigenous practices, experimentation
+                and community experience to identify
+                practical agricultural solutions.
+            </p>
+
+        </article>
+
+
+        <article class="pillar-card">
+
+            <div class="pillar-number">04</div>
+
+            <h3>Environmental Conservation</h3>
+
+            <p>
+                Supporting afforestation, agroforestry,
+                biodiversity conservation, soil
+                protection and sustainable water
+                management.
+            </p>
+
+        </article>
+
+
+        <article class="pillar-card">
+
+            <div class="pillar-number">05</div>
+
+            <h3>Agribusiness Innovation</h3>
+
+            <p>
+                Promoting value addition, entrepreneurship,
+                market awareness and agricultural
+                opportunities that strengthen local
+                economic participation.
+            </p>
+
+        </article>
+
+
+        <article class="pillar-card">
+
+            <div class="pillar-number">06</div>
+
+            <h3>Community-Led Innovation</h3>
+
+            <p>
+                Encouraging communities, young people
+                and women to identify challenges,
+                develop ideas and participate in
+                practical agricultural initiatives.
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     5. INNOVATION FOCUS AREAS
+========================================== -->
+
+<section class="section focus-section"
+         id="innovation-focus">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            AREAS OF INNOVATION
+        </span>
+
+        <h2>
+            Practical Solutions for Agricultural Transformation
+        </h2>
+
+        <p>
+            Our areas of focus address agricultural production,
+            environmental sustainability, knowledge development
+            and community resilience.
+        </p>
+
+    </div>
+
+
+    <div class="focus-grid">
+
+
+        <article class="focus-card">
+
+            <span class="focus-label">01 · CLIMATE</span>
+
+            <h3>Climate-Smart Agriculture</h3>
+
+            <p>
+                Exploring resilient farming approaches,
+                climate adaptation, efficient resource
+                management and agricultural planning.
+            </p>
+
+            <a href="climate-smart.html">
+                Explore More →
+            </a>
+
+        </article>
+
+
+        <article class="focus-card">
+
+            <span class="focus-label">02 · FARMING</span>
+
+            <h3>Sustainable Farming</h3>
+
+            <p>
+                Promoting sustainable production systems,
+                improved farming practices and responsible
+                agricultural resource management.
+            </p>
+
+            <a href="sustainable-farming.html">
+                Explore More →
+            </a>
+
+        </article>
+
+
+        <article class="focus-card">
+
+            <span class="focus-label">03 · TECHNOLOGY</span>
+
+            <h3>Agricultural Technology</h3>
+
+            <p>
+                Encouraging suitable agricultural tools,
+                digital information, modern techniques
+                and technology-enabled solutions.
+            </p>
+
+            <a href="agricultural-technology.html">
+                Explore More →
+            </a>
+
+        </article>
+
+
+        <article class="focus-card">
+
+            <span class="focus-label">04 · RESEARCH</span>
+
+            <h3>Research and Knowledge</h3>
+
+            <p>
+                Supporting agricultural learning,
+                knowledge exchange, experimentation
+                and the development of locally
+                relevant solutions.
+            </p>
+
+            <a href="research.html">
+                Explore More →
+            </a>
+
+        </article>
+
+
+        <article class="focus-card">
+
+            <span class="focus-label">05 · CROP PRODUCTION</span>
+
+            <h3>Crop Production Innovation</h3>
+
+            <p>
+                Exploring improved crop production,
+                appropriate crop selection, soil
+                management and sustainable cultivation.
+            </p>
+
+            <a href="crop-production.html">
+                Explore More →
+            </a>
+
+        </article>
+
+
+        <article class="focus-card">
+
+            <span class="focus-label">06 · LIVESTOCK</span>
+
+            <h3>Livestock Innovation</h3>
+
+            <p>
+                Promoting improved livestock management,
+                animal welfare, pasture management
+                and climate-resilient livestock systems.
+            </p>
+
+            <a href="livestock.html">
+                Explore More →
+            </a>
+
+        </article>
+
+
+        <article class="focus-card">
+
+            <span class="focus-label">07 · CONSERVATION</span>
+
+            <h3>Soil and Water Conservation</h3>
+
+            <p>
+                Promoting soil health, water conservation,
+                efficient water use and responsible
+                management of agricultural land.
+            </p>
+
+            <a href="soil-water.html">
+                Explore More →
+            </a>
+
+        </article>
+
+
+        <article class="focus-card">
+
+            <span class="focus-label">08 · ENVIRONMENT</span>
+
+            <h3>Afforestation and Agroforestry</h3>
+
+            <p>
+                Supporting tree growing, agroforestry,
+                restoration of degraded land and
+                environmental conservation.
+            </p>
+
+            <a href="afforestation.html">
+                Explore More →
+            </a>
+
+        </article>
+
+
+        <article class="focus-card">
+
+            <span class="focus-label">09 · COMMUNITY</span>
+
+            <h3>Community Development</h3>
+
+            <p>
+                Promoting participation, local
+                knowledge, youth engagement and
+                community-led agricultural development.
+            </p>
+
+            <a href="community-development.html">
+                Explore More →
+            </a>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     6. CLIMATE-SMART INNOVATION
+========================================== -->
+
+<section class="section climate-feature">
+
+    <div class="climate-layout">
+
+
+        <div class="climate-text">
+
+            <span class="section-label">
+                INNOVATION FOR CLIMATE RESILIENCE
+            </span>
+
+            <h2>
+                Building Agricultural Resilience in Northeastern Kenya
+            </h2>
+
+            <p>
+                Agricultural communities in northeastern Kenya
+                experience environmental and climatic challenges
+                that require locally appropriate and sustainable
+                solutions.
+            </p>
+
+            <p>
+                We encourage innovation that helps communities
+                improve agricultural planning, conserve natural
+                resources and strengthen resilience.
+            </p>
+
+            <ul class="climate-list">
+
+                <li>Climate-informed agricultural planning</li>
+
+                <li>Water conservation and efficient utilization</li>
+
+                <li>Drought preparedness and adaptation</li>
+
+                <li>Soil restoration and sustainable land management</li>
+
+                <li>Resilient crop and livestock production</li>
+
+                <li>Tree growing and agroforestry initiatives</li>
+
+            </ul>
+
+            <a href="climate-smart.html"
+               class="hero-button primary">
+
+                Discover Climate-Smart Agriculture
+
+            </a>
+
+        </div>
+
+
+        <div class="climate-visual">
+
+            <div class="climate-visual-content">
+
+                <span>OUR COMMITMENT</span>
+
+                <h3>
+                    Innovation.<br>
+                    Resilience.<br>
+                    Sustainability.
+                </h3>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     7. OUR INNOVATION APPROACH
+========================================== -->
+
+<section class="section approach-section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            FROM IDEAS TO ACTION
+        </span>
+
+        <h2>
+            How We Approach Agricultural Innovation
+        </h2>
+
+        <p>
+            We believe effective innovation begins with
+            understanding real community needs and
+            developing practical responses.
+        </p>
+
+    </div>
+
+
+    <div class="approach-grid">
+
+
+        <article class="approach-step">
+
+            <span>01</span>
+
+            <h3>Identify Challenges</h3>
+
+            <p>
+                Understand agricultural needs,
+                local conditions and community priorities.
+            </p>
+
+        </article>
+
+
+        <article class="approach-step">
+
+            <span>02</span>
+
+            <h3>Develop Solutions</h3>
+
+            <p>
+                Explore practical ideas, knowledge,
+                research and appropriate technologies.
+            </p>
+
+        </article>
+
+
+        <article class="approach-step">
+
+            <span>03</span>
+
+            <h3>Apply and Learn</h3>
+
+            <p>
+                Encourage demonstration, learning,
+                experimentation and knowledge sharing.
+            </p>
+
+        </article>
+
+
+        <article class="approach-step">
+
+            <span>04</span>
+
+            <h3>Improve and Scale</h3>
+
+            <p>
+                Learn from experience and strengthen
+                solutions that demonstrate value.
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     8. COMMUNITY-LED INNOVATION
+========================================== -->
+
+<section class="section community-section">
+
+    <div class="community-content">
+
+        <span class="section-label">
+            PEOPLE AT THE CENTRE OF INNOVATION
+        </span>
+
+        <h2>
+            Innovation Begins with Community Participation
+        </h2>
+
+        <p>
+            We recognize that communities possess valuable
+            knowledge, experience and ideas that can
+            contribute to agricultural transformation.
+        </p>
+
+        <p>
+            Our approach encourages active participation
+            by young men and women, farmers, community
+            groups, agricultural practitioners and
+            other stakeholders.
+        </p>
+
+        <p>
+            By bringing people together, we aim to
+            encourage shared learning, practical
+            innovation and locally relevant
+            development initiatives.
+        </p>
+
+
+        <div class="community-points">
+
+
+            <div class="community-point">
+
+                <strong>Youth Participation</strong>
+
+                Encouraging young people to explore
+                agricultural opportunities, innovation
+                and entrepreneurship.
+
+            </div>
+
+
+            <div class="community-point">
+
+                <strong>Women's Participation</strong>
+
+                Supporting inclusive involvement in
+                agricultural knowledge, production
+                and community development.
+
+            </div>
+
+
+            <div class="community-point">
+
+                <strong>Knowledge Exchange</strong>
+
+                Connecting local experience,
+                indigenous knowledge and scientific
+                agricultural information.
+
+            </div>
+
+
+            <div class="community-point">
+
+                <strong>Collaborative Development</strong>
+
+                Building relationships with institutions,
+                organizations and development partners.
+
+            </div>
+
+
+        </div>
+
+
+        <div style="margin-top: 2rem;">
+
+            <a href="community-development.html"
+               class="cta-button">
+
+                Explore Community Development
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     9. INNOVATION PARTNERSHIP CTA
+========================================== -->
+
+<section class="innovation-cta">
+
+    <div class="innovation-cta-content">
+
+        <span class="section-label"
+              style="color: var(--gold);">
+
+            PARTNERSHIPS · KNOWLEDGE · COLLABORATION
+
+        </span>
+
+        <h2>
+            Together, We Can Advance Agricultural Innovation
+        </h2>
+
+        <p>
+            GOREALE Agricultural Innovators welcomes
+            collaboration with researchers, agricultural
+            institutions, government agencies, NGOs,
+            development partners and other stakeholders
+            committed to sustainable agricultural
+            development.
+        </p>
+
+        <a href="collaboration.html"
+           class="cta-button">
+
+            Collaborate With Us →
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     10. WEBSITE FOOTER
+========================================== -->
+
+<footer class="about-footer">
+
+    <strong>
+        GOREALE Agricultural Innovators
+    </strong>
+
+    Goreale Ward · Lagdera Constituency ·
+    Garissa County · Kenya
+
+    <div class="footer-tagline">
+        Cultivating Innovation. Growing Sustainable Futures.
+    </div>
+
+</footer>
+
+
+
+<!-- ==========================================
+     11. JAVASCRIPT
+========================================== -->
+
+<script>
+
+/* HAMBURGER MENU */
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const mainNav =
+    document.getElementById("mainNav");
+
+
+menuToggle.addEventListener("click", function () {
+
+    const isOpen =
+        mainNav.classList.toggle("active");
+
+    menuToggle.setAttribute(
+        "aria-expanded",
+        String(isOpen)
+    );
+
+});
+
+
+/* CLOSE MENU WHEN NAVIGATION LINK IS CLICKED */
+
+document.querySelectorAll(".main-nav a").forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        mainNav.classList.remove("active");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+    });
+
+});
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,1687 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Livestock Production | Goreale Agricultural Innovators</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --ivory: #F5F5DC;
+    --forest-green: #355E3B;
+    --earth-brown: #8B5A2B;
+    --charcoal-grey: #454545;
+    --olive-green: #6B8E23;
+    --lavender: #E6DDF2;
+    --beet: #e8dce0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--ivory);
+    color: var(--charcoal-grey);
+    font-family: Arial, sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.8;
+}
+
+header {
+    min-height: 5rem;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--ivory);
+}
+
+.logo {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--forest-green);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--earth-brown);
+}
+
+.hero {
+    min-height: 23rem;
+    padding: 4rem 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+        linear-gradient(rgba(15,40,20,.68), rgba(15,40,20,.68)),
+        url("images/livestock.png") center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 48rem;
+    color: white;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.7rem, 4vw, 2.8rem);
+    font-weight: 900;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--earth-brown);
+    color: white;
+    padding: 0.65rem 1.4rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.btn:hover {
+    background: var(--forest-green);
+}
+
+section {
+    padding: 3rem 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.45rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+.intro,
+.content-section {
+    max-width: 65rem;
+    margin: auto;
+}
+
+.intro p,
+.content-section p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    padding: 1.3rem;
+    border-radius: 0.4rem;
+    color: var(--charcoal-grey);
+}
+
+.card {
+    display: block;
+    min-width: 0;
+    padding: 1.7rem 1.4rem;
+    border: 1px solid var(--charcoal-grey);
+    border-radius: .35rem;
+    background: var(--ivory);
+    color: var(--charcoal-grey);
+    text-decoration: none;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:nth-child(3n + 2) {
+    border-color: var(--beet);
+}
+
+.card:nth-child(3n) {
+    border-color: var(--lavender);
+}
+
+.card:hover {
+    transform: translateY(-.25rem);
+    box-shadow: 0 .4rem 1rem rgba(0, 0, 0, .12);
+}
+
+.card h3 {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.82rem;
+    line-height: 1.7;
+}
+
+.subheading {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.7rem;
+}
+
+.content-section ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.content-section li {
+    margin-bottom: 0.5rem;
+}
+
+.highlight {
+    background: var(--beet);
+    padding: 1.5rem;
+    border-left: 0.3rem solid var(--forest-green);
+    margin-top: 1.5rem;
+}
+
+.highlight h3 {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.6rem;
+}
+
+.step {
+    background: var(--lavender);
+    padding: 1rem 1.3rem;
+    margin-bottom: 0.8rem;
+    border-radius: 0.3rem;
+}
+
+.step h3 {
+    color: var(--forest-green);
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.resources {
+    background: var(--beet);
+    padding: 1.5rem;
+    border-radius: 0.3rem;
+}
+
+.resources a {
+    color: var(--forest-green);
+    font-weight: bold;
+}
+
+footer {
+    background: var(--forest-green);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.78rem;
+}
+
+footer h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+@media(max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .hero {
+        min-height: 19rem;
+        padding: 3rem 6%;
+    }
+
+    section {
+        padding: 2rem 6%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">GOREALE AGRICULTURAL INNOVATORS</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#services">Our Areas</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+
+        <h1>Livestock Production</h1>
+
+        <p>
+            Promoting healthy animals, sustainable livestock
+            management, improved productivity and
+            stronger agricultural livelihoods.
+        </p>
+
+        <a href="#about" class="btn">Explore More</a>
+
+    </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section id="about">
+    <div class="intro">
+
+        <h2 class="section-title">Understanding Livestock Production</h2>
+
+        <p>
+            Livestock production is an important branch
+            of agriculture involving the rearing and
+            management of domesticated animals for
+            food, income, employment, manure, transport
+            and other economic and social benefits.
+        </p>
+
+        <p>
+            It includes the production of milk, meat,
+            eggs, hides, skins, wool and other animal
+            products. Livestock also plays an important
+            role in household food security, rural
+            development and agricultural businesses.
+        </p>
+
+        <p>
+            Successful livestock production requires
+            proper animal selection, feeding, breeding,
+            housing, healthcare, hygiene, water
+            management and good animal welfare practices.
+        </p>
+
+        <p>
+            Modern livestock farming combines traditional
+            animal husbandry knowledge with veterinary
+            services, improved breeds, balanced nutrition,
+            technology and sustainable production systems.
+        </p>
+
+        <p>
+            Goreale Agricultural Innovators promotes
+            responsible livestock production through
+            agricultural education, research, innovation
+            and practical knowledge sharing to improve
+            animal productivity and farmers' livelihoods.
+        </p>
+
+    </div>
+</section>
+
+<!-- KEY AREAS -->
+<section>
+    <h2 class="section-title">Our Key Areas of Focus</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Animal Breeding</h3>
+            <p>
+                Promoting appropriate breed selection,
+                reproductive management and genetic
+                improvement based on production
+                objectives and local conditions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Animal Nutrition</h3>
+            <p>
+                Improving animal productivity through
+                balanced feeding, quality fodder,
+                mineral supplementation and
+                appropriate feed management.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Animal Health</h3>
+            <p>
+                Supporting disease prevention,
+                veterinary services, vaccination,
+                parasite control and early
+                identification of animal illness.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Pasture and Fodder</h3>
+            <p>
+                Encouraging pasture development,
+                fodder production, hay making,
+                silage preparation and sustainable
+                grazing management.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Animal Housing</h3>
+            <p>
+                Promoting suitable animal shelters,
+                ventilation, sanitation, drainage
+                and comfortable housing systems.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Water Management</h3>
+            <p>
+                Improving access to clean drinking
+                water through efficient water
+                storage, supply and management.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Livestock Welfare</h3>
+            <p>
+                Encouraging humane handling,
+                adequate nutrition, comfortable
+                housing and responsible animal care.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Livestock Marketing</h3>
+            <p>
+                Supporting better market access,
+                animal quality, value chains
+                and commercial livestock opportunities.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Livestock Technology</h3>
+            <p>
+                Promoting digital farm records,
+                modern equipment, improved
+                production systems and innovation.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- TYPES OF LIVESTOCK -->
+<section>
+    <h2 class="section-title">Major Types of Livestock</h2>
+
+    <p style="max-width:65rem;margin:auto;">
+        Livestock includes different animal species
+        kept for food, income, agricultural work
+        and other purposes. Farmers should select
+        animals according to their environment,
+        resources, skills and market opportunities.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Cattle Farming</h3>
+            <p>
+                Cattle are raised for milk, beef,
+                hides, manure and sometimes
+                agricultural work. Production
+                systems include dairy, beef
+                and dual-purpose farming.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Goat Farming</h3>
+            <p>
+                Goats are kept for meat, milk,
+                skins and breeding. They are
+                important in many smallholder
+                and pastoral production systems.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Sheep Farming</h3>
+            <p>
+                Sheep are raised mainly for meat,
+                skins and wool in suitable
+                production environments.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Camel Farming</h3>
+            <p>
+                Camels are important livestock
+                in arid and semi-arid areas,
+                providing milk, meat and
+                transport services.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Poultry Farming</h3>
+            <p>
+                Poultry includes chickens, ducks,
+                turkeys and other domestic birds
+                raised for eggs, meat and income.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Pig Farming</h3>
+            <p>
+                Pigs are raised mainly for meat.
+                Successful production requires
+                suitable housing, nutrition,
+                hygiene and health management.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Rabbit Farming</h3>
+            <p>
+                Rabbits are raised for meat,
+                breeding and other small-scale
+                agricultural business opportunities.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Beekeeping</h3>
+            <p>
+                Beekeeping supports honey and
+                beeswax production while
+                contributing to crop pollination.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Donkeys and Working Animals</h3>
+            <p>
+                Donkeys and other working animals
+                can support transport and farm
+                activities in suitable communities.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- LIVESTOCK SYSTEMS -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Livestock Production Systems</h2>
+
+        <p>
+            Livestock production systems describe
+            how animals are kept, fed and managed.
+            The choice of system depends on
+            land, climate, available feed,
+            capital, labour and market demand.
+        </p>
+
+        <h3 class="subheading">1. Pastoral Production System</h3>
+
+        <p>
+            Pastoralism involves keeping livestock
+            while moving animals between grazing
+            areas and water sources according to
+            seasonal resource availability.
+            It is particularly important in
+            arid and semi-arid environments.
+        </p>
+
+        <h3 class="subheading">2. Agro-Pastoral Production System</h3>
+
+        <p>
+            Agro-pastoral systems combine
+            livestock keeping with crop production.
+            Crop residues can sometimes provide
+            animal feed, while properly managed
+            livestock manure can support crop
+            soil fertility.
+        </p>
+
+        <h3 class="subheading">3. Mixed Crop-Livestock System</h3>
+
+        <p>
+            Farmers produce crops and keep
+            livestock on the same farm. This
+            allows integration of crop residues,
+            fodder, manure and other resources.
+        </p>
+
+        <h3 class="subheading">4. Intensive Production System</h3>
+
+        <p>
+            Animals are kept in controlled
+            housing environments with managed
+            feeding, water supply, health care
+            and production records. Examples
+            include intensive poultry and
+            dairy production.
+        </p>
+
+        <h3 class="subheading">5. Semi-Intensive Production System</h3>
+
+        <p>
+            Animals receive a combination
+            of controlled feeding and access
+            to grazing or outdoor areas.
+            This system combines some
+            advantages of intensive and
+            extensive production.
+        </p>
+
+        <h3 class="subheading">6. Extensive Production System</h3>
+
+        <p>
+            Animals obtain much of their feed
+            through grazing and browsing over
+            larger areas. It requires suitable
+            grazing resources and responsible
+            land and water management.
+        </p>
+
+    </div>
+</section>
+
+<!-- BREEDING -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Animal Breeding and Genetic Improvement</h2>
+
+        <p>
+            Animal breeding involves selecting
+            suitable animals for reproduction
+            to improve desirable characteristics
+            in future generations.
+        </p>
+
+        <p>
+            Breed selection should consider
+            climate, disease resistance,
+            feed availability, production
+            objectives and the ability of
+            animals to adapt to local conditions.
+        </p>
+
+        <h3 class="subheading">Important Breeding Considerations</h3>
+
+        <ul>
+            <li>Select healthy animals with desirable production characteristics.</li>
+            <li>Choose breeds suited to the local environment.</li>
+            <li>Maintain appropriate breeding records.</li>
+            <li>Prevent uncontrolled inbreeding.</li>
+            <li>Consider fertility, growth rate and productivity.</li>
+            <li>Seek qualified advice when selecting breeding stock.</li>
+            <li>Use artificial insemination where appropriate and professionally supported.</li>
+        </ul>
+
+        <h3 class="subheading">Common Breeding Methods</h3>
+
+        <ul>
+            <li><strong>Natural mating:</strong> A selected male mates with a female naturally.</li>
+            <li><strong>Artificial insemination:</strong> Semen is introduced into the female reproductive tract using a professional technique.</li>
+            <li><strong>Selective breeding:</strong> Animals are selected based on desirable inherited traits.</li>
+            <li><strong>Crossbreeding:</strong> Different breeds are mated to combine selected characteristics.</li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- NUTRITION -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Animal Nutrition and Feeding Management</h2>
+
+        <p>
+            Animal nutrition is essential for
+            growth, reproduction, milk production,
+            meat production, immunity and
+            general animal health.
+        </p>
+
+        <p>
+            Animals require appropriate quantities
+            of energy, protein, fibre, minerals,
+            vitamins and clean water. Nutritional
+            needs vary according to species,
+            age, body condition and production stage.
+        </p>
+
+        <h3 class="subheading">Major Livestock Feed Sources</h3>
+
+        <ul>
+            <li><strong>Pasture:</strong> Natural and cultivated grasses.</li>
+            <li><strong>Fodder:</strong> Napier grass, Rhodes grass and suitable forage crops.</li>
+            <li><strong>Legume fodder:</strong> Suitable forage legumes that provide additional protein.</li>
+            <li><strong>Hay:</strong> Dried grass or legumes stored for later feeding.</li>
+            <li><strong>Silage:</strong> Preserved green fodder stored under suitable airtight conditions.</li>
+            <li><strong>Crop residues:</strong> Appropriate residues such as maize stover and cereal straw.</li>
+            <li><strong>Concentrates:</strong> Formulated feeds that supply concentrated nutrients.</li>
+            <li><strong>Mineral supplements:</strong> Appropriate mineral sources for livestock requirements.</li>
+        </ul>
+
+        <h3 class="subheading">Feeding Management Practices</h3>
+
+        <ul>
+            <li>Provide feed suitable for the animal species and production stage.</li>
+            <li>Maintain a reliable supply of clean drinking water.</li>
+            <li>Store feeds in dry and hygienic conditions.</li>
+            <li>Introduce changes in feed gradually.</li>
+            <li>Prevent mouldy or contaminated feed from being consumed.</li>
+            <li>Monitor animal body condition and productivity.</li>
+            <li>Seek professional advice when formulating balanced rations.</li>
+        </ul>
+
+        <div class="highlight">
+            <h3>Livestock Feed Security</h3>
+            <p>
+                Feed availability is a major challenge
+                during drought. Farmers can improve
+                preparedness by conserving hay,
+                producing suitable fodder, managing
+                grazing areas and planning feed
+                reserves before dry seasons.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PASTURE -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Pasture and Fodder Production</h2>
+
+        <p>
+            Pasture and fodder production provides
+            livestock with important feed resources.
+            Sustainable management helps improve
+            animal nutrition and reduce pressure
+            on natural grazing areas.
+        </p>
+
+        <h3 class="subheading">Pasture Management</h3>
+
+        <ul>
+            <li>Protect grazing areas from excessive grazing.</li>
+            <li>Use rotational grazing where suitable.</li>
+            <li>Allow pasture adequate time to recover.</li>
+            <li>Control invasive weeds and undesirable plants.</li>
+            <li>Maintain suitable ground cover.</li>
+            <li>Protect water points and grazing land from degradation.</li>
+        </ul>
+
+        <h3 class="subheading">Fodder Conservation</h3>
+
+        <p>
+            Fodder conservation involves storing
+            feed during periods of availability
+            for use when grazing and fresh feed
+            become limited.
+        </p>
+
+        <ul>
+            <li>Harvest suitable grasses at appropriate maturity.</li>
+            <li>Prepare and store hay correctly.</li>
+            <li>Make silage using suitable forage materials.</li>
+            <li>Protect conserved feed from rain, moisture and pests.</li>
+            <li>Keep feed storage facilities clean and secure.</li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- ANIMAL HEALTH -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Animal Health and Disease Prevention</h2>
+
+        <p>
+            Healthy animals are important for
+            profitable and sustainable livestock
+            production. Disease prevention,
+            early detection and access to
+            veterinary services help reduce
+            livestock losses.
+        </p>
+
+        <h3 class="subheading">Common Livestock Health Challenges</h3>
+
+        <ul>
+            <li>Tick-borne diseases.</li>
+            <li>Internal and external parasites.</li>
+            <li>Respiratory infections.</li>
+            <li>Foot and mouth disease.</li>
+            <li>Contagious livestock diseases.</li>
+            <li>Poultry respiratory and digestive diseases.</li>
+            <li>Reproductive health problems.</li>
+            <li>Nutritional deficiencies and metabolic disorders.</li>
+        </ul>
+
+        <p>
+            The diseases affecting livestock vary
+            by species, location, season and
+            production system. Veterinary
+            professionals should identify
+            suspected diseases and recommend
+            appropriate control measures.
+        </p>
+
+        <h3 class="subheading">Preventive Animal Health Practices</h3>
+
+        <ul>
+            <li>Follow locally recommended vaccination programmes.</li>
+            <li>Arrange regular veterinary inspections.</li>
+            <li>Monitor animals for changes in behaviour and appetite.</li>
+            <li>Isolate sick animals where appropriate.</li>
+            <li>Use parasite control measures under veterinary guidance.</li>
+            <li>Maintain clean feeding and watering equipment.</li>
+            <li>Keep appropriate animal health records.</li>
+            <li>Report suspected serious or unusual disease outbreaks promptly.</li>
+        </ul>
+
+        <div class="highlight">
+            <h3>Responsible Use of Veterinary Medicines</h3>
+            <p>
+                Veterinary medicines should be used
+                according to professional advice
+                and product instructions. Observe
+                withdrawal periods for meat and
+                milk. Avoid unnecessary antibiotic
+                use and never administer medicines
+                without understanding the correct
+                product, dose and safety requirements.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- BIOSECURITY -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Livestock Biosecurity</h2>
+
+        <p>
+            Biosecurity refers to measures used
+            to prevent the introduction and spread
+            of diseases among animals, farms and
+            livestock production facilities.
+        </p>
+
+        <h3 class="subheading">Important Biosecurity Practices</h3>
+
+        <ul>
+            <li>Control unnecessary movement of people and animals into farms.</li>
+            <li>Quarantine newly introduced animals when advised.</li>
+            <li>Clean and disinfect suitable equipment and housing.</li>
+            <li>Separate sick animals from healthy animals.</li>
+            <li>Use clean water and safe feed sources.</li>
+            <li>Manage manure and animal waste responsibly.</li>
+            <li>Control rodents, insects and other disease carriers.</li>
+            <li>Keep accurate animal movement and health records.</li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- HOUSING -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Livestock Housing and Animal Welfare</h2>
+
+        <p>
+            Suitable animal housing protects
+            livestock from extreme weather,
+            predators, injuries and other
+            environmental challenges.
+        </p>
+
+        <h3 class="subheading">Good Housing Requirements</h3>
+
+        <ul>
+            <li>Provide adequate space for the animals.</li>
+            <li>Ensure suitable ventilation and shade.</li>
+            <li>Maintain clean and dry resting areas.</li>
+            <li>Provide proper drainage.</li>
+            <li>Use safe floors and suitable fencing.</li>
+            <li>Provide convenient access to feed and water.</li>
+            <li>Separate animals when required for health or management reasons.</li>
+        </ul>
+
+        <h3 class="subheading">Animal Welfare</h3>
+
+        <p>
+            Animal welfare means ensuring that
+            animals are healthy, properly fed,
+            comfortable and protected from
+            unnecessary pain, injury, fear
+            and distress.
+        </p>
+
+        <p>
+            Proper handling, transportation,
+            housing and access to veterinary
+            care are important parts of
+            responsible livestock management.
+        </p>
+
+    </div>
+</section>
+
+<!-- DAIRY -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Dairy Production and Milk Management</h2>
+
+        <p>
+            Dairy farming involves keeping animals
+            for milk production. Cattle, goats
+            and camels can all contribute to
+            milk production under suitable
+            production systems.
+        </p>
+
+        <h3 class="subheading">Important Dairy Management Practices</h3>
+
+        <ul>
+            <li>Select animals with suitable dairy characteristics.</li>
+            <li>Provide balanced nutrition and adequate water.</li>
+            <li>Maintain clean and comfortable housing.</li>
+            <li>Follow proper milking hygiene.</li>
+            <li>Monitor udder health and milk quality.</li>
+            <li>Use clean milking equipment.</li>
+            <li>Cool and store milk appropriately.</li>
+            <li>Maintain breeding, health and milk production records.</li>
+        </ul>
+
+        <h3 class="subheading">Milk Hygiene</h3>
+
+        <p>
+            Milk should be collected using clean
+            hands and equipment, protected from
+            contamination and cooled promptly
+            under appropriate conditions.
+            Safe handling is important for
+            consumer health and product quality.
+        </p>
+
+    </div>
+</section>
+
+<!-- BEEF -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Beef Production and Management</h2>
+
+        <p>
+            Beef production involves raising
+            cattle for meat. Successful production
+            depends on breed suitability, nutrition,
+            animal health, housing or grazing
+            management and market requirements.
+        </p>
+
+        <h3 class="subheading">Beef Production Practices</h3>
+
+        <ul>
+            <li>Select suitable beef or dual-purpose animals.</li>
+            <li>Provide adequate grazing and supplementary feed where required.</li>
+            <li>Monitor animal body condition and growth.</li>
+            <li>Maintain appropriate animal health programmes.</li>
+            <li>Provide clean water and suitable shelter.</li>
+            <li>Keep production and financial records.</li>
+            <li>Use approved slaughter and meat handling facilities.</li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- POULTRY -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Poultry Production and Management</h2>
+
+        <p>
+            Poultry farming involves keeping
+            domestic birds for meat, eggs
+            and breeding. It can provide
+            income and nutritious food
+            for households and businesses.
+        </p>
+
+        <h3 class="subheading">Major Poultry Types</h3>
+
+        <ul>
+            <li><strong>Broilers:</strong> Chickens raised primarily for meat.</li>
+            <li><strong>Layers:</strong> Chickens managed mainly for egg production.</li>
+            <li><strong>Indigenous chickens:</strong> Local chickens kept for meat, eggs and household income.</li>
+            <li><strong>Improved indigenous chickens:</strong> Selected birds developed for improved production characteristics.</li>
+            <li><strong>Other poultry:</strong> Ducks, turkeys, geese and guinea fowl.</li>
+        </ul>
+
+        <h3 class="subheading">Poultry Management Practices</h3>
+
+        <ul>
+            <li>Purchase healthy chicks from reliable suppliers.</li>
+            <li>Prepare housing before introducing birds.</li>
+            <li>Provide appropriate brooding temperature for chicks.</li>
+            <li>Supply suitable feed and clean water.</li>
+            <li>Follow recommended vaccination programmes.</li>
+            <li>Maintain good ventilation and litter management.</li>
+            <li>Control rodents and other disease carriers.</li>
+            <li>Keep records of feed consumption, mortality and production.</li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- CAMEL -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Camel Production and Management</h2>
+
+        <p>
+            Camel keeping is an important
+            livestock activity in arid and
+            semi-arid areas. Camels provide
+            milk, meat, transport and income
+            to pastoral communities.
+        </p>
+
+        <h3 class="subheading">Camel Management Practices</h3>
+
+        <ul>
+            <li>Provide access to suitable grazing and browsing resources.</li>
+            <li>Ensure access to safe drinking water.</li>
+            <li>Monitor body condition and general health.</li>
+            <li>Provide veterinary care when needed.</li>
+            <li>Manage breeding and young camel calves appropriately.</li>
+            <li>Maintain hygienic milk handling practices.</li>
+            <li>Protect animals from avoidable injuries and disease.</li>
+        </ul>
+
+        <div class="highlight">
+            <h3>Importance of Camels in Dryland Areas</h3>
+            <p>
+                Camels are well adapted to many
+                dryland environments and can
+                support pastoral livelihoods.
+                Their production still depends
+                on adequate nutrition, water,
+                animal health services and
+                responsible range management.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- GOATS AND SHEEP -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Sheep and Goat Production</h2>
+
+        <p>
+            Sheep and goats are important
+            livestock species for meat,
+            milk, skins and household income.
+            They are widely kept by pastoral
+            and smallholder farmers.
+        </p>
+
+        <h3 class="subheading">Goat Management</h3>
+
+        <ul>
+            <li>Select breeds suited to the local environment and production goals.</li>
+            <li>Provide appropriate browse, pasture and supplementary feed.</li>
+            <li>Maintain clean and secure housing.</li>
+            <li>Monitor parasites and common diseases.</li>
+            <li>Manage breeding and kidding carefully.</li>
+            <li>Provide clean water and mineral supplementation where needed.</li>
+        </ul>
+
+        <h3 class="subheading">Sheep Management</h3>
+
+        <ul>
+            <li>Select healthy breeding stock.</li>
+            <li>Provide suitable grazing and supplementary feeding.</li>
+            <li>Monitor body condition and growth.</li>
+            <li>Maintain appropriate parasite control.</li>
+            <li>Provide clean and well-drained housing.</li>
+            <li>Manage lambing and young lamb care.</li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- WATER -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Livestock Water Management</h2>
+
+        <p>
+            Water is essential for digestion,
+            temperature regulation, nutrient
+            transport, reproduction and
+            production of milk and meat.
+        </p>
+
+        <h3 class="subheading">Water Management Practices</h3>
+
+        <ul>
+            <li>Provide clean drinking water regularly.</li>
+            <li>Maintain water troughs and storage facilities.</li>
+            <li>Prevent contamination of water sources.</li>
+            <li>Repair leaks and reduce water wastage.</li>
+            <li>Plan water supplies for dry seasons.</li>
+            <li>Monitor water availability as herd sizes change.</li>
+        </ul>
+
+        <p>
+            Water requirements differ according
+            to animal species, body size,
+            feed composition, production
+            stage and environmental temperature.
+            Farmers should seek appropriate
+            local recommendations.
+        </p>
+
+    </div>
+</section>
+
+<!-- DROUGHT -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Livestock Management During Drought</h2>
+
+        <p>
+            Drought can reduce pasture availability,
+            limit water supplies, weaken animal
+            body condition and increase livestock
+            losses. Planning before drought
+            becomes severe is important.
+        </p>
+
+        <h3 class="subheading">Drought Preparedness Strategies</h3>
+
+        <ul>
+            <li>Monitor rainfall, pasture conditions and water availability.</li>
+            <li>Conserve hay and other suitable animal feeds.</li>
+            <li>Plan access to reliable water sources.</li>
+            <li>Maintain appropriate herd sizes for available resources.</li>
+            <li>Consider timely and responsible destocking where necessary.</li>
+            <li>Prioritize the care of vulnerable and productive animals.</li>
+            <li>Seek veterinary and livestock extension advice.</li>
+            <li>Prepare recovery plans for the period after drought.</li>
+        </ul>
+
+        <div class="highlight">
+            <h3>Focus on Northern Kenya and Garissa</h3>
+            <p>
+                Livestock production is particularly
+                important in dryland communities.
+                Camels, goats, sheep and cattle
+                support household livelihoods.
+                Important priorities include
+                sustainable grazing, fodder
+                conservation, reliable water
+                supplies, animal health services
+                and early drought preparedness.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- LIVESTOCK WASTE -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Livestock Waste Management</h2>
+
+        <p>
+            Proper livestock waste management
+            helps maintain clean farms, reduce
+            environmental contamination and
+            improve resource efficiency.
+        </p>
+
+        <h3 class="subheading">Manure Management</h3>
+
+        <ul>
+            <li>Collect manure from appropriate housing areas.</li>
+            <li>Compost manure under suitable conditions.</li>
+            <li>Use properly treated manure to improve soil fertility.</li>
+            <li>Prevent waste from entering water sources.</li>
+            <li>Manage animal bedding and wastewater responsibly.</li>
+            <li>Maintain cleanliness around animal shelters.</li>
+        </ul>
+
+        <h3 class="subheading">Biogas Opportunities</h3>
+
+        <p>
+            Under suitable conditions, livestock
+            manure can be used in biogas systems
+            to produce energy. The remaining
+            digestate may also be used as a
+            soil amendment when properly managed.
+        </p>
+
+    </div>
+</section>
+
+<!-- VALUE ADDITION -->
+<section>
+    <h2 class="section-title">Livestock Products and Value Addition</h2>
+
+    <p style="max-width:65rem;margin:auto;">
+        Livestock products provide food,
+        income and opportunities for
+        agricultural businesses. Appropriate
+        processing and quality management
+        can improve their market value.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Milk Processing</h3>
+            <p>
+                Processing milk into suitable
+                products such as yoghurt,
+                cheese and other dairy products
+                under safe conditions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Meat Processing</h3>
+            <p>
+                Processing meat through approved
+                facilities with proper hygiene,
+                inspection and storage.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Egg Marketing</h3>
+            <p>
+                Cleaning where appropriate,
+                grading, packaging and
+                marketing eggs safely.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Hides and Skins</h3>
+            <p>
+                Proper handling and preservation
+                of hides and skins for
+                leather-related industries.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Honey Production</h3>
+            <p>
+                Harvesting, filtering, packaging
+                and marketing quality honey.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Manure Products</h3>
+            <p>
+                Composting and processing
+                livestock manure into
+                useful soil amendments.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ECONOMICS -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Livestock Business and Economics</h2>
+
+        <p>
+            Livestock farming is an agricultural
+            business that requires planning,
+            investment, good management and
+            financial monitoring.
+        </p>
+
+        <h3 class="subheading">Major Livestock Business Costs</h3>
+
+        <ul>
+            <li>Purchase of animals and breeding stock.</li>
+            <li>Housing and farm construction.</li>
+            <li>Animal feed and supplements.</li>
+            <li>Water supply and storage.</li>
+            <li>Veterinary services and medicines.</li>
+            <li>Labour and transport.</li>
+            <li>Equipment and farm maintenance.</li>
+            <li>Marketing and processing expenses.</li>
+        </ul>
+
+        <h3 class="subheading">Livestock Income Sources</h3>
+
+        <ul>
+            <li>Sale of live animals.</li>
+            <li>Milk and dairy products.</li>
+            <li>Meat and meat products.</li>
+            <li>Egg production.</li>
+            <li>Breeding stock and young animals.</li>
+            <li>Hides, skins, wool and other products.</li>
+            <li>Honey and beeswax.</li>
+            <li>Manure and compost products.</li>
+        </ul>
+
+        <div class="highlight">
+            <h3>Livestock Profit Formula</h3>
+            <p>
+                Total Revenue = Total Income from Animal Products and Sales
+            </p>
+            <p>
+                Total Profit = Total Revenue − Total Production Costs
+            </p>
+            <p>
+                Farmers should include feed, labour,
+                animal health, water, transport,
+                housing and other operating costs
+                when calculating profitability.
+            </p>
+        </div>
+
+        <h3 class="subheading">Farm Record Keeping</h3>
+
+        <ul>
+            <li>Animal identification and ownership records.</li>
+            <li>Birth, death and breeding records.</li>
+            <li>Vaccination and treatment records.</li>
+            <li>Feed purchases and feeding records.</li>
+            <li>Milk, meat and egg production records.</li>
+            <li>Sales, expenses and income records.</li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- TECHNOLOGY -->
+<section>
+    <h2 class="section-title">Modern Livestock Technology</h2>
+
+    <p style="max-width:65rem;margin:auto;">
+        Modern technology can help livestock
+        farmers improve efficiency, animal
+        monitoring, farm management and
+        business performance.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Digital Animal Records</h3>
+            <p>
+                Recording animal identification,
+                breeding, vaccination and
+                production information.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Automatic Water Systems</h3>
+            <p>
+                Improving water distribution
+                through suitable automated
+                drinking systems.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Milking Machines</h3>
+            <p>
+                Supporting efficient milk
+                collection and hygiene
+                in suitable dairy systems.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Feed Processing Equipment</h3>
+            <p>
+                Using choppers and mixers
+                to prepare and manage
+                livestock feeds.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Animal Identification</h3>
+            <p>
+                Using ear tags and other
+                suitable identification
+                methods for tracking animals.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Mobile Farm Applications</h3>
+            <p>
+                Using digital tools for
+                livestock records, weather
+                information and farm planning.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- RESEARCH -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Livestock Research and Innovation</h2>
+
+        <p>
+            Research and innovation help improve
+            animal productivity, health, nutrition
+            and the sustainability of livestock
+            production systems.
+        </p>
+
+        <h3 class="subheading">Important Research Areas</h3>
+
+        <ul>
+            <li>Evaluation of livestock breeds suited to local environments.</li>
+            <li>Improvement of animal feeding and nutrition.</li>
+            <li>Development of drought-resilient fodder systems.</li>
+            <li>Improved disease prevention and control.</li>
+            <li>Pasture and rangeland management research.</li>
+            <li>Improved dairy, meat and poultry production.</li>
+            <li>Animal welfare and housing improvements.</li>
+            <li>Livestock value-chain development.</li>
+            <li>Climate-smart livestock production practices.</li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- IMPLEMENTATION -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Our Livestock Development Approach</h2>
+
+        <p>
+            Goreale Agricultural Innovators
+            promotes practical livestock
+            development through education,
+            innovation, research and
+            responsible animal management.
+        </p>
+
+        <div class="step">
+            <h3>1. Assess Livestock Resources</h3>
+            <p>
+                Identify available animals,
+                grazing areas, feed resources,
+                water supplies and production
+                challenges.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>2. Select Suitable Livestock</h3>
+            <p>
+                Encourage appropriate animal
+                species and breeds based on
+                environmental conditions and
+                production objectives.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>3. Improve Feeding and Nutrition</h3>
+            <p>
+                Promote fodder production,
+                pasture management, feed
+                conservation and balanced
+                animal nutrition.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>4. Strengthen Animal Health</h3>
+            <p>
+                Encourage preventive healthcare,
+                veterinary services, biosecurity
+                and responsible animal welfare.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>5. Improve Production Systems</h3>
+            <p>
+                Promote suitable housing,
+                water management, breeding
+                and modern livestock technology.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>6. Support Livestock Businesses</h3>
+            <p>
+                Encourage value addition,
+                market access, financial
+                planning and proper
+                production records.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- COMMITMENT -->
+<section>
+    <div class="intro">
+
+        <h2 class="section-title">Our Commitment to Livestock Development</h2>
+
+        <p>
+            Goreale Agricultural Innovators is
+            committed to promoting productive,
+            healthy and sustainable livestock
+            systems. We recognize livestock
+            as an important source of food,
+            income, employment and resilience
+            for farming and pastoral communities.
+        </p>
+
+        <p>
+            Through research, farmer education,
+            technology and knowledge sharing,
+            we aim to encourage improved animal
+            husbandry, responsible resource
+            management and better livestock
+            business opportunities.
+        </p>
+
+        <p>
+            Our vision is to support stronger
+            livestock production systems that
+            improve farmers' livelihoods,
+            contribute to food security and
+            protect agricultural resources
+            for future generations.
+        </p>
+
+    </div>
+</section>
+
+<!-- LEARNING RESOURCES -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Livestock Learning Resources</h2>
+
+        <div class="resources">
+
+            <p>
+                Explore these institutions and
+                technical resources for further
+                livestock production knowledge.
+            </p>
+
+            <ul>
+
+                <li>
+                    <a href="https://kilimo.go.ke/"
+                       target="_blank" rel="noopener">
+                       Kenya Ministry of Agriculture
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.kalro.org/"
+                       target="_blank" rel="noopener">
+                       Kenya Agricultural and Livestock Research Organization (KALRO)
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.fao.org/animal-production/en"
+                       target="_blank" rel="noopener">
+                       FAO Animal Production
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.fao.org/policy-support/policy-themes/sustainable-livestock/"
+                       target="_blank" rel="noopener">
+                       FAO Sustainable Livestock
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.fao.org/animal-health/"
+                       target="_blank" rel="noopener">
+                       FAO Animal Health
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.kephis.org/"
+                       target="_blank" rel="noopener">
+                       Kenya Plant Health Inspectorate Service (KEPHIS)
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <h3>Goreale Agricultural Innovators</h3>
+
+    <p>
+        Advancing agriculture through knowledge,
+        research, technology and innovation.
+    </p>
+
+    <p>
+        &copy; 2026 Goreale Agricultural Innovators.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>

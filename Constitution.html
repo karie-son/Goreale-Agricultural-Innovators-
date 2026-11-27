@@ -1,0 +1,1342 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#174D2A">
+
+<meta name="description" content="Official Constitution of GOREALE Agricultural Innovators Community-Based Organization, Goreale Ward, Lagdera Constituency, Garissa County, Kenya.">
+
+<title>Constitution | GOREALE Agricultural Innovators</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+    --ivory: #F5F5DC;
+    --forest: #174D2A;
+    --earth: #8B5A2B;
+    --charcoal: #454545;
+    --white: #FFFFFF;
+
+    --body-size: 0.76rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-size);
+    line-height: 1.85;
+    color: var(--charcoal);
+    background: var(--ivory);
+}
+
+/* HEADER */
+
+.site-header {
+    background: var(--forest);
+    min-height: 76px;
+    padding: 0.65rem 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+.brand img {
+    width: 155px;
+    max-height: auto;
+    
+    display: block;
+}
+
+/* HAMBURGER */
+
+.menu-button {
+    width: 39px;
+    height: 39px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-button span {
+    width: 19px;
+    height: 2px;
+    background: white;
+    border-radius: 2px;
+}
+
+/* NAVIGATION */
+
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 76px;
+    right: 6%;
+    width: 225px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.nav-menu.active {
+    display: block;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: var(--forest);
+    text-decoration: none;
+    font-size: 0.69rem;
+    font-weight: 600;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.nav-menu a:hover {
+    background: var(--ivory);
+}
+
+/* HERO */
+
+.page-hero {
+    background: var(--forest);
+    color: white;
+    padding: 3.5rem 7%;
+    text-align: center;
+    border-bottom: 5px solid var(--earth);
+}
+
+.hero-label {
+    color: #DCC49A;
+    font-size: 0.64rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.page-hero h1 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    font-weight: 800;
+    margin: 0.7rem 0;
+    letter-spacing: 1px;
+}
+
+.page-hero p {
+    font-size: 0.74rem;
+    max-width: 650px;
+    margin: auto;
+    color: #F0EEE5;
+}
+
+/* MAIN */
+
+.container {
+    width: 90%;
+    max-width: 1050px;
+    margin: 2.5rem auto;
+}
+
+/* INTRODUCTION */
+
+.document-intro {
+    background: var(--ivory);
+    padding: 1.5rem;
+    border-left: 4px solid var(--earth);
+    margin-bottom: 1.5rem;
+}
+
+.document-intro h2 {
+    color: var(--forest);
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.document-intro p {
+    font-size: 0.73rem;
+    margin-bottom: 0.3rem;
+}
+
+/* TOC */
+
+.toc {
+    background: var(--ivory);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid #e5dfd1;
+}
+
+.toc h2 {
+    color: var(--forest);
+    font-size: 0.92rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--earth);
+    padding-bottom: 0.5rem;
+}
+
+.toc ol {
+    padding-left: 1.3rem;
+    columns: 2;
+}
+
+.toc li {
+    margin-bottom: 0.4rem;
+    font-size: 0.67rem;
+}
+
+.toc a {
+    color: var(--charcoal);
+    text-decoration: none;
+}
+
+.toc a:hover {
+    color: var(--earth);
+}
+
+/* CHAPTERS */
+
+.chapter {
+    background: var(--ivory);
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid #e5dfd1;
+    border-radius: 3px;
+}
+
+.chapter-title {
+    background: var(--forest);
+    color: white;
+    padding: 0.8rem 1rem;
+    font-size: 0.82rem;
+    font-weight: 800;
+    margin: -1.5rem -1.5rem 1.3rem;
+    border-left: 5px solid var(--earth);
+}
+
+.article {
+    margin-bottom: 1.4rem;
+    scroll-margin-top: 100px;
+}
+
+.article h3 {
+    color: var(--forest);
+    font-size: 0.76rem;
+    font-weight: 800;
+    margin-bottom: 0.45rem;
+}
+
+.article p,
+.article li {
+    font-size: 0.71rem;
+    line-height: 1.85;
+}
+
+.article p {
+    margin-bottom: 0.45rem;
+}
+
+.article ol,
+.article ul {
+    padding-left: 1.4rem;
+}
+
+.article li {
+    padding-left: 0.15rem;
+    margin-bottom: 0.18rem;
+}
+
+/* SIGNATURES */
+
+.signature-section {
+    background: white;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-top: 4px solid var(--earth);
+}
+
+.signature-section h2 {
+    font-size: 0.95rem;
+    color: var(--forest);
+    margin-bottom: 1rem;
+}
+
+.signature-section p {
+    font-size: 0.72rem;
+    margin-bottom: 0.7rem;
+}
+
+.signature-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.66rem;
+    margin: 1rem 0 1.5rem;
+}
+
+.signature-table th,
+.signature-table td {
+    padding: 0.7rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.signature-table th {
+    background: var(--forest);
+    color: white;
+}
+
+.signature-table td {
+    height: 45px;
+}
+
+/* ACTIONS */
+
+.document-actions {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.action-button {
+    background: var(--forest);
+    color: white;
+    padding: 0.75rem 1.3rem;
+    border: none;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 0.69rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.action-button.secondary {
+    background: var(--earth);
+}
+
+/* FOOTER */
+
+.about-footer {
+    background: var(--forest);
+    color: white;
+    text-align: center;
+    padding: 2rem 6%;
+    font-size: 0.67rem;
+    border-top: 4px solid var(--earth);
+}
+
+.about-footer strong {
+    display: block;
+    font-size: 0.84rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-tagline {
+    color: #DCC49A;
+    margin-top: 0.6rem;
+    font-weight: 600;
+}
+
+/* MOBILE */
+
+@media(max-width: 650px) {
+
+    .brand img {
+        width: 150px;
+    }
+
+    .page-hero {
+        padding: 2.8rem 5%;
+    }
+
+    .container {
+        width: 94%;
+        margin: 1.5rem auto;
+    }
+
+    .chapter {
+        padding: 1rem;
+    }
+
+    .chapter-title {
+        margin: -1rem -1rem 1rem;
+    }
+
+    .toc ol {
+        columns: 1;
+    }
+
+    .signature-table {
+        font-size: 0.56rem;
+    }
+
+    .signature-table th,
+    .signature-table td {
+        padding: 0.4rem;
+    }
+}
+
+/* PRINT */
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 18mm;
+    }
+
+    body {
+        background: white;
+        font-size: 10pt;
+        color: black;
+    }
+
+    .site-header,
+    .document-actions,
+    .nav-menu {
+        display: none !important;
+    }
+
+    .page-hero {
+        background: white;
+        color: black;
+        border-bottom: 2px solid black;
+        padding: 1rem;
+    }
+
+    .page-hero p,
+    .hero-label {
+        color: black;
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+        margin: 1rem auto;
+    }
+
+    .chapter,
+    .document-intro,
+    .toc,
+    .signature-section {
+        box-shadow: none;
+    }
+
+    .chapter-title {
+        background: #eeeeee;
+        color: black;
+        border-left: 3px solid black;
+    }
+
+    .article h3 {
+        color: black;
+    }
+
+    .about-footer {
+        background: white;
+        color: black;
+        border-top: 1px solid black;
+    }
+
+    .footer-tagline {
+        color: black;
+    }
+
+    .signature-table th {
+        background: #eeeeee;
+        color: black;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="site-header">
+
+    <a href="index.html" class="brand">
+        <img src="goreale-logo.png"
+             alt="GOREALE Agricultural Innovators">
+    </a>
+
+    <button class="menu-button"
+            id="menuButton"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+    <nav class="nav-menu" id="navMenu">
+
+        <a href="index.html">Home</a>
+            <a href="about-us.html#about">About Us</a>
+            <a href="about-us.html#services">Our Services</a>
+            <a href="about-us.html#objectives">Our Objectives</a>
+            <a href="about-us.html#mission">Our Mission</a>
+            <a href="our-team.html">Our Team</a>
+            <a href="innovation.html">Innovation</a>
+            <a href="community.html">Our Community</a>
+            <a href="weather-climate.html">Weather & Climate</a>
+            <a href="research.html">Research & Education</a>
+            <a href="video-lessons.html">Resources</a>
+            <a href="collaboration.html">Collaborate</a>
+            <a href="legal.html">Legal</a>
+            
+
+    </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="page-hero">
+
+    <span class="hero-label">
+        ORGANIZATIONAL GOVERNANCE
+    </span>
+
+    <h1>OUR CONSTITUTION</h1>
+
+    <p>
+        The governing framework, principles, values and
+        institutional guidelines of GOREALE Agricultural Innovators.
+    </p>
+
+</section>
+
+<main class="container">
+
+<!-- ORGANIZATION INFORMATION -->
+
+<section class="document-intro">
+
+    <h2>GOREALE AGRICULTURAL INNOVATORS</h2>
+
+    <p><strong>Organization Type:</strong> Community-Based Organization (CBO)</p>
+
+    <p><strong>Location:</strong> Goreale Ward, Lagdera Constituency, Garissa County, Kenya</p>
+
+    <p><strong>Document:</strong> Official Organizational Constitution</p>
+
+    <p><strong>Adoption Date:</strong> __________________________</p>
+
+    <p><strong>Registration Number:</strong> __________________________</p>
+
+    <p><strong>Motto:</strong> Cultivating Innovation. Growing Sustainable Futures.</p>
+
+</section>
+
+<!-- PREAMBLE -->
+
+<section class="chapter">
+
+    <h2 class="chapter-title">PREAMBLE</h2>
+
+    <p>
+        We, the members of GOREALE Agricultural Innovators,
+        united by our commitment to sustainable agriculture,
+        community development, innovation, environmental
+        conservation and improved livelihoods, hereby establish
+        this Community-Based Organization.
+    </p>
+
+    <p>
+        Recognizing the importance of collective action,
+        agricultural innovation, youth participation, gender
+        inclusion, environmental sustainability and community
+        empowerment, we adopt this Constitution as the governing
+        framework of our organization.
+    </p>
+
+    <p>
+        We commit ourselves to working together to advance
+        agricultural development, strengthen community resilience,
+        promote food security and create opportunities for present
+        and future generations.
+    </p>
+
+</section>
+
+<!-- TABLE OF CONTENTS -->
+
+<section class="toc">
+
+    <h2>TABLE OF CONTENTS</h2>
+
+    <ol>
+        <li><a href="#chapter1">Preliminary Provisions</a></li>
+        <li><a href="#chapter2">Objectives and Functions</a></li>
+        <li><a href="#chapter3">Membership</a></li>
+        <li><a href="#chapter4">Governance and Leadership</a></li>
+        <li><a href="#chapter5">Meetings</a></li>
+        <li><a href="#chapter6">Financial Management</a></li>
+        <li><a href="#chapter7">Projects and Partnerships</a></li>
+        <li><a href="#chapter8">Ethics and Discipline</a></li>
+        <li><a href="#chapter9">Amendments and Dissolution</a></li>
+        <li><a href="#chapter10">Miscellaneous Provisions</a></li>
+        <li><a href="#adoption">Adoption and Declaration</a></li>
+    </ol>
+
+</section>
+
+<!-- CHAPTER ONE -->
+
+<section class="chapter" id="chapter1">
+
+<h2 class="chapter-title">CHAPTER ONE: PRELIMINARY PROVISIONS</h2>
+
+<div class="article">
+<h3>ARTICLE 1: NAME OF THE ORGANIZATION</h3>
+<ol>
+<li>The organization shall be known as GOREALE AGRICULTURAL INNOVATORS.</li>
+<li>The organization shall operate as a Community-Based Organization (CBO).</li>
+<li>The organization may hereinafter be referred to as GOREALE or the Organization.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 2: REGISTERED OFFICE AND AREA OF OPERATION</h3>
+<ol>
+<li>The principal operational base shall be Goreale Ward, Lagdera Constituency, Garissa County, Kenya.</li>
+<li>The Organization may undertake activities in other parts of Garissa County, Northeastern Kenya and elsewhere in Kenya, subject to applicable laws.</li>
+<li>The Organization may establish operational offices or community coordination points where necessary.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 3: LEGAL STATUS</h3>
+<ol>
+<li>The Organization shall operate as a non-profit, community-based organization.</li>
+<li>Its activities shall be guided by applicable laws and regulations of the Republic of Kenya.</li>
+<li>It shall not distribute profits or organizational assets among members for personal benefit.</li>
+<li>All resources shall be applied towards achieving its objectives.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 4: VISION</h3>
+<p>A sustainable, innovative and empowered community where agriculture drives food security, environmental conservation, economic opportunities and improved livelihoods.</p>
+</div>
+
+<div class="article">
+<h3>ARTICLE 5: MISSION</h3>
+<p>To advance sustainable agriculture through innovation, climate-smart solutions, agricultural knowledge, environmental conservation and meaningful community participation.</p>
+</div>
+
+<div class="article">
+<h3>ARTICLE 6: CORE VALUES</h3>
+<p>The Organization shall be guided by:</p>
+<ol>
+<li>Integrity and accountability.</li>
+<li>Transparency and good governance.</li>
+<li>Innovation and creativity.</li>
+<li>Environmental responsibility.</li>
+<li>Inclusivity and equality.</li>
+<li>Community participation.</li>
+<li>Collaboration and partnership.</li>
+<li>Sustainability and resilience.</li>
+<li>Respect and teamwork.</li>
+<li>Professionalism.</li>
+</ol>
+</div>
+
+</section>
+
+<!-- CHAPTER TWO -->
+
+<section class="chapter" id="chapter2">
+
+<h2 class="chapter-title">CHAPTER TWO: OBJECTIVES AND FUNCTIONS</h2>
+
+<div class="article">
+<h3>ARTICLE 7: GENERAL OBJECTIVE</h3>
+<p>To promote sustainable agricultural development, community empowerment, environmental conservation and improved socioeconomic livelihoods through innovation, knowledge sharing and collective participation.</p>
+</div>
+
+<div class="article">
+<h3>ARTICLE 8: SPECIFIC OBJECTIVES</h3>
+<ol>
+<li>Promote climate-smart and sustainable agricultural practices.</li>
+<li>Support crop production and diversification.</li>
+<li>Improve livestock production and management.</li>
+<li>Promote afforestation, agroforestry and environmental restoration.</li>
+<li>Encourage soil and water conservation.</li>
+<li>Promote agricultural technology and innovation.</li>
+<li>Support agricultural research, learning and knowledge exchange.</li>
+<li>Promote agribusiness, entrepreneurship and market access.</li>
+<li>Strengthen food security and community nutrition.</li>
+<li>Encourage youth and women's participation in agriculture.</li>
+<li>Promote community development and economic empowerment.</li>
+<li>Support climate adaptation, drought preparedness and resilience.</li>
+<li>Facilitate agricultural training, demonstrations and capacity building.</li>
+<li>Establish partnerships with government institutions, NGOs, development partners, research institutions and private-sector organizations.</li>
+<li>Promote sustainable natural resource management.</li>
+<li>Encourage community-led initiatives and volunteer participation.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 9: FUNCTIONS</h3>
+<p>The Organization may:</p>
+<ol>
+<li>Conduct agricultural training and awareness programmes.</li>
+<li>Establish demonstration farms and community agricultural projects.</li>
+<li>Mobilize resources for approved community initiatives.</li>
+<li>Organize workshops, field visits and agricultural exhibitions.</li>
+<li>Develop and implement community development programmes.</li>
+<li>Participate in research and agricultural innovation activities.</li>
+<li>Establish partnerships and collaborative programmes.</li>
+<li>Prepare reports, proposals and development plans.</li>
+<li>Support community members through approved programmes.</li>
+</ol>
+</div>
+
+</section>
+
+<!-- CHAPTER THREE -->
+
+<section class="chapter" id="chapter3">
+
+<h2 class="chapter-title">CHAPTER THREE: MEMBERSHIP</h2>
+
+<div class="article">
+<h3>ARTICLE 10: ELIGIBILITY</h3>
+<ol>
+<li>Membership shall be open to individuals who support the vision, mission and objectives of the Organization.</li>
+<li>Applicants shall agree to abide by this Constitution.</li>
+<li>Applicants shall demonstrate willingness to participate in community development.</li>
+<li>Membership shall be open without discrimination based on gender, disability, social background or economic status.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 11: CATEGORIES OF MEMBERSHIP</h3>
+<ol>
+<li>Founding Members: Individuals involved in establishing the Organization.</li>
+<li>Ordinary Members: Individuals formally admitted into membership.</li>
+<li>Honorary Members: Individuals recognized for exceptional contributions.</li>
+<li>Associate Members: Individuals or groups supporting the Organization without necessarily exercising full voting rights.</li>
+<li>Youth Members: Eligible young people participating in organizational activities.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 12: RIGHTS OF MEMBERS</h3>
+<ol>
+<li>Participate in organizational activities.</li>
+<li>Attend General Assembly meetings.</li>
+<li>Vote, where eligible.</li>
+<li>Contest leadership positions, subject to eligibility requirements.</li>
+<li>Access organizational information and approved reports.</li>
+<li>Present proposals and recommendations.</li>
+<li>Receive fair and equal treatment.</li>
+<li>Participate in decision-making processes.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 13: RESPONSIBILITIES OF MEMBERS</h3>
+<ol>
+<li>Respect and uphold this Constitution.</li>
+<li>Support the vision and objectives of the Organization.</li>
+<li>Participate in meetings and activities.</li>
+<li>Protect organizational property and resources.</li>
+<li>Promote unity, transparency and accountability.</li>
+<li>Avoid conduct that damages the reputation of the Organization.</li>
+<li>Fulfil approved membership obligations.</li>
+<li>Respect decisions lawfully made by the Organization.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 14: ADMISSION AND TERMINATION OF MEMBERSHIP</h3>
+<ol>
+<li>Applications for membership shall be submitted to the Secretary or designated membership officer.</li>
+<li>Admission shall be approved in accordance with procedures established by the Organization.</li>
+<li>Membership may cease through voluntary resignation, death, expulsion or other lawful grounds.</li>
+<li>A member shall be given an opportunity to respond before disciplinary termination.</li>
+<li>Any member may appeal a membership decision through the General Assembly.</li>
+</ol>
+</div>
+
+</section>
+
+<!-- CHAPTER FOUR -->
+
+<section class="chapter" id="chapter4">
+
+<h2 class="chapter-title">CHAPTER FOUR: GOVERNANCE AND LEADERSHIP</h2>
+
+<div class="article">
+<h3>ARTICLE 15: GOVERNING STRUCTURE</h3>
+<p>The Organization shall have the following governance organs:</p>
+<ol>
+<li>General Assembly.</li>
+<li>Executive Committee.</li>
+<li>Subcommittees and project committees, where necessary.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 16: GENERAL ASSEMBLY</h3>
+<ol>
+<li>The General Assembly shall be the supreme decision-making organ.</li>
+<li>It shall consist of all eligible members.</li>
+<li>It shall approve organizational policies, plans and budgets.</li>
+<li>It shall elect and remove office bearers in accordance with this Constitution.</li>
+<li>It shall receive and consider annual reports.</li>
+<li>It shall approve constitutional amendments.</li>
+<li>It shall provide overall direction and oversight.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 17: EXECUTIVE COMMITTEE</h3>
+<p>The Executive Committee shall consist of:</p>
+<ol>
+<li>Chairperson.</li>
+<li>Vice Chairperson.</li>
+<li>Secretary.</li>
+<li>Assistant Secretary.</li>
+<li>Treasurer.</li>
+<li>Organizing Secretary.</li>
+<li>Additional committee members as approved by the General Assembly.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 18: DUTIES OF THE CHAIRPERSON</h3>
+<ol>
+<li>Provide overall leadership.</li>
+<li>Preside over General Assembly and Executive Committee meetings.</li>
+<li>Represent the Organization in official engagements.</li>
+<li>Ensure implementation of approved decisions.</li>
+<li>Promote accountability and effective governance.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 19: DUTIES OF THE VICE CHAIRPERSON</h3>
+<ol>
+<li>Assist the Chairperson.</li>
+<li>Perform the Chairperson's duties in their absence.</li>
+<li>Undertake responsibilities assigned by the Executive Committee.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 20: DUTIES OF THE SECRETARY</h3>
+<ol>
+<li>Maintain official records and correspondence.</li>
+<li>Prepare and distribute meeting notices.</li>
+<li>Record and maintain meeting minutes.</li>
+<li>Maintain membership records.</li>
+<li>Coordinate administrative communication.</li>
+<li>Prepare organizational reports with relevant officers.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 21: DUTIES OF THE ASSISTANT SECRETARY</h3>
+<ol>
+<li>Assist the Secretary.</li>
+<li>Maintain records when delegated.</li>
+<li>Perform the Secretary's duties in their absence.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 22: DUTIES OF THE TREASURER</h3>
+<ol>
+<li>Manage organizational financial records.</li>
+<li>Maintain records of income and expenditure.</li>
+<li>Present financial reports.</li>
+<li>Ensure proper documentation of transactions.</li>
+<li>Support preparation of annual budgets.</li>
+<li>Safeguard organizational financial information.</li>
+<li>Ensure funds are used for approved purposes.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 23: DUTIES OF THE ORGANIZING SECRETARY</h3>
+<ol>
+<li>Coordinate organizational programmes and events.</li>
+<li>Mobilize members for approved activities.</li>
+<li>Support community engagement.</li>
+<li>Coordinate logistical arrangements.</li>
+<li>Assist in monitoring implementation of activities.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 24: ELECTIONS AND TENURE</h3>
+<ol>
+<li>Office bearers shall be elected democratically by eligible members.</li>
+<li>Elections shall be conducted through transparent and fair procedures.</li>
+<li>The tenure of office shall be three years.</li>
+<li>Office bearers may be re-elected.</li>
+<li>Elections shall be conducted in accordance with procedures approved by the General Assembly.</li>
+<li>Vacancies shall be filled through an approved election or interim appointment until the next General Assembly.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 25: REMOVAL FROM OFFICE</h3>
+<p>An office bearer may be removed for:</p>
+<ol>
+<li>Gross misconduct.</li>
+<li>Misappropriation of organizational funds.</li>
+<li>Abuse of office.</li>
+<li>Persistent failure to perform assigned responsibilities.</li>
+<li>Violation of this Constitution.</li>
+<li>Conduct seriously prejudicial to the Organization.</li>
+</ol>
+<p>Removal shall require a fair hearing and approval by the General Assembly in accordance with this Constitution.</p>
+</div>
+
+</section>
+
+<!-- CHAPTER FIVE -->
+
+<section class="chapter" id="chapter5">
+
+<h2 class="chapter-title">CHAPTER FIVE: MEETINGS</h2>
+
+<div class="article">
+<h3>ARTICLE 26: ANNUAL GENERAL MEETING</h3>
+<ol>
+<li>The Organization shall hold an Annual General Meeting once every calendar year.</li>
+<li>The meeting shall review organizational performance, finances and programmes.</li>
+<li>It shall approve annual plans and budgets.</li>
+<li>It shall receive reports from the Executive Committee.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 27: ORDINARY MEETINGS</h3>
+<p>The Executive Committee shall meet at least once every three months or as necessary.</p>
+</div>
+
+<div class="article">
+<h3>ARTICLE 28: SPECIAL GENERAL MEETINGS</h3>
+<p>A Special General Meeting may be convened by the Chairperson or upon a written request by at least one-third of eligible members.</p>
+</div>
+
+<div class="article">
+<h3>ARTICLE 29: NOTICE OF MEETINGS</h3>
+<ol>
+<li>Ordinary General Meetings shall receive at least fourteen days' notice.</li>
+<li>Special meetings shall receive reasonable notice, ordinarily not less than seven days.</li>
+<li>Emergency meetings may be convened where circumstances require.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 30: QUORUM</h3>
+<ol>
+<li>The quorum for a General Assembly meeting shall be one-half of eligible members.</li>
+<li>The quorum for Executive Committee meetings shall be a simple majority of its serving members.</li>
+<li>If quorum is not achieved, the meeting shall be adjourned and reconvened according to procedures approved by the Organization.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 31: DECISION-MAKING</h3>
+<ol>
+<li>Decisions shall preferably be made through consensus.</li>
+<li>Where consensus is not achieved, decisions shall be made through voting.</li>
+<li>Each eligible voting member shall have one vote.</li>
+<li>In the event of a tie, the Chairperson shall exercise a casting vote, where applicable.</li>
+</ol>
+</div>
+
+</section>
+
+<!-- CHAPTER SIX -->
+
+<section class="chapter" id="chapter6">
+
+<h2 class="chapter-title">CHAPTER SIX: FINANCIAL MANAGEMENT</h2>
+
+<div class="article">
+<h3>ARTICLE 32: SOURCES OF FUNDS</h3>
+<p>The Organization may obtain funds through:</p>
+<ol>
+<li>Membership contributions and subscriptions.</li>
+<li>Donations and voluntary contributions.</li>
+<li>Grants from government institutions.</li>
+<li>Support from NGOs and development partners.</li>
+<li>Corporate and institutional partnerships.</li>
+<li>Fundraising activities.</li>
+<li>Income from approved organizational projects.</li>
+<li>Other lawful sources consistent with its objectives.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 33: BANK ACCOUNT</h3>
+<ol>
+<li>The Organization shall maintain an account in its official name.</li>
+<li>All organizational funds shall be deposited into the approved account.</li>
+<li>Authorized signatories shall be appointed by the General Assembly.</li>
+<li>Withdrawals shall require authorization by at least two approved signatories, in accordance with the financial policy.</li>
+<li>Personal accounts shall not be used to hold organizational funds except in exceptional circumstances formally approved and documented by the Executive Committee.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 34: FINANCIAL YEAR</h3>
+<p>The financial year shall run from 1 January to 31 December unless otherwise approved by the General Assembly or required by applicable regulations.</p>
+</div>
+
+<div class="article">
+<h3>ARTICLE 35: BUDGET AND EXPENDITURE</h3>
+<ol>
+<li>The Organization shall prepare an annual budget.</li>
+<li>Expenditure shall be consistent with approved objectives and budgets.</li>
+<li>All transactions shall be supported by appropriate documentation.</li>
+<li>No member shall use organizational resources for unauthorized personal benefit.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 36: FINANCIAL RECORDS AND AUDIT</h3>
+<ol>
+<li>Proper books of accounts shall be maintained.</li>
+<li>Financial statements shall be presented annually.</li>
+<li>The General Assembly shall appoint an independent auditor or qualified reviewer where appropriate.</li>
+<li>Financial records shall be available for authorized inspection.</li>
+</ol>
+</div>
+
+</section>
+
+<!-- CHAPTER SEVEN -->
+
+<section class="chapter" id="chapter7">
+
+<h2 class="chapter-title">CHAPTER SEVEN: PROJECTS, PARTNERSHIPS AND COLLABORATION</h2>
+
+<div class="article">
+<h3>ARTICLE 37: PROJECT IMPLEMENTATION</h3>
+<p>The Organization may design and implement programmes relating to:</p>
+<ol>
+<li>Climate-smart agriculture.</li>
+<li>Crop production.</li>
+<li>Livestock development.</li>
+<li>Afforestation and agroforestry.</li>
+<li>Soil and water conservation.</li>
+<li>Agricultural technology.</li>
+<li>Research and innovation.</li>
+<li>Agribusiness and entrepreneurship.</li>
+<li>Food security.</li>
+<li>Community development and participation.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 38: PARTNERSHIPS</h3>
+<ol>
+<li>The Organization may collaborate with government institutions, NGOs, community groups, private-sector entities and development partners.</li>
+<li>Partnerships shall advance the Organization's objectives.</li>
+<li>Agreements shall be documented and approved by the appropriate governing organ.</li>
+<li>No partnership shall compromise the independence, integrity or non-profit character of the Organization.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 39: ACCOUNTABILITY TO PARTNERS AND BENEFICIARIES</h3>
+<ol>
+<li>Maintain transparency in project implementation.</li>
+<li>Prepare progress and financial reports.</li>
+<li>Promote community participation.</li>
+<li>Ensure responsible utilization of resources.</li>
+<li>Monitor and evaluate project outcomes.</li>
+</ol>
+</div>
+
+</section>
+
+<!-- CHAPTER EIGHT -->
+
+<section class="chapter" id="chapter8">
+
+<h2 class="chapter-title">CHAPTER EIGHT: ETHICS, DISCIPLINE AND CONFLICT RESOLUTION</h2>
+
+<div class="article">
+<h3>ARTICLE 40: CODE OF CONDUCT</h3>
+<p>All members and office bearers shall:</p>
+<ol>
+<li>Demonstrate integrity and honesty.</li>
+<li>Avoid corruption and misuse of resources.</li>
+<li>Respect other members.</li>
+<li>Avoid discrimination and harassment.</li>
+<li>Declare conflicts of interest.</li>
+<li>Protect confidential organizational information.</li>
+<li>Uphold the reputation and objectives of the Organization.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 41: DISCIPLINARY PROCEDURES</h3>
+<ol>
+<li>Complaints shall be submitted to the Executive Committee.</li>
+<li>The affected member shall be informed of the allegations.</li>
+<li>The member shall be given an opportunity to respond.</li>
+<li>Disciplinary action shall be proportionate to the misconduct.</li>
+<li>A member shall have the right to appeal to the General Assembly.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 42: CONFLICT RESOLUTION</h3>
+<p>Disputes shall first be resolved through internal dialogue and mediation.</p>
+<p>Where internal resolution fails, the Organization may refer the matter to an appropriate mediation mechanism or lawful authority.</p>
+</div>
+
+</section>
+
+<!-- CHAPTER NINE -->
+
+<section class="chapter" id="chapter9">
+
+<h2 class="chapter-title">CHAPTER NINE: AMENDMENTS AND DISSOLUTION</h2>
+
+<div class="article">
+<h3>ARTICLE 43: CONSTITUTIONAL AMENDMENTS</h3>
+<ol>
+<li>Any member may propose an amendment.</li>
+<li>Proposed amendments shall be submitted in writing to the Secretary.</li>
+<li>Members shall receive reasonable notice of proposed amendments.</li>
+<li>Amendments shall require approval by at least two-thirds of eligible members present and voting at a properly constituted General Assembly.</li>
+<li>Amendments shall comply with applicable registration and regulatory requirements.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>ARTICLE 44: DISSOLUTION</h3>
+<ol>
+<li>The Organization may be dissolved by a resolution supported by at least two-thirds of eligible members at a Special General Meeting convened for that purpose.</li>
+<li>All outstanding liabilities shall be settled.</li>
+<li>Remaining assets shall not be distributed among members.</li>
+<li>Remaining assets shall be transferred to another registered non-profit organization with similar objectives, subject to applicable law and regulatory approval.</li>
+<li>Dissolution shall be reported to the relevant authorities in accordance with applicable requirements.</li>
+</ol>
+</div>
+
+</section>
+
+<!-- CHAPTER TEN -->
+
+<section class="chapter" id="chapter10">
+
+<h2 class="chapter-title">CHAPTER TEN: MISCELLANEOUS PROVISIONS</h2>
+
+<div class="article">
+<h3>ARTICLE 45: SEAL AND OFFICIAL DOCUMENTS</h3>
+<p>The Organization may adopt an official stamp, letterhead, logo and other identification materials for administrative and institutional purposes.</p>
+</div>
+
+<div class="article">
+<h3>ARTICLE 46: POLICIES AND PROCEDURES</h3>
+<p>The Executive Committee may propose operational policies, including financial, procurement, human resource, safeguarding and project management policies, subject to approval by the General Assembly where required.</p>
+</div>
+
+<div class="article">
+<h3>ARTICLE 47: INTERPRETATION</h3>
+<p>Any question regarding the interpretation of this Constitution shall initially be considered by the Executive Committee, subject to the authority of the General Assembly and applicable laws.</p>
+</div>
+
+<div class="article">
+<h3>ARTICLE 48: SUPREMACY OF THE CONSTITUTION</h3>
+<p>This Constitution shall be the principal governing document of the Organization. All organizational activities and decisions shall be consistent with its provisions and the applicable laws of Kenya.</p>
+</div>
+
+</section>
+
+<!-- ADOPTION -->
+
+<section class="signature-section" id="adoption">
+
+<h2>ADOPTION AND DECLARATION</h2>
+
+<p>
+We, the undersigned founding members of GOREALE Agricultural
+Innovators, hereby declare that we have read, understood and
+adopted this Constitution as the governing document of our
+Community-Based Organization.
+</p>
+
+<p><strong>Adopted at:</strong> Goreale Ward, Lagdera Constituency, Garissa County, Kenya.</p>
+
+<p><strong>Date:</strong> __________________________________</p>
+
+<h2>FOUNDING OFFICE BEARERS</h2>
+
+<table class="signature-table">
+
+<thead>
+<tr>
+<th>Position</th>
+<th>Full Name</th>
+<th>Signature</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>Chairperson</td><td></td><td></td></tr>
+<tr><td>Vice Chairperson</td><td></td><td></td></tr>
+<tr><td>Secretary</td><td></td><td></td></tr>
+<tr><td>Assistant Secretary</td><td></td><td></td></tr>
+<tr><td>Treasurer</td><td></td><td></td></tr>
+<tr><td>Organizing Secretary</td><td></td><td></td></tr>
+</tbody>
+
+</table>
+
+<h2>WITNESSES</h2>
+
+<table class="signature-table">
+
+<thead>
+<tr>
+<th>Full Name</th>
+<th>Identification / Capacity</th>
+<th>Signature</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td></tr>
+</tbody>
+
+</table>
+
+<p>
+<strong>OFFICIAL ORGANIZATION:</strong><br>
+GOREALE AGRICULTURAL INNOVATORS
+</p>
+
+<p><em>Cultivating Innovation. Growing Sustainable Futures.</em></p>
+
+</section>
+
+<!-- DOCUMENT ACTIONS -->
+
+<div class="document-actions">
+
+<button class="action-button" onclick="window.print()">
+Print Constitution
+</button>
+
+<a href="index.html" class="action-button secondary">
+Back to Home
+</a>
+
+</div>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer class="about-footer">
+
+<strong>GOREALE Agricultural Innovators</strong>
+
+Goreale Ward · Lagdera Constituency ·
+Garissa County · Kenya
+
+<div class="footer-tagline">
+Cultivating Innovation. Growing Sustainable Futures.
+</div>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+const menuButton = document.getElementById("menuButton");
+const navMenu = document.getElementById("navMenu");
+
+menuButton.addEventListener("click", function() {
+
+    const isOpen = navMenu.classList.toggle("active");
+
+    menuButton.setAttribute("aria-expanded", isOpen);
+
+});
+
+document.querySelectorAll(".nav-menu a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navMenu.classList.remove("active");
+
+        menuButton.setAttribute("aria-expanded", "false");
+
+    });
+
+});
+
+document.addEventListener("click", function(event) {
+
+    if (
+        !menuButton.contains(event.target) &&
+        !navMenu.contains(event.target)
+    ) {
+
+        navMenu.classList.remove("active");
+
+        menuButton.setAttribute("aria-expanded", "false");
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>

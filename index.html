@@ -3,21 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#355E3B">
+    <meta name="description" content="Goreale Agricultural Innovators is a youth-led initiative in Goreale Ward, Garissa County, Kenya, promoting sustainable agriculture, climate-smart farming, agroforestry, agricultural education and environmental conservation.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow">
+    <meta name="author" content="Goreale Agricultural Innovators">
+    <meta name="language" content="English">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Goreale Agricultural Innovators">
+    <meta property="og:title" content="Goreale Agricultural Innovators | Sustainable Agriculture in Garissa, Kenya">
+    <meta property="og:description" content="Promoting climate-smart agriculture, agroforestry, agricultural knowledge and environmental conservation in Garissa County, Kenya.">
+    <meta property="og:locale" content="en_KE">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Goreale Agricultural Innovators">
+    <meta name="twitter:description" content="Advancing sustainable agriculture, climate-smart farming and environmental conservation in Garissa County, Kenya.">
+    <title>Goreale Agricultural Innovators | Sustainable Agriculture in Garissa, Kenya</title>
 
-    <title>Goreale Agricultural Innovators</title>
-<style>
- /* =========================================================
-   GOREALE AGRICULTURAL INNOVATORS
-   HOME / INDEX PAGE
-   REFINED CORPORATE STYLE
-========================================================= */
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Goreale Agricultural Innovators",
+      "description": "A youth-led agricultural innovation initiative promoting sustainable agriculture, climate-smart farming, agroforestry, agricultural education and environmental conservation.",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Goreale Ward, Lagdera Constituency, Garissa County, Kenya"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Goreale Ward",
+        "addressRegion": "Garissa County",
+        "addressCountry": "KE"
+      },
+      "knowsAbout": [
+        "Sustainable agriculture",
+        "Climate-smart agriculture",
+        "Afforestation and agroforestry",
+        "Crop production",
+        "Livestock management",
+        "Soil and water conservation",
+        "Agricultural technology",
+        "Food security",
+        "Environmental conservation"
+      ]
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
 
+:root {
+    --ivory: #F5F5DC;
+    --forest-green: #355E3B;
+    --earth-brown: #8B5A2B;
+    --charcoal-grey: #454545;
+    --olive-green: #6B8E23;
+    --lavender: #E6DDF2;
+    --beet: #E8DCE0;
+    --white: #FFFFFF;
+}
 
-/* =========================================================
-   RESET
-========================================================= */
-
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,2025 +74,1556 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 1.5rem;
 }
 
 body {
-    background: #ffffff;
-    color: #222222;
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-    font-size: 0.80rem;
-    line-height: 1.6;
-
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: var(--ivory);
+    color: var(--charcoal-grey);
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.8;
 }
 
 img {
-    display: block;
     max-width: 100%;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
+/* ==========================================
+   HERO, HEADER AND NAVIGATION
+========================================== */
 
-button,
-input,
-textarea,
-select {
-    font: inherit;
-}
-
-
-/* =========================================================
-   CORPORATE VARIABLES
-========================================================= */
-
-:root {
-
-    /* PRIMARY BRAND */
-    --corporate-black: #000000;
-
-    /* TEXT */
-    --black: #111111;
-    --text: #333333;
-    --soft-text: #444444;
-    --muted: #666666;
-
-    /* BACKGROUNDS */
-    --white: #ffffff;
-    --light: #f7f7f7;
-    --lighter: #fafafa;
-
-    /* BORDERS */
-    --border: #e3e3e3;
-    --card-border: #dddddd;
-
-    /* SHADOWS */
-    --shadow:
-        0 3px 15px rgba(0, 0, 0, 0.035);
-
-    --shadow-hover:
-        0 8px 24px rgba(0, 0, 0, 0.075);
-
-    /* SHAPE */
-    --radius: 5px;
-
-    /* TRANSITION */
-    --transition:
-        all 0.25s ease;
-}
-
-
-/* =========================================================
-   HEADER
-========================================================= */
-
-.site-header {
-    position: sticky;
-
-    top: 0;
-    z-index: 1000;
-
-    width: 100%;
-
-    background:
-        var(--white);
-
-    border-bottom:
-        1px solid var(--border);
-}
-
-.header-container {
-    width: 100%;
-    max-width: 1200px;
-
-    min-height: 72px;
-
-    margin: 0 auto;
-
-    padding:
-        0 25px;
-
+.hero {
+    position: relative;
+    isolation: isolate;
     display: flex;
-
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: clamp(28rem, 65vw, 42rem);
+    padding: 7rem 8% 4rem;
+    overflow: hidden;
+    text-align: center;
+}
 
+.hero-slides,
+.footer-slides {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+}
+
+.slide,
+.footer-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+
+.slide {
+    animation: slideshow 18s infinite ease-in-out;
+}
+
+.slide1 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .38), rgba(0, 0, 0, .38)),
+        url("footer-one.png");
+    animation-delay: 0s;
+}
+.slide2 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .38), rgba(0, 0, 0, .38)),
+        url("footer-two.png");
+    animation-delay: 6s;
+}
+.slide3 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .38), rgba(0, 0, 0, .38)),
+        url("agriculture-5.png");
+    animation-delay: 6s;
+}
+.slide4 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .38), rgba(0, 0, 0, .38)),
+        url("agriculture-1.jpeg");
+    animation-delay: 6s;
+}
+
+.slide5 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .38), rgba(0, 0, 0, .38)),
+        url("footer-three.png");
+    animation-delay: 12s;
+}
+.slide6 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .38), rgba(0, 0, 0, .38)),
+        url("hero-1.png");
+    animation-delay: 12s;
+}
+
+@keyframes slideshow {
+    0% { opacity: 0; transform: scale(1); }
+    8% { opacity: 1; }
+    30% { opacity: 1; transform: scale(1.08); }
+    38%, 100% { opacity: 0; transform: scale(1); }
+}
+
+.hero-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-}
-
-
-/* =========================================================
-   LOGO
-========================================================= */
-
-.site-logo {
-    display: inline-flex;
-
-    align-items: center;
-
-    flex-shrink: 0;
-
-    transition:
-        opacity 0.25s ease;
-}
-
-.site-logo:hover {
-    opacity: 0.78;
-}
-
-.site-logo img {
-    width: 155px;
-    height: auto;
-}
-
-
-/* =========================================================
-   NAVIGATION
-========================================================= */
-
-.main-navigation ul {
-    list-style: none;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 26px;
-}
-
-.main-navigation a {
-    position: relative;
-
-    display: inline-block;
-
-    color:
-        var(--text);
-
-    font-size:
-        0.75rem;
-
-    font-weight:
-        500;
-
-    line-height:
-        1.4;
-
-    padding:
-        8px 0;
-
-    transition:
-        color 0.25s ease;
-}
-
-
-/* NAVIGATION UNDERLINE */
-
-.main-navigation a::after {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    bottom: 3px;
-
-    width: 0;
-    height: 1px;
-
-    background:
-        var(--corporate-black);
-
-    transition:
-        width 0.25s ease;
-}
-
-.main-navigation a:hover {
-    color:
-        var(--corporate-black);
-}
-
-.main-navigation a:hover::after {
     width: 100%;
+    padding: .5rem 4%;
+    background: transparent;
 }
 
-
-/* =========================================================
-   MOBILE MENU BUTTON
-========================================================= */
-
-.menu-button {
-    display: none;
-
-    width: 36px;
-    height: 36px;
-
-    padding: 0;
-
-    border: 1px solid var(--border);
-
-    border-radius: 4px;
-
-    background:
-        var(--white);
-
-    color:
-        var(--corporate-black);
-
-    font-size:
-        1.15rem;
-
-    line-height: 1;
-
-    cursor: pointer;
-
-    transition:
-        var(--transition);
+.logo {
+    min-width: 0;
 }
 
-.menu-button:hover {
-    background:
-        var(--light);
-
-    border-color:
-        #cccccc;
-}
-
-
-/* =========================================================
-   INTRODUCTION
-========================================================= */
-
-.intro-section {
-    width: 100%;
-    max-width: 1000px;
-
-    margin: 0 auto;
-
-    padding:
-        58px 25px 38px;
-}
-
-.intro-section h1 {
-    color:
-        var(--black);
-
-    font-size:
-        1.48rem;
-
-    font-weight:
-        700;
-
-    line-height:
-        1.25;
-
-    letter-spacing:
-        -0.01em;
-
-    margin-bottom:
-        8px;
-}
-
-
-/* =========================================================
-   INTRODUCTION TAGLINE
-========================================================= */
-
-.intro-tagline {
-    color:
-        var(--black);
-
-    font-size:
-        0.86rem;
-
-    font-weight:
-        600;
-
-    line-height:
-        1.5;
-
-    margin-bottom:
-        18px;
-}
-
-.intro-section p {
-    max-width:
-        900px;
-
-    color:
-        var(--soft-text);
-
-    font-size:
-        0.76rem;
-
-    line-height:
-        1.68;
-
-    margin:
-        0 0 11px;
-}
-
-.intro-section p:last-child {
-    margin-bottom:
-        0;
-}
-
-
-/* =========================================================
-   HERO SECTION
-========================================================= */
-
-.hero-section {
-    width: 100%;
-    max-width: 1200px;
-
-    margin: 0 auto;
-
-    padding:
-        8px 25px 45px;
-}
-
-
-/* =========================================================
-   HERO SLIDER
-========================================================= */
-
-.hero-slider {
-    width: 100%;
-
-    overflow: hidden;
-
-    background:
-        var(--light);
-
-    border:
-        1px solid var(--border);
-
-    border-radius:
-        var(--radius);
-
-    box-shadow:
-        var(--shadow);
-}
-
-
-/* =========================================================
-   HERO TRACK
-========================================================= */
-
-.hero-track {
-    width: 400%;
-
-    display: flex;
-
-    animation:
-        heroSlide 18s infinite;
-
-    will-change:
-        transform;
-}
-
-
-/* =========================================================
-   HERO SLIDES
-========================================================= */
-
-.hero-slide {
-    width: 25%;
-
-    flex-shrink: 0;
-
-    aspect-ratio:
-        16 / 7;
-
-    overflow: hidden;
-}
-
-
-/* =========================================================
-   HERO IMAGES
-========================================================= */
-
-.hero-slide img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    object-position: center;
-
+.logo img {
     display: block;
+    width: clamp(120px, 18vw, 200px);
+    height: auto;
+    object-fit: contain;
 }
 
-
-/* =========================================================
-   HERO ANIMATION
-========================================================= */
-
-@keyframes heroSlide {
-
-    0%,
-    20% {
-        transform:
-            translateX(0);
-    }
-
-    25%,
-    45% {
-        transform:
-            translateX(-25%);
-    }
-
-    50%,
-    70% {
-        transform:
-            translateX(-50%);
-    }
-
-    75%,
-    95% {
-        transform:
-            translateX(-75%);
-    }
-
-    100% {
-        transform:
-            translateX(0);
-    }
+.menu {
+    display: block;
+    padding: .45rem;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 7;
 }
 
-
-/* =========================================================
-   GET INVOLVED
-========================================================= */
-
-.get-involved-section {
-    width: 100%;
-    max-width: 950px;
-
-    margin: 0 auto;
-
-    padding:
-        40px 25px 58px;
-
-    text-align:
-        center;
+.menu span {
+    display: block;
+    width: 1.7rem;
+    height: .18rem;
+    margin: .35rem;
+    border-radius: 5px;
+    background: var(--ivory);
 }
 
-.get-involved-section h2 {
-    color:
-        var(--black);
-
-    font-size:
-        1.04rem;
-
-    font-weight:
-        700;
-
-    line-height:
-        1.35;
-
-    margin-bottom:
-        9px;
-}
-
-.get-involved-section p {
-    max-width:
-        850px;
-
-    margin:
-        0 auto 10px;
-
-    color:
-        var(--soft-text);
-
-    font-size:
-        0.76rem;
-
-    line-height:
-        1.68;
-}
-
-
-/* =========================================================
-   CTA WRAPPER
-========================================================= */
-
-.cta-wrapper {
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    margin-top:
-        21px;
-}
-
-
-/* =========================================================
-   CTA BUTTON
-========================================================= */
-
-.cta-button {
-    display:
-        inline-flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    min-width:
-        116px;
-
-    padding:
-        9px 22px;
-
-    background:
-        var(--corporate-black);
-
-    color:
-        var(--white);
-
-    border:
-        1px solid var(--corporate-black);
-
-    border-radius:
-        5px;
-
-    font-size:
-        0.73rem;
-
-    font-weight:
-        600;
-
-    line-height:
-        1.3;
-
-    cursor:
-        pointer;
-
-    box-shadow:
-        0 0 0 rgba(0, 0, 0, 0);
-
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease,
-        box-shadow 0.25s ease;
-}
-
-.cta-button:hover {
-    background:
-        #222222;
-
-    transform:
-        translateY(-2px);
-
-    box-shadow:
-        0 7px 18px rgba(0, 0, 0, 0.15);
-}
-
-.cta-button:active {
-    transform:
-        translateY(0);
-
-    box-shadow:
-        0 3px 8px rgba(0, 0, 0, 0.12);
-}
-
-
-/* =========================================================
-   FEATURE SECTION
-========================================================= */
-
-.feature-section {
-    width: 100%;
-    max-width: 1200px;
-
-    margin: 0 auto;
-
-    padding:
-        5px 25px 68px;
-}
-
-.feature-grid {
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
-
-    gap:
-        18px;
-}
-
-
-/* =========================================================
-   FEATURE CARD
-========================================================= */
-
-.feature-card {
-    position: relative;
-
-    min-height:
-        150px;
-
-    background:
-        var(--white);
-
-    border:
-        1px solid var(--card-border);
-
-    border-radius:
-        var(--radius);
-
-    padding:
-        23px 20px 21px 28px;
-
-    box-shadow:
-        var(--shadow);
-
-    overflow:
-        hidden;
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease,
-        border-color 0.25s ease;
-}
-
-
-/* =========================================================
-   CORPORATE LEFT ACCENT
-========================================================= */
-
-.feature-card::before {
-    content: "";
-
+.hero-header nav {
     position: absolute;
-
-    left: 0;
-    top: 0;
-
-    width:
-        4px;
-
-    height:
-        100%;
-
-    background:
-        var(--corporate-black);
-
-    border-radius:
-        var(--radius) 0 0 var(--radius);
+    top: 100%;
+    right: 4%;
+    z-index: 8;
+    display: none;
+    min-width: 13rem;
+    padding: 1.1rem 1.25rem;
+    border-radius: .35rem;
+    background: var(--ivory);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
 }
 
-
-/* =========================================================
-   CARD HOVER
-========================================================= */
-
-.feature-card:hover {
-    transform:
-        translateY(-3px);
-
-    border-color:
-        #d5d5d5;
-
-    box-shadow:
-        var(--shadow-hover);
+.hero-header nav.active {
+    display: grid;
+    gap: .7rem;
 }
 
-
-/* =========================================================
-   FEATURE CARD TITLE
-========================================================= */
-
-.feature-card h3 {
-    color:
-        var(--black);
-
-    font-size:
-        0.84rem;
-
-    font-weight:
-        700;
-
-    line-height:
-        1.35;
-
-    margin-bottom:
-        8px;
+.hero-header nav a {
+    color: var(--forest-green);
+    font-size: .85rem;
+    text-decoration: none;
+    transition: color .2s ease;
 }
 
-
-/* =========================================================
-   FEATURE CARD TEXT
-========================================================= */
-
-.feature-card p {
-    color:
-        var(--soft-text);
-
-    font-size:
-        0.74rem;
-
-    line-height:
-        1.62;
-
-    margin-bottom:
-        13px;
+.hero-header nav a:hover {
+    color: var(--earth-brown);
 }
 
-
-/* =========================================================
-   FEATURE LINKS
-========================================================= */
-
-.feature-link {
-    display:
-        inline-block;
-
-    color:
-        var(--corporate-black);
-
-    font-size:
-        0.69rem;
-
-    font-weight:
-        600;
-
-    line-height:
-        1.4;
-
-    border-bottom:
-        1px solid var(--corporate-black);
-
-    padding-bottom:
-        2px;
-
-    transition:
-        opacity 0.25s ease;
+.hero-header nav a:focus-visible,
+.menu:focus-visible {
+    outline: 2px solid var(--earth-brown);
+    outline-offset: 4px;
 }
 
-.feature-link:hover {
-    opacity:
-        0.55;
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-.site-footer {
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-
-    background: #000000;
-
-    color: #ffffff;
-
-    padding: 28px 18px 12px;
-
-    text-align: center;
-}
-
-
-/* =========================================================
-   FOOTER CONTAINER
-========================================================= */
-
-.footer-container {
-    width: 100%;
-
-    max-width: 1200px;
-
+    max-width: 65rem;
     margin: 0 auto;
-
-    padding: 0;
-
     text-align: center;
 }
 
-
-/* =========================================================
-   FOOTER TITLE
-========================================================= */
-
-.footer-container h3 {
-    margin: 0 0 3px;
-
-    padding: 0;
-
-    color: #ffffff;
-
-    font-size: 0.88rem;
-
-    font-weight: 700;
-
-    line-height: 1.3;
+.hero-watermark {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    color: var(--white);
+    font-family: Arial, sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.9;
+    letter-spacing: normal;
+    text-align: left;
+    pointer-events: none;
+    user-select: none;
 }
 
+.hero-content .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto 0;
+    padding: .9rem 2.4rem;
+    border: 1px solid rgba(255, 255, 255, .85);
+    border-radius: .2rem;
+    background: var(--earth-brown);
+    color: var(--white);
+    font-family: Montserrat, sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .25);
+    transition: background .25s ease, transform .25s ease;
+}
 
-/* =========================================================
-   FOOTER TAGLINE
-========================================================= */
+.hero-content .btn:hover {
+    background: #69421F;
+    transform: translateY(-2px);
+}
 
-.footer-tagline {
-    margin: 0 0 4px;
+/* ==========================================
+   INTRODUCTION AND PURPOSE
+========================================== */
 
-    padding: 0;
+.intro,
+.purpose-section {
+    width: 100%;
+    padding: 4rem 8%;
+    background: var(--ivory);
+}
 
-    color: #ffffff;
+.intro-content,
+.purpose-content {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
 
-    font-size: 0.72rem;
+.section-title {
+    margin: 0 0 2rem;
+    color: var(--forest-green);
+    font-family: Montserrat, sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800;
+    line-height: 1.35;
+    text-align: left;
+}
 
+.intro-content p,
+.purpose-content p {
+    margin: 0 0 1.4rem;
+    color: var(--charcoal-grey);
+    font-family: Arial, sans-serif;
+    font-size: .9rem;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.intro-content p:last-child,
+.purpose-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* ==========================================
+   AGRICULTURAL KNOWLEDGE AND INNOVATION
+========================================== */
+
+.cards {
+    width: 100%;
+    padding: 2rem 8% 4rem;
+    background: var(--ivory);
+}
+
+.cards .section-title {
+    margin-bottom: 1.8rem;
+    color: var(--forest-green);
+    font-family: Montserrat, sans-serif;
+    font-size: clamp(1.15rem, 2vw, 1.45rem);
     font-weight: 700;
-
     line-height: 1.4;
+    letter-spacing: .015rem;
+    text-align: left;
 }
 
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
 
-/* =========================================================
-   FOOTER SERVICES
-========================================================= */
+.card {
+    display: block;
+    min-width: 0;
+    padding: 1.7rem 1.4rem;
+    border: 1px solid var(--charcoal-grey);
+    border-radius: .35rem;
+    background: var(--ivory);
+    color: var(--charcoal-grey);
+    text-decoration: none;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
 
-.footer-services {
-    margin: 0 0 4px;
+.card:nth-child(3n + 2) {
+    border-color: var(--beet);
+}
 
-    padding: 0;
+.card:nth-child(3n) {
+    border-color: var(--lavender);
+}
 
-    color: #ffffff;
+.card:hover {
+    transform: translateY(-.25rem);
+    box-shadow: 0 .4rem 1rem rgba(0, 0, 0, .12);
+}
 
-    font-size: 0.66rem;
-
+.card h3 {
+    margin: 0 0 .8rem;
+    color: var(--forest-green);
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
     font-weight: 700;
-
     line-height: 1.5;
+    text-align: left;
 }
 
+.card p {
+    margin: 0;
+    color: var(--charcoal-grey);
+    font-family: Arial, sans-serif;
+    font-size: .83rem;
+    line-height: 1.8;
+    text-align: left;
+}
 
-/* =========================================================
-   FOOTER FOUNDER
-========================================================= */
+.card:focus-visible,
+.collaboration-btn:focus-visible {
+    outline: 3px solid var(--forest-green);
+    outline-offset: 4px;
+}
 
-.footer-founder {
-    margin: 0 0 5px;
+/* ==========================================
+   COMBINED COLLABORATION AND FOOTER
+========================================== */
 
-    padding: 0;
+.footer {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 32rem;
+    margin: 0;
+    padding: 4rem 8% 2rem;
+    overflow: hidden;
+    background: transparent;
+    color: var(--white);
+    text-align: center;
+}
 
-    color: #ffffff;
+.footer-slide {
+    animation: footerMotion 18s infinite ease-in-out;
+    transform: scale(1);
+}
 
-    font-size: 0.67rem;
+.footer-slide1 {
+    background-image: url("footer-one.png");
+    animation-delay: 0s;
+}
 
+.footer-slide2 {
+    background-image: url("footer-two.png");
+    animation-delay: 6s;
+}
+
+.footer-slide3 {
+    background-image: url("footer-three.png");
+    animation-delay: 12s;
+}
+
+.footer-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: rgba(15, 40, 20, .65);
+}
+
+@keyframes footerMotion {
+    0% { opacity: 0; transform: scale(1); }
+    8% { opacity: 1; }
+    20% { opacity: 1; transform: scale(1.12); }
+    30% { opacity: 1; transform: scale(1.05); }
+    38%, 100% { opacity: 0; transform: scale(1); }
+}
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 65rem;
+    margin: auto;
+}
+
+.collaboration-content {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.collaboration-label {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--ivory);
+    font-family: Montserrat, sans-serif;
+    font-size: .72rem;
     font-weight: 700;
+    letter-spacing: .12rem;
+}
 
+.collaboration-content h2 {
+    max-width: 55rem;
+    margin: 0 auto 1.5rem;
+    color: var(--white);
+    font-family: Montserrat, sans-serif;
+    font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+    font-weight: 700;
     line-height: 1.4;
 }
 
-
-/* =========================================================
-   PRIVACY / FOOTER LINKS
-========================================================= */
-
-.footer-links {
-    margin: 0 0 9px;
-
-    padding: 0;
-
-    line-height: 1.4;
+.collaboration-content p {
+    margin: 0 auto 1rem;
+    color: rgba(255, 255, 255, .92);
+    font-family: Arial, sans-serif;
+    font-size: .88rem;
+    line-height: 1.9;
 }
 
-.footer-links a {
-    color: #ffffff;
-
-    font-size: 0.67rem;
-
-    font-weight: 700;
-
-    text-decoration: underline;
-
-    text-decoration-thickness: 1px;
-
-    text-underline-offset: 3px;
-
-    transition: opacity 0.2s ease;
+.collaboration-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
-.footer-links a:hover {
-    opacity: 0.65;
+.collaboration-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .85rem 1.8rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    font-family: Montserrat, sans-serif;
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .04rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background .25s ease, color .25s ease;
 }
 
+.collaboration-btn.primary {
+    border-color: var(--ivory);
+    background: var(--ivory);
+    color: var(--forest-green);
+}
 
-/* =========================================================
-   FOOTER BOTTOM
-========================================================= */
+.collaboration-btn.primary:hover {
+    border-color: var(--earth-brown);
+    background: var(--earth-brown);
+    color: var(--white);
+}
+
+.collaboration-btn.secondary {
+    border-color: rgba(255, 255, 255, .8);
+    background: transparent;
+    color: var(--white);
+}
+
+.collaboration-btn.secondary:hover {
+    background: var(--white);
+    color: var(--forest-green);
+}
 
 .footer-bottom {
-    margin: 0;
+    width: 100%;
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, .35);
+    text-align: center;
+}
 
-    padding: 9px 0 0;
-
-    border-top: 1px solid #333333;
-
-    color: #ffffff;
-
-    font-size: 0.61rem;
-
+.footer-bottom h3 {
+    margin: 0 0 .5rem;
+    color: var(--white);
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
     font-weight: 700;
-
     line-height: 1.4;
 }
 
-
-/* =========================================================
-   MOBILE FOOTER
-========================================================= */
-
-@media (max-width: 650px) {
-
-    .site-footer {
-        padding: 24px 15px 10px;
-    }
-
-    .footer-container h3 {
-        font-size: 0.80rem;
-
-        margin-bottom: 3px;
-    }
-
-    .footer-tagline {
-        font-size: 0.65rem;
-
-        margin-bottom: 3px;
-    }
-
-    .footer-services {
-        font-size: 0.58rem;
-
-        line-height: 1.45;
-
-        margin-bottom: 3px;
-    }
-
-    .footer-founder {
-        font-size: 0.60rem;
-
-        margin-bottom: 4px;
-    }
-
-    .footer-links {
-        margin-bottom: 7px;
-    }
-
-    .footer-links a {
-        font-size: 0.61rem;
-    }
-
-    .footer-bottom {
-        padding-top: 8px;
-
-        font-size: 0.55rem;
-    }
+.footer-bottom p {
+    margin: 0;
+    color: rgba(255, 255, 255, .9);
+    font-family: Arial, sans-serif;
+    font-size: .75rem;
+    line-height: 1.7;
 }
 
-
-/* =========================================================
-   VERY SMALL PHONES
-========================================================= */
-
-@media (max-width: 380px) {
-
-    .site-footer {
-        padding: 21px 12px 9px;
-    }
-
-    .footer-container h3 {
-        font-size: 0.76rem;
-    }
-
-    .footer-tagline {
-        font-size: 0.61rem;
-    }
-
-    .footer-services {
-        font-size: 0.54rem;
-    }
-
-    .footer-founder {
-        font-size: 0.56rem;
-    }
-
-    .footer-links a {
-        font-size: 0.57rem;
-    }
-
-    .footer-bottom {
-        font-size: 0.51rem;
-    }
+.footer-bottom a,
+.footer-bottom span {
+    color: var(--white);
 }
 
-/* =========================================================
+.footer-bottom a {
+    text-decoration: none;
+    transition: opacity .2s ease;
+}
+
+.footer-bottom a:hover,
+.footer-bottom a:focus-visible {
+    color: var(--white);
+    opacity: .8;
+    text-decoration: underline;
+}
+
+/* ==========================================
    TABLET
-========================================================= */
+========================================== */
 
-@media (max-width: 900px) {
-
-    .header-container {
-        padding:
-            0 22px;
+@media (max-width: 1024px) {
+    .hero {
+        min-height: 34rem;
+        padding-right: 6%;
+        padding-left: 6%;
     }
 
-    .main-navigation ul {
-        gap:
-            19px;
+    .intro,
+    .purpose-section,
+    .cards {
+        padding-right: 6%;
+        padding-left: 6%;
     }
 
-    .main-navigation a {
-        font-size:
-            0.72rem;
+    .card-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.2rem;
     }
 
-    .intro-section {
-        max-width:
-            900px;
-    }
-
-    .intro-section h1 {
-        font-size:
-            1.38rem;
-    }
-
-    .hero-slide {
-        aspect-ratio:
-            16 / 8;
-    }
-
-    .feature-grid {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
+    .footer {
+        padding-right: 6%;
+        padding-left: 6%;
     }
 }
 
-
-/* =========================================================
+/* ==========================================
    MOBILE
-========================================================= */
+========================================== */
 
-@media (max-width: 650px) {
-
-    body {
-        font-size:
-            0.76rem;
-
-        line-height:
-            1.55;
+@media (max-width: 600px) {
+    .hero {
+        min-height: 30rem;
+        padding: 6rem 6% 3rem;
+        text-align: left;
     }
 
-
-    /* -----------------------------------------------
-       HEADER
-    ----------------------------------------------- */
-
-    .header-container {
-        min-height:
-            65px;
-
-        padding:
-            0 18px;
+    .hero-header {
+        padding: .6rem 5%;
     }
 
-    .site-logo img {
-        width:
-            140px;
+    .logo img {
+        width: clamp(105px, 30vw, 140px);
     }
 
-
-    /* -----------------------------------------------
-       MOBILE MENU BUTTON
-    ----------------------------------------------- */
-
-    .menu-button {
-        display:
-            flex;
-
-        align-items:
-            center;
-
-        justify-content:
-            center;
+    .hero-header nav {
+        right: 5%;
+        min-width: min(13rem, 90vw);
+        padding: 1rem;
     }
 
-
-    /* -----------------------------------------------
-       MOBILE NAVIGATION
-    ----------------------------------------------- */
-
-    .main-navigation {
-        display:
-            none;
-
-        position:
-            absolute;
-
-        top:
-            65px;
-
-        left:
-            0;
-
-        width:
-            100%;
-
-        background:
-            var(--white);
-
-        border-top:
-            1px solid var(--border);
-
-        border-bottom:
-            1px solid var(--border);
-
-        box-shadow:
-            0 6px 18px rgba(0, 0, 0, 0.05);
+    .hero-watermark {
+        font-size: .84rem;
+        line-height: 1.8;
     }
 
-    .main-navigation.active {
-        display:
-            block;
+    .hero-content .btn {
+        margin-top: 1.5rem;
+        padding: .8rem 1.8rem;
+        font-size: .75rem;
     }
 
-    .main-navigation ul {
-        width:
-            100%;
-
-        display:
-            flex;
-
-        flex-direction:
-            column;
-
-        align-items:
-            stretch;
-
-        gap:
-            0;
-
-        padding:
-            5px 18px;
+    .intro,
+    .purpose-section {
+        padding: 2.5rem 6%;
     }
 
-    .main-navigation li {
-        width:
-            100%;
+    .cards {
+        padding: 2rem 6% 3rem;
     }
 
-    .main-navigation a {
-        display:
-            block;
-
-        width:
-            100%;
-
-        padding:
-            11px 0;
-
-        color:
-            var(--text);
-
-        font-size:
-            0.73rem;
-
-        border-bottom:
-            1px solid #eeeeee;
+    .section-title {
+        margin-bottom: 1.4rem;
+        font-size: 1.35rem;
     }
 
-    .main-navigation li:last-child a {
-        border-bottom:
-            none;
+    .cards .section-title {
+        font-size: 1.05rem;
+        line-height: 1.5;
     }
 
-    .main-navigation a::after {
-        display:
-            none;
+    .intro-content p,
+    .purpose-content p {
+        margin-bottom: 1.1rem;
+        font-size: .85rem;
+        line-height: 1.8;
+        text-align: left;
     }
 
-
-    /* -----------------------------------------------
-       INTRODUCTION
-    ----------------------------------------------- */
-
-    .intro-section {
-        padding:
-            43px 18px 30px;
+    .card-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
-    .intro-section h1 {
-        font-size:
-            1.22rem;
-
-        line-height:
-            1.3;
-
-        margin-bottom:
-            7px;
+    .card {
+        padding: 1.4rem 1.2rem;
     }
 
-    .intro-tagline {
-        font-size:
-            0.78rem;
-
-        line-height:
-            1.5;
-
-        margin-bottom:
-            14px;
+    .card h3 {
+        font-size: .95rem;
     }
 
-    .intro-section p {
-        font-size:
-            0.72rem;
-
-        line-height:
-            1.62;
-
-        margin-bottom:
-            9px;
+    .card p {
+        font-size: .82rem;
+        line-height: 1.75;
     }
 
-
-    /* -----------------------------------------------
-       HERO
-    ----------------------------------------------- */
-
-    .hero-section {
-        padding:
-            7px 18px 32px;
+    .footer {
+        min-height: 0;
+        padding: 2.8rem 6% 1.5rem;
     }
 
-    .hero-slider {
-        border-radius:
-            5px;
+    .collaboration-label {
+        font-size: .65rem;
+        letter-spacing: .09rem;
     }
 
-    .hero-slide {
-        aspect-ratio:
-            4 / 3;
+    .collaboration-content h2 {
+        font-size: 1.3rem;
+        line-height: 1.5;
     }
 
-
-    /* -----------------------------------------------
-       GET INVOLVED
-    ----------------------------------------------- */
-
-    .get-involved-section {
-        padding:
-            31px 18px 46px;
+    .collaboration-content p {
+        font-size: .84rem;
+        line-height: 1.8;
+        text-align: left;
     }
 
-    .get-involved-section h2 {
-        font-size:
-            0.95rem;
-
-        margin-bottom:
-            8px;
+    .collaboration-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: .85rem;
+        margin-top: 1.6rem;
     }
 
-    .get-involved-section p {
-        font-size:
-            0.72rem;
-
-        line-height:
-            1.62;
-
-        margin-bottom:
-            9px;
-    }
-
-    .cta-wrapper {
-        margin-top:
-            18px;
-    }
-
-    .cta-button {
-        min-width:
-            108px;
-
-        padding:
-            8px 19px;
-
-        font-size:
-            0.70rem;
-
-        border-radius:
-            5px;
-    }
-
-
-    /* -----------------------------------------------
-       FEATURES
-    ----------------------------------------------- */
-
-    .feature-section {
-        padding:
-            3px 18px 52px;
-    }
-
-    .feature-grid {
-        grid-template-columns:
-            1fr;
-
-        gap:
-            13px;
-    }
-
-    .feature-card {
-        min-height:
-            auto;
-
-        padding:
-            20px 18px 19px 25px;
-    }
-
-    .feature-card h3 {
-        font-size:
-            0.80rem;
-
-        margin-bottom:
-            7px;
-    }
-
-    .feature-card p {
-        font-size:
-            0.70rem;
-
-        line-height:
-            1.58;
-
-        margin-bottom:
-            11px;
-    }
-
-    .feature-link {
-        font-size:
-            0.67rem;
-    }
-
-
-    /* -----------------------------------------------
-       FOOTER
-    ----------------------------------------------- */
-
-    .site-footer {
-        padding:
-            34px 18px 18px;
-    }
-
-    .footer-container h3 {
-        font-size:
-            0.81rem;
-    }
-
-    .footer-tagline {
-        font-size:
-            0.68rem;
-
-        margin-bottom:
-            10px;
-    }
-
-    .footer-services {
-        font-size:
-            0.59rem;
-
-        line-height:
-            1.6;
-    }
-
-    .footer-founder {
-        font-size:
-            0.61rem;
-
-        margin-bottom:
-            18px;
+    .collaboration-btn {
+        width: 100%;
+        padding: .85rem 1rem;
+        font-size: .75rem;
     }
 
     .footer-bottom {
-        font-size:
-            0.57rem;
+        margin-top: 2.5rem;
+        padding-top: 1.2rem;
+    }
 
-        padding-top:
-            12px;
+    .footer-bottom h3 {
+        font-size: .9rem;
+    }
+
+    .footer-bottom p {
+        font-size: .68rem;
     }
 }
-
-
-/* =========================================================
-   VERY SMALL PHONES
-========================================================= */
 
 @media (max-width: 380px) {
-
-    .header-container {
-        min-height:
-            62px;
-
-        padding:
-            0 15px;
+    .hero {
+        min-height: 28rem;
+        padding-right: 5%;
+        padding-left: 5%;
     }
 
-    .site-logo img {
-        width:
-            130px;
+    .hero-watermark {
+        font-size: .81rem;
+        line-height: 1.75;
     }
 
-    .menu-button {
-        width:
-            33px;
-
-        height:
-            33px;
-
-        font-size:
-            1.05rem;
+    .intro,
+    .purpose-section {
+        padding: 2.2rem 5%;
     }
 
-    .main-navigation {
-        top:
-            62px;
+    .cards {
+        padding: 1.8rem 5% 2.5rem;
     }
 
-    .intro-section {
-        padding:
-            36px 15px 26px;
+    .cards .section-title {
+        font-size: 1rem;
     }
 
-    .intro-section h1 {
-        font-size:
-            1.14rem;
+    .footer {
+        padding: 2.3rem 5% 1.3rem;
     }
 
-    .intro-tagline {
-        font-size:
-            0.74rem;
+    .collaboration-content h2 {
+        font-size: 1.2rem;
     }
 
-    .intro-section p {
-        font-size:
-            0.69rem;
-
-        line-height:
-            1.58;
-    }
-
-    .hero-section {
-        padding:
-            6px 15px 28px;
-    }
-
-    .get-involved-section {
-        padding:
-            28px 15px 40px;
-    }
-
-    .get-involved-section h2 {
-        font-size:
-            0.91rem;
-    }
-
-    .get-involved-section p {
-        font-size:
-            0.69rem;
-    }
-
-    .feature-section {
-        padding:
-            2px 15px 45px;
-    }
-
-    .feature-card {
-        padding:
-            18px 16px 17px 23px;
-    }
-
-    .feature-card h3 {
-        font-size:
-            0.77rem;
-    }
-
-    .feature-card p {
-        font-size:
-            0.68rem;
-    }
-
-    .feature-link {
-        font-size:
-            0.65rem;
-    }
-
-    .site-footer {
-        padding:
-            31px 15px 16px;
-    }
-
-    .footer-container h3 {
-        font-size:
-            0.78rem;
-    }
-
-    .footer-tagline {
-        font-size:
-            0.65rem;
-    }
-
-    .footer-services {
-        font-size:
-            0.55rem;
-    }
-
-    .footer-founder {
-        font-size:
-            0.59rem;
-    }
-
-    .footer-bottom {
-        font-size:
-            0.55rem;
+    .collaboration-content p {
+        font-size: .82rem;
     }
 }
 
-
-/* =========================================================
-   ACCESSIBILITY / FOCUS
-========================================================= */
-
-a:focus-visible,
-button:focus-visible {
-    outline:
-        2px solid var(--corporate-black);
-
-    outline-offset:
-        3px;
-}
-
-
-/* =========================================================
+/* ==========================================
    REDUCED MOTION
-========================================================= */
+========================================== */
 
 @media (prefers-reduced-motion: reduce) {
-
     html {
-        scroll-behavior:
-            auto;
+        scroll-behavior: auto;
     }
 
-    .hero-track {
-        animation:
-            none;
+    .slide,
+    .footer-slide {
+        animation: none;
+        transform: none;
+        opacity: 0;
     }
 
-    *,
-    *::before,
-    *::after {
-        transition:
-            none !important;
+    .slide1,
+    .footer-slide1 {
+        opacity: 1;
+    }
+
+    .card,
+    .btn,
+    .collaboration-btn,
+    .hero-header nav a {
+        transition: none;
+    }
+
+    .card:hover,
+    .hero-content .btn:hover {
+        transform: none;
     }
 }
-</style>
+:root{--ivory:#F5F5DC;--green:#355E3B;--brown:#8B5A2B;--gold:#D6A642;--charcoal:#454545;--white:#fff}*{box-sizing:border-box;margin:0;padding:0}body{min-height:100vh;background:var(--ivory);color:var(--charcoal);font-family:Arial,sans-serif;line-height:1.8}header{position:relative;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:.65rem 5%;background:var(--green);box-shadow:0 3px 12px #0002}.logo{max-width:65%;color:#fff;text-decoration:none;font:800 1rem Montserrat,sans-serif}.logo span{display:block;color:#F1D18A;font-size:.65rem;letter-spacing:.08em;font-weight:600}.menu{border:0;background:transparent;padding:.5rem;cursor:pointer}.menu span{display:block;width:27px;height:3px;margin:5px;background:#fff;border-radius:3px}nav{display:none;position:absolute;top:100%;right:4%;width:min(300px,92vw);max-height:75vh;overflow-y:auto;padding:1rem;background:var(--ivory);border-radius:0 0 8px 8px;box-shadow:0 8px 22px #0003}nav.active{display:grid;gap:.15rem}nav a{padding:.55rem .65rem;color:var(--green);text-decoration:none;font:600 .82rem Montserrat,sans-serif;border-bottom:1px solid #355e3b18}nav a:hover,nav a:focus-visible{background:#e9e9cc;color:var(--brown);outline:none}.hero{padding:4.5rem 7% 3.5rem;text-align:center;color:#fff;background:linear-gradient(130deg,#24482e,#527a42)}.eyebrow{color:#F1D18A;font:700 .72rem Montserrat,sans-serif;letter-spacing:.16em}.hero h1{margin:.6rem 0;font:800 clamp(1.8rem,5vw,2.7rem) Montserrat,sans-serif}.hero p{max-width:740px;margin:auto;color:#fffe;font-size:.95rem}main{width:min(850px,90%);margin:3rem auto 4rem}.form-card{padding:clamp(1.3rem,4vw,2.5rem);background:#fff;border:1px solid #e5e1c8;border-radius:10px;box-shadow:0 8px 25px #263b2510}.form-card h2{margin-bottom:.4rem;color:var(--green);font:700 1.3rem Montserrat,sans-serif}.intro{margin-bottom:1.5rem;font-size:.88rem}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 1rem}.field{margin-bottom:1rem}.field.full{grid-column:1/-1}.field label{display:block;margin-bottom:.35rem;color:var(--green);font:600 .8rem Montserrat,sans-serif}.field input,.field textarea,.field select{width:100%;padding:.85rem;border:1px solid #c9c9b6;border-radius:5px;background:#fff;color:var(--charcoal);font:.9rem Arial,sans-serif}.field textarea{min-height:150px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{outline:2px solid var(--gold);border-color:var(--green)}.submit{border:0;border-radius:5px;padding:.9rem 1.7rem;background:var(--green);color:#fff;font:700 .8rem Montserrat,sans-serif;cursor:pointer}.submit:hover{background:var(--brown)}.privacy{margin-top:1rem;color:#666;font-size:.76rem}.notice{display:none;margin-top:1rem;padding:.8rem;background:#eef4e9;border-left:4px solid var(--green);font-size:.85rem}footer{padding:2rem 6%;background:var(--green);color:#fff;text-align:center}footer h3{font:700 1rem Montserrat,sans-serif}footer p{font-size:.78rem;color:#ffffffdf}footer a{color:#fff;margin:0 .4rem;font-size:.8rem}footer a:hover{color:#F1D18A}@media(max-width:650px){.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.hero{padding:3.5rem 6%}main{margin:2rem auto}}
+
+
+
+/* REFINED HOMEPAGE ENQUIRY FORM */
+.enquiry-section {
+    width: 100%;
+    padding: 4rem 6%;
+    background: var(--ivory);
+}
+.enquiry-main {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.form-card {
+    padding: clamp(1.25rem, 4vw, 2.6rem);
+    background: var(--white);
+    border: 1px solid #e3dfc8;
+    border-top: 5px solid var(--forest-green);
+    border-radius: 10px;
+    box-shadow: 0 12px 35px rgba(37, 57, 36, .10);
+}
+.form-heading {
+    margin-bottom: 1.7rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #e9e6d6;
+}
+.form-eyebrow {
+    display: inline-block;
+    margin-bottom: .45rem;
+    color: var(--earth-brown);
+    font: 700 .68rem Montserrat, sans-serif;
+    letter-spacing: .13em;
+}
+.form-card h2 {
+    margin: 0 0 .45rem;
+    color: var(--forest-green);
+    font: 800 clamp(1.35rem, 3vw, 1.8rem) Montserrat, sans-serif;
+}
+.form-card .intro {
+    max-width: 680px;
+    margin: 0;
+    color: var(--charcoal-grey);
+    font-size: .9rem;
+    line-height: 1.75;
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .1rem 1.15rem;
+}
+.field { min-width: 0; margin-bottom: 1.15rem; }
+.field.full { grid-column: 1 / -1; }
+.field label {
+    display: block;
+    margin-bottom: .4rem;
+    color: var(--forest-green);
+    font: 700 .78rem Montserrat, sans-serif;
+}
+.field label span { color: #a13d32; }
+.field input, .field textarea, .field select {
+    display: block;
+    width: 100%;
+    min-height: 48px;
+    padding: .8rem .9rem;
+    border: 1px solid #c9c9b6;
+    border-radius: 6px;
+    background: #fff;
+    color: var(--charcoal-grey);
+    font: .9rem Arial, sans-serif;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+.field textarea { min-height: 155px; resize: vertical; line-height: 1.65; }
+.field input::placeholder, .field textarea::placeholder { color: #858579; opacity: 1; }
+.field input:focus, .field textarea:focus, .field select:focus {
+    outline: none;
+    border-color: var(--forest-green);
+    box-shadow: 0 0 0 3px rgba(53, 94, 59, .13);
+}
+.field-help { display: block; margin-top: .4rem; color: #777; font-size: .72rem; }
+.submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    min-height: 48px;
+    padding: .85rem 1.5rem;
+    border: 0;
+    border-radius: 6px;
+    background: var(--forest-green);
+    color: var(--white);
+    font: 700 .78rem Montserrat, sans-serif;
+    cursor: pointer;
+    transition: background .2s ease, transform .2s ease;
+}
+.submit:hover { background: var(--earth-brown); transform: translateY(-1px); }
+.submit:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.privacy { margin-top: 1rem; color: #666; font-size: .76rem; line-height: 1.65; }
+.privacy a { color: var(--forest-green); font-weight: 700; overflow-wrap: anywhere; }
+.notice { display: none; margin-top: 1rem; padding: .85rem 1rem; border-left: 4px solid var(--forest-green); border-radius: 4px; background: #eef4e9; color: #304b32; font-size: .83rem; }
+@media (max-width: 650px) {
+    .enquiry-section { padding: 2.5rem 5%; }
+    .form-grid { grid-template-columns: 1fr; gap: 0; }
+    .field.full { grid-column: auto; }
+    .form-card { padding: 1.25rem; }
+    .submit { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .field input, .field textarea, .field select, .submit { transition: none; }
+}
+
+/* ==========================================
+   GOREALE AGRICULTURAL INNOVATORS
+   FINAL MOBILE NAVIGATION REFINEMENT
+========================================== */
+
+@media screen and (max-width: 600px) {
+
+    /* Allow dropdown to extend beyond hero */
+    .hero {
+        position: relative !important;
+        z-index: 100 !important;
+        overflow: visible !important;
+    }
+
+    /* Keep slideshow contained within hero */
+    .hero-slides {
+        overflow: hidden !important;
+    }
+
+    /* Header */
+    .hero-header {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        min-height: 65px !important;
+        padding: 7px 5% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        z-index: 1000 !important;
+        background: transparent !important;
+    }
+
+    /* Logo */
+    .hero-header .logo img {
+        width: 115px !important;
+        max-height: 55px !important;
+        object-fit: contain !important;
+    }
+
+    /* Hamburger */
+    .hero-header .menu {
+        display: block !important;
+        padding: 5px !important;
+        border: 0 !important;
+        background: transparent !important;
+        z-index: 1002 !important;
+    }
+
+    .hero-header .menu span {
+        width: 25px !important;
+        height: 3px !important;
+        margin: 5px !important;
+        background: #fff !important;
+    }
+
+    /* Navigation dropdown */
+    .hero-header #navigation {
+        display: none !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 5% !important;
+        right: 5% !important;
+        width: 90% !important;
+        min-width: 0 !important;
+        height: auto !important;
+        max-height: calc(100vh - 90px) !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        padding: 7px 12px !important;
+        margin: 0 !important;
+        background: #F5F5DC !important;
+        border: 1px solid rgba(53, 94, 59, .18) !important;
+        border-radius: 6px !important;
+        box-shadow: 0 8px 22px rgba(0, 0, 0, .25) !important;
+        z-index: 1001 !important;
+    }
+
+    /* Show complete navigation when opened */
+    .hero-header #navigation.active {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 0 !important;
+    }
+
+    /* Slim navigation links */
+    .hero-header #navigation a {
+        display: flex !important;
+        align-items: center !important;
+        width: 100% !important;
+        min-height: 30px !important;
+        height: auto !important;
+        padding: 5px 7px !important;
+        margin: 0 !important;
+        border: 0 !important;
+        border-bottom: 1px solid rgba(53, 94, 59, .13) !important;
+        background: transparent !important;
+        color: #355E3B !important;
+        font-family: Montserrat, sans-serif !important;
+        font-size: 11px !important;
+        font-weight: 600 !important;
+        line-height: 1.35 !important;
+        text-align: left !important;
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .hero-header #navigation a:last-child {
+        border-bottom: none !important;
+    }
+
+    .hero-header #navigation a:hover,
+    .hero-header #navigation a:focus-visible {
+        background: #e9e9cc !important;
+        color: #8B5A2B !important;
+        outline: none !important;
+    }
+
+    /* Keep hero content below the header */
+    .hero-content {
+        position: relative !important;
+        z-index: 1 !important;
+        padding: 6rem 6% 3rem !important;
+    }
+}
+
+    </style>
 </head>
-
-
 <body>
 
 
-<!-- =================================================
-     HEADER
-================================================= -->
+<!-- HEADER + HERO -->
+<section class="hero">
 
-<header class="site-header">
+    <!-- BACKGROUND SLIDESHOW -->
+    <div class="hero-slides">
+        <div class="slide slide1"></div>
+        <div class="slide slide2"></div>
+        <div class="slide slide3"></div>
+        <div class="slide slide4"></div>
+        <div class="slide slide5"></div>
+        <div class="slide slide6"></div>
+    </div>
 
-    <div class="header-container">
+    <!-- HEADER OVER HERO -->
+    <header class="hero-header">
 
-        <!-- LOGO -->
+        <div class="logo">
+    <img src="goreale-logo.png" alt="Goreale Agricultural Innovators">
+</div>
 
-        <a href="index.html" class="site-logo">
-
-            <img
-                src="goreale_logo.png"
-                alt="Goreale Agricultural Innovators Logo"
-            >
-
-        </a>
-
-
-        <!-- MOBILE MENU BUTTON -->
-
-        <button
-            class="menu-button"
-            onclick="toggleMenu()"
-            aria-label="Open navigation"
-        >
-            ☰
+        <button class="menu" type="button" aria-label="Open navigation"
+                aria-controls="navigation" aria-expanded="false"
+                onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
 
-
-        <!-- NAVIGATION -->
-
-        <nav class="main-navigation" id="mainNavigation">
-
-            <ul>
-
-                <li>
-                    <a href="about_us.html">
-                        About Us
-                    </a>
-                </li>
-
-                <li>
-                    <a href="what_we_do.html">
-                        What We Do
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contacts.html">
-                        Contact
-                    </a>
-                </li>
-
-                <li>
-                    <a href="partnership.html">
-                        Partnership
-                    </a>
-                </li>
-
-                <li>
-                    <a href="founder.html">
-                        Founder
-                    </a>
-                </li>
-
-            </ul>
-
+        <nav id="navigation" aria-label="Main navigation">
+             <a href="index.html">Home</a>
+            <a href="about-us.html#about">About Us</a>
+            <a href="about-us.html#services">Our Services</a>
+            <a href="about-us.html#objectives">Our Objectives</a>
+            <a href="about-us.html#mission">Our Mission</a>
+            <a href="our-team.html">Our Team</a>
+            <a href="innovation.html">Innovation</a>
+            <a href="community.html">Our Community</a>
+            <a href="weather-climate.html">Weather & Climate</a>
+            <a href="research.html">Research & Education</a>
+            <a href="#enquiry">Make an Enquiry</a>
+            <a href="video-lessons.html">Resources</a>
+            <a href="collaboration.html">Collaborate</a>
+            
+            
+            <a href="legal.html">Legal</a>
+            
+            
         </nav>
 
-    </div>
+    </header>
 
-</header>
+    
 
+<div class="hero-content">
 
-
-<!-- =================================================
-     INNOVATORS INTRODUCTION
-================================================= -->
-
-<section class="intro-section">
-
-    <h1>
-        Goreale Agricultural Innovators
-    </h1>
-
-    <div class="intro-tagline">
-        Innovating Agriculture. Conserving Water. Restoring Nature.
-    </div>
-
-    <p>
-        Goreale Agricultural Innovators is a youth-led environmental
-        and agricultural innovation initiative dedicated to creating
-        sustainable solutions for resilient farming communities and
-        a healthier environment.
+    <p class="hero-watermark">
+        Advancing sustainable agriculture through innovation,
+        climate-smart solutions, agricultural knowledge and
+        community participation. Together, we are cultivating
+        resilient farming systems, empowering communities and
+        protecting our environment for future generations.
     </p>
 
-    <p>
-        We promote climate-smart agriculture, water-efficient irrigation,
-        sustainable crop management, tree planting, environmental
-        restoration, and community action against deforestation.
-    </p>
+    <a href="about-us.html" class="btn">
+        Explore More
+    </a>
 
-    <p>
-        Our work is driven by the belief that young people can play
-        a leading role in transforming agriculture, protecting natural
-        resources, and creating sustainable opportunities for communities.
-    </p>
+</div>
 
-    <p>
-        Through innovation, knowledge sharing, collaboration, and practical
-        community action, Goreale Agricultural Innovators seeks to contribute
-        to a future where agriculture is productive, environmentally
-        responsible, and resilient to climate challenges.
-    </p>
+
 
 </section>
 
 
 
-<!-- =================================================
-     HERO IMAGE SECTION
-================================================= -->
+<!-- PROFESSIONAL INTRODUCTION -->
+<section class="intro" id="about">
 
-<section class="hero-section">
+    <h2 class="section-title">Who We Are</h2>
 
-    <div class="hero-slider">
+    
 
-        <div class="hero-track">
+    <div class="intro-content">
 
-            <div class="hero-slide">
+        <p>
+            Goreale Agricultural Innovators is a youth-led
+            agricultural innovation initiative based in Goreale
+            Ward, Lagdera Constituency, Garissa County, Kenya.
+            We are committed to advancing agriculture through
+            knowledge, research, innovation, technology and
+            sustainable farming practices.
+        </p>
 
-                <img
-                    src="goreale_hero1.png"
-                    alt="Climate-smart agriculture"
-                >
+        <p>
+            Our work focuses on climate-smart agriculture,
+            afforestation, agroforestry, sustainable crop
+            production, livestock management, soil and water
+            conservation, agricultural technology and
+            agribusiness development. We promote practical
+            solutions that improve agricultural productivity,
+            strengthen livelihoods and support responsible
+            natural resource management.
+        </p>
 
-            </div>
+        <p>
+            We recognise agriculture as a foundation for
+            food security, employment, economic development
+            and community resilience. We therefore value
+            agricultural education, research, skills development
+            and the sharing of practical knowledge to empower
+            farmers and strengthen agricultural communities.
+        </p>
 
+        <p>
+            We encourage the adoption of modern farming
+            techniques while respecting indigenous knowledge
+            and locally appropriate solutions. By combining
+            traditional experience with scientific knowledge
+            and emerging technologies, we seek to promote
+            productive and climate-resilient farming systems.
+        </p>
 
-            <div class="hero-slide">
+        <p>
+            Our commitment also extends to environmental
+            conservation through afforestation, biodiversity
+            protection, improved soil health and responsible
+            water use. We recognise the importance of
+            addressing climate change and protecting natural
+            ecosystems for present and future generations.
+        </p>
 
-                <img
-                    src="goreale_hero2.png"
-                    alt="Water efficient agriculture"
-                >
+        <p>
+            Through awareness, knowledge sharing, community
+            participation and collaboration, Goreale Agricultural
+            Innovators aspires to contribute to a future where
+            agriculture is productive, communities are empowered
+            and the environment is sustainably protected.
+        </p>
 
-            </div>
+    </div>
 
+</section>
 
-            <div class="hero-slide">
+<!-- OUR PURPOSE & COMMITMENT -->
+<section class="purpose-section" id="purpose">
 
-                <img
-                    src="goreale_hero3.png"
-                    alt="Environmental restoration"
-                >
+    <div class="purpose-content">
 
-            </div>
+        <h2 class="section-title">Our Purpose & Commitment</h2>
 
+        <p>
+            At Goreale Agricultural Innovators, we believe that
+            sustainable agriculture is essential to building
+            resilient communities, strengthening livelihoods
+            and securing a better future for generations to come.
+        </p>
 
-            <div class="hero-slide">
+        <p>
+            Our purpose is to encourage agricultural innovation,
+            promote climate-smart farming, strengthen knowledge
+            and practical skills, and inspire meaningful community
+            participation in agricultural development and
+            environmental conservation.
+        </p>
 
-                <img
-                    src="goreale_hero4.png"
-                    alt="Tree planting and conservation"
-                >
+        <p>
+            We are committed to promoting responsible farming
+            practices, supporting farmers, encouraging youth
+            and community involvement, protecting natural
+            resources and creating awareness of sustainable
+            agricultural opportunities.
+        </p>
 
-            </div>
-
-        </div>
+        <p>
+            Through collective action, continuous learning
+            and innovative thinking, we seek to contribute
+            to a productive agricultural sector, empowered
+            communities and a healthier environment.
+        </p>
 
     </div>
 
 </section>
 
 
+<section class="cards" id="services">
 
-<!-- =================================================
-     GET INVOLVED
-================================================= -->
-
-<section class="get-involved-section">
-
-    <h2>
-        Get Involved
+    <h2 class="section-title">
+        Agricultural Knowledge & Innovation
     </h2>
 
-    <p>
-        Goreale Agricultural Innovators believes that sustainable agriculture
-        and environmental conservation require the active participation of
-        the entire community.
-    </p>
+    <div class="card-container">
 
-    <p>
-        Farmers, young people, students, schools, community organizations,
-        local leaders, agricultural professionals, partners, and supporters
-        are all invited to contribute to the initiative.
-    </p>
-
-    <p>
-        Together, we can transform local agricultural challenges into
-        opportunities for innovation, environmental restoration, food
-        security, and sustainable livelihoods.
-    </p>
-
-
-    <!-- CTA -->
-
-    <div class="cta-wrapper">
-
-        <a
-            href="get_involved.html"
-            class="cta-button"
-        >
-            Get Involved
+        <a href="climate-smart.html" class="card">
+            <h3>Climate-Smart Agriculture</h3>
+            <p>
+                Explore climate-resilient farming practices,
+                water conservation, soil management and
+                innovative solutions for adapting to climate change.
+            </p>
         </a>
 
-    </div>
+        <a href="afforestation.html" class="card">
+            <h3>Afforestation & Agroforestry</h3>
+            <p>
+                Discover tree planting, forest restoration,
+                agroforestry systems and the importance of
+                protecting biodiversity and natural resources.
+            </p>
+        </a>
 
+        <a href="sustainable-farming.html" class="card">
+            <h3>Sustainable Agriculture</h3>
+            <p>
+                Learn about organic farming, crop rotation,
+                conservation agriculture and environmentally
+                responsible farming practices.
+            </p>
+        </a>
+
+        <a href="crop-production.html" class="card">
+            <h3>Crop Production</h3>
+            <p>
+                Gain knowledge about land preparation,
+                seed selection, planting techniques,
+                irrigation, crop nutrition and harvesting.
+            </p>
+        </a>
+
+        <a href="livestock.html" class="card">
+            <h3>Livestock Management</h3>
+            <p>
+                Explore animal nutrition, breeding,
+                disease prevention, animal welfare
+                and modern livestock production.
+            </p>
+        </a>
+
+        <a href="soil-water.html" class="card">
+            <h3>Soil & Water Conservation</h3>
+            <p>
+                Understand soil fertility, erosion control,
+                rainwater harvesting, irrigation systems
+                and sustainable water management.
+            </p>
+        </a>
+
+        <a href="agricultural-technology.html" class="card">
+            <h3>Agricultural Technology</h3>
+            <p>
+                Discover smart farming, agricultural machinery,
+                precision agriculture, digital tools and
+                emerging farming technologies.
+            </p>
+        </a>
+
+        <a href="research.html" class="card">
+            <h3>Agricultural Research & Education</h3>
+            <p>
+                Access agricultural research, practical
+                farming knowledge, innovation, training
+                and educational resources.
+            </p>
+        </a>
+
+        <a href="food-security.html" class="card">
+            <h3>Food Security & Agribusiness</h3>
+            <p>
+                Learn about food production, post-harvest
+                management, agricultural value chains,
+                marketing and agribusiness development.
+            </p>
+        </a>
+<a href="environmental-conservation.html" class="card">
+    <h3>Environmental Conservation</h3>
+    <p>
+        Explore practical approaches to protecting forests,
+        rangelands, soils, water resources and biodiversity.
+        Learn about ecosystem restoration, waste management,
+        climate resilience and community-led conservation
+        initiatives that support sustainable livelihoods
+        and a healthier environment.
+    </p>
+</a>
+
+<a href="weather.html" class="card">
+    <h3>Weather & Climate Centre</h3>
+    <p>
+        Access current weather conditions, temperature,
+        rainfall updates, wind information and seven-day
+        forecasts to support informed agricultural
+        planning and climate-smart farming.
+    </p>
+</a>
+
+    </div>
+</section>
+
+<!-- ENQUIRY FORM -->
+<section class="enquiry-section" id="enquiry">
+    <main class="enquiry-main">
+        <section class="form-card" aria-labelledby="enquiryTitle">
+            <div class="form-heading">
+                <span class="form-eyebrow">CONTACT OUR TEAM</span>
+                <h2 id="enquiryTitle">Make an Enquiry</h2>
+                <p class="intro">Tell us how we can assist you. Complete the form below and our team will receive your enquiry by email.</p>
+            </div>
+
+            <form id="enquiryForm">
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="fullname">Full Name <span aria-hidden="true">*</span></label>
+                        <input id="fullname" name="fullname" type="text" autocomplete="name" placeholder="Enter your full name" maxlength="100" required>
+                    </div>
+                    <div class="field">
+                        <label for="organisation">Organisation / Institution</label>
+                        <input id="organisation" name="organisation" type="text" autocomplete="organization" placeholder="Your organisation (if applicable)" maxlength="120">
+                    </div>
+                    <div class="field">
+                        <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                        <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" maxlength="150" required>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="e.g. +254 7XX XXX XXX" maxlength="30">
+                    </div>
+                    <div class="field">
+                        <label for="category">Enquiry Category <span aria-hidden="true">*</span></label>
+                        <select id="category" name="category" required>
+                            <option value="">Choose an enquiry category</option>
+                            <option>General Information</option>
+                            <option>Agricultural Training</option>
+                            <option>Technical Assistance</option>
+                            <option>Research and Education</option>
+                            <option>Partnership and Collaboration</option>
+                            <option>Community Development</option>
+                            <option>Support and Resource Mobilisation</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="location">County / Location</label>
+                        <input id="location" name="location" type="text" placeholder="e.g. Garissa County" maxlength="100">
+                    </div>
+                    <div class="field full">
+                        <label for="subject">Enquiry Subject <span aria-hidden="true">*</span></label>
+                        <input id="subject" name="subject" type="text" placeholder="Briefly describe what your enquiry is about" maxlength="160" required>
+                    </div>
+                    <div class="field full">
+                        <label for="details">Describe Your Enquiry <span aria-hidden="true">*</span></label>
+                        <textarea id="details" name="details" rows="6" maxlength="5000" placeholder="Please provide details about your request, proposal, support needs or area of interest..." required></textarea>
+                        <small class="field-help">Please do not include passwords or sensitive personal information.</small>
+                    </div>
+                </div>
+                <button class="submit" type="submit">Send Enquiry by Email <span aria-hidden="true">&#8594;</span></button>
+                <p class="privacy">Your email application will open with your enquiry addressed to <a href="mailto:gorealelinnovators@gmail.com">gorealelinnovators@gmail.com</a>. Review the details and press Send in your email application.</p>
+                <div class="notice" id="notice" role="status" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
 </section>
 
 
+<!-- ==========================================
+     COLLABORATION + FOOTER
+========================================== -->
 
-<!-- =================================================
-     FEATURE SECTIONS
-================================================= -->
+<footer class="footer" id="collaboration">
 
-<section class="feature-section">
+    <!-- SHARED BACKGROUND SLIDESHOW -->
+    <div class="footer-slides">
 
-    <div class="feature-grid">
+        <div class="footer-slide footer-slide1"></div>
+        <div class="footer-slide footer-slide2"></div>
+        <div class="footer-slide footer-slide3"></div>
 
+    </div>
 
-        <!-- GALLERY -->
-
-        <article class="feature-card">
-
-    <h3>
-        Goreale Innovators Proposal
-    </h3>
-
-    <p>
-        Explore Goreale Agricultural Innovators' proposal,
-        outlining the project concept, implementation strategy,
-        objectives and expected impact.
-    </p>
-
-    <a
-        href="goreale_innovators-proposal.html"
-        class="feature-link"
-    >
-        View Proposal →
-    </a>
-
-</article>
+    <!-- SHARED BACKGROUND OVERLAY -->
+    <div class="footer-overlay"></div>
 
 
-<article class="feature-card">
-
-    <h3>
-        Grants Cover Letter
-    </h3>
-
-    <p>
-        View the official grant application cover letter
-        presenting Goreale Agricultural Innovators' funding
-        request and commitment to sustainable development.
-    </p>
-
-    <a
-        href="grants_cover_letter.html"
-        class="feature-link"
-    >
-        View Cover Letter →
-    </a>
-
-</article>
+    <!-- FOOTER CONTENT -->
+    <div class="footer-content">
 
 
-        <!-- GOREALE PROFILE -->
+        <!-- AID, PARTNERSHIP & COLLABORATION -->
+        <section class="collaboration-content">
 
-        <article class="feature-card">
+            <span class="collaboration-label">
+                PARTNERSHIPS • SUPPORT • COLLABORATION
+            </span>
 
-            <h3>
-                Goreale Profile
-            </h3>
+            <h2>
+                Together, We Can Grow a More Sustainable Future
+            </h2>
 
             <p>
-                Learn more about Goreale Agricultural Innovators, our vision,
-                mission, objectives, approach and commitment to sustainable
+                Goreale Agricultural Innovators welcomes partnerships,
+                institutional support, technical assistance and
+                meaningful collaboration with organisations,
+                development partners, agricultural professionals,
+                businesses and individuals committed to sustainable
                 agriculture and environmental conservation.
             </p>
 
-            <a
-                href="about_us.html"
-                class="feature-link"
-            >
-                View Profile →
-            </a>
-
-        </article>
-
-
-
-        <!-- RESEARCH & PROPOSAL -->
-
-        <article class="feature-card">
-
-            <h3>
-                Research & Survey 
-            </h3>
-
             <p>
-                Explore our research and Survey areas, agricultural innovation ideas,
-                environmental proposals, projects and opportunities for
-                collaboration.
+                We welcome opportunities for resource mobilisation,
+                agricultural training, knowledge exchange, research,
+                technology transfer, community development and
+                initiatives that empower farmers and strengthen
+                agricultural livelihoods.
             </p>
 
-            <div>
+            <p>
+                Whether you represent an organisation, wish to
+                provide technical expertise, support our initiatives
+                or explore a strategic partnership, we invite you
+                to submit your proposal through our collaboration
+                application portal.
+            </p>
 
-                <a
-                    href="farmers_survey.html"
-                    class="feature-link"
-                >
-                    Research & Survey→
-                
+            <!-- COLLABORATION ACTIONS -->
+            <div class="collaboration-actions">
+
+                <a href="collaboration.html"
+                   class="collaboration-btn primary">
+                    Partner With Us
+                </a>
+
+                <a href="donation.html"
+                   class="collaboration-btn secondary">
+                    Support Our Initiatives
                 </a>
 
             </div>
 
-        </article>
+        </section>
 
 
-    </div>
-
-</section>
-
-
-
-<!-- =================================================
-     FOOTER
-================================================= -->
-
-<footer class="site-footer">
-
-    <div class="footer-container">
-
-        <h3>
-            Goreale Agricultural Innovators
-        </h3>
-
-        <p class="footer-tagline">
-            Innovating Agriculture. Conserving Water. Restoring Nature.
-        </p>
-
-        <p class="footer-services">
-            Climate-Smart Agriculture |
-            Water Efficiency |
-            Crop Protection |
-            Tree Planting |
-            Environmental Conservation
-        </p>
-
-        <p class="footer-founder">
-            Founded and led by Samira Abdirahman Maalim
-        </p>
-
-        <p class="footer-links">
-            <a href="privacy_policy.html">
-                Privacy Policy
-            </a>
-        </p>
-
+        <!-- FOOTER COPYRIGHT INFORMATION -->
         <div class="footer-bottom">
-            © 2026 Goreale Agricultural Innovators.
-            All rights reserved.
-        </div>
+
+            <h3>
+                Goreale Agricultural Innovators
+            </h3>
+
+            <p>
+                &copy; 2026 Goreale Agricultural Innovators.
+                All Rights Reserved.
+            </p>
+<a href="legal.html#privacy"
+           onclick="showDocument('privacy')">
+            Privacy Policy
+        </a>
+<span>|</span>
+        <a href="legal.html#terms"
+           onclick="showDocument('terms')">
+            Terms & Conditions
+        </a>
+        
+
 
     </div>
 
 </footer>
 
 
-<!-- =================================================
-     MOBILE NAVIGATION SCRIPT
-================================================= -->
-
 <script>
+function toggleMenu() {
+    const navigation = document.getElementById("navigation");
+    const menuButton = document.querySelector(".menu");
+    const isOpen = navigation.classList.toggle("active");
 
-    function toggleMenu() {
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation" : "Open navigation"
+    );
+}
 
-        const navigation =
-            document.getElementById("mainNavigation");
+document.querySelectorAll("#navigation a").forEach((link) => {
+    link.addEventListener("click", () => {
+        const navigation = document.getElementById("navigation");
+        const menuButton = document.querySelector(".menu");
 
-        navigation.classList.toggle("active");
+        navigation.classList.remove("active");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation");
+    });
+});
 
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        const navigation = document.getElementById("navigation");
+        const menuButton = document.querySelector(".menu");
+
+        navigation.classList.remove("active");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation");
     }
-
-
-    /* Close mobile menu after clicking a link */
-
-    document
-        .querySelectorAll(".main-navigation a")
-        .forEach(function(link) {
-
-            link.addEventListener("click", function() {
-
-                document
-                    .getElementById("mainNavigation")
-                    .classList.remove("active");
-
-            });
-
-        });
-
+});
 </script>
+<script>
+document.getElementById('enquiryForm').addEventListener('submit', function (event) {
+    event.preventDefault();
 
+    if (!this.reportValidity()) return;
 
+    const data = new FormData(this);
+    const subject = String(data.get('subject') || 'Website enquiry').trim();
+    const message = [
+        'GOREALE AGRICULTURAL INNOVATORS — WEBSITE ENQUIRY',
+        '',
+        `Full Name: ${data.get('fullname')}`,
+        `Organisation / Institution: ${data.get('organisation') || 'Not provided'}`,
+        `Email Address: ${data.get('email')}`,
+        `Phone Number: ${data.get('phone') || 'Not provided'}`,
+        `Enquiry Category: ${data.get('category')}`,
+        `County / Location: ${data.get('location') || 'Not provided'}`,
+        '',
+        'ENQUIRY DETAILS',
+        String(data.get('details') || '').trim()
+    ].join('\n');
+
+    const mailto = 'mailto:gorealelinnovators@gmail.com' +
+        '?subject=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent(message);
+
+    const notice = document.getElementById('notice');
+    notice.style.display = 'block';
+    notice.textContent = 'Your email application is being opened with the enquiry addressed to gorealelinnovators@gmail.com. Please review it and press Send.';
+    window.location.href = mailto;
+});
+</script>
 </body>
 </html>

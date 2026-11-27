@@ -1,0 +1,2826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10391F">
+
+<meta name="description" content="GOREALE Agricultural Innovators Community Hub. Connect, share agricultural knowledge, exchange ideas and participate in community development.">
+
+<title>Community Hub | GOREALE Agricultural Innovators</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+:root {
+    --ivory: #F5F5DC;
+    --forest: #174D2A;
+    --deep: #10391F;
+    --brown: #8B5A2B;
+    --charcoal: #454545;
+    --gold: #D9A441;
+    --gold-light: #F0CC79;
+    --sage: #A8B88A;
+    --surface: #FBFAEF;
+    --line: rgba(23,77,42,.13);
+    --muted: #858A7F;
+    --shadow: 0 12px 35px rgba(16,57,31,.07);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .74rem;
+    background: var(--ivory);
+    color: var(--charcoal);
+    line-height: 1.7;
+}
+
+button, input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(16,57,31,.97);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(217,164,65,.3);
+}
+
+.header-inner {
+    max-width: 1550px;
+    margin: auto;
+    padding: 11px 4%;
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.brand img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 50%;
+    padding: 3px;
+    background: var(--ivory);
+}
+
+.brand-name {
+    color: var(--ivory);
+    font-size: .82rem;
+    font-weight: 800;
+    letter-spacing: .4px;
+    line-height: 1.4;
+}
+
+.brand-name small {
+    display: block;
+    color: var(--gold);
+    font-size: .56rem;
+    font-weight: 500;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header-link {
+    color: var(--ivory);
+    font-size: .67rem;
+    font-weight: 600;
+    transition: .25s;
+}
+
+.header-link:hover {
+    color: var(--gold);
+}
+
+.header-menu {
+    width: 39px;
+    height: 39px;
+    border: 1px solid rgba(217,164,65,.5);
+    background: transparent;
+    color: var(--gold);
+    border-radius: 9px;
+    font-size: 1rem;
+}
+
+.menu-panel {
+    display: none;
+    padding: 12px 4% 18px;
+    background: var(--deep);
+}
+
+.menu-panel.open {
+    display: block;
+}
+
+.menu-panel a {
+    display: block;
+    padding: 10px 0;
+    color: var(--ivory);
+    border-bottom: 1px solid rgba(245,245,220,.1);
+    font-size: .69rem;
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 80% 20%, rgba(217,164,65,.16), transparent 28%),
+        radial-gradient(circle at 10% 100%, rgba(168,184,138,.14), transparent 30%),
+        linear-gradient(125deg, #10391F, #174D2A 65%, #245B35);
+    color: var(--ivory);
+    padding: 55px 5% 60px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 1px solid rgba(217,164,65,.13);
+    border-radius: 50%;
+    right: -110px;
+    top: -180px;
+    box-shadow:
+        0 0 0 35px rgba(217,164,65,.025),
+        0 0 0 75px rgba(217,164,65,.02);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.hero-label {
+    color: var(--gold-light);
+    font-size: .63rem;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+}
+
+.hero h1 {
+    max-width: 760px;
+    font-size: clamp(1.7rem, 4vw, 2.9rem);
+    line-height: 1.25;
+    margin: 14px 0;
+    font-weight: 800;
+}
+
+.hero h1 span {
+    color: var(--gold-light);
+}
+
+.hero p {
+    max-width: 670px;
+    font-size: .74rem;
+    color: rgba(245,245,220,.83);
+}
+
+.hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 29px;
+}
+
+.hero-stat strong {
+    display: block;
+    font-size: .9rem;
+    color: var(--gold-light);
+}
+
+.hero-stat small {
+    color: rgba(245,245,220,.7);
+    font-size: .59rem;
+}
+
+/* ==========================================
+   MAIN LAYOUT
+========================================== */
+
+.community-layout {
+    width: 94%;
+    max-width: 1500px;
+    margin: 30px auto 50px;
+    display: grid;
+    grid-template-columns: 225px minmax(0,1fr) 255px;
+    gap: 22px;
+    align-items: start;
+}
+
+.panel {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 13px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    margin-bottom: 17px;
+}
+
+.panel-heading {
+    padding: 15px;
+    border-bottom: 1px solid var(--line);
+    color: var(--forest);
+    font-size: .73rem;
+    font-weight: 800;
+}
+
+.panel-content {
+    padding: 15px;
+}
+
+/* ==========================================
+   PROFILE
+========================================== */
+
+.profile-panel {
+    text-align: center;
+    padding: 22px 15px;
+}
+
+.profile-avatar {
+    width: 69px;
+    height: 69px;
+    border-radius: 22px;
+    margin: 0 auto 12px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, var(--forest), var(--deep));
+    border: 2px solid var(--gold);
+    color: var(--gold-light);
+    font-size: 1.4rem;
+}
+
+.profile-panel h3 {
+    color: var(--forest);
+    font-size: .77rem;
+}
+
+.profile-panel p {
+    font-size: .62rem;
+    color: var(--muted);
+}
+
+.profile-status {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    margin-top: 12px;
+    padding: 5px 10px;
+    background: #E7EEDF;
+    color: var(--forest);
+    border-radius: 30px;
+    font-size: .58rem;
+    font-weight: 700;
+}
+
+/* ==========================================
+   SIDEBAR NAVIGATION
+========================================== */
+
+.sidebar-menu {
+    list-style: none;
+    padding: 9px;
+}
+
+.sidebar-menu li {
+    margin: 3px 0;
+}
+
+.sidebar-menu button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: var(--charcoal);
+    text-align: left;
+    font-size: .67rem;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.sidebar-menu button i {
+    width: 18px;
+    color: var(--forest);
+    text-align: center;
+}
+
+.sidebar-menu button:hover,
+.sidebar-menu button.active {
+    background: var(--forest);
+    color: var(--ivory);
+}
+
+.sidebar-menu button:hover i,
+.sidebar-menu button.active i {
+    color: var(--gold-light);
+}
+
+/* ==========================================
+   FEED HEADER
+========================================== */
+
+.feed-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.feed-heading h2 {
+    font-size: 1rem;
+    color: var(--forest);
+    font-weight: 800;
+}
+
+.feed-heading p {
+    color: var(--muted);
+    font-size: .61rem;
+}
+
+.feed-heading select {
+    padding: 9px 11px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--forest);
+    outline: none;
+    font-size: .62rem;
+}
+
+/* ==========================================
+   COMPOSER
+========================================== */
+
+.composer {
+    padding: 17px;
+}
+
+.composer-heading {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 13px;
+}
+
+.composer-avatar {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 13px;
+    background: var(--light-green, #E7EEDF);
+    color: var(--forest);
+}
+
+.composer-heading strong {
+    color: var(--forest);
+    font-size: .72rem;
+}
+
+.composer-heading small {
+    display: block;
+    color: var(--muted);
+    font-size: .6rem;
+}
+
+.composer textarea {
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    padding: 14px;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    outline: none;
+    background: var(--ivory);
+    color: var(--charcoal);
+    font-size: .7rem;
+    transition: .2s;
+}
+
+.composer textarea:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(217,164,65,.1);
+}
+
+.composer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.composer-bottom select {
+    border: 1px solid var(--line);
+    background: var(--ivory);
+    color: var(--forest);
+    padding: 9px;
+    border-radius: 7px;
+    font-size: .63rem;
+}
+
+.publish-button {
+    background: var(--forest);
+    color: var(--ivory);
+    border: 0;
+    padding: 10px 19px;
+    border-radius: 8px;
+    font-size: .66rem;
+    font-weight: 800;
+    transition: .25s;
+}
+
+.publish-button:hover {
+    background: var(--brown);
+    transform: translateY(-1px);
+}
+
+/* ==========================================
+   POSTS
+========================================== */
+
+.post-card {
+    padding: 17px;
+    transition: .25s;
+}
+
+.post-card:hover {
+    border-color: rgba(217,164,65,.5);
+    box-shadow: 0 14px 35px rgba(16,57,31,.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.post-avatar {
+    width: 41px;
+    height: 41px;
+    display: grid;
+    place-items: center;
+    border-radius: 13px;
+    background: linear-gradient(135deg, var(--forest), var(--deep));
+    color: var(--gold-light);
+    font-weight: 800;
+}
+
+.post-author {
+    flex: 1;
+    min-width: 0;
+}
+
+.post-author strong {
+    display: block;
+    color: var(--forest);
+    font-size: .7rem;
+}
+
+.post-author small {
+    display: block;
+    color: var(--muted);
+    font-size: .58rem;
+}
+
+.post-category {
+    color: var(--forest);
+    background: #E7EEDF;
+    padding: 5px 9px;
+    border-radius: 30px;
+    font-size: .56rem;
+    font-weight: 800;
+}
+
+.post-body {
+    margin: 15px 0;
+    font-size: .71rem;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    line-height: 1.9;
+}
+
+.post-image {
+    display: none;
+    width: 100%;
+    max-height: 370px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.post-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    border-bottom: 1px solid var(--line);
+    padding: 10px 0;
+    color: var(--muted);
+    font-size: .61rem;
+}
+
+.comment-count {
+    border: 0;
+    background: transparent;
+    color: var(--muted);
+    font-family: inherit;
+    font-size: .61rem;
+    cursor: pointer;
+}
+
+.comment-count:hover {
+    color: var(--forest);
+    text-decoration: underline;
+}
+
+.post-actions {
+    display: flex;
+    gap: 6px;
+    padding-top: 10px;
+}
+
+.post-actions button {
+    flex: 1;
+    padding: 9px 5px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: var(--charcoal);
+    font-size: .64rem;
+    font-weight: 700;
+    transition: .2s;
+}
+
+.post-actions button i {
+    margin-right: 5px;
+}
+
+.post-actions button:hover,
+.post-actions button.liked {
+    background: #E7EEDF;
+    color: var(--forest);
+}
+
+/* ==========================================
+   COMMENTS
+========================================== */
+
+.comments-area {
+    display: none;
+    margin-top: 13px;
+    padding-top: 13px;
+    border-top: 1px solid var(--line);
+}
+
+.comments-area.open {
+    display: block;
+    animation: reveal .25s ease;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.comments-title {
+    color: var(--forest);
+    font-size: .68rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.comment-item {
+    display: flex;
+    gap: 9px;
+    background: var(--ivory);
+    border-radius: 9px;
+    padding: 11px;
+    margin-bottom: 8px;
+}
+
+.comment-avatar {
+    width: 29px;
+    height: 29px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 9px;
+    background: var(--forest);
+    color: var(--gold-light);
+    font-size: .58rem;
+    font-weight: 800;
+}
+
+.comment-content {
+    min-width: 0;
+    flex: 1;
+}
+
+.comment-content strong {
+    display: block;
+    color: var(--forest);
+    font-size: .63rem;
+}
+
+.comment-content p {
+    font-size: .65rem;
+    overflow-wrap: anywhere;
+}
+
+.comment-content small {
+    display: block;
+    color: var(--muted);
+    font-size: .55rem;
+    margin-top: 4px;
+}
+
+.comment-form {
+    display: flex;
+    gap: 8px;
+    margin-top: 11px;
+}
+
+.comment-input {
+    min-width: 0;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--ivory);
+    outline: none;
+    font-size: .64rem;
+}
+
+.comment-input:focus {
+    border-color: var(--gold);
+}
+
+.comment-form button {
+    border: 0;
+    border-radius: 8px;
+    background: var(--forest);
+    color: var(--ivory);
+    padding: 9px 14px;
+    font-size: .62rem;
+    font-weight: 700;
+}
+
+/* ==========================================
+   RIGHT SIDEBAR
+========================================== */
+
+.announcement {
+    border-left: 3px solid var(--gold);
+    padding: 3px 0 3px 11px;
+    margin-bottom: 17px;
+}
+
+.announcement strong {
+    display: block;
+    color: var(--forest);
+    font-size: .66rem;
+}
+
+.announcement p {
+    font-size: .62rem;
+    margin-top: 4px;
+}
+
+.topic-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.topic {
+    background: #E7EEDF;
+    color: var(--forest);
+    padding: 7px 10px;
+    border-radius: 7px;
+    font-size: .58rem;
+    font-weight: 700;
+}
+
+.guideline {
+    display: flex;
+    gap: 9px;
+    margin-bottom: 10px;
+    font-size: .62rem;
+}
+
+.guideline i {
+    color: var(--forest);
+    margin-top: 4px;
+}
+
+/* ==========================================
+   CHAT
+========================================== */
+
+.chat-panel {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    right: 22px;
+    bottom: 20px;
+    width: min(370px, calc(100% - 28px));
+    height: 470px;
+    background: var(--surface);
+    border: 1px solid rgba(217,164,65,.5);
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.22);
+    overflow: hidden;
+}
+
+.chat-panel.open {
+    display: flex;
+    flex-direction: column;
+    animation: reveal .25s ease;
+}
+
+.chat-header {
+    background: linear-gradient(120deg, var(--deep), var(--forest));
+    color: var(--ivory);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header strong {
+    font-size: .74rem;
+}
+
+.chat-header small {
+    display: block;
+    color: var(--gold-light);
+    font-size: .57rem;
+}
+
+.chat-header button {
+    border: 0;
+    background: transparent;
+    color: var(--gold-light);
+    font-size: 1.2rem;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 13px;
+    overflow-y: auto;
+}
+
+.chat-message {
+    width: fit-content;
+    max-width: 85%;
+    background: #E7EEDF;
+    border-radius: 10px 10px 10px 2px;
+    padding: 10px;
+    margin-bottom: 9px;
+    font-size: .64rem;
+    overflow-wrap: anywhere;
+}
+
+.chat-message.mine {
+    margin-left: auto;
+    background: #E9DDBF;
+    border-radius: 10px 10px 2px 10px;
+}
+
+.chat-message small {
+    display: block;
+    color: var(--forest);
+    font-weight: 800;
+    margin-bottom: 3px;
+}
+
+.chat-form {
+    display: flex;
+    gap: 8px;
+    padding: 11px;
+    border-top: 1px solid var(--line);
+}
+
+.chat-input {
+    min-width: 0;
+    flex: 1;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 10px;
+    background: var(--ivory);
+    outline: none;
+    font-size: .64rem;
+}
+
+.chat-form button {
+    border: 0;
+    border-radius: 8px;
+    background: var(--forest);
+    color: var(--ivory);
+    padding: 9px 13px;
+}
+
+/* ==========================================
+   EMPTY STATE
+========================================== */
+
+.empty-message {
+    display: none;
+    text-align: center;
+    padding: 35px 15px;
+    color: var(--muted);
+    font-size: .69rem;
+}
+/* ==========================================
+   POST SHARE DROPDOWN
+========================================== */
+
+.post-actions {
+    position: relative;
+}
+
+.share-wrapper {
+    position: relative;
+    flex: 1;
+}
+
+.share-wrapper .share-button {
+    width: 100%;
+}
+
+.share-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 8px);
+    z-index: 100;
+    width: 205px;
+    padding: 7px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 11px;
+    box-shadow: 0 12px 30px rgba(16,57,31,.16);
+}
+
+.share-menu.open {
+    display: block;
+    animation: reveal .2s ease;
+}
+
+.share-menu button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 7px;
+    background: transparent;
+    color: var(--charcoal);
+    text-align: left;
+    font-size: .63rem;
+    font-weight: 600;
+}
+
+.share-menu button:hover {
+    background: #E7EEDF;
+    color: var(--forest);
+}
+
+.share-menu button i {
+    width: 17px;
+    color: var(--forest);
+}
+
+.share-menu .share-menu-title {
+    padding: 7px 10px;
+    color: var(--muted);
+    font-size: .55rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* ==========================================
+   LIKES SYSTEM
+========================================== */
+
+.likes-count {
+    border: none;
+    background: transparent;
+    color: var(--forest-green);
+    font-family: inherit;
+    font-size: .7rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.likes-count:hover {
+    color: var(--earth-brown);
+}
+
+.likes-area {
+    display: none;
+    padding: 13px 15px;
+    border-top: 1px solid rgba(139, 90, 43, .2);
+    background: rgba(245, 245, 220, .45);
+}
+
+.likes-area.open {
+    display: block;
+}
+
+.likes-title {
+    font-size: .68rem;
+    font-weight: 700;
+    color: var(--forest-green);
+    margin-bottom: 12px;
+}
+
+.likes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.like-person {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: .7rem;
+    color: var(--charcoal-grey);
+}
+
+.like-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--forest-green);
+    color: var(--harvest-gold);
+    display: grid;
+    place-items: center;
+    font-size: .65rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.about-footer {
+    background: var(--deep);
+    color: var(--ivory);
+    text-align: center;
+    padding: 30px 15px;
+    font-size: .66rem;
+    line-height: 2;
+    border-top: 2px solid var(--gold);
+}
+
+.about-footer strong {
+    display: block;
+    font-size: .82rem;
+}
+
+.footer-tagline {
+    color: var(--gold);
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width: 1100px) {
+    .community-layout {
+        grid-template-columns: 205px minmax(0,1fr);
+    }
+
+    .right-sidebar {
+        display: none;
+    }
+}
+
+@media(max-width: 700px) {
+
+    .header-inner {
+        min-height: 66px;
+        padding: 8px 4%;
+    }
+
+    .brand img {
+        width: 43px;
+        height: 43px;
+    }
+
+    .header-link {
+        display: none;
+    }
+
+    .hero {
+        padding: 40px 6% 42px;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-stats {
+        gap: 22px;
+    }
+
+    .community-layout {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        margin: 18px auto 35px;
+        gap: 13px;
+    }
+
+    .left-sidebar,
+    .feed-column {
+        width: 100%;
+    }
+
+    .profile-panel {
+        display: none;
+    }
+
+    .left-sidebar .panel {
+        margin-bottom: 0;
+    }
+
+    .sidebar-menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        padding: 8px;
+    }
+
+    .sidebar-menu li {
+        margin: 0;
+    }
+
+    .sidebar-menu button {
+        width: auto;
+        padding: 8px 10px;
+        font-size: .6rem;
+        gap: 6px;
+    }
+
+    .sidebar-menu button i {
+        width: auto;
+    }
+
+    .post-card,
+    .composer {
+        padding: 13px;
+    }
+
+    .post-category {
+        font-size: .51rem;
+    }
+
+    .post-actions button {
+        font-size: .58rem;
+    }
+
+    .post-actions button i {
+        margin-right: 3px;
+    }
+
+    .chat-panel {
+        right: 10px;
+        bottom: 10px;
+        height: min(470px, 75vh);
+    }
+}
+
+@media(max-width: 390px) {
+    .post-category {
+        display: none;
+    }
+
+    .hero-stats {
+        gap: 14px;
+    }
+
+    .hero-stat strong {
+        font-size: .78rem;
+    }
+
+    .post-actions button {
+        font-size: .53rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="index.html" class="brand">
+
+            <img src="goreale-logo.png" alt="GOREALE logo">
+
+            <div class="brand-name">
+                GOREALE
+                <small>Agricultural Innovators</small>
+            </div>
+
+        </a>
+
+        <div class="header-actions">
+
+            <a href="index.html" class="header-link">Home</a>
+            <a href="about-us.html" class="header-link">About Us</a>
+            <a href="#feed" class="header-link">Community</a>
+
+            <button class="header-menu" id="menuButton"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <nav class="menu-panel" id="menuPanel">
+        <a href="index.html">Home</a>
+        <a href="about-us.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="innovation.html">Innovation</a>
+        <a href="community-development.html">Community Development</a>
+        <a href="weather.html">Agricultural Weather Centre</a>
+        <a href="collaboration.html">Collaboration</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            <i class="fa-solid fa-network-wired"></i>
+            GOREALE DIGITAL COMMUNITY NETWORK
+        </span>
+
+        <h1>
+            Connect. Share. <span>Innovate.</span> Grow Together.
+        </h1>
+
+        <p>
+            A collaborative digital space for agricultural knowledge,
+            community conversations, innovative ideas and sustainable
+            development across our communities.
+        </p>
+
+        <div class="hero-stats">
+
+            <div class="hero-stat">
+                <strong>COMMUNITY</strong>
+                <small>Shared knowledge</small>
+            </div>
+
+            <div class="hero-stat">
+                <strong>INNOVATION</strong>
+                <small>New possibilities</small>
+            </div>
+
+            <div class="hero-stat">
+                <strong>COLLABORATION</strong>
+                <small>Collective progress</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MAIN COMMUNITY -->
+
+<main class="community-layout">
+
+
+    <!-- LEFT SIDEBAR -->
+
+    <aside class="left-sidebar">
+
+        <div class="panel profile-panel">
+
+            <div class="profile-avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <h3>Community Visitor</h3>
+
+            <p>GOREALE Community Network</p>
+
+            <span class="profile-status">
+                <i class="fa-solid fa-circle"></i>
+                Preview Mode
+            </span>
+
+        </div>
+
+
+        <div class="panel">
+
+            <div class="panel-heading">
+                COMMUNITY NAVIGATION
+            </div>
+
+            <ul class="sidebar-menu">
+
+                <li>
+                    <button class="active" data-filter="all">
+                        <i class="fa-solid fa-house"></i>
+                        Community Feed
+                    </button>
+                </li>
+
+                <li>
+                    <button data-filter="Agriculture">
+                        <i class="fa-solid fa-seedling"></i>
+                        Agriculture
+                    </button>
+                </li>
+
+                <li>
+                    <button data-filter="Innovation">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Innovation
+                    </button>
+                </li>
+
+                <li>
+                    <button data-filter="Environment">
+                        <i class="fa-solid fa-leaf"></i>
+                        Environment
+                    </button>
+                </li>
+
+                <li>
+                    <button data-filter="Community">
+                        <i class="fa-solid fa-people-group"></i>
+                        Community Matters
+                    </button>
+                </li>
+
+                <li>
+                    <button id="openChat">
+                        <i class="fa-solid fa-comments"></i>
+                        Community Chat
+                    </button>
+                </li>
+
+                <li>
+                    <button data-filter="Questions">
+                        <i class="fa-solid fa-circle-question"></i>
+                        Questions
+                    </button>
+                </li>
+
+                <li>
+                    <button data-filter="Announcements">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        Announcements
+                    </button>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </aside>
+
+
+    <!-- CENTRAL FEED -->
+
+    <section class="feed-column" id="feed">
+
+        <div class="feed-heading">
+
+            <div>
+                <h2>Community Feed</h2>
+                <p>Ideas, conversations and community updates</p>
+            </div>
+
+            <select id="feedSort" aria-label="Sort community posts">
+    <option value="all">All Posts</option>
+    <option value="latest">Latest</option>
+    <option value="oldest">Oldest</option>
+    <option value="popular">Popular</option>
+    <option value="commented">Most Commented</option>
+</select>
+        </div>
+
+
+        <!-- POST COMPOSER -->
+
+        <div class="panel composer">
+
+            <div class="composer-heading">
+
+                <div class="composer-avatar">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+
+                <div>
+                    <strong>Create a community post</strong>
+                    <small>Share your thoughts and experiences</small>
+                </div>
+
+            </div>
+
+            <form id="postForm">
+
+                <textarea id="postText"
+                    placeholder="What would you like to share with the community?"
+                    required></textarea>
+
+                <div class="composer-bottom">
+
+                    <select id="postCategory">
+                        <option value="Agriculture">Agriculture</option>
+                        <option value="Innovation">Innovation</option>
+                        <option value="Environment">Environment</option>
+                        <option value="Community">Community Matters</option>
+                        <option value="Questions">Questions</option>
+                    </select>
+
+                    <button class="publish-button" type="submit">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Publish
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <!-- POSTS -->
+
+        <div id="postsContainer">
+
+
+            <!-- POST ONE -->
+
+            <article class="panel post-card"
+                     data-category="Agriculture"
+                     data-likes="4">
+
+                <div class="post-header">
+
+                    <div class="post-avatar">GA</div>
+
+                    <div class="post-author">
+                        <strong>GOREALE Agricultural Innovators</strong>
+                        <small>Community Team · Sample post</small>
+                    </div>
+
+                    <span class="post-category">Agriculture</span>
+
+                </div>
+
+                <div class="post-body">
+Welcome to the GOREALE Community Network!
+
+This is a space for farmers, young people, agricultural innovators and community members to exchange knowledge and experiences.
+
+What agricultural opportunities would you like to see developed in Goreale Ward?
+                </div>
+
+                <div class="post-stats">
+
+                    <span class="like-count">4 likes</span>
+
+                    <button type="button"
+                            class="comment-count comment-toggle">
+                        2 comments
+                    </button>
+
+                </div>
+
+                <div class="post-actions">
+
+                    <button class="like-button">
+                        <i class="fa-regular fa-heart"></i>
+                        Like
+                    </button>
+
+                    <button class="comment-toggle">
+                        <i class="fa-regular fa-comment"></i>
+                        Comment
+                    </button>
+
+                    <div class="share-wrapper">
+
+    <button type="button" class="share-button">
+        <i class="fa-solid fa-share-nodes"></i>
+        Share
+        <i class="fa-solid fa-chevron-down"></i>
+    </button>
+
+</div>
+
+                <div class="comments-area">
+
+                    <div class="comments-title">
+                        Community discussion
+                    </div>
+
+                    <div class="comments-list">
+
+                        <div class="comment-item">
+                            <div class="comment-avatar">CM</div>
+                            <div class="comment-content">
+                                <strong>Community Member</strong>
+                                <p>
+                                    Agricultural training and access
+                                    to practical farming information
+                                    would be very helpful.
+                                </p>
+                                <small>Sample comment</small>
+                            </div>
+                        </div>
+
+                        <div class="comment-item">
+                            <div class="comment-avatar">CM</div>
+                            <div class="comment-content">
+                                <strong>Community Member</strong>
+                                <p>
+                                    More opportunities for young
+                                    farmers and agricultural groups.
+                                </p>
+                                <small>Sample comment</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <form class="comment-form">
+
+                        <input class="comment-input"
+                               placeholder="Write a comment..."
+                               required>
+
+                        <button type="submit">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </article>
+
+
+            <!-- POST TWO -->
+
+            <article class="panel post-card"
+                     data-category="Environment"
+                     data-likes="7">
+
+                <div class="post-header">
+
+                    <div class="post-avatar">GA</div>
+
+                    <div class="post-author">
+                        <strong>GOREALE Community Network</strong>
+                        <small>Community Team · Sample post</small>
+                    </div>
+
+                    <span class="post-category">Environment</span>
+
+                </div>
+
+                <div class="post-body">
+Community environmental conservation
+
+What practical activities can help us improve tree planting, soil conservation and sustainable water management in our community?
+
+Share your suggestions and experiences.
+                </div>
+
+                <div class="post-stats">
+
+                    <span class="like-count">7 likes</span>
+
+                    <button type="button"
+                            class="comment-count comment-toggle">
+                        0 comments
+                    </button>
+
+                </div>
+
+                <div class="post-actions">
+
+                    <button class="like-button">
+                        <i class="fa-regular fa-heart"></i>
+                        Like
+                    </button>
+
+                    <button class="comment-toggle">
+                        <i class="fa-regular fa-comment"></i>
+                        Comment
+                    </button>
+
+                    <button class="share-button">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        Share
+                    </button>
+
+                </div>
+
+                <div class="comments-area">
+
+                    <div class="comments-title">
+                        Community discussion
+                    </div>
+
+                    <div class="comments-list"></div>
+
+                    <form class="comment-form">
+
+                        <input class="comment-input"
+                               placeholder="Write a comment..."
+                               required>
+
+                        <button type="submit">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </article>
+
+
+            <!-- POST THREE -->
+
+            <article class="panel post-card"
+                     data-category="Questions"
+                     data-likes="3">
+
+                <div class="post-header">
+
+                    <div class="post-avatar">GA</div>
+
+                    <div class="post-author">
+                        <strong>Community Discussion</strong>
+                        <small>Community Member · Sample post</small>
+                    </div>
+
+                    <span class="post-category">Questions</span>
+
+                </div>
+
+                <div class="post-body">
+Question for local farmers:
+
+Which crops do you consider most suitable for local conditions in Goreale Ward, considering rainfall patterns, water availability and soil conditions?
+
+Let's learn from each other's experiences.
+                </div>
+
+                <div class="post-stats">
+
+                    <span class="like-count">3 likes</span>
+
+                    <button type="button"
+                            class="comment-count comment-toggle">
+                        0 comments
+                    </button>
+
+                </div>
+
+                <div class="post-actions">
+
+                    <button class="like-button">
+                        <i class="fa-regular fa-heart"></i>
+                        Like
+                    </button>
+
+                    <button class="comment-toggle">
+                        <i class="fa-regular fa-comment"></i>
+                        Comment
+                    </button>
+
+                    <button class="share-button">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        Share
+                    </button>
+
+                </div>
+
+                <div class="comments-area">
+
+                    <div class="comments-title">
+                        Community discussion
+                    </div>
+
+                    <div class="comments-list"></div>
+
+                    <form class="comment-form">
+
+                        <input class="comment-input"
+                               placeholder="Write a comment..."
+                               required>
+
+                        <button type="submit">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <div class="empty-message" id="emptyMessage">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <p>No posts found in this category.</p>
+        </div>
+
+    </section>
+
+
+    <!-- RIGHT SIDEBAR -->
+
+    <aside class="right-sidebar">
+
+        <div class="panel">
+
+            <div class="panel-heading">
+                <i class="fa-solid fa-bullhorn"></i>
+                OFFICIAL ANNOUNCEMENTS
+            </div>
+
+            <div class="panel-content">
+
+                <div class="announcement">
+                    <strong>Welcome to our community</strong>
+                    <p>
+                        A digital space for agricultural knowledge,
+                        innovation and community participation.
+                    </p>
+                </div>
+
+                <div class="announcement">
+                    <strong>Community participation</strong>
+                    <p>
+                        Share ideas and contribute to sustainable
+                        development in our community.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="panel">
+
+            <div class="panel-heading">
+                <i class="fa-solid fa-fire"></i>
+                DISCUSSION TOPICS
+            </div>
+
+            <div class="panel-content">
+
+                <div class="topic-list">
+                    <span class="topic">Climate-smart farming</span>
+                    <span class="topic">Livestock</span>
+                    <span class="topic">Water conservation</span>
+                    <span class="topic">Youth opportunities</span>
+                    <span class="topic">Agroforestry</span>
+                    <span class="topic">Agribusiness</span>
+                    <span class="topic">Food security</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="panel">
+
+            <div class="panel-heading">
+                <i class="fa-solid fa-shield-halved"></i>
+                COMMUNITY STANDARDS
+            </div>
+
+            <div class="panel-content">
+
+                <div class="guideline">
+                    <i class="fa-solid fa-check-circle"></i>
+                    <span>Respect all community members.</span>
+                </div>
+
+                <div class="guideline">
+                    <i class="fa-solid fa-check-circle"></i>
+                    <span>Share constructive information.</span>
+                </div>
+
+                <div class="guideline">
+                    <i class="fa-solid fa-check-circle"></i>
+                    <span>Avoid misinformation and abuse.</span>
+                </div>
+
+                <div class="guideline">
+                    <i class="fa-solid fa-check-circle"></i>
+                    <span>Protect personal information.</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+</main>
+
+
+<!-- CHAT WINDOW -->
+
+<div class="chat-panel" id="chatPanel">
+
+    <div class="chat-header">
+
+        <div>
+            <strong>
+                <i class="fa-solid fa-comments"></i>
+                Community Chat
+            </strong>
+
+            <small>Messaging preview</small>
+        </div>
+
+        <button id="closeChat" aria-label="Close chat">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+
+        <div class="chat-message">
+            <small>GOREALE Community Team</small>
+            Welcome to the community chat.
+        </div>
+
+        <div class="chat-message">
+            <small>System information</small>
+            Real member-to-member messaging will be enabled
+            after backend integration.
+        </div>
+
+    </div>
+
+    <form class="chat-form" id="chatForm">
+
+        <input type="text"
+               class="chat-input"
+               id="chatInput"
+               placeholder="Write a message..."
+               required>
+
+        <button type="submit" aria-label="Send message">
+            <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+    </form>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer class="about-footer">
+
+    <strong>GOREALE Agricultural Innovators</strong>
+
+    Goreale Ward · Lagdera Constituency ·
+    Garissa County · Kenya
+
+    <div class="footer-tagline">
+        Cultivating Innovation. Growing Sustainable Futures.
+    </div>
+
+</footer>
+
+
+<script>
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+const menuButton = document.getElementById("menuButton");
+const menuPanel = document.getElementById("menuPanel");
+
+if (menuButton && menuPanel) {
+
+    menuButton.addEventListener("click", () => {
+
+        menuPanel.classList.toggle("open");
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            String(menuPanel.classList.contains("open"))
+        );
+
+    });
+
+}
+
+
+/* ==========================================
+   COMMUNITY ELEMENTS
+========================================== */
+
+const postForm = document.getElementById("postForm");
+const postText = document.getElementById("postText");
+const postCategory = document.getElementById("postCategory");
+const postsContainer = document.getElementById("postsContainer");
+const feedSort = document.getElementById("feedSort");
+
+let currentFilter = "all";
+
+
+/* ==========================================
+   POST ID GENERATOR
+========================================== */
+
+function generatePostId() {
+
+    if (window.crypto && typeof crypto.randomUUID === "function") {
+        return "community-post-" + crypto.randomUUID();
+    }
+
+    return "community-post-" +
+        Date.now() + "-" +
+        Math.random().toString(36).slice(2, 9);
+
+}
+
+
+/* ==========================================
+   POST CREATION
+========================================== */
+
+if (postForm) {
+
+    postForm.addEventListener("submit", event => {
+
+        event.preventDefault();
+
+        const text = postText.value.trim();
+
+        if (!text) return;
+
+        const category = postCategory.value;
+
+        const article = document.createElement("article");
+
+        article.className = "panel post-card";
+
+        article.id = generatePostId();
+
+        article.dataset.category = category;
+        article.dataset.likes = "0";
+        article.dataset.createdAt = String(Date.now());
+
+        article.innerHTML = `
+
+            <div class="post-header">
+
+                <div class="post-avatar">G</div>
+
+                <div class="post-author">
+                    <strong>Community Visitor</strong>
+                    <small>Just now · Local preview</small>
+                </div>
+
+                <span class="post-category"></span>
+
+            </div>
+
+            <div class="post-body"></div>
+
+            <div class="post-stats">
+
+                <span class="like-count">0 likes</span>
+
+                <button type="button"
+                        class="comment-count comment-toggle">
+                    0 comments
+                </button>
+
+            </div>
+
+            <div class="post-actions">
+
+                <button type="button" class="like-button">
+                    <i class="fa-regular fa-heart"></i>
+                    Like
+                </button>
+
+                <button type="button" class="comment-toggle">
+                    <i class="fa-regular fa-comment"></i>
+                    Comment
+                </button>
+
+                <div class="share-wrapper">
+
+                    <button type="button" class="share-button">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        Share
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="comments-area">
+
+                <div class="comments-title">
+                    Community discussion
+                </div>
+
+                <div class="comments-list"></div>
+
+                <form class="comment-form">
+
+                    <input
+                        type="text"
+                        class="comment-input"
+                        placeholder="Write a comment..."
+                        required
+                    >
+
+                    <button type="submit">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+        `;
+
+        article.querySelector(".post-category").textContent = category;
+
+        article.querySelector(".post-body").textContent = text;
+
+        postsContainer.prepend(article);
+
+        postText.value = "";
+
+        sortCommunityPosts();
+
+    });
+
+}
+
+
+/* ==========================================
+   INITIAL POST DATES AND IDS
+========================================== */
+
+const initialPosts = [
+    ...postsContainer.querySelectorAll(".post-card")
+];
+
+const initialTime = Date.now();
+
+initialPosts.forEach((post, index) => {
+
+    post.dataset.createdAt = String(
+        initialTime - ((initialPosts.length - index) * 60000)
+    );
+
+    post.dataset.likes = post.dataset.likes || "0";
+
+});
+
+
+/* ==========================================
+   SORT COMMUNITY POSTS
+========================================== */
+
+function sortCommunityPosts() {
+
+    if (!postsContainer) return;
+
+    const sortValue = feedSort ? feedSort.value : "latest";
+
+    const posts = [
+        ...postsContainer.querySelectorAll(".post-card")
+    ];
+
+    posts.sort((a, b) => {
+
+        const dateA = Number(a.dataset.createdAt || 0);
+        const dateB = Number(b.dataset.createdAt || 0);
+
+        const likesA = Number(a.dataset.likes || 0);
+        const likesB = Number(b.dataset.likes || 0);
+
+        const commentsA =
+            a.querySelectorAll(".comment-item").length;
+
+        const commentsB =
+            b.querySelectorAll(".comment-item").length;
+
+        switch (sortValue) {
+
+            case "oldest":
+                return dateA - dateB;
+
+            case "popular":
+                return likesB - likesA || dateB - dateA;
+
+            case "commented":
+                return commentsB - commentsA || dateB - dateA;
+
+            case "latest":
+            case "all":
+            default:
+                return dateB - dateA;
+
+        }
+
+    });
+
+    posts.forEach(post => {
+        postsContainer.appendChild(post);
+    });
+
+    applyCurrentFilter();
+
+}
+
+if (feedSort) {
+    feedSort.addEventListener("change", sortCommunityPosts);
+}
+
+
+/* ==========================================
+   FILTER COMMUNITY POSTS
+========================================== */
+
+const filterButtons = document.querySelectorAll("[data-filter]");
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        currentFilter = button.dataset.filter;
+
+        filterButtons.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        applyCurrentFilter();
+
+    });
+
+});
+
+
+function applyCurrentFilter() {
+
+    if (!postsContainer) return;
+
+    const posts = [
+        ...postsContainer.querySelectorAll(".post-card")
+    ];
+
+    let visible = 0;
+
+    posts.forEach(post => {
+
+        const matches =
+            currentFilter === "all" ||
+            post.dataset.category === currentFilter;
+
+        post.style.display = matches ? "" : "none";
+
+        if (matches) visible++;
+
+    });
+
+    const emptyMessage = document.getElementById("emptyMessage");
+
+    if (emptyMessage) {
+        emptyMessage.style.display = visible ? "none" : "block";
+    }
+
+}
+
+
+/* ==========================================
+   LIKE, LIKES PANEL AND COMMENT TOGGLE
+========================================== */
+
+postsContainer.addEventListener("click", function(event) {
+
+    const post = event.target.closest(".post-card");
+
+    if (!post) return;
+
+
+    /* LIKE BUTTON */
+
+    const likeButton = event.target.closest(".like-button");
+
+    if (likeButton) {
+
+        let likes = Number(post.dataset.likes || 0);
+
+        if (likeButton.classList.contains("liked")) {
+
+            likes = Math.max(0, likes - 1);
+
+            likeButton.classList.remove("liked");
+
+            likeButton.innerHTML =
+                '<i class="fa-regular fa-heart"></i> Like';
+
+        } else {
+
+            likes++;
+
+            likeButton.classList.add("liked");
+
+            likeButton.innerHTML =
+                '<i class="fa-solid fa-heart"></i> Liked';
+
+        }
+
+        post.dataset.likes = String(likes);
+
+        post.querySelector(".like-count").textContent =
+            likes + (likes === 1 ? " like" : " likes");
+
+        if (feedSort && feedSort.value === "popular") {
+            sortCommunityPosts();
+        }
+
+        return;
+    }
+
+
+    /* OPEN/CLOSE LIKES PANEL */
+
+    const likesButton = event.target.closest(".likes-count");
+
+    if (likesButton) {
+
+        const likesArea = post.querySelector(".likes-area");
+
+        if (likesArea) {
+            likesArea.classList.toggle("open");
+        }
+
+        return;
+    }
+
+
+    /* OPEN/CLOSE COMMENTS */
+
+    const commentButton = event.target.closest(".comment-toggle");
+
+    if (commentButton) {
+
+        const commentsArea = post.querySelector(".comments-area");
+
+        if (commentsArea) {
+            commentsArea.classList.toggle("open");
+        }
+
+        return;
+    }
+
+});
+
+
+
+/* ==========================================
+   COMMENT SUBMISSION
+========================================== */
+
+postsContainer.addEventListener("submit", event => {
+
+    if (!event.target.classList.contains("comment-form")) {
+        return;
+    }
+
+    event.preventDefault();
+
+    const form = event.target;
+
+    const input = form.querySelector(".comment-input");
+
+    const value = input.value.trim();
+
+    if (!value) return;
+
+    const post = form.closest(".post-card");
+
+    const list = post.querySelector(".comments-list");
+
+    const commentsArea = post.querySelector(".comments-area");
+
+    if (!list || !commentsArea) return;
+
+    const comment = document.createElement("div");
+
+    comment.className = "comment-item";
+
+    const avatar = document.createElement("div");
+
+    avatar.className = "comment-avatar";
+
+    avatar.textContent = "G";
+
+    const content = document.createElement("div");
+
+    content.className = "comment-content";
+
+    const author = document.createElement("strong");
+
+    author.textContent = "Community Visitor";
+
+    const message = document.createElement("p");
+
+    message.textContent = value;
+
+    const time = document.createElement("small");
+
+    time.textContent = "Just now";
+
+    content.append(author, message, time);
+
+    comment.append(avatar, content);
+
+    list.appendChild(comment);
+
+    const count = list.querySelectorAll(".comment-item").length;
+
+    const countButton = post.querySelector(".comment-count");
+
+    if (countButton) {
+
+        countButton.textContent =
+            count + (count === 1 ? " comment" : " comments");
+
+    }
+
+    // Open discussion automatically
+    commentsArea.classList.add("open");
+
+    input.value = "";
+
+    // Refresh Most Commented sorting
+    if (feedSort && feedSort.value === "commented") {
+        sortCommunityPosts();
+    }
+
+});
+
+
+
+
+/* ==========================================
+   UNIVERSAL POST SHARING SYSTEM
+   WORKS FOR ALL POSTS
+========================================== */
+
+postsContainer.addEventListener("click", async event => {
+
+    /* ======================================
+       1. SHARE BUTTON
+    ====================================== */
+
+    const shareButton = event.target.closest(".share-button");
+
+    if (shareButton) {
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        const post = shareButton.closest(".post-card");
+
+        if (!post) return;
+
+        // Find or create wrapper for this particular post
+        let wrapper = shareButton.closest(".share-wrapper");
+
+        if (!wrapper) {
+
+            wrapper = document.createElement("div");
+
+            wrapper.className = "share-wrapper";
+
+            shareButton.parentNode.insertBefore(wrapper, shareButton);
+
+            wrapper.appendChild(shareButton);
+
+        }
+
+        // Find or create this post's own menu
+        let menu = wrapper.querySelector(".share-menu");
+
+        if (!menu) {
+
+            menu = document.createElement("div");
+
+            menu.className = "share-menu";
+
+            menu.innerHTML = `
+                <div class="share-menu-title">
+                    SHARE THIS POST
+                </div>
+
+                <button type="button" data-share="copy">
+                    <i class="fa-solid fa-copy"></i>
+                    Copy post and link
+                </button>
+
+                <button type="button" data-share="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                </button>
+
+                <button type="button" data-share="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                    Facebook
+                </button>
+
+                <button type="button" data-share="x">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    Share on X
+                </button>
+
+                <button type="button" data-share="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    Email
+                </button>
+
+                <button type="button" data-share="native">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    More sharing options
+                </button>
+            `;
+
+            wrapper.appendChild(menu);
+
+        }
+
+        // Close menus belonging to other posts
+        document.querySelectorAll(".share-menu.open")
+            .forEach(otherMenu => {
+
+                if (otherMenu !== menu) {
+                    otherMenu.classList.remove("open");
+                }
+
+            });
+
+        // Toggle this post's menu
+        menu.classList.toggle("open");
+
+        return;
+
+    }
+
+
+    /* ======================================
+       2. SHARE MENU ACTIONS
+    ====================================== */
+
+    const shareAction = event.target.closest("[data-share]");
+
+    if (!shareAction) return;
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    // IMPORTANT: Get the exact post containing
+    // the selected sharing option.
+    const post = shareAction.closest(".post-card");
+
+    if (!post) return;
+
+    const postBody = post.querySelector(".post-body");
+
+    const postAuthor = post.querySelector(".post-author strong");
+
+    const postText = postBody
+        ? postBody.textContent.trim()
+        : "";
+
+    const author = postAuthor
+        ? postAuthor.textContent.trim()
+        : "GOREALE Community Member";
+
+    // Each post gets its own permanent-in-page ID
+    if (!post.id) {
+        post.id = generatePostId();
+    }
+
+    const postUrl = new URL(window.location.href);
+
+    postUrl.hash = post.id;
+
+    const link = postUrl.href;
+
+    const shareText =
+        author + "\n\n" +
+        postText + "\n\n" +
+        "Shared from GOREALE Agricultural Innovators";
+
+    const fullText = shareText + "\n\n" + link;
+
+    const type = shareAction.dataset.share;
+
+    const menu = shareAction.closest(".share-menu");
+
+    try {
+
+        switch (type) {
+
+            case "copy":
+
+                if (navigator.clipboard && window.isSecureContext) {
+
+                    await navigator.clipboard.writeText(fullText);
+
+                } else {
+
+                    const textarea = document.createElement("textarea");
+
+                    textarea.value = fullText;
+
+                    textarea.style.position = "fixed";
+                    textarea.style.left = "-9999px";
+
+                    document.body.appendChild(textarea);
+
+                    textarea.focus();
+                    textarea.select();
+
+                    const copied = document.execCommand("copy");
+
+                    textarea.remove();
+
+                    if (!copied) {
+                        throw new Error("Copy failed");
+                    }
+
+                }
+
+                alert("Post and link copied successfully!");
+
+                break;
+
+
+            case "whatsapp":
+
+                window.open(
+                    "https://wa.me/?text=" +
+                    encodeURIComponent(fullText),
+                    "_blank"
+                );
+
+                break;
+
+
+            case "facebook":
+
+                window.open(
+                    "https://www.facebook.com/sharer/sharer.php?u=" +
+                    encodeURIComponent(link),
+                    "_blank"
+                );
+
+                break;
+
+
+            case "x":
+
+                window.open(
+                    "https://twitter.com/intent/tweet?text=" +
+                    encodeURIComponent(shareText) +
+                    "&url=" +
+                    encodeURIComponent(link),
+                    "_blank"
+                );
+
+                break;
+
+
+            case "email":
+
+                window.location.href =
+                    "mailto:?subject=" +
+                    encodeURIComponent("GOREALE Community Post") +
+                    "&body=" +
+                    encodeURIComponent(fullText);
+
+                break;
+
+
+            case "native":
+
+                if (navigator.share) {
+
+                    await navigator.share({
+                        title: "GOREALE Community Post",
+                        text: shareText,
+                        url: link
+                    });
+
+                } else if (navigator.clipboard && window.isSecureContext) {
+
+                    await navigator.clipboard.writeText(fullText);
+
+                    alert("Post and link copied successfully!");
+
+                } else {
+
+                    throw new Error("Sharing is unavailable in this browser.");
+
+                }
+
+                break;
+
+        }
+
+    } catch (error) {
+
+        if (error.name !== "AbortError") {
+
+            console.error("Sharing error:", error);
+
+            alert("Unable to share this post. Please try again.");
+
+        }
+
+    } finally {
+
+        if (menu) {
+            menu.classList.remove("open");
+        }
+
+    }
+
+});
+
+
+/* ==========================================
+   CLOSE ALL SHARE MENUS
+========================================== */
+
+document.addEventListener("click", event => {
+
+    if (event.target.closest(".share-wrapper")) return;
+
+    document.querySelectorAll(".share-menu.open")
+        .forEach(menu => menu.classList.remove("open"));
+
+});
+
+
+/* ==========================================
+   CLOSE SHARE MENUS WHEN CLICKING OUTSIDE
+========================================== */
+
+document.addEventListener("click", event => {
+
+    if (!event.target.closest(".share-wrapper")) {
+
+        document.querySelectorAll(".share-menu.open")
+            .forEach(menu => menu.classList.remove("open"));
+
+    }
+
+});
+
+
+/* ==========================================
+   OPEN SHARED POST
+========================================== */
+
+function openSharedPost() {
+
+    const postId = decodeURIComponent(
+        window.location.hash.substring(1)
+    );
+
+    if (!postId) return;
+
+    const post = document.getElementById(postId);
+
+    if (!post) return;
+
+    post.scrollIntoView({
+
+        behavior: "smooth",
+
+        block: "center"
+
+    });
+
+    post.classList.add("shared-post-highlight");
+
+    const commentsArea = post.querySelector(".comments-area");
+
+    if (commentsArea) {
+        commentsArea.classList.add("open");
+    }
+
+}
+
+if (document.readyState === "loading") {
+
+    document.addEventListener("DOMContentLoaded", openSharedPost);
+
+} else {
+
+    openSharedPost();
+
+}
+
+
+/* ==========================================
+   CHAT INTERFACE
+========================================== */
+
+const chatPanel = document.getElementById("chatPanel");
+
+const openChat = document.getElementById("openChat");
+
+const closeChat = document.getElementById("closeChat");
+
+const chatForm = document.getElementById("chatForm");
+
+const chatInput = document.getElementById("chatInput");
+
+const chatMessages = document.getElementById("chatMessages");
+
+
+if (openChat && chatPanel) {
+
+    openChat.addEventListener("click", () => {
+
+        chatPanel.classList.add("open");
+
+    });
+
+}
+
+
+if (closeChat && chatPanel) {
+
+    closeChat.addEventListener("click", () => {
+
+        chatPanel.classList.remove("open");
+
+    });
+
+}
+
+
+if (chatForm && chatInput && chatMessages) {
+
+    chatForm.addEventListener("submit", event => {
+
+        event.preventDefault();
+
+        const value = chatInput.value.trim();
+
+        if (!value) return;
+
+        const bubble = document.createElement("div");
+
+        bubble.className = "chat-message mine";
+
+        const author = document.createElement("small");
+
+        author.textContent = "You";
+
+        const message = document.createElement("div");
+
+        message.textContent = value;
+
+        bubble.append(author, message);
+
+        chatMessages.appendChild(bubble);
+
+        chatInput.value = "";
+
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    });
+
+}
+
+
+/* ==========================================
+   INITIAL FEED DISPLAY
+========================================== */
+
+sortCommunityPosts();
+
+</script>
+
+
+
+</body>
+</html>

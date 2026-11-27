@@ -1,0 +1,1774 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crop Production | Goreale Agricultural Innovators</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --ivory: #F5F5DC;
+    --forest-green: #355E3B;
+    --earth-brown: #8B5A2B;
+    --charcoal-grey: #454545;
+    --olive-green: #6B8E23;
+    --lavender: #E6DDF2;
+    --beet: #e8dce0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--ivory);
+    color: var(--charcoal-grey);
+    font-family: Arial, sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.8;
+}
+
+header {
+    min-height: 5rem;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--ivory);
+}
+
+.logo {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--forest-green);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--earth-brown);
+}
+
+.hero {
+    min-height: 23rem;
+    padding: 4rem 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+        linear-gradient(rgba(15,40,20,.68), rgba(15,40,20,.68)),
+        url("images/crop-production.png") center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 48rem;
+    color: white;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.7rem, 4vw, 2.8rem);
+    font-weight: 900;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--earth-brown);
+    color: white;
+    padding: 0.65rem 1.4rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.btn:hover {
+    background: var(--forest-green);
+}
+
+section {
+    padding: 3rem 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.45rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+.intro,
+.content-section {
+    max-width: 65rem;
+    margin: auto;
+}
+
+.intro p,
+.content-section p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    padding: 1.3rem;
+    border-radius: 0.4rem;
+    color: var(--charcoal-grey);
+}
+
+.card:nth-child(odd) {
+    background: var(--beet);
+}
+
+.card:nth-child(even) {
+    background: var(--lavender);
+}
+
+.card h3 {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.82rem;
+    line-height: 1.7;
+}
+
+.subheading {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.7rem;
+}
+
+.content-section ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.content-section li {
+    margin-bottom: 0.5rem;
+}
+
+.highlight {
+    background: var(--beet);
+    padding: 1.5rem;
+    border-left: 0.3rem solid var(--forest-green);
+    margin-top: 1.5rem;
+}
+
+.highlight h3 {
+    color: var(--forest-green);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.6rem;
+}
+
+.step {
+    background: var(--lavender);
+    padding: 1rem 1.3rem;
+    margin-bottom: 0.8rem;
+    border-radius: 0.3rem;
+}
+
+.step h3 {
+    color: var(--forest-green);
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.resources {
+    background: var(--beet);
+    padding: 1.5rem;
+    border-radius: 0.3rem;
+}
+
+.resources a {
+    color: var(--forest-green);
+    font-weight: bold;
+}
+
+footer {
+    background: var(--forest-green);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.78rem;
+}
+
+footer h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+@media(max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .hero {
+        min-height: 19rem;
+        padding: 3rem 6%;
+    }
+
+    section {
+        padding: 2rem 6%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">GOREALE AGRICULTURAL INNOVATORS</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#services">Our Areas</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+
+        <h1>Crop Production</h1>
+
+        <p>
+            Improving agricultural productivity through
+            quality seeds, modern farming techniques,
+            responsible crop management and innovation.
+        </p>
+
+        <a href="#about" class="btn">Explore More</a>
+
+    </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section id="about">
+    <div class="intro">
+
+        <h2 class="section-title">Understanding Crop Production</h2>
+
+        <p>
+            Crop production is the process of growing and
+            managing agricultural plants for food, animal
+            feed, fibre, industrial raw materials and other
+            economic purposes. It is one of the most
+            important activities in agriculture and plays
+            a major role in food security, employment,
+            rural development and national economic growth.
+        </p>
+
+        <p>
+            Successful crop production involves several
+            interconnected activities, including land
+            preparation, seed selection, planting, soil
+            fertility management, irrigation, weed control,
+            pest and disease management, harvesting and
+            post-harvest handling.
+        </p>
+
+        <p>
+            Crop performance is influenced by rainfall,
+            temperature, soil characteristics, water
+            availability, seed quality, farm inputs,
+            agricultural technology and management practices.
+        </p>
+
+        <p>
+            Modern crop production combines traditional
+            agricultural knowledge with research, improved
+            crop varieties, mechanization, irrigation
+            technologies and sustainable land management.
+        </p>
+
+        <p>
+            Goreale Agricultural Innovators promotes
+            productive and sustainable crop farming through
+            research, agricultural education, innovation
+            and practical knowledge for farmers.
+        </p>
+
+    </div>
+</section>
+
+<!-- KEY AREAS -->
+<section>
+    <h2 class="section-title">Our Key Areas of Focus</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Crop Selection</h3>
+            <p>
+                Identifying crops and varieties suitable
+                for local climate, soil, water availability,
+                farmer needs and market opportunities.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Seed Quality</h3>
+            <p>
+                Promoting certified and quality planting
+                materials with suitable germination,
+                purity and crop performance characteristics.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Land Preparation</h3>
+            <p>
+                Encouraging appropriate land preparation,
+                seedbed management, reduced soil disturbance
+                and good planting conditions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Soil Fertility</h3>
+            <p>
+                Improving crop nutrition through soil
+                testing, compost, manure and balanced
+                fertilizer application.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Irrigation Management</h3>
+            <p>
+                Promoting efficient irrigation, water
+                harvesting and responsible water use
+                in agricultural production.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Crop Protection</h3>
+            <p>
+                Supporting integrated pest, disease
+                and weed management to protect crop
+                health and improve yields.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Crop Diversification</h3>
+            <p>
+                Encouraging different crops and cropping
+                systems to improve food availability
+                and reduce production risks.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Harvest Management</h3>
+            <p>
+                Promoting appropriate harvesting techniques
+                and handling practices to maintain
+                produce quality.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Post-Harvest Management</h3>
+            <p>
+                Reducing food losses through proper
+                drying, cleaning, grading, packaging
+                and storage.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- TYPES OF CROPS -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Major Categories of Agricultural Crops</h2>
+
+        <p>
+            Agricultural crops can be classified according
+            to their uses, growing characteristics and
+            economic importance. Selecting suitable crops
+            helps farmers plan production and identify
+            potential markets.
+        </p>
+
+        <h3 class="subheading">1. Cereal Crops</h3>
+        <p>
+            Cereals are grasses cultivated mainly for
+            their edible grains. They are important
+            sources of energy and form a major part
+            of human diets and livestock feed.
+        </p>
+        <p>
+            Examples include maize, wheat, rice, sorghum,
+            millet and barley.
+        </p>
+
+        <h3 class="subheading">2. Leguminous Crops</h3>
+        <p>
+            Legumes produce seeds in pods and include
+            crops that can contribute to soil fertility
+            through biological nitrogen fixation when
+            properly inoculated and managed.
+        </p>
+        <p>
+            Examples include beans, cowpeas, green grams,
+            pigeon peas, groundnuts and soya beans.
+        </p>
+
+        <h3 class="subheading">3. Horticultural Crops</h3>
+        <p>
+            Horticultural crops include vegetables,
+            fruits and selected ornamental plants.
+            They can provide nutritious food and
+            commercial opportunities.
+        </p>
+        <p>
+            Examples include tomatoes, onions, cabbage,
+            kale, spinach, watermelon, mangoes, bananas,
+            capsicum and pawpaw.
+        </p>
+
+        <h3 class="subheading">4. Root and Tuber Crops</h3>
+        <p>
+            These crops produce edible underground
+            storage organs and can contribute to
+            household food security.
+        </p>
+        <p>
+            Examples include cassava, sweet potatoes,
+            Irish potatoes and yams.
+        </p>
+
+        <h3 class="subheading">5. Oilseed Crops</h3>
+        <p>
+            Oilseed crops are grown for the production
+            of vegetable oils and other food and
+            industrial products.
+        </p>
+        <p>
+            Examples include sunflower, sesame,
+            groundnuts and canola.
+        </p>
+
+        <h3 class="subheading">6. Fibre and Industrial Crops</h3>
+        <p>
+            These crops provide raw materials for
+            textile, manufacturing and other industries.
+            Examples include cotton, sisal and sugarcane.
+        </p>
+
+        <h3 class="subheading">7. Fodder and Forage Crops</h3>
+        <p>
+            These crops are cultivated to feed livestock.
+            Examples include Napier grass, Rhodes grass,
+            forage sorghum, suitable legumes and
+            other locally adapted fodder crops.
+        </p>
+
+    </div>
+</section>
+
+<!-- KENYAN CROPS -->
+<section>
+    <h2 class="section-title">Important Crops for Kenyan Agriculture</h2>
+
+    <p style="max-width:65rem;margin:auto;">
+        Kenya has diverse agricultural environments,
+        from high-rainfall highlands to arid and
+        semi-arid regions. Crop selection should
+        reflect local conditions, available water
+        and market demand.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Maize</h3>
+            <p>
+                An important staple cereal grown for
+                household consumption, livestock feed
+                and commercial markets. It requires
+                suitable rainfall or irrigation and
+                appropriate soil fertility.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Sorghum</h3>
+            <p>
+                A cereal crop with varieties suited
+                to different environments, including
+                some dryland conditions. Used for food,
+                feed and processing.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Millet</h3>
+            <p>
+                Finger millet and pearl millet are
+                important cereals with potential in
+                suitable farming environments,
+                including some semi-arid areas.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Green Grams</h3>
+            <p>
+                A legume crop grown for its nutritious
+                grain. It can be an important food
+                and income crop in suitable dryland
+                production systems.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Cowpeas</h3>
+            <p>
+                A valuable food and fodder legume.
+                Its leaves, pods and grains have
+                different household and market uses.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Pigeon Peas</h3>
+            <p>
+                A versatile legume crop used for
+                food and other farm purposes.
+                It can be integrated into suitable
+                intercropping systems.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Tomatoes</h3>
+            <p>
+                A commercially important vegetable
+                that requires good water management,
+                crop nutrition and pest monitoring.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Onions</h3>
+            <p>
+                An important horticultural crop
+                grown for household consumption
+                and commercial markets.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Watermelon</h3>
+            <p>
+                A fruit crop with market potential
+                in suitable warm environments.
+                Successful production requires
+                good water and crop management.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="content-section highlight">
+        <h3>Crop Selection in Dryland Kenya</h3>
+        <p>
+            In Garissa and other arid and semi-arid
+            areas, crops such as sorghum, millet,
+            cowpeas, green grams and selected
+            horticultural crops may offer production
+            opportunities. Their suitability depends
+            on rainfall, soil, water access, variety
+            and management. Irrigated crops should
+            only be planned where sustainable water
+            supplies are available.
+        </p>
+    </div>
+</section>
+
+<!-- FACTORS -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Factors Affecting Crop Production</h2>
+
+        <p>
+            Crop growth and yield depend on several
+            environmental and management factors.
+            Understanding these factors helps farmers
+            make better production decisions.
+        </p>
+
+        <ul>
+            <li><strong>Climate:</strong> Rainfall, temperature, humidity, sunlight and wind influence crop growth.</li>
+            <li><strong>Soil type:</strong> Soil texture, structure, drainage and fertility affect root development and nutrient availability.</li>
+            <li><strong>Water availability:</strong> Adequate water is necessary for germination, growth and grain or fruit development.</li>
+            <li><strong>Seed quality:</strong> Healthy, suitable seeds support uniform crop establishment.</li>
+            <li><strong>Nutrients:</strong> Crops require balanced nutrients for healthy development.</li>
+            <li><strong>Pests and diseases:</strong> Insects, fungi, bacteria, viruses and nematodes can damage crops.</li>
+            <li><strong>Weeds:</strong> Weeds compete with crops for light, water, space and nutrients.</li>
+            <li><strong>Farm management:</strong> Timely planting, weeding, irrigation and harvesting influence production outcomes.</li>
+            <li><strong>Markets:</strong> Prices, demand, transport and access to buyers influence crop profitability.</li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- PRODUCTION CYCLE -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">The Complete Crop Production Cycle</h2>
+
+        <p>
+            Crop production follows a sequence of
+            activities from farm planning to marketing.
+            Each stage requires appropriate decisions
+            and management.
+        </p>
+
+        <div class="step">
+            <h3>1. Farm Planning and Crop Selection</h3>
+            <p>
+                Assess soil, climate, available water,
+                production costs, household needs
+                and market demand before selecting
+                the crop to grow.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>2. Land Preparation</h3>
+            <p>
+                Prepare the field using suitable
+                methods. Consider reduced tillage,
+                appropriate seedbeds, drainage
+                and soil conservation.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>3. Seed Selection and Planting</h3>
+            <p>
+                Select quality seeds and follow
+                recommended planting depth,
+                spacing, timing and seed rate
+                for the chosen crop.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>4. Germination and Crop Establishment</h3>
+            <p>
+                Monitor emergence, soil moisture,
+                plant population and early crop
+                development. Identify gaps or
+                establishment problems.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>5. Nutrient and Water Management</h3>
+            <p>
+                Supply appropriate nutrients and
+                water according to crop requirements
+                and growth stages.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>6. Weed and Pest Management</h3>
+            <p>
+                Inspect crops regularly, manage
+                weeds and monitor pests and diseases.
+                Apply appropriate control measures
+                when necessary.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>7. Crop Development and Monitoring</h3>
+            <p>
+                Observe crop growth, flowering,
+                fruiting and grain development.
+                Maintain appropriate field management.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>8. Harvesting</h3>
+            <p>
+                Harvest at the appropriate maturity
+                stage using suitable methods that
+                minimize damage and losses.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>9. Post-Harvest Handling</h3>
+            <p>
+                Clean, sort, dry, grade, package
+                and store produce appropriately
+                to preserve quality.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>10. Marketing and Record Keeping</h3>
+            <p>
+                Sell produce through suitable
+                markets, calculate returns and
+                record farm expenses, yields
+                and income.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- LAND PREPARATION -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Land Preparation and Seedbed Management</h2>
+
+        <p>
+            Land preparation creates suitable conditions
+            for seed germination, root development
+            and crop establishment. The method should
+            depend on soil conditions, crop requirements,
+            available equipment and conservation needs.
+        </p>
+
+        <h3 class="subheading">Land Preparation Practices</h3>
+
+        <ul>
+            <li>Assess the field before beginning cultivation.</li>
+            <li>Remove or manage problematic weeds and crop residues.</li>
+            <li>Use suitable tools and machinery for the farm.</li>
+            <li>Avoid unnecessary soil disturbance.</li>
+            <li>Prepare suitable planting beds, rows or basins.</li>
+            <li>Provide appropriate drainage where waterlogging is a risk.</li>
+            <li>Maintain soil cover where possible to reduce erosion.</li>
+            <li>Use contour-based soil conservation on suitable slopes.</li>
+        </ul>
+
+        <h3 class="subheading">Seedbed Preparation</h3>
+
+        <p>
+            A seedbed should provide appropriate soil
+            contact, moisture and physical conditions
+            for germination. Excessive cultivation can
+            damage soil structure and increase erosion,
+            so the intensity of preparation should
+            be appropriate to the crop and site.
+        </p>
+
+    </div>
+</section>
+
+<!-- SEEDS -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Seed Selection and Quality Management</h2>
+
+        <p>
+            Seed quality is a major factor in crop
+            establishment and productivity. Farmers
+            should select seed varieties according
+            to their production environment and
+            intended market.
+        </p>
+
+        <h3 class="subheading">Characteristics of Quality Seed</h3>
+
+        <ul>
+            <li>High germination capacity.</li>
+            <li>Good physical purity.</li>
+            <li>Appropriate variety identification.</li>
+            <li>Freedom from serious seed-borne pests and diseases.</li>
+            <li>Suitable maturity period for the growing season.</li>
+            <li>Adaptation to local climatic and soil conditions.</li>
+            <li>Resistance or tolerance to relevant crop stresses where available.</li>
+        </ul>
+
+        <h3 class="subheading">Certified Seed</h3>
+
+        <p>
+            Certified seed is produced and verified
+            under an official seed certification
+            system. It provides assurance about
+            specified quality standards and variety
+            identity.
+        </p>
+
+        <p>
+            Farmers should purchase seed from
+            reliable suppliers and check packaging,
+            variety information, batch details
+            and expiry or validity information.
+        </p>
+
+        <h3 class="subheading">Seed Storage</h3>
+
+        <p>
+            Store seeds in clean, dry and suitable
+            conditions. Protect them from moisture,
+            excessive heat, insects and rodents.
+            Follow the supplier's storage instructions.
+        </p>
+
+    </div>
+</section>
+
+<!-- PLANTING -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Planting Methods and Crop Establishment</h2>
+
+        <p>
+            Planting involves placing seeds or other
+            planting materials into the soil under
+            conditions that support establishment.
+            Correct planting improves crop uniformity
+            and helps reduce seed wastage.
+        </p>
+
+        <h3 class="subheading">Common Planting Methods</h3>
+
+        <ul>
+            <li><strong>Broadcasting:</strong> Distributing seeds over the prepared field.</li>
+            <li><strong>Row planting:</strong> Placing seeds in organized rows for easier management.</li>
+            <li><strong>Drilling:</strong> Placing seeds in continuous furrows at controlled depth.</li>
+            <li><strong>Transplanting:</strong> Moving seedlings from a nursery to the field.</li>
+            <li><strong>Spot planting:</strong> Placing seeds in prepared planting holes or stations.</li>
+            <li><strong>Direct seeding:</strong> Planting seeds directly in their final growing location.</li>
+        </ul>
+
+        <h3 class="subheading">Correct Plant Spacing</h3>
+
+        <p>
+            Plant spacing determines the distance
+            between rows and individual plants.
+            It affects plant population, access
+            to sunlight, airflow, nutrient use
+            and competition for water.
+        </p>
+
+        <p>
+            Farmers should follow crop- and variety-specific
+            spacing recommendations rather than
+            using one spacing standard for all crops.
+        </p>
+
+    </div>
+</section>
+
+<!-- SOIL FERTILITY -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Soil Fertility and Crop Nutrition</h2>
+
+        <p>
+            Plants require essential nutrients for
+            healthy growth and development. Nutrient
+            deficiencies can result in poor growth,
+            low yields and reduced crop quality.
+        </p>
+
+        <h3 class="subheading">Major Plant Nutrients</h3>
+
+        <ul>
+            <li><strong>Nitrogen (N):</strong> Supports leaf and vegetative growth.</li>
+            <li><strong>Phosphorus (P):</strong> Supports root development, energy transfer and reproductive growth.</li>
+            <li><strong>Potassium (K):</strong> Supports water regulation, plant strength and crop development.</li>
+            <li><strong>Calcium:</strong> Supports cell structure and growing tissues.</li>
+            <li><strong>Magnesium:</strong> Forms part of chlorophyll and supports photosynthesis.</li>
+            <li><strong>Sulphur:</strong> Contributes to protein formation and plant metabolism.</li>
+        </ul>
+
+        <h3 class="subheading">Soil Fertility Improvement</h3>
+
+        <ul>
+            <li>Conduct soil testing where possible.</li>
+            <li>Apply fertilizers according to crop and soil requirements.</li>
+            <li>Use properly managed compost and farmyard manure.</li>
+            <li>Include suitable legumes in crop rotations.</li>
+            <li>Maintain organic soil cover.</li>
+            <li>Prevent soil erosion and nutrient losses.</li>
+            <li>Use appropriate lime or other soil amendments when recommended by soil analysis.</li>
+        </ul>
+
+        <div class="highlight">
+            <h3>Balanced Crop Nutrition</h3>
+            <p>
+                More fertilizer does not automatically
+                mean higher yields. Nutrient application
+                should consider soil test results, crop
+                requirements, expected yield and
+                recommended application methods.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- IRRIGATION -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Crop Water and Irrigation Management</h2>
+
+        <p>
+            Water is required for seed germination,
+            nutrient transport, photosynthesis and
+            crop development. Water management
+            should match the needs of each crop
+            and its growth stage.
+        </p>
+
+        <h3 class="subheading">Major Irrigation Methods</h3>
+
+        <ul>
+            <li><strong>Drip irrigation:</strong> Delivers water close to plant roots through emitters.</li>
+            <li><strong>Sprinkler irrigation:</strong> Applies water through controlled spraying.</li>
+            <li><strong>Furrow irrigation:</strong> Moves water through channels between crop rows.</li>
+            <li><strong>Basin irrigation:</strong> Applies water to levelled enclosed planting areas.</li>
+            <li><strong>Watering cans:</strong> Provide manual irrigation for small gardens and nurseries.</li>
+        </ul>
+
+        <h3 class="subheading">Water Management Practices</h3>
+
+        <ul>
+            <li>Monitor soil moisture and crop water requirements.</li>
+            <li>Schedule irrigation according to weather and crop growth stages.</li>
+            <li>Repair leaks and maintain irrigation equipment.</li>
+            <li>Use mulch to reduce soil moisture loss.</li>
+            <li>Harvest and store rainwater where suitable.</li>
+            <li>Avoid unnecessary overwatering and waterlogging.</li>
+            <li>Protect irrigation water from contamination.</li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- CROP MANAGEMENT -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Crop Management and Field Operations</h2>
+
+        <h3 class="subheading">Weed Management</h3>
+
+        <p>
+            Weeds compete with crops for water,
+            nutrients, sunlight and growing space.
+            Effective weed management is important
+            during the critical stages of crop growth.
+        </p>
+
+        <ul>
+            <li>Conduct timely manual or mechanical weeding.</li>
+            <li>Use suitable mulching and cover crops.</li>
+            <li>Practice crop rotation and intercropping.</li>
+            <li>Prevent weeds from producing excessive seed.</li>
+            <li>Use registered herbicides responsibly where necessary.</li>
+        </ul>
+
+        <h3 class="subheading">Thinning</h3>
+        <p>
+            Thinning involves removing excess seedlings
+            to achieve the recommended plant population
+            and spacing.
+        </p>
+
+        <h3 class="subheading">Gap Filling</h3>
+        <p>
+            Gap filling involves replacing missing
+            plants where appropriate and where
+            replacement seedlings can establish
+            successfully.
+        </p>
+
+        <h3 class="subheading">Pruning and Staking</h3>
+        <p>
+            Some crops benefit from pruning or
+            physical support. These practices
+            should be applied according to
+            crop requirements and production systems.
+        </p>
+
+        <h3 class="subheading">Field Monitoring</h3>
+        <p>
+            Regular field inspections help identify
+            nutrient deficiencies, water stress,
+            pest attacks, diseases, weeds and
+            other production problems early.
+        </p>
+
+    </div>
+</section>
+
+<!-- CROP ROTATION -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Crop Rotation and Intercropping</h2>
+
+        <h3 class="subheading">Crop Rotation</h3>
+
+        <p>
+            Crop rotation involves growing different
+            crops on the same field in a planned
+            sequence over successive growing seasons.
+            It can help manage soil fertility,
+            weeds and certain crop pests and diseases.
+        </p>
+
+        <p>
+            An example is rotating a cereal crop
+            with a suitable legume. The specific
+            sequence should account for local
+            conditions and crop disease risks.
+        </p>
+
+        <h3 class="subheading">Intercropping</h3>
+
+        <p>
+            Intercropping involves growing two
+            or more crops together in the same
+            field during part or all of their
+            growing periods.
+        </p>
+
+        <p>
+            Examples include maize with beans,
+            sorghum with cowpeas and other
+            suitable crop combinations.
+        </p>
+
+        <h3 class="subheading">Benefits of Crop Diversification</h3>
+
+        <ul>
+            <li>Spreads production and market risks.</li>
+            <li>Provides different food products.</li>
+            <li>Can improve the use of available land and resources.</li>
+            <li>May help manage certain pests and diseases.</li>
+            <li>Can support soil fertility when suitable legumes are included.</li>
+            <li>Creates different harvesting and marketing opportunities.</li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- PESTS -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Crop Pest and Disease Management</h2>
+
+        <p>
+            Pests and diseases are important causes
+            of crop losses. Effective management
+            begins with identifying the problem
+            and understanding the conditions
+            that encourage its development.
+        </p>
+
+        <h3 class="subheading">Common Crop Pests</h3>
+
+        <ul>
+            <li>Fall armyworm.</li>
+            <li>Aphids.</li>
+            <li>Whiteflies.</li>
+            <li>Cutworms.</li>
+            <li>Stem borers.</li>
+            <li>Fruit flies.</li>
+            <li>Thrips.</li>
+            <li>Spider mites.</li>
+        </ul>
+
+        <h3 class="subheading">Common Crop Diseases</h3>
+
+        <ul>
+            <li>Fungal diseases such as rusts and mildews.</li>
+            <li>Bacterial wilts and leaf spots.</li>
+            <li>Viral diseases affecting leaves and plant development.</li>
+            <li>Root rots and seedling diseases.</li>
+        </ul>
+
+        <h3 class="subheading">Integrated Pest Management (IPM)</h3>
+
+        <p>
+            IPM combines different methods to prevent
+            and manage pests while reducing unnecessary
+            pesticide use.
+        </p>
+
+        <ul>
+            <li>Inspect crops and identify pests correctly.</li>
+            <li>Use resistant or tolerant varieties where available.</li>
+            <li>Practice crop rotation and field sanitation.</li>
+            <li>Encourage beneficial insects and natural enemies.</li>
+            <li>Use appropriate physical and biological control methods.</li>
+            <li>Apply approved pesticides only when justified.</li>
+            <li>Follow product labels and safety instructions.</li>
+        </ul>
+
+        <div class="highlight">
+            <h3>Responsible Crop Protection</h3>
+            <p>
+                Correct identification is important
+                before applying any pesticide. Use
+                registered products for the intended
+                crop and pest, observe protective
+                measures and pre-harvest intervals,
+                and seek qualified agricultural advice.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- DRYLAND CROPS -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Crop Production in Arid and Semi-Arid Areas</h2>
+
+        <p>
+            Arid and semi-arid lands (ASALs) face
+            production challenges including low
+            rainfall, high temperatures, unreliable
+            growing seasons, limited irrigation
+            water and soil degradation.
+        </p>
+
+        <p>
+            Crop production in these areas requires
+            careful selection of crops, varieties
+            and farming methods that respond
+            to local conditions.
+        </p>
+
+        <h3 class="subheading">Suitable Areas of Focus</h3>
+
+        <ul>
+            <li>Grow drought-adapted cereal varieties where suitable.</li>
+            <li>Consider sorghum and millet in appropriate environments.</li>
+            <li>Promote suitable legumes such as cowpeas and green grams.</li>
+            <li>Use early-maturing varieties when appropriate to the season.</li>
+            <li>Harvest rainwater and conserve soil moisture.</li>
+            <li>Use efficient irrigation for suitable horticultural crops.</li>
+            <li>Maintain soil cover and reduce erosion.</li>
+            <li>Use weather information to support planting decisions.</li>
+            <li>Plan production around available water and market demand.</li>
+        </ul>
+
+        <div class="highlight">
+            <h3>Crop Production Opportunities in Garissa</h3>
+            <p>
+                Depending on location, soil and water
+                access, farmers may consider sorghum,
+                millet, cowpeas, green grams and
+                selected irrigated horticultural crops
+                such as tomatoes, onions and watermelon.
+                Crop choices should be confirmed with
+                local agricultural extension officers
+                and current variety recommendations.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- HARVESTING -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Crop Harvesting and Management</h2>
+
+        <p>
+            Harvesting is the process of collecting
+            mature crops from the field. Correct
+            harvesting time and handling methods
+            help preserve product quality and
+            reduce losses.
+        </p>
+
+        <h3 class="subheading">Harvesting Practices</h3>
+
+        <ul>
+            <li>Identify the appropriate maturity stage for each crop.</li>
+            <li>Use suitable harvesting equipment and tools.</li>
+            <li>Avoid unnecessary bruising and physical damage.</li>
+            <li>Separate damaged or diseased produce.</li>
+            <li>Harvest under suitable weather conditions where possible.</li>
+            <li>Transport produce carefully to the handling area.</li>
+        </ul>
+
+        <h3 class="subheading">Harvesting Different Crop Groups</h3>
+
+        <p>
+            Cereals are generally harvested when
+            grains reach suitable maturity and
+            moisture conditions for harvesting.
+            Vegetables and fruits should be collected
+            at the maturity stage required by their
+            intended market or use.
+        </p>
+
+        <p>
+            Root and tuber crops should be harvested
+            carefully to minimize cuts, bruising
+            and unnecessary damage.
+        </p>
+
+    </div>
+</section>
+
+<!-- POST HARVEST -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Post-Harvest Handling and Storage</h2>
+
+        <p>
+            Post-harvest management covers activities
+            that take place after harvesting to
+            maintain quality, safety and market value.
+            Poor handling and storage can cause
+            significant food losses.
+        </p>
+
+        <h3 class="subheading">Important Post-Harvest Practices</h3>
+
+        <ul>
+            <li><strong>Cleaning:</strong> Remove soil, unwanted materials and contaminants where appropriate.</li>
+            <li><strong>Sorting:</strong> Separate damaged and poor-quality produce.</li>
+            <li><strong>Grading:</strong> Classify products according to size, quality and market requirements.</li>
+            <li><strong>Drying:</strong> Reduce moisture to appropriate safe storage levels for the product.</li>
+            <li><strong>Packaging:</strong> Use clean, suitable packaging materials.</li>
+            <li><strong>Storage:</strong> Protect products from moisture, pests, rodents and contamination.</li>
+            <li><strong>Transportation:</strong> Use suitable containers and transport conditions.</li>
+        </ul>
+
+        <h3 class="subheading">Grain Storage</h3>
+
+        <p>
+            Grain should be properly dried before
+            storage. Use clean and dry storage
+            facilities, monitor moisture and protect
+            stored grain from insects, rodents
+            and water damage.
+        </p>
+
+        <h3 class="subheading">Vegetable and Fruit Storage</h3>
+
+        <p>
+            Fresh produce requires careful handling.
+            Temperature, humidity, ventilation
+            and storage duration should be
+            appropriate for each commodity.
+        </p>
+
+    </div>
+</section>
+
+<!-- VALUE ADDITION -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Crop Processing and Value Addition</h2>
+
+        <p>
+            Agricultural value addition involves
+            improving the usefulness, quality
+            or market value of crop products
+            through processing, packaging,
+            grading and other activities.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Grain Milling</h3>
+                <p>
+                    Processing cereals into flour
+                    and other food products.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Fruit Processing</h3>
+                <p>
+                    Drying, juicing and processing
+                    suitable fruits into products
+                    with extended usability.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Vegetable Packaging</h3>
+                <p>
+                    Sorting and packaging vegetables
+                    for retail and wholesale markets.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Oil Extraction</h3>
+                <p>
+                    Processing suitable oilseed crops
+                    into edible and other useful oils.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Animal Feed</h3>
+                <p>
+                    Processing suitable crop residues
+                    and feed ingredients into livestock
+                    feed products.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Food Preservation</h3>
+                <p>
+                    Using appropriate drying,
+                    preservation and storage methods
+                    to reduce food losses.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FARM ECONOMICS -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Crop Production Economics and Marketing</h2>
+
+        <p>
+            Crop farming is also a business.
+            Farmers should understand production
+            costs, market prices, expected yields
+            and potential returns before investing.
+        </p>
+
+        <h3 class="subheading">Farm Production Costs</h3>
+
+        <ul>
+            <li>Land preparation expenses.</li>
+            <li>Seeds and planting materials.</li>
+            <li>Fertilizers and soil amendments.</li>
+            <li>Water and irrigation costs.</li>
+            <li>Labour and machinery expenses.</li>
+            <li>Pest and disease management.</li>
+            <li>Harvesting and packaging costs.</li>
+            <li>Transport and marketing expenses.</li>
+        </ul>
+
+        <h3 class="subheading">Understanding Farm Profit</h3>
+
+        <p>
+            A basic farm profit calculation is:
+        </p>
+
+        <div class="highlight">
+            <h3>Farm Profit Formula</h3>
+            <p>
+                Total Revenue = Quantity Sold × Selling Price
+            </p>
+            <p>
+                Total Profit = Total Revenue − Total Production Costs
+            </p>
+        </div>
+
+        <h3 class="subheading">Marketing Strategies</h3>
+
+        <ul>
+            <li>Identify potential buyers before harvesting.</li>
+            <li>Understand local and regional market prices.</li>
+            <li>Improve product quality and grading.</li>
+            <li>Consider collective marketing through farmer groups.</li>
+            <li>Explore direct sales to retailers and institutions.</li>
+            <li>Reduce post-harvest losses and transport costs.</li>
+            <li>Maintain records of sales and production expenses.</li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- TECHNOLOGY -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Modern Crop Production Technology</h2>
+
+        <p>
+            Agricultural technology can improve
+            crop production efficiency, reduce
+            labour requirements and support
+            better farm management decisions.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Mechanized Planting</h3>
+                <p>
+                    Seed drills and planters improve
+                    planting efficiency and seed placement.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Drip Irrigation</h3>
+                <p>
+                    Supports controlled water delivery
+                    close to crop roots.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Greenhouse Farming</h3>
+                <p>
+                    Provides a controlled production
+                    environment for selected crops.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Soil Testing Technology</h3>
+                <p>
+                    Helps farmers assess soil properties
+                    and make informed nutrient decisions.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Digital Farm Records</h3>
+                <p>
+                    Mobile tools can record planting,
+                    inputs, costs, yields and sales.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Weather Forecasting</h3>
+                <p>
+                    Weather information supports
+                    planting, irrigation and harvesting
+                    decisions.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- RESEARCH -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Crop Research and Innovation</h2>
+
+        <p>
+            Research helps identify improved crop
+            varieties, production methods and
+            technologies that respond to changing
+            agricultural conditions.
+        </p>
+
+        <h3 class="subheading">Research Areas</h3>
+
+        <ul>
+            <li>Evaluation of improved and locally adapted crop varieties.</li>
+            <li>Testing drought-tolerant crop varieties.</li>
+            <li>Research on soil fertility and crop nutrition.</li>
+            <li>Improving water-use efficiency in crop production.</li>
+            <li>Testing sustainable pest and disease management methods.</li>
+            <li>Studying crop rotation and intercropping systems.</li>
+            <li>Reducing post-harvest losses.</li>
+            <li>Developing agricultural value chains and market opportunities.</li>
+        </ul>
+
+        <p>
+            Demonstration plots and farmer field
+            schools can help translate research
+            findings into practical farming
+            knowledge.
+        </p>
+
+    </div>
+</section>
+
+<!-- IMPLEMENTATION -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Our Crop Production Approach</h2>
+
+        <p>
+            Goreale Agricultural Innovators promotes
+            an integrated approach to crop production
+            that connects agricultural knowledge,
+            farmer training, research and practical
+            technologies.
+        </p>
+
+        <div class="step">
+            <h3>1. Assess Agricultural Conditions</h3>
+            <p>
+                Understand soil, rainfall, water
+                availability, crop challenges
+                and market opportunities.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>2. Identify Suitable Crops</h3>
+            <p>
+                Select crops and varieties that
+                match the production environment
+                and farmer objectives.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>3. Plan Crop Production</h3>
+            <p>
+                Develop a production plan covering
+                land preparation, seed, inputs,
+                labour and water requirements.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>4. Apply Improved Farming Practices</h3>
+            <p>
+                Promote appropriate planting,
+                soil fertility, irrigation and
+                crop protection practices.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>5. Harvest and Manage Produce</h3>
+            <p>
+                Improve harvesting, handling,
+                drying, storage and quality
+                management.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>6. Evaluate Production Results</h3>
+            <p>
+                Assess yields, costs, income,
+                crop quality and opportunities
+                for improvement.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- COMMITMENT -->
+<section>
+    <div class="intro">
+
+        <h2 class="section-title">Our Commitment to Crop Development</h2>
+
+        <p>
+            Goreale Agricultural Innovators is committed
+            to supporting productive, sustainable and
+            innovative crop production systems.
+            We recognize the importance of crop
+            farming in food security, employment,
+            agricultural business and economic development.
+        </p>
+
+        <p>
+            Through agricultural research, farmer
+            education, technology and knowledge sharing,
+            we aim to promote improved production
+            practices that respond to local farming
+            challenges and opportunities.
+        </p>
+
+        <p>
+            Our goal is to encourage farmers to
+            produce quality crops, improve their
+            livelihoods, reduce avoidable losses
+            and contribute to a stronger agricultural
+            sector.
+        </p>
+
+    </div>
+</section>
+
+<!-- LEARNING RESOURCES -->
+<section>
+    <div class="content-section">
+
+        <h2 class="section-title">Crop Production Learning Resources</h2>
+
+        <div class="resources">
+
+            <p>
+                Explore these agricultural institutions
+                and technical resources for further
+                crop production knowledge.
+            </p>
+
+            <ul>
+
+                <li>
+                    <a href="https://www.kalro.org/"
+                       target="_blank" rel="noopener">
+                       Kenya Agricultural and Livestock Research Organization (KALRO)
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.kilimo.go.ke/"
+                       target="_blank" rel="noopener">
+                       Kenya Ministry of Agriculture
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.fao.org/"
+                       target="_blank" rel="noopener">
+                       Food and Agriculture Organization (FAO)
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.kephis.org/"
+                       target="_blank" rel="noopener">
+                       Kenya Plant Health Inspectorate Service (KEPHIS)
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.fao.org/sustainable-agricultural-mechanization/guidelines-operations/crop-production/en/"
+                       target="_blank" rel="noopener">
+                       FAO Crop Production Guidance
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.fao.org/agriculture/crops/thematic-sitemap/theme/compendium/tools-guidelines/how-to-ipm/en/"
+                       target="_blank" rel="noopener">
+                       FAO Integrated Pest Management
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <h3>Goreale Agricultural Innovators</h3>
+
+    <p>
+        Advancing agriculture through knowledge,
+        research, technology and innovation.
+    </p>
+
+    <p>
+        &copy; 2026 Goreale Agricultural Innovators.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,2066 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10391F">
+
+<meta name="description" content="Explore agricultural video lessons from GOREALE Agricultural Innovators. Learn about climate-smart agriculture, crop production, livestock, soil conservation and agricultural innovation.">
+
+<title>Video Lessons | GOREALE Agricultural Innovators</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --ivory: #F5F5DC;
+    --forest: #174D2A;
+    --deep-forest: #10391F;
+    --brown: #8B5A2B;
+    --charcoal: #454545;
+    --gold: #D9A441;
+    --gold-light: #F0CC79;
+    --sage: #A8B88A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--ivory);
+    color: var(--charcoal);
+    font-size: .76rem;
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+header {
+    background: var(--deep-forest);
+    color: var(--ivory);
+    padding: .8rem 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px #0002;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+.brand img {
+    width: 155px;
+    height: auto;
+    
+    
+    border-radius: 50%;
+    padding: 3px;
+}
+
+
+
+.brand-name span {
+    display: block;
+    color: var(--ivory);
+    font-size: .57rem;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+nav a {
+    color: var(--ivory);
+    text-decoration: none;
+    font-size: .68rem;
+    font-weight: 600;
+    transition: .3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--gold-light);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--gold-light);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 340px;
+    padding: 5rem 7%;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(90deg, rgba(16,57,31,.96), rgba(16,57,31,.76)),
+        url("agriculture-1.jpeg") center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-label {
+    color: var(--gold-light);
+    font-size: .66rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    color: var(--ivory);
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    line-height: 1.25;
+    margin: 1rem 0;
+}
+
+.hero p {
+    color: #F5F5DC;
+    max-width: 590px;
+    font-size: .8rem;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: .8rem 1.4rem;
+    background: var(--gold);
+    color: var(--deep-forest);
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: .7rem;
+    transition: .3s;
+}
+
+.hero-button:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+}
+
+/* INTRODUCTION */
+
+.intro {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+    padding: 3.5rem 6% 2rem;
+}
+
+.section-label {
+    color: var(--brown);
+    font-size: .63rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.intro h2 {
+    color: var(--forest);
+    font-size: 1.6rem;
+    margin: .5rem 0;
+}
+
+.intro p {
+    max-width: 720px;
+    margin: auto;
+}
+
+/* LEARNING BENEFITS */
+
+.benefits {
+    padding: 1.5rem 6% 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.benefit {
+    background: #EAEBD5;
+    border-left: 4px solid var(--gold);
+    padding: 1.2rem;
+    border-radius: 5px;
+}
+
+.benefit h3 {
+    color: var(--forest);
+    font-size: .8rem;
+    margin-bottom: .35rem;
+}
+
+.benefit p {
+    font-size: .68rem;
+}
+
+/* VIDEO LIBRARY */
+
+.video-section {
+    padding: 3rem 6%;
+    background: #EBECD9;
+}
+
+.section-heading {
+    max-width: 1150px;
+    margin: 0 auto 1.5rem;
+}
+
+.section-heading h2 {
+    color: var(--forest);
+    font-size: 1.5rem;
+}
+
+.section-heading p {
+    margin-top: .3rem;
+}
+
+/* SEARCH AND FILTER */
+
+.video-controls {
+    max-width: 1150px;
+    margin: 0 auto 2rem;
+    display: flex;
+    gap: .8rem;
+    flex-wrap: wrap;
+}
+
+.video-controls input,
+.video-controls select {
+    font-family: inherit;
+    font-size: .72rem;
+    padding: .8rem;
+    border: 1px solid #C8C9B5;
+    background: var(--ivory);
+    color: var(--charcoal);
+    border-radius: 4px;
+    outline: none;
+}
+
+.video-controls input {
+    flex: 1;
+    min-width: 200px;
+}
+
+.video-controls select {
+    min-width: 190px;
+}
+
+.video-controls input:focus,
+.video-controls select:focus {
+    border-color: var(--forest);
+}
+
+/* VIDEO GRID */
+
+.video-grid {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3rem;
+}
+
+.video-card {
+    background: var(--ivory);
+    border-radius: 7px;
+    overflow: hidden;
+    border: 1px solid #D7D7C5;
+    transition: .3s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #00000012;
+}
+
+.thumbnail {
+    height: 185px;
+    position: relative;
+    background: var(--deep-forest);
+    overflow: hidden;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: .4s;
+}
+
+.video-card:hover .thumbnail img {
+    transform: scale(1.05);
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--gold);
+    color: var(--deep-forest);
+    font-size: 1.1rem;
+    box-shadow: 0 3px 12px #0005;
+}
+
+.duration {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: #10391F;
+    color: var(--ivory);
+    padding: .2rem .45rem;
+    border-radius: 3px;
+    font-size: .6rem;
+    font-weight: 700;
+}
+
+.video-content {
+    padding: 1rem;
+}
+
+.category {
+    color: var(--brown);
+    font-size: .59rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.video-content h3 {
+    color: var(--forest);
+    font-size: .88rem;
+    line-height: 1.5;
+    margin: .45rem 0;
+}
+
+.video-content p {
+    font-size: .68rem;
+    min-height: 58px;
+}
+
+.video-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .9rem;
+    padding-top: .7rem;
+    border-top: 1px solid #D9D9C8;
+    color: #777;
+    font-size: .62rem;
+}
+
+.watch-button {
+    border: none;
+    background: var(--forest);
+    color: var(--ivory);
+    padding: .55rem .9rem;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: .65rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.watch-button:hover {
+    background: var(--brown);
+}
+
+.no-results {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+    color: var(--brown);
+    grid-column: 1 / -1;
+}
+
+/* LEARNING APPROACH */
+
+.learning {
+    padding: 4rem 6%;
+    text-align: center;
+}
+
+.learning h2 {
+    color: var(--forest);
+    font-size: 1.5rem;
+    margin: .5rem 0 1.5rem;
+}
+
+.learning-steps {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: left;
+}
+
+.step {
+    padding: 1.3rem;
+    background: #EAEBD5;
+    border-bottom: 4px solid var(--gold);
+    border-radius: 5px;
+}
+
+.step-number {
+    color: var(--brown);
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.step h3 {
+    color: var(--forest);
+    margin: .3rem 0;
+    font-size: .82rem;
+}
+
+
+
+/* =====================================
+   GOREALE VIDEO MODAL
+===================================== */
+
+.video-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.96);
+    align-items: flex-start;
+    justify-content: center;
+    padding: 12px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.video-modal.active {
+    display: flex;
+}
+
+/* MODAL CONTENT */
+
+.modal-content {
+    background: var(--ivory);
+    width: 100%;
+    max-width: 1000px;
+    max-height: 96vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 10px;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* MODAL HEADER */
+
+.modal-top {
+    background: var(--deep-forest);
+    color: var(--gold-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.2rem;
+    gap: 1rem;
+}
+
+.modal-top h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    color: var(--gold-light);
+    font-size: 1.8rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 5px;
+}
+
+/* =====================================
+   RESPONSIVE VIDEO PLAYER
+   SUPPORTS PORTRAIT AND LANDSCAPE
+===================================== */
+
+.video-frame {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    padding: 0;
+    overflow: visible;
+}
+
+.video-frame video {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 78vh;
+    object-fit: contain;
+    background: #000;
+    margin: 0 auto;
+}
+
+/* VIDEO DESCRIPTION BELOW PLAYER */
+
+.modal-description {
+    position: relative;
+    padding: 1.3rem 1.5rem;
+    background: var(--ivory);
+}
+
+.modal-description h3 {
+    color: var(--forest);
+    margin-bottom: .6rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.modal-description h4 {
+    color: var(--brown);
+    margin: 1rem 0 .4rem;
+}
+
+.modal-description p {
+    color: var(--brown);
+    font-size: .85rem;
+    line-height: 1.7;
+}
+
+.modal-description ul {
+    padding-left: 1.3rem;
+    color: var(--brown);
+    line-height: 1.8;
+}
+
+/* =====================================
+   VIDEO THUMBNAIL PREVIEWS
+===================================== */
+
+.thumbnail {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    background: #000;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.lesson-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background: #000;
+    pointer-events: none;
+}
+
+.thumbnail:hover .lesson-preview {
+    transform: scale(1.04);
+    transition: transform .3s ease;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--gold);
+    color: var(--deep-forest);
+    font-size: 1.4rem;
+    pointer-events: none;
+}
+
+.duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, .8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: .7rem;
+}
+
+/* VIDEO WATCH BUTTON */
+
+.watch-button {
+    background: var(--forest);
+    color: var(--gold-light);
+    border: none;
+    padding: .65rem 1rem;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+.watch-button:hover {
+    background: var(--deep-forest);
+}
+
+/* HIDE CARD DESCRIPTIONS AND WATCH BUTTONS */
+
+.video-content p,
+.video-meta .watch-button {
+    display: none;
+}
+
+/* =====================================
+   CTA SECTION
+===================================== */
+
+.cta {
+    background: var(--forest);
+    color: var(--ivory);
+    padding: 3rem 7%;
+    text-align: center;
+}
+
+.cta h2 {
+    color: var(--gold-light);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.cta p {
+    max-width: 650px;
+    margin: .7rem auto;
+    line-height: 1.7;
+}
+
+.cta a {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--deep-forest);
+    padding: .75rem 1.3rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 4px;
+    transition: all .3s ease;
+}
+
+.cta a:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.about-footer {
+    background: var(--deep-forest);
+    color: var(--ivory);
+    text-align: center;
+    padding: 2rem 6%;
+    font-size: .75rem;
+}
+
+.about-footer strong {
+    display: block;
+    color: var(--gold-light);
+    font-size: .9rem;
+    margin-bottom: .4rem;
+}
+
+.footer-tagline {
+    color: var(--gold);
+    margin-top: .6rem;
+    font-weight: 700;
+}
+
+/* FOOTER LINKS */
+
+.about-footer a {
+    color: white;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+.about-footer a:hover {
+    color: var(--gold-light);
+}
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+@media (max-width: 850px) {
+
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        gap: .8rem;
+    }
+
+    .modal-content {
+        max-width: 98%;
+    }
+}
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 650px) {
+
+    header {
+        padding: .7rem 5%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--deep-forest);
+        padding: 1rem 6%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        border-top: 1px solid #ffffff20;
+        z-index: 2000;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    .hero {
+        min-height: 330px;
+        padding: 3.5rem 6%;
+    }
+
+    .benefits,
+    .learning-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .thumbnail {
+        height: 220px;
+    }
+
+    .intro h2,
+    .section-heading h2 {
+        font-size: 1.3rem;
+    }
+
+    /* MOBILE VIDEO MODAL */
+
+    .video-modal {
+        padding: 5px;
+    }
+
+    .modal-content {
+        width: 100%;
+        max-width: 100%;
+        max-height: 96vh;
+        border-radius: 8px;
+    }
+
+    .video-frame {
+        width: 100%;
+        min-height: 0;
+    }
+
+    .video-frame video {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 72vh;
+        object-fit: contain;
+    }
+
+    .modal-description {
+        padding: 1rem;
+    }
+
+    .cta {
+        padding: 2.5rem 6%;
+    }
+
+    .cta h2 {
+        font-size: 1.3rem;
+    }
+
+    .about-footer {
+        padding: 1.8rem 5%;
+    }
+}
+
+/* =====================================
+   SMALL MOBILE SCREENS
+===================================== */
+
+@media (max-width: 380px) {
+
+    .thumbnail {
+        height: 190px;
+    }
+
+    .modal-content {
+        border-radius: 6px;
+    }
+
+    .modal-description {
+        padding: .8rem;
+    }
+
+    .watch-button {
+        padding: .55rem .75rem;
+        font-size: .75rem;
+    }
+}
+
+/* =====================================
+   LANDSCAPE MOBILE SCREENS
+===================================== */
+
+@media (max-height: 500px) and (orientation: landscape) {
+
+    .video-modal {
+        padding: 5px;
+    }
+
+    .modal-content {
+        max-width: 95%;
+        max-height: 98vh;
+    }
+
+    .video-frame video {
+        max-height: 75vh;
+        max-width: 100%;
+    }
+
+    .modal-description {
+        padding: .7rem 1rem;
+    }
+}
+
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <a href="index.html" class="brand" style="text-decoration:none;">
+        <img src="goreale-logo.png" alt="GOREALE logo">
+        
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false">☰</button>
+
+    <nav id="mainNav">
+        <a href="index.html">Home</a>
+            <a href="about-us.html#about">About Us</a>
+            <a href="about-us.html#services">Our Services</a>
+            <a href="about-us.html#objectives">Our Objectives</a>
+            <a href="about-us.html#mission">Our Mission</a>
+            <a href="our-team.html">Our Team</a>
+            <a href="innovation.html">Innovation</a>
+            <a href="community.html">Our Community</a>
+            <a href="weather-climate.html">Weather & Climate</a>
+            <a href="research.html">Research & Education</a>
+            <a href="collaboration.html">Collaborate</a>
+            <a href="legal.html">Legal</a>
+            <a href="constitution.html">Constitution</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="hero-label">GOREALE AGRICULTURAL LEARNING CENTRE</span>
+
+        <h1>Learn. Innovate. Grow.</h1>
+
+        <p>
+            Discover practical agricultural knowledge through educational
+            video lessons. Strengthen your skills in sustainable farming,
+            climate-smart agriculture, livestock management and agricultural
+            innovation.
+        </p>
+
+        <a href="#video-library" class="hero-button">
+            Explore Video Lessons →
+        </a>
+    </div>
+</section>
+
+<!-- INTRODUCTION -->
+
+<section class="intro">
+    <span class="section-label">KNOWLEDGE FOR TRANSFORMATION</span>
+
+    <h2>Learn Agriculture Through Practical Videos</h2>
+
+    <p>
+        GOREALE Agricultural Innovators promotes accessible agricultural
+        education through video-based learning. Our learning library is
+        designed to support farmers, young people, agricultural learners
+        and community members with practical knowledge for sustainable
+        agricultural development.
+    </p>
+</section>
+
+<!-- BENEFITS -->
+
+<section class="benefits">
+
+    <div class="benefit">
+        <h3>Practical Knowledge</h3>
+        <p>
+            Explore useful agricultural techniques, demonstrations
+            and practical farming approaches.
+        </p>
+    </div>
+
+    <div class="benefit">
+        <h3>Accessible Learning</h3>
+        <p>
+            Learn at your own pace and revisit lessons whenever
+            you need to strengthen your knowledge.
+        </p>
+    </div>
+
+    <div class="benefit">
+        <h3>Community Innovation</h3>
+        <p>
+            Discover ideas that encourage agricultural innovation,
+            knowledge exchange and community development.
+        </p>
+    </div>
+
+</section>
+
+<!-- VIDEO LIBRARY -->
+
+<section class="video-section" id="video-library">
+
+    <div class="section-heading">
+        <span class="section-label">LEARNING LIBRARY</span>
+        <h2>Explore Agricultural Video Lessons</h2>
+        <p>
+            Search and select a topic to find lessons that interest you.
+        </p>
+    </div>
+
+    <div class="video-controls">
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Search video lessons..."
+            aria-label="Search video lessons">
+
+        <select id="categoryFilter" aria-label="Filter by category">
+            <option value="all">All Categories</option>
+            <option value="Climate-Smart Agriculture">Climate-Smart Agriculture</option>
+            <option value="Crop Production">Crop Production</option>
+            <option value="Livestock Management">Livestock Management</option>
+            <option value="Soil and Water Conservation">Soil and Water Conservation</option>
+            <option value="Agroforestry">Agroforestry</option>
+            <option value="Agricultural Technology">Agricultural Technology</option>
+        </select>
+
+    </div>
+
+    <div class="video-grid" id="videoGrid">
+
+        
+
+
+<!-- =========================================
+     GOREALE AGRICULTURAL VIDEO LIBRARY
+     30 LESSONS | 6 CATEGORIES
+========================================= -->
+
+
+<!-- =========================================
+     CATEGORY 1: CLIMATE-SMART AGRICULTURE
+========================================= -->
+
+<!-- VIDEO 1 -->
+<article class="video-card"
+    data-category="Climate-Smart Agriculture"
+    data-title="Introduction to Climate-Smart Agriculture">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Introduction to Climate-Smart Agriculture"
+        onclick="playLocalVideo('videos/climate-smart.mp4','Introduction to Climate-Smart Agriculture','Understand climate-smart agricultural practices and their importance in changing environmental conditions.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/climate-smart.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Climate-Smart Agriculture</span>
+        <h3>Introduction to Climate-Smart Agriculture</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 2 -->
+<article class="video-card"
+    data-category="Climate-Smart Agriculture"
+    data-title="Climate Change and Agricultural Production">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Climate Change and Agricultural Production"
+        onclick="playLocalVideo('videos/climate-change-production.mp4','Climate Change and Agricultural Production','Explore how changing temperatures, rainfall patterns and extreme weather affect agricultural production and food security.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/climate-change-production.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Climate-Smart Agriculture</span>
+        <h3>Climate Change and Agricultural Production</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 3 -->
+<article class="video-card"
+    data-category="Climate-Smart Agriculture"
+    data-title="Drought-Resistant Farming Practices">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Drought-Resistant Farming Practices"
+        onclick="playLocalVideo('videos/drought-resistant-farming.mp4','Drought-Resistant Farming Practices','Learn practical farming techniques that help crops and livestock withstand dry conditions and water shortages.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/drought-resistant-farming.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Climate-Smart Agriculture</span>
+        <h3>Drought-Resistant Farming Practices</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 4 -->
+<article class="video-card"
+    data-category="Climate-Smart Agriculture"
+    data-title="Rainwater Harvesting and Management">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Rainwater Harvesting and Management"
+        onclick="playLocalVideo('videos/rainwater-harvesting.mp4','Rainwater Harvesting and Management','Discover ways to collect, store and use rainwater to support farming and community water security.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/rainwater-harvesting.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Climate-Smart Agriculture</span>
+        <h3>Rainwater Harvesting and Management</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 5 -->
+<article class="video-card"
+    data-category="Climate-Smart Agriculture"
+    data-title="Climate Adaptation and Resilience">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Climate Adaptation and Resilience"
+        onclick="playLocalVideo('videos/climate-adaptation.mp4','Climate Adaptation and Resilience','Understand how farmers and communities can adapt agricultural systems to climate risks and build long-term resilience.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/climate-adaptation.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Climate-Smart Agriculture</span>
+        <h3>Climate Adaptation and Resilience</h3>
+    </div>
+</article>
+
+
+<!-- =========================================
+     CATEGORY 2: CROP PRODUCTION
+========================================= -->
+
+<!-- VIDEO 6 -->
+<article class="video-card"
+    data-category="Crop Production"
+    data-title="Principles of Sustainable Crop Production">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Principles of Sustainable Crop Production"
+        onclick="playLocalVideo('videos/crop-production.mp4','Principles of Sustainable Crop Production','Learn the foundations of crop selection, land preparation and sustainable crop management.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/crop-production.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Crop Production</span>
+        <h3>Principles of Sustainable Crop Production</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 7 -->
+<article class="video-card"
+    data-category="Crop Production"
+    data-title="Land Preparation and Seed Selection">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Land Preparation and Seed Selection"
+        onclick="playLocalVideo('videos/land-preparation-seed-selection.mp4','Land Preparation and Seed Selection','Learn how to prepare farmland and select quality seeds suitable for local soil and climate conditions.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/land-preparation-seed-selection.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Crop Production</span>
+        <h3>Land Preparation and Seed Selection</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 8 -->
+<article class="video-card"
+    data-category="Crop Production"
+    data-title="Maize Production Techniques">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Maize Production Techniques"
+        onclick="playLocalVideo('videos/maize-production.mp4','Maize Production Techniques','Explore maize planting, spacing, crop nutrition, weed management and harvesting practices.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/maize-production.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Crop Production</span>
+        <h3>Maize Production Techniques</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 9 -->
+<article class="video-card"
+    data-category="Crop Production"
+    data-title="Beans and Legume Production">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Beans and Legume Production"
+        onclick="playLocalVideo('videos/beans-legume-production.mp4','Beans and Legume Production','Learn about bean and legume varieties, planting, crop care and their contribution to soil fertility and nutrition.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/beans-legume-production.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Crop Production</span>
+        <h3>Beans and Legume Production</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 10 -->
+<article class="video-card"
+    data-category="Crop Production"
+    data-title="Integrated Pest and Disease Management">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Integrated Pest and Disease Management"
+        onclick="playLocalVideo('videos/integrated-pest-management.mp4','Integrated Pest and Disease Management','Discover practical approaches to identifying, preventing and managing crop pests and diseases responsibly.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/integrated-pest-management.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Crop Production</span>
+        <h3>Integrated Pest and Disease Management</h3>
+    </div>
+</article>
+
+
+<!-- =========================================
+     CATEGORY 3: LIVESTOCK MANAGEMENT
+========================================= -->
+
+<!-- VIDEO 11 -->
+<article class="video-card"
+    data-category="Livestock Management"
+    data-title="Fundamentals of Livestock Management">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Fundamentals of Livestock Management"
+        onclick="playLocalVideo('videos/livestock-management.mp4','Fundamentals of Livestock Management','Discover essential livestock management practices, animal welfare and responsible production.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/livestock-management.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Livestock Management</span>
+        <h3>Fundamentals of Livestock Management</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 12 -->
+<article class="video-card"
+    data-category="Livestock Management"
+    data-title="Animal Nutrition and Feeding">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Animal Nutrition and Feeding"
+        onclick="playLocalVideo('videos/animal-nutrition-feeding.mp4','Animal Nutrition and Feeding','Understand livestock nutritional needs, balanced feeding, fodder production and proper water provision.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/animal-nutrition-feeding.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Livestock Management</span>
+        <h3>Animal Nutrition and Feeding</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 13 -->
+<article class="video-card"
+    data-category="Livestock Management"
+    data-title="Livestock Health and Disease Prevention">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Livestock Health and Disease Prevention"
+        onclick="playLocalVideo('videos/livestock-health-prevention.mp4','Livestock Health and Disease Prevention','Learn about livestock hygiene, disease prevention, early warning signs and responsible animal health management.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/livestock-health-prevention.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Livestock Management</span>
+        <h3>Livestock Health and Disease Prevention</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 14 -->
+<article class="video-card"
+    data-category="Livestock Management"
+    data-title="Improved Goat and Sheep Production">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Improved Goat and Sheep Production"
+        onclick="playLocalVideo('videos/goat-sheep-production.mp4','Improved Goat and Sheep Production','Explore improved breeding, feeding, housing and health practices for productive goat and sheep farming.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/goat-sheep-production.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Livestock Management</span>
+        <h3>Improved Goat and Sheep Production</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 15 -->
+<article class="video-card"
+    data-category="Livestock Management"
+    data-title="Poultry Management">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Poultry Management"
+        onclick="playLocalVideo('videos/poultry-management.mp4','Poultry Management','Learn about poultry housing, feeding, hygiene, flock health and practical poultry production.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/poultry-management.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Livestock Management</span>
+        <h3>Poultry Management</h3>
+    </div>
+</article>
+
+
+<!-- =========================================
+     CATEGORY 4: SOIL AND WATER CONSERVATION
+========================================= -->
+
+<!-- VIDEO 16 -->
+<article class="video-card"
+    data-category="Soil and Water Conservation"
+    data-title="Soil and Water Conservation Techniques">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Soil and Water Conservation Techniques"
+        onclick="playLocalVideo('videos/soil-water-conservation.mp4','Soil and Water Conservation Techniques','Explore methods for conserving soil moisture, reducing erosion and improving water use.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/soil-water-conservation.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Soil and Water Conservation</span>
+        <h3>Soil and Water Conservation Techniques</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 17 -->
+<article class="video-card"
+    data-category="Soil and Water Conservation"
+    data-title="Soil Fertility and Organic Manure">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Soil Fertility and Organic Manure"
+        onclick="playLocalVideo('videos/soil-fertility-organic-manure.mp4','Soil Fertility and Organic Manure','Understand soil fertility, organic manure and natural ways of improving agricultural soils.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/soil-fertility-organic-manure.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Soil and Water Conservation</span>
+        <h3>Soil Fertility and Organic Manure</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 18 -->
+<article class="video-card"
+    data-category="Soil and Water Conservation"
+    data-title="Composting and Soil Improvement">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Composting and Soil Improvement"
+        onclick="playLocalVideo('videos/composting-soil-improvement.mp4','Composting and Soil Improvement','Learn how to prepare compost from organic materials and use it to improve soil structure and fertility.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/composting-soil-improvement.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Soil and Water Conservation</span>
+        <h3>Composting and Soil Improvement</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 19 -->
+<article class="video-card"
+    data-category="Soil and Water Conservation"
+    data-title="Water-Efficient Irrigation">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Water-Efficient Irrigation"
+        onclick="playLocalVideo('videos/water-efficient-irrigation.mp4','Water-Efficient Irrigation','Explore efficient irrigation methods that help farmers conserve water and improve crop production.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/water-efficient-irrigation.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Soil and Water Conservation</span>
+        <h3>Water-Efficient Irrigation</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 20 -->
+<article class="video-card"
+    data-category="Soil and Water Conservation"
+    data-title="Soil Erosion Prevention">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Soil Erosion Prevention"
+        onclick="playLocalVideo('videos/soil-erosion-prevention.mp4','Soil Erosion Prevention','Discover practical ways to protect farmland from soil erosion using vegetation, ground cover and conservation structures.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/soil-erosion-prevention.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Soil and Water Conservation</span>
+        <h3>Soil Erosion Prevention</h3>
+    </div>
+</article>
+
+
+<!-- =========================================
+     CATEGORY 5: AGROFORESTRY
+========================================= -->
+
+<!-- VIDEO 21 -->
+<article class="video-card"
+    data-category="Agroforestry"
+    data-title="Introduction to Agroforestry">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Introduction to Agroforestry"
+        onclick="playLocalVideo('videos/agroforestry.mp4','Introduction to Agroforestry','Learn how integrating trees with farming systems can support biodiversity and resilient landscapes.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/agroforestry.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Agroforestry</span>
+        <h3>Introduction to Agroforestry</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 22 -->
+<article class="video-card"
+    data-category="Agroforestry"
+    data-title="Establishing a Tree Nursery">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Establishing a Tree Nursery"
+        onclick="playLocalVideo('videos/establishing-tree-nursery.mp4','Establishing a Tree Nursery','Learn how to establish a productive tree nursery, select seeds, prepare growing media and care for seedlings.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/establishing-tree-nursery.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Agroforestry</span>
+        <h3>Establishing a Tree Nursery</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 23 -->
+<article class="video-card"
+    data-category="Agroforestry"
+    data-title="Tree Planting and Management">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Tree Planting and Management"
+        onclick="playLocalVideo('videos/tree-planting-management.mp4','Tree Planting and Management','Explore tree planting methods, spacing, watering, mulching and early-stage tree care.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/tree-planting-management.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Agroforestry</span>
+        <h3>Tree Planting and Management</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 24 -->
+<article class="video-card"
+    data-category="Agroforestry"
+    data-title="Integrating Trees with Crops">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Integrating Trees with Crops"
+        onclick="playLocalVideo('videos/integrating-trees-crops.mp4','Integrating Trees with Crops','Understand how trees and crops can be combined to improve land productivity, biodiversity and environmental resilience.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/integrating-trees-crops.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Agroforestry</span>
+        <h3>Integrating Trees with Crops</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 25 -->
+<article class="video-card"
+    data-category="Agroforestry"
+    data-title="Community-Based Agroforestry">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Community-Based Agroforestry"
+        onclick="playLocalVideo('videos/community-based-agroforestry.mp4','Community-Based Agroforestry','Explore how communities can participate in tree growing, landscape restoration and sustainable agroforestry initiatives.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/community-based-agroforestry.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Agroforestry</span>
+        <h3>Community-Based Agroforestry</h3>
+    </div>
+</article>
+
+
+<!-- =========================================
+     CATEGORY 6: AGRICULTURAL TECHNOLOGY
+========================================= -->
+
+<!-- VIDEO 26 -->
+<article class="video-card"
+    data-category="Agricultural Technology"
+    data-title="Technology and Innovation in Agriculture">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Technology and Innovation in Agriculture"
+        onclick="playLocalVideo('videos/agricultural-technology.mp4','Technology and Innovation in Agriculture','Discover how appropriate technology and innovation can improve agricultural productivity and decision-making.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/agricultural-technology.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Agricultural Technology</span>
+        <h3>Technology and Innovation in Agriculture</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 27 -->
+<article class="video-card"
+    data-category="Agricultural Technology"
+    data-title="Modern Irrigation Technologies">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Modern Irrigation Technologies"
+        onclick="playLocalVideo('videos/modern-irrigation-technology.mp4','Modern Irrigation Technologies','Learn about drip irrigation, sprinkler systems and other technologies for efficient agricultural water delivery.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/modern-irrigation-technology.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Agricultural Technology</span>
+        <h3>Modern Irrigation Technologies</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 28 -->
+<article class="video-card"
+    data-category="Agricultural Technology"
+    data-title="Digital Tools for Farmers">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Digital Tools for Farmers"
+        onclick="playLocalVideo('videos/digital-tools-farmers.mp4','Digital Tools for Farmers','Explore useful digital tools for agricultural information, weather updates, farm records and market access.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/digital-tools-farmers.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Agricultural Technology</span>
+        <h3>Digital Tools for Farmers</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 29 -->
+<article class="video-card"
+    data-category="Agricultural Technology"
+    data-title="Agricultural Mechanisation">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Agricultural Mechanisation"
+        onclick="playLocalVideo('videos/agricultural-mechanisation.mp4','Agricultural Mechanisation','Understand how suitable agricultural machinery and equipment can improve farm efficiency and reduce labour demands.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/agricultural-mechanisation.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Agricultural Technology</span>
+        <h3>Agricultural Mechanisation</h3>
+    </div>
+</article>
+
+
+<!-- VIDEO 30 -->
+<article class="video-card"
+    data-category="Agricultural Technology"
+    data-title="Post-Harvest Technology">
+
+    <div class="thumbnail" role="button" tabindex="0"
+        aria-label="Play Post-Harvest Technology"
+        onclick="playLocalVideo('videos/post-harvest-technology.mp4','Post-Harvest Technology','Learn about crop handling, drying, storage, processing and technologies that help reduce post-harvest losses.')"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+
+        <video class="lesson-preview" muted playsinline preload="metadata">
+            <source src="videos/post-harvest-technology.mp4" type="video/mp4">
+        </video>
+        <span class="play-icon">▶</span>
+    </div>
+
+    <div class="video-content">
+        <span class="category">Agricultural Technology</span>
+        <h3>Post-Harvest Technology</h3>
+    </div>
+</article>
+
+
+<!-- NO RESULTS MESSAGE -->
+
+<div class="no-results" id="noResults">
+    No video lessons found. Try another search or category.
+</div>
+
+
+
+
+<!-- LEARNING APPROACH -->
+
+<section class="learning">
+
+    <span class="section-label">YOUR LEARNING JOURNEY</span>
+
+    <h2>Make the Most of Every Lesson</h2>
+
+    <div class="learning-steps">
+
+        <div class="step">
+            <span class="step-number">01</span>
+            <h3>Choose a Topic</h3>
+            <p>
+                Select an agricultural subject that matches
+                your interests or learning needs.
+            </p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">02</span>
+            <h3>Watch and Learn</h3>
+            <p>
+                Follow the lesson carefully and take note
+                of useful ideas and practical techniques.
+            </p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">03</span>
+            <h3>Apply Your Knowledge</h3>
+            <p>
+                Put what you learn into practice and share
+                useful agricultural knowledge with others.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="cta">
+    <h2>Knowledge Grows When Shared</h2>
+
+    <p>
+        Join the GOREALE agricultural community to exchange ideas,
+        share experiences and contribute to sustainable agricultural
+        development.
+    </p>
+
+    <a href="community-page.html">Visit Community Hub →</a>
+</section>
+
+
+
+<!-- VIDEO PLAYER MODAL -->
+
+<div class="video-modal"
+     id="videoModal"
+     role="dialog"
+     aria-modal="true"
+     aria-label="Agricultural video lesson">
+
+    <div class="modal-content">
+
+        <!-- VIDEO PLAYER -->
+        <div class="video-frame">
+
+            <video id="mainVideo"
+                   controls
+                   playsinline
+                   preload="metadata">
+
+                Your browser does not support video playback.
+
+            </video>
+
+        </div>
+
+        <!-- VIDEO DESCRIPTION -->
+        <div class="modal-description">
+
+            <h3 id="modalLessonTitle"></h3>
+
+            <p id="modalDescription"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- FOOTER -->
+
+<footer class="about-footer">
+
+    <strong>GOREALE Agricultural Innovators</strong>
+
+    Goreale Ward · Lagdera Constituency ·
+    Garissa County · Kenya
+
+    <div class="footer-tagline">
+        Cultivating Innovation. Growing Sustainable Futures.
+    </div>
+
+</footer>
+
+<script>
+
+/* NAVIGATION */
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    const videoModal = document.getElementById("videoModal");
+    const mainVideo = document.getElementById("mainVideo");
+
+    const modalLessonTitle = document.getElementById("modalLessonTitle");
+    const modalDescription = document.getElementById("modalDescription");
+
+    const searchInput = document.getElementById("searchInput");
+    const categoryFilter = document.getElementById("categoryFilter");
+    const videoGrid = document.getElementById("videoGrid");
+    const noResults = document.getElementById("noResults");
+
+
+    /* MOBILE NAVIGATION */
+
+    if (menuToggle && mainNav) {
+
+        menuToggle.addEventListener("click", function () {
+
+            const isOpen = mainNav.classList.toggle("show");
+
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+            menuToggle.textContent = isOpen ? "×" : "☰";
+
+        });
+
+        mainNav.querySelectorAll("a").forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                mainNav.classList.remove("show");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.textContent = "☰";
+
+            });
+
+        });
+
+    }
+
+
+    /* OPEN AND PLAY VIDEO */
+
+    window.playLocalVideo = function (src, title, description) {
+
+        if (!videoModal || !mainVideo) return;
+
+        modalLessonTitle.textContent = title;
+        modalDescription.textContent = description;
+
+        mainVideo.pause();
+        mainVideo.src = src;
+        mainVideo.load();
+
+        videoModal.classList.add("active");
+        document.body.style.overflow = "hidden";
+
+        mainVideo.play().catch(function (error) {
+
+            console.log("Automatic playback was blocked:", error);
+            // The viewer can press the video player's play control.
+
+        });
+
+    };
+
+
+    /* CLOSE VIDEO BY TAPPING OUTSIDE */
+
+    function closeVideo() {
+
+        if (!videoModal || !mainVideo) return;
+
+        mainVideo.pause();
+        mainVideo.removeAttribute("src");
+        mainVideo.load();
+
+        videoModal.classList.remove("active");
+        document.body.style.overflow = "";
+
+    }
+
+    if (videoModal) {
+
+        videoModal.addEventListener("click", function (event) {
+
+            if (event.target === videoModal) {
+                closeVideo();
+            }
+
+        });
+
+    }
+
+
+    /* CLOSE VIDEO WITH ESCAPE KEY */
+
+    document.addEventListener("keydown", function (event) {
+
+        if (
+            event.key === "Escape" &&
+            videoModal &&
+            videoModal.classList.contains("active")
+        ) {
+            closeVideo();
+        }
+
+    });
+
+
+    /* SEARCH AND CATEGORY FILTER */
+
+    function filterVideos() {
+
+        if (!videoGrid) return;
+
+        const searchTerm = searchInput
+            ? searchInput.value.toLowerCase().trim()
+            : "";
+
+        const selectedCategory = categoryFilter
+            ? categoryFilter.value
+            : "all";
+
+        const cards = videoGrid.querySelectorAll(".video-card");
+
+        let visibleCount = 0;
+
+        cards.forEach(function (card) {
+
+            const title = (card.dataset.title || "").toLowerCase();
+            const category = card.dataset.category || "";
+            const description = (
+                card.querySelector("p")?.textContent || ""
+            ).toLowerCase();
+
+            const matchesSearch =
+                title.includes(searchTerm) ||
+                category.toLowerCase().includes(searchTerm) ||
+                description.includes(searchTerm);
+
+            const matchesCategory =
+                selectedCategory === "all" ||
+                category === selectedCategory;
+
+            const visible = matchesSearch && matchesCategory;
+
+            card.style.display = visible ? "" : "none";
+
+            if (visible) visibleCount++;
+
+        });
+
+        if (noResults) {
+            noResults.style.display =
+                visibleCount === 0 ? "block" : "none";
+        }
+
+    }
+
+    if (searchInput) {
+        searchInput.addEventListener("input", filterVideos);
+    }
+
+    if (categoryFilter) {
+        categoryFilter.addEventListener("change", filterVideos);
+    }
+
+    filterVideos();
+
+});
+
+
+
+</script>
+
+</body>
+</html>

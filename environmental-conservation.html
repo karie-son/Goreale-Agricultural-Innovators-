@@ -1,0 +1,3531 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#174D2A">
+
+    <meta name="description" content="Explore environmental conservation, ecosystem restoration, biodiversity protection, sustainable land management, water conservation and community-led environmental action in Kenya with GOREALE Agricultural Innovators.">
+
+    <meta name="keywords" content="environmental conservation Kenya, ecosystem restoration, biodiversity, afforestation, agroforestry, rangeland management, soil conservation, water conservation, climate resilience, sustainable land management, Garissa County">
+
+    <title>Environmental Conservation | GOREALE Agricultural Innovators</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+
+        :root {
+            --forest-green: #174D2A;
+            --deep-green: #10391F;
+            --earth-brown: #8B572A;
+            --harvest-gold: #FFD166;
+            --sage-green: #A8B88A;
+            --warm-ivory: #F5F0E6;
+            --charcoal: #303632;
+            --muted: #68736A;
+            --border: #E6DDCC;
+            --white: #FFFFFF;
+            --soft-green: #EAF0E7;
+            --soft-brown: #F3EADF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 20px;
+        }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            background: var(--warm-ivory);
+            color: var(--charcoal);
+            font-size: 0.78rem;
+            line-height: 1.85;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        /* ==========================================
+           HEADER
+        ========================================== */
+
+        .environment-header {
+            width: 100%;
+            padding: 1rem 7%;
+            background: var(--forest-green);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.2rem;
+        }
+
+        .brand img {
+            display: block;
+            width: clamp(110px, 15vw, 165px);
+            height: auto;
+        }
+
+        .back-home {
+            color: var(--white);
+            font-size: 0.7rem;
+            font-weight: 600;
+            border: 1px solid rgba(255,255,255,0.45);
+            padding: 0.55rem 1rem;
+            border-radius: 3px;
+            transition: 0.3s ease;
+        }
+
+        .back-home:hover {
+            background: var(--white);
+            color: var(--forest-green);
+        }
+
+        /* ==========================================
+           HERO
+        ========================================== */
+
+        .environment-hero {
+            position: relative;
+            min-height: 430px;
+            padding: 5rem 7%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    rgba(12, 45, 25, 0.78),
+                    rgba(12, 45, 25, 0.84)
+                ),
+                url("environment-hero.jpg") center/cover no-repeat;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 850px;
+        }
+
+        .hero-label {
+            display: inline-block;
+            color: var(--harvest-gold);
+            font-size: 0.66rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .environment-hero h1 {
+            color: var(--white);
+            font-size: clamp(2rem, 5vw, 3.4rem);
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 1.2rem;
+        }
+
+        .environment-hero p {
+            max-width: 720px;
+            margin: 0 auto;
+            color: rgba(255,255,255,0.9);
+            font-size: 0.82rem;
+            line-height: 2;
+        }
+
+        .hero-tagline {
+            display: block;
+            margin-top: 1.5rem;
+            color: var(--harvest-gold);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* ==========================================
+           CONTENT LAYOUT
+        ========================================== */
+
+        .page-container {
+            width: 100%;
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 3.5rem 1.5rem;
+        }
+
+        .content-section {
+            margin-bottom: 3.5rem;
+        }
+
+        .section-label {
+            display: inline-block;
+            color: var(--earth-brown);
+            font-size: 0.64rem;
+            font-weight: 700;
+            letter-spacing: 1.8px;
+            margin-bottom: 0.55rem;
+        }
+
+        .section-heading {
+            color: var(--forest-green);
+            font-size: clamp(1.35rem, 3vw, 1.85rem);
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 1rem;
+        }
+
+        .section-intro {
+            max-width: 900px;
+            color: var(--muted);
+            font-size: 0.76rem;
+            line-height: 2;
+            margin-bottom: 1.4rem;
+        }
+
+        .content-section h3 {
+            color: var(--forest-green);
+            font-size: 0.9rem;
+            font-weight: 700;
+            line-height: 1.5;
+            margin: 1.4rem 0 0.55rem;
+        }
+
+        .content-section p {
+            color: var(--charcoal);
+            font-size: 0.74rem;
+            line-height: 2;
+            margin-bottom: 0.85rem;
+        }
+
+        .content-section ul,
+        .content-section ol {
+            padding-left: 1.35rem;
+            margin: 0.7rem 0 1.1rem;
+        }
+
+        .content-section li {
+            color: var(--charcoal);
+            font-size: 0.73rem;
+            line-height: 1.9;
+            padding-left: 0.25rem;
+            margin-bottom: 0.45rem;
+        }
+
+        .content-section li::marker {
+            color: var(--earth-brown);
+        }
+
+        /* ==========================================
+           INTRODUCTION
+        ========================================== */
+
+        .intro-panel {
+            background: var(--ivory);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--forest-green);
+            padding: clamp(1.3rem, 4vw, 2rem);
+            border-radius: 4px;
+        }
+
+        .intro-panel p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ==========================================
+           KEY PRINCIPLES
+        ========================================== */
+
+        .principles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .principle-card {
+            background: var(--ivory);
+            border: 1px solid var(--border);
+            padding: 1.25rem;
+            border-radius: 4px;
+        }
+
+        .principle-card h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .principle-card p {
+            margin-bottom: 0;
+            color: var(--muted);
+        }
+
+        /* ==========================================
+           TOPIC CARDS
+        ========================================== */
+
+        .topic-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.1rem;
+            margin-top: 1.4rem;
+        }
+
+        .topic-card {
+            background: var(--charcoal grey);
+            border: 1px solid var(--border);
+            padding: 1.35rem;
+            border-radius: 4px;
+        }
+
+        .topic-card h3 {
+            margin-top: 0;
+            margin-bottom: 0.65rem;
+        }
+
+        .topic-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ==========================================
+           PRACTICAL GUIDE
+        ========================================== */
+
+        .practice-panel {
+            background: var(--soft-green);
+            border: 1px solid #D8E3D3;
+            padding: clamp(1.3rem, 4vw, 2rem);
+            border-radius: 4px;
+            margin-top: 1.3rem;
+        }
+
+        .practice-panel h3:first-child {
+            margin-top: 0;
+        }
+
+        /* ==========================================
+           DRYLAND FEATURE
+        ========================================== */
+
+        .dryland-panel {
+            background: var(--soft-brown);
+            border-left: 4px solid var(--earth-brown);
+            padding: clamp(1.3rem, 4vw, 2rem);
+            border-radius: 4px;
+        }
+
+        .dryland-panel h3:first-child {
+            margin-top: 0;
+        }
+
+        /* ==========================================
+           WARNING / RESPONSIBILITY
+        ========================================== */
+
+        .important-note {
+            background: #FFF8E8;
+            border-left: 4px solid var(--harvest-gold);
+            padding: 1.2rem 1.4rem;
+            margin: 1.3rem 0;
+            border-radius: 3px;
+        }
+
+        .important-note p {
+            margin-bottom: 0;
+        }
+
+        /* ==========================================
+           PROJECT STEPS
+        ========================================== */
+
+        .steps-list {
+            counter-reset: project-step;
+            list-style: none;
+            padding: 0 !important;
+        }
+
+        .steps-list li {
+            counter-increment: project-step;
+            position: relative;
+            padding: 0.3rem 0 1rem 2.7rem;
+            margin-bottom: 0.8rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .steps-list li::before {
+            content: counter(project-step);
+            position: absolute;
+            left: 0;
+            top: 0.2rem;
+            width: 1.8rem;
+            height: 1.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--forest-green);
+            color: var(--white);
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 0.68rem;
+        }
+
+        /* ==========================================
+           RESOURCE LINKS
+        ========================================== */
+
+        .resource-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.85rem;
+            margin-top: 1.3rem;
+        }
+
+        .resource-link {
+            display: block;
+            padding: 1.1rem;
+            background: var(--ivory);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            transition: 0.25s ease;
+        }
+
+        .resource-link:hover {
+            border-color: var(--forest-green);
+            transform: translateY(-2px);
+        }
+
+        .resource-link strong {
+            display: block;
+            color: var(--forest-green);
+            font-size: 0.73rem;
+            margin-bottom: 0.35rem;
+        }
+
+        .resource-link span {
+            display: block;
+            color: var(--muted);
+            font-size: 0.65rem;
+            line-height: 1.8;
+        }
+
+        .resource-link .resource-domain {
+            margin-top: 0.5rem;
+            color: var(--earth-brown);
+            font-weight: 600;
+        }
+
+        /* ==========================================
+           CALL TO ACTION
+        ========================================== */
+
+        .environment-cta {
+            background: var(--forest-green);
+            color: var(--white);
+            text-align: center;
+            padding: clamp(2rem, 5vw, 3rem);
+            border-radius: 5px;
+        }
+
+        .environment-cta h2 {
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            line-height: 1.4;
+            margin-bottom: 0.8rem;
+        }
+
+        .environment-cta p {
+            max-width: 700px;
+            margin: 0 auto 1.3rem;
+            color: rgba(255,255,255,0.85);
+            font-size: 0.73rem;
+            line-height: 2;
+        }
+
+        .cta-link {
+            display: inline-block;
+            background: var(--earth-brown);
+            color: var(--deep-brown);
+            padding: 0.75rem 1.3rem;
+            border-radius: 3px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            transition: 0.3s ease;
+        }
+
+        .cta-link:hover {
+            background: var(--white);
+        }
+
+        /* ==========================================
+           FOOTER
+        ========================================== */
+
+        .environment-footer {
+            background: var(--deep-green);
+            color: var(--white);
+            padding: 2.2rem 7%;
+            text-align: center;
+        }
+
+        .environment-footer h2 {
+            font-size: 0.95rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .environment-footer p {
+            color: rgba(255,255,255,0.75);
+            font-size: 0.67rem;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .footer-links a {
+            color: var(--harvest-gold);
+            font-size: 0.66rem;
+            font-weight: 600;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.15);
+            font-size: 0.62rem !important;
+        }
+
+        /* ==========================================
+           RESPONSIVE DESIGN
+        ========================================== */
+
+        @media (max-width: 800px) {
+
+            .principles-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+        }
+
+        @media (max-width: 650px) {
+
+            .environment-header {
+                padding: 1rem 5%;
+            }
+
+            .environment-hero {
+                min-height: 370px;
+                padding: 4rem 6%;
+            }
+
+            .page-container {
+                padding: 2.5rem 1.1rem;
+            }
+
+            .topic-grid,
+            .resource-list {
+                grid-template-columns: 1fr;
+            }
+
+            .content-section {
+                margin-bottom: 2.8rem;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+
+            .principles-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .environment-hero h1 {
+                font-size: 2rem;
+            }
+
+            .environment-hero p {
+                font-size: 0.74rem;
+            }
+
+            .back-home {
+                font-size: 0.62rem;
+                padding: 0.45rem 0.7rem;
+            }
+
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.01ms !important;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ==========================================
+         HEADER
+    ========================================== -->
+
+    <header class="environment-header">
+
+        <a href="index.html" class="brand">
+            <img
+                src="goreale-logo.png"
+                alt="GOREALE Agricultural Innovators Logo"
+            >
+        </a>
+
+        <a href="index.html" class="back-home">
+            Back to Home
+        </a>
+
+    </header>
+
+
+    <!-- ==========================================
+         HERO
+    ========================================== -->
+
+    <section class="environment-hero">
+
+        <div class="hero-content">
+
+            <span class="hero-label">
+                ENVIRONMENT • NATURE • SUSTAINABILITY
+            </span>
+
+            <h1>Environmental Conservation</h1>
+
+            <p>
+                Protecting natural resources, restoring degraded
+                ecosystems and promoting responsible environmental
+                management for sustainable livelihoods, resilient
+                communities and future generations.
+            </p>
+
+            <span class="hero-tagline">
+                Protecting Nature. Restoring Ecosystems. Sustaining Life.
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <main class="page-container">
+
+
+        <!-- ==========================================
+             INTRODUCTION
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                UNDERSTANDING OUR ENVIRONMENT
+            </span>
+
+            <h2 class="section-heading">
+                What Is Environmental Conservation?
+            </h2>
+
+            <div class="intro-panel">
+
+                <p>
+                    Environmental conservation refers to the
+                    responsible protection, management and
+                    sustainable use of natural resources and
+                    ecosystems. It involves safeguarding forests,
+                    rangelands, wetlands, rivers, soils, wildlife,
+                    biodiversity and other components of the
+                    natural environment while ensuring that
+                    present and future generations can continue
+                    benefiting from them.
+                </p>
+
+                <p>
+                    Conservation is not simply about preventing
+                    environmental destruction. It also involves
+                    restoring degraded landscapes, improving
+                    natural resource management, reducing
+                    pollution, protecting biodiversity and
+                    encouraging communities to adopt practices
+                    that maintain ecological balance.
+                </p>
+
+                <p>
+                    Healthy ecosystems support agriculture,
+                    livestock production, water availability,
+                    food security, climate regulation and
+                    community livelihoods. Environmental
+                    conservation is therefore closely connected
+                    to sustainable agricultural development
+                    and the long-term wellbeing of society.
+                </p>
+
+                <p>
+                    For GOREALE Agricultural Innovators,
+                    environmental conservation is an important
+                    part of promoting sustainable agriculture,
+                    agroforestry, climate resilience, responsible
+                    livestock management and community
+                    participation in natural resource protection.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             PRINCIPLES
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                CONSERVATION FOUNDATIONS
+            </span>
+
+            <h2 class="section-heading">
+                Core Principles of Environmental Conservation
+            </h2>
+
+            <p class="section-intro">
+                Effective conservation requires a balanced
+                approach that considers ecological health,
+                community needs, economic activities and
+                long-term environmental sustainability.
+            </p>
+
+            <div class="principles-grid">
+
+                <article class="principle-card">
+
+                    <h3>Protection of Nature</h3>
+
+                    <p>
+                        Safeguarding forests, wildlife, water
+                        sources, soils and natural habitats
+                        against destruction, pollution and
+                        unsustainable exploitation.
+                    </p>
+
+                </article>
+
+
+                <article class="principle-card">
+
+                    <h3>Sustainable Resource Use</h3>
+
+                    <p>
+                        Using natural resources responsibly
+                        while allowing ecosystems to recover
+                        and maintain their ability to support
+                        future generations.
+                    </p>
+
+                </article>
+
+
+                <article class="principle-card">
+
+                    <h3>Ecosystem Restoration</h3>
+
+                    <p>
+                        Rehabilitating degraded landscapes
+                        through appropriate vegetation
+                        recovery, soil protection, water
+                        management and habitat restoration.
+                    </p>
+
+                </article>
+
+
+                <article class="principle-card">
+
+                    <h3>Biodiversity Protection</h3>
+
+                    <p>
+                        Conserving the diversity of plants,
+                        animals and microorganisms that
+                        maintain ecological functions
+                        and ecosystem resilience.
+                    </p>
+
+                </article>
+
+
+                <article class="principle-card">
+
+                    <h3>Pollution Prevention</h3>
+
+                    <p>
+                        Reducing harmful waste, chemicals,
+                        emissions and other pollutants that
+                        threaten human health and natural
+                        ecosystems.
+                    </p>
+
+                </article>
+
+
+                <article class="principle-card">
+
+                    <h3>Community Participation</h3>
+
+                    <p>
+                        Involving local communities,
+                        farmers, pastoralists, youth,
+                        institutions and other stakeholders
+                        in environmental decisions and action.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             KENYA'S ECOSYSTEMS
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                KENYA'S NATURAL HERITAGE
+            </span>
+
+            <h2 class="section-heading">
+                Understanding Kenya's Ecosystems
+            </h2>
+
+            <p class="section-intro">
+                Kenya has diverse ecological systems that
+                support agriculture, livestock, tourism,
+                biodiversity, water resources and millions
+                of livelihoods. Each ecosystem requires
+                conservation approaches suited to its
+                environmental conditions.
+            </p>
+
+            <div class="topic-grid">
+
+                <article class="topic-card">
+
+                    <h3>Forests and Woodlands</h3>
+
+                    <p>
+                        Forests and woodlands provide habitat
+                        for wildlife, protect watersheds,
+                        store carbon, regulate local climates
+                        and support livelihoods through
+                        sustainable forest products.
+                    </p>
+
+                    <p>
+                        Conservation activities include
+                        protecting existing forests,
+                        preventing illegal logging,
+                        restoring degraded forest areas,
+                        promoting appropriate indigenous
+                        tree species and managing forest
+                        resources sustainably.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <h3>Rangelands and Grasslands</h3>
+
+                    <p>
+                        Rangelands and grasslands support
+                        pastoralism, livestock production,
+                        wildlife habitats and important
+                        ecological processes.
+                    </p>
+
+                    <p>
+                        Their conservation requires
+                        sustainable grazing management,
+                        protection of natural vegetation,
+                        restoration of degraded grazing
+                        areas, prevention of soil erosion
+                        and responsible management of
+                        livestock and wildlife interactions.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <h3>Wetlands and Water Ecosystems</h3>
+
+                    <p>
+                        Wetlands, rivers, lakes, springs
+                        and other water ecosystems provide
+                        water, support biodiversity,
+                        regulate water flows and contribute
+                        to livelihoods.
+                    </p>
+
+                    <p>
+                        Conservation requires protecting
+                        water catchments, maintaining
+                        vegetation along waterways,
+                        preventing dumping and pollution,
+                        and avoiding activities that
+                        damage sensitive wetland habitats.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <h3>Coastal and Marine Ecosystems</h3>
+
+                    <p>
+                        Kenya's coastal and marine
+                        environments include mangroves,
+                        coral reefs, seagrass beds, beaches
+                        and marine habitats.
+                    </p>
+
+                    <p>
+                        These ecosystems support fisheries,
+                        biodiversity, coastal livelihoods
+                        and natural protection against
+                        environmental pressures.
+                        Their conservation requires
+                        sustainable fishing, pollution
+                        control and habitat protection.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <h3>Mountain and Highland Ecosystems</h3>
+
+                    <p>
+                        Kenya's mountain and highland
+                        landscapes contain important
+                        forests, water catchments,
+                        agricultural areas and diverse
+                        habitats.
+                    </p>
+
+                    <p>
+                        Conservation includes protecting
+                        catchment vegetation, controlling
+                        soil erosion, maintaining forest
+                        cover and managing agricultural
+                        land sustainably.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <h3>Dryland and Semi-Arid Ecosystems</h3>
+
+                    <p>
+                        Arid and semi-arid lands are
+                        characterized by limited and
+                        variable rainfall, high
+                        evaporation, water scarcity
+                        and vegetation adapted to
+                        dry conditions.
+                    </p>
+
+                    <p>
+                        Their conservation depends on
+                        appropriate grazing management,
+                        indigenous vegetation protection,
+                        rainwater harvesting, soil
+                        restoration and drought-resilient
+                        land-use practices.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             ENVIRONMENTAL CHALLENGES
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                ENVIRONMENTAL PRESSURES
+            </span>
+
+            <h2 class="section-heading">
+                Major Environmental Challenges in Kenya
+            </h2>
+
+            <p class="section-intro">
+                Environmental degradation can result from
+                natural pressures, unsustainable land use,
+                pollution, poorly managed development and
+                changing climatic conditions. These
+                pressures often interact and intensify
+                one another.
+            </p>
+
+            <div class="topic-grid">
+
+                <article class="topic-card">
+
+                    <h3>Deforestation and Vegetation Loss</h3>
+
+                    <p>
+                        Uncontrolled tree cutting, land
+                        clearing, unsustainable fuelwood
+                        collection and poorly planned
+                        development can reduce natural
+                        vegetation cover.
+                    </p>
+
+                    <p>
+                        The consequences may include habitat
+                        loss, declining biodiversity, soil
+                        exposure, reduced carbon storage
+                        and pressure on water catchments.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <h3>Soil Erosion and Land Degradation</h3>
+
+                    <p>
+                        Wind and water erosion remove
+                        fertile topsoil and reduce the
+                        productive capacity of land.
+                        Poor land management, vegetation
+                        loss and concentrated runoff can
+                        accelerate degradation.
+                    </p>
+
+                    <p>
+                        Soil erosion may contribute to
+                        sedimentation in water bodies,
+                        reduced agricultural productivity
+                        and expansion of degraded land.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <h3>Unsustainable Grazing</h3>
+
+                    <p>
+                        Excessive grazing pressure in
+                        particular locations, especially
+                        around permanent water points,
+                        can prevent vegetation recovery
+                        and expose soil to erosion.
+                    </p>
+
+                    <p>
+                        Appropriate grazing arrangements,
+                        mobility, resting periods and
+                        rangeland restoration can help
+                        improve ecosystem condition.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <h3>Water Scarcity and Pollution</h3>
+
+                    <p>
+                        Water scarcity can be intensified
+                        by unreliable rainfall, increasing
+                        demand, degraded catchments and
+                        inefficient water use.
+                    </p>
+
+                    <p>
+                        Pollution from untreated waste,
+                        chemicals, poor sanitation and
+                        inappropriate disposal practices
+                        can threaten water quality and
+                        aquatic ecosystems.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <h3>Loss of Biodiversity</h3>
+
+                    <p>
+                        Habitat destruction, illegal
+                        exploitation, pollution, invasive
+                        species and climate pressures
+                        can threaten wildlife and plant
+                        populations.
+                    </p>
+
+                    <p>
+                        Biodiversity loss can weaken
+                        ecosystem functions such as
+                        pollination, natural pest control
+                        and ecological resilience.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <h3>Waste and Plastic Pollution</h3>
+
+                    <p>
+                        Improper disposal of plastic,
+                        packaging, electronic waste,
+                        household refuse and agricultural
+                        waste can pollute land and water.
+                    </p>
+
+                    <p>
+                        Open burning and uncontrolled
+                        dumping can also create risks
+                        for human health, livestock,
+                        wildlife and the environment.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <h3>Climate Change and Extreme Events</h3>
+
+                    <p>
+                        Changing rainfall patterns,
+                        rising temperatures, droughts
+                        and floods can affect ecosystems,
+                        agriculture, livestock and
+                        community livelihoods.
+                    </p>
+
+                    <p>
+                        Climate adaptation and ecosystem
+                        restoration are important for
+                        strengthening resilience.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <h3>Invasive Alien Species</h3>
+
+                    <p>
+                        Some introduced species can
+                        spread aggressively and compete
+                        with native plants and animals,
+                        alter habitats or affect
+                        agricultural production.
+                    </p>
+
+                    <p>
+                        Identification, monitoring,
+                        prevention and responsible
+                        management should follow
+                        competent local guidance.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             DRYLAND CONSERVATION
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                NORTHEASTERN KENYA AND ARID LANDS
+            </span>
+
+            <h2 class="section-heading">
+                Environmental Conservation in Garissa and
+                Northeastern Kenya
+            </h2>
+
+            <div class="dryland-panel">
+
+                <p>
+                    Garissa County and neighbouring parts
+                    of northeastern Kenya are predominantly
+                    characterized by arid and semi-arid
+                    conditions. Communities depend on
+                    livestock, agriculture in suitable
+                    locations, natural vegetation,
+                    groundwater and other natural
+                    resources for their livelihoods.
+                </p>
+
+                <p>
+                    Environmental conservation in these
+                    landscapes must account for rainfall
+                    variability, drought, high temperatures,
+                    limited water availability, mobile
+                    pastoral livelihoods and the ecological
+                    importance of natural rangelands.
+                </p>
+
+                <h3>1. Protecting Natural Rangelands</h3>
+
+                <p>
+                    Rangelands are important for livestock
+                    production, wildlife, soil protection
+                    and the maintenance of dryland
+                    biodiversity. Their management should
+                    recognize seasonal grazing patterns,
+                    available forage, water distribution
+                    and the need for vegetation recovery.
+                </p>
+
+                <ul>
+                    <li>
+                        Develop community-supported grazing
+                        plans based on local conditions
+                        and available pasture.
+                    </li>
+
+                    <li>
+                        Allow degraded grazing areas to
+                        recover through appropriately
+                        planned resting periods.
+                    </li>
+
+                    <li>
+                        Avoid concentrating livestock
+                        continuously around limited
+                        water points.
+                    </li>
+
+                    <li>
+                        Protect valuable native grasses,
+                        shrubs and trees.
+                    </li>
+
+                    <li>
+                        Restore degraded areas using
+                        suitable locally sourced
+                        indigenous vegetation.
+                    </li>
+
+                    <li>
+                        Monitor pasture condition and
+                        adjust grazing pressure during
+                        drought and recovery periods.
+                    </li>
+                </ul>
+
+
+                <h3>2. Dryland Tree Conservation</h3>
+
+                <p>
+                    Indigenous trees and shrubs are
+                    important components of dryland
+                    ecosystems. Depending on the species
+                    and site, they can provide shade,
+                    fodder, habitat, soil protection,
+                    useful products and other ecosystem
+                    benefits.
+                </p>
+
+                <p>
+                    Examples of indigenous dryland tree
+                    and shrub species that may be
+                    considered for local assessment
+                    include:
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Vachellia tortilis</strong>
+                        (umbrella thorn).
+                    </li>
+
+                    <li>
+                        <strong>Balanites aegyptiaca</strong>
+                        (desert date).
+                    </li>
+
+                    <li>
+                        <strong>Salvadora persica</strong>
+                        (toothbrush tree).
+                    </li>
+
+                    <li>
+                        <strong>Ziziphus spina-christi</strong>
+                        (Christ's thorn jujube).
+                    </li>
+
+                </ul>
+
+                <p>
+                    These are examples for consideration,
+                    not a universal planting prescription.
+                    Species selection should be based on
+                    local ecological suitability,
+                    provenance, soil conditions, water
+                    availability, community needs and
+                    advice from qualified forestry
+                    personnel.
+                </p>
+
+
+                <h3>3. Soil and Water Conservation</h3>
+
+                <p>
+                    Dryland soils are vulnerable to wind
+                    erosion, runoff and declining organic
+                    matter where vegetation cover is lost.
+                    Conservation measures should slow
+                    runoff, improve infiltration and
+                    protect the soil surface.
+                </p>
+
+                <ul>
+                    <li>
+                        Use locally appropriate contour
+                        structures where the terrain
+                        and soil conditions support them.
+                    </li>
+
+                    <li>
+                        Harvest rainwater from suitable
+                        roofs and catchment surfaces.
+                    </li>
+
+                    <li>
+                        Protect water pans, wells and
+                        other community water sources
+                        from contamination.
+                    </li>
+
+                    <li>
+                        Maintain ground cover and
+                        vegetation where possible.
+                    </li>
+
+                    <li>
+                        Use organic matter and suitable
+                        soil improvement practices.
+                    </li>
+
+                    <li>
+                        Manage runoff to reduce
+                        destructive concentration
+                        of flowing water.
+                    </li>
+                </ul>
+
+
+                <h3>4. Managing Human and Livestock Pressure</h3>
+
+                <p>
+                    Conservation initiatives should
+                    involve pastoralists, farmers,
+                    community leaders, women and youth.
+                    Local knowledge about grazing routes,
+                    seasonal resources, drought conditions
+                    and traditional land management can
+                    improve conservation planning.
+                </p>
+
+                <p>
+                    Solutions should support livelihoods
+                    while protecting the ecological
+                    resources on which those livelihoods
+                    depend.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             FOREST AND TREE CONSERVATION
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                FORESTS • TREES • AGROFORESTRY
+            </span>
+
+            <h2 class="section-heading">
+                Forest Conservation, Afforestation and Agroforestry
+            </h2>
+
+            <p>
+                Trees and forests contribute to environmental
+                stability by supporting biodiversity,
+                protecting soils, influencing local water
+                cycles, storing carbon and providing
+                resources for communities.
+            </p>
+
+            <h3>Forest Conservation</h3>
+
+            <p>
+                Forest conservation involves protecting
+                existing forest ecosystems from
+                unsustainable exploitation, degradation,
+                encroachment and destructive activities.
+                It also includes supporting sustainable
+                management and community participation
+                in forest protection.
+            </p>
+
+            <h3>Afforestation and Reforestation</h3>
+
+            <p>
+                Afforestation involves establishing
+                tree cover in areas that have not
+                recently supported forest cover, while
+                reforestation involves restoring tree
+                cover in areas where forests have been
+                lost or degraded.
+            </p>
+
+            <p>
+                Successful tree-growing programmes
+                require more than distributing seedlings.
+                They need appropriate species selection,
+                site preparation, planting at suitable
+                times, protection, maintenance and
+                monitoring of survival.
+            </p>
+
+            <h3>Agroforestry</h3>
+
+            <p>
+                Agroforestry integrates trees and shrubs
+                with crops and/or livestock within
+                agricultural landscapes. When appropriately
+                designed, it can support soil protection,
+                shade, fodder, useful tree products,
+                biodiversity and livelihood diversification.
+            </p>
+
+            <h3>Practical Tree-Growing Recommendations</h3>
+
+            <ul>
+                <li>
+                    Select species suited to local
+                    rainfall, soils and intended uses.
+                </li>
+
+                <li>
+                    Prioritize indigenous species
+                    appropriate to the local ecosystem.
+                </li>
+
+                <li>
+                    Obtain healthy planting material
+                    from reputable and suitable sources.
+                </li>
+
+                <li>
+                    Plant when soil moisture conditions
+                    are suitable, preferably at the
+                    beginning of dependable rains.
+                </li>
+
+                <li>
+                    Protect young trees against browsing,
+                    trampling and other damage.
+                </li>
+
+                <li>
+                    Use water efficiently and establish
+                    realistic maintenance arrangements.
+                </li>
+
+                <li>
+                    Record seedlings planted, survival,
+                    growth and replacement needs.
+                </li>
+
+                <li>
+                    Avoid planting trees in unsuitable
+                    habitats or where they could damage
+                    sensitive grassland or water systems.
+                </li>
+            </ul>
+
+            <div class="important-note">
+
+                <p>
+                    <strong>Important:</strong>
+                    Tree planting is not automatically
+                    equivalent to ecosystem restoration.
+                    Restoration should begin with
+                    understanding the original ecosystem,
+                    its natural vegetation and the
+                    environmental pressures affecting it.
+                    In some locations, protecting natural
+                    regeneration or restoring grassland
+                    may be more appropriate than
+                    establishing tree plantations.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             SOIL CONSERVATION
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                LAND HEALTH AND PRODUCTIVITY
+            </span>
+
+            <h2 class="section-heading">
+                Soil Conservation and Sustainable Land Management
+            </h2>
+
+            <p>
+                Soil is a vital natural resource that
+                supports plant growth, agriculture,
+                vegetation recovery, water infiltration
+                and many ecosystem processes. Healthy
+                soils are essential for food production,
+                livestock systems and environmental
+                sustainability.
+            </p>
+
+            <h3>Common Causes of Soil Degradation</h3>
+
+            <ul>
+                <li>Wind and water erosion.</li>
+                <li>Loss of protective vegetation cover.</li>
+                <li>Unsustainable cultivation practices.</li>
+                <li>Excessive grazing pressure.</li>
+                <li>Declining soil organic matter.</li>
+                <li>Soil compaction and inappropriate land use.</li>
+                <li>Pollution and unsuitable chemical use.</li>
+            </ul>
+
+            <h3>Practical Soil Conservation Measures</h3>
+
+            <ul>
+                <li>
+                    Maintain vegetation cover to reduce
+                    direct exposure of soil to wind
+                    and rainfall impact.
+                </li>
+
+                <li>
+                    Apply mulching and suitable organic
+                    matter management.
+                </li>
+
+                <li>
+                    Use contour farming and erosion-control
+                    structures where appropriate.
+                </li>
+
+                <li>
+                    Establish vegetative barriers and
+                    windbreaks using suitable species.
+                </li>
+
+                <li>
+                    Avoid unnecessary disturbance of
+                    vulnerable soils.
+                </li>
+
+                <li>
+                    Manage grazing to allow vegetation
+                    recovery.
+                </li>
+
+                <li>
+                    Use crop rotations and suitable
+                    soil fertility practices.
+                </li>
+
+                <li>
+                    Monitor areas affected by gullies,
+                    erosion and declining productivity.
+                </li>
+            </ul>
+
+            <h3>Restoring Degraded Land</h3>
+
+            <p>
+                Land restoration should begin by
+                identifying the cause and extent of
+                degradation. Depending on the site,
+                interventions may include natural
+                regeneration, controlled grazing,
+                reseeding with suitable native grasses,
+                erosion control, water harvesting,
+                agroforestry or rehabilitation of
+                degraded agricultural land.
+            </p>
+
+        </section>
+
+
+        <!-- ==========================================
+             WATER CONSERVATION
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                WATER SECURITY
+            </span>
+
+            <h2 class="section-heading">
+                Water Conservation and Catchment Protection
+            </h2>
+
+            <p>
+                Water is fundamental to human survival,
+                agriculture, livestock production,
+                ecosystem functioning and economic
+                development. Protecting water resources
+                requires responsible use, pollution
+                prevention and the conservation of
+                landscapes that influence water quality
+                and availability.
+            </p>
+
+            <h3>Rainwater Harvesting</h3>
+
+            <p>
+                Rainwater harvesting involves collecting
+                and storing rainfall for appropriate
+                uses. Depending on local conditions,
+                it may involve roof catchments, storage
+                tanks, lined reservoirs, water pans
+                and other suitable systems.
+            </p>
+
+            <h3>Water-Efficient Agricultural Practices</h3>
+
+            <ul>
+                <li>
+                    Use irrigation methods suited to
+                    crop requirements and available
+                    water resources.
+                </li>
+
+                <li>
+                    Repair leaks and maintain water
+                    distribution systems.
+                </li>
+
+                <li>
+                    Use mulching and soil management
+                    to reduce unnecessary moisture loss.
+                </li>
+
+                <li>
+                    Schedule irrigation according to
+                    crop needs and local conditions.
+                </li>
+
+                <li>
+                    Harvest rainwater where technically,
+                    environmentally and legally appropriate.
+                </li>
+            </ul>
+
+            <h3>Protecting Water Sources</h3>
+
+            <ul>
+                <li>
+                    Prevent dumping of waste into
+                    rivers, wells, water pans and wetlands.
+                </li>
+
+                <li>
+                    Protect suitable vegetation
+                    around water bodies.
+                </li>
+
+                <li>
+                    Manage livestock access to water
+                    sources to reduce contamination
+                    and physical damage.
+                </li>
+
+                <li>
+                    Maintain appropriate sanitation
+                    and wastewater management.
+                </li>
+
+                <li>
+                    Monitor water quality where
+                    community or project resources
+                    allow.
+                </li>
+            </ul>
+
+            <div class="important-note">
+
+                <p>
+                    Water harvesting structures,
+                    groundwater abstraction and activities
+                    affecting rivers or wetlands may
+                    require technical assessment,
+                    permits or authorization from
+                    relevant authorities. Consult the
+                    Water Resources Authority and
+                    applicable county and national
+                    agencies before undertaking
+                    regulated activities.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             BIODIVERSITY
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                LIFE AND ECOLOGICAL BALANCE
+            </span>
+
+            <h2 class="section-heading">
+                Biodiversity Conservation and Wildlife Protection
+            </h2>
+
+            <p>
+                Biodiversity refers to the variety of
+                life, including different species,
+                genetic diversity and ecosystems.
+                It includes plants, animals,
+                microorganisms and the ecological
+                relationships that connect them.
+            </p>
+
+            <h3>Why Biodiversity Matters</h3>
+
+            <ul>
+                <li>
+                    Supports ecosystem stability
+                    and resilience.
+                </li>
+
+                <li>
+                    Contributes to pollination and
+                    natural pest regulation.
+                </li>
+
+                <li>
+                    Supports food systems and
+                    agricultural productivity.
+                </li>
+
+                <li>
+                    Provides habitat and resources
+                    for wildlife.
+                </li>
+
+                <li>
+                    Contributes to cultural,
+                    educational and economic values.
+                </li>
+
+                <li>
+                    Supports ecosystem processes
+                    such as nutrient cycling and
+                    soil formation.
+                </li>
+            </ul>
+
+            <h3>Practical Biodiversity Protection</h3>
+
+            <ul>
+                <li>
+                    Protect natural habitats and
+                    ecological corridors.
+                </li>
+
+                <li>
+                    Avoid unnecessary destruction
+                    of native vegetation.
+                </li>
+
+                <li>
+                    Reduce pollution and harmful
+                    chemical exposure.
+                </li>
+
+                <li>
+                    Support responsible wildlife
+                    protection and reporting of
+                    suspected illegal activities.
+                </li>
+
+                <li>
+                    Identify and manage invasive
+                    species using approved methods.
+                </li>
+
+                <li>
+                    Promote community education
+                    about native species and
+                    ecosystem values.
+                </li>
+
+                <li>
+                    Encourage coexistence between
+                    people, livestock and wildlife.
+                </li>
+            </ul>
+
+        </section>
+
+
+        <!-- ==========================================
+             WASTE MANAGEMENT
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                POLLUTION PREVENTION
+            </span>
+
+            <h2 class="section-heading">
+                Waste Management and Environmental Pollution Control
+            </h2>
+
+            <p>
+                Responsible waste management protects
+                public health, soil, water resources,
+                wildlife and the wider environment.
+                Poorly managed waste can contaminate
+                land and water, create breeding sites
+                for disease vectors and introduce
+                harmful substances into ecosystems.
+            </p>
+
+            <h3>The Waste Management Hierarchy</h3>
+
+            <ol>
+                <li>
+                    <strong>Refuse:</strong>
+                    Avoid unnecessary products and
+                    materials that create avoidable waste.
+                </li>
+
+                <li>
+                    <strong>Reduce:</strong>
+                    Minimize the amount of resources
+                    and materials consumed.
+                </li>
+
+                <li>
+                    <strong>Reuse:</strong>
+                    Use suitable materials again
+                    rather than disposing of them.
+                </li>
+
+                <li>
+                    <strong>Repair:</strong>
+                    Maintain equipment and products
+                    to extend their useful life.
+                </li>
+
+                <li>
+                    <strong>Recycle:</strong>
+                    Separate suitable recyclable
+                    materials for responsible recovery.
+                </li>
+
+                <li>
+                    <strong>Recover and dispose:</strong>
+                    Ensure remaining waste is
+                    managed through appropriate
+                    authorized systems.
+                </li>
+            </ol>
+
+            <h3>Organic and Agricultural Waste</h3>
+
+            <p>
+                Appropriate organic residues may be
+                composted or reused where safe and
+                suitable. Crop residues, manure and
+                other organic materials can contribute
+                to soil improvement when properly
+                managed.
+            </p>
+
+            <p>
+                However, diseased plant material,
+                contaminated waste and hazardous
+                agricultural chemicals require
+                appropriate handling and disposal.
+                They should not automatically be
+                added to compost.
+            </p>
+
+            <h3>Plastic and Packaging Waste</h3>
+
+            <ul>
+                <li>
+                    Reduce unnecessary single-use
+                    materials.
+                </li>
+
+                <li>
+                    Separate recyclable materials
+                    where collection systems exist.
+                </li>
+
+                <li>
+                    Avoid dumping plastics in
+                    open land, drainage channels
+                    and water bodies.
+                </li>
+
+                <li>
+                    Use authorized waste collection
+                    and recovery services.
+                </li>
+
+                <li>
+                    Follow Kenya's applicable
+                    restrictions and regulations
+                    on plastic products.
+                </li>
+            </ul>
+
+            <h3>Hazardous and Electronic Waste</h3>
+
+            <p>
+                Batteries, electronic equipment,
+                pesticides, used oils, chemicals and
+                other hazardous materials require
+                special handling. They should not
+                be burned, buried indiscriminately
+                or disposed of with ordinary
+                household waste.
+            </p>
+
+        </section>
+
+
+        <!-- ==========================================
+             CLIMATE CHANGE
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                CLIMATE RESILIENCE
+            </span>
+
+            <h2 class="section-heading">
+                Environmental Conservation and Climate Change
+            </h2>
+
+            <p>
+                Climate change affects ecosystems,
+                agricultural systems, water resources,
+                biodiversity and community livelihoods.
+                Environmental conservation contributes
+                to climate change adaptation and,
+                in some cases, mitigation.
+            </p>
+
+            <h3>Climate Change Adaptation</h3>
+
+            <p>
+                Adaptation involves adjusting natural
+                and human systems to actual or expected
+                climatic conditions. Conservation
+                activities that support adaptation
+                include:
+            </p>
+
+            <ul>
+                <li>
+                    Restoring degraded landscapes
+                    and natural vegetation.
+                </li>
+
+                <li>
+                    Improving soil moisture retention
+                    and water harvesting.
+                </li>
+
+                <li>
+                    Protecting water sources
+                    and catchments.
+                </li>
+
+                <li>
+                    Promoting climate-resilient
+                    agricultural practices.
+                </li>
+
+                <li>
+                    Improving rangeland management
+                    and livestock adaptation.
+                </li>
+
+                <li>
+                    Conserving biodiversity and
+                    ecosystem connectivity.
+                </li>
+            </ul>
+
+            <h3>Climate Change Mitigation</h3>
+
+            <p>
+                Mitigation involves reducing greenhouse
+                gas emissions or increasing the removal
+                of greenhouse gases from the atmosphere.
+                Appropriate actions may include
+                protecting existing forests, restoring
+                degraded ecosystems, improving energy
+                efficiency and adopting suitable
+                low-emission practices.
+            </p>
+
+            <p>
+                Carbon benefits should be assessed
+                using credible methods. Tree planting
+                alone does not establish a verified
+                quantity of carbon removed.
+            </p>
+
+        </section>
+
+
+        <!-- ==========================================
+             COMMUNITY PARTICIPATION
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                PEOPLE AND THE ENVIRONMENT
+            </span>
+
+            <h2 class="section-heading">
+                Community Participation in Environmental Conservation
+            </h2>
+
+            <p>
+                Environmental conservation is more
+                sustainable when local communities
+                participate in identifying challenges,
+                planning interventions, implementing
+                activities and monitoring results.
+            </p>
+
+            <h3>Role of Local Communities</h3>
+
+            <ul>
+                <li>
+                    Identify environmental challenges
+                    affecting their local areas.
+                </li>
+
+                <li>
+                    Participate in restoration and
+                    tree-protection initiatives.
+                </li>
+
+                <li>
+                    Support sustainable grazing
+                    and land-use practices.
+                </li>
+
+                <li>
+                    Protect community water sources.
+                </li>
+
+                <li>
+                    Participate in environmental
+                    education and awareness activities.
+                </li>
+
+                <li>
+                    Report pollution and suspected
+                    environmental violations through
+                    appropriate channels.
+                </li>
+            </ul>
+
+            <h3>Role of Youth</h3>
+
+            <p>
+                Young people can contribute through
+                environmental education, innovation,
+                community mobilization, restoration
+                activities, research, responsible
+                resource management and the development
+                of practical environmental solutions.
+            </p>
+
+            <h3>Role of Women</h3>
+
+            <p>
+                Women contribute important knowledge
+                and leadership in natural resource
+                management, agriculture, household
+                water use, food systems and community
+                development. Inclusive conservation
+                programmes should support meaningful
+                participation and decision-making
+                opportunities for women.
+            </p>
+
+            <h3>Role of Institutions and Partnerships</h3>
+
+            <p>
+                Government agencies, schools,
+                universities, community organizations,
+                research institutions, civil society
+                organizations and private-sector
+                partners can support conservation
+                through technical expertise,
+                environmental education, research,
+                funding and implementation.
+            </p>
+
+        </section>
+
+
+        <!-- ==========================================
+             PRACTICAL CONSERVATION ACTIONS
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                ACTION AT COMMUNITY LEVEL
+            </span>
+
+            <h2 class="section-heading">
+                Practical Environmental Conservation Activities
+            </h2>
+
+            <p class="section-intro">
+                Conservation becomes meaningful when
+                environmental knowledge is translated
+                into appropriate activities that
+                communities can implement, maintain
+                and evaluate.
+            </p>
+
+            <div class="practice-panel">
+
+                <h3>Community Tree Growing and Protection</h3>
+
+                <p>
+                    Establish locally suitable tree-growing
+                    activities, protect existing indigenous
+                    trees and organize follow-up maintenance
+                    to improve survival and long-term
+                    establishment.
+                </p>
+
+                <h3>Rangeland Restoration</h3>
+
+                <p>
+                    Work with pastoral communities to
+                    identify degraded grazing areas,
+                    support appropriate resting and
+                    recovery, and restore native
+                    vegetation where needed.
+                </p>
+
+                <h3>Soil and Water Conservation</h3>
+
+                <p>
+                    Promote suitable erosion-control
+                    measures, rainwater harvesting,
+                    vegetation protection and
+                    responsible water use.
+                </p>
+
+                <h3>Environmental Clean-Up Activities</h3>
+
+                <p>
+                    Organize community clean-up
+                    activities with safe waste
+                    collection, sorting and disposal
+                    arrangements. Clean-up events
+                    should be supported by a plan
+                    for preventing waste from
+                    accumulating again.
+                </p>
+
+                <h3>Environmental Education</h3>
+
+                <p>
+                    Conduct community awareness
+                    sessions, school activities,
+                    field demonstrations and
+                    educational campaigns about
+                    conservation and sustainable
+                    natural resource use.
+                </p>
+
+                <h3>Biodiversity Observation</h3>
+
+                <p>
+                    Encourage responsible observation
+                    and recording of local plants,
+                    birds, wildlife and other
+                    biodiversity. Avoid disturbing
+                    sensitive species or habitats.
+                </p>
+
+                <h3>Waste Reduction Initiatives</h3>
+
+                <p>
+                    Promote waste separation,
+                    responsible recycling, suitable
+                    composting and reduced use of
+                    unnecessary disposable materials.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             PROJECT PLANNING
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                FROM PLANNING TO IMPLEMENTATION
+            </span>
+
+            <h2 class="section-heading">
+                How to Plan an Environmental Conservation Project
+            </h2>
+
+            <p>
+                A successful conservation project should
+                respond to an identified environmental
+                problem, use appropriate technical
+                approaches, involve affected communities
+                and include arrangements for maintenance
+                and monitoring.
+            </p>
+
+            <ol class="steps-list">
+
+                <li>
+                    <strong>Identify the environmental problem.</strong>
+                    Determine whether the main concern
+                    involves land degradation, vegetation
+                    loss, waste, water pollution,
+                    biodiversity decline or another
+                    environmental issue.
+                </li>
+
+                <li>
+                    <strong>Assess the local environment.</strong>
+                    Study the location, soil, vegetation,
+                    water availability, land use,
+                    community activities and other
+                    relevant environmental conditions.
+                </li>
+
+                <li>
+                    <strong>Consult the community.</strong>
+                    Engage residents, land users,
+                    pastoralists, farmers, local
+                    leaders and other relevant
+                    stakeholders.
+                </li>
+
+                <li>
+                    <strong>Set clear objectives.</strong>
+                    Define what the project intends
+                    to achieve, the area involved,
+                    expected results and the
+                    beneficiaries.
+                </li>
+
+                <li>
+                    <strong>Select appropriate interventions.</strong>
+                    Choose measures based on local
+                    ecological conditions and
+                    technical advice rather than
+                    adopting a one-size-fits-all
+                    approach.
+                </li>
+
+                <li>
+                    <strong>Establish responsibilities and resources.</strong>
+                    Identify personnel, materials,
+                    technical support, funding,
+                    permissions and maintenance
+                    responsibilities.
+                </li>
+
+                <li>
+                    <strong>Implement the activities.</strong>
+                    Carry out the project with
+                    community participation,
+                    appropriate safeguards and
+                    suitable technical supervision.
+                </li>
+
+                <li>
+                    <strong>Monitor progress.</strong>
+                    Collect information about
+                    activities, environmental
+                    conditions and measurable
+                    results.
+                </li>
+
+                <li>
+                    <strong>Maintain and improve the project.</strong>
+                    Address problems, replace
+                    failed interventions where
+                    appropriate and adjust the
+                    management approach.
+                </li>
+
+                <li>
+                    <strong>Report and share lessons.</strong>
+                    Document achievements,
+                    challenges, lessons learned
+                    and recommendations for
+                    future conservation work.
+                </li>
+
+            </ol>
+
+            <h3>Useful Environmental Monitoring Indicators</h3>
+
+            <ul>
+                <li>
+                    Area of land under restoration
+                    or improved management.
+                </li>
+
+                <li>
+                    Survival and condition of
+                    planted trees after defined
+                    monitoring periods.
+                </li>
+
+                <li>
+                    Changes in vegetation cover
+                    and ground protection.
+                </li>
+
+                <li>
+                    Condition of selected
+                    rangeland or restoration sites.
+                </li>
+
+                <li>
+                    Number of households or
+                    community members participating.
+                </li>
+
+                <li>
+                    Quantity and type of waste
+                    properly collected or recovered.
+                </li>
+
+                <li>
+                    Water quality or water
+                    availability indicators,
+                    where monitored.
+                </li>
+
+                <li>
+                    Biodiversity observations
+                    using consistent methods.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ==========================================
+             KENYA'S LEGAL FRAMEWORK
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                ENVIRONMENTAL GOVERNANCE IN KENYA
+            </span>
+
+            <h2 class="section-heading">
+                Kenya's Environmental Laws and Institutions
+            </h2>
+
+            <p>
+                Environmental conservation in Kenya
+                is supported by constitutional
+                provisions, national legislation,
+                policies, regulations and public
+                institutions. These frameworks
+                establish responsibilities for
+                environmental protection,
+                sustainable resource management,
+                public participation and
+                enforcement.
+            </p>
+
+            <h3>1. Constitution of Kenya, 2010</h3>
+
+            <p>
+                Article 42 recognizes the right to
+                a clean and healthy environment.
+                Article 69 establishes obligations
+                relating to sustainable management
+                and conservation of the environment
+                and natural resources. Article 70
+                provides for enforcement of
+                environmental rights.
+            </p>
+
+            <h3>2. Environmental Management and
+                Co-ordination Act (EMCA), 1999</h3>
+
+            <p>
+                EMCA provides Kenya's principal
+                framework for environmental
+                management and coordination.
+                It establishes NEMA and provides
+                for environmental planning,
+                environmental impact assessment,
+                environmental audits, monitoring,
+                restoration and conservation
+                measures.
+            </p>
+
+            <h3>3. Climate Change Act, 2016</h3>
+
+            <p>
+                This legislation provides a
+                framework for coordinated
+                responses to climate change,
+                including climate governance
+                and the integration of climate
+                considerations into development
+                planning.
+            </p>
+
+            <h3>4. Forest Conservation and
+                Management Act, 2016</h3>
+
+            <p>
+                This Act provides a framework
+                for the conservation, protection
+                and sustainable management
+                of forest resources in Kenya.
+            </p>
+
+            <h3>5. Sustainable Waste Management
+                Act, 2022</h3>
+
+            <p>
+                This Act establishes a framework
+                for sustainable waste management,
+                including waste reduction,
+                resource recovery and
+                responsibilities across
+                the waste management chain.
+            </p>
+
+            <h3>6. Wildlife Conservation and
+                Management Act, 2013</h3>
+
+            <p>
+                This Act provides a framework
+                for wildlife conservation
+                and management, including
+                the protection and sustainable
+                management of wildlife resources.
+            </p>
+
+            <h3>7. Water Act, 2016</h3>
+
+            <p>
+                The Water Act provides a
+                framework for water resource
+                management and water services.
+                Water resource activities
+                should comply with applicable
+                authorization and regulatory
+                requirements.
+            </p>
+
+            <h3>Important Environmental Institutions</h3>
+
+            <ul>
+                <li>
+                    <strong>
+                        National Environment Management Authority (NEMA):
+                    </strong>
+                    Coordinates and supervises
+                    environmental management
+                    and implements environmental
+                    policies.
+                </li>
+
+                <li>
+                    <strong>
+                        Kenya Forest Service (KFS):
+                    </strong>
+                    Supports the conservation
+                    and sustainable management
+                    of forest resources.
+                </li>
+
+                <li>
+                    <strong>
+                        Kenya Forestry Research Institute (KEFRI):
+                    </strong>
+                    Undertakes forestry research
+                    and provides scientific
+                    information relevant to
+                    tree growing, forestry and
+                    ecosystem management.
+                </li>
+
+                <li>
+                    <strong>
+                        Kenya Wildlife Service (KWS):
+                    </strong>
+                    Supports wildlife conservation
+                    and management.
+                </li>
+
+                <li>
+                    <strong>
+                        Water Resources Authority (WRA):
+                    </strong>
+                    Regulates and manages
+                    water resources within
+                    its statutory mandate.
+                </li>
+
+                <li>
+                    <strong>
+                        Kenya Meteorological Department:
+                    </strong>
+                    Provides meteorological
+                    information and services
+                    relevant to climate
+                    awareness and planning.
+                </li>
+
+                <li>
+                    <strong>
+                        County Governments:
+                    </strong>
+                    Carry out relevant county
+                    environmental, natural
+                    resource and development
+                    functions under the
+                    Constitution and applicable
+                    legislation.
+                </li>
+            </ul>
+
+            <div class="important-note">
+
+                <p>
+                    <strong>Legal guidance:</strong>
+                    This page is an educational
+                    resource, not legal advice.
+                    Environmental laws and
+                    regulations may be amended.
+                    Before undertaking projects
+                    involving protected areas,
+                    forests, water resources,
+                    waste facilities, wildlife
+                    or activities requiring
+                    environmental assessment,
+                    consult the responsible
+                    authority and check the
+                    current legal requirements.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             KENYA NATIONAL RESTORATION STRATEGY
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                NATIONAL RESTORATION PRIORITIES
+            </span>
+
+            <h2 class="section-heading">
+                Kenya's Landscape and Ecosystem Restoration Strategy
+            </h2>
+
+            <p>
+                Kenya's National Landscape and
+                Ecosystem Restoration Strategy
+                2023–2032 provides a national
+                direction for restoring degraded
+                landscapes and ecosystems.
+                It recognizes that restoration
+                approaches should respond to
+                different ecological zones
+                and land-use systems.
+            </p>
+
+            <p>
+                Relevant restoration approaches
+                include forest restoration,
+                agroforestry, restoration of
+                degraded rangelands, soil and
+                water conservation, catchment
+                protection, biodiversity
+                conservation and sustainable
+                land management.
+            </p>
+
+            <h3>Practical Relevance to Communities</h3>
+
+            <ul>
+                <li>
+                    Protect existing natural
+                    vegetation and forests.
+                </li>
+
+                <li>
+                    Restore degraded rangelands
+                    and agricultural landscapes.
+                </li>
+
+                <li>
+                    Promote suitable agroforestry
+                    systems.
+                </li>
+
+                <li>
+                    Protect water catchments
+                    and riparian areas.
+                </li>
+
+                <li>
+                    Improve soil and water
+                    conservation practices.
+                </li>
+
+                <li>
+                    Strengthen community
+                    participation in
+                    restoration activities.
+                </li>
+
+            </ul>
+
+            <p>
+                The strategy is especially
+                relevant when designing
+                conservation activities
+                that link environmental
+                restoration with agricultural
+                development and community
+                livelihoods.
+            </p>
+
+        </section>
+
+
+        <!-- ==========================================
+             UNITED NATIONS FRAMEWORKS
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                GLOBAL ENVIRONMENTAL COMMITMENTS
+            </span>
+
+            <h2 class="section-heading">
+                United Nations Environmental Conservation Frameworks
+            </h2>
+
+            <p>
+                Environmental conservation is also
+                guided by international agreements
+                and initiatives that encourage
+                countries, institutions and
+                communities to protect nature,
+                restore ecosystems and promote
+                sustainable development.
+            </p>
+
+            <h3>1. United Nations Sustainable Development Goals</h3>
+
+            <p>
+                The 2030 Agenda for Sustainable
+                Development includes goals that
+                directly relate to environmental
+                conservation.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>SDG 6 – Clean Water and Sanitation:</strong>
+                    Promotes water availability,
+                    water quality and sustainable
+                    water resource management.
+                </li>
+
+                <li>
+                    <strong>SDG 12 – Responsible
+                    Consumption and Production:</strong>
+                    Encourages efficient resource
+                    use, waste reduction and
+                    responsible production.
+                </li>
+
+                <li>
+                    <strong>SDG 13 – Climate Action:</strong>
+                    Supports climate adaptation,
+                    mitigation and resilience.
+                </li>
+
+                <li>
+                    <strong>SDG 14 – Life Below Water:</strong>
+                    Promotes the conservation
+                    and sustainable use of
+                    marine resources.
+                </li>
+
+                <li>
+                    <strong>SDG 15 – Life on Land:</strong>
+                    Supports the protection,
+                    restoration and sustainable
+                    use of terrestrial ecosystems,
+                    forests, biodiversity
+                    and land resources.
+                </li>
+            </ul>
+
+            <h3>2. United Nations Decade on Ecosystem Restoration
+                2021–2030</h3>
+
+            <p>
+                The United Nations Decade on
+                Ecosystem Restoration is a global
+                initiative to prevent, halt and
+                reverse ecosystem degradation.
+                It promotes restoration across
+                forests, grasslands, agricultural
+                lands, wetlands, rivers,
+                coastal areas and other
+                ecosystems.
+            </p>
+
+            <p>
+                Its principles support
+                community participation,
+                ecosystem protection,
+                restoration planning and
+                long-term environmental
+                sustainability.
+            </p>
+
+            <h3>3. Kunming–Montreal Global Biodiversity Framework</h3>
+
+            <p>
+                Adopted under the Convention
+                on Biological Diversity in
+                2022, this framework sets
+                global goals and targets
+                for protecting biodiversity,
+                restoring ecosystems and
+                promoting the sustainable
+                use of nature.
+            </p>
+
+            <p>
+                Its targets include conserving
+                important areas, restoring
+                degraded ecosystems, reducing
+                threats to biodiversity and
+                improving the participation
+                and benefits of communities.
+            </p>
+
+            <h3>4. United Nations Framework Convention
+                on Climate Change</h3>
+
+            <p>
+                The UNFCCC provides an
+                international framework
+                for addressing climate change.
+                It supports international
+                cooperation on mitigation,
+                adaptation, climate resilience
+                and climate-related action.
+            </p>
+
+            <h3>5. Convention on Biological Diversity</h3>
+
+            <p>
+                The Convention on Biological
+                Diversity promotes biodiversity
+                conservation, sustainable use
+                of biological resources and
+                fair and equitable sharing
+                of benefits arising from
+                genetic resources.
+            </p>
+
+        </section>
+
+
+        <!-- ==========================================
+             PRACTICAL REFERENCES
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                RESEARCH AND FIELD GUIDANCE
+            </span>
+
+            <h2 class="section-heading">
+                Practical Environmental Conservation References
+            </h2>
+
+            <p class="section-intro">
+                The following resources provide
+                technical information, research,
+                policies and practical guidance
+                for conservation work in Kenya
+                and dryland environments.
+            </p>
+
+
+            <div class="resource-list">
+
+                <a
+                    class="resource-link"
+                    href="https://nema.go.ke/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        National Environment Management Authority
+                    </strong>
+
+                    <span>
+                        Environmental legislation,
+                        regulations, guidelines,
+                        environmental assessments
+                        and conservation information.
+                    </span>
+
+                    <span class="resource-domain">
+                        nema.go.ke
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://forestry.go.ke/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        Kenya Forest Service
+                    </strong>
+
+                    <span>
+                        Forest conservation,
+                        forest management,
+                        restoration and
+                        tree-growing information.
+                    </span>
+
+                    <span class="resource-domain">
+                        forestry.go.ke
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://kefri.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        Kenya Forestry Research Institute
+                    </strong>
+
+                    <span>
+                        Forestry research,
+                        tree species information,
+                        dryland forestry and
+                        appropriate planting guidance.
+                    </span>
+
+                    <span class="resource-domain">
+                        kefri.org
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://www.kws.go.ke/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        Kenya Wildlife Service
+                    </strong>
+
+                    <span>
+                        Wildlife conservation,
+                        protected areas and
+                        wildlife management information.
+                    </span>
+
+                    <span class="resource-domain">
+                        kws.go.ke
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://www.water.go.ke/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        State Department for Water and Sanitation
+                    </strong>
+
+                    <span>
+                        National water policy,
+                        water sector information
+                        and water resource initiatives.
+                    </span>
+
+                    <span class="resource-domain">
+                        water.go.ke
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://wra.go.ke/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        Water Resources Authority
+                    </strong>
+
+                    <span>
+                        Water resource management,
+                        regulation and relevant
+                        authorization information.
+                    </span>
+
+                    <span class="resource-domain">
+                        wra.go.ke
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://www.kalro.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        Kenya Agricultural and Livestock
+                        Research Organization
+                    </strong>
+
+                    <span>
+                        Agricultural research,
+                        sustainable farming,
+                        land management and
+                        livestock-related information.
+                    </span>
+
+                    <span class="resource-domain">
+                        kalro.org
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://www.fao.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        Food and Agriculture Organization
+                    </strong>
+
+                    <span>
+                        Sustainable land management,
+                        forestry, biodiversity,
+                        agriculture and dryland
+                        conservation resources.
+                    </span>
+
+                    <span class="resource-domain">
+                        fao.org
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://www.fao.org/family-farming/detail/en/c/1757893/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        Sustainable Land Management
+                        for Drylands Manual (2025)
+                    </strong>
+
+                    <span>
+                        Practical dryland guidance
+                        for agroforestry, soil and
+                        water conservation,
+                        rangeland restoration and
+                        integrated land management.
+                    </span>
+
+                    <span class="resource-domain">
+                        FAO / Vi Agroforestry
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://forestry.go.ke/sites/default/files/2026-02/National%20Landscape%20And%20Ecosystem%20Restoration%20Strategy%20%202023-2032%20-%20FINAL_0.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        Kenya National Landscape and
+                        Ecosystem Restoration Strategy
+                        2023–2032
+                    </strong>
+
+                    <span>
+                        National restoration priorities,
+                        landscape rehabilitation,
+                        agroforestry and sustainable
+                        land management approaches.
+                    </span>
+
+                    <span class="resource-domain">
+                        Government of Kenya
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://kcckp.go.ke/documents"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        Kenya Climate Change Knowledge Portal
+                    </strong>
+
+                    <span>
+                        Climate policies, national
+                        reports, frameworks and
+                        climate-related information
+                        for Kenya.
+                    </span>
+
+                    <span class="resource-domain">
+                        kcckp.go.ke
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://environment.go.ke/institutions"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        State Department for Environment
+                        and Climate Change
+                    </strong>
+
+                    <span>
+                        Environmental institutions,
+                        mandates and national
+                        environmental governance.
+                    </span>
+
+                    <span class="resource-domain">
+                        environment.go.ke
+                    </span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             UNITED NATIONS REFERENCES
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                UNITED NATIONS AND INTERNATIONAL RESOURCES
+            </span>
+
+            <h2 class="section-heading">
+                Global Conservation and Sustainability Resources
+            </h2>
+
+            <p class="section-intro">
+                These international resources provide
+                additional scientific, policy and
+                practical information for environmental
+                conservation and sustainable development.
+            </p>
+
+            <div class="resource-list">
+
+                <a
+                    class="resource-link"
+                    href="https://www.unep.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        United Nations Environment Programme (UNEP)
+                    </strong>
+
+                    <span>
+                        Global environmental assessments,
+                        nature conservation, pollution
+                        prevention, climate action
+                        and ecosystem restoration.
+                    </span>
+
+                    <span class="resource-domain">
+                        unep.org
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://www.un.org/sustainabledevelopment/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        United Nations Sustainable Development Goals
+                    </strong>
+
+                    <span>
+                        The 2030 Agenda and the
+                        international goals for
+                        sustainable development.
+                    </span>
+
+                    <span class="resource-domain">
+                        un.org
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://www.unesco.org/en/ecosystems-restoration-decade"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        UN Decade on Ecosystem Restoration
+                        2021–2030
+                    </strong>
+
+                    <span>
+                        International restoration
+                        principles and ecosystem
+                        protection initiatives.
+                    </span>
+
+                    <span class="resource-domain">
+                        unesco.org
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://www.cbd.int/restoration"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        Convention on Biological Diversity:
+                        Ecosystem Restoration
+                    </strong>
+
+                    <span>
+                        Global biodiversity restoration
+                        targets and guidance under
+                        the Kunming–Montreal framework.
+                    </span>
+
+                    <span class="resource-domain">
+                        cbd.int
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://www.unep.org/en/publications/report/kunming-montreal-global-biodiversity-framework"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        Kunming–Montreal Global Biodiversity Framework
+                    </strong>
+
+                    <span>
+                        Global goals and targets
+                        for biodiversity protection,
+                        ecosystem restoration and
+                        sustainable use of nature.
+                    </span>
+
+                    <span class="resource-domain">
+                        unep.org
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://www.fao.org/biodiversity/kunming-montreal-global-biodiversity-framework/en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        FAO: Global Biodiversity Framework
+                    </strong>
+
+                    <span>
+                        Biodiversity and sustainable
+                        agriculture resources
+                        linked to global
+                        conservation targets.
+                    </span>
+
+                    <span class="resource-domain">
+                        fao.org
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://www.un.org/en/climatechange"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        United Nations Climate Action
+                    </strong>
+
+                    <span>
+                        Climate science, adaptation,
+                        mitigation and international
+                        climate action information.
+                    </span>
+
+                    <span class="resource-domain">
+                        un.org
+                    </span>
+                </a>
+
+
+                <a
+                    class="resource-link"
+                    href="https://www.unccd.int/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <strong>
+                        United Nations Convention to
+                        Combat Desertification
+                    </strong>
+
+                    <span>
+                        Land degradation, drought
+                        resilience, desertification
+                        and sustainable land
+                        management information.
+                    </span>
+
+                    <span class="resource-domain">
+                        unccd.int
+                    </span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             GOREALE COMMITMENT
+        ========================================== -->
+
+        <section class="content-section">
+
+            <span class="section-label">
+                OUR COMMITMENT
+            </span>
+
+            <h2 class="section-heading">
+                GOREALE's Role in Environmental Conservation
+            </h2>
+
+            <p>
+                GOREALE Agricultural Innovators
+                recognizes environmental conservation
+                as an important foundation for
+                sustainable agriculture, community
+                development and resilient livelihoods.
+            </p>
+
+            <p>
+                Through environmental education,
+                community engagement, agricultural
+                innovation and appropriate
+                conservation initiatives, GOREALE
+                seeks to encourage responsible
+                management of natural resources
+                and greater awareness of
+                environmental challenges.
+            </p>
+
+            <p>
+                Our interests include promoting
+                indigenous tree conservation,
+                suitable agroforestry, sustainable
+                land management, soil and water
+                conservation, responsible waste
+                management, biodiversity protection
+                and the restoration of degraded
+                landscapes.
+            </p>
+
+            <p>
+                We also recognize the importance
+                of collaboration with communities,
+                government institutions, research
+                organizations, development partners
+                and other stakeholders in
+                advancing effective and
+                sustainable environmental action.
+            </p>
+
+            <p>
+                Our long-term vision is to
+                contribute to healthier ecosystems,
+                more sustainable agricultural
+                practices, environmentally
+                responsible communities and
+                improved opportunities for
+                present and future generations.
+            </p>
+
+        </section>
+
+
+        <!-- ==========================================
+             CALL TO ACTION
+        ========================================== -->
+
+        <section class="environment-cta">
+
+            <h2>
+                Protecting Our Environment Is
+                Everyone's Responsibility
+            </h2>
+
+            <p>
+                Sustainable environmental conservation
+                begins with informed decisions,
+                responsible resource use and
+                meaningful community participation.
+                Join GOREALE in supporting
+                environmental awareness,
+                ecosystem restoration and
+                sustainable agricultural
+                development.
+            </p>
+
+            <a href="collaboration.html" class="cta-link">
+                Collaborate With Us
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="environment-footer">
+
+        <h2>GOREALE Agricultural Innovators</h2>
+
+        <p>
+            Cultivating Innovation. Growing Sustainable Futures.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="collaboration.html">Collaborate With Us</a>
+
+            <a href="donation.html">Support Our Initiatives</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 GOREALE Agricultural Innovators.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>

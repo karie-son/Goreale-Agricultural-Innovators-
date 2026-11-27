@@ -1,0 +1,1240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#174D2A">
+    <meta name="description" content="Discover how GOREALE Agricultural Innovators promotes community participation, inclusive development, agricultural skills, youth empowerment and sustainable livelihoods in Goreale Ward, Garissa County, Kenya.">
+
+    <title>Community Development & Participation | GOREALE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+
+/* ==========================================
+   1. ROOT VARIABLES
+========================================== */
+
+:root {
+    --forest-green: #174D2A;
+    --deep-green: #10391F;
+    --warm-ivory: #F5F0E6;
+    --charcoal: #303632;
+    --earth-brown: #8B572A;
+    --harvest-gold: #FFD166;
+    --border: #E6DDCC;
+    --white: #FFFFFF;
+
+    --page-width: 1100px;
+}
+
+
+/* ==========================================
+   2. GLOBAL RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--warm-ivory);
+    color: var(--charcoal);
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 86%;
+    max-width: var(--page-width);
+    margin: auto;
+}
+
+
+/* ==========================================
+   3. WEBSITE HEADER
+========================================== */
+
+.community-header {
+    background: var(--forest-green);
+    color: var(--white);
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.community-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.community-brand img {
+    width: clamp(65px, 9vw, 100px);
+    height: auto;
+    object-fit: contain;
+}
+
+.brand-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-label strong {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.brand-label span {
+    font-size: 9px;
+    color: #E3EBDD;
+}
+
+.community-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.community-nav a {
+    color: var(--white);
+    font-size: 10px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.community-nav a:hover {
+    color: var(--harvest-gold);
+}
+
+
+/* ==========================================
+   4. PAGE HERO
+========================================== */
+
+.community-hero {
+    background:
+        linear-gradient(
+            rgba(16, 57, 31, 0.86),
+            rgba(16, 57, 31, 0.91)
+        ),
+        url("images/community-development.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    min-height: 390px;
+    padding: 75px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: var(--white);
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 780px;
+}
+
+.hero-label {
+    display: inline-block;
+    color: var(--harvest-gold);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 17px;
+}
+
+.community-hero h1 {
+    font-size: clamp(27px, 4vw, 43px);
+    line-height: 1.35;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.community-hero p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 12px;
+    color: #F1F3EC;
+}
+
+
+/* ==========================================
+   5. GENERAL SECTION STYLING
+========================================== */
+
+section {
+    padding: 65px 0;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.section-label {
+    display: block;
+    color: var(--earth-brown);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    color: var(--forest-green);
+    font-size: clamp(21px, 3vw, 29px);
+    line-height: 1.5;
+    margin-bottom: 13px;
+}
+
+.section-heading p {
+    font-size: 12px;
+    color: #555D56;
+}
+
+
+/* ==========================================
+   6. COMMUNITY INTRODUCTION
+========================================== */
+
+.community-intro {
+    background: var(--warm-ivory);
+}
+
+.intro-content {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.intro-text p {
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.intro-image {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.intro-highlight {
+    border-left: 4px solid var(--harvest-gold);
+    padding: 13px 18px;
+    margin-top: 20px;
+    background: #EEE9DC;
+    color: var(--forest-green);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   7. COMMUNITY PARTICIPATION
+========================================== */
+
+.participation-section {
+    background: #EEE9DC;
+}
+
+.participation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.participation-card {
+    background: var(--warm-ivory);
+    padding: 25px 22px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.participation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.07);
+}
+
+.card-number {
+    color: var(--earth-brown);
+    font-size: 11px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.participation-card h3 {
+    color: var(--forest-green);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.participation-card p {
+    font-size: 11px;
+    color: #555D56;
+}
+
+
+/* ==========================================
+   8. INCLUSIVE COMMUNITY DEVELOPMENT
+========================================== */
+
+.inclusive-section {
+    background: var(--ivory);
+}
+
+.inclusive-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.inclusive-item {
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background: var(--ivory);
+}
+
+.inclusive-item h3 {
+    color: var(--forest-green);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.inclusive-item p {
+    font-size: 11px;
+}
+
+
+/* ==========================================
+   9. CAPACITY BUILDING AND SKILLS
+========================================== */
+
+.capacity-section {
+    background: #EEE9DC;
+}
+
+.capacity-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.capacity-card {
+    background: var(--warm-ivory);
+    border-bottom: 3px solid var(--forest-green);
+    padding: 25px 20px;
+    border-radius: 4px;
+}
+
+.capacity-card h3 {
+    font-size: 13px;
+    color: var(--forest-green);
+    margin-bottom: 10px;
+}
+
+.capacity-card p {
+    font-size: 11px;
+}
+
+
+/* ==========================================
+   10. COMMUNITY DEVELOPMENT PRIORITIES
+========================================== */
+
+.priorities-section {
+    background: var(--warm-ivory);
+}
+
+.priority-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 35px;
+}
+
+.priority-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.priority-mark {
+    color: var(--earth-brown);
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.priority-item h3 {
+    font-size: 12px;
+    color: var(--forest-green);
+    margin-bottom: 4px;
+}
+
+.priority-item p {
+    font-size: 10px;
+}
+
+
+/* ==========================================
+   11. COMMUNITY COLLABORATION CTA
+========================================== */
+
+.community-cta {
+    background: var(--deep-green);
+    color: var(--white);
+    padding: 65px 7%;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 760px;
+    margin: auto;
+}
+
+.cta-label {
+    display: block;
+    color: var(--harvest-gold);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 13px;
+}
+
+.cta-content h2 {
+    font-size: clamp(22px, 3vw, 30px);
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-size: 11px;
+    color: #E0E9DF;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--harvest-gold);
+    color: var(--deep-green);
+    padding: 12px 25px;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 3px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: var(--white);
+}
+
+
+/* ==========================================
+   12. WEBSITE FOOTER
+========================================== */
+
+.about-footer {
+    background: var(--forest-green);
+    color: var(--white);
+    text-align: center;
+    padding: 28px 7%;
+    font-size: 10px;
+    line-height: 2;
+}
+
+.about-footer strong {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.footer-tagline {
+    color: var(--harvest-gold);
+    font-size: 10px;
+    margin-top: 8px;
+}
+
+
+/* ==========================================
+   13. RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 800px) {
+
+    .community-header {
+        justify-content: center;
+    }
+
+    .community-nav {
+        justify-content: center;
+    }
+
+    .intro-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .participation-grid,
+    .capacity-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .container {
+        width: 88%;
+    }
+
+    .community-header {
+        padding: 15px 5%;
+    }
+
+    .community-nav {
+        gap: 12px;
+    }
+
+    .community-nav a {
+        font-size: 9px;
+    }
+
+    .community-hero {
+        min-height: 330px;
+        padding: 55px 6%;
+    }
+
+    section {
+        padding: 48px 0;
+    }
+
+    .participation-grid,
+    .capacity-grid,
+    .inclusive-content,
+    .priority-list {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-image {
+        height: 230px;
+    }
+
+    .community-cta {
+        padding: 50px 6%;
+    }
+
+}
+    </style>
+
+</head>
+
+<body>
+
+
+<!-- ==========================================
+     1. WEBSITE HEADER
+========================================== -->
+
+<header class="community-header">
+
+    <div class="community-brand">
+
+        <a href="index.html">
+            <img src="goreale-logo.png"
+                 alt="GOREALE Agricultural Innovators Logo">
+        </a>
+
+        <div class="brand-label">
+
+            <strong>GOREALE AGRICULTURAL INNOVATORS</strong>
+
+            <span>Community Development & Participation</span>
+
+        </div>
+
+    </div>
+
+
+    <nav class="community-nav">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="agriculture.html">Agriculture</a>
+
+        <a href="community-development.html">Community</a>
+
+        <a href="weather.html">Weather</a>
+
+    </nav>
+
+</header>
+
+
+<!-- ==========================================
+     2. COMMUNITY HERO
+========================================== -->
+
+<section class="community-hero">
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            PEOPLE • PARTICIPATION • PROGRESS
+        </span>
+
+        <h1>
+            Building Stronger Communities Through Participation and Innovation
+        </h1>
+
+        <p>
+            Empowering communities through inclusive participation,
+            agricultural knowledge, practical skills, environmental
+            responsibility and collective action for sustainable
+            livelihoods.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     3. COMMUNITY INTRODUCTION
+========================================== -->
+
+<section class="community-intro">
+
+    <div class="container">
+
+        <div class="intro-content">
+
+            <div class="intro-text">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        OUR COMMUNITY COMMITMENT
+                    </span>
+
+                    <h2>
+                        Development Begins With People
+                    </h2>
+
+                </div>
+
+                <p>
+                    GOREALE Agricultural Innovators believes that
+                    sustainable development begins with active
+                    community participation, shared responsibility
+                    and locally driven solutions.
+                </p>
+
+                <p>
+                    Our approach places communities at the centre
+                    of development processes, recognising their
+                    knowledge, experiences, abilities and potential
+                    to contribute towards positive change.
+                </p>
+
+                <p>
+                    Through agricultural innovation, environmental
+                    conservation, skills development and community
+                    engagement, we seek to strengthen local capacity
+                    and encourage sustainable livelihoods.
+                </p>
+
+                <div class="intro-highlight">
+
+                    We believe that lasting community progress
+                    is achieved when people participate, contribute
+                    and take ownership of their development.
+
+                </div>
+
+            </div>
+
+
+            <div class="intro-visual">
+
+                <img
+                    src="images/community-participation.jpg"
+                    alt="Community members participating in local development activities"
+                    class="intro-image">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     4. COMMUNITY PARTICIPATION
+========================================== -->
+
+<section class="participation-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                PARTICIPATORY DEVELOPMENT
+            </span>
+
+            <h2>
+                Encouraging Active Community Participation
+            </h2>
+
+            <p>
+                We encourage community members to contribute
+                ideas, identify challenges, share knowledge and
+                participate in initiatives that respond to local
+                development priorities.
+            </p>
+
+        </div>
+
+
+        <div class="participation-grid">
+
+            <article class="participation-card">
+
+                <div class="card-number">01</div>
+
+                <h3>Community Engagement</h3>
+
+                <p>
+                    Encouraging dialogue, consultations and
+                    community discussions to understand local
+                    needs, priorities and development opportunities.
+                </p>
+
+            </article>
+
+
+            <article class="participation-card">
+
+                <div class="card-number">02</div>
+
+                <h3>Local Participation</h3>
+
+                <p>
+                    Promoting the involvement of community members
+                    in planning, implementing and evaluating
+                    development activities.
+                </p>
+
+            </article>
+
+
+            <article class="participation-card">
+
+                <div class="card-number">03</div>
+
+                <h3>Collective Action</h3>
+
+                <p>
+                    Encouraging cooperation, volunteerism and
+                    shared responsibility in addressing community
+                    challenges and opportunities.
+                </p>
+
+            </article>
+
+
+            <article class="participation-card">
+
+                <div class="card-number">04</div>
+
+                <h3>Local Knowledge Sharing</h3>
+
+                <p>
+                    Recognising indigenous knowledge, practical
+                    experiences and local innovations as valuable
+                    resources for sustainable development.
+                </p>
+
+            </article>
+
+
+            <article class="participation-card">
+
+                <div class="card-number">05</div>
+
+                <h3>Community Leadership</h3>
+
+                <p>
+                    Supporting community initiative, leadership,
+                    accountability and ownership of locally
+                    driven development processes.
+                </p>
+
+            </article>
+
+
+            <article class="participation-card">
+
+                <div class="card-number">06</div>
+
+                <h3>Shared Responsibility</h3>
+
+                <p>
+                    Promoting responsible participation in
+                    protecting natural resources and strengthening
+                    community wellbeing.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     5. INCLUSIVE DEVELOPMENT
+========================================== -->
+
+<section class="inclusive-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                INCLUSION AND EQUAL PARTICIPATION
+            </span>
+
+            <h2>
+                Creating Opportunities for Everyone
+            </h2>
+
+            <p>
+                Sustainable development requires the participation
+                and contribution of different groups within society.
+                We value inclusive approaches that recognise
+                everyone's potential.
+            </p>
+
+        </div>
+
+
+        <div class="inclusive-content">
+
+            <article class="inclusive-item">
+
+                <h3>Youth Empowerment</h3>
+
+                <p>
+                    Encouraging young people to participate in
+                    agriculture, innovation, environmental
+                    conservation, entrepreneurship and community
+                    leadership.
+                </p>
+
+            </article>
+
+
+            <article class="inclusive-item">
+
+                <h3>Women's Participation</h3>
+
+                <p>
+                    Promoting women's involvement in agricultural
+                    development, skills acquisition, decision-making
+                    and community-based initiatives.
+                </p>
+
+            </article>
+
+
+            <article class="inclusive-item">
+
+                <h3>Family and Household Participation</h3>
+
+                <p>
+                    Encouraging households to contribute towards
+                    sustainable food production, improved livelihoods,
+                    environmental responsibility and community wellbeing.
+                </p>
+
+            </article>
+
+
+            <article class="inclusive-item">
+
+                <h3>Inclusive Community Engagement</h3>
+
+                <p>
+                    Encouraging participation across different
+                    backgrounds, abilities and experiences while
+                    promoting dignity, respect and cooperation.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     6. CAPACITY BUILDING AND SKILLS
+========================================== -->
+
+<section class="capacity-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                KNOWLEDGE • SKILLS • OPPORTUNITIES
+            </span>
+
+            <h2>
+                Strengthening Community Capacity
+            </h2>
+
+            <p>
+                We recognise that knowledge and practical skills
+                are important foundations for resilient communities
+                and sustainable economic opportunities.
+            </p>
+
+        </div>
+
+
+        <div class="capacity-grid">
+
+            <article class="capacity-card">
+
+                <h3>Agricultural Skills Development</h3>
+
+                <p>
+                    Promoting practical agricultural knowledge,
+                    climate-smart farming, sustainable crop
+                    production and improved livestock management.
+                </p>
+
+            </article>
+
+
+            <article class="capacity-card">
+
+                <h3>Environmental Education</h3>
+
+                <p>
+                    Encouraging awareness and participation in
+                    afforestation, agroforestry, soil conservation
+                    and sustainable natural resource management.
+                </p>
+
+            </article>
+
+
+            <article class="capacity-card">
+
+                <h3>Entrepreneurship and Agribusiness</h3>
+
+                <p>
+                    Promoting agricultural enterprise, innovation,
+                    value addition and opportunities for sustainable
+                    income generation.
+                </p>
+
+            </article>
+
+
+            <article class="capacity-card">
+
+                <h3>Technology and Innovation</h3>
+
+                <p>
+                    Encouraging access to relevant agricultural
+                    technologies, digital knowledge and innovative
+                    approaches to local challenges.
+                </p>
+
+            </article>
+
+
+            <article class="capacity-card">
+
+                <h3>Knowledge Exchange</h3>
+
+                <p>
+                    Facilitating the sharing of experiences,
+                    practical learning and useful information
+                    among community members.
+                </p>
+
+            </article>
+
+
+            <article class="capacity-card">
+
+                <h3>Community Awareness</h3>
+
+                <p>
+                    Promoting awareness of sustainable development,
+                    food security, environmental protection and
+                    responsible community participation.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     7. COMMUNITY DEVELOPMENT PRIORITIES
+========================================== -->
+
+<section class="priorities-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                OUR DEVELOPMENT PRIORITIES
+            </span>
+
+            <h2>
+                Working Towards Sustainable Community Progress
+            </h2>
+
+            <p>
+                Our community development approach is connected
+                to practical priorities that support local resilience,
+                livelihoods and long-term sustainability.
+            </p>
+
+        </div>
+
+
+        <div class="priority-list">
+
+            <div class="priority-item">
+
+                <span class="priority-mark">01</span>
+
+                <div>
+
+                    <h3>Food Security and Nutrition</h3>
+
+                    <p>
+                        Supporting sustainable food production
+                        and improved household food security.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="priority-item">
+
+                <span class="priority-mark">02</span>
+
+                <div>
+
+                    <h3>Climate Resilience</h3>
+
+                    <p>
+                        Encouraging adaptation to climate challenges
+                        through appropriate local solutions.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="priority-item">
+
+                <span class="priority-mark">03</span>
+
+                <div>
+
+                    <h3>Environmental Conservation</h3>
+
+                    <p>
+                        Promoting tree growing, agroforestry,
+                        land restoration and natural resource protection.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="priority-item">
+
+                <span class="priority-mark">04</span>
+
+                <div>
+
+                    <h3>Sustainable Livelihoods</h3>
+
+                    <p>
+                        Encouraging productive activities,
+                        agricultural enterprise and economic resilience.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="priority-item">
+
+                <span class="priority-mark">05</span>
+
+                <div>
+
+                    <h3>Community Cooperation</h3>
+
+                    <p>
+                        Strengthening collaboration, mutual support
+                        and collective responsibility.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="priority-item">
+
+                <span class="priority-mark">06</span>
+
+                <div>
+
+                    <h3>Local Innovation</h3>
+
+                    <p>
+                        Encouraging locally appropriate ideas,
+                        solutions and knowledge-driven development.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     8. COMMUNITY COLLABORATION CTA
+========================================== -->
+
+<section class="community-cta">
+
+    <div class="cta-content">
+
+        <span class="cta-label">
+            PARTICIPATE • CONTRIBUTE • COLLABORATE
+        </span>
+
+        <h2>
+            Be Part of Building a Stronger Community
+        </h2>
+
+        <p>
+            GOREALE Agricultural Innovators welcomes individuals,
+            community groups, institutions, organisations and
+            development partners interested in supporting
+            community participation, agricultural innovation
+            and sustainable development.
+        </p>
+
+        <a href="collaboration.html"
+           class="cta-button">
+
+            Collaborate With Us
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     9. WEBSITE FOOTER
+========================================== -->
+
+<footer class="about-footer">
+
+    <strong>
+        GOREALE Agricultural Innovators
+    </strong>
+
+    Goreale Ward · Lagdera Constituency ·
+    Garissa County · Kenya
+
+    <div class="footer-tagline">
+        Cultivating Innovation. Growing Sustainable Futures.
+    </div>
+
+</footer>
+
+
+</body>
+</html>
