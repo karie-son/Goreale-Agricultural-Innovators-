@@ -1,0 +1,859 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#174D2A">
+    <meta name="description" content="Support GOREALE Agricultural Innovators through financial contributions towards sustainable agriculture, agricultural innovation and community development.">
+
+    <title>Support Our Initiatives | GOREALE Agricultural Innovators</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        :root {
+            --forest-green: #174D2A;
+            --deep-green: #10391F;
+            --earth-brown: #8B572A;
+            --harvest-gold: #FFD166;
+            --sage-green: #A8B88A;
+            --warm-ivory: #F5F0E6;
+            --charcoal: #303632;
+            --muted: #68736A;
+            --border: #E6DDCC;
+            --white: #FFFFFF;
+            --soft-green: #EAF0E7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            background: var(--warm-ivory);
+            color: var(--charcoal);
+            font-size: 0.78rem;
+            line-height: 1.8;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+        }
+
+        /* HEADER */
+
+        .donation-header {
+            width: 100%;
+            padding: 1rem 7%;
+            background: var(--forest-green);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .brand img {
+            display: block;
+            width: clamp(110px, 15vw, 165px);
+            height: auto;
+        }
+
+        .back-home {
+            color: var(--white);
+            font-size: 0.7rem;
+            font-weight: 600;
+            border: 1px solid rgba(255,255,255,0.45);
+            padding: 0.55rem 1rem;
+            border-radius: 3px;
+            transition: 0.3s ease;
+        }
+
+        .back-home:hover {
+            background: var(--white);
+            color: var(--forest-green);
+        }
+
+        /* PAGE INTRODUCTION */
+
+        .donation-intro {
+            padding: 4rem 7% 2.5rem;
+            text-align: center;
+        }
+
+        .section-label {
+            display: inline-block;
+            color: var(--earth-brown);
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 0.8rem;
+        }
+
+        .donation-intro h1 {
+            color: var(--forest-green);
+            font-size: clamp(1.6rem, 4vw, 2.5rem);
+            font-weight: 700;
+            line-height: 1.35;
+            margin-bottom: 1rem;
+        }
+
+        .donation-intro p {
+            max-width: 720px;
+            margin: 0 auto;
+            color: var(--muted);
+            font-size: 0.76rem;
+            line-height: 2;
+        }
+
+        /* MAIN CONTENT */
+
+        .donation-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1.2rem 4rem;
+        }
+
+        .donation-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: clamp(1.2rem, 4vw, 2.5rem);
+            box-shadow: 0 8px 30px rgba(48,54,50,0.04);
+        }
+
+        /* INFORMATION NOTICE */
+
+        .donation-notice {
+            background: var(--soft-green);
+            border-left: 3px solid var(--forest-green);
+            padding: 1rem 1.2rem;
+            margin-bottom: 2rem;
+            border-radius: 3px;
+        }
+
+        .donation-notice h2 {
+            color: var(--forest-green);
+            font-size: 0.8rem;
+            margin-bottom: 0.35rem;
+        }
+
+        .donation-notice p {
+            color: var(--charcoal);
+            font-size: 0.7rem;
+            line-height: 1.8;
+        }
+
+        /* PAYMENT DETAILS */
+
+        .payment-details {
+            margin-bottom: 2.2rem;
+        }
+
+        .payment-details h2 {
+            color: var(--forest-green);
+            font-size: 1rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .payment-details > p {
+            color: var(--muted);
+            font-size: 0.7rem;
+            margin-bottom: 1rem;
+        }
+
+        .payment-method-card {
+            padding: 1.2rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            margin-bottom: 0.8rem;
+            background: var(--warm-ivory);
+        }
+
+        .payment-method-card h3 {
+            color: var(--forest-green);
+            font-size: 0.78rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .payment-method-card p {
+            color: var(--muted);
+            font-size: 0.69rem;
+            line-height: 1.8;
+        }
+
+        /* FORM SECTIONS */
+
+        .form-section {
+            margin-bottom: 2rem;
+        }
+
+        .form-section h2 {
+            color: var(--forest-green);
+            font-size: 0.95rem;
+            padding-bottom: 0.7rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.1rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            color: var(--charcoal);
+            font-size: 0.69rem;
+            font-weight: 600;
+        }
+
+        .required {
+            color: #A33B32;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem 0.85rem;
+            border: 1px solid var(--border);
+            border-radius: 3px;
+            outline: none;
+            background: var(--white);
+            color: var(--charcoal);
+            font-size: 0.72rem;
+            transition: border-color 0.2s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--forest-green);
+        }
+
+        .form-group textarea {
+            min-height: 115px;
+            resize: vertical;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #969C96;
+        }
+
+        .field-hint {
+            color: var(--muted);
+            font-size: 0.62rem;
+        }
+
+        /* AMOUNT */
+
+        .amount-wrapper {
+            position: relative;
+        }
+
+        .amount-wrapper span {
+            position: absolute;
+            left: 0.85rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--forest-green);
+            font-weight: 700;
+            font-size: 0.72rem;
+        }
+
+        .amount-wrapper input {
+            padding-left: 3.2rem;
+        }
+
+        /* PAYMENT REFERENCE */
+
+        .reference-group {
+            margin-top: 1.1rem;
+        }
+
+        /* DECLARATION */
+
+        .declaration {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.7rem;
+            margin-bottom: 1.5rem;
+            color: var(--muted);
+            font-size: 0.68rem;
+        }
+
+        .declaration input {
+            margin-top: 0.3rem;
+            accent-color: var(--forest-green);
+            flex-shrink: 0;
+        }
+
+        /* SUBMIT BUTTON */
+
+        .submit-button {
+            width: 100%;
+            padding: 0.95rem 1.2rem;
+            border: none;
+            border-radius: 3px;
+            background: var(--forest-green);
+            color: var(--white);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background: var(--deep-green);
+        }
+
+        /* SUCCESS NOTICE */
+
+        .form-notice[hidden] {
+            display: none;
+        }
+
+        .form-notice:not([hidden]) {
+            display: block;
+            margin-top: 1.3rem;
+            padding: 1rem;
+            background: var(--soft-green);
+            color: var(--forest-green);
+            border-left: 3px solid var(--forest-green);
+            border-radius: 3px;
+            font-size: 0.7rem;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        /* FOOTER */
+
+        .donation-footer {
+            background: var(--deep-green);
+            color: var(--white);
+            padding: 2rem 7%;
+            text-align: center;
+        }
+
+        .donation-footer h2 {
+            font-size: 0.95rem;
+            margin-bottom: 0.35rem;
+        }
+
+        .donation-footer p {
+            color: rgba(255,255,255,0.75);
+            font-size: 0.67rem;
+        }
+
+        .copyright {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.15);
+            font-size: 0.62rem !important;
+        }
+
+        /* RESPONSIVE DESIGN */
+
+        @media (max-width: 700px) {
+
+            .donation-header {
+                padding: 1rem 5%;
+            }
+
+            .donation-intro {
+                padding: 3rem 5% 2rem;
+            }
+
+            .donation-container {
+                padding: 0 1rem 3rem;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-group.full-width {
+                grid-column: auto;
+            }
+
+            .donation-intro h1 {
+                font-size: 1.65rem;
+            }
+
+            .back-home {
+                font-size: 0.62rem;
+                padding: 0.45rem 0.7rem;
+            }
+
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.01ms !important;
+            }
+
+        }
+/* DONATION FORM */
+
+.donation-form-section {
+  width: 92%;
+  max-width: 850px;
+  margin: 25px auto 45px;
+  padding: 15px 0;
+}
+
+.donation-form-section h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form-intro {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 30px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.donation-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: var(--black);
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.form-group label .required {
+  color: var(--burgundy);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  background: var(--white);
+  color: var(--black);
+  border: 1px solid #dedbd7;
+  border-radius: 3px;
+  padding: 12px 13px;
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+  transition: border .3s, box-shadow .3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--dark-peach);
+  box-shadow: 0 0 0 2px rgba(196,125,97,.12);
+}
+
+.form-group textarea {
+  min-height: 95px;
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999999;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+/* FORM DIVIDERS */
+
+.form-subheading {
+  color: var(--burgundy);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 28px 0 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(128,0,32,.15);
+}
+
+/* DONATION AMOUNT */
+
+.amount-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.amount-option {
+  background: var(--white);
+  border: 1px solid #dedbd7;
+  color: var(--black);
+  border-radius: 3px;
+  padding: 9px 17px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: .3s;
+}
+
+.amount-option:hover,
+.amount-option.selected {
+  background: var(--burgundy);
+  color: var(--white);
+  border-color: var(--burgundy);
+}
+
+/* PAYMENT METHOD DETAILS PANEL */
+
+.payment-info {
+  display: none;
+  margin: 16px 0 22px;
+  padding: 20px 22px;
+  border: 1px solid rgba(128, 0, 32, .12);
+  border-left: 4px solid var(--dark-peach);
+  border-radius: 6px;
+  background: #fbf7f3;
+  color: #454545;
+  font-weight: 400;
+  box-shadow: 0 4px 14px rgba(48, 54, 50, .04);
+}
+
+.payment-info.active {
+  display: block;
+  animation: paymentPanelIn .22s ease-out;
+}
+
+.payment-info h3 {
+  color: var(--burgundy);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 13px;
+}
+
+.payment-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.payment-details-table tr {
+  border-bottom: 1px solid rgba(128, 0, 32, .09);
+}
+
+.payment-details-table tr:last-child {
+  border-bottom: 0;
+}
+
+.payment-details-table th,
+.payment-details-table td {
+  padding: 9px 10px;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+  font-weight: 400;
+}
+
+.payment-details-table th {
+  width: 34%;
+  color: var(--burgundy);
+  font-weight: 650;
+}
+
+.payment-details-table td {
+  color: #514d49;
+}
+
+@media (max-width: 520px) {
+  .payment-info {
+    padding: 15px 13px;
+  }
+
+  .payment-details-table th,
+  .payment-details-table td {
+    padding: 8px 6px;
+    font-size: 11px;
+  }
+
+  .payment-details-table th {
+    width: 36%;
+  }
+}
+
+@keyframes paymentPanelIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-info {
+    padding: 16px;
+  }
+}
+
+/* LEGAL CONSENT */
+
+.legal-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.legal-consent input {
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+  accent-color: var(--burgundy);
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.legal-consent label {
+  color: var(--black);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.legal-consent a {
+  color: var(--burgundy);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* BUTTON */
+
+.donation-submit {
+  display: block;
+  width: fit-content;
+  min-width: 180px;
+  margin: 25px auto 0;
+  padding: 12px 25px;
+  background: var(--earth-brown);
+  color: var(--white);
+  border: none;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.donation-submit:hover {
+  background: var(--burgundy);
+  transform: translateY(-2px);
+}
+
+.donation-submit:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form-notice {
+  text-align: center;
+  color: var(--grey);
+  font-size: 11px;
+  margin-top: 13px;
+}
+
+/* CLOSING */
+
+.donate-closing {
+  text-align: center;
+  padding: 35px 15px 45px;
+}
+
+.donate-closing h2 {
+  color: var(--dark-peach);
+  font-size: 23px;
+  margin-bottom: 12px;
+}
+
+
+.donation-notice {
+    background: #fff1f1;
+    border: 1px solid #f2b8b8;
+    border-left: 5px solid #c62828;
+    border-radius: 7px;
+    padding: 22px 25px;
+    margin-bottom: 25px;
+    color: #5f2525;
+    box-shadow: 0 3px 12px rgba(160, 0, 0, 0.06);
+}
+
+.notice-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 13px;
+}
+
+.notice-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    min-width: 27px;
+    border-radius: 50%;
+    background: #c62828;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.donation-notice h2 {
+    color: #b71c1c;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.donation-notice p {
+    color: #663333;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 9px 0;
+}
+
+.donation-notice .notice-thankyou {
+    color: #a51d1d;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .donation-notice {
+        padding: 17px;
+    }
+
+    .donation-notice h2 {
+        font-size: 15px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="donation-header">
+
+        <a href="index.html" class="brand">
+            <img src="goreale-logo.png"
+                 alt="GOREALE Agricultural Innovators Logo">
+        </a>
+
+        <a href="index.html" class="back-home">
+            Back to Home
+        </a>
+
+    </header>
+
+
+    
+
+
+        
+    
+<!-- DONATION INTEGRATION NOTICE -->
+<section class="donation-container" aria-labelledby="donation-notice-title">
+    <div class="donation-card">
+        <div class="donation-notice" role="status">
+
+            <div class="notice-heading">
+                <span class="notice-icon">!</span>
+                <h2 id="donation-notice-title">
+                    Donation Notice
+                </h2>
+            </div>
+
+            <p>
+                We appreciate your time and honesty. Our online donation
+                integration is currently underway.
+            </p>
+
+            
+
+            <p class="notice-thankyou">
+                Thank you for your interest in supporting
+                GOREALE Agricultural Innovators.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+
+    
+    
+</body>
+</html>
