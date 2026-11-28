@@ -1,0 +1,2388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#174D2A">
+    <meta name="description" content="GOREALE Agricultural Innovators Weather Centre. Monitor weather conditions and seven-day forecasts across Mandera, Wajir and Garissa counties in Northeastern Kenya.">
+
+    <title>GOREALE | Agricultural Weather Centre</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<style>
+/* ==========================================
+   GOREALE AGRICULTURAL INNOVATORS
+   WEATHER CENTRE
+   RESPONSIVE DESIGN SYSTEM
+========================================== */
+
+
+/* ==========================================
+   1. GLOBAL DESIGN SYSTEM
+========================================== */
+
+:root {
+    --forest-green: #174D2A;
+    --deep-green: #10391F;
+    --earth-brown: #8B572A;
+    --harvest-gold: #FFD166;
+    --sage-green: #A8B88A;
+    --ivory: #F8F6EF;
+    --charcoal: #303632;
+    --white: #FFFFFF;
+
+    --muted: #68736A;
+    --border: #E0E5DA;
+
+    --shadow: 0 12px 35px rgba(23,77,42,0.09);
+
+    --radius: 12px;
+    --page-width: 1100px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: clip;
+}
+/* ==========================================
+   GLOBAL WIDTH AND SIDE-EDGE PROTECTION
+========================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 320px;
+}
+
+/* Keep main sections within the viewport */
+section,
+header,
+footer,
+main {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Consistent responsive horizontal spacing */
+.container,
+.weather-container {
+    width: min(100% - 32px, 1200px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobile spacing */
+@media (max-width: 600px) {
+    .container,
+    .weather-container {
+        width: calc(100% - 28px);
+    }
+}
+
+/* Prevent images and media from overflowing */
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+
+/* Prevent flex and grid children from forcing overflow */
+.row,
+.col,
+.grid,
+.weather-header,
+.hero-content {
+    min-width: 0;
+}
+body {
+    width: 100%;
+    min-width: 320px;
+    min-height: 100vh;
+
+    overflow-x: clip;
+
+    font-family: 'Montserrat', sans-serif;
+
+    background: var(--ivory);
+    color: var(--charcoal);
+
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+    outline: 3px solid var(--harvest-gold);
+    outline-offset: 3px;
+}
+
+
+/* ==========================================
+   HERO SECTION — REDUCED HEIGHT
+========================================== */
+
+.weather-hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    width: 100%;
+    min-height: clamp(380px, 55vh, 540px);
+
+    display: flex;
+    flex-direction: column;
+
+    color: var(--white);
+}
+
+/* ==========================================
+   3. AGRICULTURAL BACKGROUND SLIDES
+   WIDE VIEW / MINIMAL ZOOM
+========================================== */
+
+.agriculture-background {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+
+    overflow: hidden;
+}
+
+.agriculture-slide {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+
+    animation: agricultureFade 40s infinite;
+}
+
+
+/* WATERMELON FARM */
+
+.slide-one {
+    background-image: url("agriculture-1.jpeg");
+    animation-delay: 0s;
+}
+
+
+/* MANGO AND PAPAYA FARM */
+
+.slide-two {
+    background-image: url("agriculture-2.png");
+    animation-delay: 8s;
+}
+
+
+/* MAIZE AND SORGHUM FARM */
+
+.slide-three {
+    background-image: url("agriculture-3.jpg");
+    animation-delay: 16s;
+}
+
+
+/* AGRICULTURAL SCENE FOUR */
+
+.slide-four {
+    background-image: url("agriculture-4.jpeg");
+    animation-delay: 24s;
+}
+
+
+/* AGRICULTURAL SCENE FIVE */
+
+.slide-five {
+    background-image: url("agriculture-5.png");
+    animation-delay: 32s;
+}
+
+
+/* ==========================================
+   4. SLOW, MINIMAL ZOOM ANIMATION
+========================================== */
+
+@keyframes agricultureFade {
+
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+        transform: scale(1.01);
+    }
+
+    25% {
+        opacity: 0;
+        transform: scale(1.02);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+
+/* ==========================================
+   4. PHOTOGRAPH READABILITY OVERLAY
+========================================== */
+
+.agriculture-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background: linear-gradient(
+        115deg,
+        rgba(4, 24, 12, 0.62),
+        rgba(10, 43, 22, 0.37),
+        rgba(4, 24, 12, 0.58)
+    );
+}
+
+
+/* ==========================================
+   TRANSPARENT HEADER — SHARED HERO BACKGROUND
+========================================== */
+
+.weather-header {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 100%;
+
+    padding: 0.8rem 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    background: transparent;
+
+    border-bottom: none;
+
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.brand img {
+    display: block;
+
+    width: clamp(100px, 13vw, 155px);
+    max-width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+.header-label {
+    color: #FFFFFF;
+
+    font-size: clamp(0.62rem, 1vw, 0.78rem);
+    font-weight: 800;
+
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+
+    text-align: right;
+
+    text-shadow: 0 2px 8px rgba(0,0,0,0.95);
+}
+
+
+
+/* ==========================================
+   HERO CONTENT — COMPACT LAYOUT
+========================================== */
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+    padding: 2.5rem 5% 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-eyebrow {
+    color: var(--harvest-gold);
+
+    font-size: clamp(0.62rem, 1.1vw, 0.78rem);
+    font-weight: 800;
+
+    letter-spacing: 0.15rem;
+    line-height: 1.6;
+
+    margin-bottom: 0.8rem;
+
+    text-shadow: 0 2px 8px rgba(0,0,0,0.95);
+}
+
+.hero-content h1 {
+    color: #FFFFFF;
+
+    font-size: clamp(2rem, 5vw, 3.7rem);
+    font-weight: 900;
+
+    line-height: 1.12;
+    letter-spacing: -0.04rem;
+
+    margin-bottom: 1rem;
+
+    text-shadow:
+        0 3px 6px rgba(0,0,0,0.9),
+        0 7px 20px rgba(0,0,0,0.45);
+}
+
+.hero-content h1 span {
+    display: block;
+    color: #FFD166;
+}
+
+.hero-description {
+    width: 100%;
+    max-width: 720px;
+
+    color: #FFFFFF;
+
+    font-size: clamp(0.82rem, 1.4vw, 0.98rem);
+    font-weight: 600;
+
+    line-height: 1.7;
+
+    text-shadow: 0 2px 8px rgba(0,0,0,1);
+}
+
+.hero-locations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 0.65rem;
+
+    margin-top: 1.3rem;
+}
+
+.hero-locations span {
+    padding: 0.55rem 1rem;
+
+    border: 1px solid rgba(255,255,255,0.75);
+    border-radius: 30px;
+
+    color: #FFFFFF;
+
+    font-size: 0.67rem;
+    font-weight: 800;
+
+    letter-spacing: 0.08rem;
+
+    background: rgba(5,35,18,0.75);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+}
+
+/* ==========================================
+   7. WEATHER CONTENT CONTAINER
+========================================== */
+
+.weather-container {
+    width: min(var(--page-width), 90%);
+
+    margin: 3.5rem auto;
+}
+
+
+/* ==========================================
+   8. COUNTY SELECTION
+========================================== */
+
+.county-section {
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+
+.county-section h3 {
+    color: var(--forest-green);
+
+    font-size: 1.05rem;
+    font-weight: 800;
+
+    margin-bottom: 1.2rem;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 0.75rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.location-button,
+.refresh-button,
+.search-area button {
+    border: none;
+    border-radius: 7px;
+
+    min-height: 46px;
+
+    padding: 0.85rem 1.4rem;
+
+    color: #FFFFFF;
+
+    font-size: 0.78rem;
+    font-weight: 800;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.location-button {
+    background: var(--forest-green);
+}
+
+.location-button:hover {
+    background: var(--deep-green);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.refresh-button {
+    background: var(--earth-brown);
+}
+
+.refresh-button:hover {
+    background: #69421F;
+    transform: translateY(-2px);
+}
+
+.search-area button {
+    background: var(--earth-brown);
+}
+
+.search-area button:hover {
+    background: #69421F;
+}
+
+
+/* ==========================================
+   9. LOCATION SEARCH
+========================================== */
+
+.search-area {
+    width: 100%;
+    max-width: 700px;
+
+    display: flex;
+    gap: 0.7rem;
+
+    margin: 0 auto 1.5rem;
+}
+
+.search-area input {
+    flex: 1;
+    min-width: 0;
+    min-height: 48px;
+
+    padding: 0.9rem 1.1rem;
+
+    border: 1px solid #C9D0C3;
+    border-radius: 7px;
+
+    font-size: 0.85rem;
+
+    background: #FFFFFF;
+    color: var(--charcoal);
+
+    outline: none;
+
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.search-area input::placeholder {
+    color: #707970;
+}
+
+.search-area input:focus {
+    border-color: var(--forest-green);
+
+    box-shadow:
+        0 0 0 3px rgba(23,77,42,0.12);
+}
+
+
+/* ==========================================
+   10. STATUS MESSAGE
+========================================== */
+
+.status {
+    min-height: 25px;
+
+    margin-bottom: 1.5rem;
+
+    text-align: center;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+
+    color: var(--muted);
+
+    overflow-wrap: anywhere;
+}
+
+
+/* ==========================================
+   11. CURRENT WEATHER CARD
+========================================== */
+
+.current-weather {
+    position: relative;
+    overflow: hidden;
+
+    background: var(--forest-green);
+    color: #FFFFFF;
+
+    border-radius: var(--radius);
+
+    padding: 2.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 2rem;
+    align-items: center;
+
+    box-shadow: var(--shadow);
+}
+
+
+/* LOCATION */
+
+.location-name {
+    font-size: 1.2rem;
+    font-weight: 800;
+
+    margin-bottom: 0.5rem;
+
+    overflow-wrap: anywhere;
+}
+
+.current-date {
+    font-size: 0.78rem;
+    font-weight: 500;
+
+    color: #E3EDE1;
+}
+
+
+/* TEMPERATURE */
+
+.temperature {
+    font-size: clamp(3.5rem, 9vw, 5.5rem);
+    font-weight: 800;
+
+    line-height: 1.15;
+
+    margin: 0.7rem 0;
+}
+
+.weather-description {
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    color: #F1F4ED;
+}
+
+
+/* WEATHER ICON */
+
+.current-right {
+    text-align: center;
+}
+
+.weather-symbol {
+    font-size: 4rem;
+    line-height: 1.2;
+
+    margin-bottom: 0.8rem;
+}
+
+
+/* WEATHER DETAILS */
+
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 0.8rem;
+
+    margin-top: 1.5rem;
+}
+
+.detail {
+    min-width: 0;
+
+    background: rgba(255,255,255,0.10);
+
+    padding: 1rem;
+
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 8px;
+}
+
+.detail span {
+    display: block;
+
+    font-size: 0.68rem;
+    font-weight: 600;
+
+    color: #E3EDE1;
+
+    margin-bottom: 0.5rem;
+}
+
+.detail strong {
+    font-size: 1rem;
+    font-weight: 800;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* ==========================================
+   12. SEVEN-DAY FORECAST
+========================================== */
+
+.forecast-section {
+    margin-top: 3.5rem;
+}
+
+.forecast-heading {
+    color: var(--forest-green);
+
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    font-weight: 900;
+
+    line-height: 1.4;
+
+    margin-bottom: 0.8rem;
+}
+
+.forecast-intro {
+    color: #59645C;
+
+    font-size: 0.83rem;
+    font-weight: 500;
+
+    line-height: 1.9;
+
+    max-width: 850px;
+
+    margin-bottom: 1.7rem;
+}
+
+
+/* FORECAST GRID */
+
+.forecast-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(7, minmax(0, 1fr));
+
+    gap: 0.7rem;
+}
+
+/* FORECAST CARD */
+
+.forecast-card {
+    min-width: 0;
+
+    background: #F5F0E6;
+
+    border: 1px solid #E6DDCC;
+    border-radius: 9px;
+
+    padding: 1.1rem 0.5rem;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 15px rgba(23,77,42,0.05);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.forecast-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 22px rgba(23,77,42,0.12);
+}
+
+.forecast-day {
+    font-size: 0.7rem;
+    font-weight: 900;
+
+    color: var(--forest-green);
+}
+
+.forecast-icon {
+    font-size: 1.8rem;
+    margin: 0.8rem 0;
+}
+
+.forecast-condition {
+    font-size: 0.63rem;
+    font-weight: 600;
+
+    color: #59645C;
+
+    min-height: 32px;
+
+    line-height: 1.5;
+}
+
+.forecast-temperatures {
+    font-size: 0.75rem;
+    font-weight: 900;
+
+    margin-top: 0.7rem;
+
+    color: var(--charcoal);
+}
+
+.forecast-rain {
+    font-size: 0.65rem;
+    font-weight: 700;
+
+    color: #356B91;
+
+    margin-top: 0.6rem;
+}
+
+
+/* ==========================================
+   13. FOOTER
+========================================== */
+
+.weather-footer {
+    width: 100%;
+
+    margin-top: 4rem;
+
+    padding: 2.2rem 5%;
+
+    background: var(--deep-green);
+    color: #FFFFFF;
+
+    text-align: center;
+
+    font-size: 0.75rem;
+    font-weight: 500;
+
+    line-height: 1.9;
+}
+
+.weather-footer p:first-child {
+    font-weight: 900;
+    font-size: 0.9rem;
+
+    margin-bottom: 0.5rem;
+}
+
+.weather-footer a {
+    color: #FFD166;
+
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.weather-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   14. LARGE TABLETS
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .forecast-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .weather-container {
+        width: 92%;
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE HERO AND HEADER
+========================================== */
+
+/* TABLETS */
+
+@media (max-width: 768px) {
+
+    .weather-hero {
+        min-height: 430px;
+    }
+
+    .weather-header {
+        padding: 0.75rem 4%;
+    }
+
+    .brand img {
+        width: 120px;
+    }
+
+    .hero-content {
+        padding: 2.2rem 5% 2.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(2rem, 6vw, 3rem);
+    }
+
+}
+
+
+/* MOBILE PHONES */
+
+@media (max-width: 600px) {
+
+    .weather-hero {
+        min-height: 0;
+        min-height: 430px;
+    }
+
+    .weather-header {
+        padding: 0.7rem 4%;
+
+        gap: 0.5rem;
+        flex-wrap: nowrap;
+    }
+
+    .brand img {
+        width: clamp(90px, 25vw, 115px);
+    }
+
+    .header-label {
+        max-width: 145px;
+
+        font-size: 0.56rem;
+        letter-spacing: 0.055rem;
+        line-height: 1.5;
+    }
+
+    .hero-content {
+        padding: 2.5rem 5% 2.5rem;
+    }
+
+    .hero-eyebrow {
+        font-size: 0.58rem;
+        letter-spacing: 0.09rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(1.85rem, 7.5vw, 2.5rem);
+        line-height: 1.16;
+        margin-bottom: 0.9rem;
+    }
+
+    .hero-description {
+        font-size: 0.78rem;
+        line-height: 1.7;
+    }
+
+    .hero-locations {
+        gap: 0.45rem;
+        margin-top: 1.1rem;
+    }
+
+    .hero-locations span {
+        padding: 0.48rem 0.75rem;
+        font-size: 0.56rem;
+    }
+
+}
+
+
+/* SMALL MOBILE PHONES */
+
+@media (max-width: 380px) {
+
+    .weather-hero {
+        min-height: 410px;
+    }
+
+    .weather-header {
+        padding: 0.65rem 3%;
+    }
+
+    .brand img {
+        width: 88px;
+    }
+
+    .header-label {
+        font-size: 0.5rem;
+        letter-spacing: 0.035rem;
+    }
+
+    .hero-content {
+        padding: 2rem 4% 2.2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.85rem;
+    }
+
+    .hero-description {
+        font-size: 0.74rem;
+    }
+
+}
+
+
+/* LANDSCAPE MOBILE */
+
+@media (max-width: 768px) and (orientation: landscape) {
+
+    .weather-hero {
+        min-height: 390px;
+    }
+
+    .hero-content {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+}
+    /* WEATHER CONTAINER */
+
+    .weather-container {
+        width: 92%;
+        margin: 2.3rem auto;
+    }
+
+
+    /* COUNTY SELECTION */
+
+    .county-section {
+        margin-bottom: 1.7rem;
+    }
+
+    .county-section h3 {
+        font-size: 0.92rem;
+    }
+
+    .action-buttons {
+        gap: 0.55rem;
+    }
+
+    .location-button,
+    .refresh-button {
+        padding: 0.8rem 1rem;
+        font-size: 0.72rem;
+    }
+
+
+    /* SEARCH */
+
+    .search-area {
+        flex-direction: column;
+        gap: 0.65rem;
+    }
+
+    .search-area input,
+    .search-area button {
+        width: 100%;
+        min-height: 48px;
+    }
+
+
+    /* CURRENT WEATHER */
+
+    .current-weather {
+        grid-template-columns: minmax(0, 1fr);
+
+        padding: 1.5rem 1.1rem;
+
+        gap: 1.3rem;
+
+        text-align: center;
+    }
+
+    .current-right {
+        order: -1;
+    }
+
+    .weather-symbol {
+        font-size: 3.5rem;
+    }
+
+    .temperature {
+        font-size: 3.8rem;
+    }
+
+    .location-name {
+        font-size: 1.05rem;
+    }
+
+    .weather-description {
+        font-size: 0.85rem;
+    }
+
+    .weather-details {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.65rem;
+    }
+
+    .detail {
+        padding: 0.85rem 0.5rem;
+    }
+
+    .detail span {
+        font-size: 0.65rem;
+    }
+
+    .detail strong {
+        font-size: 0.88rem;
+    }
+
+
+    /* FORECAST */
+
+    .forecast-section {
+        margin-top: 2.5rem;
+    }
+
+    .forecast-heading {
+        font-size: 1.08rem;
+    }
+
+    .forecast-intro {
+        font-size: 0.77rem;
+        line-height: 1.8;
+    }
+
+    .forecast-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.65rem;
+    }
+
+    .forecast-card {
+        padding: 1rem 0.4rem;
+    }
+
+    .forecast-day {
+        font-size: 0.7rem;
+    }
+
+    .forecast-icon {
+        font-size: 1.7rem;
+    }
+
+    .forecast-condition {
+        font-size: 0.62rem;
+    }
+
+    .forecast-temperatures {
+        font-size: 0.72rem;
+    }
+
+    .forecast-rain {
+        font-size: 0.63rem;
+    }
+
+
+    /* FOOTER */
+
+    .weather-footer {
+        margin-top: 3rem;
+        padding: 1.8rem 5%;
+        font-size: 0.68rem;
+    }
+
+}
+
+
+/* ==========================================
+   17. SMALL MOBILE PHONES
+========================================== */
+
+@media (max-width: 380px) {
+
+    .weather-header {
+        padding: 0.9rem 4%;
+    }
+
+    .brand img {
+        width: 95px;
+    }
+
+    .header-label {
+        font-size: 0.52rem;
+        letter-spacing: 0.04rem;
+    }
+
+    .hero-content {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .hero-content h1 {
+        font-size: 1.95rem;
+    }
+
+    .hero-description {
+        font-size: 0.77rem;
+    }
+
+    .hero-locations span {
+        padding: 0.5rem 0.65rem;
+        font-size: 0.55rem;
+    }
+
+    .weather-container {
+        width: 94%;
+    }
+
+    .temperature {
+        font-size: 3.3rem;
+    }
+
+    .forecast-grid {
+        gap: 0.5rem;
+    }
+
+}
+
+
+/* ==========================================
+   18. LANDSCAPE MOBILE
+========================================== */
+
+@media (max-width: 768px) and (orientation: landscape) {
+
+    .weather-hero {
+        min-height: 650px;
+    }
+
+    .hero-content {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+}
+
+
+/* ==========================================
+   19. REDUCED MOTION ACCESSIBILITY
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .agriculture-slide {
+        animation: none;
+        transform: none;
+    }
+
+    .slide-one {
+        opacity: 1;
+    }
+
+    .slide-two,
+    .slide-three,
+    .slide-four,
+    .slide-five {
+        opacity: 0;
+    }
+
+    .forecast-card,
+    .location-button,
+    .refresh-button {
+        transition: none;
+    }
+
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     1. GOREALE HEADER + HERO
+========================================== -->
+
+<section class="weather-hero">
+
+
+    <!-- AGRICULTURAL BACKGROUND -->
+
+    <div class="agriculture-background" aria-hidden="true">
+
+        <div class="agriculture-slide slide-one"></div>
+        <div class="agriculture-slide slide-two"></div>
+        <div class="agriculture-slide slide-three"></div>
+           <div class="agriculture-slide slide-four"></div>
+           <div class="agriculture-slide slide-five"></div>
+    </div>
+
+
+    <!-- DARK OVERLAY -->
+
+    <div class="agriculture-overlay"></div>
+
+
+    <!-- WEBSITE HEADER -->
+
+    <header class="weather-header">
+
+        <div class="brand">
+
+            <img
+                src="goreale-logo.png"
+                alt="GOREALE Agricultural Innovators"
+            >
+
+        </div>
+
+
+        
+
+    </header>
+
+
+    <!-- HERO CONTENT -->
+
+    <div class="hero-content">
+
+        
+
+
+        <h1>
+            Northeastern Kenya
+            <span>Weather Centre</span>
+        </h1>
+
+
+        <p class="hero-description">
+
+            Monitor weather conditions, rainfall patterns and
+            climate forecasts across Mandera, Wajir and Garissa
+            to support sustainable agriculture, food security
+            and informed farming decisions.
+
+        </p>
+
+
+        <div class="hero-locations">
+
+            <span>MANDERA</span>
+            <span>WAJIR</span>
+            <span>GARISSA</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     2. WEATHER CENTRE
+========================================== -->
+
+<main class="weather-container">
+
+
+    <!-- COUNTY SELECTION -->
+
+    <section class="county-section">
+
+        <h3>
+            Select Operational County
+        </h3>
+
+
+        <div class="action-buttons">
+
+            <button
+                class="location-button"
+                type="button"
+                onclick="selectCounty('Mandera')">
+
+                Mandera
+
+            </button>
+
+
+            <button
+                class="location-button"
+                type="button"
+                onclick="selectCounty('Wajir')">
+
+                Wajir
+
+            </button>
+
+
+            <button
+                class="location-button"
+                type="button"
+                onclick="selectCounty('Garissa')">
+
+                Garissa
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- LOCATION SEARCH -->
+
+    <form class="search-area" id="searchForm">
+
+        <input
+            type="text"
+            id="cityInput"
+            placeholder="Search Mandera, Wajir or Garissa..."
+            value="Mandera"
+            aria-label="Search for a town or county"
+            required
+        >
+
+
+        <button type="submit">
+            Search Weather
+        </button>
+
+    </form>
+
+
+
+    <!-- REFRESH WEATHER -->
+
+    <div class="action-buttons">
+
+        <button
+            class="refresh-button"
+            id="refreshButton"
+            type="button">
+
+            Refresh Weather
+
+        </button>
+
+    </div>
+
+
+
+    <!-- STATUS MESSAGE -->
+
+    <p
+        class="status"
+        id="status"
+        aria-live="polite">
+
+        Connecting to Northeastern Kenya weather service...
+
+    </p>
+
+
+
+    <!-- CURRENT WEATHER -->
+
+    <section class="current-weather">
+
+
+        <!-- WEATHER INFORMATION -->
+
+        <div>
+
+            <div
+                class="location-name"
+                id="locationName">
+
+                Loading county...
+
+            </div>
+
+
+            <div
+                class="current-date"
+                id="currentDate">
+
+            </div>
+
+
+            <div
+                class="temperature"
+                id="temperature">
+
+                --°C
+
+            </div>
+
+
+            <div
+                class="weather-description"
+                id="description">
+
+                Loading weather conditions...
+
+            </div>
+
+        </div>
+
+
+
+        <!-- WEATHER ICON AND DETAILS -->
+
+        <div class="current-right">
+
+
+            <div
+                class="weather-symbol"
+                id="weatherIcon">
+
+                🌤️
+
+            </div>
+
+
+            <div class="weather-details">
+
+
+                <div class="detail">
+
+                    <span>Feels Like</span>
+
+                    <strong id="feelsLike">
+                        --°C
+                    </strong>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <span>Humidity</span>
+
+                    <strong id="humidity">
+                        --%
+                    </strong>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <span>Wind Speed</span>
+
+                    <strong id="wind">
+                        -- km/h
+                    </strong>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <span>Precipitation</span>
+
+                    <strong id="precipitation">
+                        -- mm
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         3. SEVEN-DAY AGRICULTURAL FORECAST
+    ========================================== -->
+
+    <section class="forecast-section">
+
+
+        <h2 class="forecast-heading">
+
+            Seven-Day Agricultural Weather Forecast
+
+        </h2>
+
+
+        <p class="forecast-intro">
+
+            Track upcoming weather conditions across Mandera,
+            Wajir and Garissa to support crop planning,
+            livestock management, water conservation,
+            rainfall monitoring and drought preparedness.
+
+        </p>
+
+
+        <div
+            class="forecast-grid"
+            id="forecastGrid">
+
+            <p>Loading forecast...</p>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ==========================================
+     4. WEBSITE FOOTER
+========================================== -->
+
+<footer class="weather-footer">
+
+
+    <p>
+        GOREALE Agricultural Innovators
+    </p>
+
+
+    <p>
+
+        Weather data provided by
+
+        <a
+            href="https://open-meteo.com/"
+            target="_blank"
+            rel="noopener">
+
+            Open-Meteo
+
+        </a>
+
+        · Forecast information is for guidance and may change.
+
+    </p>
+
+
+</footer>
+
+
+
+<script>
+
+"use strict";
+
+
+/* ==========================================
+   GOREALE AGRICULTURAL INNOVATORS
+   NORTHEASTERN KENYA WEATHER CENTRE
+
+   Operational Counties:
+   1. Mandera
+   2. Wajir
+   3. Garissa
+
+   Weather Provider: Open-Meteo
+========================================== */
+
+
+const API =
+    "https://api.open-meteo.com/v1/forecast";
+
+const GEOCODING =
+    "https://geocoding-api.open-meteo.com/v1/search";
+
+
+/* ==========================================
+   OPERATIONAL COUNTY COORDINATES
+========================================== */
+
+const counties = {
+
+    Mandera: {
+        latitude: 3.9366,
+        longitude: 41.8670,
+        country: "Kenya"
+    },
+
+    Wajir: {
+        latitude: 1.7471,
+        longitude: 40.0573,
+        country: "Kenya"
+    },
+
+    Garissa: {
+        latitude: -0.4532,
+        longitude: 39.6460,
+        country: "Kenya"
+    }
+
+};
+
+
+let currentCoordinates = null;
+let currentLocationLabel = "";
+
+
+/* ==========================================
+   WEATHER CONDITIONS
+========================================== */
+
+const weatherCodes = {
+
+    0:  ["☀️", "Clear sky"],
+    1:  ["🌤️", "Mainly clear"],
+    2:  ["⛅", "Partly cloudy"],
+    3:  ["☁️", "Overcast"],
+
+    45: ["🌫️", "Fog"],
+    48: ["🌫️", "Depositing rime fog"],
+
+    51: ["🌦️", "Light drizzle"],
+    53: ["🌦️", "Moderate drizzle"],
+    55: ["🌧️", "Dense drizzle"],
+
+    56: ["🌧️", "Freezing drizzle"],
+    57: ["🌧️", "Heavy freezing drizzle"],
+
+    61: ["🌧️", "Slight rain"],
+    63: ["🌧️", "Moderate rain"],
+    65: ["🌧️", "Heavy rain"],
+
+    66: ["🌧️", "Freezing rain"],
+    67: ["🌧️", "Heavy freezing rain"],
+
+    71: ["🌨️", "Slight snowfall"],
+    73: ["🌨️", "Moderate snowfall"],
+    75: ["❄️", "Heavy snowfall"],
+    77: ["🌨️", "Snow grains"],
+
+    80: ["🌦️", "Slight rain showers"],
+    81: ["🌧️", "Moderate rain showers"],
+    82: ["⛈️", "Violent rain showers"],
+
+    85: ["🌨️", "Snow showers"],
+    86: ["❄️", "Heavy snow showers"],
+
+    95: ["⛈️", "Thunderstorm"],
+    96: ["⛈️", "Thunderstorm with hail"],
+    99: ["⛈️", "Severe thunderstorm"]
+
+};
+
+
+function getWeather(code) {
+
+    return weatherCodes[code] ||
+        ["🌤️", "Unknown conditions"];
+
+}
+
+
+/* ==========================================
+   STATUS MESSAGE
+========================================== */
+
+function showStatus(message, isError = false) {
+
+    const status =
+        document.getElementById("status");
+
+    status.textContent = message;
+
+    status.style.color = isError
+        ? "#b42318"
+        : "#68736a";
+
+}
+
+
+/* ==========================================
+   DATE FORMATTING
+========================================== */
+
+function formatDate(dateString, options) {
+
+    return new Date(dateString + "T00:00:00")
+        .toLocaleDateString(undefined, options);
+
+}
+
+
+/* ==========================================
+   SELECT OPERATIONAL COUNTY
+========================================== */
+
+function selectCounty(county) {
+
+    const selectedCounty = counties[county];
+
+    if (!selectedCounty) {
+
+        showStatus(
+            "Please select Mandera, Wajir or Garissa.",
+            true
+        );
+
+        return;
+
+    }
+
+
+    document.getElementById("cityInput").value =
+        county;
+
+
+    loadWeather(
+        selectedCounty.latitude,
+        selectedCounty.longitude,
+        county + ", Northeastern Kenya"
+    );
+
+}
+
+
+/* ==========================================
+   SEARCH FOR A LOCATION
+
+   Restricts searches to the three
+   operational counties in Kenya.
+========================================== */
+
+async function searchLocation(city) {
+
+    const countyName = city.trim().toLowerCase();
+
+
+    /* DIRECT COUNTY SELECTION */
+
+    const matchingCounty = Object.keys(counties).find(
+        county => county.toLowerCase() === countyName
+    );
+
+
+    if (matchingCounty) {
+
+        selectCounty(matchingCounty);
+
+        return;
+
+    }
+
+
+    /* GEOCODING REQUEST */
+
+    const url = new URL(GEOCODING);
+
+    url.search = new URLSearchParams({
+
+        name: city,
+        count: "10",
+        language: "en",
+        format: "json"
+
+    });
+
+
+    showStatus("Searching Northeastern Kenya...");
+
+
+    const response = await fetch(url);
+
+
+    if (!response.ok) {
+
+        throw new Error(
+            "Unable to search for this location."
+        );
+
+    }
+
+
+    const data = await response.json();
+
+
+    if (!data.results || data.results.length === 0) {
+
+        throw new Error(
+            "Location not found. Try another town in Mandera, Wajir or Garissa."
+        );
+
+    }
+
+
+    /*
+       Check the available administrative
+       information for each search result.
+    */
+
+    const countyNames = Object.keys(counties);
+
+
+    const place = data.results.find(result => {
+
+        const administrativeAreas = [
+
+            result.admin1,
+            result.admin2,
+            result.admin3,
+            result.admin4
+
+        ].filter(Boolean);
+
+
+        const belongsToKenya =
+            (result.country_code || "").toUpperCase() === "KE";
+
+
+        const matchingArea = administrativeAreas.some(area => {
+
+            const normalizedArea = area.toLowerCase();
+
+            return countyNames.some(county =>
+                normalizedArea.includes(county.toLowerCase())
+            );
+
+        });
+
+
+        return belongsToKenya && matchingArea;
+
+    });
+
+
+    if (!place) {
+
+        throw new Error(
+            "This location could not be confirmed within Mandera, Wajir or Garissa."
+        );
+
+    }
+
+
+    /*
+       Identify the operational county
+       from the administrative information.
+    */
+
+    const administrativeAreas = [
+
+        place.admin1,
+        place.admin2,
+        place.admin3,
+        place.admin4
+
+    ].filter(Boolean);
+
+
+    const county = countyNames.find(name =>
+
+        administrativeAreas.some(area =>
+            area.toLowerCase().includes(name.toLowerCase())
+        )
+
+    );
+
+
+    const parts = [
+
+        place.name,
+        county,
+        "Northeastern Kenya"
+
+    ].filter(Boolean);
+
+
+    await loadWeather(
+
+        place.latitude,
+        place.longitude,
+        parts.join(", ")
+
+    );
+
+}
+
+
+/* ==========================================
+   FETCH WEATHER DATA
+========================================== */
+
+async function loadWeather(
+    latitude,
+    longitude,
+    locationName
+) {
+
+    try {
+
+        showStatus(
+            "Fetching Northeastern Kenya weather information..."
+        );
+
+
+        const params = new URLSearchParams({
+
+            latitude,
+            longitude,
+
+            current: [
+
+                "temperature_2m",
+                "relative_humidity_2m",
+                "apparent_temperature",
+                "weather_code",
+                "wind_speed_10m",
+                "precipitation"
+
+            ].join(","),
+
+            daily: [
+
+                "temperature_2m_max",
+                "temperature_2m_min",
+                "precipitation_sum",
+                "precipitation_probability_max",
+                "weather_code",
+                "sunrise",
+                "sunset"
+
+            ].join(","),
+
+            timezone: "auto",
+            forecast_days: "7"
+
+        });
+
+
+        const response = await fetch(
+            `${API}?${params}`
+        );
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                "Weather service is unavailable. Please try again."
+            );
+
+        }
+
+
+        const data = await response.json();
+
+
+        if (!data.current || !data.daily) {
+
+            throw new Error(
+                "Weather data is incomplete."
+            );
+
+        }
+
+
+        currentCoordinates = {
+
+            latitude,
+            longitude
+
+        };
+
+
+        currentLocationLabel = locationName;
+
+
+        displayCurrentWeather(
+            data,
+            locationName
+        );
+
+
+        displayForecast(data.daily);
+
+
+        showStatus(
+
+            "Weather successfully updated · " +
+            "Region: Northeastern Kenya · " +
+            "Timezone: " +
+            (data.timezone || "Local time")
+
+        );
+
+
+    } catch (error) {
+
+        console.error("Weather error:", error);
+
+        showStatus(error.message, true);
+
+    }
+
+}
+
+
+/* ==========================================
+   DISPLAY CURRENT WEATHER
+========================================== */
+
+function displayCurrentWeather(data, locationName) {
+
+    const current = data.current;
+
+
+    const [icon, description] =
+        getWeather(current.weather_code);
+
+
+    document.getElementById("locationName").textContent =
+        locationName;
+
+
+    document.getElementById("currentDate").textContent =
+
+        new Date(current.time).toLocaleString(undefined, {
+
+            weekday: "long",
+            day: "numeric",
+            month: "long",
+            hour: "2-digit",
+            minute: "2-digit"
+
+        });
+
+
+    document.getElementById("temperature").textContent =
+        Math.round(current.temperature_2m) + "°C";
+
+
+    document.getElementById("description").textContent =
+        description;
+
+
+    document.getElementById("weatherIcon").textContent =
+        icon;
+
+
+    document.getElementById("feelsLike").textContent =
+        Math.round(current.apparent_temperature) + "°C";
+
+
+    document.getElementById("humidity").textContent =
+        current.relative_humidity_2m + "%";
+
+
+    document.getElementById("wind").textContent =
+        current.wind_speed_10m + " km/h";
+
+
+    document.getElementById("precipitation").textContent =
+        current.precipitation + " mm";
+
+}
+
+
+/* ==========================================
+   DISPLAY SEVEN-DAY FORECAST
+========================================== */
+
+function displayForecast(daily) {
+
+    const grid =
+        document.getElementById("forecastGrid");
+
+
+    grid.replaceChildren();
+
+
+    daily.time.forEach((date, index) => {
+
+
+        const [icon, description] =
+            getWeather(daily.weather_code[index]);
+
+
+        const card =
+            document.createElement("article");
+
+        card.className = "forecast-card";
+
+
+        const values = [
+
+            {
+                className: "forecast-day",
+
+                text: index === 0
+                    ? "Today"
+                    : formatDate(date, {
+                        weekday: "short"
+                    })
+
+            },
+
+            {
+                className: "forecast-icon",
+                text: icon
+            },
+
+            {
+                className: "forecast-condition",
+                text: description
+            },
+
+            {
+                className: "forecast-temperatures",
+
+                text:
+
+                    Math.round(
+                        daily.temperature_2m_max[index]
+                    ) + "° / " +
+
+                    Math.round(
+                        daily.temperature_2m_min[index]
+                    ) + "°C"
+
+            },
+
+            {
+                className: "forecast-rain",
+
+                text: "Rain: " +
+
+                    (
+                        daily.precipitation_probability_max[index]
+                        ?? "--"
+                    ) + "%"
+
+            }
+
+        ];
+
+
+        values.forEach(item => {
+
+            const element =
+                document.createElement("div");
+
+            element.className =
+                item.className;
+
+            element.textContent =
+                item.text;
+
+            card.appendChild(element);
+
+        });
+
+
+        grid.appendChild(card);
+
+    });
+
+}
+
+
+/* ==========================================
+   SEARCH FORM
+========================================== */
+
+document.getElementById("searchForm").addEventListener(
+
+    "submit",
+
+    async function(event) {
+
+        event.preventDefault();
+
+
+        const city = document.getElementById("cityInput")
+            .value.trim();
+
+
+        if (!city) {
+
+            showStatus(
+                "Please enter an operational county or town.",
+                true
+            );
+
+            return;
+
+        }
+
+
+        try {
+
+            await searchLocation(city);
+
+        } catch (error) {
+
+            showStatus(error.message, true);
+
+        }
+
+    }
+
+);
+
+
+/* ==========================================
+   REFRESH WEATHER
+========================================== */
+
+document.getElementById("refreshButton").addEventListener(
+
+    "click",
+
+    function() {
+
+
+        if (!currentCoordinates) {
+
+            showStatus(
+                "Select an operational county first.",
+                true
+            );
+
+            return;
+
+        }
+
+
+        loadWeather(
+
+            currentCoordinates.latitude,
+            currentCoordinates.longitude,
+            currentLocationLabel
+
+        );
+
+    }
+
+);
+
+
+/* ==========================================
+   INITIAL WEATHER
+
+   DEFAULT: MANDERA COUNTY
+========================================== */
+
+selectCounty("Mandera");
+
+
+</script>
+
+</body>
+</html>
