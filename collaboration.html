@@ -726,8 +726,9 @@ textarea {
     <form
         class="application-form"
         id="collaborationForm"
-        action="#"
+        action="https://formspree.io/f/xaeozjdb"
         method="POST"
+        accept-charset="UTF-8"
     >
 
         <!-- ==================================
@@ -1596,11 +1597,14 @@ textarea {
             <button
                 type="submit"
                 class="submit-btn"
+                id="submitButton"
             >
                 Submit Collaboration Application
             </button>
 
-            <p class="form-notice">
+            <p id="formStatus" class="form-notice" role="status" aria-live="polite"></p>
+
+            <p id="successNotice" class="form-notice" hidden>
                 Thank you for your interest in collaborating with
                 GOREALE Agricultural Innovators. We value partnerships
                 that advance sustainable agriculture, agricultural
@@ -1641,9 +1645,11 @@ textarea {
 <script>
 
 const collaborationForm = document.getElementById("collaborationForm");
+const submitButton = document.getElementById("submitButton");
+const formStatus = document.getElementById("formStatus");
+const successNotice = document.getElementById("successNotice");
 
 function validateCheckboxGroup(name, message) {
-
     const checkboxes = collaborationForm.querySelectorAll(
         `input[name="${name}"]`
     );
@@ -1652,24 +1658,29 @@ function validateCheckboxGroup(name, message) {
         checkbox => checkbox.checked
     );
 
-    if (!selected) {
-
-        checkboxes[0].setCustomValidity(message);
-
-        return false;
-
-    }
-
     checkboxes.forEach(checkbox => {
-        checkbox.setCustomValidity("");
+        checkbox.setCustomValidity(selected ? "" : message);
     });
 
-    return true;
-
+    return selected;
 }
 
+// Clear a checkbox group's validation error as soon as an option is selected.
+["interests[]", "collaborationType[]"].forEach(name => {
+    collaborationForm.querySelectorAll(`input[name="${name}"]`).forEach(checkbox => {
+        checkbox.addEventListener("change", () => {
+            validateCheckboxGroup(
+                name,
+                name === "interests[]"
+                    ? "Please select at least one collaboration area."
+                    : "Please select at least one collaboration approach."
+            );
+        });
+    });
+});
 
-collaborationForm.addEventListener("submit", function(event) {
+collaborationForm.addEventListener("submit", async function(event) {
+    event.preventDefault();
 
     const interestsValid = validateCheckboxGroup(
         "interests[]",
@@ -1681,28 +1692,53 @@ collaborationForm.addEventListener("submit", function(event) {
         "Please select at least one collaboration approach."
     );
 
-    if (!interestsValid || !approachValid) {
-
-        event.preventDefault();
-
+    if (!interestsValid || !approachValid || !collaborationForm.checkValidity()) {
         collaborationForm.reportValidity();
-
         return;
-
     }
 
-    /*
-       Backend submission will be connected here.
-       The form currently uses action="#".
-    */
+    successNotice.hidden = true;
+    formStatus.textContent = "Please wait while your application is being submitted.";
+    formStatus.style.color = "#68736A";
+    submitButton.disabled = true;
+    submitButton.textContent = "Submitting...";
 
-    event.preventDefault();
+    try {
+        const response = await fetch(collaborationForm.action, {
+            method: "POST",
+            body: new FormData(collaborationForm),
+            headers: {
+                "Accept": "application/json"
+            }
+        });
 
-    alert(
-        "The collaboration form is ready for backend integration. " +
-        "Please connect the submission endpoint before accepting applications."
-    );
+        const result = await response.json().catch(() => ({}));
 
+        if (response.ok) {
+            formStatus.textContent = "";
+            successNotice.hidden = false;
+            successNotice.scrollIntoView({ behavior: "smooth", block: "center" });
+            collaborationForm.reset();
+
+            // Clear any custom validation messages after resetting the form.
+            collaborationForm.querySelectorAll('input[type="checkbox"]').forEach(input => {
+                input.setCustomValidity("");
+            });
+        } else {
+            const errorMessage = result.errors
+                ? result.errors.map(error => error.message).join(" ")
+                : "Your application could not be submitted. Please try again.";
+
+            throw new Error(errorMessage);
+        }
+    } catch (error) {
+        formStatus.textContent =
+            error.message || "A network error occurred. Please check your connection and try again.";
+        formStatus.style.color = "#9B2C2C";
+    } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = "Submit Collaboration Application";
+    }
 });
 
 </script>
