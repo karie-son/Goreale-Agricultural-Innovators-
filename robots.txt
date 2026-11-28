@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://gorealeagriculturalinnovators.onrender.com/sitemap.xml
