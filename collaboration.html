@@ -550,6 +550,74 @@ textarea {
     font-size: 0.65rem;
 }
 
+/* SUCCESS POP-UP WINDOW */
+.success-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    background: rgba(16, 35, 22, 0.72);
+}
+.success-modal[hidden] { display: none; }
+.success-modal-content {
+    width: 100%;
+    max-width: 430px;
+    padding: 2.4rem 1.8rem 2rem;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 18px 55px rgba(0,0,0,0.25);
+    text-align: center;
+    animation: successPop 0.28s ease-out;
+}
+.success-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+    height: 76px;
+    margin: 0 auto 1.2rem;
+    border-radius: 50%;
+    background: #E7F5EA;
+    color: #16813B;
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+.success-modal-content h2 {
+    margin-bottom: 0.7rem;
+    color: var(--forest-green);
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+.success-modal-content p {
+    margin-bottom: 1.5rem;
+    color: var(--charcoal-grey);
+    font-size: 0.78rem;
+    line-height: 1.85;
+}
+.success-close {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 0;
+    border-radius: 5px;
+    background: var(--forest-green);
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.76rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.success-close:hover { background: var(--deep-green); }
+@keyframes successPop {
+    from { opacity: 0; transform: translateY(12px) scale(0.96); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .success-modal-content { animation: none; }
+}
+
 /* ==========================================
    RESPONSIVE DESIGN
 ========================================== */
@@ -1604,19 +1672,31 @@ textarea {
 
             <p id="formStatus" class="form-notice" role="status" aria-live="polite"></p>
 
-            <p id="successNotice" class="form-notice" hidden>
-                Thank you for your interest in collaborating with
-                GOREALE Agricultural Innovators. We value partnerships
-                that advance sustainable agriculture, agricultural
-                innovation and community development.
-            </p>
-
         </div>
 
     </form>
 
 </main>
 
+
+<!-- SUCCESS CONFIRMATION POP-UP -->
+<div class="success-modal" id="successModal" role="dialog"
+     aria-modal="true" aria-labelledby="successTitle"
+     aria-describedby="successMessage" hidden>
+    <div class="success-modal-content">
+        <div class="success-check" aria-hidden="true">✓</div>
+        <h2 id="successTitle">Application Submitted!</h2>
+        <p id="successMessage">
+            Thank you for your interest in collaborating with
+            GOREALE Agricultural Innovators. We value partnerships
+            that advance sustainable agriculture, agricultural
+            innovation and community development.
+        </p>
+        <button type="button" class="success-close" id="successClose">
+            Continue
+        </button>
+    </div>
+</div>
 
 <!-- ==========================================
      FOOTER
@@ -1647,7 +1727,8 @@ textarea {
 const collaborationForm = document.getElementById("collaborationForm");
 const submitButton = document.getElementById("submitButton");
 const formStatus = document.getElementById("formStatus");
-const successNotice = document.getElementById("successNotice");
+const successModal = document.getElementById("successModal");
+const successClose = document.getElementById("successClose");
 
 function validateCheckboxGroup(name, message) {
     const checkboxes = collaborationForm.querySelectorAll(
@@ -1679,6 +1760,19 @@ function validateCheckboxGroup(name, message) {
     });
 });
 
+function closeSuccessModal() {
+    successModal.hidden = true;
+    submitButton.focus();
+}
+
+successClose.addEventListener("click", closeSuccessModal);
+successModal.addEventListener("click", function(event) {
+    if (event.target === successModal) closeSuccessModal();
+});
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape" && !successModal.hidden) closeSuccessModal();
+});
+
 collaborationForm.addEventListener("submit", async function(event) {
     event.preventDefault();
 
@@ -1697,7 +1791,7 @@ collaborationForm.addEventListener("submit", async function(event) {
         return;
     }
 
-    successNotice.hidden = true;
+    successModal.hidden = true;
     formStatus.textContent = "Please wait while your application is being submitted.";
     formStatus.style.color = "#68736A";
     submitButton.disabled = true;
@@ -1716,9 +1810,9 @@ collaborationForm.addEventListener("submit", async function(event) {
 
         if (response.ok) {
             formStatus.textContent = "";
-            successNotice.hidden = false;
-            successNotice.scrollIntoView({ behavior: "smooth", block: "center" });
             collaborationForm.reset();
+            successModal.hidden = false;
+            successClose.focus();
 
             // Clear any custom validation messages after resetting the form.
             collaborationForm.querySelectorAll('input[type="checkbox"]').forEach(input => {
